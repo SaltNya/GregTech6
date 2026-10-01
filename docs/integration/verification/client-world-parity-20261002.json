@@ -1,0 +1,551 @@
+{
+  "status": "passed-with-explicit-scope",
+  "integration_base": "b462a44de028d45fca7be4e97b9a0bada752021b",
+  "goal_status": "active",
+  "client_world_pair": {
+    "schema_version": 1,
+    "passed": true,
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "runs": [
+      {
+        "phase": "prepare",
+        "pid": 66180,
+        "exit_code": 0,
+        "log": "F:\\Dev\\GregtTech6New\\GregTech6\\work\\neo-client-world-prepare-final-20261002.log",
+        "log_sha256": "63469f6487ffe040a71fe92b707d28a681f9b38edea6b4a049d631808f68cb08",
+        "receipt": {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "timeoutSeconds": 300,
+          "elapsedMs": 104588,
+          "phase": "prepare",
+          "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+          "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+          "pid": 66180,
+          "stage": 14,
+          "normalIntegratedServerStop": true,
+          "savedWorldExists": true,
+          "proof": {
+            "loadedWorld": {
+              "platform": "neoforge",
+              "minecraft": "1.21.1",
+              "timeoutSeconds": 300,
+              "elapsedMs": 93730,
+              "phase": "prepare",
+              "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "pid": 66180,
+              "stage": 2,
+              "serverClass": "net.minecraft.client.server.IntegratedServer",
+              "originalSpecimenId": "cb23b5a6-244c-4102-bce8-0b817bc7f390",
+              "copiedStoppedMachinesLoaded": true,
+              "restoredTransferredStock": false,
+              "restoredNamedWaterAmount": 1000
+            },
+            "actualRightClickCrusherMenu": true,
+            "namedItemClientServerTransferOrReload": true,
+            "actualRightClickMixerMenu": true,
+            "namedFluidClientAmount": 1500,
+            "liveFluidPacketUpdate": true
+          },
+          "captures": [
+            {
+              "platform": "neoforge",
+              "minecraft": "1.21.1",
+              "timeoutSeconds": 300,
+              "elapsedMs": 102492,
+              "phase": "prepare",
+              "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "pid": 66180,
+              "stage": 3,
+              "role": "world",
+              "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-prepare-world-e47865cf-db5d-4624-95c3-37a654e5d808.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "platform": "neoforge",
+              "minecraft": "1.21.1",
+              "timeoutSeconds": 300,
+              "elapsedMs": 103200,
+              "phase": "prepare",
+              "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "pid": 66180,
+              "stage": 7,
+              "role": "crusher-gui",
+              "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-prepare-crusher-gui-40520416-2dfb-49ed-97eb-f31d923ef882.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "platform": "neoforge",
+              "minecraft": "1.21.1",
+              "timeoutSeconds": 300,
+              "elapsedMs": 103857,
+              "phase": "prepare",
+              "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "pid": 66180,
+              "stage": 12,
+              "role": "mixer-gui",
+              "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-prepare-mixer-gui-64fd56f6-33ab-45c4-af0a-7688c91fcc47.png",
+              "width": 1280,
+              "height": 720
+            }
+          ]
+        },
+        "screenshots": [
+          {
+            "platform": "neoforge",
+            "minecraft": "1.21.1",
+            "timeoutSeconds": 300,
+            "elapsedMs": 102492,
+            "phase": "prepare",
+            "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "pid": 66180,
+            "stage": 3,
+            "role": "world",
+            "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-prepare-world-e47865cf-db5d-4624-95c3-37a654e5d808.png",
+            "width": 1280,
+            "height": 720,
+            "sha256": "52243db491e17119894c92f8dc071b0913dae480f87919257faa8b17b1227e4b",
+            "bytes": 382757,
+            "png_structure_verified": true,
+            "image_decode_verified": true
+          },
+          {
+            "platform": "neoforge",
+            "minecraft": "1.21.1",
+            "timeoutSeconds": 300,
+            "elapsedMs": 103200,
+            "phase": "prepare",
+            "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "pid": 66180,
+            "stage": 7,
+            "role": "crusher-gui",
+            "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-prepare-crusher-gui-40520416-2dfb-49ed-97eb-f31d923ef882.png",
+            "width": 1280,
+            "height": 720,
+            "sha256": "1fcd43183ccf79825cd7470d46814462cf6827a78d12e91c6220793591f7949a",
+            "bytes": 163275,
+            "png_structure_verified": true,
+            "image_decode_verified": true
+          },
+          {
+            "platform": "neoforge",
+            "minecraft": "1.21.1",
+            "timeoutSeconds": 300,
+            "elapsedMs": 103857,
+            "phase": "prepare",
+            "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "pid": 66180,
+            "stage": 12,
+            "role": "mixer-gui",
+            "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-prepare-mixer-gui-64fd56f6-33ab-45c4-af0a-7688c91fcc47.png",
+            "width": 1280,
+            "height": 720,
+            "sha256": "358878e2a73238c44f18b20a8317583bef785b151e2a30d3f701a80134defeee",
+            "bytes": 159000,
+            "png_structure_verified": true,
+            "image_decode_verified": true
+          }
+        ],
+        "visual_review": {
+          "reviewed": true,
+          "world": "Actual textured bronze machine cuboids on supplied stone footing with survival HUD and Jade overlay.",
+          "crusher-gui": "Actual material input/output icons and empty player inventory visible; reload input retained.",
+          "mixer-gui": "Actual three copper ingots and water slot visible. Compact amount says 1k for 1500mB; exact amount/components asserted in menu, not inferred from pixels.",
+          "title": "prepare is before title correction and records overlapping mixer title; verify shows corrected title above panel without obscuring slots."
+        }
+      },
+      {
+        "phase": "verify",
+        "pid": 76976,
+        "exit_code": 0,
+        "log": "F:\\Dev\\GregtTech6New\\GregTech6\\work\\neo-client-world-verify-20261002.log",
+        "log_sha256": "7a8ecc4665f7ab7b7a05e8a2fc1156c4f173be1a7ec5eb58bcef453acf1fa654",
+        "receipt": {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "timeoutSeconds": 300,
+          "elapsedMs": 98156,
+          "phase": "verify",
+          "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+          "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+          "pid": 76976,
+          "stage": 14,
+          "normalIntegratedServerStop": true,
+          "savedWorldExists": true,
+          "proof": {
+            "loadedWorld": {
+              "platform": "neoforge",
+              "minecraft": "1.21.1",
+              "timeoutSeconds": 300,
+              "elapsedMs": 88066,
+              "phase": "verify",
+              "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "pid": 76976,
+              "stage": 2,
+              "serverClass": "net.minecraft.client.server.IntegratedServer",
+              "originalSpecimenId": "cb23b5a6-244c-4102-bce8-0b817bc7f390",
+              "copiedStoppedMachinesLoaded": true,
+              "restoredTransferredStock": true,
+              "restoredNamedWaterAmount": 1500
+            },
+            "actualRightClickCrusherMenu": true,
+            "namedItemClientServerTransferOrReload": true,
+            "actualRightClickMixerMenu": true,
+            "namedFluidClientAmount": 1500,
+            "liveFluidPacketUpdate": false
+          },
+          "captures": [
+            {
+              "platform": "neoforge",
+              "minecraft": "1.21.1",
+              "timeoutSeconds": 300,
+              "elapsedMs": 96472,
+              "phase": "verify",
+              "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "pid": 76976,
+              "stage": 3,
+              "role": "world",
+              "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-verify-world-168c11bc-5ce3-472a-9417-f6fd9f2d0244.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "platform": "neoforge",
+              "minecraft": "1.21.1",
+              "timeoutSeconds": 300,
+              "elapsedMs": 97172,
+              "phase": "verify",
+              "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "pid": 76976,
+              "stage": 7,
+              "role": "crusher-gui",
+              "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-verify-crusher-gui-03b7fc88-65bf-444c-94d3-8ebea8af1d09.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "platform": "neoforge",
+              "minecraft": "1.21.1",
+              "timeoutSeconds": 300,
+              "elapsedMs": 97832,
+              "phase": "verify",
+              "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+              "pid": 76976,
+              "stage": 12,
+              "role": "mixer-gui",
+              "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-verify-mixer-gui-7a18fe48-7268-49b4-8f95-15b0f466c110.png",
+              "width": 1280,
+              "height": 720
+            }
+          ]
+        },
+        "screenshots": [
+          {
+            "platform": "neoforge",
+            "minecraft": "1.21.1",
+            "timeoutSeconds": 300,
+            "elapsedMs": 96472,
+            "phase": "verify",
+            "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "pid": 76976,
+            "stage": 3,
+            "role": "world",
+            "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-verify-world-168c11bc-5ce3-472a-9417-f6fd9f2d0244.png",
+            "width": 1280,
+            "height": 720,
+            "sha256": "6d324d7e0f4d71cc6420a99ed4bda53b1303caa60cd097feff86a9cdc9c42d27",
+            "bytes": 381864,
+            "png_structure_verified": true,
+            "image_decode_verified": true
+          },
+          {
+            "platform": "neoforge",
+            "minecraft": "1.21.1",
+            "timeoutSeconds": 300,
+            "elapsedMs": 97172,
+            "phase": "verify",
+            "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "pid": 76976,
+            "stage": 7,
+            "role": "crusher-gui",
+            "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-verify-crusher-gui-03b7fc88-65bf-444c-94d3-8ebea8af1d09.png",
+            "width": 1280,
+            "height": 720,
+            "sha256": "9acb35836355b907c068a43063acf8d26cd5b657ad0f05557a6a4c8f22064e3f",
+            "bytes": 164106,
+            "png_structure_verified": true,
+            "image_decode_verified": true
+          },
+          {
+            "platform": "neoforge",
+            "minecraft": "1.21.1",
+            "timeoutSeconds": 300,
+            "elapsedMs": 97832,
+            "phase": "verify",
+            "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+            "pid": 76976,
+            "stage": 12,
+            "role": "mixer-gui",
+            "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-verify-mixer-gui-7a18fe48-7268-49b4-8f95-15b0f466c110.png",
+            "width": 1280,
+            "height": 720,
+            "sha256": "f73263231cc252b0d87aa487e42c8f658d0c9b9188a2df541141d93c88272723",
+            "bytes": 159584,
+            "png_structure_verified": true,
+            "image_decode_verified": true
+          }
+        ],
+        "visual_review": {
+          "reviewed": true,
+          "world": "Actual textured bronze machine cuboids on supplied stone footing with survival HUD and Jade overlay.",
+          "crusher-gui": "Actual material input/output icons and empty player inventory visible; reload input retained.",
+          "mixer-gui": "Actual three copper ingots and water slot visible. Compact amount says 1k for 1500mB; exact amount/components asserted in menu, not inferred from pixels.",
+          "title": "prepare is before title correction and records overlapping mixer title; verify shows corrected title above panel without obscuring slots."
+        }
+      }
+    ],
+    "source_world_unchanged": true,
+    "visual_review_pending": false,
+    "full_survival_verified": false,
+    "installed_production_jar_verified": false,
+    "errors": [],
+    "source_file_count": 22,
+    "copied_world": {
+      "worldName": "client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+      "specimenId": "30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+      "source": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-world-20261002\\world",
+      "target": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-world-smoke-run\\saves\\client-world-20261002-30b50c7a-feff-4e2c-aeb2-189d8551adcc",
+      "copy_sha_verified": true,
+      "source_modified": false,
+      "original_specimen_id": "cb23b5a6-244c-4102-bce8-0b817bc7f390",
+      "files": [
+        {
+          "path": "level.dat",
+          "bytes": 1899,
+          "sha256": "b125c2b815ea5af3f487176767a5dc511922ad77cd1c0455cd368339856fb3f7"
+        },
+        {
+          "path": "level.dat_old",
+          "bytes": 1896,
+          "sha256": "6f5611be379a839e9bfb1b297588cc28d1a77613ff83541d3a081082b509b4e8"
+        },
+        {
+          "path": "data/neoforge_data_attachments.dat",
+          "bytes": 48,
+          "sha256": "95486bd4cbd73d4d98f343e42a5792ef5315214015acca508842844d73247562"
+        },
+        {
+          "path": "data/raids.dat",
+          "bytes": 89,
+          "sha256": "a99412db9a440e57a27872d8053d99b5c70bf53cbf6c6efd23172659af6041af"
+        },
+        {
+          "path": "entities/r.-1.-1.mca",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "entities/r.-1.0.mca",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "entities/r.0.-1.mca",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "entities/r.0.0.mca",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "poi/r.-1.-1.mca",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "poi/r.-1.0.mca",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "poi/r.0.-1.mca",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "poi/r.0.0.mca",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "region/r.-1.-1.mca",
+          "bytes": 815104,
+          "sha256": "06d301730dd8f8b43d787e256ca87003ec81ee27c4e55850417969a3da91493b"
+        },
+        {
+          "path": "region/r.-1.0.mca",
+          "bytes": 872448,
+          "sha256": "fc9047cf96bc0c1f7f02a6e683fa69dfb8685c9324f4e7b8c111beb4f5c54e00"
+        },
+        {
+          "path": "region/r.0.-1.mca",
+          "bytes": 872448,
+          "sha256": "ee948850564507e34a351eb001ff9cf7a793a0fde4574217f42eb5534da4eb2f"
+        },
+        {
+          "path": "region/r.0.0.mca",
+          "bytes": 933888,
+          "sha256": "1c6165f1941fbc3d0cb23e919adef3eaf8be47fa53be21bb367af5c23fbf4e27"
+        },
+        {
+          "path": "serverconfig/readme.txt",
+          "bytes": 469,
+          "sha256": "b1022ab932f8f0ea0cf78d9f312e95b85a4f96f59ca430e63f9a435e512d1186"
+        },
+        {
+          "path": "data/mezz_config/server-id.txt",
+          "bytes": 38,
+          "sha256": "952bd9321a827744652d7d7f64afed48abbc86c93ec513a9c6f34cdb53bf1f38"
+        },
+        {
+          "path": "DIM-1/data/neoforge_data_attachments.dat",
+          "bytes": 48,
+          "sha256": "95486bd4cbd73d4d98f343e42a5792ef5315214015acca508842844d73247562"
+        },
+        {
+          "path": "DIM-1/data/raids.dat",
+          "bytes": 89,
+          "sha256": "a99412db9a440e57a27872d8053d99b5c70bf53cbf6c6efd23172659af6041af"
+        },
+        {
+          "path": "DIM1/data/neoforge_data_attachments.dat",
+          "bytes": 48,
+          "sha256": "95486bd4cbd73d4d98f343e42a5792ef5315214015acca508842844d73247562"
+        },
+        {
+          "path": "DIM1/data/raids_end.dat",
+          "bytes": 89,
+          "sha256": "a99412db9a440e57a27872d8053d99b5c70bf53cbf6c6efd23172659af6041af"
+        }
+      ],
+      "metadata_only_warning_acknowledgement": "Java probe sets confirmedExperimentalSettings on this disposable copy before vanilla world loading; no other dialogs bypassed",
+      "scope": "provided prior stopped machines/stock, supplied tagged GUI transfer item and 500mB additional matching named water; no survival acquisition claim"
+    },
+    "source_manifest_sha256": "ad8c667076c5b0d59c2befa3f54a68c6b8f70d925d00f45d0b7b217e5159ff16"
+  },
+  "source_files": [
+    {
+      "path": "src/main/java/com/gregtech/gregtech/client/gui/BasicMachineScreen.java",
+      "sha256": "550e57a5a6d12eabe097dfa1a2909bf5d55273aaac494a43657d929bbb4df211",
+      "base_blob_sha256": "f960937574a82640b6c8fb9bbf58a8235419044a43e97900f203380affac59b7",
+      "role": "production"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/client/gui/BasicMachineScreen.java",
+      "sha256": "8a1ec4bbc6d720165ddfaee2747a4aeb732a5cec1b80979e8d7191b356a349fa",
+      "base_blob_sha256": "76fa60cccdf8a5b0e66f7e0140ce60b17b5c41a84d56be25bc38fd6ebf145b7d",
+      "role": "production"
+    },
+    {
+      "path": "neoforge/build.gradle",
+      "sha256": "d277a9576e723e57e209da197399343b735223cbca51a4bdb4426c22d6bf18a2",
+      "base_blob_sha256": "25bd541699efbe9a2adfe40aa9dbb24f77c24ebf83b537ec6fa9ba2f68c9fdf8",
+      "role": "development-evidence-only"
+    },
+    {
+      "path": "neoforge/src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/NeoForgeClientSmoke.java",
+      "sha256": "b1dcb4aa4db5b424bc37b5ce252ebedf321ec6cc3107822ed80fe4940da0e24d",
+      "base_blob_sha256": "1098ff6e55b565b6025cdcf312b9ecb95085e5ab48dbabb434c079b2b594edf4",
+      "role": "development-evidence-only"
+    },
+    {
+      "path": "tools/integration/verify_client_smoke.py",
+      "sha256": "1b067a2c74be121d8f68a7fb2b6fc6838437a8b7faf92dca5b644b8ca0d588d0",
+      "base_blob_sha256": "f8f585d626bc422d59cd319799808c0b20e09691a0f6b6e6d8d43b1a9d077010",
+      "role": "development-evidence-only"
+    }
+  ],
+  "logs": {
+    "neo-client-world-prepare-20261002.log": {
+      "path": "work/neo-client-world-prepare-20261002.log",
+      "sha256": "adc80f2592633db04791985eb9f640d2a0d42415d9e59e0da247018b31b7fa58",
+      "bytes": 71094,
+      "duration": "2m 28s"
+    },
+    "neo-client-world-prepare-fixed-20261002.log": {
+      "path": "work/neo-client-world-prepare-fixed-20261002.log",
+      "sha256": "75cef6a7871ea3e677b97e585ed71fade785df6c7c6412988215d8ad7362b0df",
+      "bytes": 62171,
+      "duration": "7m 9s"
+    },
+    "neo-client-world-prepare-final-20261002.log": {
+      "path": "work/neo-client-world-prepare-final-20261002.log",
+      "sha256": "63469f6487ffe040a71fe92b707d28a681f9b38edea6b4a049d631808f68cb08",
+      "bytes": 69391,
+      "duration": "2m 25s"
+    },
+    "neo-client-world-verify-20261002.log": {
+      "path": "work/neo-client-world-verify-20261002.log",
+      "sha256": "7a8ecc4665f7ab7b7a05e8a2fc1156c4f173be1a7ec5eb58bcef453acf1fa654",
+      "bytes": 66085,
+      "duration": "2m 6s"
+    },
+    "client-world-jars-20261002.log": {
+      "path": "work/client-world-jars-20261002.log",
+      "sha256": "66a0203928d16441fadb8e1142e828095f814e631760213b9e687ee0fe182fdd",
+      "bytes": 24269,
+      "duration": "1m 26s"
+    }
+  },
+  "shared_classes": 573,
+  "artifacts": {
+    "forge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "sha256": "2b7fa38439d5f3629ee48461df89c029211af4729c0fa1605a7f62b5c1b8ad8b",
+      "bytes": 38566653
+    },
+    "neoforge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "sha256": "b6f38a40042c1ea04be85650eac2f037eb93c705fcf7a8ba33b64cf93d3aa7a0",
+      "bytes": 36756979
+    }
+  },
+  "production_gui_class_matches_final_packages": true,
+  "failed_attempts": [
+    {
+      "log": "work/neo-client-world-prepare-20261002.log",
+      "reason": "Probe asserted server inventory before actual shift-click packet settled; not a proven production transfer bug. Gradle zero did not count as pass."
+    },
+    {
+      "log": "work/neo-client-world-prepare-fixed-20261002.log",
+      "reason": "Probe omitted vanilla ClientLevel.disconnect before Minecraft.disconnect; thread dump confirmed waiting for running server. Own JVM 70580 terminated, exit 1, not save/reload evidence. Original failed copy retained."
+    }
+  ],
+  "limitations": [
+    "Stopped supplied machines and inventories; no full survival acquisition or client-powered recipe execution.",
+    "Extra matching 500mB named water supplied via real server tank; live normal PacketSyncFluids delivery verified, not a player bucket operation.",
+    "Current development NeoForge client with JEI/Jade, not installed production JAR. Forge same title fix compiled/packaged; no Forge client-world assertion.",
+    "Native prepare ran before production title correction; verify uses correction against same normally saved world.",
+    "Vanilla warning acknowledgement applies only experimental metadata of disposable copied world. User saves and original dedicated-server source world unchanged.",
+    "Other machines, full progression, original save migrations and remaining artwork still pending. No relicensing or remote publication."
+  ]
+}

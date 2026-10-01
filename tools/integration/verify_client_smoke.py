@@ -243,6 +243,118 @@ def self_test():
     return {'self_test_passed': True, 'checks': checked, 'fixture_is_not_runtime_evidence': True}
 
 
+def verify_world_pair(prepare_log, verify_log, exit_codes, manifest_path):
+    """Validate the existing Neo probe's two real JVM runs, not title-screen evidence."""
+    from PIL import Image
+    manifest = json.loads(manifest_path.read_text(encoding='utf-8-sig'))
+    result = {'schema_version': 1, 'passed': False, 'platform': 'neoforge',
+              'minecraft': '1.21.1', 'runs': [], 'source_world_unchanged': False,
+              'visual_review_pending': True, 'full_survival_verified': False,
+              'installed_production_jar_verified': False, 'errors': []}
+    try:
+        require(len(exit_codes) == 2 and all(code == 0 for code in exit_codes),
+                'Both real game/Gradle exit codes must be zero')
+        token = manifest['specimenId']
+        require(str(uuid.UUID(token)) == token, 'Noncanonical specimen UUID')
+        pattern = re.compile(r'\bCLIENT_WORLD_(SMOKE_STARTED|SMOKE_SUCCESS|SMOKE_FAILED|CAPTURE_SUCCESS)\b')
+        roles = ['world', 'crusher-gui', 'mixer-gui']
+        all_tokens = set()
+        for phase, log, exit_code in zip(('prepare', 'verify'), (prepare_log, verify_log), exit_codes):
+            raw = log.read_bytes()
+            text = decode_log(raw)
+            require('CLIENT_WORLD_OPERATOR_ABORT' not in text, 'Run was aborted')
+            entries = {key: [] for key in ('SMOKE_STARTED', 'SMOKE_SUCCESS', 'SMOKE_FAILED', 'CAPTURE_SUCCESS')}
+            builds = []
+            for number, line in enumerate(text.splitlines(), 1):
+                line = ANSI.sub('', line)
+                if 'BUILD SUCCESSFUL' in line:
+                    builds.append(number)
+                for match in pattern.finditer(line):
+                    kind = match.group(1)
+                    require(kind != 'SMOKE_FAILED', 'World smoke failed')
+                    receipt = json.loads(line[match.end():].strip(), object_pairs_hook=unique_object)
+                    entries[kind].append((number, receipt))
+            require(len(entries['SMOKE_STARTED']) == len(entries['SMOKE_SUCCESS']) == 1,
+                    'Expected exactly one start and one success')
+            start_line, start = entries['SMOKE_STARTED'][0]
+            end_line, end = entries['SMOKE_SUCCESS'][0]
+            require(start_line < end_line and any(line > end_line for line in builds),
+                    'Missing successful terminal ordering')
+            captures = entries['CAPTURE_SUCCESS']
+            require([receipt['role'] for _, receipt in captures] == roles,
+                    'Expected exactly the three ordered real world/menu captures')
+            require(start.get('stage') == 0 and end.get('stage') == 14,
+                    'Incomplete world lifecycle')
+            require(end.get('normalIntegratedServerStop') is True and end.get('savedWorldExists') is True,
+                    'No normal integrated-server save/stop')
+            for receipt in [start, end] + [r for _, r in captures]:
+                require(receipt.get('platform') == 'neoforge' and receipt.get('minecraft') == '1.21.1',
+                        'Wrong platform/version')
+                require(receipt.get('phase') == phase and receipt.get('worldName') == manifest['worldName']
+                        and receipt.get('specimenId') == token and receipt.get('pid') == start.get('pid'),
+                        'World/process identity mismatch')
+            require(integer(start.get('pid')) and start['pid'] > 0, 'Missing JVM process ID')
+            require(end['elapsedMs'] > start['elapsedMs'], 'Invalid elapsed order')
+            proof = end['proof']
+            loaded = proof['loadedWorld']
+            require(loaded.get('serverClass') == 'net.minecraft.client.server.IntegratedServer'
+                    and loaded.get('originalSpecimenId') == manifest['original_specimen_id']
+                    and loaded.get('copiedStoppedMachinesLoaded') is True,
+                    'No original stopped-machine integrated-world checkpoint')
+            require(loaded.get('restoredTransferredStock') == (phase == 'verify')
+                    and loaded.get('restoredNamedWaterAmount') == (1000 if phase == 'prepare' else 1500),
+                    'Saved input/fluid was not restored before verification')
+            for key in ('actualRightClickCrusherMenu', 'actualRightClickMixerMenu',
+                        'namedItemClientServerTransferOrReload'):
+                require(proof.get(key) is True, f'Missing real menu proof: {key}')
+            require(proof.get('namedFluidClientAmount') == 1500
+                    and proof.get('liveFluidPacketUpdate') == (phase == 'prepare'),
+                    'No real fluid update/reloaded amount')
+            require(end.get('captures') == [r for _, r in captures], 'Terminal capture receipts differ')
+            image_rows = []
+            for number, receipt in captures:
+                require(start_line < number < end_line, 'Capture outside run')
+                path = Path(receipt['screenshot'])
+                require(path.is_absolute() and path.parent == Path(manifest['target']).parents[1] / 'screenshots',
+                        'Screenshot escaped isolated run directory')
+                match = re.fullmatch(r'gregtech-client-world-neoforge-1\.21\.1-' + phase + '-' +
+                                     receipt['role'] + r'-([0-9a-f-]{36})\.png', path.name)
+                require(match is not None, 'Wrong screenshot name')
+                image_token = match.group(1)
+                require(str(uuid.UUID(image_token)) == image_token and uuid.UUID(image_token).version == 4
+                        and image_token not in all_tokens, 'Screenshot UUID must be fresh canonical v4')
+                all_tokens.add(image_token)
+                data = path.read_bytes()
+                dimensions = check_png(data)
+                require(dimensions == (receipt['width'], receipt['height']), 'PNG dimensions mismatch')
+                with Image.open(path) as image:
+                    image.verify()
+                with Image.open(path) as image:
+                    image.load()
+                    require(image.size == dimensions and image.format == 'PNG', 'Image decoding failed')
+                image_rows.append(dict(receipt, sha256=hashlib.sha256(data).hexdigest(), bytes=len(data),
+                                       png_structure_verified=True, image_decode_verified=True))
+            result['runs'].append({'phase': phase, 'pid': start['pid'], 'exit_code': exit_code,
+                                   'log': str(log.resolve()), 'log_sha256': hashlib.sha256(raw).hexdigest(),
+                                   'receipt': end, 'screenshots': image_rows})
+        require(result['runs'][0]['pid'] != result['runs'][1]['pid'], 'Reload reused the same JVM')
+        source = Path(manifest['source'])
+        expected = {row['path']: row for row in manifest['files']}
+        actual = {p.relative_to(source).as_posix(): p for p in source.rglob('*')
+                  if p.is_file() and p.name != 'session.lock'}
+        require(actual.keys() == expected.keys(), 'Original source-world file inventory changed')
+        for relative, path in actual.items():
+            data = path.read_bytes()
+            require(len(data) == expected[relative]['bytes'] and
+                    hashlib.sha256(data).hexdigest() == expected[relative]['sha256'],
+                    f'Original source world changed: {relative}')
+        result.update(passed=True, source_world_unchanged=True, source_file_count=len(expected),
+                      copied_world=manifest, source_manifest_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest())
+    except Exception as error:
+        result['errors'].append(f'{type(error).__name__}: {error}')
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--log', type=Path)
@@ -250,10 +362,27 @@ def main():
     parser.add_argument('--exit-code', type=int)
     parser.add_argument('--output', type=Path, help='Write the JSON evidence receipt here, including failures')
     parser.add_argument('--self-test', action='store_true')
+    parser.add_argument('--world-prepare-log', type=Path)
+    parser.add_argument('--world-verify-log', type=Path)
+    parser.add_argument('--world-manifest', type=Path)
+    parser.add_argument('--world-exit-codes', type=int, nargs=2)
     args = parser.parse_args()
     if args.self_test:
         print(json.dumps(self_test(), ensure_ascii=False))
         return 0
+    if args.world_prepare_log is not None:
+        if any(value is None for value in (args.world_verify_log, args.world_manifest,
+                                           args.world_exit_codes, args.output)):
+            parser.error('World mode requires prepare/verify logs, manifest, two real exit codes and output')
+        if args.output.resolve() in {args.world_prepare_log.resolve(), args.world_verify_log.resolve(),
+                                     args.world_manifest.resolve()}:
+            parser.error('Output must not overwrite source evidence')
+        result = verify_world_pair(args.world_prepare_log, args.world_verify_log,
+                                   args.world_exit_codes, args.world_manifest)
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print(json.dumps({'passed': result['passed'], 'errors': result['errors']}, ensure_ascii=False))
+        return 0 if result['passed'] else 1
     if args.log is None or args.platform is None or args.exit_code is None or args.output is None:
         parser.error('--log, --platform, --exit-code and --output are required')
     if args.output.resolve() == args.log.resolve():

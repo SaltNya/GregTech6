@@ -123,3 +123,9 @@ python tools/integration/verify_client_smoke.py --self-test
 ## 2026-10-02 完整恢复源码后的运行
 
 当前批使用既有 bootstrap opt-in smoke；Native 增加 `-PclientModelSmoke=true` 可选模型检查与六物品主菜单画廊，`-PclientSmokeHeap=4g` 仅在 clientSmoke=true 时覆盖其原 2g 预算，不改变普通运行。Forge 也可用 directCoreClasspath=true 避免开发启动前重复生成大 core JAR，普通/发布构建默认归档依赖保持。两当前开发客户端主菜单已通过，Native 全材料/流体非 missing 检查和画廊通过；Forge 未包含该画廊。此证据替代早期简化源码主菜单作为当前加载证据，但不证明客户端世界/完整像素/成品。木辞典贴图缺口及 Blue Mahoe 更正的运行范围见 verification/client-model-parity-20261002.md。
+
+## Neo 真实世界 opt-in（2026-10-02）
+
+既有 NeoForgeClientSmoke 增加 clientWorldSmoke=true，必须提供 prepare|verify、client-world-* 隔离副本目录和规范 clientWorldId UUID。仅 build/client-world-smoke-run 生效，两次独立 JVM 使用同一完整存档副本。检查实际右键菜单/shift-click/正常流体包，原版 level.disconnect 再 Minecraft.disconnect 保存。不会直接生成菜单或把 probe 的过早读库存/错误退出当生产 bug。三种截图角色 world、crusher-gui、mixer-gui 与正常服务器关闭回执齐全才成功。启动/保存/退出不是成品安装或完整生存验收。
+
+复用 verify_client_smoke.py 的 `--world-prepare-log ... --world-verify-log ... --world-manifest <复制前文件 SHA 清单> --world-exit-codes <两真实退出码> --output ...`，要求两独立 PID、同一世界/UUID、真实阶段、三截图/PNG 解码、原存档全 SHA 未变。日志/画面不是签名的进程身份凭证，需调用者实际检查画面。最终范围见 verification/client-world-parity-20261002.md。
