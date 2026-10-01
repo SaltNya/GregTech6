@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "elapsed": "20s",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "log": "work/p3-native-logistics-advanced-compile-20261001.log",
+  "sha256": "2d2b70509a3d28b3ca515c1c102c9724c2ea57fd0a1d82ed98aabdb1b2c89dc6",
+  "policy": "D010 one necessary grouped compilation, no new subsystem fixture or extra startup",
+  "notProven": [
+    "registration/recipe data startup",
+    "logistics/boiler/drill/lightning gameplay",
+    "world renders",
+    "Forge runtime",
+    "independent restart",
+    "old saves",
+    "fresh jars"
+  ]
+}

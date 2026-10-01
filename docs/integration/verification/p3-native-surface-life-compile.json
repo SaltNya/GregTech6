@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "elapsed": "20s",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "log": "work\\p3-native-surface-life-compile-20261001-3.log",
+  "sha256": "d56e455fd421faca5921aba92a21e239bc45324d3be9ac5de115e3a0820050ae",
+  "notProven": [
+    "Actual harvest/growth/berry placement/packing and worldgen/client rendering not yet verified.",
+    "Native plant sustain hook rejects clay, accepts vanilla bush/sugarcane and otherwise delegates DEFAULT; old Forge PlantType categories have no direct native equivalent.",
+    "Source8 specific berry identities preserved; masson broader tag/vanilla berry setters and resetting growth on harvest are candidates, not silently adopted.",
+    "Source bush4-side scatter is a single-block adaptation, no original connected cluster sides; enhanced aether ground growth absent.",
+    "Shared source glowtus gate includes swamps; masson only jungle, neither blanket-preferred.",
+    "Original source log-shape placement can overwrite neighboring blocks; generated-source chunks and compatibility still unverified.",
+    "Dedicated-server startup for these two batches deferred to one grouped startup; Forge runtime, full survival, independent reload, old saves and fresh jars pending."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "log": "work/p3-native-large-crucibles-compile-20261001.log",
+      "sha256": "0276051115681afac742500a0a7060accd9349180ee4c775686e38dacdcea298",
+      "result": "FAIL22s missing native entry-point reference and changed AABB constructor"
+    },
+    {
+      "log": "work/p3-native-large-crucibles-compile-20261001-2.log",
+      "sha256": "df3723c0b13115e2f92477970176d9aba02390d008b3e46a443a3d0cec9cd90e",
+      "result": "FAIL13s missing original GTSounds; use already registered native same-identity wrench event"
+    },
+    {
+      "log": "work/p3-native-large-crucibles-compile-20261001-3.log",
+      "sha256": "7e9e5d1e240528a77f2b0de5709d36f467f5e1da3d601ac10610023e592c5b96",
+      "result": "PASS26s core/Neo/Forge"
+    }
+  ],
+  "policy": "D010 necessary grouped compilation, no new subsystem fixture",
+  "notProven": [
+    "world client render",
+    "formed-machine gameplay",
+    "survival",
+    "independent restart",
+    "old saves",
+    "Forge runtime",
+    "fresh jars"
+  ]
+}

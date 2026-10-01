@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_PASS",
+  "command": ":neoforge:compileJava :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "elapsed": "24s",
+  "log": "work/p3-native-item-entity-identity-compile-20261001.log",
+  "sha256": "a02ba79e0c190637a86626bd806adc835dbdc83c8a2401a542f95c48c09ea0a6",
+  "scope": "12 Native Java classes/16 item-save paths. No exact-wave jar or game runtime."
+}

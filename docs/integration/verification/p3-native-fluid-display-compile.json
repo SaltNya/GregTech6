@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_PASS",
+  "command": ":neoforge:compileJava :compileJava",
+  "elapsed": "23s",
+  "log": "work/p3-native-fluid-display-compile-20261001.log",
+  "logSha256": "84feff4add045170764f9dd837a50279c344e66310a39ed90a8b57d3bf071d39",
+  "scope": "Three complete fluid model/override/registration classes and actual Native proxy metadata, drink and capability adapters. Forge Java unchanged/up-to-date.",
+  "notProven": [
+    "Fluid actual UI sprite/tint/components/name rendering",
+    "Actual drink and fluid capability operations",
+    "Client resource reload",
+    "Dedicated server",
+    "Production jars",
+    "Core gameplay/world restart/old saves"
+  ]
+}

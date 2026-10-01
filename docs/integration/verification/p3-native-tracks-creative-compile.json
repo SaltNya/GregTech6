@@ -1,0 +1,307 @@
+{
+  "result": "PASS",
+  "date": "2026-10-01",
+  "tasks": [
+    ":core:compileJava",
+    ":neoforge:compileJava",
+    ":compileJava"
+  ],
+  "elapsed": "35s",
+  "log": "work/p3-native-tracks-creative-final-state-compile-20261001.log",
+  "logSha256": "69c8165dd5faee99b1eabb50e885c1590a71e9b8b805895fa800f1178f5db286",
+  "sourceFiles": [
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/platform/neoforge/GregTechNeoForge.java",
+      "sha256": "fecbb31bf92b7ba6e7185f137182e6ed793bc071cc9117a5e8d8c987fd38b17e",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": []
+    },
+    {
+      "target": "src/main/java/com/gregtech/gregtech/block/misc/PanelBlock.java",
+      "sha256": "5326d02b19e602517021ace216f6f28c2c71c140e6a839538fe426695948cc4b",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\PanelBlock.java",
+      "sourceSha256": "88ddd2771912ed9562f955488290082fab8e6f2af16bf1b7c66a1f0f08fae431",
+      "derivedFrom": []
+    },
+    {
+      "target": "src/main/java/com/gregtech/gregtech/block/misc/RoadStripeRailBlock.java",
+      "sha256": "10d2a5fddc4ca20bc6af285a7e541372b51a7f88aac292ad4be3fa4df24b2879",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\RoadStripeRailBlock.java",
+      "sourceSha256": "adad60873149e880e5b720ab60d93404b87e2fe6e4525ec9a4e9bf15a3fa667b",
+      "derivedFrom": []
+    },
+    {
+      "target": "src/main/java/com/gregtech/gregtech/block/misc/TrackBlock.java",
+      "sha256": "d0f6465cf111a7755ae124e3bd5f4eb476084d9ef739b72bbb410933f6f45859",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\TrackBlock.java",
+      "sourceSha256": "42dae09938a690303a3e9640762c95c151585ffef7db964a32def9a16f293495",
+      "derivedFrom": []
+    },
+    {
+      "target": "src/main/java/com/gregtech/gregtech/loaders/Loader_TrackRecipes.java",
+      "sha256": "3b2f622dceaadb5b676938c2b26340215d7722a5b6b186ec83456d9ab1d62d26",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\loaders\\Loader_TrackRecipes.java",
+      "sourceSha256": "cb092a15b182b072ec541d6a616869af1c6122dd64ba7969ab1b5a9bbb99362c",
+      "derivedFrom": []
+    },
+    {
+      "target": "src/main/java/com/gregtech/gregtech/mixin/AbstractMinecartSpeedCapMixin.java",
+      "sha256": "0e175d7514e0490c82646a4afce1575d64809535e8cdee4987386cdde7cf0e02",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\mixin\\AbstractMinecartSpeedCapMixin.java",
+      "sourceSha256": "a134411d92fd876f6d13741fdb60ddf7a9a04d8b6039d17cc8bbb2d2d53f3c00",
+      "derivedFrom": []
+    },
+    {
+      "target": "src/main/java/com/gregtech/gregtech/registry/GTCreativeTabs.java",
+      "sha256": "a7c09bf69bdb6f558202591bf4eb696c31c3d22e5e8e5d811e906cd8d7fc9dea",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTCreativeTabs.java",
+      "sourceSha256": "8c57e5a71801d8f8e7e7856fc4648cb17f95758a0b2ba7929a72c85bdf350ba1",
+      "derivedFrom": []
+    },
+    {
+      "target": "src/main/java/com/gregtech/gregtech/registry/GTMiscBlocks.java",
+      "sha256": "6382e879e9a8fc4bb500d61a9b58feb95993369a04d0b6cb243aeb3f7446c4cd",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTMiscBlocks.java",
+      "sourceSha256": "83b664d4b30db11974c09da3aba16d9691a7a0223264aa7b3b36975a5409abd2",
+      "derivedFrom": []
+    },
+    {
+      "target": "src/main/java/com/gregtech/gregtech/registry/GTTrackBlocks.java",
+      "sha256": "f9d392e45db114b5d3a725adaeb1834ef3cf993c647ad7b18a3d8c5ae0d9e940",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTTrackBlocks.java",
+      "sourceSha256": "8c56ff8fab76d5a621fac968797f1c2e10fd49f8722fb269c74d7a679f836f37",
+      "derivedFrom": []
+    },
+    {
+      "target": "core/src/main/java/com/gregtech/gregtech/content/creative/CreativeTabCatalog.java",
+      "sha256": "6ba89294baccaa1c014bb8c2add719949ceaef767153497cb73f346482c65fc9",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTCreativeTabs.java",
+          "sha256": "8c57e5a71801d8f8e7e7856fc4648cb17f95758a0b2ba7929a72c85bdf350ba1"
+        }
+      ]
+    },
+    {
+      "target": "core/src/main/java/com/gregtech/gregtech/content/transport/PanelCatalog.java",
+      "sha256": "cfaf24b2e84b946a426de8a06c31dd7c4fe6805d0fae675a2b76059273689385",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTMiscBlocks.java",
+          "sha256": "83b664d4b30db11974c09da3aba16d9691a7a0223264aa7b3b36975a5409abd2"
+        },
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\PanelBlock.java",
+          "sha256": "88ddd2771912ed9562f955488290082fab8e6f2af16bf1b7c66a1f0f08fae431"
+        }
+      ]
+    },
+    {
+      "target": "core/src/main/java/com/gregtech/gregtech/content/transport/TrackCatalog.java",
+      "sha256": "94a621b54fd2030365c79f63bcbc9f21f4e89f06c01f17becf6cd759f90991e9",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTTrackBlocks.java",
+          "sha256": "8c56ff8fab76d5a621fac968797f1c2e10fd49f8722fb269c74d7a679f836f37"
+        },
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\TrackBlock.java",
+          "sha256": "42dae09938a690303a3e9640762c95c151585ffef7db964a32def9a16f293495"
+        }
+      ]
+    },
+    {
+      "target": "core/src/main/java/com/gregtech/gregtech/content/transport/TrackMotionRules.java",
+      "sha256": "1b315be0f3aa1ba7560baf0d8cf34622d5bd4aa0d660325c30d405e78d04f9e7",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\TrackBlock.java",
+          "sha256": "42dae09938a690303a3e9640762c95c151585ffef7db964a32def9a16f293495"
+        },
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\RoadStripeRailBlock.java",
+          "sha256": "adad60873149e880e5b720ab60d93404b87e2fe6e4525ec9a4e9bf15a3fa667b"
+        }
+      ]
+    },
+    {
+      "target": "core/src/main/java/com/gregtech/gregtech/content/transport/TrackRecipeCatalog.java",
+      "sha256": "612f3c0b7d89fa036e1367c365f382bbbe50113431b2d6b4701943f4e1d7e8b5",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\loaders\\Loader_TrackRecipes.java",
+          "sha256": "cb092a15b182b072ec541d6a616869af1c6122dd64ba7969ab1b5a9bbb99362c"
+        }
+      ]
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/block/misc/GregLanternBlock.java",
+      "sha256": "a7a78e87bfcc98f0fbeac2813c95a3c286de873e588f78b5da5204588dd3d678",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\GregLanternBlock.java",
+      "sourceSha256": "d93e4f2f23e3d0f298b239d74e8306951441f4f0f9bac3febe8c17f44afa64dd",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/block/misc/PanelBlock.java",
+      "sha256": "5326d02b19e602517021ace216f6f28c2c71c140e6a839538fe426695948cc4b",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\PanelBlock.java",
+      "sourceSha256": "88ddd2771912ed9562f955488290082fab8e6f2af16bf1b7c66a1f0f08fae431",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/block/misc/RoadStripeRailBlock.java",
+      "sha256": "a2f57e7259a7d55f75015201db17ecac85ec0027f3c3f5b0dd37b520b7952bf4",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\RoadStripeRailBlock.java",
+      "sourceSha256": "adad60873149e880e5b720ab60d93404b87e2fe6e4525ec9a4e9bf15a3fa667b",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/block/misc/TrackBlock.java",
+      "sha256": "5758f60e317d957cefcebee02206e1613c7b8fa4f62aae5f2dd0e7aa44c4d514",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\block\\misc\\TrackBlock.java",
+      "sourceSha256": "42dae09938a690303a3e9640762c95c151585ffef7db964a32def9a16f293495",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/client/CreativeTabIconClientModels.java",
+      "sha256": "4ff911b4d461bdc300669592d6269047339a5caaf44f773d4ba95811b3962553",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\client\\CreativeTabIconClientModels.java",
+      "sourceSha256": "4ed6e4a9f5556ac790206fcf2d0904243b5fb26f5a44119dd2c29f043da3091a",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/client/PanelClientSetup.java",
+      "sha256": "33b907dbd3007f033abf685e10b796833846cac5e6f60ddff7b56d23e46d8b52",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/data/TrackCraftingRecipePack.java",
+      "sha256": "59698a46c9be1fd0d86878a07955bf6d2555b14fa724bc09cfa9d16dcb5744f3",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\loaders\\Loader_TrackRecipes.java",
+          "sha256": "cb092a15b182b072ec541d6a616869af1c6122dd64ba7969ab1b5a9bbb99362c"
+        }
+      ]
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/item/CreativeTabIconItem.java",
+      "sha256": "5cc103b78d24a4fd53e52552cbf9e42464189401c8eb6e7a941169bbce2a0439",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\item\\CreativeTabIconItem.java",
+      "sourceSha256": "5cc103b78d24a4fd53e52552cbf9e42464189401c8eb6e7a941169bbce2a0439",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/loaders/TrackRecipeReplacement.java",
+      "sha256": "f57016314326a8bac1fd2c67fd6b6322498531131cc77307b6faa6bafe474c12",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\loaders\\Loader_TrackRecipes.java",
+          "sha256": "cb092a15b182b072ec541d6a616869af1c6122dd64ba7969ab1b5a9bbb99362c"
+        }
+      ]
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/loaders/b/Loader_Creative.java",
+      "sha256": "2b0bbaf756d0eed09aeda4029102020d6ccc2e89a8846ed33b621c83a42442b4",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\loaders\\b\\Loader_Creative.java",
+      "sourceSha256": "bb38e8899047fd1cec4df7ff37e1867b14e28ef9cfe6367e0adc5bf5596a7aa8",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/loaders/b/NeoCreativeContents.java",
+      "sha256": "15fcc3c7ba90adf9468f2128d65fa2e467a8fb6edfe8a5db3cb8b9fab5635438",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\loaders\\b\\Loader_Creative.java",
+          "sha256": "bb38e8899047fd1cec4df7ff37e1867b14e28ef9cfe6367e0adc5bf5596a7aa8"
+        }
+      ]
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/mixin/AbstractMinecartSpeedCapMixin.java",
+      "sha256": "41f3d805540612b1e542e388ed0c0728df7dbf5c27ffc28f35d70cf812ceab56",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\mixin\\AbstractMinecartSpeedCapMixin.java",
+      "sourceSha256": "a134411d92fd876f6d13741fdb60ddf7a9a04d8b6039d17cc8bbb2d2d53f3c00",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/registry/GTCreativeTabIcons.java",
+      "sha256": "4a1c619220e182a9d5bf6ee9746f6625e81e568a667420b89e977fb717a57ef6",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTCreativeTabIcons.java",
+      "sourceSha256": "149990f4b4625eec0e55e2fb904b52a9771f8a2756cad6160b2dad3bc6068333",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/registry/GTCreativeTabs.java",
+      "sha256": "4330287c5c94e4b6294a8a84580d7d24728e8dc4ad9c37e430bc76ca56906561",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTCreativeTabs.java",
+      "sourceSha256": "8c57e5a71801d8f8e7e7856fc4648cb17f95758a0b2ba7929a72c85bdf350ba1",
+      "derivedFrom": []
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/registry/GTRemainingDecor.java",
+      "sha256": "d0b72bdc0572e11550156832387420319ef21917916036e86e171674eedd9785",
+      "source": null,
+      "sourceSha256": null,
+      "derivedFrom": [
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTDecorBlocks.java",
+          "sha256": "8e4f81942f572baf26f31b198c4697f398d76cffb9f6272c32d0e87c66c9c68b"
+        },
+        {
+          "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTMiscBlocks.java",
+          "sha256": "83b664d4b30db11974c09da3aba16d9691a7a0223264aa7b3b36975a5409abd2"
+        }
+      ]
+    },
+    {
+      "target": "neoforge/src/main/java/com/gregtech/gregtech/registry/GTTrackBlocks.java",
+      "sha256": "69f5b2e0c0ba6a82694e9a1d160152b5c49f82405caf3fb6ca36a14749082959",
+      "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\java\\com\\gregtech\\gregtech\\registry\\GTTrackBlocks.java",
+      "sourceSha256": "8c56ff8fab76d5a621fac968797f1c2e10fd49f8722fb269c74d7a679f836f37",
+      "derivedFrom": []
+    }
+  ],
+  "scope": {
+    "ordinaryTracks": 10,
+    "boosterTracks": 10,
+    "detectorTracks": 10,
+    "roadStripe": 1,
+    "lantern": 1,
+    "panels": 6,
+    "totalBlocks": 38,
+    "trackCraftingRows": 45,
+    "sourceSpecialCreativeFamilies": 19,
+    "resources": 255,
+    "javaRecords": 30,
+    "newCoreClasses": 5
+  },
+  "policy": "D010 grouped compile and API fixes only; no new fixture",
+  "notProven": [
+    "One existing native rendered TitleScreen short startup PASS1m40s,151 frames,1280x720 saved PNG; no new fixture or per-block start. This happened before the late shared booster redirect/Forge constructor fix and stationary-only wall-read adjustment. Those changes require later grouped runtime coverage, and this wave does not repeat the client.",
+    "The title-screen pass covers native mod/creative registry registration and model-loading startup only. Actual creative-page population/search/nav, icons/tints, world rail speed/curve/unload/cart activation/braking/reflector tools, pressure-detector behavior, panel placement, lantern orientation and actual crafting/reload of45 track rows are unverified.",
+    "Original inherited raw assets still produce7 invalid-path client log lines (spaces/uppercase/non-ASCII filenames); main menu completes despite them. This is not a claim of complete visual resources. Existing panel-cover hexadecimal underlay uppercase resource identity requires a subsequent paired resource/consumer normalization.",
+    "Minecart source cap mixin retains its original global positive setter behavior; interactions with third-party cart/rail mixins and high-speed chunk behavior are unverified. Runtime rail hooks transfer current speed after movement, an inherited timing issue requiring gameplay observation.",
+    "Dedicated startup for this exact batch, Forge runtime, both complete survival chains, independent-process world restart, old saves and production jar/release acceptance remain pending. Earlier dedicated startup does not cover this batch. Original source histories/authors/license notices retained, no permission text changed; full goal active."
+  ]
+}

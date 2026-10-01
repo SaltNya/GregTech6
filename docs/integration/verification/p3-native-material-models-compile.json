@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_PASS",
+  "command": ":neoforge:compileJava :compileJava",
+  "elapsed": "33s",
+  "log": "work/p3-native-material-models-compile-20261001.log",
+  "logSha256": "3e3471112b38d15e84d15400453a8ee3893279b21f53a7cba2fd2e4a3e2e7775",
+  "scope": "Eight complete Native model/color classes; unchanged Forge compilation up-to-date; no new fixture.",
+  "finalNativeJarBuild": {
+    "elapsed": "20s",
+    "path": "work/p3-native-material-models-final-jar-20261001.log",
+    "sha256": "0436b162815cf5941ea2b7986d3cf03bb1da15f0ae23e445cbfd56b531e27057",
+    "scope": "Final compile/Native jar plus unchanged Forge compile after removing unused ore material-template requests; no repeat client."
+  }
+}

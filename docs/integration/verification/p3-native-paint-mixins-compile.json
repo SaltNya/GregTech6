@@ -1,0 +1,11 @@
+{
+  "result": "COMPILE_PASS",
+  "platforms": [
+    "Forge1.20.1",
+    "NeoForge1.21.1"
+  ],
+  "elapsed": "41s",
+  "log": "work/p3-native-paint-mixins-compile-20261001.log",
+  "logSha256": "abb7ce102f76d2c3293b785bd9951790a9bcc475fbc8330bbd8135a9b9021b6a",
+  "scope": "Grouped Java compilation only; subsequent client invocation also compiles both final panel consumers"
+}

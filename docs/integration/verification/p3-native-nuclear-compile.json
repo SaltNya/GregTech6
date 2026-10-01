@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "elapsed": "27s",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "log": "work/p3-native-nuclear-compile-20261001-2.log",
+  "sha256": "3169fc1a7cc80edf7a1a3cd93759ffbbba2b7addd32a06d7ff4a83508d860a97",
+  "repair": "First compile28s failed on native explosion SoundEvent holder and registry-aware packet callback; both fixed.",
+  "policy": "D010 necessary grouped compile only, no new nuclear test fixture",
+  "notProven": [
+    "runtime registration/data",
+    "reactor gameplay",
+    "client renders",
+    "Forge runtime",
+    "world reload",
+    "old saves",
+    "fresh jars"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-01",
+  "result": "NATIVE_BUILD_AND_CHANGED_CLASS_PLATFORM_RESOURCE_PACKAGING_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "22735c7576220ae7383ad9def8851a9517cbb0936f4e39eb519ef00ef8cdf46d",
+  "bytes": 35797966,
+  "changedJavaStems": 11,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/client/MachineBlockClientModels.class",
+      "sha256": "4d214603bc23f8db8de7470036b5f1cdd668ce2c28c751d647b109ad711f6d60"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MachineBlockClientModels$1.class",
+      "sha256": "0f217be90fcaa169558b13c576c999aa58cd4e345205ad6869c803e4ff5fca67"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/CrucibleClientModels.class",
+      "sha256": "e60fa74874343ac0ea3f5d3935d2dc08b6bcbe0c6535a5f759fdc91fac227093"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/CrucibleBowlIcons.class",
+      "sha256": "b6f9c663efd6b227ae28873ded9fd24a2772c6ecc2a1dc9197c4a16ca904a943"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/CrucibleClientSync.class",
+      "sha256": "c2450cd36231e5ebb55ef88a329f03ce6e966f4d545ca06456ef67d938343ae7"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/CapsuleCellRenderer.class",
+      "sha256": "2755e17115d4414293319d0ab58d7f07b2622c9c3538d2e37c5112412aec1d80"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/BurningBoxClientSetup.class",
+      "sha256": "91233e265c39cc157dc97e05aac588ada331cf5b041822c6cfc17b147dce2edc"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/EngineClientSetup.class",
+      "sha256": "7c262b3eba05b8a60a1e1e60d98fc1e52955470568af99546a008d92cb0a4bef"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/EngineClientSetup$1.class",
+      "sha256": "ea593fd7a8fdb0d6b26489d209d9094cf51302f27ed6a03ace9534f4bb9ae81a"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MultiblockClientSetup.class",
+      "sha256": "71b5da63d0a2097e024a82570f8df291df5dd834c764ecad71b69171cadc4be5"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/PoweredToolClient.class",
+      "sha256": "21dc4f87b82fb30233b9409d112c740e3872d198b8c3c8bf3dc179942cf2ab51"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/CrucibleBlockBakedModel.class",
+      "sha256": "b1426c9140778a93f089e25f49c93d3ae622ed15a4c70eff33acba217a2192d1"
+    },
+    {
+      "entry": "com/gregtech/gregtech/platform/neoforge/smeltery/SmeltingCrucibleEntity.class",
+      "sha256": "4a5fdf07a4b816e873af17781e0722c2504713181e032db178d3d13da66f0a67"
+    },
+    {
+      "entry": "com/gregtech/gregtech/platform/neoforge/smeltery/SmeltingCrucibleEntity$1.class",
+      "sha256": "67e7809f4c8b77d69b6e4b8f751b57da4643afe3a3dce35ccc0e6846d7f0a055"
+    }
+  ],
+  "packagedBowlModelForksByteMatched": 41,
+  "scope": "Actual Native changed classes plus final platform 41 bowl JSON entries byte-matched to source/current compilation. Existing Forge jar exact original 41 models verified. Core unchanged, no repeated full resource audit or production jar launch.",
+  "finalBuildLog": {
+    "path": "work/p3-native-machine-models-final-jar-20261001.log",
+    "sha256": "f723d32aa7ce73afdddd4566ac3aa407f4e5917790a794196b890d441c2f17fd",
+    "elapsed": "20s"
+  }
+}

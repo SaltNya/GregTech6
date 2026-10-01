@@ -1,0 +1,49 @@
+{
+  "result": "PASS",
+  "elapsed": "1m59s after initial3m22s packaging failure",
+  "policy": "D010 one grouped ordinary Neo start for3 integration waves; only ZIP64 blocking repair triggered retry; no new subsystem fixture",
+  "log": "work\\p3-bumble-surface-terrain-startup-20261001-2.log",
+  "sha256": "c7f1fe1cd8148d36aa06768a4c44dd5d6a8c22d56ca652240143ec0380877940",
+  "startupReceipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "d93f59c0-33ae-49eb-b8e1-3228dc520b10",
+    "pid": 37740,
+    "specimenId": "ceb7b99a-f060-40d1-bcf4-87b917f73eaf",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-bumble-surface-terrain-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10525,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-bumble-surface-terrain-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1832,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-bumble-surface-terrain-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "observed": {
+    "beeScannerDisplayRows": 960,
+    "cropProcessingRows": 80,
+    "bumbleCraftingRows": 2,
+    "totalCraftingRows": 6421
+  },
+  "repair": "Shared core archive exceeded65535 entries. Enable zip64 on core jar and Neo production jar. Ordinary runtime loaded rebuilt core jar successfully; Neo production jar task not executed in this run. Existing Forge jars already use ZIP64.",
+  "nonblocking": "Mojang services public-key fetch read timeout; server ran200ticks and normally saved/stopped, no retry for this warning.",
+  "notProven": [
+    "Actual bee lifecycle/scan/harvest/crop/survival gameplay",
+    "Real newly generated terrain and cross-chunk mutation",
+    "Client models/screens/rendering",
+    "Forge runtime",
+    "Independent saved-world restart and old saves",
+    "Fresh Neo production jar packaging and production-jar startup"
+  ]
+}

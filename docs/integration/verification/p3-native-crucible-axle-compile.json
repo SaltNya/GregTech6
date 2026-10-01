@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_AND_NATIVE_JAR_PASS",
+  "command": ":neoforge:jar :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "elapsed": "39s",
+  "log": "work/p3-native-crucible-axle-compile-20261001.log",
+  "sha256": "a88622cc99be68d4ae6d6765cdb1a24e8d1a52164b5712120c9c2f5cdbe557cd",
+  "scope": "Native compilation/jar and unchanged Forge compile; no new fixture."
+}

@@ -1,0 +1,62 @@
+{
+  "result": "DEDICATED_STARTUP_PASS",
+  "date": "2026-10-01",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "f052fc3b-3702-479d-b7e5-62b5f739c579",
+    "pid": 61656,
+    "specimenId": "03784ec0-7e34-4466-9ea2-418a299de40b",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-engines-boilers-sandwich-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10519,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-engines-boilers-sandwich-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1844,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-engines-boilers-sandwich-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "elapsed": "1m 53s",
+  "log": "work/p3-engines-boilers-sandwich-startup-20261001.log",
+  "logSha256": "9101f43432a4f04048a38cc22fff15babbbb5e072d01800ae8d270ee4c8db168",
+  "command": ":neoforge:runServer -PdirectCoreResources=true -PdirectCoreClasspath=true -PserverDirectory=build/p3-engines-boilers-sandwich-startup-20261001 -PserverSmokePhase=prepare -PserverSmokeId=03784ec0-7e34-4466-9ea2-418a299de40b",
+  "policy": "D010 grouped existing ordinary dedicated startup, no new fixture",
+  "scope": "Native registration/data startup and fresh world save/normal stop; no engine/sandwich gameplay or independent restart",
+  "counts": {
+    "ordinaryEngineVariants": 59,
+    "electric": 5,
+    "flux": 5,
+    "steam": 14,
+    "strongSteam": 14,
+    "rotation": 13,
+    "diesel": 8,
+    "ordinaryBoilers": 26,
+    "sandwichBlocks": 1,
+    "totalBlocks": 86,
+    "newCoreClasses": 4,
+    "javaRecords": 37,
+    "resourceRecords": 181,
+    "nativeModelLoaderForks": 7
+  },
+  "notProven": [
+    "Actual engine EU/FE/RU/KU transfer, overload destruction, steam cycle/boiler explosion/gauge/tools, diesel fuel/exhaust and sandwich preparation/food/redstone/drop/render remain unverified. Creative-page contents/navigation and new client models/renderers were not started in this wave.",
+    "The Source1 diesel default energyOut omission is corrected on both platforms after the startup; actual transfer and previously stored face masks remain unverified. Base injection arithmetic lacks size/overflow validation but public accepting paths reject KU. Source1 also drains1L per fuel cycle regardless recipe fluid quantity, clamps excess cycle energy, empties invalid fuel, sends exhaust to FRONT despite BOTTOM mask and drains exhaust before target execute. These inherited gaps are not fixed or called complete.",
+    "Source1 rotation discards its consumed packet if KU is rejected; some piston/rotation phase/overload timers are transient. Source1 steam output drops unrecovered water and uses latched pressure; steam tooltip capacity/directions and rotation tooltip buffer do not exactly match runtime. Diesel has only common footer/material/tool tooltip. These are documented rather than represented as verified equivalence.",
+    "An engine/boiler/sandwich crafting definition was not found in Source1 recipe loaders/data by the relevant IDs/specs/holder references. No invented recipe or arbitrary vanilla ingredient fallback is added. Full survival reachability and remaining donor crafting definitions still need integration; this wave is runnable registration/executor coverage, not a survival-complete release.",
+    "Complete two-version survival chains, Forge runtime for this batch, independent-process world restart, old saves, production jars/release checks and remaining optional/source-unique systems remain pending. Source1 publication authorization remains unresolved; local integration proceeds with original history/authors/notices, no remote or publication action. Full goal remains active."
+  ],
+  "lateChangesNotCovered": [
+    "After the grouped startup, fix a directly demonstrated Source1 diesel wiring omission on both platforms: defaultFaceConfig configured fluid faces but no energyOutputs, while emitKu and isEnergyEmittingTo require that mask. Add FRONT KU output so a newly placed diesel engine can send its generated energy. Final dual-platform compilation passes19s. This late change is not covered by the earlier ordinary server boot; next grouped run/actual transfer must cover it. Previously saved explicit fc_energyOut=0 masks are retained, not silently rewritten; old-save behavior remains unverified."
+  ]
+}

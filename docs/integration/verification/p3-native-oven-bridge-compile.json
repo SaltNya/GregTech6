@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_AND_NATIVE_JAR_PASS",
+  "elapsed": "39s",
+  "command": ":neoforge:jar :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "log": "work/p3-native-oven-bridge-compile-20261001.log",
+  "sha256": "3bfa11cc570286f6338f2e52e973e2b4942dc4bc8cb889317f961a376af89d7c"
+}

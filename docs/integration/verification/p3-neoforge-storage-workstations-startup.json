@@ -1,0 +1,45 @@
+{
+  "result": "PASS",
+  "elapsed": "7m55s; runtime observation10.56s, most time static asset copy/build",
+  "log": "work\\p3-storage-workstations-startup-20261001.log",
+  "sha256": "65055f6994af8821c4190ba964ae5e60f160a8783e00f9ae6bda67e06c6cf6c7",
+  "startupReceipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "b14c0ad6-5069-4381-bbe9-d33df13e999f",
+    "pid": 45308,
+    "specimenId": "a44a9ead-67c6-4ec2-9759-1a0d8728e571",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-storage-workstations-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10560,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-storage-workstations-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1830,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-storage-workstations-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "covers": [
+    "315 bookshelf/safe/crafting-table variants registered",
+    "10 key and2 blueprint IDs registered",
+    "previous10 grass soils,19 construction/bars/spike blocks and4 stocked/coin pile blocks registered"
+  ],
+  "policy": "D010 one grouped ordinary Neo dedicated startup; no new fixture",
+  "notProven": [
+    "Placed block interaction/crafting/charging/lock security/shelf loot/piles/expiry",
+    "Rendering and actual terrain generation",
+    "Independent reload/old-save compatibility/Forge runtime",
+    "Model loader split and blueprint model relocation applied after this start",
+    "Optional directCoreResources path not used by this start; verify on next grouped start"
+  ]
+}

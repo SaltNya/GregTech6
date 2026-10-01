@@ -1,0 +1,29 @@
+{
+  "result": "PASS",
+  "date": "2026-10-01",
+  "commands": [
+    ":neoforge:compileJava :compileJava",
+    ":compileJava :neoforge:compileJava"
+  ],
+  "attempts": [
+    {
+      "log": "work/p3-shared-item-routing-compile-20261001.log",
+      "logSha256": "ddf1dc2a53bc7ed47c3f503eab9b7ea896af37fd8358a79743d4231296473c30",
+      "elapsed": "41s"
+    },
+    {
+      "log": "work/p3-shared-item-routing-final-compile-20261001.log",
+      "logSha256": "84ccbeaafcc7e5fe5563481d1748c0e0a56351972398e3842158a3a1917fd81b",
+      "elapsed": "12s"
+    }
+  ],
+  "scope": "Shared routing/transfer and both platform adapters; final compile after client resource/path repair. Final Java tasks were up-to-date from preceding successful compilations.",
+  "notProven": [
+    "Forge runtime parity",
+    "client world rendering",
+    "complete survival",
+    "independent saved-world restart",
+    "old saves",
+    "production jars"
+  ]
+}

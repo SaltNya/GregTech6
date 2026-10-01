@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-01",
+  "result": "BOOT_PASS_OBSERVATION_INCOMPLETE",
+  "specimenId": "895837af-bd09-4f08-b310-15ddf52ac9f4",
+  "pid": 63340,
+  "platform": "neoforge",
+  "minecraft": "1.21.1",
+  "loader": "21.1.243",
+  "runtimeLog": "work/p3-manual-utility-startup-20261001.log",
+  "runtimeLogSha256": "11eddd1279c59c3da4578a95e1c8633f25dacd7bf00d7eb40b40c64845fc21c2",
+  "bootEvidence": "[14:24:09] DedicatedServer Done (0.571s); registered mod content and loaded recipes/advancements into a fresh main world",
+  "fixedTickObservation": false,
+  "normalStopObserved": false,
+  "gradleResult": "FAILED after intentionally stopping the verified temporary server; process exit -1",
+  "controlProblem": "serverSmokePhase was omitted, leaving existing automatic observation/stop disabled. stdin was closed. Stopped only the verified temporary server process; no retry or new fixture.",
+  "scope": [
+    "120 new manual/vessel/utility block variants compile and participate in native registry loading",
+    "Existing automatic-tool powered anvil interface and full native anvil recipes registered",
+    "directCoreResources=true and directCoreClasspath=true launch ordinary server using core compiled classes and original resources; no core jar task"
+  ],
+  "notProven": [
+    "Fixed200 ticks or normal save-and-stop",
+    "Placed workstation/energy/recipe gameplay or rendering",
+    "Forge runtime and either client",
+    "Independent saved-world restart, old saves and production jars"
+  ],
+  "nextGroupedStartup": "Include -PserverSmokePhase=prepare -PserverSmokeId=<fresh UUID>; reuse existing ordinary startup fixture, without new subsystem tests."
+}

@@ -1,0 +1,37 @@
+{
+  "result": "TITLE_SCREEN_AND_JADE_PLUGIN_REGISTRATION_PASS",
+  "date": "2026-10-01",
+  "command": ":neoforge:runClient :neoforge:jar -PdirectCoreResources=true -PdirectCoreClasspath=true -PclientSmoke=true -PclientSmokeTimeout=300",
+  "elapsed": "2m 1s including jar packaging",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "timeoutSeconds": 300,
+    "elapsedMs": 57324,
+    "screenshot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-b98d5589-9509-4257-b571-8294ce6ad0d9.png",
+    "width": 1280,
+    "height": 720,
+    "renderedFrames": 151,
+    "screen": "net.minecraft.client.gui.screens.TitleScreen"
+  },
+  "screenshotSha256": "a7865b34cd7064f7f8616277eb2180aafcc358254bcaf433e14e6771340def58",
+  "screenshotVisuallyInspected": true,
+  "log": "work/p3-native-optional-client-jar-20261001.log",
+  "logSha256": "b4616b81976ce4a5c3f3ba29361620ecd0c8dbbffaddc083cacc4423e6aa8a01",
+  "loadedMods": {
+    "Jade": "15.10.6+neoforge",
+    "Just Enough Items": "19.57.0.450"
+  },
+  "jadePluginRegistrationObserved": true,
+  "jeiWorldTimeRegistrationObserved": false,
+  "scope": "Actual rendered title screen and real Jade GT plugin discovery/bootstrap/registration, not actual world/UI/provider invocation.",
+  "notProven": [
+    "JEI category/recipes world-time registration",
+    "Jade actual HUD and packets",
+    "Structure previews and interactions",
+    "Production jar launch",
+    "Dedicated server optional integrations",
+    "Core gameplay/save reload/old worlds"
+  ],
+  "knownResourceGaps": "Inherited resource variant/model warnings persist; menu appearance does not prove world rendering."
+}

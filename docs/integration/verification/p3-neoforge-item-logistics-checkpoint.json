@@ -1,0 +1,70 @@
+{
+  "platform": "neoforge",
+  "minecraft": "1.21.1",
+  "phase": "prepare",
+  "sessionId": "449ae466-2764-468e-a0b6-75f8abce9056",
+  "pid": 10492,
+  "specimenId": "ba57bb7d-d004-4d93-b1ba-bc63b3005075",
+  "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+  "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-item-logistics-startup-20261001-r3\\world",
+  "x": 8,
+  "y": -48,
+  "z": 8,
+  "dirtX": 9,
+  "dirtY": -48,
+  "dirtZ": 8,
+  "copperCount": 3,
+  "ironCount": 1,
+  "observedTicks": 200,
+  "elapsedMs": 10766,
+  "restartWorldReadVerified": false,
+  "normalStopObserved": true,
+  "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-item-logistics-startup-20261001-r3\\world\\level.dat",
+  "levelDatBytes": 1801,
+  "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-item-logistics-startup-20261001-r3\\world\\region\\r.0.0.mca",
+  "regionBytes": 1990656,
+  "result": "PASS",
+  "scope": "grouped item logistics native checkpoint",
+  "elapsed": "1m38s",
+  "log": "work/p3-item-logistics-neoforge-checkpoint-20261001-r3.log",
+  "logSha256": "f8e8f2e7888b6501048272750e118005009410f446cb06a5baa4da0f124e394c",
+  "commands": [
+    ":compileJava",
+    ":neoforge:runServer -PitemLogisticsSmoke=true -PserverSmokePhase=prepare -PserverSmokeId=ba57bb7d-d004-4d93-b1ba-bc63b3005075 -PserverDirectory=build/p3-item-logistics-startup-20261001-r3"
+  ],
+  "checks": [
+    "126 actual pipes and 60+60 hopper registries",
+    "343 actual pipe Welder/bundling rows",
+    "native sided capabilities and insert simulation",
+    "item filter components and capability invalidation",
+    "512-count native buffer save/load/update tag",
+    "normal first exact emission four out of eight",
+    "normal mode and inventory save/load",
+    "FIFO distinct component order across initial cooldown and external extraction without manual wake",
+    "actual two-pipe route after 80 real server ticks, no duplication/backflow",
+    "200 ticks and normal world save/stop"
+  ],
+  "limits": [
+    "no client gameplay/visual proof",
+    "no Forge runtime logistics proof",
+    "no independent JVM reload of logistics fixture",
+    "no full survival/tier/source matrix",
+    "no old-save compatibility or production jar proof"
+  ],
+  "previousAttempts": [
+    {
+      "log": "work/p3-item-logistics-neoforge-checkpoint-20261001.log",
+      "logSha256": "f92aec6c7b4c412dd1f23f61c49a665e27f07f2237aa8a5af2dfaa75c0193823",
+      "result": "FAIL",
+      "reason": "fixture compilation: vanilla/GT HopperBlockEntity wildcard ambiguity",
+      "elapsed": "3m23s"
+    },
+    {
+      "log": "work/p3-item-logistics-neoforge-checkpoint-20261001-r2.log",
+      "logSha256": "633c480de613ae152ea75873fe27aebf86bdc4d48f2506bfd5fcbb937f1e4e3c",
+      "result": "FAIL",
+      "reason": "runtime FIFO insertion failed: baseline cleared wake notification during cooldown; Gradle exit success does not count as game success",
+      "elapsed": "4m25s"
+    }
+  ]
+}

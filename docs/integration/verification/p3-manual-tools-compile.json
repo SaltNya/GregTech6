@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-01",
+  "parent": "05666b4376bfe6fd6f85d904222ffbaf7fb34b7b",
+  "scope": "native 37 manual tools, four action behaviors, crucible extraction, component storage, client layers and original crafting serializers/datapack",
+  "command": "./gradlew.bat --console=plain :neoforge:compileJava :compileJava",
+  "result": "core/NeoForge/Forge Java compile passed",
+  "elapsed": "14s final; initial 22s failed",
+  "fixedNativeCompileErrors": [
+    "Additional model registration requires ModelResourceLocation.standalone",
+    "native burning-box Ignitable interface declaration",
+    "inherited toolsUsable(CraftingInput) helper"
+  ],
+  "developmentCheckpointCompile": "Fixture-only native factory/cast mismatches fixed; bootstrap checkpoint compiled and executed by successful 4m28s ordinary-server run",
+  "logs": [
+    {
+      "path": "work/p3-manual-tools-actions-recipes-compile-20261001.log",
+      "sha256": "30a8ed2be85ab2a73a416e975bfcf36f370a7fa7ee10a6d840b41142e1c5d1a5",
+      "passed": false
+    },
+    {
+      "path": "work/p3-manual-tools-actions-recipes-compile-20261001-r2.log",
+      "sha256": "dec78196765555fbc0bc62b44baee363d4a23e5d1e68cc40d4c139e70c5f8264",
+      "passed": true
+    },
+    {
+      "path": "work/p3-manual-tools-checkpoint-compile-20261001.log",
+      "sha256": "47df1704a3b802f6c7e6513268c806529d5c43369a661b38ab2a8860ce58890e",
+      "passed": false
+    }
+  ],
+  "runtime": "Neo ordinary DedicatedServer and selected manual crafting/component/three network serializer checks passed; p3-neoforge-manual-tools-checkpoint.json",
+  "notVerified": [
+    "graphical client/tool rendering",
+    "world tool behavior/igniter/plunger/wand/extraction",
+    "independent JVM world reload",
+    "old saves",
+    "full powered tools",
+    "new production jar"
+  ]
+}

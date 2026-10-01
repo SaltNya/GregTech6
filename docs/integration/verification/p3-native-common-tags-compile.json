@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-02",
+  "result": "COMPILE_PASS",
+  "command": ":neoforge:compileJava :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "elapsed": "17s",
+  "log": "work/p3-native-common-tags-compile-20261002.log",
+  "sha256": "d2797ab8928e50e7d9debd9bcddd10e5a734bb840a4079ab8f761de4178fadef",
+  "scope": "One Native Java change; Core/Forge/resource files unchanged. No exact-wave runtime or jar."
+}

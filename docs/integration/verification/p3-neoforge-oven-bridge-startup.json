@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-01",
+  "result": "DEDICATED_STARTUP_PASS",
+  "elapsed": "2m 3s",
+  "log": "work/p3-native-oven-bridge-server-20261001.log",
+  "sha256": "ed428721852fc08596d039899947bcd3d93029d284879c8b044a7662e10e5581",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "093cdec6-ec1e-47fe-9017-d5e64038f04f",
+    "pid": 3840,
+    "specimenId": "46a7b5c2-88c9-4175-abff-149603e9c284",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-oven-bridge-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10676,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-oven-bridge-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1902,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-oven-bridge-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "observedGenerationAndBridgeCounts": {
+    "materialGrid": 26226,
+    "wireSize": 1620,
+    "pipeSize": 80,
+    "masonryRows": 597,
+    "rockTypes": 27,
+    "masonrySkipped": 132,
+    "bedrockFlower": 21,
+    "vanillaToOven": 75,
+    "neverFurnaceRewrites": 0,
+    "gtToVanillaFurnace": 1825
+  },
+  "recipeManagerTotalBeforeRuntimeBridge": 34359,
+  "scope": "Actual Native generators/codec loading for current oven and previous material/stone/flower recipe waves, existing 200-tick dedicated startup and normal save/stop. Counts describe generation/bridge operations, not individual gameplay. Runtime manager final total was not independently enumerated.",
+  "knownBaselineGapsAndNotProven": [
+    "NEVER_FURNACE detection currently accepts MaterialItem only on both platforms; vanilla iron ingots are not rewritten by this gate. Startup observed zero rewritten rows.",
+    "Source firstStack normalizes input AND output count to one for GT-to-vanilla mirrors. This parity port does not repair multi-output quantities.",
+    "Source firstInput mirrors only the first ingredient variant into the GT map. All tag variants are not proven supported.",
+    "Actual datapack reload/idempotency, crafting/smelting behavior, tool remainders, client/world rendering, production jar startup and separate-process saved-world restart/old saves remain unverified."
+  ]
+}

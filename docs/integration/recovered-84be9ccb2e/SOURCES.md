@@ -1,0 +1,59 @@
+# 来源与贡献记录
+
+更新：2026-09-30。本文件记录来源归属和采用边界；功能完成以 `STATUS.md`、`VERIFICATION.md` 的当前证据为准。
+
+## 三个来源快照
+
+- **saltnya / gregtech6reborn**：`F:\Dev\GregtTech6New\Libs\gregtech6reborn`。用户指定为初始基础及功能保留基准。完整文件树已复制到整合目录；原始快照的本地导入提交为 `415617825945a9f54b11fdc359ff9b3cf694c8cd`，标签为 `import/saltnya-snapshot`。这是新仓保存的快照，不是 saltnya 的原始提交历史。基线为 Minecraft 1.20.1 Forge；没有现成 NeoForge 模块。许可范围待核实。
+- **brokestar233 / gregtech6-main**：`F:\Dev\GregtTech6New\Libs\gregtech6-main`。具有 1.20.1 Forge / 1.21.1 NeoForge Stonecutter 共享源方案。作为逐系统实现及平台适配候选，尚未整体导入运行时。归档没有 `.git`，且 `third-party/modularui` 为空；缺少实际 gitlink 与可构建 fork。代码声明 LGPL-3.0-or-later，资产包含不同许可，不可统一标为 CC0。
+- **masson / cruciblecraft**：`F:\Dev\GregtTech6New\Libs\cruciblecraft`。具有 NeoForge 1.21.1 实现、质量/能量算术、事务执行和逐文件来源政策。作为纯逻辑、平台实现及验证候选，尚未整体导入运行时。作者声明为 Lorbineitte Masson，代码 LGPL-3.0-or-later；作者自写资源、GT6 默认资产、MDK、参考副本需分别记账。
+
+三份来源都是无 Git 元数据的本地文件快照。作者标识 saltnya、brokestar233、masson 来自用户说明，不能推定快照内每个文件均由该作者独立创作。上游作者头、第三方来源和已存在许可保持原文；可获得原仓 clone/bundle 后，另记录 URL、实际 ref/SHA、快照对应关系和来源中的未提交差异。
+
+## 可获得原始历史的准确入口
+
+2026-09-30执行只读 `git ls-remote --symref <源码已出现的URL> HEAD`，未设置新项目origin，未保存/改写第三方历史。以下只证明远程当前可达及所返回ref；不证明提供的文件快照已经与该历史对应：
+
+- brokestar README:3,46,88出现的 [Meow404club/gregtech6](https://github.com/Meow404club/gregtech6)：公开读取成功，`refs/heads/main` 当前HEAD为 `f009fc3cbba5dd833d775b9a7c7ed4c8294865a0`。可在 `work/upstream-history` 保存完整bare clone后逐文件/tree对照；恢复ModularUI需读取匹配提交的gitlink，不采用归档注释里的旧SHA。
+- masson模板neoforge.mods.toml:4,10与CREDITS:7出现 [icodestuljh/cruciblecraft](https://github.com/icodestuljh/cruciblecraft)；README:13出现 [lombinaxmasson/cruciblecraft](https://github.com/lombinaxmasson/cruciblecraft)。两个准确URL均可公开读取，返回 `refs/heads/master`、HEAD `2ba4e4b60f7a770360b2ec7ca2adad3507ec4a28`。同HEAD尚不能证明两者全ref一致或发生重定向；先保留两条来源记录，再保存一个完整历史并核对快照，不能猜作者remote归属。
+- saltnya快照中README、mod元数据、全部Markdown/properties/toml与脚本扫描仅找到Forge/MCPConfig、toml-lang公共链接，没有项目自身仓库URL。该源仍需作者提供准确仓库或bundle/备份，不能按作者名称猜仓库。
+
+历史保存与快照对应核对的完成状态以主线记录为准。精确可达URL是历史恢复线索，不授权在该owner下发布新项目；也不把从远程读取的当前HEAD伪装为原本解压快照的commit。
+
+逐文件 SHA-256 清单在 `provenance/`，其中的 `git_metadata_available=false` 明确历史缺失。清单描述被提供的文件；不替代授权、功能验收或缺失子模块。原文审计保存在：
+
+- [saltnya 审计](audits/audit-saltnya.md)
+- [brokestar233 审计](audits/audit-brokestar.md)
+- [masson 审计](audits/audit-masson.md)
+
+## 原始归属与分项证据
+
+`audits/notices/<source>/` 保存本次可获得的原始许可、credits、notice、mod 元数据和相关资产授权证据的字节副本。文件名带 `source-` 的元数据副本不是整合项目生效的配置。缺失文件明确写入 [许可证核查](LICENSE_REVIEW.md)，不由新的统一声明填补。
+
+- GT6 原作归属 Gregorius Techneticies / GregTech-6 Team。brokestar 的代码头保留 LGPL-3.0-or-later 与部分原始版权；masson 的来源记录固定 GT6 ref `3703e40308c8c030763fd6297dea8b210d2a77b1`。该 ref 只证明其声明的参考来源，尚未核对三源全部文件是否来自该提交。
+- ModularUI 归属 brachy84 / ModularUI-Modern；brokestar 的 fork 地址是 Meow404club/modularui。当前缺 fork 源码和 gitlink；不猜测 commit，不把 LGPL-3.0 改为 or-later。
+- amazawa UI 归属天沢香 / tfc-amazawa-light-gui v1.0.5g。brokestar 的资产 manifest 声明 Apache-2.0，并有允许该高版本移植借用及要求署名的截图。这一分项不能被其根 README 的 CC0 概述覆盖。
+- masson 保留 GTM `de5d2c4a4c863b94a10bfb5d0839df2de8246628` 的管几何/命名参考记录；不视为当前模组运行依赖，也不把参考副本加入生产源码集。
+
+## 新整合的贡献记录格式
+
+每次采用、改写或替代记录到 `DECISIONS.md` 或对应系统记录，并包含：
+
+1. 功能、整合文件范围、来源文件路径及 SHA-256/可获得的原始提交。
+2. 原作者、许可证和资产分项证据；第三方原文保留位置。
+3. 三源行为比较、采用/替代/延后理由、基线功能是否保留。
+4. registry ID、material ID、单位、配方、NBT/组件及网络兼容变化。
+5. 执行过的构建/行为检查、输入夹具、结果路径与整合 Git commit；未执行项及已知缺口。
+
+不要把自己的导入提交冒充原作者提交，也不要为恢复历史重写作者信息。已有源头引用要随抽取代码保留；仅作研究比较的未采用代码与真正分发内容区分记账。GitHub 远程所有者由用户提供，本文件出现的来源 URL 不授权把新仓发布到该所有者名下。
+
+## 已恢复的原始历史与准确快照对应
+
+2026-09-30 已将公开原始仓库的分支和标签历史 fetch 到本地Git独立refs，保留原始提交和作者：
+
+- brokestar：`upstream-brokestar/main` 可达3055个提交。用户快照并非当前远程HEAD；完整220275个tracked文件的SHA-256与 `3118acbf83a84d05fa37d57af1705cf00e423ca9` 全部一致，无改变/缺失/额外文件。本地标签 `source/brokestar233-snapshot` 指向这个原始提交。
+- masson：`upstream-masson/master` 可达202个提交，完整61192个tracked文件与 `2ba4e4b60f7a770360b2ec7ca2adad3507ec4a28` 全部一致。本地标签 `source/masson-snapshot`。
+- brokestar原快照的ModularUI gitlink为 `ec524db7a5724f8cf3c837436b1ae742c778c62f`；已获取 `https://github.com/Meow404club/modularui.git` 历史并建立 `source/modularui-brokestar-snapshot` 标签。恢复的是引用和历史，未在运行时导入ModularUI。
+- saltnya 的原Git仓仍未提供，只有 `import/saltnya-snapshot` 的本地原字节文件快照和hash清单。不能伪造其原作者提交。
+
+匹配证据在 `provenance/brokestar-history-snapshot-match.json`、`masson-history-match.json`；当前brokestar HEAD的差异报告单独保留以避免误认。上述原历史尚未合入整合主分支，不意味着采用了整套代码，也不是新项目origin。备份本地仓库时保留 `.git` 或用 `git bundle create work/history-backup.bundle --all` 保存所有原refs；日后发布新远程时先约定如何迁移这些历史refs。

@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-01",
+  "parent": "b30c7d968511a9a8a823dfd3202fbd0dfbabdb6e",
+  "scope": "four real powered tools, shared catalog/wear, three mining charges/fuse entity/drilling/remote behavior, concrete material/LV battery crafting codecs/datapack and implosion recipes",
+  "command": "./gradlew.bat --console=plain :neoforge:compileJava :compileJava",
+  "result": "core/NeoForge/Forge Java compile passed",
+  "elapsed": "27s final; first 27s failed at five API issues",
+  "fixes": [
+    "native registry ResourceLocation namespace",
+    "Explosion damage source boundary",
+    "removed onBlockStartBreak: native BreakEvent subscriber, LOWEST, no canceled events"
+  ],
+  "logs": [
+    {
+      "path": "work/p3-powered-tools-compile-20261001.log",
+      "sha256": "b3d25917cde06ea34824ba497ae9476eb6a278fffd5d246658a321176dc00d90",
+      "passed": false
+    },
+    {
+      "path": "work/p3-powered-tools-compile-20261001-r2.log",
+      "sha256": "4c51f728e994722106a9b3873c81ca23745d38cce62464a121316ee33ce1ecbb",
+      "passed": true
+    }
+  ],
+  "runtime": "Neo ordinary DedicatedServer and opt-in powered checkpoint passed; see p3-neoforge-powered-tools-checkpoint.json",
+  "notVerified": [
+    "graphical client",
+    "drill placement/full blasting",
+    "chainsaw leaves/ice world drops",
+    "independent JVM world reload",
+    "full survival",
+    "old saves",
+    "new production jars"
+  ],
+  "postCompile": "Native MultiItem remote factory fixed and compiled by successful 1m32s server retry; remote source-only assets added after server run."
+}

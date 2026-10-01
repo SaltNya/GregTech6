@@ -1,0 +1,41 @@
+{
+  "result": "PASS",
+  "policy": "D010 grouped necessary compile only",
+  "runs": [
+    {
+      "log": "work/p3-native-multiblock-machines-compile-20261001.log",
+      "sha256": "d81e4f3cb0c5590f65bf46dc758229b79b4751d3fb618fb4f094d740dcaac193",
+      "result": "FAIL: 5 native covers/DeferredHolder API errors"
+    },
+    {
+      "log": "work/p3-native-multiblock-machines-compile-20261001-2.log",
+      "sha256": "2d6dff91640ce1b2f3f89b329fde3695cb86ab69671321ee957b32e64f908f20",
+      "result": "PASS: core/Neo/Forge 27s"
+    },
+    {
+      "log": "work/p3-native-multiblock-fusion-compile-20261001.log",
+      "sha256": "c3ecc95afe7b484206d772590899d2a4d6956dcfbbdb9a69c10b2bc7b3de70d5",
+      "result": "PASS: core/Neo/Forge 20s"
+    },
+    {
+      "log": "work/p3-native-multiblock-heat-compile-20261001.log",
+      "sha256": "231988da583bba345c98fe8d8399f991597b24bcedce3cc55d1bf648ea63a1fb",
+      "result": "FAIL: DeferredHolder isPresent obsolete"
+    },
+    {
+      "log": "work/p3-native-multiblock-heat-compile-20261001-2.log",
+      "sha256": "898ecd7fa4e8209043d2a991b9e16e06de0699cd36d84b9b944b51776e9fc01b",
+      "result": "PASS: core/Neo/Forge 19s"
+    }
+  ],
+  "notProven": [
+    "actual structures/ownership conflicts and re-forming",
+    "item/fluid/energy processing and conservation",
+    "fusion startup and power generation",
+    "client rendering",
+    "Forge runtime",
+    "independent saved-world restart",
+    "old saves",
+    "production jars"
+  ]
+}

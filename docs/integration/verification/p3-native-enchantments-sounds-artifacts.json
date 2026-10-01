@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_AND_DEFINITIONS_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "50ae28bdd79589c689d6aa25f1c69026a0b48b76f6adebbd55ef55043651f99f",
+  "bytes": 35878881,
+  "verifiedCurrentEntries": [
+    {
+      "entry": "com/gregtech/gregtech/registry/GTSounds.class",
+      "sha256": "e1e76648e8cd5d544d326e9f279978f6631d403bff6c3e517e332a33008b5689"
+    },
+    {
+      "entry": "com/gregtech/gregtech/platform/neoforge/GregTechNeoForge.class",
+      "sha256": "4dd0a1a754f2b62b69059a1a1f2b49e8e7009edd22331ae9702de5e054fbaf86"
+    },
+    {
+      "entry": "data/gregtech/enchantment/disjunction.json",
+      "sha256": "1099ebcff609b1ff5d9e457a23b1899a039d04acf48bdc7de8e7754ad8bc1f4b"
+    },
+    {
+      "entry": "data/gregtech/enchantment/butchery.json",
+      "sha256": "7603c2e11a44e849f66695fa49e2ad0d3d27da717cce9db6198e44a5f643b25b"
+    },
+    {
+      "entry": "data/gregtech/enchantment/gt_haste.json",
+      "sha256": "a2ee16e99799155d968737683170b4e52c9c523bae62e60bade7ba250b7485a6"
+    },
+    {
+      "entry": "data/gregtech/enchantment/sharpness_multi.json",
+      "sha256": "cb704b3c627dfb91ff79906eb98ecc0620274d975d163d8a9c0a9b73e9d4ef37"
+    },
+    {
+      "entry": "data/gregtech/enchantment/smite_multi.json",
+      "sha256": "0126a908e4d94b57029b732dd6252e9a4385234d245d743b75e130d6b3116186"
+    },
+    {
+      "entry": "data/gregtech/tags/item/enchantable/digger.json",
+      "sha256": "e0ec63f54d966dae2261ef3cbac748b874c321b1e02351ebb2c16f740fc93a39"
+    },
+    {
+      "entry": "data/minecraft/tags/enchantment/non_treasure.json",
+      "sha256": "746249f6ca7acd55331ebd6386aa43eb0d601bfe0a69630549b7c6e34e7cd309"
+    },
+    {
+      "entry": "data/minecraft/tags/enchantment/tooltip_order.json",
+      "sha256": "746249f6ca7acd55331ebd6386aa43eb0d601bfe0a69630549b7c6e34e7cd309"
+    },
+    {
+      "entry": "assets/gregtech/sounds.json",
+      "sha256": "ad311c54083a0ec02ae1f21fe8dca875e7e79d4bfaf8f7dd535b8cee14921466",
+      "reusedOriginalAsset": true
+    },
+    {
+      "entry": "assets/gregtech/sounds/wrench.ogg",
+      "sha256": "48e452e2d716ac3f455c58502a433a263cbc8e257eec63bd6ee4a7799cef27f3",
+      "reusedOriginalAsset": true
+    },
+    {
+      "entry": "assets/gregtech/sounds/screwdriver.ogg",
+      "sha256": "ec2efad4a1b0ee4c7c8ffc24c03875d0227c9d8833cfad5dfaece33a10be1432",
+      "reusedOriginalAsset": true
+    },
+    {
+      "entry": "assets/gregtech/sounds/beep.ogg",
+      "sha256": "1bfd91c6e42ed593541edd709f4bf7a995cb37c7a919a7ba436b581713f3610e",
+      "reusedOriginalAsset": true
+    }
+  ],
+  "scope": "Two current classes/eight new resource entries plus unchanged original sound declaration/threeOGGs match actual jar. Exact Minecraft metadata checked. Core/Forge unchanged; no repeated full audit or production jar launch."
+}

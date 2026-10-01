@@ -1,0 +1,63 @@
+{
+  "platform": "neoforge",
+  "minecraft": "1.21.1",
+  "phase": "prepare",
+  "sessionId": "96fd0c83-422d-4ae2-adfc-ec086e5488ae",
+  "pid": 45152,
+  "specimenId": "8b28e6bc-c39e-43d1-8527-5a3586f1e5c8",
+  "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+  "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-manual-tools-startup-20261001\\checkpoint-world",
+  "x": 8,
+  "y": -48,
+  "z": 8,
+  "dirtX": 9,
+  "dirtY": -48,
+  "dirtZ": 8,
+  "copperCount": 3,
+  "ironCount": 1,
+  "observedTicks": 200,
+  "elapsedMs": 10524,
+  "restartWorldReadVerified": false,
+  "normalStopObserved": true,
+  "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-manual-tools-startup-20261001\\checkpoint-world\\level.dat",
+  "levelDatBytes": 1785,
+  "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-manual-tools-startup-20261001\\checkpoint-world\\region\\r.0.0.mca",
+  "regionBytes": 929792,
+  "date": "2026-10-01",
+  "scope": "Native original manual-tool registration/data recipes; selected real crafting/wear/rejection/component storage and serializer stream checkpoints",
+  "runtimeLog": "work/p3-manual-tools-neoforge-startup-20261001.log",
+  "runtimeLogSHA256": "7313ce0174d915ffea4fc0825d2c1ba014f9dbb8b1cc2ece51df5369f54274c9",
+  "gradleElapsed": "4m28s",
+  "toolRecipeRows": {
+    "shaped": 48,
+    "assemblies": 20,
+    "heads": 35,
+    "toolKindsWithoutAnyManualRow": []
+  },
+  "loadedVanillaRecipes": 1630,
+  "manualChecks": {
+    "shapedWrench": true,
+    "rejectWrongShape": true,
+    "hammerWear": 400,
+    "headHandleAssembly": true,
+    "headCrafting": true,
+    "nativeStackComponentRoundTrip": true,
+    "threeSerializerNetworkRoundTrips": true
+  },
+  "sourceParent": "05666b4376bfe6fd6f85d904222ffbaf7fb34b7b",
+  "command": "./gradlew.bat --console=plain :neoforge:runServer '-PserverDirectory=F:/Dev/GregtTech6New/gregtech6/neoforge/build/p3-manual-tools-startup-20261001' '-PserverSmokePhase=prepare' '-PserverSmokeId=8b28e6bc-c39e-43d1-8527-5a3586f1e5c8' '-PmanualToolSmoke=true'",
+  "knownNotes": [
+    "Offline localhost Yggdrasil public-key fetch timed out; game/startup/selected tool checks succeeded",
+    "Actual selected RecipeManager rows and serializers exercised in server JVM; not client session proof"
+  ],
+  "notVerified": [
+    "all material/tool recipes",
+    "full survival material acquisition",
+    "client models/recipe viewer",
+    "world ignition/plunger/wand/crucible scrape gameplay",
+    "independent JVM world reload",
+    "old saves",
+    "new production jars",
+    "full powered tools"
+  ]
+}

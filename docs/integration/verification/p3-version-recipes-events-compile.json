@@ -1,0 +1,20 @@
+{
+  "result": "COMPILE_PASS",
+  "platforms": [
+    "Forge1.20.1",
+    "NeoForge1.21.1"
+  ],
+  "logs": [
+    {
+      "path": "work\\p3-version-recipes-events-compile-20261001.log",
+      "sha256": "13168f9d83a7535ca01a3139bc57064104531a1db6e68ff3085622fa8721787a",
+      "elapsed": "22s"
+    },
+    {
+      "path": "work\\p3-version-fusion-loot-compile-20261001.log",
+      "sha256": "a7ce17e21f73d1fda0433e0c6766929082ee9065807a72a551d95b203914747c",
+      "elapsed": "13s"
+    }
+  ],
+  "scope": "Compilation of complete recipe/event batch plus late Fusion/Matter/loot crate. Final literal loot-crate properties and unchanged resource move are compiled/processed by subsequent packaging invocation."
+}

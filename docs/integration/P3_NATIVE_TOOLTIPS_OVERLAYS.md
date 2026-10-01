@@ -1,0 +1,17 @@
+# 双版本初期对齐：材料提示、工具选面及原指示显示
+
+按D011复用既有Forge源码、docs/RENDERING_AND_MATERIAL_VALIDATION.md及手动工具/机器阶段MD。本批完整10个Native类与3个既有回调适配，13个Java来源记录；不新增donor功能或第二套材料/配方/工具系统。
+
+MaterialTooltips与MaterialTooltipHandler恢复材料物品、材料块/石材/半砖及既有外部物品组成提示，包括Q/S/D、化学式、燃烧HU、可燃性、先进模式物质单位/重量/温度、来源模组和加工目标。接回MaterialItem/MaterialBlockItem自身appendHoverText；外部物品从实际ItemMaterialRegistry读组成，保留原不可恢复/描述类提示。Native原tag pack同时提供forge/c别名，原forge提示命名沿用已有实际标签。
+
+完整无序转化提示索引及serverStarted/clientRecipesUpdated接线复用原17个prefix链及实际ShapelessRecipe扫描。1.21.1从RecipeHolder.value读取配方，结果使用真实server/client registry provider，不能通过null伪造物品结果。额外server datapack reload钩子及索引内容一致性未检查，当前不声明全部重载支持。
+
+GTRenderHelper/GTWrenchOverlay/ToolFaceOverlay/SlabPlacementOverlayRenderer保留原九宫格、线框、X/角标和半砖手持门控；选面与可行性直接消费已有ToolInteractions，与实际服务端工具共用同一规则。ClientTickEvent.Post代替旧phase.END，VertexConsumer使用addVertex/setColor/setNormal，保留矩阵法线和原脉冲/透明深度状态行为。实际世界camera/位置/GL恢复仍待检查。
+
+原大型锅炉pressure barometer完整32档双层正面图绘制恢复Native原BE类型，33个既有共享sprite原样复用；采外侧光照及实际barometerValue，未造图/新造计量值。基岩指示花提示按既有BedrockFlowers目录和实际物品ID显示矿床/现实标记。
+
+两次必要集中编译24s/13s通过；单次既有Neo普通专服加Native打包1m46s通过，200tick、正常三维度保存退出，Jade GT插件也在专服发现/注册。没有新增夹具、反复客户端或真实交互检查。发布格式jar内本批类已与实际编译输出逐字节比对；未变共享core/资源不重复全量验包，Forge上一包复用。
+
+未验证：本批客户端启动、实际提示/索引内容、工具选面与半砖、压力表/花提示画面、server数据重载、真实流体能力/饮用、JEI/Jade实用、生产jar运行、完整玩法、独立重载和旧档。普通保存退出不是保存后再次加载。此前41坩埚模具loader修正也尚未再次客户端实跑。原完整三源goal仍active，不能把编译或专服启动写成功能完成。
+
+Neo实际平台边界补充：已读取当前moddev neoforge-21.1.243-merged.jar的LevelRenderer/GameRenderer字节码。LevelRenderer在世界实体/图层渲染段先将modelViewMatrix乘入RenderSystem全局model-view stack并apply，末尾才pop；沿用event的局部PoseStack和相机相对平移，未再乘一遍view矩阵。此为代码边界证据，仍不代替工具叠层世界画面验收。

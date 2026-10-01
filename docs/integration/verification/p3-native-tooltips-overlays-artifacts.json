@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-01",
+  "result": "NATIVE_BUILD_AND_CHANGED_CLASS_PACKAGING_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "4c92c027f0df1a2d5fc23e5110027b5ac4eb000ac9117c199f8cb765a306b487",
+  "bytes": 35714763,
+  "changedJavaStems": 13,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/client/MaterialTooltips.class",
+      "sha256": "76db878aee7816e1ab74d9ae4c58df66efbc4f846b8a13bf4808dd7f1a5f0844"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MaterialTooltipHandler.class",
+      "sha256": "d8701721c2abed72887f643d157ba5bad7ab70551d7aa7cbd7039cb000bdd261"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/GTRenderHelper.class",
+      "sha256": "5b886e50e2881c36cb013828cfdb2602346d2eaa455f7d33b39c757dd9a220be"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/GTRenderHelper$1.class",
+      "sha256": "21e8a97cf909ba31b878145f577e3192f979b4bf953790d2abf87406c396982a"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/GTWrenchOverlay.class",
+      "sha256": "7c1ea96432137ee829c0a758175499425fb28b3712e7956b3e0d3f8b017c2841"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/GTWrenchOverlay$1.class",
+      "sha256": "02add81d3c0b5c5ec4c2eaa43becc927d0eb3b074eb3f3e96da25a9733cc4cea"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/ToolFaceOverlay.class",
+      "sha256": "6989e60420fcc87dbcdcb5a929aedc5666a4b2ab210de6bdd4ffc0fdd12f4206"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/ToolFaceOverlay$1.class",
+      "sha256": "629038fad57744a53f376f596a120ced7b9328136061c49428d149c42b357a29"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/SlabPlacementOverlayRenderer.class",
+      "sha256": "b077939e0ac19c119963ec9b53b3a2057b568f218bf122a119b1ff4cfa695314"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/ShapelessRecipeTooltipIndex.class",
+      "sha256": "db1a27bfde8b8fed8f8d04c0b9ad01c97cff241bd918101696c2f68ce9d267a1"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/ShapelessRecipeTooltipIndexLoader.class",
+      "sha256": "5e3a7443a6989ed9599f80c06818a6f8e0d5d02f161499c8ab29f90ba14e4b84"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/ShapelessRecipeTooltipIndexLoader$Client.class",
+      "sha256": "acb218f908c9798c0a5dff93e307269e1283f0843134ef5fb97edcb36d9ee163"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/OriginalLargeBoilerBarometerRenderer.class",
+      "sha256": "e19b1915d79899f87829e3700aef503dabfa96d6e3cd3903cf7497c6fbf28299"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/OriginalLargeBoilerBarometerRenderer$1.class",
+      "sha256": "9dc72909954046e494a6ff29555df8728b44c4e2f7a5a8bd49fef1ab2c945e2c"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/BedrockFlowerTooltips.class",
+      "sha256": "4fd2ad65328a3bf2ae322e5d70a6cc027cf007c18a7ff08ce413bb714102a757"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MultiblockClientSetup.class",
+      "sha256": "80d8e72dd5ca025344e616e709bc8d9b767546fe5d72aa66387895d33f2f4359"
+    },
+    {
+      "entry": "com/gregtech/gregtech/item/MaterialItem.class",
+      "sha256": "52fdd0780e01258cc3d2950820ef6b30e2273e4d84d9ab549d4e267cc325da33"
+    },
+    {
+      "entry": "com/gregtech/gregtech/block/MaterialBlockItem.class",
+      "sha256": "b366f76db2405639a01b7f96b5a7fb9851f71c0f0d36a5e3b1ae19c8476c6e02"
+    }
+  ],
+  "scope": "Current changed Native classes, including nested/switch classes, read from actual final jar and byte-matched to current compilation; metadata exact 1.21.1. No repeat shared-core/resource audit, as no core Java/assets changed this wave. Forge prior jar reused. No production jar startup claim."
+}

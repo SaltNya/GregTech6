@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-01",
+  "command": "./gradlew.bat --console=plain :neoforge:compileJava :compileJava",
+  "parent": "ace6e3d5889a07a0a7d2425288a2cdb5b189e767",
+  "scope": "gearboxes/rotation transformers; shared 37 tool definitions and full tool/head/early pattern catalog",
+  "firstAttempt": "Neo client QuadBakingVertexConsumer constructor incompatible with native API; fixed to no-arg consumer and explicit bakeQuad export",
+  "result": "core/NeoForge/Forge Java compile passed",
+  "elapsed": "26s final; 22s first failed attempt",
+  "logs": [
+    {
+      "path": "work/p3-gearboxes-tool-catalogs-compile-20261001.log",
+      "sha256": "6ed00f2e2322c64b8b73391f9a64721d5d2ac8f4956a2bddd74d7263bf07e228",
+      "passed": false
+    },
+    {
+      "path": "work/p3-gearboxes-tool-catalogs-compile-20261001-r2.log",
+      "sha256": "3b47a781f82857d13c4c9d705aaf64fc480e43bb62689fa605c496edd0983d04",
+      "passed": true
+    }
+  ],
+  "notVerified": [
+    "client rendering",
+    "RU packet transfer/overload",
+    "mounted gear interactions and item drop/reload",
+    "full Neo tool items/crafting registration",
+    "production jars",
+    "saved-world restart and old saves"
+  ],
+  "runtimeCheckpoint": "Separate ordinary Neo DedicatedServer startup passed; see p3-neoforge-nodes-gearboxes-startup.json"
+}

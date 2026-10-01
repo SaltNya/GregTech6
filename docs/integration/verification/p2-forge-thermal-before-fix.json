@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "scope": "Forge real machine boundary before shared thermal wiring",
+  "result": "failed",
+  "test_count": 4,
+  "passed": 3,
+  "failed": 1,
+  "failure": "Unrepresentable packet product must be rejected before accepting any count",
+  "log": "work/p2-forge-shared-thermal-before-fix.log",
+  "log_sha256": "3ba338178a8d6a1c210009aba5ab1ad41d881c80a0f8eed7b771767a20058c28",
+  "xml": "p2-forge-thermal-before-fix.xml",
+  "xml_sha256": "c30744747b22bf535a940a52b001dfd8bd9eb60a75916d3d529a0152760c9690",
+  "duration": "5m11s",
+  "code_under_test": "original Forge thermal/injection implementation, before this integration batch",
+  "fix_verification": "pending stage-end combined checks"
+}

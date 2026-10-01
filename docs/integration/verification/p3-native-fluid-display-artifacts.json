@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-01",
+  "result": "BUILD_AND_PACKAGING_PASS",
+  "scope": "Current both platform jars rebuilt after the 41 loader fork repair; contents checked, no production jar launch or gameplay claim.",
+  "sharedClasses": 570,
+  "sharedResources": 67611,
+  "artifacts": [
+    {
+      "platform": "forge",
+      "path": "build/libs/gregtech-1.20.1-forge-0.1.0-integration.1.jar",
+      "sha256": "bee3df92b78b52b8537340c18dbe52940efbd2afff1e3c312a854652cb88d496",
+      "bytes": 38522701,
+      "metadata": {
+        "mod_id": "gregtech",
+        "mod_version": "0.1.0-integration.1",
+        "minecraft": "1.20.1",
+        "loader": "forge",
+        "loader_version_range": "[47,)",
+        "dependency_ranges": {
+          "minecraft": "[1.20.1]",
+          "forge": "[47,)"
+        },
+        "license": "All Rights Reserved"
+      },
+      "zipEntries": 80826
+    },
+    {
+      "platform": "neoforge",
+      "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+      "sha256": "da0914a91981a1dd2a7b6525d0c4fd44dfbd27e35e2476924a929bb32a47581f",
+      "bytes": 35681678,
+      "metadata": {
+        "mod_id": "gregtech",
+        "mod_version": "0.1.0-integration.1",
+        "minecraft": "1.21.1",
+        "loader": "neoforge",
+        "loader_version_range": "[1,)",
+        "dependency_ranges": {
+          "minecraft": "[1.21.1]",
+          "neoforge": "[21.1.243,)"
+        },
+        "license": "All Rights Reserved"
+      },
+      "zipEntries": 77451
+    }
+  ],
+  "buildLog": {
+    "path": "work/p3-native-fluid-display-final-jars-20261001.log",
+    "sha256": "52c97c18d04c4f206587350a01ebabf0d60ae2c616118e497d737e62b545afdb"
+  },
+  "checkLog": {
+    "path": "work/p3-native-fluid-display-artifact-check-final-20261001.log",
+    "sha256": "c517b6ceb5b6f3a8756e9fea117e293332b2fcb5bffed6ead36abf826c5b82d0"
+  },
+  "packagedCompositeForksChecked": 41,
+  "lateNativeModelLoaderFix": "41 platform JSON entries read from actual final jars have equal parsed JSON except correct platform loader; no repeated client run."
+}

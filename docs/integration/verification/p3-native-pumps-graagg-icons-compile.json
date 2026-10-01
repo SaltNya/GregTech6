@@ -1,0 +1,11 @@
+{
+  "result": "COMPILE_PASS",
+  "platforms": [
+    "Forge1.20.1",
+    "NeoForge1.21.1"
+  ],
+  "elapsed": "28s",
+  "log": "work/p3-native-pumps-graagg-icons-final-compile-20261001.log",
+  "logSha256": "9502ad1f48f718d122a0fd9eff96cafa1273b78919fe70fca3dd666944464038",
+  "scope": "One initial private-registry access compile error fixed by read-only queued ID query; grouped compilation only"
+}

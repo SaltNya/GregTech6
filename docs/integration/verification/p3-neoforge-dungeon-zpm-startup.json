@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-01",
+  "result": "PASS",
+  "platform": "neoforge",
+  "minecraft": "1.21.1",
+  "loader": "21.1.243",
+  "elapsed": "1m 53s",
+  "runtimeLog": "work/p3-dungeon-zpm-startup-20261001.log",
+  "runtimeLogSha256": "03fc891814d31e0ed063b589abdaa96f0992cfdec3bb61e11f70600c4824933a",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "56016889-e2f5-4743-961e-f915c24e9e7a",
+    "pid": 42336,
+    "specimenId": "c99899b8-e287-45fd-aba6-613f8fc1d1ef",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-dungeon-zpm-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10584,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-dungeon-zpm-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1835,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-dungeon-zpm-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "policy": "D010: one ordinary short native startup after three batches, no new fixture or retry",
+  "scope": [
+    "Registered full dungeon/portal/flower pot/ZPM/coin mold content and loaded structure codecs and biome modifier",
+    "200 ordinary dedicated server ticks, normal stop and three dimensions saved",
+    "directCoreResources/directCoreClasspath both skip expensive core resource copy/jar"
+  ],
+  "notProven": [
+    "Dungeon naturally generated rooms or placed device gameplay",
+    "Native17 flower pot loot files were copied to singular1.21 folders after startup, so not runtime-covered in this receipt",
+    "Either client/Forge runtime",
+    "Independent saved-world restart, old saves, full survival chain, production jars"
+  ]
+}

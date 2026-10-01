@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "elapsed": "19s",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "log": "work\\p3-native-terrain-compile-20261001.log",
+  "sha256": "908d8c5c3f467aa592ecf3694f3f17b7746c2c738dd8f3d66ad849356d7eb81e",
+  "notProven": [
+    "Actual newly generated terrain, pit cross-chunk mask writes, fluid conversion and source survival resource access remain unverified.",
+    "5 clay pit rows exclude original default-disabled red clay and optional PFAA entries; source1 seams intentionally expose top clay unlike original GT6 grass cap.",
+    "Water-body passes use source ocean then river excluding ocean then swamp priority; fluid block availability depends on existing native fluid registration.",
+    "Source pit soil replacement and water conversion can affect chunk contents; no old-world replay/remapping promised.",
+    "Nether deposits/crystal blocks, bedrock/deep-ocean/black-sand/coltan/fluid springs/dungeons and remaining source features are not claimed complete.",
+    "Full gameplay/client/Forge runtime/independent world restart/old saves/new jars pending."
+  ]
+}

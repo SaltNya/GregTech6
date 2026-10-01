@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "60131b2bd7c048c2467a27ae023e2209a8900bce11d5ed143710ec7d3bcc57e4",
+  "bytes": 35879955,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/api/machine/crucible/CrucibleItemInput.class",
+      "sha256": "25298cb7350e5530ee7cdf71d76b2532e43c0b46e93f3fb4b36dcd9595c7d54a"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/ToolShapedRecipe.class",
+      "sha256": "213ac06d8e2cfa15c7e7eb22f8bd7010793336ae98d0d3970782476706dc100b"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/ToolShapedRecipe$1.class",
+      "sha256": "3eaf0f6202ecf96e39a4c34536b429f36074fa7f4b9e426c1329903a2c289aa0"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/FiniteBottleFillingRecipe.class",
+      "sha256": "6b230c7a99b9c0cbb76901909c9bc0f87a3c079a69260b8cfbebc432ca295776"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/FiniteBottleFillingRecipe$1.class",
+      "sha256": "e79e45a970bc6c86d792983b16a8e2ca1eff24497359f54455e010ca489792b2"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/FiniteBottleFillingRecipe$ContainerIngredient.class",
+      "sha256": "5b2f530f802828feb29c78b313d4965d719b97d697388fa075a9be819fe8968e"
+    }
+  ],
+  "scope": "Current changed classes byte-matched; exact MC metadata. Core/resources/Forge unchanged; no repeated full audit or production jar run."
+}

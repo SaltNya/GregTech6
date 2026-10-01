@@ -1,0 +1,31 @@
+{
+  "policy": "D010",
+  "result": "PASS",
+  "runs": [
+    {
+      "log": "work/p3-plants-portable-structures-compile-20261001.log",
+      "sha256": "d1c1153630fe77a30504492d79e17803692818ee6a0ed24830a67fc8acdf26bd",
+      "result": "FAIL: core Nullable annotation dependency"
+    },
+    {
+      "log": "work/p3-plants-portable-structures-compile-fix1-20261001.log",
+      "sha256": "01edee7fddf5ea4e74a421411f68e580f09f4079ee39c94559d038270849b59d",
+      "result": "FAIL: native WaterlilyBlock codec return generic"
+    },
+    {
+      "log": "work/p3-plants-portable-structures-compile-fixed-20261001.log",
+      "sha256": "d7e6bb8958d3ab9748ba8ea16f2dd44af62c5ae6503f3197e1119c5f5e095578",
+      "result": "PASS: core, NeoForge, Forge; 26s"
+    }
+  ],
+  "notProven": [
+    "plant growth/generation/harvest",
+    "attachment conservation and interactions",
+    "portable crafting in actual grid",
+    "native multiblock controller integration",
+    "client rendering",
+    "independent world restart",
+    "old saves",
+    "production jars"
+  ]
+}

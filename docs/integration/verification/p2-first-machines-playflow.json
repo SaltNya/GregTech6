@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "result": "passed",
+  "duration": "5m combined sequential run",
+  "scope": "Developer game tests with given equipment and ingredients; not full survival, packaged jar, client or saved-world restart",
+  "log": "work/p2-first-machines-playflow-retry1.log",
+  "log_sha256": "4bd4057c469ccffaf1f6ae2013f01f99e09703411e3369fd517fa51fb2a30990",
+  "forge": {
+    "version": "1.20.1/Forge47.4.20",
+    "required_tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "cases": [
+      "coalcoppertintofourbronzeingots",
+      "disconnectedheatandfullcruciblerejectwithoutloss",
+      "realcruciblepreservespositiveheatremainderandmixing",
+      "realcruciblerejectsunrepresentablepacketswithoutmutation"
+    ],
+    "xml": "p2-first-machines-forge.xml",
+    "xml_sha256": "bf3fada0929adbe1b736a186c4e51f5e36c1fb8decbdbe0366e97853b1ab5185"
+  },
+  "neoforge": {
+    "version": "1.21.1/Neo21.1.243",
+    "required_tests": 1,
+    "native_pass_marker": "All 1 required tests passed",
+    "alloy_tick": 3011,
+    "alloy_temperature_k": 1357,
+    "alloy_amount_u": 4,
+    "complete_tick": 3020,
+    "real_bronze_ingots": 4,
+    "chisel_wear": 15,
+    "pincers_wear": 4,
+    "game_test_seconds": 2.844,
+    "material_items_registered": 56036
+  },
+  "source_commit_before_uncommitted_batch": "87a2f1d5e1",
+  "earlier_failed_attempt": {
+    "log": "work/p2-first-machines-playflow.log",
+    "sha256": "6df5df0f013cfa5c8767382b86825237ad29b92d45b83a0e29514b7eae8d0f80",
+    "duration": "18s",
+    "reason": "Neo test fixture still used old mock-player method and missing Materials.Wood field; fixed using actual resolved 1.21 helper and shared registry",
+    "game_started": false
+  }
+}

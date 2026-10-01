@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "elapsed": "19s",
+  "log": "work\\p3-native-springs-compile-20261001-2.log",
+  "sha256": "28fa0fc8d4b0f6bb2eaf7b843cdb37541b3ae00f771c12e670547b128d214e6d",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "notProven": [
+    "Source1 chooses one of7 rows before probability; other projects use independent per-row gates.",
+    "Source1 accepts a bedrock ore at center and does not enforce ore/spring claim exclusion; masson checks whole floor and brokestar replays coordinate ore gates.",
+    "Source1 indicators helper is not called by place; indicator behavior remains incomplete.",
+    "Emitter creates a full source above, without finite-volume increase/horizontal spread of brokestar/masson.",
+    "No fluid-specific nozzle rendering; invalid legacy fluid ID can still fail parse; no old-save compatibility proven.",
+    "Actual generation, fluid extraction, gameplay, client rendering, Forge runtime, independent reload, old saves and new production jars unverified."
+  ]
+}

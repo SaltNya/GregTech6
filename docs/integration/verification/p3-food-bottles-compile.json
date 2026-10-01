@@ -1,0 +1,29 @@
+{
+  "policy": "D010",
+  "result": "PASS",
+  "runs": [
+    {
+      "log": "work/p3-food-bottles-compile-20261001.log",
+      "sha256": "7c2535e3bce69e68ef7934f44d2dc03391d56c2fc3e121091c070e89a970dada",
+      "result": "FAIL: 13 native API mapping/signature errors"
+    },
+    {
+      "log": "work/p3-food-bottles-compile-fixed-20261001.log",
+      "sha256": "faedbfc950bfa811d0327a7a59a81b7fd4f77a84b4d792f39310706f587daac6",
+      "result": "PASS: core, NeoForge 1.21.1, Forge 1.20.1; 27s"
+    },
+    {
+      "log": "work/p3-food-bottles-empty-fallback-compile-20261001.log",
+      "sha256": "b7cae3c0ea2326eb1d1dc62ba26ee7f8b7613037f26a1804bc385b09720b9525",
+      "result": "PASS: native empty-bottle baseline fallback; 12s"
+    }
+  ],
+  "notProven": [
+    "food/drink gameplay",
+    "actual vessel fill/drain and crafting",
+    "client rendering",
+    "saved-world restart",
+    "old saves",
+    "production jars"
+  ]
+}

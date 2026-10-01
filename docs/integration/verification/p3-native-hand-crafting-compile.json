@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_AND_NATIVE_JAR_PASS",
+  "command": ":neoforge:jar :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "checks": [
+    {
+      "log": "work/p3-native-hand-crafting-compile-20261001.log",
+      "sha256": "3644b6cb9b9aef2a2058efd3e4877689ff855504f6ec5aca83915f1d5643d34c",
+      "elapsed": "31s"
+    },
+    {
+      "log": "work/p3-native-hand-crafting-final-compile-20261001.log",
+      "sha256": "5b05ca350bd7b30b712ee0eba2184bf347bf83726d928777c7e87861e2e5ce44",
+      "elapsed": "23s"
+    }
+  ],
+  "scope": "First eight families then six technological rows added; corresponding grouped compile/jar checks pass. Forge source unchanged/up-to-date. No exact-wave startup or new test fixture."
+}

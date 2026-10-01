@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-01",
+  "result": "TITLE_SCREEN_AND_MODEL_BAKE_PASS",
+  "command": ":neoforge:runClient :neoforge:jar -PdirectCoreResources=true -PdirectCoreClasspath=true -PclientSmoke=true -PclientSmokeTimeout=300",
+  "elapsed": "1m 32s",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "timeoutSeconds": 300,
+    "elapsedMs": 53560,
+    "screenshot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-0182bee5-8803-4c77-95ed-30da23f89d80.png",
+    "width": 1280,
+    "height": 720,
+    "renderedFrames": 151,
+    "screen": "net.minecraft.client.gui.screens.TitleScreen"
+  },
+  "log": "work/p3-native-material-models-client-jar-20261001.log",
+  "logSha256": "df8a87aea6065a3fa9a6f00ad1f510060f1b146a525554c7bc46d846eff53e07",
+  "screenshotSha256": "10277109c3278abf487e5824bfba478131fe8027fe9ed814a05b827a8665e0c3",
+  "screenshotVisuallyInspected": true,
+  "actualBakeLogs": {
+    "oreBlocks": 970,
+    "oreStates": 75660,
+    "oreSharedModels": 50,
+    "materialBlocks": 10293,
+    "materialMissing": 0,
+    "stoneBlocks": 432,
+    "stoneMissing": 0
+  },
+  "warnings": {
+    "missingModelWarnings": {
+      "gregtech:item": 57462,
+      "gregtech:block": 82
+    },
+    "missingBlockstateWarningRows": 45
+  },
+  "scope": "One existing ordinary Native title-screen launch; actual model-bake registration exercised. Includes prior tooltip/overlay subscribers and previously repaired native mold composite JSON. No world rendering/gameplay assertion.",
+  "notProven": [
+    "Actual ore host/broken block and item graphics",
+    "Crate hull/content/tint and stone hand display",
+    "Tooltips/overlays/boiler/JEI/HUD inside world",
+    "F3+T/world client gameplay",
+    "Production jar startup",
+    "Separate-process world restart/old saves"
+  ],
+  "lateFix": "82 unused ore/oresmall material-cube requests (41 texture sets x 2) removed, since actual ore models use their stone template. Final jar recompiled; no repeated client, so post-fix warning counts are unverified.",
+  "priorMoldLoaderWarnings": "Previously failing 41 mold composite models no longer reported in this actual client log."
+}

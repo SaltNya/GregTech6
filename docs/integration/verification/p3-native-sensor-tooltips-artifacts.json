@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "4b99e39d25d5b56551d6335f5a082e737e1f12bd179f82835f1d20b74b5bc44f",
+  "bytes": 35872524,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/data/SensorRecipePack.class",
+      "sha256": "35d15ef22f430bb086bb0407d2b93786fdf828d6d859b4daee169587d070804d"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/SensorRecipePack$1.class",
+      "sha256": "75cd6ab7885d5fa38cf9c2541facd290ce4ad2300231516c4d7891cfe80a18cd"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MachineTooltips.class",
+      "sha256": "752e0994a694fe6bb2fdb4a581b35d0c1b1dde3f4d024f51204ea1c04191ec13"
+    },
+    {
+      "entry": "com/gregtech/gregtech/platform/neoforge/machine/BasicMachineItem.class",
+      "sha256": "119a685a6399ee5c44927cfc48dbf3c5e74104844f63d72f3378dc0c28fe3e87"
+    }
+  ],
+  "scope": "Three changed Java families including nested supplier byte-matched in actual jar; exact Minecraft metadata checked. Core/resources/Forge unchanged; production jar not launched."
+}

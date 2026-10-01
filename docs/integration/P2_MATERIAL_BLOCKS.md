@@ -1,0 +1,9 @@
+# 材料方块与首批世界生成源码整合
+
+本批从主线246d8c3ad8继续，按用户指示未构建、测试或启动游戏。共享原BlockMaterialPrefix/BlockPrefixRegistry/MaterialPrefixes、石种变体/旗标/组成重量、CellNoise及两种特殊矿Spec表；颜色/声音改纯枚举并由两平台薄映射，材料块定义流保持原材料排序、隐藏/canonical/valid筛选及ID碰撞规则。
+
+Neo沿原目录和ID注册全共享材料方块、27×16石块与27×16定向水浸半砖；另迁原37种晶体/岩矿/原版风格矿、真实planks_treated及plate/WoodTreated绑定、地表rock/twigs与rock存储。采收/掉落/XP/破碎矿下落/床岩不可破坏、半砖合并及材料组成采用原规则；OreHarvest吸收masson的1.21附魔holder边界，OreHostStateAdapter吸收拒绝不适用宿主及保留状态属性规则，继续使用原GT宿主state而非注册两套矿ID。
+
+矿脉、小矿和石层Feature接入原共享GTOreVeins/GTStoneLayersGen表，保留真实地表指示石与其材料NBT；Neo biome modifiers仅接已迁三类Feature。原方块模型/纹理及上述worldgen定义移共享资源，Neo采收标签沿1.21单数目录、只纳入此批成员并用可选引用适应共享valid筛选；详尽来源字节记录见core/provenance/material-block-source-integration.json与material-block-resource-integration.json，原作者与第三方授权未更改。
+
+当前编译、包装和运行全部未验证。Neo专用动态材料块/矿宿主模型及完整tooltip尚未迁入（部分原静态模型是原有fallback）；不能把资源存在当视觉完成。未迁其余装饰/植物/物流icon行为及其Feature。1.20→1.21旧世界、旧ore块实体及旧物品NBT转换均未验收；新Neo矿物品以原stone/broken语义的BLOCK_STATE组件存储，不制造虚假的容器NBT，保留有限legacy host读取。

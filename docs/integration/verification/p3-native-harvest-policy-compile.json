@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_PASS",
+  "command": ":neoforge:compileJava :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "elapsed": "55s",
+  "log": "work/p3-native-harvest-policy-compile-20261001.log",
+  "sha256": "2e0daf01bd26714d6238ada0439c3421fcd97c413be216f15e2157d078b5118c",
+  "scope": "One Native Java class; Core/Forge/resources unchanged. No exact-wave jar."
+}

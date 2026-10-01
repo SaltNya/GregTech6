@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-01",
+  "result": "PASS",
+  "platform": "neoforge",
+  "minecraft": "1.21.1",
+  "loader": "21.1.243",
+  "elapsed": "2m 1s",
+  "runtimeLog": "work/p3-laser-sensor-longdistance-startup-20261001.log",
+  "runtimeLogSha256": "eb1c45f2e87080d721cddf7148488481931f5ac4ac01b9826180c5e5a8fdc469",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "c653ced9-8830-4156-82af-0ae266551212",
+    "pid": 60616,
+    "specimenId": "aeb6e84a-9684-4694-9998-5978067aff6b",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-laser-sensor-longdistance-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10567,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-laser-sensor-longdistance-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1831,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-laser-sensor-longdistance-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "policy": "D010 one ordinary dedicated short startup after three batches, no new fixture or retry",
+  "scope": [
+    "57 real laser/quantum/fiber/sensor/long-distance block registrations and actual native capabilities",
+    "All native registered recipes and data loaded into fresh main world",
+    "200 ordinary ticks, normal stop and three dimensions saved",
+    "Previous17 dungeon flower-pot singular1.21 loot tables participate in data loading"
+  ],
+  "notProven": [
+    "Placed laser/FE/QU packets, optical traffic, sensor readings or long-distance transfers",
+    "Client rendering/UI and Forge runtime",
+    "Actual flower-pot drops/natural dungeon generation",
+    "Independent saved-world restart, old saves, complete survival chain, production jars"
+  ]
+}

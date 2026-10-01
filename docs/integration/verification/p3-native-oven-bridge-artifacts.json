@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "4c9b5a876b47e3a8246d161974467646c03f0001b5be2b660dddb02b883bb163",
+  "bytes": 35864927,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/loaders/Loader_OvenRecipes.class",
+      "sha256": "5ae9d4ecd366255c722ee6ca4d9e88a5e1fc365013764d6f076947fd817852a7"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/OvenRecipeLifecycle.class",
+      "sha256": "81b68c4b375a5c6b05bb6e7ee3f535854fdac64f272b80f972f1f212b1de0d52"
+    }
+  ],
+  "scope": "Two current Native classes byte-matched in actual jar; exact Minecraft metadata checked. Core/resources/Forge unchanged, no repeated full audit. Production jar not run."
+}

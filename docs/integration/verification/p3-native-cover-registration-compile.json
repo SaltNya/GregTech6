@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_AND_NATIVE_JAR_PASS",
+  "command": ":neoforge:jar :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "elapsed": "23s",
+  "log": "work/p3-native-cover-registration-compile-jar-20261001.log",
+  "sha256": "fe4301aa68be7864383ec86b00df3f9f30729b8d62accea61d0888b61e34e64e",
+  "scope": "Native jar includes compileJava; Forge compile unchanged/up-to-date. No exact-wave client/server launch or new fixture.",
+  "notProven": [
+    "Actual cover placement/appearance and updates",
+    "CPU meter/core/port overlays",
+    "Filter/extender actual block/item tint",
+    "Client registration at runtime",
+    "Production jar launch",
+    "Core gameplay/world restart/old saves"
+  ]
+}

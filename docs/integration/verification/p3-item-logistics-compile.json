@@ -1,0 +1,33 @@
+{
+  "scope": "126 item pipes / 120 hoppers / models / shared welding rows",
+  "commands": [
+    ":neoforge:compileJava",
+    ":compileJava"
+  ],
+  "firstAttempt": {
+    "result": "FAIL",
+    "elapsed": "21s",
+    "errors": 5,
+    "log": "work/p3-item-logistics-compile-20261001.log",
+    "logSha256": "717052476728a67b2371906aa8905b5d7af49d0d3f87bfae82cea46d4bd19392"
+  },
+  "correctedAttempt": {
+    "result": "PASS",
+    "elapsed": "26s",
+    "log": "work/p3-item-logistics-compile-20261001-r2.log",
+    "logSha256": "7aa2c248fde20ae5bb3ea7429ea8edc02bfb858bc8906d14263e079ff02456b9"
+  },
+  "limitations": [
+    "client not run",
+    "world restart not run",
+    "production jars not verified",
+    "later oversized-buffer boundary is compiled by scoped server run"
+  ],
+  "finalBoundaryAndWakeFixCompile": {
+    "result": "PASS",
+    "combinedRunElapsed": "1m38s",
+    "log": "work/p3-item-logistics-neoforge-checkpoint-20261001-r3.log",
+    "logSha256": "f8e8f2e7888b6501048272750e118005009410f446cb06a5baa4da0f124e394c",
+    "scope": "Forge Java + native production Java and bootstrap fixture; no independent runtime Forge proof"
+  }
+}

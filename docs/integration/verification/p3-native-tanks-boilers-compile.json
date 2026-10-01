@@ -1,0 +1,34 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "log": "work/p3-native-multiblock-tanks-compile-20261001.log",
+      "sha256": "911fb74b3175729248d95f6ccb795074a9c7d0ee6e717561ee8c163e7046a4ec",
+      "result": "PASS core/Neo/Forge 25s"
+    },
+    {
+      "log": "work/p3-native-tanks-boilers-compile-20261001.log",
+      "sha256": "62729985d3cf922c23c9cf32130f10e51ec12e22044318e29e00686587fdbb63",
+      "result": "FAIL four old Forge registry/tooltip API references"
+    },
+    {
+      "log": "work/p3-native-tanks-boilers-compile-20261001-2.log",
+      "sha256": "aad56da2920833bf4d98c07b7b06069203b52949742f27c56e643763ae6de3af",
+      "result": "PASS core/Neo/Forge 19s"
+    }
+  ],
+  "policy": "D010 grouped necessary compile, no extra startup or fixture",
+  "runtime": "NOT RUN; next grouped startup after further source batches",
+  "notProven": [
+    "actual shell/port ownership",
+    "water and steam processing",
+    "pressure/tool/hazard effects",
+    "survival craftability",
+    "client rendering",
+    "Forge gameplay",
+    "separate-process saved-world restart",
+    "old saves",
+    "production jars"
+  ],
+  "registrationRuntimeCoveredBy": "docs/integration/verification/p3-neoforge-turbines-tanks-boilers-startup.json; registry/recipe data/startup only, not actual tank or boiler gameplay"
+}

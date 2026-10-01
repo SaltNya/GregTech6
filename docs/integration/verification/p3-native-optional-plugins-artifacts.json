@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-01",
+  "result": "BUILD_AND_PACKAGING_PASS",
+  "scope": "Native jar rebuilt, unchanged Forge jar reused; package contents checked, no production jar runtime/gameplay claim.",
+  "sharedClasses": 570,
+  "sharedResources": 67498,
+  "artifacts": [
+    {
+      "platform": "forge",
+      "path": "build/libs/gregtech-1.20.1-forge-0.1.0-integration.1.jar",
+      "sha256": "49c582ef3ae561c3cb75b76032e488d87073cc58bf7d128f792432a5f7e712e8",
+      "bytes": 38522701,
+      "metadata": {
+        "mod_id": "gregtech",
+        "mod_version": "0.1.0-integration.1",
+        "minecraft": "1.20.1",
+        "loader": "forge",
+        "loader_version_range": "[47,)",
+        "dependency_ranges": {
+          "minecraft": "[1.20.1]",
+          "forge": "[47,)"
+        },
+        "license": "All Rights Reserved"
+      },
+      "zipEntries": 80826,
+      "newBuild": false
+    },
+    {
+      "platform": "neoforge",
+      "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+      "sha256": "da82e8091ced0596309cb4a88c3d880e9557845a3b020a3e069210950867c255",
+      "bytes": 35560865,
+      "metadata": {
+        "mod_id": "gregtech",
+        "mod_version": "0.1.0-integration.1",
+        "minecraft": "1.21.1",
+        "loader": "neoforge",
+        "loader_version_range": "[1,)",
+        "dependency_ranges": {
+          "minecraft": "[1.21.1]",
+          "neoforge": "[21.1.243,)"
+        },
+        "license": "All Rights Reserved"
+      },
+      "zipEntries": 77247,
+      "newBuild": true
+    }
+  ],
+  "buildLog": {
+    "path": "work/p3-native-optional-client-jar-20261001.log",
+    "sha256": "b4616b81976ce4a5c3f3ba29361620ecd0c8dbbffaddc083cacc4423e6aa8a01"
+  },
+  "checkLog": {
+    "path": "work/p3-native-optional-artifact-check-20261001.log",
+    "sha256": "d406d8ff7b0e9b6c9c23d41c4fbf98010d3afabd015f09dae601af7ebc6f941e"
+  },
+  "check": "Current compiled core exact bytes, platform metadata, duplicate and test-only entry rejection; dependencies remain optional/external."
+}

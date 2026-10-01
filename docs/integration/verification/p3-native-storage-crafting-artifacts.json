@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_AND_TAG_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "f075ad9b271c4e4af1d7c88123c587c9c9546e46800f0c9d2b96e7cd28cad19b",
+  "bytes": 35836586,
+  "verifiedCurrentCompiledClassesAndTag": [
+    {
+      "entry": "com/gregtech/gregtech/data/OriginalHandCraftingRows.class",
+      "sha256": "b2b732053ae62d48a0ceeff7d46ed9272c4084bf518d66e7b43f02e25a3be463"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/OriginalHandCraftingRows$1.class",
+      "sha256": "9aeb94f05d447a2805448458bb8405d6b93d086d3db4d113ebf0b1245aee0e10"
+    },
+    {
+      "entry": "data/forge/tags/item/glue.json",
+      "sha256": "7c9da5cb8effeac84b01d54d7a9bbb487f89d6181cf40ca0b5165df57272bc11"
+    }
+  ],
+  "scope": "Actual changed Native classes, exact original glue resource and Minecraft metadata. Forge/core reused unchanged. Production jar not launched."
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_PASS",
+  "command": ":neoforge:compileJava :compileJava",
+  "elapsed": "17s",
+  "log": "work/p3-native-machine-models-compile-20261001.log",
+  "sha256": "8255b5f5f9f52ecc5a8c0d866a6612600659e48313fc7263d62854fb263be51e",
+  "scope": "Five complete Native classes and six changed callbacks/model paths; Forge unchanged/up-to-date; no new fixture.",
+  "finalNativeJarBuild": {
+    "elapsed": "20s",
+    "path": "work/p3-native-machine-models-final-jar-20261001.log",
+    "sha256": "f723d32aa7ce73afdddd4566ac3aa407f4e5917790a794196b890d441c2f17fd",
+    "scope": "Final compile/Native jar plus unchanged Forge compile after removing unused pressure-model request; no repeat client."
+  }
+}

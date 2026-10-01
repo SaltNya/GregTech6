@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-01",
+  "result": "NATIVE_BUILD_AND_CHANGED_CLASS_PACKAGING_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "d4661f25c6d9bf7eb79b866c3ee7558b62c8ea178a69aa30cbe0478ca364209b",
+  "bytes": 35744318,
+  "changedJavaStems": 8,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/client/BakedModelLookup.class",
+      "sha256": "f26ef0f8d25b2d1bcadd3ec7414edae90dc6596c91b2c11c9c0225ea4adc007c"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/CrateBlockBakedModel.class",
+      "sha256": "0af844af812b293ab88a89b8a555df9b671eb7bc86d974c1c0514cdd0867721d"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/CrateBlockBakedModel$DisplayMode.class",
+      "sha256": "3f3563808d00d2b383c7e2b8f5d683ca6ffd52f3834debe32419136b271f32e8"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MaterialBlockBakedModel.class",
+      "sha256": "c1de8c80331336bddf11092ff32f4997d167915926deb2bfebe8846733f27460"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MaterialBlockClientColors.class",
+      "sha256": "fa9a4a33f38476f64c788c7bcb6d75fd987d584d7ac2a5423972bd8b84a75572"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MaterialBlockClientModels.class",
+      "sha256": "575e85283281959c334ddf0f23e1b6b3af6bdfb0d0a25c2e0d3dc7fe4ff39514"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/OreBakedModel.class",
+      "sha256": "8d131052cf32b73f76e7a722c4fb0d2d7f0aee09c3a717d111966572b6364b3b"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/OreBakedModel$1.class",
+      "sha256": "5e9364677be981cd2b70b64bdc1a6d9ba89cff47a54bb890d5bc8a849ccfc8c9"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/OreBakedModel$ModelHost.class",
+      "sha256": "c5c34990afc66b86554ef9b641715334b01106c4144b36d57518cf7d1dfd2bc0"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/OreBakedModel$StoneFace.class",
+      "sha256": "e0b3418e5a4b87f5ebe483bc69a31f48cbc1ff4793399703766dd006b78f6446"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/OreBakedModel$StoneModel.class",
+      "sha256": "9dede97c180c68961f505eb7236d54ff3bd716d0cc4e2d5cd9d26803a51499de"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/OreClientModels.class",
+      "sha256": "5f0a5ed33cf3cdc71ee734423a6055bf8a11aeb595596e2b6e2fab31df48a087"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/StoneBlockClientModels.class",
+      "sha256": "5d5381c8c963f49fe28077c5304c7c40d79b34159e0b4cd0780e3e0e595433b4"
+    }
+  ],
+  "scope": "Current eight Native class families byte-matched in final jar. Unchanged core/assets and Forge previous jar reused without repeated full resource audit; no production jar launch.",
+  "finalBuildLog": {
+    "path": "work/p3-native-material-models-final-jar-20261001.log",
+    "sha256": "0436b162815cf5941ea2b7986d3cf03bb1da15f0ae23e445cbfd56b531e27057",
+    "elapsed": "20s"
+  }
+}

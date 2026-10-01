@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-01",
+  "sourceParent": "8681e19e1bf002a6615ca9667196ff52ba3d1a1f",
+  "command": "./gradlew.bat --console=plain :neoforge:compileJava :compileJava",
+  "scope": [
+    "industrial recipes",
+    "legacy item batteries",
+    "chemical batteries and block loot"
+  ],
+  "attempts": [
+    {
+      "result": "FAIL",
+      "seconds": 27,
+      "errors": [
+        "ChemicalBatteryBlock clone requires LevelReader",
+        "WelderFamilyRecipes malformed logger qualification"
+      ],
+      "log": "work/p3-industrial-batteries-compile-20261001.log",
+      "logSha256": "30525bafaf3c36475f4f34aed126fa2d593043f5c6fb21030020e2b8dfaaa76b"
+    },
+    {
+      "result": "PASS",
+      "seconds": 27,
+      "tasks": 7,
+      "executed": 3,
+      "upToDate": 4,
+      "log": "work/p3-industrial-batteries-compile-20261001-r2.log",
+      "logSha256": "1d566775e560be770c20841632e3067128c13caafcd0b5c0d082e365e371fcb2"
+    }
+  ],
+  "passed": [
+    "core compileJava",
+    "NeoForge compileJava",
+    "Forge compileJava"
+  ],
+  "notVerified": [
+    "new industrial recipe runtime load",
+    "client render",
+    "charge/simulation behavior",
+    "survival crafting",
+    "world restart",
+    "old saves",
+    "new packaged jars"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "result": "PASS",
+  "elapsed": "4m55s",
+  "policy": "D010 single grouped ordinary Neo dedicated startup, no new subsystem fixture, no retries for nonblocking Mojang key timeout",
+  "log": "work/p3-burning-neoforge-startup-20261001.log",
+  "sha256": "2096ac8196dca00af6180ac6379d661e0a04d46e082998106481f417343bbf3d",
+  "startupReceipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "6d446aa2-5e05-480e-8392-6fbd1a2c70e4",
+    "pid": 62940,
+    "specimenId": "9a78025c-2afd-40f1-bfa6-31a68fda9be9",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-burning-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10529,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-burning-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1820,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-burning-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "registration": {
+    "burningBoxesSolidIncludingBrick": 29,
+    "burningBoxesLiquidGasFluidizedIncludingDense": 84,
+    "molds": 39,
+    "basins": 39,
+    "faucets": 39,
+    "crossings": 39,
+    "smeltingCrucibles": 39,
+    "structuralParts": 55
+  },
+  "recipeLog": {
+    "originalMultiblockEmitted": 83,
+    "originalMultiblockUnresolved": 1,
+    "loadedTotal": 6419
+  },
+  "nonblocking": "Mojang public-key read timeout and legacy-tag convention warnings; ordinary server200ticks+normalsave/stop succeeded.",
+  "notProven": [
+    "actual combustion/casting/cooling/flow/fuel/ash/HU/hazards/redstone/tool gameplay and conservation",
+    "client model baking and world rendering",
+    "Forge runtime",
+    "full survival chain",
+    "independent saved-world restart and old saves",
+    "fresh production jars"
+  ]
+}

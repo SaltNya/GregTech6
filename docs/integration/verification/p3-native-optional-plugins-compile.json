@@ -1,0 +1,17 @@
+{
+  "result": "COMPILE_PASS",
+  "date": "2026-10-01",
+  "command": ":neoforge:compileJava :compileJava",
+  "elapsed": "14s",
+  "log": "work/p3-native-optional-compile-pass-20261001.log",
+  "logSha256": "8ae97a984d350d632220f88e4758dac8539572ec0120d3affaf11540a90e90f6",
+  "scope": "Native full Jade/JEI adapters; Forge unchanged/up-to-date, current shared core reused. Earlier 43 errors and then one wrong GTValues package resolved using actual platform APIs.",
+  "notProven": [
+    "JEI world-time category registration and recipe UI",
+    "Jade actual HUD/data transfer",
+    "Structure preview rendering and controls",
+    "Dedicated server with these optional dependencies",
+    "Production jar startup",
+    "Gameplay/save reload/old world compatibility"
+  ]
+}

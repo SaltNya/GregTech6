@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "elapsed": "18s",
+  "log": "work\\p3-native-construction-bars-spikes-compile-20261001.log",
+  "sha256": "95db8410859e77245242e383370b2a19665e9e1bd99f562850e33fdea6d0eabc",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "notProven": [
+    "All19 blocks are compile-covered; prior ordinary Neo startup predates this batch. Actual construction/drops/rod reinforcement/foam drying/hazards/placement remain unverified.",
+    "Source foam timer advances without marking dirty each tick; source fresh foam properties still form a solid cube despite non-solid comment, and fall cushioning applies to hardened foam too.",
+    "brokestar stronger colored/owned foam, slab/scheduled drying and spray ownership behavior remain a required integration candidate; this wave retains baseline unowned identities and timing.",
+    "masson bars use connected IronBarsBlock and spikes simplified cactus1 damage/geometry; retain baseline four-segment/target damage to preserve gameplay rather than replacing them with those different semantics.",
+    "Native BushBlock soil boundary from prior batch, invalid save data, Forge runtime/client rendering/independent reload/old saves and new production jars pending.",
+    "Source spike falling behavior has not been checked for entity landing, damage and mode persistence; native item components preserve mode/secondary, wall facing is chosen at placement as source."
+  ]
+}

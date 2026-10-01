@@ -1,0 +1,34 @@
+{
+  "result": "PASS",
+  "policy": "D010 necessary grouped compile, no new tests",
+  "commands": [
+    ":neoforge:compileJava :compileJava",
+    ":neoforge:compileJava"
+  ],
+  "attempts": [
+    {
+      "log": "work/p3-wood-trees-compile-20261001.log",
+      "logSha256": "cae8c50e0c1dac57b1190ba6f2f5856a1bbb65290dee1c3b6ad80ab533779da5",
+      "result": "FAIL"
+    },
+    {
+      "log": "work/p3-wood-trees-compile-20261001-r2.log",
+      "logSha256": "90a5f08a19090c2567b3ce6e35a395bfe50a3099c67757360e05824488007c40",
+      "result": "PASS"
+    },
+    {
+      "log": "work/p3-wood-trees-tags-compile-20261001.log",
+      "logSha256": "c4755767a3d02d5519a850a204f574b70a07ae7aa817f270408a284e03373d0c",
+      "result": "PASS"
+    }
+  ],
+  "initialFailure": "Five native registry/enchantment API substitutions; corrected grouped compile 28s",
+  "scope": "Core/Neo/Forge tree and wood code; final native compilation after restoring wood form tags",
+  "notProven": [
+    "wood gameplay",
+    "world/client rendering",
+    "independent world restart",
+    "old saves",
+    "production jars"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASSES_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "8ce791f8acee3c5506926677e2c21d4de55b95b47958d06d31b6cab9ca1bde15",
+  "bytes": 35816357,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/client/CrucibleTooltips.class",
+      "sha256": "d9538c0f62a1250456bf6619b0251b91dab20f87ef5b0af1d4fcde9c0bb8c1bd"
+    },
+    {
+      "entry": "com/gregtech/gregtech/block/machine/SmeltingCrucibleBlockItem.class",
+      "sha256": "872a3525b3352a818b48934a3f8d0e4421053b34c7c508af4836104accb6c6ad"
+    },
+    {
+      "entry": "com/gregtech/gregtech/platform/neoforge/smeltery/SmelteryRegistries.class",
+      "sha256": "805cb3fdfa2d90342b3a63ce5a087178e2fa1ac64a98e47e0b32ef4862348f5f"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/CreosoteAxleRecipe.class",
+      "sha256": "abf464639d314fe6970a2cc56bd3d64a0604d7554a9136f59932ed9d4a1407ac"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/CreosoteAxleRecipe$1.class",
+      "sha256": "295310b68ae501b10a26a94b42b7cfab77b59c87b1ef58d7856fa076332c3512"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/CreosoteAxleRecipe$ContainerIngredient.class",
+      "sha256": "66f894728ff845d94dd338387d36c42cc7fa707a6144a6c7b23a99db02b03917"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/NeoRecipeSerializers.class",
+      "sha256": "d1967c640667ebeb29220a871ea6aca2e22fb06d1b785875b4ffe222496e2356"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/ManualToolRecipePack.class",
+      "sha256": "97ae3eb7a6d2abb7d8c3561457aa6cd3610b2c555d6a46d5897f97ac968bef6b"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/ManualToolRecipePack$1.class",
+      "sha256": "3c9bc55a36787a604e06d0cbaa489aec44e3a289568e524329b7b62e798d930e"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/ShapelessRecipeTooltipIndexLoader.class",
+      "sha256": "322c288680f51844bae5be17f95b282c081f582ce07c6f22bfb6d34264516663"
+    },
+    {
+      "entry": "com/gregtech/gregtech/recipe/ShapelessRecipeTooltipIndexLoader$Client.class",
+      "sha256": "a72f2d03a817db5423b53ad614dfcf1ba29361c2cb2b597e7f9ee32723dbc617"
+    }
+  ],
+  "scope": "Actual seven changed Java families and native Minecraft metadata checked; unchanged shared resources/core/Forge reused. Production jar not launched."
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_PASS",
+  "command": ":neoforge:compileJava :compileJava",
+  "elapsed": [
+    "24s",
+    "13s"
+  ],
+  "logs": [
+    {
+      "path": "work/p3-native-tooltips-overlays-compile-20261001.log",
+      "sha256": "7ab83a83ae1d128ad5ea3dfb17d328030a7b1eef1740b153bb1da14938adc4ab"
+    },
+    {
+      "path": "work/p3-native-tooltips-indicators-compile-20261001.log",
+      "sha256": "ad50b7f3bf19832810cd160dd58621b0e23ba46dcdf69d2c3694bb4a12dc0d29"
+    }
+  ],
+  "scope": "Ten complete new Native tooltip, index, overlay and indicator classes plus three real callbacks/renderer registrations; Forge Java unchanged/up-to-date.",
+  "notProven": [
+    "Actual advanced material/foreign tooltip presentation",
+    "Shapeless tooltip index runtime contents and reload consistency",
+    "Overlay face alignment/selection/GL state",
+    "Boiler pressure and flower indicators",
+    "Client startup of this exact wave",
+    "Production jar launch",
+    "World restart/old saves"
+  ]
+}

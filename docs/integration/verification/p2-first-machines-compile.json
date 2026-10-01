@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "result": "passed",
+  "scope": "One implementation-batch compile; not runtime or packaged-jar acceptance",
+  "duration": "1m33s",
+  "tasks": [
+    ":core:check",
+    ":compileJava",
+    ":compileBootstrapGameTestJava",
+    ":neoforge:compileJava"
+  ],
+  "log": "work/p2-first-machines-compile.log",
+  "log_sha256": "07c91603614d8dea811253dada2def864a7b61fa248b7440b59628acd3e67ecf",
+  "core_assertions": 6305,
+  "source_commit_before_uncommitted_batch": "87a2f1d5e1",
+  "source_fingerprint_status": "Final integration commit to be recorded with stage runtime receipt"
+}

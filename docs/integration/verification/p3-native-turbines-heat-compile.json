@@ -1,0 +1,31 @@
+{
+  "result": "PASS",
+  "runs": [
+    {
+      "log": "work/p3-native-turbines-heat-compile-20261001.log",
+      "sha256": "ab38f5e730ac720656d06f11ee7c531720337a8a7161be44132dab7d879d084e",
+      "result": "FAIL seven missing original control/fuel contracts and RegistryObject reference"
+    },
+    {
+      "log": "work/p3-native-turbines-heat-compile-20261001-2.log",
+      "sha256": "9ae0028f41bcf93f48dbc917923b267568e47d3d410fec97f93e9f1d11739198",
+      "result": "PASS core/Neo/Forge19s"
+    },
+    {
+      "log": "work/p3-native-turbines-heat-compile-20261001-final.log",
+      "sha256": "f621999a24a4e2b00eeb498fea0a5ddce4fab4197ba84116baf41e2dd709aace",
+      "result": "PASS core/Neo/Forge19s including native client rotor/colors"
+    }
+  ],
+  "policy": "D010 grouped necessary compilation, no subsystem fixture",
+  "notProven": [
+    "actual fuel/exhaust/steam/power transfer",
+    "real structure re-forming or conflicting ownership",
+    "world renderer/color behavior",
+    "survival fuel/crafting access",
+    "Forge gameplay",
+    "separate-process world restart",
+    "old saves",
+    "production jars"
+  ]
+}

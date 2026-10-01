@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "elapsed": "32s",
+  "log": "work/p3-native-containers-chests-garbage-compile-20261001.log",
+  "sha256": "38ba1a7cab7a33e28ec75cbb4ef710623f6dd9d6405e3d78a5bf8a110dbfe0b6",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "policy": "D010 grouped compile only; no fixture/startup",
+  "postCompileResources": "Forge/Neo composite loader files split at platform boundary; source geometry/bytes preserved",
+  "notProven": [
+    "All202 block variants are compile-covered only; the previous ordinary Neo dedicated startup predates these batches. No new fixture or startup was added under D010.",
+    "Source locker lacks automation/charging and many material variants compared to other implementations. Those additions remain part of full integration work.",
+    "Drawer arbitrary-facing orientation, legacy4096-count migration/overflow, full inventory transfers, bottle packed drop conservation/creative policies and actual fluid renderer remain unverified.",
+    "Source chest loot ticks generate on the first tick (not actual first-player proximity); preplaced contents/vanilla fill and generated experience/reroll retention remain unverified. Custom paint, trapped redstone/comparator support and full replacement/dungeon world hooks remain pending.",
+    "Native loot rows can remain unresolved where optional/source plain items are not yet registered. A compiled resolver/catalog does not prove all tables populated. Dictionary and book rendering/crafting pages remain unverified.",
+    "Source garbage discards oldest distinct piles after256 entries, caps fluid amounts to int, and stores item counts as long without overflow protection. Recovery menu validity/partial destination insertion/reentrant inventory hooks and actual SavedData restart have not been verified.",
+    "Only existing original assets are moved; complete per-variant item/model availability is not claimed. Forge and Neo loader files are separate; resource changes were not rendered or launched.",
+    "Forge runtime, real core survival chain, independent world restart/old-save migration and production jar/client acceptance remain pending. Optional directCoreResources speed path remains awaiting next grouped startup. Full goal remains active."
+  ]
+}

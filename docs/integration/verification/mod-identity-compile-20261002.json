@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-02",
+  "source_parent_commit": "a4b203f8bb98b62a6baa1966c387dc62bcc2e87f",
+  "status": "compilation-and-generated-metadata-passed",
+  "loader_mod_id": "gregtech6",
+  "display_name": "GregTech 6 Integrated",
+  "registry_namespace": "gregtech",
+  "generated_metadata": {
+    "forge": {
+      "mod_id": "gregtech6",
+      "display_name": "GregTech 6 Integrated",
+      "sha256": "aee7c4b47cc148a8bc21774769f2df748c09d91480ad6357f1618b789a3205d5",
+      "generated_file": "build/resources/main/META-INF/mods.toml"
+    },
+    "neoforge": {
+      "mod_id": "gregtech6",
+      "display_name": "GregTech 6 Integrated",
+      "sha256": "d8a1ce8213b456d52effffc34ed55a47705f741f85b2b10d9af526c36a592bf7",
+      "generated_file": "neoforge/build/resources/main/META-INF/neoforge.mods.toml"
+    }
+  },
+  "initial_java_compilation_duration": "1m 40s",
+  "final_duration": "1m 29s",
+  "tasks": [
+    ":compileJava",
+    ":processResources",
+    ":neoforge:compileJava",
+    ":neoforge:processResources"
+  ],
+  "final_log_sha256": "2ca0f9783b858547d58b59d5a5fe09ecac356ce01daee346d14d1ec6dfa6caa8",
+  "runtime_after_identity_change": false,
+  "production_jars_rebuilt_after_identity_change": false,
+  "gameplay_verified": false,
+  "world_reload_verified": false,
+  "old_save_compatibility_verified": false
+}

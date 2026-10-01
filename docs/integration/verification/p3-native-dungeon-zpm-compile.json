@@ -1,0 +1,33 @@
+{
+  "result": "PASS",
+  "elapsed": "21s",
+  "log": "work/p3-native-dungeon-zpm-compile-20261001.log",
+  "sha256": "77d7070aee319c9cec2ed30ce93c5e5f0e6adb0d5c4ac8a19277cf8f3273226a",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "policy": "D010 grouped compilation; no new fixture",
+  "scope": {
+    "coinMold": 1,
+    "zpmAndDischargers": 4,
+    "portals": 2,
+    "pottedIndicators": 17,
+    "totalBlocks": 24,
+    "dungeonAndStructureJavaFiles": 33,
+    "nativePortalJavaFiles": 3,
+    "resources": 124,
+    "javaRecords": 62,
+    "dungeonRoomAndHelperClasses": 28
+  },
+  "notProven": [
+    "Grouped dual compilation passes28s, then21s after charged-dungeon fix. No new subsystem test fixture; one ordinary Neo short startup is recorded separately.",
+    "Actual naturally generated dungeon completeness, cross-chunk farm ownership, piston doors, keys/loot/reward reachability and two-in-three ZPM discharge require gameplay evidence. Source feature catches room exceptions; server boot alone cannot establish room generation. Original anchor bedrock gate remains deliberately omitted by source per-cell design, and generated regions may differ from both donors/original GT6.",
+    "The source miniature portals teleport entities while original GT6 relays items/fluid/energy/redstone. Original relay delegates, particles and activation sound are absent; do not call the original portal system complete. Loaded-only target list, unload/reload behavior, fallback platform collision safety and player travel remain unverified.",
+    "Coin pattern editing availability, exact stamp display/material rendering, hammer damage, item automation and persistence are not gameplay-verified. Native provider/component migrations preserve existing keys but old-save compatibility has no evidence.",
+    "ZPM decharger elite duplicates basic source QU behavior and has no distinct tier policy. Source default block items use64 stack size; donors use16 or charged-single behavior. General QU item energy interoperability, cover UI, recipes, actual packet delivery and restart/charged items remain pending.",
+    "Both clients, Forge runtime, full survival chain, independent-process world restart, old saves, production jars and final release acceptance are pending. Original notices/author history preserved; third-party authorization unresolved, no publication. Full goal stays active."
+  ],
+  "resourceScopeNote": "Native singular loot_table copies followed compile/startup; actual loot remains unverified."
+}

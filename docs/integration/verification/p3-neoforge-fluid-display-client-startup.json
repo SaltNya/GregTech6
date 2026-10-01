@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-01",
+  "result": "TITLE_SCREEN_PASS_WITH_PRE_FIX_MODEL_ERRORS_RECORDED",
+  "command": ":neoforge:runClient distributionJar :neoforge:jar -PdirectCoreResources=true -PdirectCoreClasspath=true -PclientSmoke=true -PclientSmokeTimeout=300",
+  "elapsed": "2m38s including both jars",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "timeoutSeconds": 300,
+    "elapsedMs": 55630,
+    "screenshot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-186ddf3e-8bde-4fdc-a0a1-d664a3460bf4.png",
+    "width": 1280,
+    "height": 720,
+    "renderedFrames": 149,
+    "screen": "net.minecraft.client.gui.screens.TitleScreen"
+  },
+  "log": "work/p3-native-fluid-display-client-jars-20261001.log",
+  "logSha256": "0dfc48473b9f8e8318bcb476b90dbc41d2286b5e15d5eba4744d67619b87fd53",
+  "screenshotSha256": "ee60915af11a714eccbba9dc770f9c9e0acc33bc75682d4e5d2a1a16ad9a8c66",
+  "screenshotVisuallyInspected": true,
+  "beforeCounts": {
+    "missingModelWarnings": {
+      "gregtech:block": 126,
+      "gregtech:item": 57462
+    },
+    "worldFluidVariantWarnings": 144,
+    "blockstateWarningRows": 189,
+    "materialAliasLog": [
+      "56036 mapped, 0 missing shared model"
+    ]
+  },
+  "observedCounts": {
+    "missingModelWarnings": {
+      "gregtech:item": 57462,
+      "gregtech:block": 41
+    },
+    "worldFluidVariantWarnings": 0,
+    "blockstateWarningRows": 45,
+    "materialAliasLog": [
+      "56036 mapped, 0 missing shared model"
+    ]
+  },
+  "lateFix": "41 mold composite JSON files were restored to Forge; native forks only loader changed to neoforge:composite. Actual platform source inspected; no repeat client after resource fix. Final packaging has separate receipt.",
+  "notProven": [
+    "Actual fluid sprite, tint, payload component names and tooltips",
+    "JEI categories/recipe UI",
+    "Actual drinking/capability drain",
+    "F3+T/current cache reload",
+    "Late 41 native composite models runtime rendering",
+    "Dedicated server",
+    "Production jars runtime",
+    "Core gameplay/world restart/old worlds"
+  ]
+}

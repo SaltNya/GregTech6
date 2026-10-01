@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-01",
+  "result": "TITLE_SCREEN_AND_MODEL_BAKE_PASS",
+  "elapsed": "1m 46s",
+  "command": ":neoforge:runClient :neoforge:jar -PdirectCoreResources=true -PdirectCoreClasspath=true -PclientSmoke=true -PclientSmokeTimeout=300",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "timeoutSeconds": 300,
+    "elapsedMs": 56021,
+    "screenshot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-99eb3d6f-d901-404c-bbdf-ec8776ebf55c.png",
+    "width": 1280,
+    "height": 720,
+    "renderedFrames": 151,
+    "screen": "net.minecraft.client.gui.screens.TitleScreen"
+  },
+  "actualBakeLogs": {
+    "solidBurningBoxes": 29,
+    "fuelBurningBoxes": 84,
+    "basicMachines": 258,
+    "engineModelsWrapped": 59,
+    "solidMissing": 0,
+    "fuelMissing": 0,
+    "basicMissing": 0,
+    "crucibles": 39,
+    "crucibleMissing": 0
+  },
+  "warnings": {
+    "missingModelWarnings": {
+      "gregtech:item": 57462,
+      "gregtech:block": 1
+    },
+    "blockstateWarningRows": 45
+  },
+  "log": "work/p3-native-machine-models-client-jar-20261001.log",
+  "sha256": "b750ac606c473b513452d06c5e8aebd7ecd714885ce768f6bb1328bb960ffb45",
+  "screenshotSha256": "4e0bd22b326a814499e71a2f24f74556d93cc9a8c61824db109d1c681c1d547e",
+  "screenshotVisuallyInspected": true,
+  "scope": "One existing title-screen startup exercises real Native model bake, renderer registration and bowl loader forks; includes prior unused ore-template request cleanup. No world interaction/rendering assertion.",
+  "notProven": [
+    "Actual machine rotation/work-state tint and inventory graphics",
+    "Crucible meltdown, heat/content sync and hull display in world",
+    "Capsule fluid windows/amount/capability sync",
+    "F3+T",
+    "Production jar startup",
+    "New exact-wave dedicated startup",
+    "Complete gameplay/separate-process saved-world restart/old saves"
+  ],
+  "lateFix": "Only missing block model was the original unused barometer/sprites request. Native request removed and final jar compiled/packed; no repeat client, so post-fix warning count is unverified.",
+  "priorOreCleanup": "82 unused ore material-template warnings from previous wave are absent in this actual client log."
+}

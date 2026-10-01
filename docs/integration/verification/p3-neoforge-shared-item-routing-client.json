@@ -1,0 +1,43 @@
+{
+  "platform": "neoforge",
+  "minecraft": "1.21.1",
+  "timeoutSeconds": 180,
+  "elapsedMs": 51615,
+  "screenshot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-0b3e6730-4074-4287-bb5e-b9be38f638dd.png",
+  "width": 1280,
+  "height": 720,
+  "renderedFrames": 151,
+  "screen": "net.minecraft.client.gui.screens.TitleScreen",
+  "result": "PASS_WITH_KNOWN_RESOURCE_GAPS",
+  "scope": "Native development client reaches and renders TitleScreen; actual PNG inspected",
+  "elapsed": "4m23s including resource rebuild; runtime marker 51.615s",
+  "log": "work/p3-shared-item-routing-neoforge-client-20261001-r2.log",
+  "logSha256": "f208a9be8c7f4da59dccfea0f288e24999717e5cf2d2914093571ee45369fcd2",
+  "screenshotSha256": "4b2aa59ea3725bd1093527f8c134b0a5d0af381caeed1f56d53c27c21a31fab3",
+  "screenshotVisuallyInspected": true,
+  "previousAttempt": {
+    "result": "FAIL",
+    "log": "work/p3-shared-item-routing-neoforge-client-20261001.log",
+    "logSha256": "328c7d87a2b50464a35ea269b4218dab6ac39179a4fe21d92664b2e604c3e2b4",
+    "cause": "Explicit plateTiny texture alias creates invalid uppercase ResourceLocation; shared Forge composite loader JSON also crosses native loader boundary",
+    "secondary": "Deferred-startup retry then initializes NeoMachineRecipeLoader twice; guard retained, not made silently idempotent",
+    "gradleSuccessDoesNotProveClientSuccess": true
+  },
+  "knownResourceGaps": {
+    "invalidPackPathsIgnored": 5,
+    "voidTexturePngDecodeFailure": true,
+    "unableToLoadModelWarnings": 57328,
+    "blockstateDefinitionWarnings": 213,
+    "invalidAnimationFrameWarnings": 74,
+    "unusedAnimationFrameWarnings": 11,
+    "interpretation": "Counts come from current log; many material inventory models are later replaced by baked aliases. Main-menu success does not establish world geometry or absence of missing textures."
+  },
+  "notProven": [
+    "World entry/rendering",
+    "machine GUI use",
+    "all material icons",
+    "client/server gameplay",
+    "independent world restart",
+    "production jar"
+  ]
+}

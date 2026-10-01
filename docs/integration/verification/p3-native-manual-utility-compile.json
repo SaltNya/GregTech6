@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "elapsed": "27s",
+  "log": "work/p3-native-manual-utility-final-compile-20261001.log",
+  "sha256": "cf53ab9762ecff68d1acc35adede673fd1af308f38428ae5e86d0b92b8a14215",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "policy": "D010 grouped compilation; no new fixture",
+  "scope": {
+    "anvils": 35,
+    "manualStations": 7,
+    "processingVessels": 7,
+    "scaffolds": 60,
+    "ropes": 6,
+    "otherUtilities": 5,
+    "totalBlocks": 120,
+    "resources": 578,
+    "platformLoaders": 78,
+    "javaRecords": 54
+  },
+  "notProven": [
+    "Grouped dual compile PASS:49 manual/vessel blocks39s, all120 blocks27s. One ordinary native dedicated startup follows; no new subsystem fixture or per-module startup was added.",
+    "Actual powered hammer-anvil interaction, survival availability/craft recipes, manual recipe outputs/conservation, curses/XP/abrasive exhaustion, renderer/contents orientation and all client behavior remain unverified. Powered anvil quality is not applied as an additional recipe gate in baseline. The grindstone disenchantment branch retains the baseline behavior of not decrementing abrasives; no unsupported upstream equivalence claimed.",
+    "Baseline vessel drain capability includes input tanks as well as output tanks; brokestar output-only drain/rotating tank and masson explicit sided layouts may be stronger policies. Preserve baseline initially; all rain/fluid/juicer transaction behavior and provider/component save migration need gameplay and independent restart evidence.",
+    "Sap bag baseline empties the resin hole before proving available bag capacity, and can lose a resin/fluid yield on overflow. No donor fix was established in this wave; explicitly retained defect pending transactional repair. Source sap bag model does not expose an integrated full overlay path in this port. Tank contents deliberately disappear when broken as in the baseline.",
+    "Crank is one packet per click and a10-tick redstone pulse; original GT6 continuous targeting/villager driving and animated texture remain absent in baseline/donor. Rope extension/support traversal permissions and chunk-boundary behavior, scaffold support search and advanced button multi-hand behavior remain unverified.",
+    "Forge runtime, both clients, complete survival chain, independent-process saved-world restart, old saves and production jars/release remain pending. No license, history or source tree was changed; publication permission remains unresolved. Full integration goal stays active."
+  ]
+}

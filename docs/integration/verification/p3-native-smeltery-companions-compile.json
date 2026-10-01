@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "elapsed": "20s",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "log": "work/p3-native-smeltery-companions-compile-20261001-2.log",
+  "sha256": "04bba32a66078df4eccffe6461abddf7c24f81c804e415ff8c90776d7ec1988c",
+  "repair": "Initial13s compile failed on two references to Source-only BakedModelLookup. Native missing-model sentinel and captured inventory transforms adapted.",
+  "policy": "D010 grouped necessary compile, no new fixture or repeated startup",
+  "notProven": [
+    "registration/client model baking/data reload not yet verified; previous nuclear startup predates this wave",
+    "actual shape carving, casting/cooling/pickup/automation/redstone/stacked basin/routing/acid/meltdown/tool/hazard gameplay unverified",
+    "source stacked mold consumes/clears the entire basin when forming a smaller output and uses environment temperature in parts of this path; retained source limitation, not claimed conserved or complete",
+    "source basin clears content on automatic solidification even if blockSolid output is unavailable; retained, unverified",
+    "source faucet skips positions below Y0 and has no UI toggle path to its autoPull flag in the shown interaction handler; retained source limitations, unverified",
+    "source crossing wave lock cleanup is not exception-safe; no tested dynamic-handler recovery claim",
+    "complete survival crafting routes for all39 companion materials not established by the inspected source recipe registrations; do not substitute guessed recipes for verified original rows",
+    "solidifying target conversion remains source identity fallback in mold/basin rather than full target mapping",
+    "world client grid/molten/solid/hull/directional-faucet renders, Forge runtime, independent world restart, old saves and fresh jars unverified",
+    "remaining burning boxes/crops/bees/interfaces/world systems continue"
+  ]
+}

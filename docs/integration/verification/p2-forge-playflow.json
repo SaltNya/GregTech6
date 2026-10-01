@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "command_exit_code_observed_by_root": 0,
+  "scope": "Forge 1.20.1 development GameTest server; given equipment and ingredients; actual coal/HU, alloy, mold interactions and conservation. Full survival acquisition, client operation, production jar and machine world restart unverified.",
+  "required_tests": 2,
+  "xml_failures": 0,
+  "xml_errors": 0,
+  "xml_skipped": 0,
+  "based_on_main_commit": "de18243bb9",
+  "includes_uncommitted_fixture_isolation_and_optional_xml_reporter": true,
+  "log": {
+    "path": "work\\p2-forge-bronze-playflow-isolated-retry1.log",
+    "bytes": 197752,
+    "sha256": "279b6b98a539598756c36ff45c4bd54118a8799eae82b2d4ea047849335f52f3"
+  },
+  "xml": {
+    "path": "build\\forge-playflow-isolated-run\\playflow.xml",
+    "bytes": 397,
+    "sha256": "4c34de909124755cdcda1c2c548ef03198bbf309777c9f0da3a64ac1ee04e7cb"
+  },
+  "test_source": {
+    "path": "src\\bootstrapGameTest\\java\\com\\gregtech\\gregtech\\integration\\gameplay\\ForgeBronzeChainTests.java",
+    "bytes": 23611,
+    "sha256": "8c6a0dd658caa8de190de988c35bd85bb31dfd19966ab6fe3ace59d3b9f792a0"
+  },
+  "reporter_source": {
+    "path": "src\\bootstrapGameTest\\java\\com\\gregtech\\gregtech\\integration\\gameplay\\ForgeGameTestReports.java",
+    "bytes": 2455,
+    "sha256": "b6ee5b98d4846df887395a46f6340042a038743453d137c809f40185bbcb91e8"
+  },
+  "markers": {
+    "GATES": "tick=400 disconnected=crucible=287K/0HU/content=[]/cache=0 air capacity=crucible=287K/0HU/content=[Copper/10378368000]/cache=1 ingot_copper",
+    "ALLOY": "tick=3017, phase=1, cast=0, alloyTick=3017, maxK=1357, previousK=1357, heater=true/1824HU/fuel=3 coal/ash=10 dust_tiny_darkashes, crucible=1357K/26HU/content=[Bronze/2594592000]/cache=0 air, mold=empty/0/287K/solid=false/shape=7576807, playerBronze=0",
+    "COMPLETE": "tick=3026, phase=3, cast=4, alloyTick=3017, maxK=1358, previousK=1358, heater=true/1824HU/fuel=0 air/ash=0 air, crucible=1358K/0HU/content=[]/cache=0 air, mold=empty/0/287K/solid=false/shape=7576807, playerBronze=4"
+  },
+  "known_fixture_gap": "First run consumed a saddle in the open, intentionally uncharged crucible; precise external entity source unresolved. Template is empty; a glass roof and sides now physically exclude external input without changing the air-gap or production suction."
+}

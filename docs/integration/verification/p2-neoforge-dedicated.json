@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "scope": "development ordinary DedicatedServer and actual vanilla chest/dirt world restart; GT machine persistence and production jar unverified",
+  "platform": "neoforge",
+  "records": {
+    "prepare": {
+      "receipt": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "prepare",
+        "sessionId": "26c727a0-c6c7-4cbb-a178-84b95ba2f909",
+        "pid": 13532,
+        "specimenId": "a3208368-afca-4cc4-beb0-6b1d1aecddd1",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\persistence-neoforge-a3208368-afca-4cc4-beb0-6b1d1aecddd1\\world",
+        "x": 8,
+        "y": -48,
+        "z": 8,
+        "dirtX": 9,
+        "dirtY": -48,
+        "dirtZ": 8,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 13533,
+        "restartWorldReadVerified": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\persistence-neoforge-a3208368-afca-4cc4-beb0-6b1d1aecddd1\\world\\level.dat",
+        "levelDatBytes": 1753,
+        "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\persistence-neoforge-a3208368-afca-4cc4-beb0-6b1d1aecddd1\\world\\region\\r.0.0.mca",
+        "regionBytes": 929792
+      },
+      "log_sha256": "cae25c20253d0f7bc89f1789409ae571d94420dd81d334c55faf111c1332f939",
+      "log": "F:\\Dev\\GregtTech6New\\gregtech6\\work\\p2-neoforge-dedicated-prepare.log"
+    },
+    "verify": {
+      "receipt": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "verify",
+        "sessionId": "3c521f7a-9b5c-43a6-8a1d-434a5e100ca7",
+        "pid": 62600,
+        "specimenId": "a3208368-afca-4cc4-beb0-6b1d1aecddd1",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\persistence-neoforge-a3208368-afca-4cc4-beb0-6b1d1aecddd1\\world",
+        "x": 8,
+        "y": -48,
+        "z": 8,
+        "dirtX": 9,
+        "dirtY": -48,
+        "dirtZ": 8,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 13404,
+        "restartWorldReadVerified": true,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\persistence-neoforge-a3208368-afca-4cc4-beb0-6b1d1aecddd1\\world\\level.dat",
+        "levelDatBytes": 1754,
+        "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\persistence-neoforge-a3208368-afca-4cc4-beb0-6b1d1aecddd1\\world\\region\\r.0.0.mca",
+        "regionBytes": 933888
+      },
+      "log_sha256": "ee1721911641ac0a736c3b337952c713d47292406880a6cf5ffc9e75637a15c3",
+      "log": "F:\\Dev\\GregtTech6New\\gregtech6\\work\\p2-neoforge-dedicated-verify.log"
+    },
+    "final_levelDat": {
+      "path": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\persistence-neoforge-a3208368-afca-4cc4-beb0-6b1d1aecddd1\\world\\level.dat",
+      "bytes": 1754,
+      "sha256": "b3d0e5fe9b709e463f85a291336f935cfba3fd68fb9641b4be894e4bf2445faa"
+    },
+    "final_region": {
+      "path": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\persistence-neoforge-a3208368-afca-4cc4-beb0-6b1d1aecddd1\\world\\region\\r.0.0.mca",
+      "bytes": 933888,
+      "sha256": "0869723543b3aacae739e0a538e7533e4fa1bb5041262b95d25a0e408e12c273"
+    },
+    "specimen_chunk": {
+      "region_index": 0,
+      "sector": 227,
+      "sector_count": 1,
+      "compression": 2,
+      "nbt_bytes": 14939
+    }
+  }
+}

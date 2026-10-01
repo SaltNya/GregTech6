@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "elapsed": "19s",
+  "log": "work\\p3-native-grass-soils-compile-20261001.log",
+  "sha256": "5afec2ae67acbc93be17e754eb0880bd4119b19e4f7151192836061d9250f10f",
+  "notProven": [
+    "Native PlantType replacement recognizes BushBlock plains and water-adjacent sugar cane; other-mod custom soil types remain deferred.",
+    "Colored grass has silk-touch self drop/otherwise dirt and no spread, while3 dry/moldy/rotten variants remain ordinary source icon blocks.",
+    "Spring indicator helper now resolves blocks but source worldgen still never calls it.",
+    "These10 registrations/resources are compile-covered only, not covered by preceding server startup; actual drops/soil/client/reload unverified."
+  ]
+}

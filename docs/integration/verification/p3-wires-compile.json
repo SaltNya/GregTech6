@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-01",
+  "sourceParent": "b0d0f5f38f21e067e300510d830936256cccb05c",
+  "command": "./gradlew.bat --console=plain :neoforge:compileJava :compileJava",
+  "result": "PASS",
+  "seconds": 36,
+  "tasks": 7,
+  "executed": 4,
+  "upToDate": 3,
+  "scope": [
+    "620 physical electric wires/cables",
+    "6 redstone wires",
+    "shared catalogs/packet arithmetic",
+    "wire processing and graphene recipes"
+  ],
+  "log": "work/p3-wires-signal-recipes-compile-20261001.log",
+  "logSHA256": "8d8ee55a12b167f428f4f4ac6c2ad8d7db9bc3156d88b60f1193c6863148e01e",
+  "notVerified": [
+    "client",
+    "packet traversal",
+    "redstone wave solving",
+    "actual recipe processing",
+    "world restart",
+    "old saves",
+    "new packaged jars"
+  ]
+}

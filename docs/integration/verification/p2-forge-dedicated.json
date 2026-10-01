@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "scope": "development ordinary DedicatedServer and actual vanilla chest/dirt world restart; GT machine persistence and production jar unverified",
+  "platform": "forge",
+  "records": {
+    "prepare": {
+      "receipt": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "prepare",
+        "sessionId": "329e1970-1704-4653-bb21-de2012164e13",
+        "pid": 33800,
+        "specimenId": "80e1a426-1a4f-41d7-af43-80fa179585b8",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\build\\persistence-forge-80e1a426-1a4f-41d7-af43-80fa179585b8\\world",
+        "x": 8,
+        "y": -48,
+        "z": 8,
+        "dirtX": 9,
+        "dirtY": -48,
+        "dirtZ": 8,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 11033,
+        "restartWorldReadVerified": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\build\\persistence-forge-80e1a426-1a4f-41d7-af43-80fa179585b8\\world\\level.dat",
+        "levelDatBytes": 787807,
+        "region": "F:\\Dev\\GregtTech6New\\gregtech6\\build\\persistence-forge-80e1a426-1a4f-41d7-af43-80fa179585b8\\world\\region\\r.0.0.mca",
+        "regionBytes": 2174976
+      },
+      "log_sha256": "b5428c763d5b81c9bcb221e6088bd6a2cbc02458de6aec94307305f41ad358dd",
+      "log": "F:\\Dev\\GregtTech6New\\gregtech6\\work\\p2-forge-dedicated-prepare-authorized.log"
+    },
+    "verify": {
+      "receipt": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "verify",
+        "sessionId": "1ae16a0e-4ac4-4bdd-94d6-5fb0f6b88ce2",
+        "pid": 16952,
+        "specimenId": "80e1a426-1a4f-41d7-af43-80fa179585b8",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\build\\persistence-forge-80e1a426-1a4f-41d7-af43-80fa179585b8\\world",
+        "x": 8,
+        "y": -48,
+        "z": 8,
+        "dirtX": 9,
+        "dirtY": -48,
+        "dirtZ": 8,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 10933,
+        "restartWorldReadVerified": true,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\build\\persistence-forge-80e1a426-1a4f-41d7-af43-80fa179585b8\\world\\level.dat",
+        "levelDatBytes": 787805,
+        "region": "F:\\Dev\\GregtTech6New\\gregtech6\\build\\persistence-forge-80e1a426-1a4f-41d7-af43-80fa179585b8\\world\\region\\r.0.0.mca",
+        "regionBytes": 2179072
+      },
+      "log_sha256": "adbef6c960624dd576106515de1e9599d8e5486743eaab9c4d46271e7416f6b2",
+      "log": "F:\\Dev\\GregtTech6New\\gregtech6\\work\\p2-forge-dedicated-verify-authorized.log"
+    },
+    "final_levelDat": {
+      "path": "F:\\Dev\\GregtTech6New\\gregtech6\\build\\persistence-forge-80e1a426-1a4f-41d7-af43-80fa179585b8\\world\\level.dat",
+      "bytes": 787805,
+      "sha256": "83bfa61d8900a97e6ac32f948c95468ed12fb156dbfca88e28707ef327bb3c21"
+    },
+    "final_region": {
+      "path": "F:\\Dev\\GregtTech6New\\gregtech6\\build\\persistence-forge-80e1a426-1a4f-41d7-af43-80fa179585b8\\world\\region\\r.0.0.mca",
+      "bytes": 2179072,
+      "sha256": "2a130e8816a889f143d5a1556bbaf497a47889c3451812fde0974bd36ba89927"
+    },
+    "specimen_chunk": {
+      "region_index": 0,
+      "sector": 531,
+      "sector_count": 1,
+      "compression": 2,
+      "nbt_bytes": 17011
+    }
+  }
+}

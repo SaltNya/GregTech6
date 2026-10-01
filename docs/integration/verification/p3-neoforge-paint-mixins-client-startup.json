@@ -1,0 +1,45 @@
+{
+  "result": "TITLE_SCREEN_PASS",
+  "date": "2026-10-01",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "timeoutSeconds": 300,
+    "elapsedMs": 54122,
+    "screenshot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-38c6a098-0475-4e66-ba55-703c6861f1bb.png",
+    "width": 1280,
+    "height": 720,
+    "renderedFrames": 149,
+    "screen": "net.minecraft.client.gui.screens.TitleScreen"
+  },
+  "screenshotSha256": "1601b7b7b5966ffe4e818b97d6f63177dbc956420d243ea5e5af58c7eb5294a5",
+  "screenshotVisuallyInspected": true,
+  "elapsed": "1m 47s",
+  "log": "work/p3-paint-mixins-client-startup-20261001.log",
+  "logSha256": "461d425280784a33ba210683fbedf4a0e7a9db44240f602ded3617a5d098e2dd",
+  "command": ":compileJava :neoforge:runClient -PdirectCoreResources=true -PdirectCoreClasspath=true -PclientSmoke=true -PclientSmokeTimeout=300",
+  "policy": "D010 one existing client short startup, no new fixture or duplicate run",
+  "scope": "New common/client Mixin and original item/model registry loading, actual rendered main menu; before late cap loader/void alias resource fixes",
+  "counts": {
+    "paintDyes": 16,
+    "newPaintFullUsedItems": 32,
+    "totalMultiItems": 1313,
+    "sharedCoreClasses": 3,
+    "resourceRecords": 51,
+    "exactDonorPaintTextures": 16,
+    "newPaintModelAliases": 32,
+    "commonPaintMixinsPerPlatform": 2,
+    "clientPaintMixinsPerPlatform": 2,
+    "originalNativeHooksRestored": 2,
+    "nativeCompositeModelForks": 1,
+    "javaRecords": 23
+  },
+  "notProven": [
+    "Late cap_nozzle loader split and void sprite alias correct concrete client-log errors after that single startup. Those resource-only changes were not started again; their runtime/render outcome remains pending. No new fixture, individual-system run or retry of the successful menu.",
+    "Actual paint/mix/unpaint, packet/client world tint rebuild, packed item paint, sheep/wolf coloring, grass switches, water merging/swimming/waterlogging, broken falling ore drops and real saved-world restart remain unverified. No dedicated server was started for this exact batch; prior batch ordinary server evidence is not extended to it.",
+    "The shared paint state starts/clears white. Unpainted visual tint returns to the existing material renderer; getPaint on an unpainted entity reports white rather than every brokestar machine material default. As in donor paint() color equality, a first white spray on default-white state declines. Existing superclass serializer/update paths are used; custom entities bypassing superclass serialization or update handling need runtime checks. Packed drops preserve paint only when their existing code saves entity data; generic ordinary drops still lose paint.",
+    "Bro colored/owned construction foam, placement modes, pipe coating and broader foam models/owner behavior remain pending and are not claimed absorbed. Canner refill/crafting and survival acquisition are pending; donor spray registry explicitly used creative acquisition for its initial implementation, and no invented vanilla recipe is added. Remaining masson/donor systems and optional integrations are not hidden.",
+    "Client logs still report6 inherited invalid-path lines from molten hsla and non-ASCII backup ingot sprites, plus many unresolved blockstate variants/texture references. TitleScreen success does not establish complete world rendering; these gaps are retained for subsequent resource integration. Uppercase underlay invalid-path line is no longer present in this run.",
+    "Forge runtime/client world gameplay, production jars, full survival chains, independent process world restart, old-save and release acceptance remain pending. Original histories/authors/licenses retained; Source1 publication authorization unresolved, no remote/publication. Full goal active under D010."
+  ]
+}

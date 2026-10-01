@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "c5b14085a18fa5b0f86b3c48529dda420522fac3e9e43913082e2a5300a3f271",
+  "bytes": 35874393,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/block/machine/GTFacingMachineBlock.class",
+      "sha256": "ccfd80a87048457c149aceff83f1f1199cec8a7dcf9254d2787070c4df8dddfb"
+    },
+    {
+      "entry": "com/gregtech/gregtech/block/machine/BasicMachineBlock.class",
+      "sha256": "955557a1adfb6458bfed9ba314e1da32ba1b9c7b1a25d15997ba8a52be31ce79"
+    },
+    {
+      "entry": "com/gregtech/gregtech/block/inventory/MassStorageBlock.class",
+      "sha256": "5b4acc8a1e5a414ae451558b035542d8b19ed540ffb2825386e5d8d78ea9dfc3"
+    }
+  ],
+  "scope": "Three current changed Native classes byte-matched to actual jar; exact Minecraft metadata checked. No core/resource/Forge change or repeat full audit; production jar not run."
+}

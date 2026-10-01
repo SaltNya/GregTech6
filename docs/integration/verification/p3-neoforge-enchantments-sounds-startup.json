@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-01",
+  "result": "DEDICATED_STARTUP_PASS",
+  "elapsed": "2m 9s",
+  "log": "work/p3-native-enchantments-sounds-server-20261001.log",
+  "sha256": "a2000d030cd5bede09d2c20b844c286166360d36a89cb5b061713906f8cb0b6b",
+  "receipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "4ae33903-f432-446b-aa0d-6c376e75a0c3",
+    "pid": 64164,
+    "specimenId": "f4218d91-04be-45ec-a387-640f55c33c0c",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-enchantments-sounds-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10760,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-enchantments-sounds-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1909,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-enchantments-sounds-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "sensorCraftingGenerated": 20,
+  "sensorUnregisteredOrUnresolved": 0,
+  "recipeManagerTotalBeforeRuntimeBridge": 34379,
+  "scope": "Actual Native mod/data startup for current definitions/sound registrations and previous sensor/machine-shell changes; no logged recipe or dynamic-registry/tag loading errors. Existing200tick prepare/normal save-stop only. No individual enchantment holder enumeration or gameplay claims.",
+  "knownBaselineGapsAndNotProven": [
+    "Source custom enchantments are empty anonymous subclasses: no disjunction/butchery/extra damage/mining effects implemented. Native empty effects preserve that baseline; functional mechanics remain a source gap.",
+    "Source custom enchantment display translations absent in current shared en_us; raw description keys retained.",
+    "Original SwordItem/DiggerItem class categories become Native tags (swords / four digger tag families). Other mods must participate in tags; exact third-party subclass eligibility not proven.",
+    "Actual enchanting/table/books/anvil/loot/trade, client sound playback, tool/dismantle/storage/component behaviors, reload, production jars, full gameplay and saved-world restart/old saves remain unverified."
+  ]
+}

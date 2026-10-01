@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "elapsed": "33s",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "log": "work/p3-native-bumble-crops-compile-20261001-2.log",
+  "sha256": "e5bdda0d166f65f46749568ba36ef0d3b8a44d827ae2eae7f0ab3bffd4e4eec0",
+  "policy": "D010 grouped compile; startup deferred to later combined wave",
+  "notProven": [
+    "Actual breeding/comb production/scan/workplace/climate/stings/survival and client UI/rendering remain unverified.",
+    "Source queen timer/countdown mutations do not always mark the block entity dirty; inspected brokestar marks every tick dirty and remains a candidate correction.",
+    "Original advanced slot11 overlaps comb/spare-drone roles; original sky flag latches, capacity overflow can lose products/offspring.",
+    "Already-scanned source pass-through still requires an available10mB honey tank before matching, despite consuming no honey.",
+    "Native custom-data reads are copies; writes use explicit updates and scans preserve all component patches.",
+    "Colored diggable-clay source registry IDs are matched exactly but corresponding native blocks await the next decor/world wave.",
+    "Hive generation can leave an empty shell if content resolution fails; world generation and crafting/tag availability not yet runtime proven.",
+    "Forge runtime, dedicated-server coverage of this batch, independent saved-world restart, old saves and new production jars remain unverified."
+  ]
+}

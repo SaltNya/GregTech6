@@ -1,0 +1,18 @@
+{
+  "result": "COMPILE_PASS",
+  "platforms": [
+    "Forge1.20.1",
+    "NeoForge1.21.1"
+  ],
+  "elapsed": "28s",
+  "log": "work/p3-native-engines-boilers-sandwich-compile-20261001.log",
+  "logSha256": "d8f11dd78355e7c3eb2d93d207d4b9eff79496cd6d74c41211b639a2b8c1d4fb",
+  "scope": "Compilation only; the subsequent native server run also compiles saturation boundary correction",
+  "finalCompile": {
+    "elapsed": "19s",
+    "result": "COMPILE_PASS",
+    "log": "work/p3-native-engines-boilers-sandwich-final-compile-20261001.log",
+    "logSha256": "1e7057378957ac984a8e5eb77a837af1d03cbd4cacb6d2108f6d0b82af68f9fa",
+    "scope": "Both versions including late diesel default FRONT KU output; runtime not repeated"
+  }
+}

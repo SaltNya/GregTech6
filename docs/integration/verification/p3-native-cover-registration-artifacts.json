@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_NATIVE_JAR_PACKAGING_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "b9ffa9951698ac508b18a8594a87169246961d16319e4032065c45496e1f2260",
+  "bytes": 35804118,
+  "changedJavaStems": 4,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/client/MachineCoverRenderer.class",
+      "sha256": "d2683e005643179dbdd0ce78876b36a0a0391f5049913e2df5dad9508e513962"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/MachineCoverRenderer$1.class",
+      "sha256": "a6d8888caf7cd618fc73533b0abba54a77f7550ab98b85a7de08d7030add6c55"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/BasicMachineClientSetup.class",
+      "sha256": "99adc9447d547ff522d855621b6edd0ae486d6ec464f4a96364254692cdc6fef"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/LogisticsClientSetup.class",
+      "sha256": "2a54738dc02423e60873c147de56e552260c1e25609d511da08785eb16b43738"
+    },
+    {
+      "entry": "com/gregtech/gregtech/client/RelayFilterClientSetup.class",
+      "sha256": "90db16286d9b57b512d93267947f94d573ba1f74674cc7b4b162d3cdfc26325a"
+    }
+  ],
+  "scope": "Only actual changed Native classes and exact Minecraft metadata checked. Unchanged core/assets/Forge reused without repeat full audit. No production jar launch."
+}

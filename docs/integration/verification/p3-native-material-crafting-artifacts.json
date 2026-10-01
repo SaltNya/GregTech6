@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "e4e557b2562fbd68a5650bd1acf71774be49528c85808473660d3c5801697418",
+  "bytes": 35857579,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes.class",
+      "sha256": "72b99ad48c224576604eb0924483195dd0f06d7424d17b3969527a09ed97c8dc"
+    },
+    {
+      "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes$Conversion.class",
+      "sha256": "4a6d2aee200a03fd13130e7d1a637907abfba4c6e2101b361495a75401faf5af"
+    },
+    {
+      "entry": "com/gregtech/gregtech/loaders/Loader_StoneCraftingRecipes.class",
+      "sha256": "3a822a1aada9478719d7d1d138f9b21ebd4c7ea58a632e80187342a0d9058fd5"
+    },
+    {
+      "entry": "com/gregtech/gregtech/loaders/Loader_BedrockFlowerCraftingRecipes.class",
+      "sha256": "f926bccfcc90ec21f81bb45dd9a364f779a230bde905a7648fcffb4afcdd3473"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/OriginalCraftingJson.class",
+      "sha256": "600f0663a7f439c3f702db8e4318e2b5fa5227dc00dc37ba4d89bef30279c1d7"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/ManualToolRecipePack.class",
+      "sha256": "bcf54954deb971611d4c1e108dbe6c9881c4d318c0b259523f58d87b4d98eba5"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/ManualToolRecipePack$1.class",
+      "sha256": "3c9bc55a36787a604e06d0cbaa489aec44e3a289568e524329b7b62e798d930e"
+    }
+  ],
+  "scope": "Five changed Java families and exact Native metadata checked. Core/resources/Forge unchanged, no repeat full audit. Production jar not run."
+}

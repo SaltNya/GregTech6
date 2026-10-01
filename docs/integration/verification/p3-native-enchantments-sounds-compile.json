@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_AND_NATIVE_JAR_PASS",
+  "command": ":neoforge:jar :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "elapsed": "1m 14s",
+  "log": "work/p3-native-enchantments-sounds-compile-20261001.log",
+  "sha256": "3540d1ad4cdee3609046b76cac2063e468af60aeb878ac287a2d8c37e2042ad7"
+}

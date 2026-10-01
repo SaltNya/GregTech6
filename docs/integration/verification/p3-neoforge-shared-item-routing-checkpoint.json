@@ -1,0 +1,52 @@
+{
+  "platform": "neoforge",
+  "minecraft": "1.21.1",
+  "phase": "prepare",
+  "sessionId": "9fb02588-169e-4a9e-8d98-7c9f29a71519",
+  "pid": 66272,
+  "specimenId": "c69706e1-d3d5-4bd3-a36f-c88a0842577f",
+  "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+  "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-shared-item-routing-startup-20261001\\world",
+  "x": 8,
+  "y": -48,
+  "z": 8,
+  "dirtX": 9,
+  "dirtY": -48,
+  "dirtZ": 8,
+  "copperCount": 3,
+  "ironCount": 1,
+  "observedTicks": 200,
+  "elapsedMs": 10732,
+  "restartWorldReadVerified": false,
+  "normalStopObserved": true,
+  "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-shared-item-routing-startup-20261001\\world\\level.dat",
+  "levelDatBytes": 1775,
+  "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-shared-item-routing-startup-20261001\\world\\region\\r.0.0.mca",
+  "regionBytes": 2170880,
+  "result": "PASS",
+  "elapsed": "4m35s",
+  "log": "work/p3-shared-item-routing-neoforge-checkpoint-20261001.log",
+  "logSha256": "bcc76b449269553e2e79c12a47591db19ab14b49eea073b9cf70dd90f03885cd",
+  "checks": [
+    "Real weighted branch selects 4096-cost endpoint instead of 8192-cost endpoint despite BFS-first restrictive subbranch",
+    "Four named-component items reach only the cheap endpoint after 80 actual ticks",
+    "Full chest retains source; freeing a slot resumes exact delivery by 120 ticks",
+    "Native handler simulates eight and actually accepts three",
+    "Capability disappears between simulation and execution: consumes zero",
+    "Second slot throws after confirmed first-slot delivery: retains confirmed count three",
+    "Four input/output mask states through native sided capabilities",
+    "200 dedicated-server ticks, normal save and stop"
+  ],
+  "expectedDiagnostics": [
+    "One intentionally failing handler warning",
+    "Offline Yggdrasil public-key timeout"
+  ],
+  "notProven": [
+    "Forge runtime",
+    "full covers/topology/scale semantics",
+    "independent JVM world reload",
+    "old saves",
+    "full survival",
+    "production jar"
+  ]
+}

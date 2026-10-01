@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-01",
+  "sourceParent": "c56398367ce27974ebc6b84f7924c91b395eee6c",
+  "scope": [
+    "shared battery-box/transformer/inventory state",
+    "70 original energy device factories/full native BE",
+    "52 rotational axle factories/full native BE"
+  ],
+  "attempts": [
+    {
+      "result": "FAIL",
+      "elapsed": "27s",
+      "tasks": ":neoforge:compileJava :compileJava",
+      "log": "work/p3-nodes-inventory-axles-compile-20261001.log",
+      "logSHA256": "0ec00275c401383c58b5626c82c46c54aa0ad9a9821b95cf8ae0a71a392a8c58",
+      "error": "Neo SoundEvents.GENERIC_EXPLODE is Holder.Reference, source playSound requires value()"
+    },
+    {
+      "result": "PASS",
+      "elapsed": "27s",
+      "tasks": ":neoforge:compileJava :compileJava",
+      "log": "work/p3-nodes-inventory-axles-compile-20261001-r2.log",
+      "logSHA256": "6404ce543a3c7e9a04089ac0008965ac1c3bf37ffad7db4965a7767abc0d97ce"
+    },
+    {
+      "result": "PASS",
+      "elapsed": "13s",
+      "tasks": ":neoforge:compileJava",
+      "log": "work/p3-nodes-inventory-axles-compile-20261001-r3.log",
+      "logSHA256": "a02426a7f8e92756f4659ccafc31974e5074c3109918256e780652a7d57bf3fc",
+      "reason": "Preserve original energy_node BlockEntityType support for the five legacy chemical battery IDs"
+    }
+  ],
+  "passed": [
+    "core compileJava",
+    "NeoForge compileJava",
+    "Forge compileJava"
+  ],
+  "notVerified": [
+    "native registry startup for new node/axle types",
+    "battery inventory menu/client rendering",
+    "charge/discharge/conversion/overload",
+    "RU signed traversal",
+    "node/axle world restart",
+    "legacy save conversion",
+    "new jar packaging"
+  ]
+}

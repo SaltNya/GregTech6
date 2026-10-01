@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "elapsed": "20s",
+  "log": "work\\p3-native-storage-workstations-compile-20261001.log",
+  "sha256": "e08389c6cc9f491bb5f64bbfd28b23645f234636fca2de24c4c629b0ad884a46",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "postCompileAdjustment": "Existing MultiItems subset now includes2 original blueprint IDs; next native startup compiles this change. Platform resource loaders split after startup; no gameplay claims.",
+  "notProven": [
+    "Compile success is not actual table crafting, lock security, shelf clicking/rendering, energy charging, independent saved-world reload or old-save compatibility.",
+    "No new fixture was added. One grouped ordinary Neo startup checks registration/data/server startup only, and does not exercise these315 placed blocks.",
+    "Bookshelf source positive redstone countdown dirtiness, delayed loot collisions/discard policy and fixed book whitelist remain source gaps. Extensible brokestar tags and masson filters are candidates, not claimed adopted.",
+    "Source safes retain owner acquisition even through permitted destroy-progress/tool queries. Explosion/removal permission/drop behavior,15-slot legacy overflow and lock client synchronization remain unverified.",
+    "Crafting tables retain source tool-head equality, per-menu planning cache, slot filters and output transaction behavior. Connected inventories/tanks, persistent arbitrary ghost patterns, selector features and full recipe/tool/bucket correctness remain pending.",
+    "Only existing original resources are retained; fewer per-item model files than registered variants remain source resource gaps. Both platform model-loader files are preserved separately.",
+    "Grouped startup occurred before model-loader boundary split and blueprint-model relocation; those resource changes need later client/native resource verification, not a repeat server startup.",
+    "Forge runtime, client rendering, survival chain, releases and migration from brokestar/masson namespaces remain unverified. Full integration goal stays active."
+  ]
+}

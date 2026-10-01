@@ -1,0 +1,11 @@
+{
+  "result": "COMPILE_PASS",
+  "platforms": [
+    "Forge1.20.1",
+    "NeoForge1.21.1"
+  ],
+  "elapsed": "19s",
+  "log": "work/p3-native-item-behaviors-final-compile-20261001.log",
+  "logSha256": "d4ede354f1a15a5e657164c9269ac4b9bcb2670868549169ae57215dedd5081a",
+  "scope": "First grouped compile failed2 alwaysEat API errors; fixed to alwaysEdible, final grouped compilation19s passed"
+}

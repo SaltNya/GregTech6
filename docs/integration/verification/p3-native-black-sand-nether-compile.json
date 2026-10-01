@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "elapsed": "19s",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "log": "work\\p3-native-black-sand-nether-compile-20261001.log",
+  "sha256": "8958d3bf6a220f816f58d1f8b1cb465bbc76c6e0c21f1f29b2a1f974eb075a96",
+  "notProven": [
+    "New sand registrations/datapack rows not yet runtime-covered; the previous bee startup predates this batch.",
+    "Actual river deposits/gravity/shovel drops/material composition and Nether clay/quartz/crystal generation unverified.",
+    "Source1 crystal seed replaces ceiling itself; brokestar seeds air below ceiling, and uses coordinate/dimension seeded stream with explicit bounds. Source1 kept pending source-fidelity/runtime comparison.",
+    "Source1 crystal walk has no explicit vertical-bound guard and noise cache is static unbounded by world lifetime.",
+    "Source1 Nether feature relies on native biome modifier for dimension gating; direct invocation has no dimension check.",
+    "Full survival/client rendering/Forge runtime/reload/old saves/fresh jars pending."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-01",
+  "result": "COMPILE_AND_NATIVE_JAR_PASS",
+  "elapsed": "50s",
+  "command": ":neoforge:jar :compileJava -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "log": "work/p3-native-storage-crafting-compile-20261001.log",
+  "sha256": "2d3e8cebedfb6077e0c92efe0ffd7bd4bffd8bd9a6fcb9972ce2dd56b5b4be21"
+}

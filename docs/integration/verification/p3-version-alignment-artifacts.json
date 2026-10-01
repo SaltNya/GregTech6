@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-01",
+  "result": "BUILD_AND_PACKAGING_PASS",
+  "scope": "Current production-format jars built and contents checked. No production-jar launch, gameplay or saved-world restart claim.",
+  "sharedClasses": 570,
+  "sharedResources": 67498,
+  "artifacts": [
+    {
+      "platform": "forge",
+      "path": "build/libs/gregtech-1.20.1-forge-0.1.0-integration.1.jar",
+      "sha256": "49c582ef3ae561c3cb75b76032e488d87073cc58bf7d128f792432a5f7e712e8",
+      "bytes": 38522701,
+      "metadata": {
+        "mod_id": "gregtech",
+        "mod_version": "0.1.0-integration.1",
+        "minecraft": "1.20.1",
+        "loader": "forge",
+        "loader_version_range": "[47,)",
+        "dependency_ranges": {
+          "minecraft": "[1.20.1]",
+          "forge": "[47,)"
+        },
+        "license": "All Rights Reserved"
+      },
+      "zipEntries": 80826
+    },
+    {
+      "platform": "neoforge",
+      "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+      "sha256": "4d762e7db32827cafba17acf5c0a9167d6e0eed19e48476d7f014c3b314e38e1",
+      "bytes": 35452249,
+      "metadata": {
+        "mod_id": "gregtech",
+        "mod_version": "0.1.0-integration.1",
+        "minecraft": "1.21.1",
+        "loader": "neoforge",
+        "loader_version_range": "[1,)",
+        "dependency_ranges": {
+          "minecraft": "[1.21.1]",
+          "neoforge": "[21.1.243,)"
+        },
+        "license": "All Rights Reserved"
+      },
+      "zipEntries": 77204
+    }
+  ],
+  "failedBuild": {
+    "log": "work/p3-version-alignment-jars-20261001.log",
+    "sha256": "ad6bd8cf9d8fc79ee3c4018a28c3eb392f6fd61913c7b43c4cf9f669f8647f59",
+    "reason": "27 byte-identical legacy native/core resource duplicates; removed native copies, canonical core bytes retained."
+  },
+  "finalBuild": {
+    "log": "work/p3-version-alignment-jars-final-20261001.log",
+    "sha256": "36ac4fba0dd44f6a7e7ecb6263295c5593b301722464f9bd4129da387da11596",
+    "elapsed": "54s"
+  },
+  "packagingCheck": {
+    "log": "work/p3-version-alignment-artifact-check-20261001.log",
+    "sha256": "d406d8ff7b0e9b6c9c23d41c4fbf98010d3afabd015f09dae601af7ebc6f941e",
+    "fullReport": "work/p3-version-alignment-artifacts-full.json",
+    "fullReportSha256": "12cfc32a978e9570d35b9b95349aca081bfdad7825f2f192ab07c7bafd6a484a",
+    "coverage": "Every current core class/resource in both jars, exact platform metadata, duplicate entries and test-only class exclusions."
+  },
+  "notProven": [
+    "Optional native JEI/Jade and remaining client resource gaps",
+    "Latest Fusion/Matter/loot-crate runtime (added after one 200tick dedicated short boot)",
+    "Complete gameplay, actual production-jar client/server loading and independent saved-world restart",
+    "Old donor-world migration and full three-donor differences; original goal remains active"
+  ]
+}

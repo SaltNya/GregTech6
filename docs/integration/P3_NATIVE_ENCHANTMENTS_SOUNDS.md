@@ -1,0 +1,11 @@
+# 双版本初期对齐：原附魔身份和音效事件
+
+现有Native NeoCreativeContents已覆盖原19种家族入口，Loader_Creative短文件不是缺失完整创造内容的证据；未重新迁入另一套入口。核实当前Forge实际GTEnchantments和GTSounds后，补Native真正缺少的五附魔身份和两个声音事件。
+
+disjunction、butchery、gt_haste、sharpness_multi、smite_multi改用1.21.1动态enchantment数据。Source五个匿名Enchantment没有任何override：固定读取1.20.1源码证实默认等级1、COMMON权重10、minCost11/maxCost16、非宝藏/可交易/可发现、MAINHAND和空特殊效果。Native保留这些实际默认值，cost按每级10递增但maxLevel1；无新增伤害/挖掘等能力，不能把原注册名称当作功能完成。原description键在当前en_us没有翻译，仍是Source缺口。
+
+Source WEAPON是SwordItem，DIGGER是DiggerItem；Native采用minecraft:swords和专用gregtech:enchantable/digger（四个pickaxe/axe/shovel/hoe标签，不扩大到vanilla mining可能包含的剪刀）。第三方物品需参与标签，未宣称所有外部Java子类适用性一致。追加non_treasure标签，固定Native源码证实其被in_enchanting_table、mob/traded装备、随机loot和tradeable引用；tooltip_order追加Source注册顺序，不覆盖原版。没有硬注册动态附魔或引入第二套材料/能源底层。
+
+GTSounds用现有FluidTransportRegistries.SOUNDS/WRENCH别名，只新增screwdriver/beep；mod构造在同一deferred register挂bus前bootstrap，避免重复wrench身份/声音注册。已有core sounds.json和三ogg原资源不变，不伪造音频。本批2 Java+8 Native数据资源，Core/Forge/三来源未改。
+
+集中Native compile+jar/Forge compile1分14秒通过。三批之后一次已有Neo专服短启动2分9秒通过，200ticks正常保存停止；日志观察前批sensor20全部生成/0缺失、桥接前RecipeManager34379，无配方/动态registry/tag加载错误。只是当前和前两批注册/数据加载及短运行证据，未独立枚举五个附魔holder；不证明实际附魔、音效播放、工具/拆装/组件放回/仓储分量余物。无新夹具或客户端重复启动。成品jar运行、reload、完整玩法、独立世界重载和旧档、剩余两版本对齐及完整三源goal继续active。

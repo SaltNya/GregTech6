@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "elapsed": "27s",
+  "tasks": [
+    "core:compileJava",
+    "neoforge:compileJava",
+    ":compileJava"
+  ],
+  "log": "work/p3-native-burning-boxes-compile-20261001-2.log",
+  "sha256": "97290c446ff38f50f64b5673211dfd1247d8f5528e65894a199d308c50a0f33b",
+  "repair": "Initial23s compile: source-only GregTech entrypoint references and long recipe duration, fixed native namespace factories/shared long duration.",
+  "policy": "D010 necessary grouped compile; one ordinary Neo startup covering companions+burning",
+  "notProven": [
+    "actual combustion/fuel/byproduct/heat/contact/ignition/rotation/fluidized input conservation and survival paths unverified",
+    "source generic no-argument canStoreAsh always returns true, pending-ash mixing/output saturation and solid independent container/byproduct admission remain source limitations",
+    "source fluidized-bed consumes exactly one fuel item instead of the recipe declared input count; inspected brokestar consumes declared counts and is a candidate for a later recorded correction",
+    "source fluid tank capacity is outputRate*10; full live fluid-bed applicability still depends on fuel map rows and available fluids; previous startup found9 fuel rows unavailable",
+    "source comment claims gas redstone and flame behavior, but shown executor has no actual gas redstone gate or flame spread; brokestar/masson implement more complete fire/front-air paths; no claim they are already absorbed by this executor",
+    "masson furnace fallback chooses max(vanilla,material), nullable/nonpositive efficiency defaults10000 and uses144-unit forms; retain current shared GT6 U/material and baseline semantics rather than introduce a second unit/catalog",
+    "world client baking/rendering, Forge runtime, independent saved-world restart, old saves and fresh jars unverified",
+    "full goal remains active; crop/bee/interfaces/world systems and later acceptance continue"
+  ]
+}

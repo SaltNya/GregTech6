@@ -1,0 +1,48 @@
+{
+  "result": "PASS",
+  "elapsed": "4m 54s",
+  "log": "work\\p3-mineral-nether-springs-startup-20261001.log",
+  "sha256": "5d1a4fe0b8f3d3131980d861bec455b7dc0eec356db83361d264fe7a46710fc3",
+  "startupReceipt": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "phase": "prepare",
+    "sessionId": "62387baa-f194-4ffc-aea3-3436cd555820",
+    "pid": 43492,
+    "specimenId": "1e5db09c-5e25-433c-8a3f-ad6a96959e9d",
+    "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+    "worldRoot": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-mineral-nether-springs-startup-20261001\\world",
+    "x": 8,
+    "y": -48,
+    "z": 8,
+    "dirtX": 9,
+    "dirtY": -48,
+    "dirtZ": 8,
+    "copperCount": 3,
+    "ironCount": 1,
+    "observedTicks": 200,
+    "elapsedMs": 10605,
+    "restartWorldReadVerified": false,
+    "normalStopObserved": true,
+    "levelDat": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-mineral-nether-springs-startup-20261001\\world\\level.dat",
+    "levelDatBytes": 1830,
+    "region": "F:\\Dev\\GregtTech6New\\gregtech6\\neoforge\\build\\p3-mineral-nether-springs-startup-20261001\\world\\region\\r.0.0.mca",
+    "regionBytes": 929792
+  },
+  "covers": [
+    "4 mineral features",
+    "3 falling sands and2 Nether/river features",
+    "7 fluid-spring rows and actual spring block/ticker"
+  ],
+  "policy": "D010 one grouped ordinary Neo start; no new fixture, no retry",
+  "notProven": [
+    "Actual generated mineral/Nether/spring terrain",
+    "Fluid extraction or survival gameplay",
+    "Client rendering",
+    "Forge runtime",
+    "Independent restart",
+    "Old saves",
+    "New production jars",
+    "Following grass-soils batch"
+  ]
+}

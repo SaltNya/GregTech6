@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-01",
+  "result": "CHANGED_CLASS_NATIVE_JAR_PASS",
+  "path": "neoforge/build/libs/gregtech-neoforge-1.21.1-0.1.0-integration.1.jar",
+  "sha256": "bf24089c852c6f264edc632f70a4b07763fcc3777ad69cc22d45d58a9443cfba",
+  "bytes": 35832043,
+  "verifiedCurrentCompiledClasses": [
+    {
+      "entry": "com/gregtech/gregtech/data/OriginalHandCraftingRows.class",
+      "sha256": "2ca0c0ad0034330451de064490d2032879a65201f99ef9c52bd7556c447951c9"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/OriginalHandCraftingRows$1.class",
+      "sha256": "9aeb94f05d447a2805448458bb8405d6b93d086d3db4d113ebf0b1245aee0e10"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/ManualToolRecipePack.class",
+      "sha256": "d34e7f526127304d9ab2da08091876b1ccfe39f5752e569cdbab058cb8376dac"
+    },
+    {
+      "entry": "com/gregtech/gregtech/data/ManualToolRecipePack$1.class",
+      "sha256": "3c9bc55a36787a604e06d0cbaa489aec44e3a289568e524329b7b62e798d930e"
+    }
+  ],
+  "scope": "Current two changed Java families and exact Minecraft metadata verified. Core/Forge/assets unchanged, no repeat full audit. No production jar launch."
+}
