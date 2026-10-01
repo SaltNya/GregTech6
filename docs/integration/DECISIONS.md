@@ -32,3 +32,5 @@
 2026-10-02 基础机器存档与搬运：保留 saltnya 的规格、配方图、库存/罐与覆盖物生命周期，修复空库存变化回调并复用此前 masson 合同的共享 ItemPipeTransfer，按实际确认的交付数量记账、处理未接收物品回送或掉落。平台 FluidStack 保留完整 Forge NBT / Native components 身份；未建立第二套物流底层。Neo 指定粉碎机作业/搅拌机库存流体独立 JVM 保存重启通过，覆盖物仅编译范围；第三方重入/异常副作用尚无事务保证。详见 verification/machine-io-parity-20261002.md。
 
 2026-10-02 引擎六向映射：能力查询沿用原来的侧面约定，邻居输出使用其严格逆变换，两平台共享 EngineFaceRotation，避免两份开关表分叉。Neo 竖直真实排水和物理蒸汽动力链通过；保留原始预热、功率与断电重置，普通锅炉不足以驱动本次粉碎配方时选用原有强化设备与补水，而不降低机器要求。其完整生存取得和 Forge 对应运行仍待验。来源及结果见 verification/engine-steam-parity-20261002.md 与 core/provenance/engine-steam-parity-20261002.json。
+
+2026-10-02 设备制作同源：七组 234 配方移入共享资源，Native 只适配版本数据路径与结果字段，复用既有工具序列化器和数据包；保持原材料、数量、损耗、镜像限制。完整逐件制作与普通活塞引擎入口仍未证明，不补造任意配方。见 verification/equipment-crafting-parity-20261002.md。

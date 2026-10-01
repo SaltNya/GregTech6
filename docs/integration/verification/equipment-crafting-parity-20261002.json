@@ -1,0 +1,111 @@
+{
+  "status": "passed-with-explicit-scope",
+  "source_base": "cf10b65a49d50a37cac311fda80c0f41f63600d7",
+  "families": {
+    "smeltery_survival": 138,
+    "energy_nodes": 23,
+    "axial": 21,
+    "magnets": 10,
+    "chemical_batteries": 25,
+    "optical": 15,
+    "zpm": 2
+  },
+  "recipe_count": 234,
+  "logs": {
+    "equipment-crafting-compile-20261002.log": {
+      "sha256": "6427fde1d362bc30fc1586c87caebb9592fb2e163bc61eaf408a15780b84075f",
+      "gradle_duration": "37s",
+      "server_success": [],
+      "equipment_success": [],
+      "manual_tool_success": []
+    },
+    "neo-equipment-crafting-20261002.log": {
+      "sha256": "34929f9c23b429aef0bc3b3894f36f369559461b1aba88d9517380adccd7f71f",
+      "gradle_duration": "2m",
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "bb1d6a0f-3bc6-43b0-ba6f-a237a304cd74",
+          "pid": 76464,
+          "specimenId": "28549bca-1cce-47a9-953a-ad619a466e02",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\equipment-crafting-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10717,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": false,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\equipment-crafting-20261002\\world\\level.dat",
+          "levelDatBytes": 1895,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\equipment-crafting-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 929792
+        }
+      ],
+      "equipment_success": [
+        "[04:55:05] [Server thread/INFO] [co.gr.gr.in.se.NeoManualToolCheckpoint/]: EQUIPMENT_CRAFTING_CHECKPOINT_SUCCESS loaded=234 resolvedIngredients=true boiler=true burner=true transformer=true mirrorRejected=true clayFiringRecipe=true reclaimCount=7 wrenchWear=800 hammerWear=400"
+      ],
+      "manual_tool_success": [
+        "[04:55:05] [Server thread/INFO] [co.gr.gr.in.se.NeoManualToolCheckpoint/]: MANUAL_TOOL_CHECKPOINT_SUCCESS {\"shapedWrench\":true,\"rejectWrongShape\":true,\"hammerWear\":400,\"headHandleAssembly\":true,\"headCrafting\":true,\"nativeStackComponentRoundTrip\":true,\"threeSerializerNetworkRoundTrips\":true}"
+      ]
+    },
+    "equipment-crafting-jars-20261002.log": {
+      "sha256": "607bdcd7be52ae79adb1614869eb7a267199e05b6c60f541ddaaf70a70d60a8f",
+      "gradle_duration": "3m 45s",
+      "server_success": [],
+      "equipment_success": [],
+      "manual_tool_success": []
+    }
+  },
+  "artifacts": {
+    "forge": {
+      "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38532988,
+      "sha256": "527c607eab40371bed33a5e722d767ee5c5317790ee67e102e5fda3a8b8e583e",
+      "shared_recipe_bytes_verified": 234
+    },
+    "neoforge": {
+      "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36002977,
+      "sha256": "d4208cd6943cc256e2579290abd3a4af342a4105dc19f8e1b613be458f78ca08",
+      "shared_recipe_bytes_verified": 234
+    }
+  },
+  "packaging": {
+    "status": "passed",
+    "shared_classes": 573
+  },
+  "verified": [
+    "234 original recipe resources byte-identical in both final jars",
+    "234 Native actual RecipeManager entries with nonempty outputs and resolved ingredient choices",
+    "actual crafting queries for strong bronze boiler, dense bronze burner, ULV/LV transformer and unfired clay crucible",
+    "wrench 800/hammer 400 crafting wear; remaining-item query preserves input stacks",
+    "transformer asymmetric mirror rejection",
+    "boiler serializer packet round trip",
+    "real smelting recipe query yielding ceramic crucible",
+    "clay crucible reclaim yields seven clay balls",
+    "ordinary Native dedicated server 200 ticks and normal saved shutdown"
+  ],
+  "unverified": [
+    "every recipe actual craft",
+    "furnace fuel/ticking/UI execution",
+    "full survival acquisition and ordinary engine crafting entry",
+    "Forge runtime",
+    "current client screens/rendering",
+    "this batch world reload",
+    "installed production jars",
+    "all machines and old saves"
+  ]
+}
