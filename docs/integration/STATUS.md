@@ -29,3 +29,9 @@
 一次资源处理 9m 22s 通过，实际生成的两份 TOML 显示名称均为 GregTech 6 Community Edition、modId 与 dependencies 所属 ID 均为 gregtech6；双向语言链接及 18 个本地文档链接检查通过。此批未编译 Java、未重打 JAR、未启动游戏，不能作为玩法/世界重载或完整整合完成证据。回执：verification/community-readme-branding-20261002.json。
 
 原完整整合 goal 继续保留。新仓库由用户重新初始化，当前源树与此前 84be9ccb2e 上传快照存在差异，历史快照仍保存在此前 Git bundle 和聊天 work/gregtech6-identity-build-20261002；后续代码对齐应依据当前源树逐项核实，不假定旧运行证据覆盖新树。
+
+## 2026-10-02 / CI 修复与 0.0.0 双版本产物
+
+改名影响材料来源显示名称，从而使包含该字段的旧完整快照哈希失效。已通过仅恢复旧名称的临时探针核对原始两项哈希，更新改名后基准，保留所有材料字段和断言。Forge CI 任务限定为 `:build`；补回当前 Forge 模具代码引用但缺失的共享规则类。用户要求根版本设为 `0.0.0`。
+
+用户推送的 dbd38be9 已在 GitHub Actions 运行 36903728760 全部通过（4m 43s）。本地双平台构建通过（11m 17s），两最终 JAR 的 89 个共享核心 class、两平台元数据及无重复/测试污染打包检查通过，复制产物校验值一致。交付两个 JAR、双语 Release 说明、校验值与打包记录。详细证据：verification/ci-material-rename-20261002.md。本批未运行游戏，完整玩法、世界重载、旧存档及完整双版本对齐仍未完成。

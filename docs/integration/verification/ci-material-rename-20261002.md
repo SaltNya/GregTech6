@@ -24,4 +24,18 @@ Post-fix material task: passed, 6,154 assertions. Forge Java compilation: passed
 
 Remote confirmation: the user pushed commit `dbd38be949378aca72ea0174501a95c6d7c1f547`. Run https://github.com/SaltNya/GregTech6/actions/runs/36903728760 completed successfully in 4m 43s, including both platform jobs and the required-builds aggregate. Two packaging reports were produced. No remote push or workflow dispatch was performed by the agent.
 
-Final local build and packaging results are recorded after the build finishes. No new client/server startup, gameplay or world reload is claimed by this change.
+Final local command: `gradlew.bat --console=plain :core:check :build :neoforge:build`. Result: **BUILD SUCCESSFUL in 11m 17s**, 28 actionable tasks (24 executed, 4 up-to-date). Both production platform artifacts were produced.
+
+Packaging verification passed against all **89 current compiled shared-core classes**. Both descriptors have loader ID `gregtech6`, display name `GregTech 6 Community Edition`, and version `0.0.0`; both JARs have no duplicate entries or forbidden test-only entries. The final copies match the original artifact checksums. The complete machine-readable receipt is `work/release-0.0.0-packaging.json` and accompanies the delivered JARs as `packaging-report.json`.
+
+- Forge final file: `build/libs/gregtech6-1.20.1-forge-0.0.0.jar`, 38,125,156 bytes.
+- NeoForge final file: `neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar`, 5,811,239 bytes.
+- Delivery: chat outputs `release-0.0.0/`, with both JARs, `SHA256SUMS.txt`, bilingual `RELEASE_NOTES.md`, and the packaging receipt.
+
+No new client/server startup, gameplay or world reload is claimed by this change. Overall integration and version parity remain incomplete; the earlier full snapshot's runtime evidence does not automatically cover this reinitialized source tree.
+
+## Follow-up: NeoForge artifact content gap
+
+The user questioned the 5 MB NeoForge artifact. Direct ZIP inspection confirms this is a source-content gap, rather than a size optimization or missing current compiled core: Forge contains 1,843 class files, 74,536 asset entries and 2,368 data entries; NeoForge contains 95 class files, 12,959 asset entries and zero data entries. The current NeoForge platform contains only five Java source files for lifecycle, material item registration and client display. Its entry point explicitly states that gameplay adapters remain pending. The preserved `84be9ccb2e` snapshot has 941 NeoForge Java sources and 351 shared-core Java sources, including machines and world generation. That advanced implementation remains recoverable but is absent from the current source tree.
+
+The delivered Release notes were corrected to identify the NeoForge artifact as a material-system preview. Build/packaging success must not be presented as complete cross-version gameplay support. The existing artifact bytes and checksums were not changed.
