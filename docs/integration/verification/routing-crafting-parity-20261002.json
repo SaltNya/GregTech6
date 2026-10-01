@@ -1,0 +1,115 @@
+{
+  "status": "passed-with-explicit-scope",
+  "source_base": "4c58c6f943dbe1d4dd8931abe526a498d724994e",
+  "families": {
+    "components": 84,
+    "logistics": 48,
+    "control_covers": 12,
+    "hand_covers": 6,
+    "panel_covers": 12,
+    "recipe_keys": 3,
+    "machines": 15,
+    "pipes": 5
+  },
+  "new_recipe_count": 185,
+  "shared_equipment_recipe_count": 419,
+  "logs": {
+    "routing-crafting-compile-20261002.log": {
+      "sha256": "ca1d72bbf683b8495ed1f752ba8b8b4dfe295b64c27143c6d253f0477f187846",
+      "gradle_duration": "17s",
+      "gradle_success": false,
+      "server_success": [],
+      "equipment_success": [],
+      "routing_success": []
+    },
+    "neo-routing-crafting-20261002.log": {
+      "sha256": "1fb53baae17ea7477dff16eee33e6652e4f2db8c6ba6b7abe9827475ae63b25a",
+      "gradle_duration": "1m 54s",
+      "gradle_success": true,
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "7bf820d0-63d5-40df-9081-ce8a84392b5c",
+          "pid": 80224,
+          "specimenId": "73a51b46-bb9a-4775-9b77-9dce0a4103ba",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\routing-crafting-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10712,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": false,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\routing-crafting-20261002\\world\\level.dat",
+          "levelDatBytes": 1902,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\routing-crafting-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 929792
+        }
+      ],
+      "equipment_success": [
+        "[05:10:21] [Server thread/INFO] [co.gr.gr.in.se.NeoManualToolCheckpoint/]: EQUIPMENT_CRAFTING_CHECKPOINT_SUCCESS loaded=419 resolvedIngredients=true boiler=true burner=true transformer=true mirrorRejected=true clayFiringRecipe=true reclaimCount=7 wrenchWear=800 hammerWear=400"
+      ],
+      "routing_success": [
+        "[05:10:21] [Server thread/INFO] [co.gr.gr.in.se.NeoManualToolCheckpoint/]: ROUTING_CRAFTING_CHECKPOINT_SUCCESS woodPipe=true sawWear=100 softHammerWear=100 blankCover=true filterCover=true itemFilterMachine=true resetFresh=true motor=true conveyor=true network=true"
+      ]
+    },
+    "routing-crafting-jars-20261002.log": {
+      "sha256": "21f33c8f068e968092a414ca4c832bad13de9acd85393e7729f96964d2b5e859",
+      "gradle_duration": "3m 43s",
+      "gradle_success": true,
+      "server_success": [],
+      "equipment_success": [],
+      "routing_success": []
+    }
+  },
+  "artifacts": {
+    "forge": {
+      "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38535701,
+      "sha256": "4d69c3b9eb168bdd2462f0a2f881fdb2fed8433441bfe601cfa7feceed5897a2",
+      "new_shared_recipe_bytes_verified": 185
+    },
+    "neoforge": {
+      "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36086611,
+      "sha256": "5f56179821ede2b20363dd8bff73158bbf69ffd905b62f6ce7466b79fc6dd470",
+      "new_shared_recipe_bytes_verified": 185
+    }
+  },
+  "packaging": {
+    "status": "passed",
+    "shared_classes": 573
+  },
+  "verified": [
+    "419 actual Native RecipeManager entries/outputs/ingredient candidates",
+    "actual wood pipe matching and saw/soft hammer remainder wear 100 each",
+    "actual aluminium blank cover to zinc filter cover to electrum-pipe filtering machine crafting queries",
+    "blank cover hammer 400/screwdriver 100 wear and network round trip",
+    "reset produces fresh output preserving source components",
+    "actual LV motor and conveyor crafting queries",
+    "ordinary Native dedicated server 200 ticks and normal saved shutdown",
+    "185 original shared resources byte-identical in both final jars"
+  ],
+  "unverified": [
+    "every actual craft and GUI",
+    "routing/covers actual installation or operation in this wave",
+    "full survival acquisition and piston-engine crafting",
+    "Forge runtime",
+    "current clients",
+    "this wave world reload",
+    "installed production jars",
+    "all machines and old saves"
+  ]
+}
