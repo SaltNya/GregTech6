@@ -1,0 +1,460 @@
+{
+  "status": "passed-with-explicit-scope",
+  "integration_base": "02da64f46cc7b2f92164f53003e882e1b1c76155",
+  "goal_status": "active",
+  "scope": {
+    "neoforge_development_client_main_menu_and_six_real_item_renders": true,
+    "neoforge_all_material_and_fluid_inventory_models_not_missing_sentinel": true,
+    "forge_development_client_main_menu": true,
+    "forge_same_gallery_and_all_registry_models": false,
+    "current_client_player_world_gameplay": false,
+    "installed_production_jars_client_or_server": false,
+    "new_world_save_reload_in_this_batch": false,
+    "all_rendering_complete": false,
+    "full_three_source_integration_complete": false
+  },
+  "logs": {
+    "neo-full-client-20261002.log": {
+      "path": "work/neo-full-client-20261002.log",
+      "sha256": "ac23a2b915a75e451d0058c430d6239c0c5685609edf9153a9a900aed2bb2e23",
+      "bytes": 15008657,
+      "duration": "1m 34s",
+      "missing_model_json": 57462,
+      "missing_blockstate_variants": 45,
+      "invalid_animation_frames": 74,
+      "missing_texture_ids": [
+        "gregtech:block/iconsets/sapling_small_blue_mahoe",
+        "gregtech:block/iconsets/sapling_small_ebony",
+        "gregtech:block/iconsets/sapling_small_pine",
+        "gregtech:block/iconsets/sapling_small_white_mahoe",
+        "gregtech:block/wood/leaves_ebony",
+        "gregtech:block/wood/leaves_pine",
+        "gregtech:block/wood/leaves_white_mahoe",
+        "gregtech:block/wood/log_ebony",
+        "gregtech:block/wood/log_ebony_top",
+        "gregtech:block/wood/log_pine",
+        "gregtech:block/wood/log_pine_top",
+        "gregtech:block/wood/log_white_mahoe",
+        "gregtech:block/wood/log_white_mahoe_top",
+        "gregtech:block/wood/planks_ebony",
+        "gregtech:block/wood/planks_pine",
+        "gregtech:block/wood/planks_white_mahoe",
+        "gregtech:items/armor/hazard_radiation/0",
+        "gregtech:items/armor/hazard_radiation/1",
+        "gregtech:items/armor/hazard_radiation/2",
+        "gregtech:items/armor/hazard_radiation/3"
+      ],
+      "model_alias_receipts": [
+        "[05:52:23] [Worker-Main-18/INFO] [co.gr.gr.cl.CrucibleClientModels/]: [gregtech] Crucible model aliasing: 39 mapped, 0 missing",
+        "[05:52:24] [Worker-Main-18/INFO] [co.gr.gr.cl.MachineBlockClientModels/]: [gregtech] Machine model aliasing: 29 solid burning boxes, 84 new burning boxes, 258 basic machines, 59 engines (0 solid missing, 0 new missing, 0 basic missing)",
+        "[05:52:24] [Worker-Main-18/INFO] [co.gr.gr.cl.MaterialBlockClientModels/]: [gregtech] Material block model aliasing: 10293 mapped, 0 missing",
+        "[05:52:24] [Worker-Main-18/INFO] [co.gr.gr.cl.MaterialClientModels/]: [gregtech] Material model aliasing: 56036 mapped, 0 missing shared model",
+        "[05:52:24] [Worker-Main-18/INFO] [co.gr.gr.cl.OreClientModels/]: [gregtech] Ore model replacement: 970 ore blocks, 75660 state models from 50 shared models",
+        "[05:52:24] [Worker-Main-18/INFO] [co.gr.gr.cl.StoneBlockClientModels/]: [gregtech] Stone block model aliasing: 432 mapped, 0 missing"
+      ],
+      "client_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "timeoutSeconds": 240,
+          "elapsedMs": 64419,
+          "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-8533d8cb-196f-4327-bfd1-1e9297d01ade.png",
+          "width": 1280,
+          "height": 720,
+          "renderedFrames": 151,
+          "screen": "net.minecraft.client.gui.screens.TitleScreen"
+        }
+      ],
+      "client_model_success": [],
+      "client_failed": []
+    },
+    "client-model-compile-20261002.log": {
+      "path": "work/client-model-compile-20261002.log",
+      "sha256": "65595645a630426accc126c9fb8482147b3916f8e04b9be13bb8da33c292aba4",
+      "bytes": 25250,
+      "duration": "37s",
+      "missing_model_json": 0,
+      "missing_blockstate_variants": 0,
+      "invalid_animation_frames": 0,
+      "missing_texture_ids": [],
+      "model_alias_receipts": [],
+      "client_success": [],
+      "client_model_success": [],
+      "client_failed": []
+    },
+    "client-model-fixed-20261002.log": {
+      "path": "work/client-model-fixed-20261002.log",
+      "sha256": "12e531e36da616f7c325fa29d4cc3ea745fe7fdd6b8b3e0570ba6899808ac84b",
+      "bytes": 86187,
+      "duration": "2m 4s",
+      "missing_model_json": 5,
+      "missing_blockstate_variants": 45,
+      "invalid_animation_frames": 0,
+      "missing_texture_ids": [
+        "gregtech:block/iconsets/sapling_small_blue_mahoe",
+        "gregtech:block/iconsets/sapling_small_ebony",
+        "gregtech:block/iconsets/sapling_small_pine",
+        "gregtech:block/iconsets/sapling_small_white_mahoe",
+        "gregtech:block/wood/leaves_ebony",
+        "gregtech:block/wood/leaves_pine",
+        "gregtech:block/wood/leaves_white_mahoe",
+        "gregtech:block/wood/log_ebony",
+        "gregtech:block/wood/log_ebony_top",
+        "gregtech:block/wood/log_pine",
+        "gregtech:block/wood/log_pine_top",
+        "gregtech:block/wood/log_white_mahoe",
+        "gregtech:block/wood/log_white_mahoe_top",
+        "gregtech:block/wood/planks_ebony",
+        "gregtech:block/wood/planks_pine",
+        "gregtech:block/wood/planks_white_mahoe"
+      ],
+      "model_alias_receipts": [
+        "[06:10:44] [Render thread/INFO] [co.gr.gr.cl.SharedInventoryModelPack/]: [gregtech] Shared inventory resources: 67630 item references, 3261 templates",
+        "[06:11:02] [Worker-Main-4/INFO] [co.gr.gr.cl.CrucibleClientModels/]: [gregtech] Crucible model aliasing: 39 mapped, 0 missing",
+        "[06:11:02] [Worker-Main-4/INFO] [co.gr.gr.cl.MachineBlockClientModels/]: [gregtech] Machine model aliasing: 29 solid burning boxes, 84 new burning boxes, 258 basic machines, 59 engines (0 solid missing, 0 new missing, 0 basic missing)",
+        "[06:11:02] [Worker-Main-4/INFO] [co.gr.gr.cl.MaterialBlockClientModels/]: [gregtech] Material block model aliasing: 10293 mapped, 0 missing",
+        "[06:11:02] [Worker-Main-4/INFO] [co.gr.gr.cl.MaterialClientModels/]: [gregtech] Material model aliasing: 56036 mapped, 0 missing shared model",
+        "[06:11:03] [Worker-Main-4/INFO] [co.gr.gr.cl.OreClientModels/]: [gregtech] Ore model replacement: 970 ore blocks, 75660 state models from 50 shared models",
+        "[06:11:03] [Worker-Main-4/INFO] [co.gr.gr.cl.StoneBlockClientModels/]: [gregtech] Stone block model aliasing: 432 mapped, 0 missing"
+      ],
+      "client_success": [],
+      "client_model_success": [],
+      "client_failed": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "timeoutSeconds": 240,
+          "elapsedMs": 64326,
+          "phase": "render_or_capture",
+          "error": "java.lang.IllegalStateException: Missing gallery item: gregtech:gear_bronze",
+          "screen": "net.minecraft.client.gui.screens.TitleScreen",
+          "overlay": "none",
+          "captureRequested": false,
+          "renderedFrames": 0,
+          "snapshotSource": "render_thread",
+          "snapshotAgeMs": 32
+        }
+      ]
+    },
+    "client-model-final-20261002.log": {
+      "path": "work/client-model-final-20261002.log",
+      "sha256": "6188b089a3715bee1cef35fac417ede661691037c5fb39f237d702dd73dd3572",
+      "bytes": 74362,
+      "duration": "2m 42s",
+      "missing_model_json": 0,
+      "missing_blockstate_variants": 0,
+      "invalid_animation_frames": 0,
+      "missing_texture_ids": [
+        "gregtech:block/iconsets/sapling_small_blue_mahoe",
+        "gregtech:block/iconsets/sapling_small_ebony",
+        "gregtech:block/iconsets/sapling_small_pine",
+        "gregtech:block/iconsets/sapling_small_white_mahoe",
+        "gregtech:block/wood/leaves_ebony",
+        "gregtech:block/wood/leaves_pine",
+        "gregtech:block/wood/leaves_white_mahoe",
+        "gregtech:block/wood/log_ebony",
+        "gregtech:block/wood/log_ebony_top",
+        "gregtech:block/wood/log_pine",
+        "gregtech:block/wood/log_pine_top",
+        "gregtech:block/wood/log_white_mahoe",
+        "gregtech:block/wood/log_white_mahoe_top",
+        "gregtech:block/wood/planks_ebony",
+        "gregtech:block/wood/planks_pine",
+        "gregtech:block/wood/planks_white_mahoe"
+      ],
+      "model_alias_receipts": [
+        "[06:16:25] [Worker-Main-11/INFO] [co.gr.gr.cl.SharedInventoryModelPack/]: [gregtech] Shared inventory resources: 57375 item references, 2873 templates, 45 missing static blockstates",
+        "[06:16:38] [Worker-Main-21/INFO] [co.gr.gr.cl.CrucibleClientModels/]: [gregtech] Crucible model aliasing: 39 mapped, 0 missing",
+        "[06:16:38] [Worker-Main-21/INFO] [co.gr.gr.cl.MachineBlockClientModels/]: [gregtech] Machine model aliasing: 29 solid burning boxes, 84 new burning boxes, 258 basic machines, 59 engines (0 solid missing, 0 new missing, 0 basic missing)",
+        "[06:16:38] [Worker-Main-21/INFO] [co.gr.gr.cl.MaterialBlockClientModels/]: [gregtech] Material block model aliasing: 10293 mapped, 0 missing",
+        "[06:16:38] [Worker-Main-21/INFO] [co.gr.gr.cl.MaterialClientModels/]: [gregtech] Material model aliasing: 56036 mapped, 0 missing shared model",
+        "[06:16:38] [Worker-Main-21/INFO] [co.gr.gr.cl.OreClientModels/]: [gregtech] Ore model replacement: 970 ore blocks, 75660 state models from 50 shared models",
+        "[06:16:38] [Worker-Main-21/INFO] [co.gr.gr.cl.StoneBlockClientModels/]: [gregtech] Stone block model aliasing: 432 mapped, 0 missing"
+      ],
+      "client_success": [],
+      "client_model_success": [],
+      "client_failed": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "timeoutSeconds": 240,
+          "elapsedMs": 63434,
+          "phase": "render_or_capture",
+          "error": "java.lang.IllegalStateException: Missing gallery item: gregtech:fluid_item_water",
+          "screen": "net.minecraft.client.gui.screens.TitleScreen",
+          "overlay": "none",
+          "captureRequested": false,
+          "renderedFrames": 0,
+          "snapshotSource": "render_thread",
+          "snapshotAgeMs": 34
+        }
+      ]
+    },
+    "client-model-gallery-final-20261002.log": {
+      "path": "work/client-model-gallery-final-20261002.log",
+      "sha256": "c77fc8e2d916ebb45779675d240bbc922483e0bf26db9f699b55b9a78749a864",
+      "bytes": 45044,
+      "duration": "1m 31s",
+      "missing_model_json": 0,
+      "missing_blockstate_variants": 0,
+      "invalid_animation_frames": 0,
+      "missing_texture_ids": [
+        "gregtech:block/iconsets/sapling_small_blue_mahoe",
+        "gregtech:block/iconsets/sapling_small_ebony",
+        "gregtech:block/iconsets/sapling_small_pine",
+        "gregtech:block/iconsets/sapling_small_white_mahoe",
+        "gregtech:block/wood/leaves_ebony",
+        "gregtech:block/wood/leaves_pine",
+        "gregtech:block/wood/leaves_white_mahoe",
+        "gregtech:block/wood/log_ebony",
+        "gregtech:block/wood/log_ebony_top",
+        "gregtech:block/wood/log_pine",
+        "gregtech:block/wood/log_pine_top",
+        "gregtech:block/wood/log_white_mahoe",
+        "gregtech:block/wood/log_white_mahoe_top",
+        "gregtech:block/wood/planks_ebony",
+        "gregtech:block/wood/planks_pine",
+        "gregtech:block/wood/planks_white_mahoe"
+      ],
+      "model_alias_receipts": [
+        "[06:21:25] [Render thread/INFO] [co.gr.gr.cl.SharedInventoryModelPack/]: [gregtech] Shared inventory resources: 57375 item references, 2873 templates, 45 missing static blockstates",
+        "[06:21:34] [Worker-Main-25/INFO] [co.gr.gr.cl.CrucibleClientModels/]: [gregtech] Crucible model aliasing: 39 mapped, 0 missing",
+        "[06:21:34] [Worker-Main-25/INFO] [co.gr.gr.cl.MachineBlockClientModels/]: [gregtech] Machine model aliasing: 29 solid burning boxes, 84 new burning boxes, 258 basic machines, 59 engines (0 solid missing, 0 new missing, 0 basic missing)",
+        "[06:21:35] [Worker-Main-25/INFO] [co.gr.gr.cl.MaterialBlockClientModels/]: [gregtech] Material block model aliasing: 10293 mapped, 0 missing",
+        "[06:21:35] [Worker-Main-25/INFO] [co.gr.gr.cl.MaterialClientModels/]: [gregtech] Material model aliasing: 56036 mapped, 0 missing shared model",
+        "[06:21:35] [Worker-Main-25/INFO] [co.gr.gr.cl.OreClientModels/]: [gregtech] Ore model replacement: 970 ore blocks, 75660 state models from 50 shared models",
+        "[06:21:35] [Worker-Main-25/INFO] [co.gr.gr.cl.StoneBlockClientModels/]: [gregtech] Stone block model aliasing: 432 mapped, 0 missing"
+      ],
+      "client_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "timeoutSeconds": 240,
+          "elapsedMs": 63759,
+          "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-909c850d-d13a-4acf-b746-6a6ed2d9c6a7.png",
+          "width": 1280,
+          "height": 720,
+          "renderedFrames": 142,
+          "screen": "net.minecraft.client.gui.screens.TitleScreen"
+        }
+      ],
+      "client_model_success": [
+        {
+          "materialModels": 56036,
+          "fluidModels": 925,
+          "missingFinalModels": 0,
+          "galleryItems": [
+            "gregtech:ingot_iron",
+            "gregtech:plate_copper",
+            "gregtech:gear_gt_bronze",
+            "gregtech:coin_gold",
+            "gregtech:fluid_item_reedwater",
+            "gregtech:crusher_bronze"
+          ]
+        }
+      ],
+      "client_failed": []
+    },
+    "forge-client-model-20261002.log": {
+      "path": "work/forge-client-model-20261002.log",
+      "sha256": "c9af238b8fe5cc17a3c92f1db302dcdb24aefb754673868a01319660ec5552c5",
+      "bytes": 182918,
+      "duration": "4m 54s",
+      "missing_model_json": 80,
+      "missing_blockstate_variants": 0,
+      "invalid_animation_frames": 0,
+      "missing_texture_ids": [
+        "gregtech:block/iconsets/sapling_small_blue_mahoe",
+        "gregtech:block/iconsets/sapling_small_ebony",
+        "gregtech:block/iconsets/sapling_small_pine",
+        "gregtech:block/iconsets/sapling_small_white_mahoe",
+        "gregtech:block/wood/leaves_ebony",
+        "gregtech:block/wood/leaves_pine",
+        "gregtech:block/wood/leaves_white_mahoe",
+        "gregtech:block/wood/log_ebony",
+        "gregtech:block/wood/log_ebony_top",
+        "gregtech:block/wood/log_pine",
+        "gregtech:block/wood/log_pine_top",
+        "gregtech:block/wood/log_white_mahoe",
+        "gregtech:block/wood/log_white_mahoe_top",
+        "gregtech:block/wood/planks_ebony",
+        "gregtech:block/wood/planks_pine",
+        "gregtech:block/wood/planks_white_mahoe"
+      ],
+      "model_alias_receipts": [
+        "[06:24:32] [Render thread/INFO] [co.gr.gr.cl.SharedInventoryModelPack/]: [gregtech] Shared inventory resources: 57124 item references, 2801 templates, 45 missing static blockstates",
+        "[06:24:56] [Worker-Main-19/INFO] [co.gr.gr.cl.CrucibleClientModels/]: [gregtech] Crucible model aliasing: 39 mapped, 0 missing",
+        "[06:24:57] [Worker-Main-19/INFO] [co.gr.gr.cl.HopperClientModels/]: [gregtech] Hopper model aliasing: 60 hoppers, 60 queuehoppers",
+        "[06:24:57] [Worker-Main-19/INFO] [co.gr.gr.cl.MachineBlockClientModels/]: [gregtech] Machine model aliasing: 29 solid burning boxes, 84 new burning boxes, 0 basic machines, 59 engines (0 solid missing, 0 new missing, 256 basic missing)",
+        "[06:24:57] [Worker-Main-19/INFO] [co.gr.gr.cl.MaterialBlockClientModels/]: [gregtech] Material block model aliasing: 10293 mapped, 0 missing",
+        "[06:24:57] [Worker-Main-19/INFO] [co.gr.gr.cl.MaterialClientModels/]: [gregtech] Material model aliasing: 56036 mapped, 0 missing shared model",
+        "[06:24:57] [Worker-Main-19/INFO] [co.gr.gr.cl.OreClientModels/]: [gregtech] Ore model replacement: 970 ore blocks, 75660 state models from 50 shared models",
+        "[06:24:57] [Worker-Main-19/INFO] [co.gr.gr.cl.StoneBlockClientModels/]: [gregtech] Stone block model aliasing: 0 mapped, 432 missing"
+      ],
+      "client_success": [],
+      "client_model_success": [],
+      "client_failed": [
+        {
+          "platform": "forge",
+          "minecraft": "1.20.1",
+          "timeoutSeconds": 240,
+          "elapsedMs": 240001,
+          "phase": "timeout",
+          "error": "java.util.concurrent.TimeoutException: No completed title-screen screenshot within 240 seconds",
+          "screen": "net.minecraft.client.gui.screens.AccessibilityOnboardingScreen",
+          "overlay": "none",
+          "captureRequested": false,
+          "renderedFrames": 0,
+          "snapshotSource": "render_thread",
+          "snapshotAgeMs": 8
+        }
+      ]
+    },
+    "forge-client-model-final-20261002.log": {
+      "path": "work/forge-client-model-final-20261002.log",
+      "sha256": "2fd4839ef4bbd9e8896769284af206a5d1fa8e4d371b49aff629015fbe2f1c05",
+      "bytes": 179432,
+      "duration": "2m 28s",
+      "missing_model_json": 0,
+      "missing_blockstate_variants": 0,
+      "invalid_animation_frames": 0,
+      "missing_texture_ids": [
+        "gregtech:block/iconsets/sapling_small_ebony",
+        "gregtech:block/iconsets/sapling_small_pine",
+        "gregtech:block/iconsets/sapling_small_white_mahoe",
+        "gregtech:block/wood/leaves_ebony",
+        "gregtech:block/wood/leaves_pine",
+        "gregtech:block/wood/leaves_white_mahoe",
+        "gregtech:block/wood/log_ebony",
+        "gregtech:block/wood/log_ebony_top",
+        "gregtech:block/wood/log_pine",
+        "gregtech:block/wood/log_pine_top",
+        "gregtech:block/wood/log_white_mahoe",
+        "gregtech:block/wood/log_white_mahoe_top",
+        "gregtech:block/wood/planks_ebony",
+        "gregtech:block/wood/planks_pine",
+        "gregtech:block/wood/planks_white_mahoe"
+      ],
+      "model_alias_receipts": [
+        "[06:31:30] [Render thread/INFO] [co.gr.gr.cl.SharedInventoryModelPack/]: [gregtech] Shared inventory resources: 57124 item references, 2801 templates, 45 missing static blockstates",
+        "[06:31:54] [Worker-Main-26/INFO] [co.gr.gr.cl.CrucibleClientModels/]: [gregtech] Crucible model aliasing: 39 mapped, 0 missing",
+        "[06:31:54] [Worker-Main-26/INFO] [co.gr.gr.cl.HopperClientModels/]: [gregtech] Hopper model aliasing: 60 hoppers, 60 queuehoppers",
+        "[06:31:54] [Worker-Main-26/INFO] [co.gr.gr.cl.MachineBlockClientModels/]: [gregtech] Machine model aliasing: 29 solid burning boxes, 84 new burning boxes, 0 basic machines, 59 engines (0 solid missing, 0 new missing, 256 basic missing)",
+        "[06:31:54] [Worker-Main-26/INFO] [co.gr.gr.cl.MaterialBlockClientModels/]: [gregtech] Material block model aliasing: 10293 mapped, 0 missing",
+        "[06:31:54] [Worker-Main-26/INFO] [co.gr.gr.cl.MaterialClientModels/]: [gregtech] Material model aliasing: 56036 mapped, 0 missing shared model",
+        "[06:31:57] [Worker-Main-26/INFO] [co.gr.gr.cl.OreClientModels/]: [gregtech] Ore model replacement: 970 ore blocks, 75660 state models from 50 shared models",
+        "[06:31:57] [Worker-Main-26/INFO] [co.gr.gr.cl.StoneBlockClientModels/]: [gregtech] Stone block model aliasing: 0 mapped, 432 missing"
+      ],
+      "client_success": [
+        {
+          "platform": "forge",
+          "minecraft": "1.20.1",
+          "timeoutSeconds": 240,
+          "elapsedMs": 98102,
+          "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-forge-1.20.1-17c51b30-ef60-4a20-b9ca-5989b35166f8.png",
+          "width": 1280,
+          "height": 720,
+          "renderedFrames": 151,
+          "screen": "net.minecraft.client.gui.screens.TitleScreen"
+        }
+      ],
+      "client_model_success": [],
+      "client_failed": []
+    },
+    "client-model-jars-20261002.log": {
+      "path": "work/client-model-jars-20261002.log",
+      "sha256": "ea80bdf8efda10c97d2e508a5362f451094fd498dfa7805f2170c87c9644c492",
+      "bytes": 1325,
+      "duration": "2m 3s",
+      "missing_model_json": 0,
+      "missing_blockstate_variants": 0,
+      "invalid_animation_frames": 0,
+      "missing_texture_ids": [],
+      "model_alias_receipts": [],
+      "client_success": [],
+      "client_model_success": [],
+      "client_failed": []
+    }
+  },
+  "artifacts": {
+    "forge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "sha256": "bb2bc63583bb66be7041b8c54377d771dcd2a93ae728dfb57031d3434fb699ba",
+      "bytes": 38565901
+    },
+    "neoforge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "sha256": "306749b43f785e13366773ae0c79691498db85c1075551e6d2b28c06d06d6fe0",
+      "bytes": 36756963
+    }
+  },
+  "packaging_shared_classes": 573,
+  "visual_review": {
+    "neoforge": "Main-menu frame and six actual rendered item samples inspected; see copied PNG. No client world opened.",
+    "forge": "Main-menu frame inspected; no gallery/world assertion."
+  },
+  "client_receipts": {
+    "forge": {
+      "schema_version": 1,
+      "passed": true,
+      "platform": "forge",
+      "minecraft": "1.20.1",
+      "log": "F:\\Dev\\GregtTech6New\\GregTech6\\work\\forge-client-model-final-20261002.log",
+      "exit_code": 0,
+      "visual_review_pending": true,
+      "gameplay_verified": false,
+      "png_structure_verified": true,
+      "image_decode_verified": true,
+      "errors": [],
+      "log_sha256": "2fd4839ef4bbd9e8896769284af206a5d1fa8e4d371b49aff629015fbe2f1c05",
+      "run_uuid": "17c51b30-ef60-4a20-b9ca-5989b35166f8",
+      "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-forge-1.20.1-17c51b30-ef60-4a20-b9ca-5989b35166f8.png",
+      "started_elapsed_ms": 1,
+      "success_elapsed_ms": 98102,
+      "rendered_frames": 151,
+      "screen": "net.minecraft.client.gui.screens.TitleScreen",
+      "screenshot_sha256": "f91cde9d900de9c74439fa10b90e927132a6e6758e39d3299ed4fe3b074899ff",
+      "screenshot_bytes": 950929,
+      "width": 1280,
+      "height": 720,
+      "image_decode_status": "pillow_verified"
+    },
+    "neoforge": {
+      "schema_version": 1,
+      "passed": true,
+      "platform": "neoforge",
+      "minecraft": "1.21.1",
+      "log": "F:\\Dev\\GregtTech6New\\GregTech6\\work\\client-model-gallery-final-20261002.log",
+      "exit_code": 0,
+      "visual_review_pending": true,
+      "gameplay_verified": false,
+      "png_structure_verified": true,
+      "image_decode_verified": true,
+      "errors": [],
+      "log_sha256": "c77fc8e2d916ebb45779675d240bbc922483e0bf26db9f699b55b9a78749a864",
+      "run_uuid": "909c850d-d13a-4acf-b746-6a6ed2d9c6a7",
+      "screenshot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-909c850d-d13a-4acf-b746-6a6ed2d9c6a7.png",
+      "started_elapsed_ms": 0,
+      "success_elapsed_ms": 63759,
+      "rendered_frames": 142,
+      "screen": "net.minecraft.client.gui.screens.TitleScreen",
+      "screenshot_sha256": "225d97c0c9338c9eed3cfd5430b1c7ca82bbec2ab46589527b924d921c153cf4",
+      "screenshot_bytes": 808493,
+      "width": 1280,
+      "height": 720,
+      "image_decode_status": "pillow_verified"
+    }
+  },
+  "limitations": [
+    "Pine/Ebony/White Mahoe wood dictionary species retain missing original artwork references; no invented substitute art or deleted registry entries.",
+    "Both client runs include the Blue Mahoe world-model correction. The separate inventory texture reference was corrected after the Native run; the final Forge retry has no missing Blue Mahoe texture warning, with original PNG and final resource byte verification. Native inventory rendering of that sapling remains unverified.",
+    "Gallery is a bootstrap-only main-menu overlay using the actual item renderer, not a player inventory or gameplay proof.",
+    "No elapsed-time performance claim; warning volume is reduced.",
+    "Original GIMP/editor notes and two non-ResourceLocation backup texture filenames are ignored by vanilla, retained unchanged and remain a packaging-cleanup gap.",
+    "Existing recipes and prior world-reload evidence are unchanged and recorded separately.",
+    "All Rights Reserved loader metadata and original third-party notices retained; no remote push or publication."
+  ],
+  "production_changed_resource_bytes_verified_in_jars": true,
+  "native_adapter_matches_current_compiled_output": true,
+  "forge_adapter_matches_current_reobfuscated_archive": true
+}

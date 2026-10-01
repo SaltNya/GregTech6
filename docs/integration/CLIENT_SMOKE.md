@@ -119,3 +119,7 @@ python tools/integration/verify_client_smoke.py --self-test
 - Forge首跑：STARTED 21:18:27、atlas 21:19:54、recipes/advancements 21:20:12，21:20:27到120秒预算并FAILED；Gradle退出码0不足以通过。240秒上限重试实际82566ms/152帧成功，1280×720新PNG解码及主会话实际视觉检验通过，正常退出；详见VERIFICATION账本。
 - 验收脚本自检：Python3.13运行通过；Python3.10语法检查通过，尚未在3.10解释器运行。
 - 成品jar不包含测试类：源集/打包配置符合隔离设计，新增类的最终jar缺席检查仍待Root构建后执行。
+
+## 2026-10-02 完整恢复源码后的运行
+
+当前批使用既有 bootstrap opt-in smoke；Native 增加 `-PclientModelSmoke=true` 可选模型检查与六物品主菜单画廊，`-PclientSmokeHeap=4g` 仅在 clientSmoke=true 时覆盖其原 2g 预算，不改变普通运行。Forge 也可用 directCoreClasspath=true 避免开发启动前重复生成大 core JAR，普通/发布构建默认归档依赖保持。两当前开发客户端主菜单已通过，Native 全材料/流体非 missing 检查和画廊通过；Forge 未包含该画廊。此证据替代早期简化源码主菜单作为当前加载证据，但不证明客户端世界/完整像素/成品。木辞典贴图缺口及 Blue Mahoe 更正的运行范围见 verification/client-model-parity-20261002.md。

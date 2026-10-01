@@ -40,3 +40,5 @@
 2026-10-02 线材与模具制造：保留原 1,394 JSON 字节，仅接入同一共享目录/原生版本边界；原 WireSpec 导体量作为实际拆分/合股/绝缘输出核对依据，不改变尺寸、材料、橡胶量和触电语义。模具保留非镜像和消耗上游模具，选定图样运行证据不推广到全部 78 图样。见 verification/manufacturing-crafting-parity-20261002.md。
 
 2026-10-02 原静态配方与标签闭合：剩余 333 配方原字节共享，Native 原路径字段适配。源谷物/工具成员不能由生成材料标签代替；七原标签同源，移除两份语义相同的 Native 副本。Ingredient.isEmpty 不足以区分空标签与图样空格，改用 EMPTY 身份并补实际原食品制作。保留旧弱检查的证据限度，不按加载数量宣布玩法完成。见 verification/survival-crafting-parity-20261002.md。
+
+2026-10-02 客户端原模型共享：在模型加载前为真实注册项提供原模板引用，geometry loader 复用原 ModelBaker 缓存，避免依靠后处理 missing 别名和大量文件。仅补缺失资源及原 PNG 动画元数据，不改注册、保存或工具/流体 NBT。木辞典三种无原美术不能凭主菜单和别名计数宣布完成，画廊独立于玩家世界。见 verification/client-model-parity-20261002.md。
