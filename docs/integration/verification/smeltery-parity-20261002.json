@@ -1,0 +1,141 @@
+{
+  "status": "passed-with-explicit-scope",
+  "source_base": "499150156795d2ea97c6730bcd247007e68ee433",
+  "scope": [
+    "Forge and NeoForge compilation",
+    "NeoForge given-equipment/ingredients bronze chain",
+    "Native 9U stacked basin casting",
+    "Native ordinary dedicated server same-world independent-process restart: copper mold and 8U bronze basin"
+  ],
+  "unverified": [
+    "survival acquisition",
+    "Forge gameplay/restart",
+    "production-installed jars",
+    "current client visuals",
+    "all machines/thermal progress/fuel persistence",
+    "old saves",
+    "negative-height faucet runtime",
+    "crossing exception runtime",
+    "all-material fractional break drops"
+  ],
+  "logs": {
+    "neo-playflow-20261002.log": {
+      "sha256": "d31e43c9be4e79a97bed8f108788e1a5b3d9374f28258313495372317ad698ae",
+      "build_successful": false,
+      "server_success": [],
+      "gameplay_markers": [
+        "[03:16:55] [Server thread/ERROR] [minecraft/LogTestReporter]: coalcoppertintofourbronzeingots failed at 704664, -60, -11993125! Fifteen real chisel clicks carve one-U ingot form"
+      ]
+    },
+    "neo-playflow-events-20261002.log": {
+      "sha256": "6ea0fdae9bd16b6675463244e6b9a6dd2b818670487fe960689590892acf8620",
+      "build_successful": true,
+      "server_success": [],
+      "gameplay_markers": [
+        "[03:21:45] [Server thread/INFO] [co.gr.gr.pl.ne.ga.NeoBronzeChainTests/]: GT6_NEO_PLAYFLOW_ALLOY tick=3011 temperature=1357 amount=2594592000",
+        "[03:21:45] [Server thread/INFO] [co.gr.gr.pl.ne.ga.NeoBronzeChainTests/]: GT6_NEO_PLAYFLOW_COMPLETE tick=3020 ingots=4 chiselWear=15 pincersWear=4",
+        "[03:21:45] [Server thread/INFO] [minecraft/GameTestServer]: All 1 required tests passed :)"
+      ]
+    },
+    "smeltery-parity-20261002.log": {
+      "sha256": "563a42045f87544dbdeca3497e20daee2e43bf1de5b2b1b4601c15e0011951af",
+      "build_successful": true,
+      "server_success": [],
+      "gameplay_markers": [
+        "[03:26:44] [Server thread/INFO] [co.gr.gr.pl.ne.ga.NeoBronzeChainTests/]: GT6_NEO_PLAYFLOW_ALLOY tick=3011 temperature=1357 amount=2594592000",
+        "[03:26:44] [Server thread/INFO] [co.gr.gr.pl.ne.ga.NeoBronzeChainTests/]: GT6_NEO_PLAYFLOW_COMPLETE tick=3020 ingots=4 chiselWear=15 pincersWear=4",
+        "[03:26:44] [Server thread/INFO] [co.gr.gr.pl.ne.ga.NeoBronzeChainTests/]: GT6_NEO_STACKED_BASIN_COMPLETE ingots=9 remaining=0 hotPickupRejected=true",
+        "[03:26:44] [Server thread/INFO] [minecraft/GameTestServer]: All 1 required tests passed :)"
+      ]
+    },
+    "neo-world-prepare-20261002.log": {
+      "sha256": "aa10cbb00a1ab97b4d81ae978c14b611d45bc6a546c8d90f4890f875a3eedeeb",
+      "build_successful": true,
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "2748d300-1cc6-4f64-82f5-7b03781619a5",
+          "pid": 4728,
+          "specimenId": "eb3764a6-ab5c-4275-a30b-c2bb1aa311ce",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\world-restart-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10709,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": true,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\world-restart-20261002\\world\\level.dat",
+          "levelDatBytes": 1939,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\world-restart-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 929792
+        }
+      ],
+      "gameplay_markers": []
+    },
+    "neo-world-verify-20261002.log": {
+      "sha256": "a83d5919f7aebeb92ff22843ad385dd2311929a1912d0075ba0e763ee7d3404f",
+      "build_successful": true,
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "verify",
+          "sessionId": "1920380c-81d0-4a45-8f28-2675d62f84e0",
+          "pid": 65580,
+          "specimenId": "eb3764a6-ab5c-4275-a30b-c2bb1aa311ce",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\world-restart-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10210,
+          "restartWorldReadVerified": true,
+          "smelteryWorldChecked": true,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\world-restart-20261002\\world\\level.dat",
+          "levelDatBytes": 1938,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\world-restart-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 933888
+        }
+      ],
+      "gameplay_markers": []
+    }
+  },
+  "artifact_packaging": {
+    "status": "passed",
+    "shared_classes": 571,
+    "jars": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 38528484,
+        "sha256": "7c926b538e727b026a4f0be09afc4063bea8feb91b5a873bbe5172235ed56b6c"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 35891355,
+        "sha256": "bcfd34ccd84c3cbc17e74d1fc348a7cae8d7ee0b1819724e0f9dcf7a2e060d4f"
+      }
+    }
+  },
+  "jar_build": {
+    "command": "./gradlew.bat --console=plain -PdirectCoreResources=true :distributionJar :neoforge:jar",
+    "duration": "3m 51s",
+    "log_sha256": "8a6f19756cd49a34b708a1d811f476089fe7bd0f88189feacc197947b80cc0d7"
+  }
+}

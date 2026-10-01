@@ -26,3 +26,5 @@
 
 
 2026-10-02 用户名称与目录决定：当前仓库 F:\Dev\GregtTech6New\GregTech6，两平台名称 GregTech 6 Community Edition、加载 ID gregtech6；英文 README 为默认，README.zh-CN.md 提供中文切换。保留内部 gregtech: 身份和第三方许可，不虚构 Discord、发布/CI 状态或原作者许可。
+
+2026-10-02 熔炼守恒与温度修复：继续保留项目1的全材质设备及共享形状表，明确替换原始叠放模具清空整盆、用环境温度提前凝固、缺失块输出清空内容、龙头限制 Y>0、交叉流道异常锁不释放的行为。两版本同步修改；每次铸造的单位判定进入共享 MoldCastingRules。理由及来源哈希见 core/provenance/smeltery-parity-20261002.json；两版编译、Neo 青铜链和叠放盆运行、Neo 普通专服模具/盆独立进程世界重启通过。其他材质、分数余料拆除、负高度路由、异常锁释放和 Forge 对应运行范围未夸大为已验，详见 verification/smeltery-parity-20261002.md。复用既有检查，未新增独立子系统 fixture。
