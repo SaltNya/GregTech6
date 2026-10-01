@@ -69,7 +69,7 @@ On Linux or macOS, set the same environment variables and use `./gradlew` instea
 
 Final artifacts are written to `build/libs/` for Forge and `neoforge/build/libs/` for NeoForge. Forge's `build/forge-intermediates/` directory contains intermediate output. The mod version is configured in `gradle.properties`.
 
-See [BUILDING.md](BUILDING.md) for complete setup, additional build options, and Git handoff instructions.
+See [BUILDING.md](docs/work/BUILDING.md) for complete setup, additional build options, and Git handoff instructions.
 
 ## Development Environment
 

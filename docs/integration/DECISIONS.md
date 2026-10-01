@@ -23,3 +23,6 @@
 来源：saltnya `api/material/GTValues.java`、masson `material/GT6ImportUnits.java` 和 `fluid/MoltenTransferMath.java`，详见各源码审计。
 
 优先保留 GT6 的 U=648648000 每锭作为共享物质量单位。masson 的每锭144单位属于其流体/存储边界约定，不直接替换统一领域单位。不可表示的分数必须显式处理或拒绝，不能截断后宣称守恒。温度也要区分项目1的 Kelvin 和 masson 的摄氏度，禁止照搬数值。首阶段保留已有原始算法字节；溢出等缺陷候选另记决策并以行为测试修复。
+
+
+2026-10-02 用户名称与目录决定：当前仓库 F:\Dev\GregtTech6New\GregTech6，两平台名称 GregTech 6 Community Edition、加载 ID gregtech6；英文 README 为默认，README.zh-CN.md 提供中文切换。保留内部 gregtech: 身份和第三方许可，不虚构 Discord、发布/CI 状态或原作者许可。

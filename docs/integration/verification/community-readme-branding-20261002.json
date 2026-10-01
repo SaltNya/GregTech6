@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-02",
+  "repository": "F:\\Dev\\GregtTech6New\\GregTech6",
+  "source_commit": "f8d76b3b882c74c098b2ffbdddf910711a4fcb01",
+  "status": "generated-metadata-and-document-links-passed",
+  "mod_name": "GregTech 6 Community Edition",
+  "mod_id": "gregtech6",
+  "registry_namespace": "gregtech",
+  "default_readme": "README.md",
+  "default_language": "English",
+  "translation": "README.zh-CN.md",
+  "bidirectional_language_switch": true,
+  "checked_relative_links": 18,
+  "tasks": [
+    ":processResources",
+    ":neoforge:processResources"
+  ],
+  "duration": "9m 22s",
+  "log_sha256": "c9c8fce83e4dc40d4deffde0e3fb49494c8061a303f2a888088ff9ebf155cee7",
+  "generated_metadata": {
+    "forge": {
+      "mod_id": "gregtech6",
+      "display_name": "GregTech 6 Community Edition",
+      "sha256": "76706fb5a4590b6f9cd7e12e7ae289d92402fb8703e79fe2eb44a18e53b6721c"
+    },
+    "neoforge": {
+      "mod_id": "gregtech6",
+      "display_name": "GregTech 6 Community Edition",
+      "sha256": "cc2c15577a59ea42abd1471d547b7590212da94dcaca21fc11728ff2928d0528"
+    }
+  },
+  "license_changed": false,
+  "java_compilation_for_this_change": false,
+  "client_or_server_started": false,
+  "production_jars_rebuilt": false,
+  "gameplay_or_world_reload_verified": false
+}

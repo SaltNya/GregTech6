@@ -69,7 +69,7 @@ Linux 或 macOS 使用相同的环境变量，以 `./gradlew` 替代 `.\gradlew.
 
 Forge 最终产物位于 `build/libs/`，NeoForge 最终产物位于 `neoforge/build/libs/`。Forge 的 `build/forge-intermediates/` 目录存放中间产物。模组版本在 `gradle.properties` 中配置。
 
-完整环境配置、更多构建选项及 Git 交接步骤见 [BUILDING.md](BUILDING.md)。
+完整环境配置、更多构建选项及 Git 交接步骤见 [BUILDING.md](docs/work/BUILDING.md)。
 
 ## 开发环境
 

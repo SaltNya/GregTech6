@@ -49,3 +49,14 @@
 - brokestar当前远程HEAD f009fc3c与用户快照不同（1123文件变化/1077缺失），没有错误关联为同一版本。通过来源PROJECT_STATE blob追溯，快照的220275文件全部字节吻合3118acbf83a84d05fa37d57af1705cf00e423ca9；gitlink单独记录ec524db7a5724f8cf3c837436b1ae742c778c62f。
 - masson快照61192文件全部字节吻合2ba4e4b60f7a770360b2ec7ca2adad3507ec4a28。
 - 对比结果保存在provenance/*history*match.json；对应完整原历史和作者信息在本地Git upstream-* refs及source/*标签中。上游remote不是新项目origin。
+
+
+## 2026-10-02 / 双语 README 与 Community Edition 名称
+
+用户明确指定新工作目录 F:\Dev\GregtTech6New\GregTech6，并要求英文主 README、可切换的中文版本，以及两版统一名称 GregTech 6 Community Edition。当前用户仓库分支为 main，源提交 f8d76b3b882c74c098b2ffbdddf910711a4fcb01。
+
+已重写 README.md / README.zh-CN.md，包含介绍、目标版本、状态、双版本构建、开发运行、贡献、分项许可和署名。根 mod_name 和 Native 元数据共用根配置；新目录旧入口/事件订阅 ID 同步为 gregtech6，既有 gregtech: 注册、资源与保存身份保留；材料来源存在性查询同步。默认 GameTest 资源命名空间保持原样。BUILDING.md 同步品牌及当前目录名，未更改第三方许可或发布到远程。
+
+一次资源处理 9m 22s 通过，实际生成的两份 TOML 显示名称均为 GregTech 6 Community Edition、modId 与 dependencies 所属 ID 均为 gregtech6；双向语言链接及 18 个本地文档链接检查通过。此批未编译 Java、未重打 JAR、未启动游戏，不能作为玩法/世界重载或完整整合完成证据。回执：verification/community-readme-branding-20261002.json。
+
+原完整整合 goal 继续保留。新仓库由用户重新初始化，当前源树与此前 84be9ccb2e 上传快照存在差异，历史快照仍保存在此前 Git bundle 和聊天 work/gregtech6-identity-build-20261002；后续代码对齐应依据当前源树逐项核实，不假定旧运行证据覆盖新树。
