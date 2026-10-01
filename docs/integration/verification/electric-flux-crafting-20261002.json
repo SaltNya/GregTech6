@@ -1,0 +1,142 @@
+{
+  "status": "passed-with-explicit-scope",
+  "goal_status": "active",
+  "integration_base": "24d9f67bc14be448b66a531e918d6a222b7a864d",
+  "new_shared_recipes": 10,
+  "shared_static_recipe_count": 2184,
+  "logs": {
+    "electric-flux-compile-20261002": {
+      "path": "work/electric-flux-compile-20261002.log",
+      "sha256": "ce5a24049553ea7f6ff3646860dc1b47a3013d3b26babd78d0936909d7b06641",
+      "duration": "18s"
+    },
+    "neo-electric-flux-crafting-20261002": {
+      "path": "work/neo-electric-flux-crafting-20261002.log",
+      "sha256": "dd928834e3c18d8a4b75b7ccbe260cf309540f3e9f28f22c1f7a83232b3a0275",
+      "duration": "1m 58s"
+    },
+    "electric-flux-jars-20261002": {
+      "path": "work/electric-flux-jars-20261002.log",
+      "sha256": "48f25481165fd3e75f03189da8f03f02098f1597545ab3613e79654af02e915e",
+      "duration": "47s"
+    }
+  },
+  "ordinary_neoforge_server": {
+    "exit_code": 0,
+    "started": {
+      "platform": "neoforge",
+      "minecraft": "1.21.1",
+      "phase": "prepare",
+      "sessionId": "5b8c3027-a5c0-40e7-af14-02e4a2d0029c",
+      "pid": 78948,
+      "specimenId": "75174396-c721-443a-9072-94f8144a8045",
+      "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+      "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\electric-flux-crafting-20261002-75174396-c721-443a-9072-94f8144a8045\\world",
+      "x": 0,
+      "y": 240,
+      "z": 0,
+      "dirtX": 1,
+      "dirtY": 240,
+      "dirtZ": 0,
+      "copperCount": 3,
+      "ironCount": 1,
+      "observedTicks": 0,
+      "elapsedMs": 0,
+      "restartWorldReadVerified": false,
+      "smelteryWorldChecked": false,
+      "machineWorldChecked": false,
+      "machineJobCompleted": false,
+      "steamChainChecked": false
+    },
+    "crafting_checkpoint": {
+      "platform": "neoforge",
+      "recipes": 10,
+      "electricRows": 5,
+      "fluxRows": 5,
+      "actualSerializerRoundTrips": 10,
+      "electricToFluxAllTiers": true,
+      "wireWidthAndMaterialDistinction": true,
+      "hammerWear": 400,
+      "wrenchWear": 800,
+      "playerCraftingClickVerified": false
+    },
+    "prepared": {
+      "platform": "neoforge",
+      "minecraft": "1.21.1",
+      "phase": "prepare",
+      "sessionId": "5b8c3027-a5c0-40e7-af14-02e4a2d0029c",
+      "pid": 78948,
+      "specimenId": "75174396-c721-443a-9072-94f8144a8045",
+      "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+      "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\electric-flux-crafting-20261002-75174396-c721-443a-9072-94f8144a8045\\world",
+      "x": 0,
+      "y": 240,
+      "z": 0,
+      "dirtX": 1,
+      "dirtY": 240,
+      "dirtZ": 0,
+      "copperCount": 3,
+      "ironCount": 1,
+      "observedTicks": 0,
+      "elapsedMs": 58,
+      "restartWorldReadVerified": false,
+      "smelteryWorldChecked": false,
+      "machineWorldChecked": false,
+      "machineJobCompleted": false,
+      "steamChainChecked": false
+    },
+    "success": {
+      "platform": "neoforge",
+      "minecraft": "1.21.1",
+      "phase": "prepare",
+      "sessionId": "5b8c3027-a5c0-40e7-af14-02e4a2d0029c",
+      "pid": 78948,
+      "specimenId": "75174396-c721-443a-9072-94f8144a8045",
+      "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+      "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\electric-flux-crafting-20261002-75174396-c721-443a-9072-94f8144a8045\\world",
+      "x": 0,
+      "y": 240,
+      "z": 0,
+      "dirtX": 1,
+      "dirtY": 240,
+      "dirtZ": 0,
+      "copperCount": 3,
+      "ironCount": 1,
+      "observedTicks": 200,
+      "elapsedMs": 10768,
+      "restartWorldReadVerified": false,
+      "smelteryWorldChecked": false,
+      "machineWorldChecked": false,
+      "machineJobCompleted": false,
+      "steamChainChecked": false,
+      "normalStopObserved": true,
+      "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\electric-flux-crafting-20261002-75174396-c721-443a-9072-94f8144a8045\\world\\level.dat",
+      "levelDatBytes": 1900,
+      "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\electric-flux-crafting-20261002-75174396-c721-443a-9072-94f8144a8045\\world\\region\\r.0.0.mca",
+      "regionBytes": 929792
+    }
+  },
+  "observed_nonfatal_log_warning": "Offline isolated server reports Mojang public-key HTTP read timeout; ordinary server, checkpoint, ticks and normal save complete.",
+  "packaging_shared_classes": 573,
+  "all_new_resources_match_both_jars": true,
+  "artifacts": {
+    "forge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38587007,
+      "sha256": "29fa2b044fecef0d557de161396b8e9a5b0044541be064c1fb0c89600dbc4117"
+    },
+    "neoforge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36778062,
+      "sha256": "61ce5c4aedf0fb9452a4d5c4e3173818cfb1c3f34a4ceb74064185896618358a"
+    }
+  },
+  "limitations": [
+    "Actual supplied-input RecipeManager queries and all-tier electric-to-flux assembled prerequisite consumption, not player workbench clicks or survival acquisition.",
+    "This batch has one Neo ordinary server run with 200 ticks and normal save. It does not check crafted engine placement, electrical/Forge Energy capability operation or crafted-engine reload. Previous steam-engine reload evidence is separately scoped.",
+    "Forge compiles and packages the same ten resources; this new ten-row recipe set was not runtime-exercised on Forge in this batch.",
+    "No new client run, installed production JAR or old-world migration.",
+    "Source LV electric pattern retains original provisional TODO comment; no new balancing claim. Diesel engines and other machine prerequisites remain to reconcile.",
+    "No source-directory edit, license change or remote publication."
+  ]
+}
