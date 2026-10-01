@@ -1,0 +1,128 @@
+{
+  "status": "passed-with-explicit-scope",
+  "source_base": "dfd16e227d6107d44a78b83b4725f6e6e87467fa",
+  "scope": [
+    "dual-platform compilation and packaging",
+    "Native independent-process ordinary server world restart: paused real crusher recipe completed after reload; named mixer inventory/fluid persisted; different-component fluid rejected"
+  ],
+  "unverified": [
+    "full survival acquisition",
+    "generator/cable energy supply",
+    "Forge gameplay/restart",
+    "current client visuals",
+    "production-installed jars",
+    "all recipes/multiblock/thermal/random/fluid jobs",
+    "old saves",
+    "dynamic receiver remainder/return/drop and cover paths runtime",
+    "handler reentry/unload/side effects"
+  ],
+  "logs": {
+    "machine-io-compile-20261002.log": {
+      "sha256": "c3de59523c095b0a21a71899f2fb189a6e5e1ee0545cfc3c0c2142a5b3e925e2",
+      "build_successful": true,
+      "duration": "59s",
+      "server_success": [],
+      "gameplay_markers": []
+    },
+    "neo-machine-world-prepare-20261002.log": {
+      "sha256": "685abd8a750bf84ea21cca3a3add84b8a36f966f8e00c789208fd9bf77fa2cdd",
+      "build_successful": true,
+      "duration": "1m 59s",
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "409ae90a-a772-424a-afb2-1b277955b155",
+          "pid": 69044,
+          "specimenId": "cb23b5a6-244c-4102-bce8-0b817bc7f390",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-world-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10694,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": true,
+          "machineJobCompleted": false,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-world-20261002\\world\\level.dat",
+          "levelDatBytes": 1898,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-world-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 929792
+        }
+      ],
+      "gameplay_markers": []
+    },
+    "neo-machine-world-verify-20261002.log": {
+      "sha256": "f1f02299efe7b344be82511348e3fbc193e6a523c8bb61aa92c9e29d279c724b",
+      "build_successful": true,
+      "duration": "1m 51s",
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "verify",
+          "sessionId": "26926edd-ae70-4924-b4e4-1b1ff18b3dd2",
+          "pid": 61524,
+          "specimenId": "cb23b5a6-244c-4102-bce8-0b817bc7f390",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-world-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10216,
+          "restartWorldReadVerified": true,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": true,
+          "machineJobCompleted": true,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-world-20261002\\world\\level.dat",
+          "levelDatBytes": 1899,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-world-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 933888
+        }
+      ],
+      "gameplay_markers": [
+        "[03:56:03] [Server thread/INFO] [co.gr.gr.in.se.NeoForgeDedicatedSmoke/]: MACHINE_WORLD_JOB_COMPLETED persistedProgress=64 consumedInputEmpty=true registeredRecipe=true"
+      ]
+    },
+    "machine-io-jars-20261002.log": {
+      "sha256": "1c6dfed9dc1f987a4918fe77a1a5ea336274e9f161a3b058b3c8907d69b6356e",
+      "build_successful": true,
+      "duration": "4m 3s",
+      "server_success": [],
+      "gameplay_markers": []
+    }
+  },
+  "artifacts": {
+    "forge": {
+      "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38530445,
+      "sha256": "3762e9527625b54a7333e0ec252feb4834463d756e36bac0cd5903294e28a905"
+    },
+    "neoforge": {
+      "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 35893375,
+      "sha256": "c54737376ed8e1d8f6827c3ba5344a6560586ced95794920c484f05cb2f37be7"
+    }
+  },
+  "packaging": {
+    "status": "passed",
+    "shared_classes": 571,
+    "log": "work/machine-io-artifacts-20261002.json"
+  }
+}
