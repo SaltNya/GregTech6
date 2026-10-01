@@ -1,0 +1,32 @@
+[
+  {
+    "file": "src\\main\\java\\com\\gregtech\\gregtech\\data\\generated\\MaterialRegistryExtras.java",
+    "exact": false,
+    "equalExcludingCommentsWhitespace": false,
+    "removedByGenerator": [
+      "GTMaterialRegistry.registerAlias(\"Ma\", \"Magic\");",
+      "GTMaterialRegistry.registerAlias(\"Osmium\", \"OsmiumElemental\");",
+      "GTMaterialRegistry.setDisplayName(\"Empty\", \"Empty\");",
+      "GTMaterialRegistry.setDisplayName(\"Magic\", \"Magic\");",
+      "GTMaterialRegistry.setDisplayName(\"NULL\", \"NULL\");",
+      "GTMaterialRegistry.setDisplayName(\"OsmiumElemental\", \"Osmium\");"
+    ],
+    "addedByGenerator": [
+      "GTMaterialRegistry.setDisplayName(\"Eudialyte\", \"Eudialyte\");",
+      "GTMaterialRegistry.setDisplayName(\"Graphene\", \"Graphene\");",
+      "GTMaterialRegistry.setDisplayName(\"HydratedCoal\", \"Hydrated Coal\");",
+      "GTMaterialRegistry.setDisplayName(\"OsmiumElemental\", \"OsmiumElemental\");",
+      "GTMaterialRegistry.setDisplayName(\"Superconductor\", \"Superconductor\");"
+    ]
+  },
+  {
+    "file": "src\\main\\java\\com\\gregtech\\gregtech\\data\\generated\\MaterialOreProcessing.java",
+    "exact": true,
+    "equalExcludingCommentsWhitespace": true
+  },
+  {
+    "file": "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTMaterialFields.java",
+    "exact": true,
+    "equalExcludingCommentsWhitespace": true
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "error": null,
+  "checks": [
+    {
+      "path": "blockstates\\bush.json",
+      "equal": true
+    },
+    {
+      "path": "lang\\en_us.json",
+      "equal": true
+    },
+    {
+      "path": "lang\\zh_cn.json",
+      "equal": true
+    },
+    {
+      "path": "textures\\block\\plants\\bush\\colored\\berries.png",
+      "equal": true
+    },
+    {
+      "path": "textures\\block\\plants\\bush\\colored\\berries_immature.png",
+      "equal": true
+    },
+    {
+      "path": "textures\\block\\plants\\bush\\colored\\bush.png",
+      "equal": true
+    },
+    {
+      "path": "textures\\block\\plants\\bush\\overlay\\berries.png",
+      "equal": true
+    },
+    {
+      "path": "textures\\block\\plants\\bush\\overlay\\berries_immature.png",
+      "equal": true
+    },
+    {
+      "path": "textures\\block\\plants\\bush\\overlay\\bush.png",
+      "equal": true
+    },
+    {
+      "path": "models\\item\\bush.json",
+      "equal": true
+    },
+    {
+      "path": "models\\block\\plants\\bush_stage0.json",
+      "equal": true
+    },
+    {
+      "path": "models\\block\\plants\\bush_stage1.json",
+      "equal": true
+    },
+    {
+      "path": "models\\block\\plants\\bush_stage2.json",
+      "equal": true
+    },
+    {
+      "path": "models\\block\\plants\\bush_stage3.json",
+      "equal": true
+    }
+  ],
+  "buildVsSourceTextureDifferences": [],
+  "output": "en_us.json: bush key already present\nzh_cn.json: bush key already present\ntextures: 6, assets: 12\n  textures/block/plants/bush/colored/bush.png\n  textures/block/plants/bush/colored/berries.png\n  textures/block/plants/bush/colored/berries_immature.png\n  textures/block/plants/bush/overlay/bush.png\n  textures/block/plants/bush/overlay/berries.png\n  textures/block/plants/bush/overlay/berries_immature.png\n  models/block/plants/bush_stage0.json\n  models/block/plants/bush_stage1.json\n  models/block/plants/bush_stage2.json\n  models/block/plants/bush_stage3.json\n  models/item/bush.json\n  blockstates/bush.json\n",
+  "productionWrites": false
+}

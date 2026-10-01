@@ -1,0 +1,55 @@
+{
+  "method": "source inspection; runtime reload and player crafting not executed",
+  "startupRecipeMutators": [
+    {
+      "file": "src/main/java/com/gregtech/gregtech/loaders/Loader_BottleFillingRecipes.java",
+      "modified": "2026-09-18T01:05:31.067858",
+      "reloadHookInFile": false
+    },
+    {
+      "file": "src/main/java/com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes.java",
+      "modified": "2026-09-15T14:02:34.158172",
+      "reloadHookInFile": false
+    },
+    {
+      "file": "src/main/java/com/gregtech/gregtech/loaders/Loader_HandToolCraftingRecipes.java",
+      "modified": "2026-09-16T00:39:48.881992",
+      "reloadHookInFile": false
+    },
+    {
+      "file": "src/main/java/com/gregtech/gregtech/loaders/Loader_OvenRecipes.java",
+      "modified": "2026-09-17T11:49:26.088571",
+      "reloadHookInFile": false
+    },
+    {
+      "file": "src/main/java/com/gregtech/gregtech/loaders/Loader_StoneCraftingRecipes.java",
+      "modified": "2026-09-16T00:51:44.537499",
+      "reloadHookInFile": false
+    },
+    {
+      "file": "src/main/java/com/gregtech/gregtech/loaders/Loader_ToolCraftingRecipes.java",
+      "modified": "2026-09-16T01:53:00.661990",
+      "reloadHookInFile": false
+    },
+    {
+      "file": "src/main/java/com/gregtech/gregtech/loaders/Loader_TrackRecipes.java",
+      "modified": "2026-09-17T01:18:14.456725",
+      "reloadHookInFile": false
+    },
+    {
+      "file": "src/main/java/com/gregtech/gregtech/loaders/Loader_WoodCraftingRecipes.java",
+      "modified": "2026-09-17T09:43:43.199531",
+      "reloadHookInFile": false
+    }
+  ],
+  "pipeFinding": {
+    "source": "Loader_HandToolCraftingRecipes.pipe",
+    "quadrupleCurvedPlates": 6,
+    "unpacksToMediumPipes": 4,
+    "mediumCurvedPlatesEach": 3,
+    "nonupleCurvedPlates": 6,
+    "unpacksToSmallPipes": 9,
+    "smallCurvedPlatesEach": 1,
+    "originalAssembly": "four medium / nine small pipes, MultiTileEntityPipeFluid.java:97-98"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "sourceEqualsBuilt": true,
+  "rows": 48,
+  "matchesRawOriginalRows": true,
+  "transposeDifferences": 0,
+  "inside": 2032,
+  "isolatedRuns": [
+    {
+      "tool": "wire_black_sand_turf",
+      "error": null,
+      "changes": [],
+      "output": "GTFeatures: BLACK_SAND already wired\nGTFeatures: TURF already wired\n  src/main/resources/data/gregtech/worldgen/configured_feature/gt_black_sand.json\n  src/main/resources/data/gregtech/worldgen/placed_feature/gt_black_sand.json\n  src/main/resources/data/gregtech/forge/biome_modifier/gt_black_sand.json\n  src/main/resources/data/gregtech/worldgen/configured_feature/gt_turf.json\n  src/main/resources/data/gregtech/worldgen/placed_feature/gt_turf.json\n  src/main/resources/data/gregtech/forge/biome_modifier/gt_turf.json\n"
+    },
+    {
+      "tool": "wire_fluid_springs",
+      "error": null,
+      "changes": [],
+      "output": "wrote 3 data files\n  src/main/resources/data/gregtech/worldgen/configured_feature/gt_fluid_springs.json\n  src/main/resources/data/gregtech/worldgen/placed_feature/gt_fluid_springs.json\n  src/main/resources/data/gregtech/forge/biome_modifier/gt_fluid_springs.json\n"
+    }
+  ]
+}

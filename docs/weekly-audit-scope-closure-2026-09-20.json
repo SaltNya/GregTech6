@@ -1,0 +1,481 @@
+{
+  "note": "HEAD is June baseline; deletions cannot be dated from missing-file mtimes. Root files include audit-generated logs.",
+  "rootFiles": [
+    {
+      "status": " M",
+      "path": "PORTING_GAP.md",
+      "modified": "2026-09-12T03:46:40.308918"
+    },
+    {
+      "status": " M",
+      "path": "PORTING_PLAN.md",
+      "modified": "2026-09-12T03:46:40.307921"
+    },
+    {
+      "status": " M",
+      "path": "PORTING_ROADMAP.md",
+      "modified": "2026-09-12T03:46:40.308918"
+    },
+    {
+      "status": " M",
+      "path": "PORTING_TODO.md",
+      "modified": "2026-09-13T21:40:02.565133"
+    },
+    {
+      "status": " M",
+      "path": "build.gradle",
+      "modified": "2026-09-18T01:36:39.621727"
+    },
+    {
+      "status": " M",
+      "path": "gradle.properties",
+      "modified": "2026-09-11T16:39:10.204269"
+    },
+    {
+      "status": "??",
+      "path": "CONTEXT.md",
+      "modified": "2026-09-11T11:23:56.428529"
+    },
+    {
+      "status": "??",
+      "path": "PORTING_AUDIT.md",
+      "modified": "2026-09-19T21:00:52.206815"
+    },
+    {
+      "status": "??",
+      "path": "PROJECT_HANDOFF_2026-09-13.md",
+      "modified": "2026-09-13T19:22:23.398922"
+    },
+    {
+      "status": "??",
+      "path": "deterministic-gametest.log",
+      "modified": "2026-09-13T22:40:35.075310"
+    },
+    {
+      "status": "??",
+      "path": "gametest-latest.log",
+      "modified": "2026-09-13T22:29:54.874524"
+    },
+    {
+      "status": "??",
+      "path": "hs_err_pid53444.log",
+      "modified": "2026-09-15T21:27:54.885015"
+    },
+    {
+      "status": "??",
+      "path": "registration-before-20260911-125750.zip",
+      "modified": "2026-09-11T12:57:51.218337"
+    },
+    {
+      "status": "??",
+      "path": "weekly-audit-compile.log",
+      "modified": "2026-09-19T20:43:18.225692"
+    },
+    {
+      "status": "??",
+      "path": "weekly-audit-dungeon-seeds.log",
+      "modified": "2026-09-19T20:58:44.648113"
+    },
+    {
+      "status": "??",
+      "path": "weekly-audit-python.log",
+      "modified": "2026-09-19T20:42:33.319635"
+    },
+    {
+      "status": "??",
+      "path": "weekly-audit-recipe-sources.log",
+      "modified": "2026-09-19T20:48:12.738841"
+    },
+    {
+      "status": "??",
+      "path": "weekly-audit-resource-sync.log",
+      "modified": "2026-09-19T21:07:49.555673"
+    },
+    {
+      "status": "??",
+      "path": "weekly-audit-tool-network-bytecode.log",
+      "modified": "2026-09-19T20:55:36.859025"
+    }
+  ],
+  "deletedSinceHEAD": [
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/AM.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/ANY.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/BI.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/CS.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/FL.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/FM.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/IL.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/LH.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/MD.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/MT.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/OD.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/OP.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/RM.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/TC.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/data/TD.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/java/com/gregtech/gregtech/recipe/GTToolAssemblyRecipeSerializer.java",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/assets/gregtech/atlases/blocks.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/axe.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/builder_wand.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/chisel.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/construction_pick.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/double_axe.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/file.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/gem_tipped_pickaxe.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/hammer.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/hoe.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/pickaxe.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/plow.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/saw.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/screwdriver.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/sense.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/shovel.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/soft_hammer.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/spade.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/sword.json",
+      "modified": null
+    },
+    {
+      "status": " D",
+      "path": "src/main/resources/data/gregtech/recipes/tools/universal_spade.json",
+      "modified": null
+    }
+  ],
+  "statusCounts": {
+    " M": 2822,
+    " D": 36,
+    "??": 21238
+  },
+  "inventoryDrift": [
+    {
+      "path": "docs\\ammunition-coverage.json",
+      "sizeBefore": 418,
+      "sizeNow": 418,
+      "mtimeDeltaSeconds": 66949.00619959831
+    },
+    {
+      "path": "docs\\block-loot-audit.json",
+      "sizeBefore": 38,
+      "sizeNow": 38,
+      "mtimeDeltaSeconds": 66901.97393155098
+    },
+    {
+      "path": "docs\\chem-missing-content.json",
+      "sizeBefore": 1354,
+      "sizeNow": 1354,
+      "mtimeDeltaSeconds": 66915.6542391777
+    },
+    {
+      "path": "docs\\crucible-coverage.json",
+      "sizeBefore": 599,
+      "sizeNow": 599,
+      "mtimeDeltaSeconds": 66927.8803870678
+    },
+    {
+      "path": "docs\\extruder-matrix-coverage.json",
+      "sizeBefore": 375,
+      "sizeNow": 375,
+      "mtimeDeltaSeconds": 66941.60376477242
+    },
+    {
+      "path": "docs\\furnace-smelting-coverage.json",
+      "sizeBefore": 685,
+      "sizeNow": 685,
+      "mtimeDeltaSeconds": 66904.94787430763
+    },
+    {
+      "path": "docs\\gt6-loot-report.json",
+      "sizeBefore": 1464,
+      "sizeNow": 1464,
+      "mtimeDeltaSeconds": 66842.74498867989
+    },
+    {
+      "path": "docs\\HANDOFF_LOGISTICS_CORE_2026-09-19.md",
+      "sizeBefore": 19090,
+      "sizeNow": 22006,
+      "mtimeDeltaSeconds": 12642.614375829697
+    },
+    {
+      "path": "docs\\ingredient-tag-mismatches.json",
+      "sizeBefore": 2,
+      "sizeNow": 2,
+      "mtimeDeltaSeconds": 66852.1335940361
+    },
+    {
+      "path": "docs\\items-without-recipes.json",
+      "sizeBefore": 113,
+      "sizeNow": 113,
+      "mtimeDeltaSeconds": 66949.96643900871
+    },
+    {
+      "path": "docs\\localization-runtime-missing.json",
+      "sizeBefore": 2,
+      "sizeNow": 2,
+      "mtimeDeltaSeconds": 66848.9909157753
+    },
+    {
+      "path": "docs\\machine-crafting-substitutions.json",
+      "sizeBefore": 2,
+      "sizeNow": 2,
+      "mtimeDeltaSeconds": 66877.3339073658
+    },
+    {
+      "path": "docs\\material-form-conversions.json",
+      "sizeBefore": 2174,
+      "sizeNow": 2174,
+      "mtimeDeltaSeconds": 66915.51326107979
+    },
+    {
+      "path": "docs\\material-form-gap.json",
+      "sizeBefore": 2468,
+      "sizeNow": 2468,
+      "mtimeDeltaSeconds": 66856.27107310295
+    },
+    {
+      "path": "docs\\material-tags.json",
+      "sizeBefore": 91,
+      "sizeNow": 91,
+      "mtimeDeltaSeconds": 66915.71434926987
+    },
+    {
+      "path": "docs\\missing-content-tokens.txt",
+      "sizeBefore": 997,
+      "sizeNow": 997,
+      "mtimeDeltaSeconds": 67172.28159356117
+    },
+    {
+      "path": "docs\\mortar-coverage.json",
+      "sizeBefore": 736,
+      "sizeNow": 736,
+      "mtimeDeltaSeconds": 66877.1010582447
+    },
+    {
+      "path": "docs\\multiblock-recipes-coverage.json",
+      "sizeBefore": 1708,
+      "sizeNow": 1708,
+      "mtimeDeltaSeconds": 66914.17164444923
+    },
+    {
+      "path": "docs\\NEXT_GOAL.md",
+      "sizeBefore": 6836,
+      "sizeNow": 10941,
+      "mtimeDeltaSeconds": 34489.36742782593
+    },
+    {
+      "path": "docs\\ore-routes-coverage.json",
+      "sizeBefore": 300,
+      "sizeNow": 300,
+      "mtimeDeltaSeconds": 66949.00657057762
+    },
+    {
+      "path": "docs\\PORTING_REMAINING_2026-09-14.md",
+      "sizeBefore": 585963,
+      "sizeNow": 598404,
+      "mtimeDeltaSeconds": 67158.94738006592
+    },
+    {
+      "path": "docs\\porting-progress.json",
+      "sizeBefore": 6814,
+      "sizeNow": 6814,
+      "mtimeDeltaSeconds": 67172.28662490845
+    },
+    {
+      "path": "docs\\prefix-condition-parity.json",
+      "sizeBefore": 713,
+      "sizeNow": 713,
+      "mtimeDeltaSeconds": 66857.62094163895
+    },
+    {
+      "path": "docs\\recipe-family-coverage.json",
+      "sizeBefore": 1971,
+      "sizeNow": 1971,
+      "mtimeDeltaSeconds": 66943.22517132759
+    },
+    {
+      "path": "docs\\smeltery-survival-test-errors.json",
+      "sizeBefore": 2,
+      "sizeNow": 2,
+      "mtimeDeltaSeconds": 66857.26949095726
+    },
+    {
+      "path": "docs\\stone-extrusion-coverage.json",
+      "sizeBefore": 3778,
+      "sizeNow": 3850,
+      "mtimeDeltaSeconds": 66849.02367925644
+    },
+    {
+      "path": "docs\\stone-variant-coverage.json",
+      "sizeBefore": 48101,
+      "sizeNow": 48101,
+      "mtimeDeltaSeconds": 66915.17626523972
+    },
+    {
+      "path": "docs\\tool-assembly-coverage.json",
+      "sizeBefore": 30810,
+      "sizeNow": 30810,
+      "mtimeDeltaSeconds": 66942.43280220032
+    },
+    {
+      "path": "docs\\tool-shaped-mirror-report.json",
+      "sizeBefore": 313356,
+      "sizeNow": 313356,
+      "mtimeDeltaSeconds": 66943.37269639969
+    },
+    {
+      "path": "docs\\transpiled-recipes-coverage.json",
+      "sizeBefore": 905,
+      "sizeNow": 905,
+      "mtimeDeltaSeconds": 66914.17064499855
+    }
+  ],
+  "inventoryMissing": [],
+  "javaCoverageCount": 433,
+  "pythonCoverageCount": 171,
+  "runtimeVerifiedThisAudit": false,
+  "auditStatus": "completed-targeted-review-not-runtime-validation",
+  "requirementEvidence": {
+    "timestampScope": "weekly-audit-file-inventory-2026-09-19.json plus rootFiles/deletedSinceHEAD",
+    "codeReview": "433 Java targeted records and 171 Python evidence references; report findings with resource/test evidence",
+    "handoffVerification": "HANDOFF_LOGISTICS_CORE_2026-09-19.md dated errata and audit report",
+    "nextWork": "AUDIT_NEXT_STEPS_2026-09-20.md and NEXT_GOAL.md",
+    "userOreMigrationDecision": "Do not retain old ore migration; decouple normal TAG_STONE dependency before removal"
+  }
+}

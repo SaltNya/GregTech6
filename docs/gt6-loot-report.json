@@ -1,0 +1,50 @@
+{
+  "baggedItems": {
+    "dusty_guide_book": "gt.books",
+    "loot_pouch": "gt.misc",
+    "gem_pouch": "gt.flawless, gt.gems, gt.gems",
+    "seed_pouch": "gt.seeds",
+    "bagged_sapling": "gt.saplings"
+  },
+  "chestTables": [
+    "minecraft:chests/abandoned_mineshaft",
+    "minecraft:chests/desert_pyramid",
+    "minecraft:chests/jungle_temple",
+    "minecraft:chests/jungle_temple_dispenser",
+    "minecraft:chests/simple_dungeon",
+    "minecraft:chests/spawn_bonus_chest",
+    "minecraft:chests/stronghold_corridor",
+    "minecraft:chests/stronghold_crossing",
+    "minecraft:chests/stronghold_library",
+    "minecraft:chests/village/village_weaponsmith"
+  ],
+  "injectedRows": 97,
+  "tables": {
+    "gt.books": 17,
+    "gt.bottles": 13,
+    "gt.flawless": 20,
+    "gt.gems": 13,
+    "gt.matdicts": 1101,
+    "gt.misc": 38,
+    "gt.saplings": 12,
+    "gt.seeds": 7,
+    "van.BONUS_CHEST": 5,
+    "van.DUNGEON_CHEST": 23,
+    "van.MINESHAFT_CORRIDOR": 18,
+    "van.PYRAMID_DESERT_CHEST": 4,
+    "van.PYRAMID_JUNGLE_CHEST": 8,
+    "van.PYRAMID_JUNGLE_DISPENSER": 3,
+    "van.STRONGHOLD_CORRIDOR": 6,
+    "van.STRONGHOLD_CROSSING": 4,
+    "van.STRONGHOLD_LIBRARY": 2,
+    "van.VILLAGE_BLACKSMITH": 24
+  },
+  "unresolved": [
+    "gt.bottles tech:bottle_empty:1",
+    "gt.bottles tech:bottle_milk_spoiled:1",
+    "gt.bottles tech:bottle_honey:1",
+    "gt.bottles tech:bottle_tar:1",
+    "gt.bottles tech:bottle_mercury:1",
+    "gt.bottles tech:bottle_indigo:1"
+  ]
+}

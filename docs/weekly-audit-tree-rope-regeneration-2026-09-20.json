@@ -1,0 +1,279 @@
+{
+  "files": [
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\boomstick.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\dynamite.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_blue_mahoe.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_bluespruce.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_cinnamon.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_coconut.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_ebony.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_hazel.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_maple.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_pine.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_rainbowood.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_rubber.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_white_mahoe.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\leaves_willow.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\rope.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\rope_grass.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\rope_plastic.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\rope_silk.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\rope_steel.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\rope_vine.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_blue_mahoe.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_bluespruce.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_cinnamon.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_coconut.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_ebony.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_hazel.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_maple.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_pine.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_rainbowood.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_rubber.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_white_mahoe.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\sapling_willow.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\blockstates\\strong_dynamite.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\lang\\en_us.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\lang\\zh_cn.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_blue_mahoe.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_bluespruce.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_cinnamon.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_coconut.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_ebony.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_hazel.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_maple.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_pine.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_rainbowood.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_rubber.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_white_mahoe.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\block\\wood\\sapling_willow.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\boomstick.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\rope_grass.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\rope_plastic.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\rope_silk.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\rope_steel.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\rope_vine.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_blue_mahoe.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_bluespruce.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_cinnamon.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_coconut.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_ebony.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_hazel.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_maple.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_pine.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_rainbowood.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_rubber.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_white_mahoe.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\sapling_willow.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\assets\\gregtech\\models\\item\\strong_dynamite.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\data\\minecraft\\tags\\blocks\\leaves.json",
+      "equal": true
+    },
+    {
+      "path": "src\\main\\resources\\data\\minecraft\\tags\\blocks\\logs.json",
+      "equal": true
+    }
+  ],
+  "compared": 68,
+  "different": 0,
+  "productionWrites": false
+}

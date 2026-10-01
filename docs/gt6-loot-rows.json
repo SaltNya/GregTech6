@@ -1,0 +1,1566 @@
+{
+  "rows": 223,
+  "skipped": 172,
+  "perTable": {
+    "gt.flawless": 20,
+    "gt.gems": 13,
+    "gt.misc": 38,
+    "gt.saplings": 12,
+    "gt.seeds": 7,
+    "gt.books": 17,
+    "gt.bottles": 19,
+    "van.BONUS_CHEST": 5,
+    "van.DUNGEON_CHEST": 23,
+    "van.PYRAMID_DESERT_CHEST": 4,
+    "van.PYRAMID_JUNGLE_CHEST": 8,
+    "van.PYRAMID_JUNGLE_DISPENSER": 3,
+    "van.MINESHAFT_CORRIDOR": 18,
+    "van.VILLAGE_BLACKSMITH": 24,
+    "van.STRONGHOLD_LIBRARY": 2,
+    "van.STRONGHOLD_CROSSING": 4,
+    "van.STRONGHOLD_CORRIDOR": 6
+  },
+  "skippedRows": [
+    {
+      "table": "gt.gems",
+      "stack": "OP.gem .mat(tMaterial, 1), T",
+      "reason": "per-material loop (GT6 expands it over a material flag)"
+    },
+    {
+      "table": "gt.gems",
+      "stack": "OP.gemFlawed .mat(tMaterial, 1), F",
+      "reason": "per-material loop (GT6 expands it over a material flag)"
+    },
+    {
+      "table": "gt.gems",
+      "stack": "OP.gemChipped.mat(tMaterial, 1), F",
+      "reason": "per-material loop (GT6 expands it over a material flag)"
+    },
+    {
+      "table": "gt.misc",
+      "stack": "IL.Food_Can_Undefined_6.get(1)",
+      "reason": "canned food (GT6 passes a variant meta the port names per food)"
+    },
+    {
+      "table": "gt.misc",
+      "stack": "IL.Food_Can_Bread_6.get(1)",
+      "reason": "canned food (GT6 passes a variant meta the port names per food)"
+    },
+    {
+      "table": "gt.misc",
+      "stack": "IL.Food_Can_Chum_4.get(1)",
+      "reason": "canned food (GT6 passes a variant meta the port names per food)"
+    },
+    {
+      "table": "gt.misc",
+      "stack": "IL.Tool_MatchBox_Full.get(1)",
+      "reason": "matchbox (the port names its lighters differently)"
+    },
+    {
+      "table": "gt.misc",
+      "stack": "IL.Tool_Lighter_Invar_Full.get(1)",
+      "reason": "lighter variants (the port names its lighters differently)"
+    },
+    {
+      "table": "gt.misc",
+      "stack": "IL.Tool_Lighter_Platinum_Full.get(1)",
+      "reason": "lighter variants (the port names its lighters differently)"
+    },
+    {
+      "table": "gt.misc",
+      "stack": "IL.Pill_Cure_All.get(1)",
+      "reason": "pills (the port registers blue_pill/red_pill)"
+    },
+    {
+      "table": "gt.misc",
+      "stack": "OP.chemtube.mat(MT.Mcg, 1)",
+      "reason": "chem tube (the port registers no chemtube items)"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(BlocksGT.Glowtus, 1, i)",
+      "reason": "unmapped expression"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "IL.EtFu_Beet_Seeds.get(1), F",
+      "reason": "another mod's item (Extra Food Utilities)"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "IL.GaSu_Beet_Seeds.get(1), F",
+      "reason": "another mod's item (Galacticraft/GaSu plants)"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "IL.BoP_Turnip_Seeds.get(1), F",
+      "reason": "another mod's item (Biomes O' Plenty)"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.GaSu, \"camelliaSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.GaNe, \"witherShrubSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.GaNe, \"ghostSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.GaNe, \"quarzBerrySeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.GaNe, \"hellBushSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.ChocoCraft, \"Loverly_Gysahl\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.ChocoCraft, \"Red_Gysahl\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.ChocoCraft, \"Golden_Gysahl\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.RoC, \"rotarycraft_item_canola\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.GrC_Milk, \"grcmilk.SeedThistle\", 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.SC2, \"ItemTeaSeed\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.ERE, \"cabbageSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.Bamboo, \"seedrice\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.EBXL, \"extrabiomes.seed\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.WTCH, \"seedsmandrake\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.WTCH, \"seedswormwood\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.WTCH, \"seedssnowbell\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.WTCH, \"seedsartichoke\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.WTCH, \"seedswolfsbane\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.WTCH, \"seedsbelladonna\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.NeLi, \"GhastlyGourdSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.NeLi, \"AbyssalOatSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.NeLi, \"DevilishMaizeSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.NeLi, \"HellderBerrySeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedBeet\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedBellPepperOrange\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedBellPepperRed\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedBellPepperYellow\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedBroccoli\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedCassava\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedCelery\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedCorn\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedCucumber\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedEggplant\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedGreenBean\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedLeek\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedLettuce\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedOnion\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedSorrel\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedSpinach\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"seedTomato\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.PMP, \"foodQuinoaSeeds\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"artichokeseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"asparagusseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"bambooshootseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"barleyseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"beanseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"beetseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"bellpepperseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"blackberryseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"blueberryseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"broccoliseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"brusselsproutseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"cabbageseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"cactusfruitseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"candleberryseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"cantaloupeseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"cauliflowerseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"celeryseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"chilipepperseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"coffeeseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"cornseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"cottonseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"cranberryseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"cucumberseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"curryleafseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"eggplantseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"garlicseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"gingerseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"grapeseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"kiwiseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"leekseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"lettuceseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"mustardseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"oatsseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"okraseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"onionseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"parsnipseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"peanutseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"peasseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"pineappleseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"radishseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"raspberryseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"rhubarbseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"riceseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"rutabagaseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"ryeseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"scallionseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"seaweedseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"sesameseedsseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"soybeanseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"spiceleafseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"spinachseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"strawberryseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"sweetpotatoseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"teaseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"tomatoseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"turnipseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"waterchestnutseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"whitemushroomseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"wintersquashseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.seeds",
+      "stack": "ST.make(MD.HaC, \"zucchiniseedItem\" , 1, 0), F",
+      "reason": "another mod's item"
+    },
+    {
+      "table": "gt.matdicts",
+      "stack": "tMaterial.mDictionaryBook",
+      "reason": "unmapped expression"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Sap_Maple .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Sap_Rainbow .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Med_Heal .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Med_Laxative .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Grenade_Juice .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Speed_1 .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Slowness_1S .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Strength_1 .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Weakness_1S .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Regen_1 .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Heal_1S .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Poison_1S .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Harm_1S .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_FireResistance_1.fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_NightVision_1 .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_WaterBreathing_1.fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "gt.bottles",
+      "stack": "FL.Potion_Invisibility_1 .fill(IL.Bottle_Empty.get(1))",
+      "reason": "fluid-filled bottle"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "stack": "ItemList.Spray_Ice.get(1)",
+      "reason": "unmapped expression"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "stack": "ItemList.Spray_Pepper.get(1)",
+      "reason": "unmapped expression"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Cu)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Ag)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Au)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.PYRAMID_DESERT_CHEST",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Au)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.PYRAMID_DESERT_CHEST",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Nq)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Au)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Ke)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "stack": "ItemList.Spray_Ice.get(1)",
+      "reason": "unmapped expression"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "stack": "IL.Tool_MatchBox_Full.get(1)",
+      "reason": "matchbox (the port names its lighters differently)"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Cu)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Cu)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_0.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_1.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_2.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_3.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_4.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_5.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_6.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_7.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "stack": "IL.Paper_Magic_Research_8.get(1)",
+      "reason": "another mod's item (Thaumcraft research notes)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "ItemList.Spray_Pepper.get(1)",
+      "reason": "unmapped expression"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtDust.mat(MT.DamascusSteel, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtDust.mat(MT.Steel, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtDust.mat(MT.Bronze, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtDust.mat(MT.Brass, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtIngot.mat(MT.DamascusSteel, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtIngot.mat(MT.Steel, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtIngot.mat(MT.Bronze, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtIngot.mat(MT.Brass, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtPlate.mat(MT.DamascusSteel, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtPlate.mat(MT.Steel, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtPlate.mat(MT.Bronze, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "OP.crateGtPlate.mat(MT.Brass, 1)",
+      "reason": "crate blocks (the port registers crates as blocks, not as material items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Ag)",
+      "reason": "GT coins (the port registers no coin items)"
+    },
+    {
+      "table": "van.STRONGHOLD_CORRIDOR",
+      "stack": "MultiTileEntityCoin.COIN_MAP.get(MT.Ag)",
+      "reason": "GT coins (the port registers no coin items)"
+    }
+  ],
+  "vanillaRows": [
+    {
+      "table": "van.BONUS_CHEST",
+      "weight": 10,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:purple_drink:1"
+    },
+    {
+      "table": "van.BONUS_CHEST",
+      "weight": 10,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:green_slime_bottle:1"
+    },
+    {
+      "table": "van.BONUS_CHEST",
+      "weight": 10,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:lubricant_bottle:1"
+    },
+    {
+      "table": "van.BONUS_CHEST",
+      "weight": 10,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:dusty_guide_book:1"
+    },
+    {
+      "table": "van.BONUS_CHEST",
+      "weight": 10,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:bagged_sapling:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 1,
+      "max": 6,
+      "spec": "i:ingot:Steel:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 1,
+      "max": 6,
+      "spec": "i:ingot:Bronze:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 1,
+      "max": 6,
+      "spec": "i:ingot:Brass:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 2,
+      "min": 1,
+      "max": 6,
+      "spec": "i:ingot:DamascusSteel:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 1,
+      "max": 6,
+      "spec": "i:plate:Steel:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 1,
+      "max": 6,
+      "spec": "i:plate:Bronze:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 1,
+      "max": 6,
+      "spec": "i:plate:Brass:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 2,
+      "min": 1,
+      "max": 6,
+      "spec": "i:plate:DamascusSteel:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 2,
+      "max": 12,
+      "spec": "i:stick:Steel:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 2,
+      "max": 12,
+      "spec": "i:stick:Bronze:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 2,
+      "max": 12,
+      "spec": "i:stick:Brass:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 2,
+      "min": 2,
+      "max": 12,
+      "spec": "i:stick:DamascusSteel:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 4,
+      "max": 24,
+      "spec": "i:toolHeadArrow:Steel:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 4,
+      "max": 24,
+      "spec": "i:toolHeadArrow:Bronze:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 12,
+      "min": 4,
+      "max": 24,
+      "spec": "i:toolHeadArrow:Brass:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 2,
+      "min": 4,
+      "max": 24,
+      "spec": "i:toolHeadArrow:DamascusSteel:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 20,
+      "min": 1,
+      "max": 4,
+      "spec": "tech:bagged_sapling:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 30,
+      "min": 1,
+      "max": 4,
+      "spec": "tech:seed_pouch:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 100,
+      "min": 1,
+      "max": 4,
+      "spec": "tech:gem_pouch:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 20,
+      "min": 2,
+      "max": 4,
+      "spec": "tech:loot_pouch:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 80,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:loot_bottle:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 50,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:dusty_guide_book:1"
+    },
+    {
+      "table": "van.DUNGEON_CHEST",
+      "weight": 100,
+      "min": 1,
+      "max": 2,
+      "spec": "tech:dusty_material_dictionary:1"
+    },
+    {
+      "table": "van.PYRAMID_DESERT_CHEST",
+      "weight": 2,
+      "min": 4,
+      "max": 8,
+      "spec": "tech:holy_water:1"
+    },
+    {
+      "table": "van.PYRAMID_DESERT_CHEST",
+      "weight": 1,
+      "min": 4,
+      "max": 16,
+      "spec": "i:toolHeadArrow:Nq:1"
+    },
+    {
+      "table": "van.PYRAMID_DESERT_CHEST",
+      "weight": 5,
+      "min": 4,
+      "max": 8,
+      "spec": "tech:gem_pouch:1"
+    },
+    {
+      "table": "van.PYRAMID_DESERT_CHEST",
+      "weight": 5,
+      "min": 1,
+      "max": 2,
+      "spec": "tech:loot_pouch:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "weight": 3,
+      "min": 4,
+      "max": 16,
+      "spec": "i:ingot:ArsenicCopper:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "weight": 3,
+      "min": 4,
+      "max": 16,
+      "spec": "i:plate:ArsenicCopper:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "weight": 3,
+      "min": 16,
+      "max": 64,
+      "spec": "i:toolHeadArrow:ArsenicCopper:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "weight": 1,
+      "min": 4,
+      "max": 16,
+      "spec": "i:toolHeadArrow:Ke:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "weight": 10,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:bagged_sapling:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "weight": 15,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:seed_pouch:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "weight": 5,
+      "min": 4,
+      "max": 8,
+      "spec": "tech:gem_pouch:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_CHEST",
+      "weight": 5,
+      "min": 2,
+      "max": 4,
+      "spec": "tech:loot_pouch:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_DISPENSER",
+      "weight": 30,
+      "min": 2,
+      "max": 8,
+      "spec": "v:fire_charge:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_DISPENSER",
+      "weight": 20,
+      "min": 8,
+      "max": 16,
+      "spec": "i:arrowGtWood:DamascusSteel:1"
+    },
+    {
+      "table": "van.PYRAMID_JUNGLE_DISPENSER",
+      "weight": 1,
+      "min": 8,
+      "max": 16,
+      "spec": "i:arrowGtWood:Ke:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 2,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:green_slime_bottle:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 2,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:lubricant_bottle:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 4,
+      "min": 16,
+      "max": 64,
+      "spec": "v:coal_ore:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 4,
+      "min": 16,
+      "max": 64,
+      "spec": "v:iron_ore:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 2,
+      "min": 8,
+      "max": 32,
+      "spec": "v:gold_ore:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 2,
+      "min": 8,
+      "max": 32,
+      "spec": "v:lapis_ore:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 2,
+      "min": 8,
+      "max": 32,
+      "spec": "v:redstone_ore:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 1,
+      "min": 4,
+      "max": 16,
+      "spec": "v:diamond_ore:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 1,
+      "min": 4,
+      "max": 16,
+      "spec": "v:emerald_ore:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 5,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadShovel:ArsenicBronze:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 3,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadShovel:Steel:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 1,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadShovel:DamascusSteel:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 5,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadPickaxe:ArsenicBronze:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 3,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadRawPickaxe:Steel:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 1,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadPickaxe:DamascusSteel:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 10,
+      "min": 3,
+      "max": 9,
+      "spec": "tech:gem_pouch:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 10,
+      "min": 1,
+      "max": 2,
+      "spec": "tech:loot_pouch:1"
+    },
+    {
+      "table": "van.MINESHAFT_CORRIDOR",
+      "weight": 6,
+      "min": 1,
+      "max": 2,
+      "spec": "tech:dusty_material_dictionary:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 4,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:green_slime_bottle:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 4,
+      "min": 8,
+      "max": 16,
+      "spec": "tech:lubricant_bottle:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:ingot:Steel:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:plate:Steel:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 8,
+      "max": 24,
+      "spec": "i:stick:Steel:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:gearGtSmall:Steel:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 16,
+      "max": 48,
+      "spec": "i:toolHeadArrow:Steel:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:ingot:Bronze:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:plate:Bronze:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 8,
+      "max": 24,
+      "spec": "i:stick:Bronze:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:gearGtSmall:Bronze:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 16,
+      "max": 48,
+      "spec": "i:toolHeadArrow:Bronze:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:ingot:Brass:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:plate:Brass:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 8,
+      "max": 24,
+      "spec": "i:stick:Brass:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 4,
+      "max": 12,
+      "spec": "i:gearGtSmall:Brass:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 2,
+      "min": 16,
+      "max": 48,
+      "spec": "i:toolHeadArrow:Brass:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 1,
+      "min": 4,
+      "max": 12,
+      "spec": "i:ingot:DamascusSteel:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 10,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:bagged_sapling:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 15,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:seed_pouch:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 10,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:gem_pouch:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 10,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:loot_pouch:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 40,
+      "min": 4,
+      "max": 8,
+      "spec": "tech:dusty_guide_book:1"
+    },
+    {
+      "table": "van.VILLAGE_BLACKSMITH",
+      "weight": 20,
+      "min": 1,
+      "max": 2,
+      "spec": "tech:dusty_material_dictionary:1"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "weight": 40,
+      "min": 4,
+      "max": 8,
+      "spec": "tech:dusty_guide_book:1"
+    },
+    {
+      "table": "van.STRONGHOLD_LIBRARY",
+      "weight": 20,
+      "min": 4,
+      "max": 16,
+      "spec": "tech:dusty_material_dictionary:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "weight": 5,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:bagged_sapling:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "weight": 10,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:seed_pouch:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "weight": 10,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:loot_pouch:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CROSSING",
+      "weight": 30,
+      "min": 2,
+      "max": 8,
+      "spec": "tech:loot_bottle:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CORRIDOR",
+      "weight": 12,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadSword:Steel:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CORRIDOR",
+      "weight": 6,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadSword:DamascusSteel:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CORRIDOR",
+      "weight": 12,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadAxeDouble:Steel:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CORRIDOR",
+      "weight": 6,
+      "min": 1,
+      "max": 4,
+      "spec": "i:toolHeadAxeDouble:DamascusSteel:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CORRIDOR",
+      "weight": 6,
+      "min": 16,
+      "max": 48,
+      "spec": "i:arrowGtWood:DamascusSteel:1"
+    },
+    {
+      "table": "van.STRONGHOLD_CORRIDOR",
+      "weight": 6,
+      "min": 8,
+      "max": 24,
+      "spec": "i:arrowGtWood:SterlingSilver:1"
+    }
+  ]
+}

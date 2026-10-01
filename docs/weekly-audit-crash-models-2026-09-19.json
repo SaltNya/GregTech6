@@ -1,0 +1,102 @@
+[
+  {
+    "count": 59192,
+    "pattern": "gregtech:<id>",
+    "example": "gregtech:block/iconsets/leaves_blue_mahoe"
+  },
+  {
+    "count": 2139,
+    "pattern": "Exception loading blockstate definition: '<id>' missing model for variant: '<id>'",
+    "example": "Exception loading blockstate definition: 'gregtech:blockstates/crate_gt64_raw_abyssalnite.json' missing model for variant: 'gregtech:crate_gt64_raw_abyssalnite#'"
+  },
+  {
+    "count": 66,
+    "pattern": "Missing textures in model gregtech:<id>:",
+    "example": "Missing textures in model gregtech:axle_wood_2#down=true,east=true,north=true,south=false,up=false,waterlogged=false,west=true:"
+  },
+  {
+    "count": 11,
+    "pattern": "Unused frames in sprite gregtech:<id>: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]",
+    "example": "Unused frames in sprite gregtech:block/material_icons/prismarine/molten: [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid path in pack: gregtech:<id> ignoring",
+    "example": "Invalid path in pack: gregtech:textures/block/overlays/characters/GIMP.txt, ignoring"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid path in pack: gregtech:<id> hsla.png.mcmeta, ignoring",
+    "example": "Invalid path in pack: gregtech:textures/block/fluids/molten hsla.png.mcmeta, ignoring"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid path in pack: gregtech:<id> hsla.png, ignoring",
+    "example": "Invalid path in pack: gregtech:textures/block/fluids/molten hsla.png, ignoring"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid path in pack: gregtech:<id> - 副本.png, ignoring",
+    "example": "Invalid path in pack: gregtech:textures/item/material_icons/lapis/ingot - 副本.png, ignoring"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 1: 1",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 1: 1"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 2: 2",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 2: 2"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 3: 3",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 3: 3"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 4: 4",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 4: 4"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 5: 5",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 5: 5"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 6: 6",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 6: 6"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 7: 7",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 7: 7"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 8: 8",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 8: 8"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 9: 9",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 9: 9"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 10: 10",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 10: 10"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 11: 11",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 11: 11"
+  },
+  {
+    "count": 2,
+    "pattern": "Invalid frame index on sprite gregtech:<id> frame 12: 12",
+    "example": "Invalid frame index on sprite gregtech:block/material_icons/plasma/molten frame 12: 12"
+  }
+]

@@ -1,0 +1,5290 @@
+{
+  "changes": {
+    "block.gregtech.bumbliary": {
+      "old": "大黄蜂巢",
+      "new": "黄蜂蜂箱",
+      "source": "gt.multitileentity.32741"
+    },
+    "block.gregtech.burning_box_solid_brick": {
+      "old": "砖燃烧室 (固体)",
+      "new": "砖块燃烧室 (固体)",
+      "source": "gt.multitileentity.1199"
+    },
+    "block.gregtech.cap_nozzle_adamantium": {
+      "old": "精金喷嘴",
+      "new": "艾德曼合金喷嘴",
+      "source": "gt.multitileentity.32750"
+    },
+    "block.gregtech.centrifuge_part": {
+      "old": "离心机部件",
+      "new": "大型离心机部件",
+      "source": "gt.multitileentity.18100"
+    },
+    "block.gregtech.coin_mold": {
+      "old": "硬币模具",
+      "new": "铸币模具",
+      "source": "gt.multitileentity.32701"
+    },
+    "block.gregtech.control_processor_unit": {
+      "old": "控制四核处理器组件",
+      "new": "控制四核处理器",
+      "source": "gt.multitileentity.18202"
+    },
+    "block.gregtech.conversion_processor_unit": {
+      "old": "转换四核处理器组件",
+      "new": "转换四核处理器",
+      "source": "gt.multitileentity.18204"
+    },
+    "block.gregtech.crusher_wheels": {
+      "old": "破碎轮",
+      "new": "破碎机辊轮",
+      "source": "gt.multitileentity.18107"
+    },
+    "block.gregtech.dense_adamantium_wall": {
+      "old": "致密精金墙",
+      "new": "致密艾德曼合金壁板",
+      "source": "gt.multitileentity.18025"
+    },
+    "block.gregtech.dense_lead_wall": {
+      "old": "致密铅墙",
+      "new": "致密铅壁板",
+      "source": "gt.multitileentity.18031"
+    },
+    "block.gregtech.dense_titanium_wall": {
+      "old": "致密钛墙壁",
+      "new": "致密钛壁板",
+      "source": "gt.multitileentity.18026"
+    },
+    "block.gregtech.dense_tungsten_wall": {
+      "old": "致密钨墙壁",
+      "new": "致密钨壁板",
+      "source": "gt.multitileentity.18024"
+    },
+    "block.gregtech.distillation_tower_part": {
+      "old": "蒸馏塔部件",
+      "new": "蒸馏塔壁",
+      "source": "gt.multitileentity.18102"
+    },
+    "block.gregtech.drum_bronze": {
+      "old": "青铜桶",
+      "new": "青铜储罐",
+      "source": "gt.multitileentity.32102"
+    },
+    "block.gregtech.drum_stainless_steel": {
+      "old": "不锈钢桶",
+      "new": "不锈钢储罐",
+      "source": "gt.multitileentity.32716"
+    },
+    "block.gregtech.drum_titanium": {
+      "old": "钛桶",
+      "new": "钛储罐",
+      "source": "gt.multitileentity.32742"
+    },
+    "block.gregtech.drum_tungsten": {
+      "old": "钨桶",
+      "new": "钨储罐",
+      "source": "gt.multitileentity.32718"
+    },
+    "block.gregtech.drum_tungsten_steel": {
+      "old": "钨钢桶",
+      "new": "钨钢储罐",
+      "source": "gt.multitileentity.32717"
+    },
+    "block.gregtech.duct_tape": {
+      "old": "胶布胶带",
+      "new": "强力胶布",
+      "source": "gt.multiitem.randomtools.12002"
+    },
+    "block.gregtech.dust_funnel": {
+      "old": "粉尘漏斗",
+      "new": "筛粉漏斗",
+      "source": "gt.multitileentity.32704"
+    },
+    "block.gregtech.dynamite": {
+      "old": "炸药",
+      "new": "锯末炸药",
+      "source": "gt.multitileentity.32713"
+    },
+    "block.gregtech.electrolyzer_part": {
+      "old": "电解机部件",
+      "new": "电解器部件",
+      "source": "gt.multitileentity.18105"
+    },
+    "block.gregtech.ender_garbage_dump": {
+      "old": "末影垃圾场",
+      "new": "末影垃圾堆",
+      "source": "gt.multitileentity.32710"
+    },
+    "block.gregtech.filter_fluids": {
+      "old": "流体过滤器",
+      "new": "液体过滤器",
+      "source": "gt.multitileentity.30257"
+    },
+    "block.gregtech.filter_items_fluids": {
+      "old": "物品与流体过滤器",
+      "new": "固/液过滤器",
+      "source": "gt.multitileentity.30258"
+    },
+    "block.gregtech.fluid_barometer_gas_cylinder_tantalum_hafnium_carbide": {
+      "old": "碳化钽铪计压气瓶",
+      "new": "碳化钽铪制计压瓶",
+      "source": "gt.multitileentity.32078"
+    },
+    "block.gregtech.fluid_barometer_gas_cylinder_tungsten": {
+      "old": "钨计压气瓶",
+      "new": "钨制计压瓶",
+      "source": "gt.multitileentity.32057"
+    },
+    "block.gregtech.fluid_funnel_adamantium": {
+      "old": "精金漏斗",
+      "new": "艾德曼合金漏斗",
+      "source": "gt.multitileentity.32727"
+    },
+    "block.gregtech.fluid_spring": {
+      "old": "流体泉",
+      "new": "液体泉",
+      "source": "gt.multitileentity.32763"
+    },
+    "block.gregtech.fuel_rod_am_241": {
+      "old": "Americium-241燃料棒",
+      "new": "镅-241燃料棒",
+      "source": "gt.multitileentity.9241"
+    },
+    "block.gregtech.fuel_rod_co_60": {
+      "old": "Cobalt-60燃料棒",
+      "new": "钴-60燃料棒",
+      "source": "gt.multitileentity.9250"
+    },
+    "block.gregtech.fuel_rod_pu_239": {
+      "old": "Plutonium-239燃料棒",
+      "new": "钚-239燃料棒",
+      "source": "gt.multitileentity.9233"
+    },
+    "block.gregtech.fuel_rod_th_232": {
+      "old": "Thorium-232燃料棒",
+      "new": "钍-232燃料棒",
+      "source": "gt.multitileentity.9210"
+    },
+    "block.gregtech.fuel_rod_u_235": {
+      "old": "Uranium-235燃料棒",
+      "new": "铀-235燃料棒",
+      "source": "gt.multitileentity.9221"
+    },
+    "block.gregtech.fuel_rod_u_238": {
+      "old": "Uranium-238燃料棒",
+      "new": "铀-238燃料棒",
+      "source": "gt.multitileentity.9220"
+    },
+    "block.gregtech.fusion_ventilation_unit": {
+      "old": "通风组件",
+      "new": "通风单元",
+      "source": "gt.multitileentity.18299"
+    },
+    "block.gregtech.galvanized_steel_wall": {
+      "old": "镀锌钢墙",
+      "new": "镀锌钢壁板",
+      "source": "gt.multitileentity.18008"
+    },
+    "block.gregtech.greg_o_lantern": {
+      "old": "格雷 O 灯笼",
+      "new": "格雷灯笼",
+      "source": "gt.multitileentity.32758"
+    },
+    "block.gregtech.grindstone_block": {
+      "old": "磨石",
+      "new": "打磨石",
+      "source": "gt.multitileentity.32703"
+    },
+    "block.gregtech.heat_transmitter": {
+      "old": "热传输器",
+      "new": "热吸收装置",
+      "source": "gt.multitileentity.18101"
+    },
+    "block.gregtech.invar_wall": {
+      "old": "殷钢墙壁",
+      "new": "殷钢壁板",
+      "source": "gt.multitileentity.18007"
+    },
+    "block.gregtech.inventory_bridge": {
+      "old": "物品桥接器",
+      "new": "物品栏扩展桥",
+      "source": "gt.multitileentity.30500"
+    },
+    "block.gregtech.inventory_extender": {
+      "old": "物品扩展器",
+      "new": "物品栏中继器",
+      "source": "gt.multitileentity.30000"
+    },
+    "block.gregtech.inventory_tank_bridge": {
+      "old": "物品与流体桥接器",
+      "new": "物品栏与水箱扩展桥",
+      "source": "gt.multitileentity.30502"
+    },
+    "block.gregtech.inventory_tank_extender": {
+      "old": "物品与流体扩展器",
+      "new": "物品栏、水箱中继器",
+      "source": "gt.multitileentity.30002"
+    },
+    "block.gregtech.juicer": {
+      "old": "榨汁器",
+      "new": "榨汁机",
+      "source": "gt.multitileentity.32722"
+    },
+    "block.gregtech.large_gas_turbine_graphene": {
+      "old": "石墨烯燃气涡轮主控",
+      "new": "石墨烯燃气涡轮机核心",
+      "source": "gt.multitileentity.17233"
+    },
+    "block.gregtech.large_gas_turbine_main": {
+      "old": "镁铝合金燃气涡轮主控",
+      "new": "镁铝合金燃气涡轮机核心",
+      "source": "gt.multitileentity.17231"
+    },
+    "block.gregtech.large_gas_turbine_trinitanium": {
+      "old": "Trinitanium燃气涡轮主控",
+      "new": "特林钛合金燃气涡轮机核心",
+      "source": "gt.multitileentity.17232"
+    },
+    "block.gregtech.large_gas_turbine_vibramantium": {
+      "old": "Vibramantium燃气涡轮主控",
+      "new": "艾德曼振金燃气涡轮机核心",
+      "source": "gt.multitileentity.17234"
+    },
+    "block.gregtech.large_nichrome_coil": {
+      "old": "大型镍铬线圈",
+      "new": "大型镍铬合金线圈",
+      "source": "gt.multitileentity.18042"
+    },
+    "block.gregtech.large_niobium_titanium_coil": {
+      "old": "大型铌钛线圈",
+      "new": "大型铌钛合金线圈",
+      "source": "gt.multitileentity.18041"
+    },
+    "block.gregtech.laser_fiber_wire": {
+      "old": "激光光纤",
+      "new": "光纤",
+      "source": "gt.multitileentity.24900"
+    },
+    "block.gregtech.lightning_rod_pillar": {
+      "old": "避雷针柱",
+      "new": "避雷针",
+      "source": "gt.multitileentity.18104"
+    },
+    "block.gregtech.logic_processor_unit": {
+      "old": "逻辑四核处理器组件",
+      "new": "逻辑四核处理器",
+      "source": "gt.multitileentity.18201"
+    },
+    "block.gregtech.logistics_wire": {
+      "old": "物流导线",
+      "new": "物流线缆",
+      "source": "gt.multitileentity.24901"
+    },
+    "block.gregtech.loot_crate": {
+      "old": "战利品箱",
+      "new": "战利品板条箱",
+      "source": "gt.multitileentity.32110"
+    },
+    "block.gregtech.mixing_bowl": {
+      "old": "陶瓷碗",
+      "new": "搅拌盆",
+      "source": "gt.multitileentity.32706"
+    },
+    "block.gregtech.mortar_block": {
+      "old": "研钵臼",
+      "new": "研钵",
+      "source": "gt.multitileentity.32075"
+    },
+    "block.gregtech.mud": {
+      "old": "泥",
+      "new": "泥球",
+      "source": "gt.multiitem.food.12300"
+    },
+    "block.gregtech.plant_pot": {
+      "old": "花盆",
+      "new": "万能花盆",
+      "source": "gt.multitileentity.32065"
+    },
+    "block.gregtech.plastic_canister": {
+      "old": "塑料罐",
+      "new": "塑料储罐",
+      "source": "gt.multitileentity.32715"
+    },
+    "block.gregtech.quantum_energizer_ev": {
+      "old": "量子激励器（T1）",
+      "new": "量子充能器 (T1)",
+      "source": "gt.multitileentity.10121"
+    },
+    "block.gregtech.quantum_energizer_iv": {
+      "old": "量子激励器（T2）",
+      "new": "量子充能器 (T2)",
+      "source": "gt.multitileentity.10122"
+    },
+    "block.gregtech.quantum_energizer_luv": {
+      "old": "量子激励器（T3）",
+      "new": "量子充能器 (T3)",
+      "source": "gt.multitileentity.10123"
+    },
+    "block.gregtech.quantum_energizer_uv": {
+      "old": "量子激励器（T5）",
+      "new": "量子充能器 (T5)",
+      "source": "gt.multitileentity.10125"
+    },
+    "block.gregtech.quantum_energizer_zpm": {
+      "old": "量子激励器（T4）",
+      "new": "量子充能器 (T4)",
+      "source": "gt.multitileentity.10124"
+    },
+    "block.gregtech.reactor_rod_9201": {
+      "old": "空反应堆棒",
+      "new": "空燃料棒",
+      "source": "gt.multitileentity.9201"
+    },
+    "block.gregtech.reactor_rod_9204": {
+      "old": "中子慢化棒",
+      "new": "中子减速棒",
+      "source": "gt.multitileentity.9204"
+    },
+    "block.gregtech.reactor_rod_9219": {
+      "old": "Cyanite燃料棒",
+      "new": "蓝晶石燃料棒",
+      "source": "gt.multitileentity.9219"
+    },
+    "block.gregtech.reactor_rod_9222": {
+      "old": "Uranium-233燃料棒",
+      "new": "铀-233燃料棒",
+      "source": "gt.multitileentity.9222"
+    },
+    "block.gregtech.reactor_rod_9229": {
+      "old": "Yellorium燃料棒",
+      "new": "黄铀燃料棒",
+      "source": "gt.multitileentity.9229"
+    },
+    "block.gregtech.reactor_rod_9230": {
+      "old": "Plutonium-244燃料棒",
+      "new": "钚-244燃料棒",
+      "source": "gt.multitileentity.9230"
+    },
+    "block.gregtech.reactor_rod_9231": {
+      "old": "Plutonium-241燃料棒",
+      "new": "钚-241燃料棒",
+      "source": "gt.multitileentity.9231"
+    },
+    "block.gregtech.reactor_rod_9232": {
+      "old": "Plutonium-243燃料棒",
+      "new": "钚-243燃料棒",
+      "source": "gt.multitileentity.9232"
+    },
+    "block.gregtech.reactor_rod_9239": {
+      "old": "Blutonium燃料棒",
+      "new": "蓝钚燃料棒",
+      "source": "gt.multitileentity.9239"
+    },
+    "block.gregtech.reactor_rod_9240": {
+      "old": "Americium-245燃料棒",
+      "new": "镅-245燃料棒",
+      "source": "gt.multitileentity.9240"
+    },
+    "block.gregtech.reactor_rod_9249": {
+      "old": "Ludicrite燃料棒",
+      "new": "滑稽燃料棒",
+      "source": "gt.multitileentity.9249"
+    },
+    "block.gregtech.reactor_rod_9260": {
+      "old": "Enriched Naquadah燃料棒",
+      "new": "浓缩硅岩金属燃料棒",
+      "source": "gt.multitileentity.9260"
+    },
+    "block.gregtech.reactor_rod_9261": {
+      "old": "Naquadria燃料棒",
+      "new": "硅岩金属化合物燃料棒",
+      "source": "gt.multitileentity.9261"
+    },
+    "block.gregtech.reactor_rod_9310": {
+      "old": "枯竭Thorium-232燃料棒",
+      "new": "枯竭钍-232燃料棒",
+      "source": "gt.multitileentity.9310"
+    },
+    "block.gregtech.reactor_rod_9319": {
+      "old": "枯竭Cyanite燃料棒",
+      "new": "枯竭蓝晶石燃料棒",
+      "source": "gt.multitileentity.9319"
+    },
+    "block.gregtech.reactor_rod_9320": {
+      "old": "枯竭Uranium-238燃料棒",
+      "new": "枯竭铀-238燃料棒",
+      "source": "gt.multitileentity.9320"
+    },
+    "block.gregtech.reactor_rod_9321": {
+      "old": "枯竭Uranium-235燃料棒",
+      "new": "枯竭铀-235燃料棒",
+      "source": "gt.multitileentity.9321"
+    },
+    "block.gregtech.reactor_rod_9322": {
+      "old": "枯竭Uranium-233燃料棒",
+      "new": "枯竭铀-233燃料棒",
+      "source": "gt.multitileentity.9322"
+    },
+    "block.gregtech.reactor_rod_9329": {
+      "old": "枯竭Yellorium燃料棒",
+      "new": "枯竭黄铀燃料棒",
+      "source": "gt.multitileentity.9329"
+    },
+    "block.gregtech.reactor_rod_9330": {
+      "old": "枯竭Plutonium-244燃料棒",
+      "new": "枯竭钚-244燃料棒",
+      "source": "gt.multitileentity.9330"
+    },
+    "block.gregtech.reactor_rod_9331": {
+      "old": "枯竭Plutonium-241燃料棒",
+      "new": "枯竭钚-241燃料棒",
+      "source": "gt.multitileentity.9331"
+    },
+    "block.gregtech.reactor_rod_9332": {
+      "old": "枯竭Plutonium-243燃料棒",
+      "new": "枯竭钚-243燃料棒",
+      "source": "gt.multitileentity.9332"
+    },
+    "block.gregtech.reactor_rod_9333": {
+      "old": "枯竭Plutonium-239燃料棒",
+      "new": "枯竭钚-239燃料棒",
+      "source": "gt.multitileentity.9333"
+    },
+    "block.gregtech.reactor_rod_9339": {
+      "old": "枯竭Blutonium燃料棒",
+      "new": "枯竭蓝钚燃料棒",
+      "source": "gt.multitileentity.9339"
+    },
+    "block.gregtech.reactor_rod_9340": {
+      "old": "枯竭Americium-245燃料棒",
+      "new": "枯竭镅-245燃料棒",
+      "source": "gt.multitileentity.9340"
+    },
+    "block.gregtech.reactor_rod_9341": {
+      "old": "枯竭Americium-241燃料棒",
+      "new": "枯竭镅-241燃料棒",
+      "source": "gt.multitileentity.9341"
+    },
+    "block.gregtech.reactor_rod_9349": {
+      "old": "枯竭Ludicrite燃料棒",
+      "new": "枯竭滑稽燃料棒",
+      "source": "gt.multitileentity.9349"
+    },
+    "block.gregtech.reactor_rod_9350": {
+      "old": "枯竭Cobalt-60燃料棒",
+      "new": "枯竭钴-60燃料棒",
+      "source": "gt.multitileentity.9350"
+    },
+    "block.gregtech.reactor_rod_9360": {
+      "old": "枯竭Enriched Naquadah燃料棒",
+      "new": "枯竭浓缩硅岩金属燃料棒",
+      "source": "gt.multitileentity.9360"
+    },
+    "block.gregtech.reactor_rod_9361": {
+      "old": "枯竭Naquadria燃料棒",
+      "new": "枯竭硅岩金属化合物燃料棒",
+      "source": "gt.multitileentity.9361"
+    },
+    "block.gregtech.reactor_rod_9410": {
+      "old": "Thorium-232增殖棒",
+      "new": "钍-232增殖棒",
+      "source": "gt.multitileentity.9410"
+    },
+    "block.gregtech.reactor_rod_9411": {
+      "old": "Uranium-233增殖产物棒",
+      "new": "铀-233浓缩燃料棒",
+      "source": "gt.multitileentity.9411"
+    },
+    "block.gregtech.reactor_rod_9420": {
+      "old": "Uranium-238增殖棒",
+      "new": "铀-238增殖棒",
+      "source": "gt.multitileentity.9420"
+    },
+    "block.gregtech.reactor_rod_9421": {
+      "old": "Plutonium-239增殖产物棒",
+      "new": "钚-239浓缩燃料棒",
+      "source": "gt.multitileentity.9421"
+    },
+    "block.gregtech.reactor_rod_9430": {
+      "old": "Lithium增殖棒",
+      "new": "锂增殖棒",
+      "source": "gt.multitileentity.9430"
+    },
+    "block.gregtech.reactor_rod_9431": {
+      "old": "Tritium增殖产物棒",
+      "new": "氚浓缩燃料棒",
+      "source": "gt.multitileentity.9431"
+    },
+    "block.gregtech.reactor_rod_9440": {
+      "old": "Naquadah增殖棒",
+      "new": "硅岩金属增殖棒",
+      "source": "gt.multitileentity.9440"
+    },
+    "block.gregtech.reactor_rod_9441": {
+      "old": "Enriched Naquadah增殖产物棒",
+      "new": "浓缩硅岩金属浓缩燃料棒",
+      "source": "gt.multitileentity.9441"
+    },
+    "block.gregtech.rock": {
+      "old": "石子",
+      "new": "石头",
+      "source": "gt.multitileentity.32074"
+    },
+    "block.gregtech.rope": {
+      "old": "绳索",
+      "new": "绳子",
+      "source": "gt.multitileentity.32011"
+    },
+    "block.gregtech.sensor_electrometer": {
+      "old": "电量计",
+      "new": "电力计",
+      "source": "gt.multiitem.randomtools.10003"
+    },
+    "block.gregtech.shredder_blades": {
+      "old": "撕碎刀片",
+      "new": "研磨机刀片",
+      "source": "gt.multitileentity.18108"
+    },
+    "block.gregtech.sluice_part": {
+      "old": "洗矿机部件",
+      "new": "洗矿厂部件",
+      "source": "gt.multitileentity.18106"
+    },
+    "block.gregtech.solar_panel_germanium": {
+      "old": "太阳能板(锗)",
+      "new": "太阳能电池板 (锗)",
+      "source": "gt.multitileentity.10051"
+    },
+    "block.gregtech.solar_panel_silicon": {
+      "old": "太阳能板(硅)",
+      "new": "太阳能电池板",
+      "source": "gt.multitileentity.10050"
+    },
+    "block.gregtech.steel_wall": {
+      "old": "钢墙壁",
+      "new": "钢壁板",
+      "source": "gt.multitileentity.18009"
+    },
+    "block.gregtech.tank_bridge": {
+      "old": "流体桥接器",
+      "new": "水箱扩展桥",
+      "source": "gt.multitileentity.30501"
+    },
+    "block.gregtech.tank_extender": {
+      "old": "流体扩展器",
+      "new": "水箱中继器",
+      "source": "gt.multitileentity.30001"
+    },
+    "block.gregtech.tap_adamantium": {
+      "old": "精金龙头",
+      "new": "艾德曼合金龙头",
+      "source": "gt.multitileentity.32732"
+    },
+    "block.gregtech.titanium_wall": {
+      "old": "钛墙壁",
+      "new": "钛壁板",
+      "source": "gt.multitileentity.18006"
+    },
+    "block.gregtech.tungstensteel_wall": {
+      "old": "钨钢墙壁",
+      "new": "钨钢壁板",
+      "source": "gt.multitileentity.18003"
+    },
+    "block.gregtech.universal_bridge": {
+      "old": "通用桥接器",
+      "new": "通用扩展桥",
+      "source": "gt.multitileentity.30755"
+    },
+    "block.gregtech.universal_extender": {
+      "old": "通用扩展器",
+      "new": "通用中继器",
+      "source": "gt.multitileentity.30255"
+    },
+    "block.gregtech.versatile_processor_unit": {
+      "old": "通用四核处理器组件",
+      "new": "多功能四核处理器",
+      "source": "gt.multitileentity.18200"
+    },
+    "block.gregtech.wood_barrel": {
+      "old": "木桶",
+      "new": "木制储罐",
+      "source": "gt.multitileentity.32714"
+    },
+    "block.gregtech.zpm": {
+      "old": "零点模块（ZPM）",
+      "new": "零点模块 (ZPM)",
+      "source": "gt.multitileentity.14999"
+    },
+    "gt.tooltip.multiblock.distillationtower.1": {
+      "old": "底部 3x3 热传输器",
+      "new": "3x3 热吸收装置",
+      "source": "gt.tooltip.multiblock.distillationtower.1"
+    },
+    "gt.tooltip.multiblock.distillationtower.2": {
+      "old": "3x3x8 蒸馏塔部件",
+      "new": "3x3x8 实心蒸馏塔壁",
+      "source": "gt.tooltip.multiblock.distillationtower.2"
+    },
+    "gt.tooltip.multiblock.distillationtower.3": {
+      "old": "主机位于塔底层正面中央朝外",
+      "new": "蒸馏塔主方块放在侧面底层的中央, 正面朝外",
+      "source": "gt.tooltip.multiblock.distillationtower.3"
+    },
+    "gt.tooltip.multiblock.largeboiler.1": {
+      "old": "底部 3x3 热传输器",
+      "new": "3x3 热接收器底座",
+      "source": "gt.tooltip.multiblock.largeboiler.1"
+    },
+    "gt.tooltip.multiblock.largeboiler.2": {
+      "old": "其上 3x3x3 锅炉壁，主机位于底层正面中央",
+      "new": "3x3x3 相应材料的致密壁板, 中空",
+      "source": "gt.tooltip.multiblock.largeboiler.2"
+    },
+    "gt.tooltip.multiblock.largeboiler.3": {
+      "old": "HU + 水 → 蒸汽（1 HU = 2 L，1 L 水 = 200 L 蒸汽）",
+      "new": "大型蒸汽锅炉主方块放在结构的侧面中心, 正面朝外",
+      "source": "gt.tooltip.multiblock.largeboiler.3"
+    },
+    "item.gregtech.abyssal_dough": {
+      "old": "Abyssal Dough",
+      "new": "深渊面团",
+      "source": "gt.multiitem.food.32006"
+    },
+    "item.gregtech.activity_detector_possible": {
+      "old": "活动侦测器(可行)",
+      "new": "活动传感器 (就绪)",
+      "source": "gt.multiitem.technological.1015"
+    },
+    "item.gregtech.activity_detector_processing": {
+      "old": "活动侦测器(处理中)",
+      "new": "活动传感器 (处理)",
+      "source": "gt.multiitem.technological.1017"
+    },
+    "item.gregtech.activity_detector_running": {
+      "old": "活动侦测器(运行)",
+      "new": "活动传感器 (运行)",
+      "source": "gt.multiitem.technological.1016"
+    },
+    "item.gregtech.activity_detector_success": {
+      "old": "活动侦测器(成功)",
+      "new": "活动传感器 (完成)",
+      "source": "gt.multiitem.technological.1019"
+    },
+    "item.gregtech.aero_comb": {
+      "old": "Aero Comb",
+      "new": "空气蜂巢",
+      "source": "gt.multiitem.food.30202"
+    },
+    "item.gregtech.air_vent": {
+      "old": "空气通风口",
+      "new": "通风口",
+      "source": "gt.multiitem.technological.1022"
+    },
+    "item.gregtech.alcopops": {
+      "old": "Alcopops",
+      "new": "波普甜酒",
+      "source": "gt.multiitem.bottles.203"
+    },
+    "item.gregtech.alkaline_button_cell_empty": {
+      "old": "碱性按钮电池(空)",
+      "new": "碱性电池单元 (空)",
+      "source": "gt.multiitem.technological.20002"
+    },
+    "item.gregtech.alkaline_button_cell_filled": {
+      "old": "碱性按钮电池(满)",
+      "new": "碱性电池单元 (满)",
+      "source": "gt.multiitem.technological.20003"
+    },
+    "item.gregtech.ambrosia": {
+      "old": "Ambrosia",
+      "new": "圣餐",
+      "source": "gt.multiitem.bottles.1303"
+    },
+    "item.gregtech.amnesic_comb": {
+      "old": "Amnesic Comb",
+      "new": "遗忘蜂巢",
+      "source": "gt.multiitem.food.30104"
+    },
+    "item.gregtech.ananas": {
+      "old": "Ananas",
+      "new": "菠萝",
+      "source": "gt.multiitem.food.270"
+    },
+    "item.gregtech.ananas_cider": {
+      "old": "Ananas Cider",
+      "new": "菠萝苹果酒",
+      "source": "gt.multiitem.bottles.3901"
+    },
+    "item.gregtech.ananas_ice_cream": {
+      "old": "Ananas Ice Cream",
+      "new": "菠萝冰淇淋",
+      "source": "gt.multiitem.food.13028"
+    },
+    "item.gregtech.ananas_juice": {
+      "old": "Ananas Juice",
+      "new": "菠萝汁",
+      "source": "gt.multiitem.bottles.3900"
+    },
+    "item.gregtech.ananas_slice": {
+      "old": "Ananas Slice",
+      "new": "菠萝片",
+      "source": "gt.multiitem.food.271"
+    },
+    "item.gregtech.ananas_smoothie": {
+      "old": "Ananas Smoothie",
+      "new": "菠萝冰沙",
+      "source": "gt.multiitem.bottles.3905"
+    },
+    "item.gregtech.antidote": {
+      "old": "Antidote",
+      "new": "解毒剂",
+      "source": "gt.multiitem.food.31005"
+    },
+    "item.gregtech.antler": {
+      "old": "Antler",
+      "new": "鹿角",
+      "source": "gt.multiitem.food.12700"
+    },
+    "item.gregtech.apple": {
+      "old": "Apple",
+      "new": "苹果",
+      "source": "gt.multiitem.food.210"
+    },
+    "item.gregtech.apple_2": {
+      "old": "Apple",
+      "new": "苹果",
+      "source": "gt.multiitem.food.210"
+    },
+    "item.gregtech.apple_3": {
+      "old": "Apple",
+      "new": "苹果",
+      "source": "gt.multiitem.food.210"
+    },
+    "item.gregtech.apple_cider_vinegar": {
+      "old": "Apple Cider Vinegar",
+      "new": "苹果醋",
+      "source": "gt.multiitem.bottles.902"
+    },
+    "item.gregtech.apple_core": {
+      "old": "Apple Core",
+      "new": "苹果核",
+      "source": "gt.multiitem.food.212"
+    },
+    "item.gregtech.apple_core_2": {
+      "old": "Apple Core",
+      "new": "苹果核",
+      "source": "gt.multiitem.food.212"
+    },
+    "item.gregtech.apple_core_3": {
+      "old": "Apple Core",
+      "new": "苹果核",
+      "source": "gt.multiitem.food.212"
+    },
+    "item.gregtech.apple_core_4": {
+      "old": "Apple Core",
+      "new": "苹果核",
+      "source": "gt.multiitem.food.212"
+    },
+    "item.gregtech.apple_ice_cream": {
+      "old": "Apple Ice Cream",
+      "new": "苹果冰淇淋",
+      "source": "gt.multiitem.food.13026"
+    },
+    "item.gregtech.apple_juice": {
+      "old": "Apple Juice",
+      "new": "苹果汁",
+      "source": "gt.multiitem.bottles.900"
+    },
+    "item.gregtech.apple_slice": {
+      "old": "Apple Slice",
+      "new": "苹果片",
+      "source": "gt.multiitem.food.211"
+    },
+    "item.gregtech.apple_slice_2": {
+      "old": "Apple Slice",
+      "new": "苹果片",
+      "source": "gt.multiitem.food.211"
+    },
+    "item.gregtech.apple_slice_3": {
+      "old": "Apple Slice",
+      "new": "苹果片",
+      "source": "gt.multiitem.food.211"
+    },
+    "item.gregtech.apple_slice_4": {
+      "old": "Apple Slice",
+      "new": "苹果片",
+      "source": "gt.multiitem.food.211"
+    },
+    "item.gregtech.apple_smoothie": {
+      "old": "Apple Smoothie",
+      "new": "苹果冰沙",
+      "source": "gt.multiitem.bottles.905"
+    },
+    "item.gregtech.apricot_juice": {
+      "old": "Apricot Juice",
+      "new": "杏子汁",
+      "source": "gt.multiitem.bottles.4700"
+    },
+    "item.gregtech.apricot_smoothie": {
+      "old": "Apricot Smoothie",
+      "new": "杏子冰沙",
+      "source": "gt.multiitem.bottles.4705"
+    },
+    "item.gregtech.arsenic_bronze_compound": {
+      "old": "Arsenic Bronze Compound",
+      "new": "砷青铜混合物",
+      "source": "gt.multiitem.randomtools.4"
+    },
+    "item.gregtech.arsenic_copper_compound": {
+      "old": "Arsenic Copper Compound",
+      "new": "砷铜混合物",
+      "source": "gt.multiitem.randomtools.3"
+    },
+    "item.gregtech.auto_reboot_switch_10m": {
+      "old": "自动重启开关(10分钟)",
+      "new": "自动重启开关 (10分钟)",
+      "source": "gt.multiitem.technological.1011"
+    },
+    "item.gregtech.auto_reboot_switch_1m": {
+      "old": "自动重启开关(1分钟)",
+      "new": "自动重启开关 (1分钟)",
+      "source": "gt.multiitem.technological.1009"
+    },
+    "item.gregtech.auto_reboot_switch_20m": {
+      "old": "自动重启开关(20分钟)",
+      "new": "自动重启开关 (20分钟)",
+      "source": "gt.multiitem.technological.1012"
+    },
+    "item.gregtech.auto_reboot_switch_30m": {
+      "old": "自动重启开关(30分钟)",
+      "new": "自动重启开关 (30分钟)",
+      "source": "gt.multiitem.technological.1013"
+    },
+    "item.gregtech.auto_reboot_switch_5m": {
+      "old": "自动重启开关(5分钟)",
+      "new": "自动重启开关 (5分钟)",
+      "source": "gt.multiitem.technological.1010"
+    },
+    "item.gregtech.auto_redstone_machine_switch": {
+      "old": "自动红石机器开关",
+      "new": "自动式红石机器开关",
+      "source": "gt.multiitem.technological.1006"
+    },
+    "item.gregtech.automatic_machine_switch": {
+      "old": "自动机器开关",
+      "new": "自动开关",
+      "source": "gt.multiitem.technological.1003"
+    },
+    "item.gregtech.bacon_ice_cream": {
+      "old": "Bacon Ice Cream",
+      "new": "培根冰淇淋",
+      "source": "gt.multiitem.food.13021"
+    },
+    "item.gregtech.bacon_sandwich": {
+      "old": "Bacon Sandwich",
+      "new": "培根三明治",
+      "source": "gt.multiitem.food.6014"
+    },
+    "item.gregtech.bag_of_chili_chips": {
+      "old": "Bag of Chili Chips",
+      "new": "一包辣味薯片",
+      "source": "gt.multiitem.food.9021"
+    },
+    "item.gregtech.bag_of_potato_chips": {
+      "old": "Bag of Potato Chips",
+      "new": "一袋薯片",
+      "source": "gt.multiitem.food.9011"
+    },
+    "item.gregtech.bagged_sapling": {
+      "old": "Bagged Sapling",
+      "new": "树苗袋",
+      "source": "gt.multiitem.randomtools.13000"
+    },
+    "item.gregtech.baguette": {
+      "old": "Baguette",
+      "new": "法棍",
+      "source": "gt.multiitem.food.7001"
+    },
+    "item.gregtech.baguettes": {
+      "old": "Baguettes",
+      "new": "切片法式长棍",
+      "source": "gt.multiitem.food.7003"
+    },
+    "item.gregtech.banana": {
+      "old": "Banana",
+      "new": "香蕉",
+      "source": "gt.multiitem.food.90"
+    },
+    "item.gregtech.banana_ice_cream": {
+      "old": "Banana Ice Cream",
+      "new": "香蕉冰淇淋",
+      "source": "gt.multiitem.food.13024"
+    },
+    "item.gregtech.banana_juice": {
+      "old": "Banana Juice",
+      "new": "香蕉汁",
+      "source": "gt.multiitem.bottles.2100"
+    },
+    "item.gregtech.banana_slice": {
+      "old": "Banana Slice",
+      "new": "香蕉片",
+      "source": "gt.multiitem.food.91"
+    },
+    "item.gregtech.banana_smoothie": {
+      "old": "Banana Smoothie",
+      "new": "香蕉冰沙",
+      "source": "gt.multiitem.bottles.2105"
+    },
+    "item.gregtech.barbecue_ribs": {
+      "old": "Barbecue Ribs",
+      "new": "烧烤酱风味烤肋排",
+      "source": "gt.multiitem.food.1202"
+    },
+    "item.gregtech.barbecue_sauce": {
+      "old": "Barbecue Sauce",
+      "new": "烧烤酱",
+      "source": "gt.multiitem.bottles.805"
+    },
+    "item.gregtech.barley": {
+      "old": "Barley",
+      "new": "大麦",
+      "source": "gt.multiitem.food.12006"
+    },
+    "item.gregtech.basalt_generator_module": {
+      "old": "Basalt Generator Module",
+      "new": "刷石机模块 (玄武岩)",
+      "source": "gt.multiitem.randomtools.6001"
+    },
+    "item.gregtech.bawls": {
+      "old": "BAWLS",
+      "new": "瓜拿纳",
+      "source": "gt.multiitem.bottles.2210"
+    },
+    "item.gregtech.bear_ice_cream": {
+      "old": "Bear Ice Cream",
+      "new": "熊冰淇淋",
+      "source": "gt.multiitem.food.13989"
+    },
+    "item.gregtech.beer": {
+      "old": "Beer",
+      "new": "啤酒",
+      "source": "gt.multiitem.bottles.701"
+    },
+    "item.gregtech.beet_juice": {
+      "old": "Beet Juice",
+      "new": "甜菜汁",
+      "source": "gt.multiitem.bottles.5700"
+    },
+    "item.gregtech.bismuth_bronze_compound": {
+      "old": "Bismuth Bronze Compound",
+      "new": "铋青铜混合物",
+      "source": "gt.multiitem.randomtools.2"
+    },
+    "item.gregtech.black_currants": {
+      "old": "Black Currants",
+      "new": "黑醋栗",
+      "source": "gt.multiitem.food.150"
+    },
+    "item.gregtech.blackberry": {
+      "old": "Blackberry",
+      "new": "黑莓",
+      "source": "gt.multiitem.food.180"
+    },
+    "item.gregtech.blackberry_ice_cream": {
+      "old": "Blackberry Ice Cream",
+      "new": "黑莓冰淇淋",
+      "source": "gt.multiitem.food.13013"
+    },
+    "item.gregtech.blackberry_juice": {
+      "old": "Blackberry Juice",
+      "new": "黑莓汁",
+      "source": "gt.multiitem.bottles.2700"
+    },
+    "item.gregtech.blackberry_smoothie": {
+      "old": "Blackberry Smoothie",
+      "new": "黑莓冰沙",
+      "source": "gt.multiitem.bottles.2705"
+    },
+    "item.gregtech.blackstone_generator_module": {
+      "old": "Blackstone Generator Module",
+      "new": "刷石机模块 (黑石)",
+      "source": "gt.multiitem.randomtools.6002"
+    },
+    "item.gregtech.blue_clay": {
+      "old": "Blue Clay",
+      "new": "蓝色粘土",
+      "source": "gt.multiitem.food.12313"
+    },
+    "item.gregtech.blue_pill": {
+      "old": "Blue Pill",
+      "new": "蓝色药片",
+      "source": "gt.multiitem.food.31003"
+    },
+    "item.gregtech.blue_slime_bottle": {
+      "old": "Blue Slime Bottle",
+      "new": "蓝色粘液瓶",
+      "source": "gt.multiitem.bottles.2202"
+    },
+    "item.gregtech.blueberry": {
+      "old": "Blueberry",
+      "new": "蓝莓",
+      "source": "gt.multiitem.food.110"
+    },
+    "item.gregtech.blueberry_ice_cream": {
+      "old": "Blueberry Ice Cream",
+      "new": "蓝莓冰淇淋",
+      "source": "gt.multiitem.food.13011"
+    },
+    "item.gregtech.blueberry_juice": {
+      "old": "Blueberry Juice",
+      "new": "蓝莓汁",
+      "source": "gt.multiitem.bottles.2800"
+    },
+    "item.gregtech.blueberry_smoothie": {
+      "old": "Blueberry Smoothie",
+      "new": "蓝莓冰沙",
+      "source": "gt.multiitem.bottles.2805"
+    },
+    "item.gregtech.blueprint": {
+      "old": "Blueprint",
+      "new": "蓝图",
+      "source": "gt.multiitem.randomtools.7011"
+    },
+    "item.gregtech.boar_tusk": {
+      "old": "Boar Tusk",
+      "new": "野猪獠牙",
+      "source": "gt.multiitem.food.12402"
+    },
+    "item.gregtech.boiled_egg": {
+      "old": "Boiled Egg",
+      "new": "煮鸡蛋",
+      "source": "gt.multiitem.food.1060"
+    },
+    "item.gregtech.boiled_egg_2": {
+      "old": "Boiled Egg",
+      "new": "煮鸡蛋",
+      "source": "gt.multiitem.food.1060"
+    },
+    "item.gregtech.bottle_oblood": {
+      "old": "Bottle o'Blood",
+      "new": "鲜血瓶",
+      "source": "gt.multiitem.bottles.32763"
+    },
+    "item.gregtech.bottle_of_poison": {
+      "old": "Bottle of Poison",
+      "new": "毒液瓶",
+      "source": "gt.multiitem.bottles.32760"
+    },
+    "item.gregtech.bottled_indigo_dye": {
+      "old": "Bottled Indigo Dye",
+      "new": "罐装靛蓝色染料",
+      "source": "gt.multiitem.bottles.32001"
+    },
+    "item.gregtech.braintech_aerospace_advanced_reinforced_duct_tape_fal_84": {
+      "old": "BrainTech Aerospace Advanced Reinforced Duct Tape FAL-84",
+      "new": "大脑科技高级强化航空布胶带 FAL-84",
+      "source": "gt.multiitem.randomtools.12008"
+    },
+    "item.gregtech.braintech_aerospace_advanced_reinforced_duct_tape_fal_84_2": {
+      "old": "BrainTech Aerospace Advanced Reinforced Duct Tape FAL-84",
+      "new": "大脑科技高级强化航空布胶带 FAL-84",
+      "source": "gt.multiitem.randomtools.12008"
+    },
+    "item.gregtech.brass_compound": {
+      "old": "Brass Compound",
+      "new": "黄铜混合物",
+      "source": "gt.multiitem.randomtools.1"
+    },
+    "item.gregtech.brass_key": {
+      "old": "Brass Key",
+      "new": "黄铜钥匙",
+      "source": "gt.multiitem.randomtools.30005"
+    },
+    "item.gregtech.breads": {
+      "old": "Breads",
+      "new": "切片面包",
+      "source": "gt.multiitem.food.6003"
+    },
+    "item.gregtech.bronze_compound": {
+      "old": "Bronze Compound",
+      "new": "青铜混合物",
+      "source": "gt.multiitem.randomtools.0"
+    },
+    "item.gregtech.bronze_key": {
+      "old": "Bronze Key",
+      "new": "青铜钥匙",
+      "source": "gt.multiitem.randomtools.30004"
+    },
+    "item.gregtech.brown_clay": {
+      "old": "Brown Clay",
+      "new": "褐色粘土",
+      "source": "gt.multiitem.food.12310"
+    },
+    "item.gregtech.bun": {
+      "old": "Bun",
+      "new": "小面包",
+      "source": "gt.multiitem.food.5001"
+    },
+    "item.gregtech.buns": {
+      "old": "Buns",
+      "new": "切片小面包",
+      "source": "gt.multiitem.food.5003"
+    },
+    "item.gregtech.butter": {
+      "old": "Butter",
+      "new": "黄油",
+      "source": "gt.multiitem.food.32117"
+    },
+    "item.gregtech.button_panel_selector": {
+      "old": "按钮面板选择器",
+      "new": "按钮覆盖板选择器",
+      "source": "gt.multiitem.technological.1027"
+    },
+    "item.gregtech.c_foam_removal_spray": {
+      "old": "C-Foam Removal Spray",
+      "new": "建筑泡沫移除喷罐",
+      "source": "gt.multiitem.randomtools.1196"
+    },
+    "item.gregtech.c_foam_removal_spray_2": {
+      "old": "C-Foam Removal Spray",
+      "new": "建筑泡沫移除喷罐",
+      "source": "gt.multiitem.randomtools.1196"
+    },
+    "item.gregtech.cactus_water": {
+      "old": "Cactus Water",
+      "new": "仙人掌",
+      "source": "gt.multiitem.bottles.3400"
+    },
+    "item.gregtech.cake_bottom": {
+      "old": "Cake Bottom",
+      "new": "烘焙蛋糕底座",
+      "source": "gt.multiitem.food.3001"
+    },
+    "item.gregtech.candleberry": {
+      "old": "Candleberry",
+      "new": "蜡杨莓",
+      "source": "gt.multiitem.food.130"
+    },
+    "item.gregtech.cane_vinegar": {
+      "old": "Cane Vinegar",
+      "new": "甘蔗醋",
+      "source": "gt.multiitem.bottles.403"
+    },
+    "item.gregtech.canned_air": {
+      "old": "Canned Air",
+      "new": "罐装空气",
+      "source": "gt.multiitem.cans.32766"
+    },
+    "item.gregtech.canned_hot_air": {
+      "old": "Canned Hot Air",
+      "new": "罐装热空气",
+      "source": "gt.multiitem.cans.32765"
+    },
+    "item.gregtech.canned_space_air": {
+      "old": "Canned Space Air",
+      "new": "罐装太空空气",
+      "source": "gt.multiitem.cans.32764"
+    },
+    "item.gregtech.caramel_ice_cream": {
+      "old": "Caramel Ice Cream",
+      "new": "焦糖冰淇淋",
+      "source": "gt.multiitem.food.13006"
+    },
+    "item.gregtech.carrot_juice": {
+      "old": "Carrot Juice",
+      "new": "胡萝卜汁",
+      "source": "gt.multiitem.bottles.3300"
+    },
+    "item.gregtech.carrot_slice": {
+      "old": "Carrot Slice",
+      "new": "胡萝卜片",
+      "source": "gt.multiitem.food.81"
+    },
+    "item.gregtech.cave_johnsons_grenade_juice": {
+      "old": "Cave Johnson's Grenade Juice",
+      "new": "凯夫·约翰逊的炸弹柠檬汁",
+      "source": "gt.multiitem.bottles.204"
+    },
+    "item.gregtech.cerublossom": {
+      "old": "Cerublossom",
+      "new": "暗影花",
+      "source": "gt.multiitem.food.12010"
+    },
+    "item.gregtech.cheese": {
+      "old": "Cheese",
+      "new": "奶酪",
+      "source": "gt.multiitem.food.1000"
+    },
+    "item.gregtech.cheese_bar": {
+      "old": "Cheese Bar",
+      "new": "奶酪条",
+      "source": "gt.multiitem.food.32111"
+    },
+    "item.gregtech.cheese_burger": {
+      "old": "Cheese Burger",
+      "new": "奶酪汉堡",
+      "source": "gt.multiitem.food.5011"
+    },
+    "item.gregtech.cheese_sandwich": {
+      "old": "Cheese Sandwich",
+      "new": "奶酪三明治",
+      "source": "gt.multiitem.food.6011"
+    },
+    "item.gregtech.cheese_slice": {
+      "old": "Cheese Slice",
+      "new": "奶酪片",
+      "source": "gt.multiitem.food.1001"
+    },
+    "item.gregtech.cherry_ice_cream": {
+      "old": "Cherry Ice Cream",
+      "new": "樱桃冰淇淋",
+      "source": "gt.multiitem.food.13010"
+    },
+    "item.gregtech.cherry_juice": {
+      "old": "Cherry Juice",
+      "new": "樱桃汁",
+      "source": "gt.multiitem.bottles.3800"
+    },
+    "item.gregtech.cherry_smoothie": {
+      "old": "Cherry Smoothie",
+      "new": "樱桃冰沙",
+      "source": "gt.multiitem.bottles.3805"
+    },
+    "item.gregtech.chili_chips": {
+      "old": "Chili Chips",
+      "new": "辣味薯片",
+      "source": "gt.multiitem.food.9020"
+    },
+    "item.gregtech.chili_pepper": {
+      "old": "Chili Pepper",
+      "new": "红辣椒",
+      "source": "gt.multiitem.food.50"
+    },
+    "item.gregtech.chili_sauce": {
+      "old": "Chili Sauce",
+      "new": "辣酱",
+      "source": "gt.multiitem.bottles.800"
+    },
+    "item.gregtech.chocolate_bar": {
+      "old": "Chocolate Bar",
+      "new": "巧克力块",
+      "source": "gt.multiitem.food.32109"
+    },
+    "item.gregtech.chocolate_cream": {
+      "old": "Chocolate Cream",
+      "new": "巧克力冰淇淋",
+      "source": "gt.multiitem.bottles.1900"
+    },
+    "item.gregtech.chocolate_dough": {
+      "old": "Chocolate Dough",
+      "new": "巧克力面团",
+      "source": "gt.multiitem.food.32002"
+    },
+    "item.gregtech.chocolate_ice_cream": {
+      "old": "Chocolate Ice Cream",
+      "new": "巧克力冰淇淋",
+      "source": "gt.multiitem.food.13004"
+    },
+    "item.gregtech.chocolate_raisins": {
+      "old": "Chocolate Raisins",
+      "new": "巧克力葡萄干",
+      "source": "gt.multiitem.food.72"
+    },
+    "item.gregtech.chum": {
+      "old": "Chum",
+      "new": "好基友肉块",
+      "source": "gt.multiitem.food.10000"
+    },
+    "item.gregtech.chum_burger": {
+      "old": "Chum Burger",
+      "new": "好基友肉堡",
+      "source": "gt.multiitem.food.5013"
+    },
+    "item.gregtech.chum_ice_cream": {
+      "old": "Chum Ice Cream",
+      "new": "基友肉冰淇淋",
+      "source": "gt.multiitem.food.13029"
+    },
+    "item.gregtech.chum_on_a_stick": {
+      "old": "Chum on a Stick",
+      "new": "棍子上的好基友肉块",
+      "source": "gt.multiitem.food.10010"
+    },
+    "item.gregtech.chunk_eraser": {
+      "old": "Chunk Eraser",
+      "new": "区块删除器",
+      "source": "gt.multiitem.randomtools.9998"
+    },
+    "item.gregtech.cider": {
+      "old": "Cider",
+      "new": "苹果酒",
+      "source": "gt.multiitem.bottles.901"
+    },
+    "item.gregtech.cinnamon_bark": {
+      "old": "Cinnamon Bark",
+      "new": "凤梨树皮",
+      "source": "gt.multiitem.food.280"
+    },
+    "item.gregtech.circuit_board_advanced": {
+      "old": "电路电路板高级",
+      "new": "进阶电路板",
+      "source": "gt.multiitem.technological.30203"
+    },
+    "item.gregtech.circuit_board_basic": {
+      "old": "电路电路板基础",
+      "new": "基础电路板",
+      "source": "gt.multiitem.technological.30201"
+    },
+    "item.gregtech.circuit_board_elite": {
+      "old": "电路电路板精英",
+      "new": "高级电路板",
+      "source": "gt.multiitem.technological.30204"
+    },
+    "item.gregtech.circuit_board_enderium": {
+      "old": "电路电路板末影",
+      "new": "末影电路板",
+      "source": "gt.multiitem.technological.30213"
+    },
+    "item.gregtech.circuit_board_good": {
+      "old": "电路电路板良好",
+      "new": "不错的电路板",
+      "source": "gt.multiitem.technological.30202"
+    },
+    "item.gregtech.circuit_board_magic": {
+      "old": "电路电路板魔法",
+      "new": "魔法电路板",
+      "source": "gt.multiitem.technological.30211"
+    },
+    "item.gregtech.circuit_board_master": {
+      "old": "电路电路板大师",
+      "new": "高新科技电路板",
+      "source": "gt.multiitem.technological.30205"
+    },
+    "item.gregtech.circuit_board_signalum": {
+      "old": "电路电路板信素",
+      "new": "信素电路板",
+      "source": "gt.multiitem.technological.30215"
+    },
+    "item.gregtech.circuit_board_ultimate": {
+      "old": "电路电路板终极",
+      "new": "究极电路板",
+      "source": "gt.multiitem.technological.30206"
+    },
+    "item.gregtech.circuit_part_advanced": {
+      "old": "电路部件高级",
+      "new": "进阶电子元件",
+      "source": "gt.multiitem.technological.30103"
+    },
+    "item.gregtech.circuit_part_basic": {
+      "old": "电路部件基础",
+      "new": "基础电子元件",
+      "source": "gt.multiitem.technological.30101"
+    },
+    "item.gregtech.circuit_part_elite": {
+      "old": "电路部件精英",
+      "new": "高级电子元件",
+      "source": "gt.multiitem.technological.30104"
+    },
+    "item.gregtech.circuit_part_endereye": {
+      "old": "电路部件末影之眼",
+      "new": "末影之眼电子元件",
+      "source": "gt.multiitem.technological.30199"
+    },
+    "item.gregtech.circuit_part_enderium": {
+      "old": "电路部件末影",
+      "new": "末影电子元件",
+      "source": "gt.multiitem.technological.30113"
+    },
+    "item.gregtech.circuit_part_enderpearl": {
+      "old": "电路部件末影珍珠",
+      "new": "末影珍珠电子元件",
+      "source": "gt.multiitem.technological.30198"
+    },
+    "item.gregtech.circuit_part_good": {
+      "old": "电路部件良好",
+      "new": "不错的电子元件",
+      "source": "gt.multiitem.technological.30102"
+    },
+    "item.gregtech.circuit_part_magic": {
+      "old": "电路部件魔法",
+      "new": "魔法电子元件",
+      "source": "gt.multiitem.technological.30111"
+    },
+    "item.gregtech.circuit_part_master": {
+      "old": "电路部件大师",
+      "new": "高新科技电子元件",
+      "source": "gt.multiitem.technological.30105"
+    },
+    "item.gregtech.circuit_part_signalum": {
+      "old": "电路部件信素",
+      "new": "信素电子元件",
+      "source": "gt.multiitem.technological.30115"
+    },
+    "item.gregtech.circuit_part_ultimate": {
+      "old": "电路部件终极",
+      "new": "究极电子元件",
+      "source": "gt.multiitem.technological.30106"
+    },
+    "item.gregtech.circuit_plate": {
+      "old": "电路基板",
+      "new": "电路底板",
+      "source": "gt.multiitem.technological.30000"
+    },
+    "item.gregtech.circuit_plate_copper": {
+      "old": "电路基板铜",
+      "new": "电路主板 (铜)",
+      "source": "gt.multiitem.technological.30002"
+    },
+    "item.gregtech.circuit_plate_enderium": {
+      "old": "电路基板末影",
+      "new": "电路主板 (末影)",
+      "source": "gt.multiitem.technological.30014"
+    },
+    "item.gregtech.circuit_plate_gold": {
+      "old": "电路基板金",
+      "new": "电路主板 (金)",
+      "source": "gt.multiitem.technological.30004"
+    },
+    "item.gregtech.circuit_plate_hsla": {
+      "old": "电路基板HSLA",
+      "new": "电路主板 (HSLA钢)",
+      "source": "gt.multiitem.technological.30099"
+    },
+    "item.gregtech.circuit_plate_magic": {
+      "old": "电路基板魔法",
+      "new": "电路主板 (魔法)",
+      "source": "gt.multiitem.technological.30012"
+    },
+    "item.gregtech.circuit_plate_platinum": {
+      "old": "电路基板铂",
+      "new": "电路主板 (铂)",
+      "source": "gt.multiitem.technological.30006"
+    },
+    "item.gregtech.circuit_plate_signalum": {
+      "old": "电路基板信素",
+      "new": "电路主板 (信素)",
+      "source": "gt.multiitem.technological.30016"
+    },
+    "item.gregtech.circuit_wire_enderium": {
+      "old": "电路导线末影",
+      "new": "蚀刻电路 (末影)",
+      "source": "gt.multiitem.technological.30013"
+    },
+    "item.gregtech.circuit_wire_gold": {
+      "old": "电路导线金",
+      "new": "蚀刻电路 (金)",
+      "source": "gt.multiitem.technological.30003"
+    },
+    "item.gregtech.circuit_wire_magic": {
+      "old": "电路导线魔法",
+      "new": "蚀刻电路 (魔法)",
+      "source": "gt.multiitem.technological.30011"
+    },
+    "item.gregtech.circuit_wire_platinum": {
+      "old": "电路导线铂",
+      "new": "蚀刻电路 (铂)",
+      "source": "gt.multiitem.technological.30005"
+    },
+    "item.gregtech.circuit_wire_signalum": {
+      "old": "电路导线信素",
+      "new": "蚀刻电路 (信素)",
+      "source": "gt.multiitem.technological.30015"
+    },
+    "item.gregtech.circuit_wiring_copper": {
+      "old": "电路布线铜",
+      "new": "蚀刻电路 (铜)",
+      "source": "gt.multiitem.technological.30001"
+    },
+    "item.gregtech.clay_arrow_mold": {
+      "old": "Clay Arrow Mold",
+      "new": "粘土模具 (箭)",
+      "source": "gt.multiitem.randomtools.923"
+    },
+    "item.gregtech.clay_axe_mold": {
+      "old": "Clay Axe Mold",
+      "new": "粘土模具 (斧)",
+      "source": "gt.multiitem.randomtools.916"
+    },
+    "item.gregtech.clay_basin": {
+      "old": "Clay Basin",
+      "new": "粘土浇铸盆",
+      "source": "gt.multiitem.randomtools.990"
+    },
+    "item.gregtech.clay_billet_mold": {
+      "old": "Clay Billet Mold",
+      "new": "粘土模具 (胚料)",
+      "source": "gt.multiitem.randomtools.929"
+    },
+    "item.gregtech.clay_bolt_mold": {
+      "old": "Clay Bolt Mold",
+      "new": "粘土模具 (螺栓)",
+      "source": "gt.multiitem.randomtools.904"
+    },
+    "item.gregtech.clay_bowl": {
+      "old": "Clay Bowl",
+      "new": "粘土碗",
+      "source": "gt.multiitem.randomtools.995"
+    },
+    "item.gregtech.clay_builders_wand_mold": {
+      "old": "Clay Builder's Wand Mold",
+      "new": "粘土模具 (建筑之杖)",
+      "source": "gt.multiitem.randomtools.927"
+    },
+    "item.gregtech.clay_chisel_mold": {
+      "old": "Clay Chisel Mold",
+      "new": "粘土模具 (凿子)",
+      "source": "gt.multiitem.randomtools.922"
+    },
+    "item.gregtech.clay_chunk_mold": {
+      "old": "Clay Chunk Mold",
+      "new": "粘土模具 (小块)",
+      "source": "gt.multiitem.randomtools.901"
+    },
+    "item.gregtech.clay_comb": {
+      "old": "Clay Comb",
+      "new": "粘土蜂巢",
+      "source": "gt.multiitem.food.30100"
+    },
+    "item.gregtech.clay_crossing": {
+      "old": "Clay Crossing",
+      "new": "粘土浇铸道",
+      "source": "gt.multiitem.randomtools.993"
+    },
+    "item.gregtech.clay_crucible": {
+      "old": "Clay Crucible",
+      "new": "粘土坩埚",
+      "source": "gt.multiitem.randomtools.989"
+    },
+    "item.gregtech.clay_double_axe_mold": {
+      "old": "Clay Double Axe Mold",
+      "new": "粘土模具 (双刃斧)",
+      "source": "gt.multiitem.randomtools.917"
+    },
+    "item.gregtech.clay_faucet": {
+      "old": "Clay Faucet",
+      "new": "粘土浇铸口",
+      "source": "gt.multiitem.randomtools.992"
+    },
+    "item.gregtech.clay_file_mold": {
+      "old": "Clay File Mold",
+      "new": "粘土模具 (锉刀)",
+      "source": "gt.multiitem.randomtools.920"
+    },
+    "item.gregtech.clay_funnel": {
+      "old": "Clay Funnel",
+      "new": "粘土漏斗",
+      "source": "gt.multiitem.randomtools.988"
+    },
+    "item.gregtech.clay_gear_mold": {
+      "old": "Clay Gear Mold",
+      "new": "粘土模具 (齿轮)",
+      "source": "gt.multiitem.randomtools.909"
+    },
+    "item.gregtech.clay_hammer_mold": {
+      "old": "Clay Hammer Mold",
+      "new": "粘土模具 (锤)",
+      "source": "gt.multiitem.randomtools.919"
+    },
+    "item.gregtech.clay_hoe_mold": {
+      "old": "Clay Hoe Mold",
+      "new": "粘土模具 (锄)",
+      "source": "gt.multiitem.randomtools.924"
+    },
+    "item.gregtech.clay_ingot_mold": {
+      "old": "Clay Ingot Mold",
+      "new": "粘土模具 (锭)",
+      "source": "gt.multiitem.randomtools.900"
+    },
+    "item.gregtech.clay_item_casing_mold": {
+      "old": "Clay Item Casing Mold",
+      "new": "粘土模具 (外壳)",
+      "source": "gt.multiitem.randomtools.907"
+    },
+    "item.gregtech.clay_jug": {
+      "old": "Clay Jug",
+      "new": "粘土杯",
+      "source": "gt.multiitem.randomtools.996"
+    },
+    "item.gregtech.clay_juicer": {
+      "old": "Clay Juicer",
+      "new": "粘土榨汁机",
+      "source": "gt.multiitem.randomtools.994"
+    },
+    "item.gregtech.clay_long_rod_mold": {
+      "old": "Clay Long Rod Mold",
+      "new": "粘土模具 (长杆)",
+      "source": "gt.multiitem.randomtools.906"
+    },
+    "item.gregtech.clay_measuring_pot": {
+      "old": "Clay Measuring Pot",
+      "new": "粘土量杯",
+      "source": "gt.multiitem.randomtools.997"
+    },
+    "item.gregtech.clay_mold": {
+      "old": "Clay Mold",
+      "new": "粘土模具",
+      "source": "gt.multiitem.randomtools.991"
+    },
+    "item.gregtech.clay_nugget_mold": {
+      "old": "Clay Nugget Mold",
+      "new": "粘土模具 (粒)",
+      "source": "gt.multiitem.randomtools.928"
+    },
+    "item.gregtech.clay_pickaxe_mold": {
+      "old": "Clay Pickaxe Mold",
+      "new": "粘土模具 (镐)",
+      "source": "gt.multiitem.randomtools.912"
+    },
+    "item.gregtech.clay_plate_mold": {
+      "old": "Clay Plate Mold",
+      "new": "粘土模具 (板)",
+      "source": "gt.multiitem.randomtools.902"
+    },
+    "item.gregtech.clay_plow_mold": {
+      "old": "Clay Plow Mold",
+      "new": "粘土模具 (犁)",
+      "source": "gt.multiitem.randomtools.926"
+    },
+    "item.gregtech.clay_ring_mold": {
+      "old": "Clay Ring Mold",
+      "new": "粘土模具 (环)",
+      "source": "gt.multiitem.randomtools.908"
+    },
+    "item.gregtech.clay_rod_mold": {
+      "old": "Clay Rod Mold",
+      "new": "粘土模具 (杆)",
+      "source": "gt.multiitem.randomtools.905"
+    },
+    "item.gregtech.clay_saw_mold": {
+      "old": "Clay Saw Mold",
+      "new": "粘土模具 (锯)",
+      "source": "gt.multiitem.randomtools.918"
+    },
+    "item.gregtech.clay_screwdriver_mold": {
+      "old": "Clay Screwdriver Mold",
+      "new": "粘土模具 (螺丝刀)",
+      "source": "gt.multiitem.randomtools.921"
+    },
+    "item.gregtech.clay_sense_mold": {
+      "old": "Clay Sense Mold",
+      "new": "粘土模具 (镰刀)",
+      "source": "gt.multiitem.randomtools.925"
+    },
+    "item.gregtech.clay_shovel_mold": {
+      "old": "Clay Shovel Mold",
+      "new": "粘土模具 (锹)",
+      "source": "gt.multiitem.randomtools.914"
+    },
+    "item.gregtech.clay_small_gear_mold": {
+      "old": "Clay Small Gear Mold",
+      "new": "粘土模具 (小型齿轮)",
+      "source": "gt.multiitem.randomtools.910"
+    },
+    "item.gregtech.clay_spade_mold": {
+      "old": "Clay Spade Mold",
+      "new": "粘土模具 (铲)",
+      "source": "gt.multiitem.randomtools.913"
+    },
+    "item.gregtech.clay_sword_mold": {
+      "old": "Clay Sword Mold",
+      "new": "粘土模具 (剑)",
+      "source": "gt.multiitem.randomtools.911"
+    },
+    "item.gregtech.clay_tap": {
+      "old": "Clay Tap",
+      "new": "粘土龙头",
+      "source": "gt.multiitem.randomtools.987"
+    },
+    "item.gregtech.clay_tiny_plate_mold": {
+      "old": "Clay Tiny Plate Mold",
+      "new": "粘土模具 (小块板)",
+      "source": "gt.multiitem.randomtools.903"
+    },
+    "item.gregtech.clay_universal_spade_mold": {
+      "old": "Clay Universal Spade Mold",
+      "new": "粘土模具 (万用铲)",
+      "source": "gt.multiitem.randomtools.915"
+    },
+    "item.gregtech.clouded_bottle": {
+      "old": "Clouded Bottle",
+      "new": "浑浊的瓶子",
+      "source": "gt.multiitem.bottles.32761"
+    },
+    "item.gregtech.coconut": {
+      "old": "Coconut",
+      "new": "椰子树木",
+      "source": "gt.multiitem.food.290"
+    },
+    "item.gregtech.coconut_cream": {
+      "old": "Coconut Cream",
+      "new": "椰奶油",
+      "source": "gt.multiitem.bottles.5604"
+    },
+    "item.gregtech.coconut_milk": {
+      "old": "Coconut Milk",
+      "new": "椰奶",
+      "source": "gt.multiitem.bottles.5600"
+    },
+    "item.gregtech.coconut_smoothie": {
+      "old": "Coconut Smoothie",
+      "new": "椰奶冰沙",
+      "source": "gt.multiitem.bottles.5605"
+    },
+    "item.gregtech.compact_electric_conveyor_ev": {
+      "old": "紧凑型电力传送带(EV)",
+      "new": "输送机模块 (EV)",
+      "source": "gt.multiitem.technological.12044"
+    },
+    "item.gregtech.compact_electric_conveyor_hv": {
+      "old": "紧凑型电力传送带(HV)",
+      "new": "输送机模块 (HV)",
+      "source": "gt.multiitem.technological.12043"
+    },
+    "item.gregtech.compact_electric_conveyor_iv": {
+      "old": "紧凑型电力传送带(IV)",
+      "new": "输送机模块 (IV)",
+      "source": "gt.multiitem.technological.12045"
+    },
+    "item.gregtech.compact_electric_conveyor_luv": {
+      "old": "紧凑型电力传送带(LUV)",
+      "new": "输送机模块 (LuV)",
+      "source": "gt.multiitem.technological.12046"
+    },
+    "item.gregtech.compact_electric_conveyor_lv": {
+      "old": "紧凑型电力传送带(LV)",
+      "new": "输送机模块 (LV)",
+      "source": "gt.multiitem.technological.12041"
+    },
+    "item.gregtech.compact_electric_conveyor_mv": {
+      "old": "紧凑型电力传送带(MV)",
+      "new": "输送机模块 (MV)",
+      "source": "gt.multiitem.technological.12042"
+    },
+    "item.gregtech.compact_electric_conveyor_puv1": {
+      "old": "紧凑型电力传送带(PUV1)",
+      "new": "输送机模块 (PUV1)",
+      "source": "gt.multiitem.technological.12049"
+    },
+    "item.gregtech.compact_electric_conveyor_ulv": {
+      "old": "紧凑型电力传送带(ULV)",
+      "new": "输送机模块 (ULV)",
+      "source": "gt.multiitem.technological.12040"
+    },
+    "item.gregtech.compact_electric_conveyor_uv": {
+      "old": "紧凑型电力传送带(UV)",
+      "new": "输送机模块 (UV)",
+      "source": "gt.multiitem.technological.12048"
+    },
+    "item.gregtech.compact_electric_conveyor_zpm": {
+      "old": "紧凑型电力传送带(ZPM)",
+      "new": "输送机模块 (ZPM)",
+      "source": "gt.multiitem.technological.12047"
+    },
+    "item.gregtech.compass_center": {
+      "old": "Compass (CENTER)",
+      "new": "指南针 (中心)",
+      "source": "gt.multiitem.randomtools.11003"
+    },
+    "item.gregtech.compass_death": {
+      "old": "Compass (DEATH)",
+      "new": "指南针 (死亡地点)",
+      "source": "gt.multiitem.randomtools.11004"
+    },
+    "item.gregtech.compass_face": {
+      "old": "Compass (FACE)",
+      "new": "指南针 (视线方向)",
+      "source": "gt.multiitem.randomtools.11001"
+    },
+    "item.gregtech.compass_north": {
+      "old": "Compass (NORTH)",
+      "new": "指南针 (指北)",
+      "source": "gt.multiitem.randomtools.11000"
+    },
+    "item.gregtech.compass_spawn": {
+      "old": "Compass (SPAWN)",
+      "new": "指南针 (出生点)",
+      "source": "gt.multiitem.randomtools.11002"
+    },
+    "item.gregtech.cooked_fish_bar": {
+      "old": "Cooked Fish Bar",
+      "new": "熟鱼肉块",
+      "source": "gt.multiitem.food.32115"
+    },
+    "item.gregtech.cooked_ham": {
+      "old": "Cooked Ham",
+      "new": "熟的火腿",
+      "source": "gt.multiitem.food.1101"
+    },
+    "item.gregtech.cooked_ham_slice": {
+      "old": "Cooked Ham Slice",
+      "new": "熟的火腿片",
+      "source": "gt.multiitem.food.1103"
+    },
+    "item.gregtech.cooked_meat_bar": {
+      "old": "Cooked Meat Bar",
+      "new": "熟肉块",
+      "source": "gt.multiitem.food.32107"
+    },
+    "item.gregtech.cookie": {
+      "old": "Cookie",
+      "new": "曲奇",
+      "source": "gt.multiitem.food.2005"
+    },
+    "item.gregtech.cookie_shaped_abyssal_dough": {
+      "old": "Cookie shaped Abyssal Dough",
+      "new": "深渊曲奇面团",
+      "source": "gt.multiitem.food.2006"
+    },
+    "item.gregtech.cookie_shaped_chocolate_raisin_dough": {
+      "old": "Cookie shaped Chocolate Raisin Dough",
+      "new": "巧克力葡萄干曲奇面团",
+      "source": "gt.multiitem.food.2004"
+    },
+    "item.gregtech.cookie_shaped_dough": {
+      "old": "Cookie shaped Dough",
+      "new": "曲奇面团",
+      "source": "gt.multiitem.food.2000"
+    },
+    "item.gregtech.cookie_shaped_raisin_dough": {
+      "old": "Cookie shaped Raisin Dough",
+      "new": "葡萄干曲奇面团",
+      "source": "gt.multiitem.food.2002"
+    },
+    "item.gregtech.copper_key": {
+      "old": "Copper Key",
+      "new": "铜钥匙",
+      "source": "gt.multiitem.randomtools.30002"
+    },
+    "item.gregtech.cover_controller": {
+      "old": "覆盖板控制器",
+      "new": "控制器覆盖板",
+      "source": "gt.multiitem.technological.1025"
+    },
+    "item.gregtech.cow_hoof": {
+      "old": "Cow Hoof",
+      "new": "牛蹄",
+      "source": "gt.multiitem.food.12501"
+    },
+    "item.gregtech.cow_horn": {
+      "old": "Cow Horn",
+      "new": "牛角",
+      "source": "gt.multiitem.food.12601"
+    },
+    "item.gregtech.crafting_table_cover": {
+      "old": "合成台覆盖板",
+      "new": "工作台覆盖板",
+      "source": "gt.multiitem.technological.1001"
+    },
+    "item.gregtech.cranberry": {
+      "old": "Cranberry",
+      "new": "蔓越莓",
+      "source": "gt.multiitem.food.140"
+    },
+    "item.gregtech.cranberry_ice_cream": {
+      "old": "Cranberry Ice Cream",
+      "new": "蔓越莓冰淇淋",
+      "source": "gt.multiitem.food.13015"
+    },
+    "item.gregtech.cranberry_juice": {
+      "old": "Cranberry Juice",
+      "new": "蔓越莓汁",
+      "source": "gt.multiitem.bottles.2900"
+    },
+    "item.gregtech.cranberry_smoothie": {
+      "old": "Cranberry Smoothie",
+      "new": "蔓越莓冰沙",
+      "source": "gt.multiitem.bottles.2905"
+    },
+    "item.gregtech.cryo_comb": {
+      "old": "Cryo Comb",
+      "new": "低温蜂巢",
+      "source": "gt.multiitem.food.30201"
+    },
+    "item.gregtech.crystal_processor_socket": {
+      "old": "晶体处理器插槽",
+      "new": "晶体处理器电路板",
+      "source": "gt.multiitem.technological.30500"
+    },
+    "item.gregtech.cucumber": {
+      "old": "Cucumber",
+      "new": "黄瓜",
+      "source": "gt.multiitem.food.40"
+    },
+    "item.gregtech.cucumber_slice": {
+      "old": "Cucumber Slice",
+      "new": "黄瓜片",
+      "source": "gt.multiitem.food.41"
+    },
+    "item.gregtech.cure_all": {
+      "old": "Cure All",
+      "new": "万灵药",
+      "source": "gt.multiitem.food.31999"
+    },
+    "item.gregtech.currant_ice_cream": {
+      "old": "Currant Ice Cream",
+      "new": "醋栗冰淇淋",
+      "source": "gt.multiitem.food.13012"
+    },
+    "item.gregtech.currant_juice": {
+      "old": "Currant Juice",
+      "new": "醋栗汁",
+      "source": "gt.multiitem.bottles.4000"
+    },
+    "item.gregtech.currant_smoothie": {
+      "old": "Currant Smoothie",
+      "new": "醋栗冰沙",
+      "source": "gt.multiitem.bottles.4005"
+    },
+    "item.gregtech.dark_beer": {
+      "old": "Dark Beer",
+      "new": "黑啤",
+      "source": "gt.multiitem.bottles.501"
+    },
+    "item.gregtech.debug_scanner": {
+      "old": "Debug Scanner",
+      "new": "调试扫描仪",
+      "source": "gt.multiitem.randomtools.9001"
+    },
+    "item.gregtech.deer_antler": {
+      "old": "Deer Antler",
+      "new": "鹿角",
+      "source": "gt.multiitem.food.12701"
+    },
+    "item.gregtech.deer_hoof": {
+      "old": "Deer Hoof",
+      "new": "鹿蹄",
+      "source": "gt.multiitem.food.12505"
+    },
+    "item.gregtech.desert_nova": {
+      "old": "Desert Nova",
+      "new": "沙漠新星",
+      "source": "gt.multiitem.food.12011"
+    },
+    "item.gregtech.diablo_sauce": {
+      "old": "Diablo Sauce",
+      "new": "魔改型恶魔辣酱",
+      "source": "gt.multiitem.bottles.803"
+    },
+    "item.gregtech.diabolo_sauce": {
+      "old": "Diabolo Sauce",
+      "new": "恶魔辣酱",
+      "source": "gt.multiitem.bottles.802"
+    },
+    "item.gregtech.dirty_water": {
+      "old": "Dirty Water",
+      "new": "脏水",
+      "source": "gt.multiitem.bottles.5"
+    },
+    "item.gregtech.dogmeat": {
+      "old": "Dogmeat",
+      "new": "狗肉",
+      "source": "gt.multiitem.food.1300"
+    },
+    "item.gregtech.donkey_hoof": {
+      "old": "Donkey Hoof",
+      "new": "驴蹄",
+      "source": "gt.multiitem.food.12504"
+    },
+    "item.gregtech.donkey_meat": {
+      "old": "Donkey Meat",
+      "new": "驴肉",
+      "source": "gt.multiitem.food.1520"
+    },
+    "item.gregtech.dough": {
+      "old": "Dough",
+      "new": "面团",
+      "source": "gt.multiitem.food.32000"
+    },
+    "item.gregtech.dough_baguette": {
+      "old": "Dough (Baguette)",
+      "new": "生面团 (法棍)",
+      "source": "gt.multiitem.food.7000"
+    },
+    "item.gregtech.dough_bread": {
+      "old": "Dough (Bread)",
+      "new": "生面团 (面包)",
+      "source": "gt.multiitem.food.6000"
+    },
+    "item.gregtech.dough_bun": {
+      "old": "Dough (Bun)",
+      "new": "面团(小面包)",
+      "source": "gt.multiitem.food.5000"
+    },
+    "item.gregtech.dough_toast_loaf": {
+      "old": "Dough (Toast Loaf)",
+      "new": "面团 (吐司条)",
+      "source": "gt.multiitem.food.14000"
+    },
+    "item.gregtech.dragon_blood": {
+      "old": "Dragon Blood",
+      "new": "龙血",
+      "source": "gt.multiitem.bottles.502"
+    },
+    "item.gregtech.dressing": {
+      "old": "Dressing",
+      "new": "调料",
+      "source": "gt.multiitem.bottles.1021"
+    },
+    "item.gregtech.dry_bark": {
+      "old": "Dry Bark",
+      "new": "干树皮",
+      "source": "gt.multiitem.food.12201"
+    },
+    "item.gregtech.dry_grass": {
+      "old": "Dry Grass",
+      "new": "干草",
+      "source": "gt.multiitem.food.12001"
+    },
+    "item.gregtech.duct_tape": {
+      "old": "Duct Tape",
+      "new": "强力胶布",
+      "source": "gt.multiitem.randomtools.12002"
+    },
+    "item.gregtech.duct_tape_2": {
+      "old": "Duct Tape",
+      "new": "强力胶布",
+      "source": "gt.multiitem.randomtools.12002"
+    },
+    "item.gregtech.egg": {
+      "old": "Egg",
+      "new": "鸡蛋",
+      "source": "gt.multiitem.food.1051"
+    },
+    "item.gregtech.egg_dough": {
+      "old": "Egg Dough",
+      "new": "鸡蛋面团",
+      "source": "gt.multiitem.food.32003"
+    },
+    "item.gregtech.egg_white": {
+      "old": "Egg White",
+      "new": "蛋白",
+      "source": "gt.multiitem.food.1074"
+    },
+    "item.gregtech.egg_yolk": {
+      "old": "Egg Yolk",
+      "new": "蛋黄",
+      "source": "gt.multiitem.food.1073"
+    },
+    "item.gregtech.elderberry_juice": {
+      "old": "Elderberry Juice",
+      "new": "接骨木汁",
+      "source": "gt.multiitem.bottles.4300"
+    },
+    "item.gregtech.elderberry_smoothie": {
+      "old": "Elderberry Smoothie",
+      "new": "接骨木冰沙",
+      "source": "gt.multiitem.bottles.4305"
+    },
+    "item.gregtech.electrometer": {
+      "old": "Electrometer",
+      "new": "电力计",
+      "source": "gt.multiitem.randomtools.10003"
+    },
+    "item.gregtech.elephant_tusk": {
+      "old": "Elephant Tusk",
+      "new": "象牙",
+      "source": "gt.multiitem.food.12403"
+    },
+    "item.gregtech.emerald_green_bar": {
+      "old": "Emerald Green Bar",
+      "new": "绿宝石肉",
+      "source": "gt.multiitem.food.32103"
+    },
+    "item.gregtech.empty_blueprint": {
+      "old": "Empty Blueprint",
+      "new": "空白蓝图",
+      "source": "gt.multiitem.randomtools.7010"
+    },
+    "item.gregtech.empty_food_can": {
+      "old": "Empty Food Can",
+      "new": "空食物罐头",
+      "source": "gt.multiitem.randomtools.998"
+    },
+    "item.gregtech.empty_spray_can": {
+      "old": "Empty Spray Can",
+      "new": "空喷罐",
+      "source": "gt.multiitem.randomtools.999"
+    },
+    "item.gregtech.empty_wax_pill": {
+      "old": "Empty Wax Pill",
+      "new": "空的蜡质胶囊",
+      "source": "gt.multiitem.food.31000"
+    },
+    "item.gregtech.end_comb": {
+      "old": "End Comb",
+      "new": "末影蜂巢",
+      "source": "gt.multiitem.food.30004"
+    },
+    "item.gregtech.energy_display_cover": {
+      "old": "能量显示覆盖板",
+      "new": "能量显示面板",
+      "source": "gt.multiitem.technological.1004"
+    },
+    "item.gregtech.extruder_shape_axehead": {
+      "old": "挤压模板斧头",
+      "new": "模具 (斧头)",
+      "source": "gt.multiitem.technological.10018"
+    },
+    "item.gregtech.extruder_shape_block": {
+      "old": "挤压模板块",
+      "new": "模具 (方块)",
+      "source": "gt.multiitem.technological.10014"
+    },
+    "item.gregtech.extruder_shape_bolt": {
+      "old": "挤压模板螺栓",
+      "new": "模具 (螺栓)",
+      "source": "gt.multiitem.technological.10003"
+    },
+    "item.gregtech.extruder_shape_bottle": {
+      "old": "挤压模板瓶",
+      "new": "模具 (瓶子)",
+      "source": "gt.multiitem.technological.10024"
+    },
+    "item.gregtech.extruder_shape_capsulecellcontainer": {
+      "old": "挤压模板胶囊容器",
+      "new": "模具 (单元式流体容器)",
+      "source": "gt.multiitem.technological.10028"
+    },
+    "item.gregtech.extruder_shape_casing": {
+      "old": "挤压模板弹壳",
+      "new": "模具 (外壳)",
+      "source": "gt.multiitem.technological.10008"
+    },
+    "item.gregtech.extruder_shape_cell": {
+      "old": "挤压模板电池",
+      "new": "模具 (槽)",
+      "source": "gt.multiitem.technological.10005"
+    },
+    "item.gregtech.extruder_shape_curvedplate": {
+      "old": "挤压模板弯板",
+      "new": "模具 (弯曲板)",
+      "source": "gt.multiitem.technological.10025"
+    },
+    "item.gregtech.extruder_shape_filehead": {
+      "old": "挤压模板锉刀头",
+      "new": "模具 (锉刀刀头)",
+      "source": "gt.multiitem.technological.10021"
+    },
+    "item.gregtech.extruder_shape_finewire": {
+      "old": "挤压模板细线",
+      "new": "模具 (精细线缆)",
+      "source": "gt.multiitem.technological.10031"
+    },
+    "item.gregtech.extruder_shape_foil": {
+      "old": "挤压模板箔",
+      "new": "模具 (箔)",
+      "source": "gt.multiitem.technological.10029"
+    },
+    "item.gregtech.extruder_shape_gear": {
+      "old": "挤压模板齿轮",
+      "new": "模具 (齿轮)",
+      "source": "gt.multiitem.technological.10023"
+    },
+    "item.gregtech.extruder_shape_hammerhead": {
+      "old": "挤压模板锤头",
+      "new": "模具 (锤头)",
+      "source": "gt.multiitem.technological.10020"
+    },
+    "item.gregtech.extruder_shape_hoehead": {
+      "old": "挤压模板锄头",
+      "new": "模具 (锄头)",
+      "source": "gt.multiitem.technological.10019"
+    },
+    "item.gregtech.extruder_shape_hugepipe": {
+      "old": "挤压模板巨型管",
+      "new": "模具 (巨型管道)",
+      "source": "gt.multiitem.technological.10013"
+    },
+    "item.gregtech.extruder_shape_ingot": {
+      "old": "挤压模板锭",
+      "new": "模具 (锭)",
+      "source": "gt.multiitem.technological.10006"
+    },
+    "item.gregtech.extruder_shape_largepipe": {
+      "old": "挤压模板大型管",
+      "new": "模具 (大型管道)",
+      "source": "gt.multiitem.technological.10012"
+    },
+    "item.gregtech.extruder_shape_longrod": {
+      "old": "挤压模板长杆",
+      "new": "模具 (长杆)",
+      "source": "gt.multiitem.technological.10002"
+    },
+    "item.gregtech.extruder_shape_pickaxehead": {
+      "old": "挤压模板镐头",
+      "new": "模具 (镐头)",
+      "source": "gt.multiitem.technological.10016"
+    },
+    "item.gregtech.extruder_shape_plate": {
+      "old": "挤压模板基板",
+      "new": "模具 (板)",
+      "source": "gt.multiitem.technological.10001"
+    },
+    "item.gregtech.extruder_shape_ring": {
+      "old": "挤压模板环",
+      "new": "模具 (环)",
+      "source": "gt.multiitem.technological.10004"
+    },
+    "item.gregtech.extruder_shape_rod": {
+      "old": "挤压模板杆",
+      "new": "模具 (杆)",
+      "source": "gt.multiitem.technological.10027"
+    },
+    "item.gregtech.extruder_shape_sawblade": {
+      "old": "挤压模板锯片",
+      "new": "模具 (锯刃)",
+      "source": "gt.multiitem.technological.10022"
+    },
+    "item.gregtech.extruder_shape_shovelhead": {
+      "old": "挤压模板锹头",
+      "new": "模具 (锹头)",
+      "source": "gt.multiitem.technological.10017"
+    },
+    "item.gregtech.extruder_shape_smallgear": {
+      "old": "挤压模板小齿轮",
+      "new": "模具 (小型齿轮)",
+      "source": "gt.multiitem.technological.10026"
+    },
+    "item.gregtech.extruder_shape_smallpipe": {
+      "old": "挤压模板小型管",
+      "new": "模具 (小型管道)",
+      "source": "gt.multiitem.technological.10010"
+    },
+    "item.gregtech.extruder_shape_swordblade": {
+      "old": "挤压模板剑刃",
+      "new": "模具 (剑身)",
+      "source": "gt.multiitem.technological.10015"
+    },
+    "item.gregtech.extruder_shape_tinypipe": {
+      "old": "挤压模板微型管",
+      "new": "模具 (微型管道)",
+      "source": "gt.multiitem.technological.10009"
+    },
+    "item.gregtech.extruder_shape_tinyplate": {
+      "old": "挤压模板小板",
+      "new": "模具 (小块板)",
+      "source": "gt.multiitem.technological.10030"
+    },
+    "item.gregtech.extruder_shape_wire": {
+      "old": "挤压模板导线",
+      "new": "模具 (线缆)",
+      "source": "gt.multiitem.technological.10007"
+    },
+    "item.gregtech.fig_juice": {
+      "old": "Fig Juice",
+      "new": "无花果汁",
+      "source": "gt.multiitem.bottles.5200"
+    },
+    "item.gregtech.fig_smoothie": {
+      "old": "Fig Smoothie",
+      "new": "无花果冰沙",
+      "source": "gt.multiitem.bottles.5205"
+    },
+    "item.gregtech.filtered_logistics_export_bus_fluid": {
+      "old": "过滤物流输出总线流体",
+      "new": "过滤物流输出总线 (流体)",
+      "source": "gt.multiitem.technological.1090"
+    },
+    "item.gregtech.filtered_logistics_export_bus_item": {
+      "old": "过滤物流输出总线物品",
+      "new": "过滤物流输出总线 (物品)",
+      "source": "gt.multiitem.technological.1093"
+    },
+    "item.gregtech.filtered_logistics_import_bus_fluid": {
+      "old": "过滤物流输入总线流体",
+      "new": "过滤物流输入总线 (流体)",
+      "source": "gt.multiitem.technological.1091"
+    },
+    "item.gregtech.filtered_logistics_import_bus_item": {
+      "old": "过滤物流输入总线物品",
+      "new": "过滤物流输入总线 (物品)",
+      "source": "gt.multiitem.technological.1094"
+    },
+    "item.gregtech.filtered_logistics_storage_bus_fluid": {
+      "old": "过滤物流存储总线流体",
+      "new": "过滤物流存储总线 (流体)",
+      "source": "gt.multiitem.technological.1092"
+    },
+    "item.gregtech.filtered_logistics_storage_bus_item": {
+      "old": "过滤物流存储总线物品",
+      "new": "过滤物流存储总线 (物品)",
+      "source": "gt.multiitem.technological.1095"
+    },
+    "item.gregtech.fire_extinguisher_co2": {
+      "old": "Fire Extinguisher (CO2)",
+      "new": "二氧化碳灭火器 (CO2)",
+      "source": "gt.multiitem.randomtools.1998"
+    },
+    "item.gregtech.fire_extinguisher_co2_2": {
+      "old": "Fire Extinguisher (CO2)",
+      "new": "二氧化碳灭火器 (CO2)",
+      "source": "gt.multiitem.randomtools.1998"
+    },
+    "item.gregtech.fire_starter": {
+      "old": "Fire Starter",
+      "new": "起火器",
+      "source": "gt.multiitem.randomtools.5014"
+    },
+    "item.gregtech.fire_starter_2": {
+      "old": "Fire Starter",
+      "new": "起火器",
+      "source": "gt.multiitem.randomtools.5014"
+    },
+    "item.gregtech.fish_burger": {
+      "old": "Fish Burger",
+      "new": "鱼肉汉堡",
+      "source": "gt.multiitem.food.5018"
+    },
+    "item.gregtech.fish_oil": {
+      "old": "Fish Oil",
+      "new": "鱼油",
+      "source": "gt.multiitem.bottles.1006"
+    },
+    "item.gregtech.flat_dough_with_ketchup": {
+      "old": "Flat Dough with Ketchup",
+      "new": "撒着番茄酱的面饼",
+      "source": "gt.multiitem.food.4002"
+    },
+    "item.gregtech.flattened_dough": {
+      "old": "Flattened Dough",
+      "new": "摊平的面饼",
+      "source": "gt.multiitem.food.4000"
+    },
+    "item.gregtech.flattened_egg_dough": {
+      "old": "Flattened Egg Dough",
+      "new": "摊平的鸡蛋面团",
+      "source": "gt.multiitem.food.11000"
+    },
+    "item.gregtech.fluid_filter": {
+      "old": "流体过滤器",
+      "new": "液体过滤器",
+      "source": "gt.multiitem.technological.1024"
+    },
+    "item.gregtech.fried_egg": {
+      "old": "Fried Egg",
+      "new": "煎鸡蛋",
+      "source": "gt.multiitem.food.1070"
+    },
+    "item.gregtech.fries": {
+      "old": "Fries",
+      "new": "薯条",
+      "source": "gt.multiitem.food.8010"
+    },
+    "item.gregtech.fries_2": {
+      "old": "Fries",
+      "new": "薯条",
+      "source": "gt.multiitem.food.8010"
+    },
+    "item.gregtech.froot_smoothie": {
+      "old": "Froot Smoothie",
+      "new": "果汁冰沙",
+      "source": "gt.multiitem.bottles.2405"
+    },
+    "item.gregtech.frozen_comb": {
+      "old": "Frozen Comb",
+      "new": "霜凝蜂巢",
+      "source": "gt.multiitem.food.30007"
+    },
+    "item.gregtech.fruit_remains": {
+      "old": "Fruit Remains",
+      "new": "水果废料",
+      "source": "gt.multiitem.food.12101"
+    },
+    "item.gregtech.fuel_rod_am_241": {
+      "old": "Americium-241燃料棒",
+      "new": "镅-241燃料棒",
+      "source": "gt.multitileentity.9241"
+    },
+    "item.gregtech.fuel_rod_co_60": {
+      "old": "Cobalt-60燃料棒",
+      "new": "钴-60燃料棒",
+      "source": "gt.multitileentity.9250"
+    },
+    "item.gregtech.fuel_rod_pu_239": {
+      "old": "Plutonium-239燃料棒",
+      "new": "钚-239燃料棒",
+      "source": "gt.multitileentity.9233"
+    },
+    "item.gregtech.fuel_rod_th_232": {
+      "old": "Thorium-232燃料棒",
+      "new": "钍-232燃料棒",
+      "source": "gt.multitileentity.9210"
+    },
+    "item.gregtech.fuel_rod_u_235": {
+      "old": "Uranium-235燃料棒",
+      "new": "铀-235燃料棒",
+      "source": "gt.multitileentity.9221"
+    },
+    "item.gregtech.fuel_rod_u_238": {
+      "old": "Uranium-238燃料棒",
+      "new": "铀-238燃料棒",
+      "source": "gt.multitileentity.9220"
+    },
+    "item.gregtech.geiger_counter": {
+      "old": "Geiger Counter",
+      "new": "盖革计数器",
+      "source": "gt.multiitem.randomtools.10002"
+    },
+    "item.gregtech.geiger_counter_empty": {
+      "old": "Geiger Counter (Empty)",
+      "new": "盖革计数器(空)",
+      "source": "gt.multiitem.randomtools.10001"
+    },
+    "item.gregtech.gem_pouch": {
+      "old": "Gem Pouch",
+      "new": "宝石袋",
+      "source": "gt.multiitem.randomtools.13002"
+    },
+    "item.gregtech.glen_mckenner": {
+      "old": "Glen McKenner",
+      "new": "格伦麦肯纳",
+      "source": "gt.multiitem.bottles.602"
+    },
+    "item.gregtech.glue_bottle": {
+      "old": "Glue Bottle",
+      "new": "胶水瓶",
+      "source": "gt.multiitem.bottles.32766"
+    },
+    "item.gregtech.gold_key": {
+      "old": "Gold Key",
+      "new": "金钥匙",
+      "source": "gt.multiitem.randomtools.30001"
+    },
+    "item.gregtech.golden_apple_juice": {
+      "old": "Golden Apple Juice",
+      "new": "金苹果汁",
+      "source": "gt.multiitem.bottles.1400"
+    },
+    "item.gregtech.golden_carrot_juice": {
+      "old": "Golden Carrot Juice",
+      "new": "金萝卜汁",
+      "source": "gt.multiitem.bottles.3200"
+    },
+    "item.gregtech.golden_cider": {
+      "old": "Golden Cider",
+      "new": "金苹果酒",
+      "source": "gt.multiitem.bottles.1401"
+    },
+    "item.gregtech.gooseberry": {
+      "old": "Gooseberry",
+      "new": "鹅莓",
+      "source": "gt.multiitem.food.120"
+    },
+    "item.gregtech.gooseberry_ice_cream": {
+      "old": "Gooseberry Ice Cream",
+      "new": "鹅莓冰淇淋",
+      "source": "gt.multiitem.food.13016"
+    },
+    "item.gregtech.gooseberry_juice": {
+      "old": "Gooseberry Juice",
+      "new": "鹅莓汁",
+      "source": "gt.multiitem.bottles.3000"
+    },
+    "item.gregtech.gooseberry_smoothie": {
+      "old": "Gooseberry Smoothie",
+      "new": "鹅莓冰沙",
+      "source": "gt.multiitem.bottles.3005"
+    },
+    "item.gregtech.grape_ice_cream": {
+      "old": "Grape Ice Cream",
+      "new": "葡萄冰淇淋",
+      "source": "gt.multiitem.food.13025"
+    },
+    "item.gregtech.grape_juice": {
+      "old": "Grape Juice",
+      "new": "葡萄汁",
+      "source": "gt.multiitem.bottles.100"
+    },
+    "item.gregtech.grape_juice_2": {
+      "old": "Grape Juice",
+      "new": "葡萄汁",
+      "source": "gt.multiitem.bottles.100"
+    },
+    "item.gregtech.grape_juice_3": {
+      "old": "Grape Juice",
+      "new": "葡萄汁",
+      "source": "gt.multiitem.bottles.100"
+    },
+    "item.gregtech.grape_juice_4": {
+      "old": "Grape Juice",
+      "new": "葡萄汁",
+      "source": "gt.multiitem.bottles.100"
+    },
+    "item.gregtech.grape_smoothie": {
+      "old": "Grape Smoothie",
+      "new": "葡萄冰沙",
+      "source": "gt.multiitem.bottles.105"
+    },
+    "item.gregtech.grape_smoothie_2": {
+      "old": "Grape Smoothie",
+      "new": "葡萄冰沙",
+      "source": "gt.multiitem.bottles.105"
+    },
+    "item.gregtech.grape_smoothie_3": {
+      "old": "Grape Smoothie",
+      "new": "葡萄冰沙",
+      "source": "gt.multiitem.bottles.105"
+    },
+    "item.gregtech.grape_smoothie_4": {
+      "old": "Grape Smoothie",
+      "new": "葡萄冰沙",
+      "source": "gt.multiitem.bottles.105"
+    },
+    "item.gregtech.grape_vinegar": {
+      "old": "Grape Vinegar",
+      "new": "醋",
+      "source": "gt.multiitem.bottles.102"
+    },
+    "item.gregtech.grapefruit_juice": {
+      "old": "Grapefruit Juice",
+      "new": "葡萄柚汁",
+      "source": "gt.multiitem.bottles.4400"
+    },
+    "item.gregtech.grapefruit_smoothie": {
+      "old": "Grapefruit Smoothie",
+      "new": "葡萄柚冰沙",
+      "source": "gt.multiitem.bottles.4405"
+    },
+    "item.gregtech.grass_2": {
+      "old": "Grass",
+      "new": "草",
+      "source": "gt.multiitem.food.12000"
+    },
+    "item.gregtech.green_grapes": {
+      "old": "Green Grapes",
+      "new": "绿葡萄",
+      "source": "gt.multiitem.food.60"
+    },
+    "item.gregtech.green_raisins": {
+      "old": "Green Raisins",
+      "new": "绿色葡萄干",
+      "source": "gt.multiitem.food.61"
+    },
+    "item.gregtech.green_slime_bottle": {
+      "old": "Green Slime Bottle",
+      "new": "绿色粘液瓶",
+      "source": "gt.multiitem.bottles.2200"
+    },
+    "item.gregtech.grilled_bacon": {
+      "old": "Grilled Bacon",
+      "new": "烤培根",
+      "source": "gt.multiitem.food.1113"
+    },
+    "item.gregtech.grilled_dogmeat": {
+      "old": "Grilled Dogmeat",
+      "new": "烤狗肉",
+      "source": "gt.multiitem.food.1301"
+    },
+    "item.gregtech.grilled_donkey_meat": {
+      "old": "Grilled Donkey Meat",
+      "new": "烤驴肉",
+      "source": "gt.multiitem.food.1521"
+    },
+    "item.gregtech.grilled_horse_meat": {
+      "old": "Grilled Horse Meat",
+      "new": "烤马肉",
+      "source": "gt.multiitem.food.1501"
+    },
+    "item.gregtech.grilled_mule_meat": {
+      "old": "Grilled Mule Meat",
+      "new": "烤骡肉",
+      "source": "gt.multiitem.food.1511"
+    },
+    "item.gregtech.grilled_mutton": {
+      "old": "Grilled Mutton",
+      "new": "烤羊肉",
+      "source": "gt.multiitem.food.1401"
+    },
+    "item.gregtech.grilled_rib_eye_steak": {
+      "old": "Grilled Rib Eye Steak",
+      "new": "烤肋眼牛排",
+      "source": "gt.multiitem.food.1211"
+    },
+    "item.gregtech.grilled_ribs": {
+      "old": "Grilled Ribs",
+      "new": "烤肋排",
+      "source": "gt.multiitem.food.1201"
+    },
+    "item.gregtech.hamburger": {
+      "old": "Hamburger",
+      "new": "肉汉(jia)堡(mo)",
+      "source": "gt.multiitem.food.5012"
+    },
+    "item.gregtech.hardening_spray": {
+      "old": "Hardening Spray",
+      "new": "建筑泡沫硬化喷罐",
+      "source": "gt.multiitem.randomtools.1198"
+    },
+    "item.gregtech.hardening_spray_2": {
+      "old": "Hardening Spray",
+      "new": "建筑泡沫硬化喷罐",
+      "source": "gt.multiitem.randomtools.1198"
+    },
+    "item.gregtech.hazelnut": {
+      "old": "Hazelnut",
+      "new": "榛子",
+      "source": "gt.multiitem.food.260"
+    },
+    "item.gregtech.heavy_cream": {
+      "old": "Heavy Cream",
+      "new": "鲜奶油",
+      "source": "gt.multiitem.bottles.1101"
+    },
+    "item.gregtech.hemp_oil": {
+      "old": "Hemp Oil",
+      "new": "大麻籽油",
+      "source": "gt.multiitem.bottles.1004"
+    },
+    "item.gregtech.hoglin_tusk": {
+      "old": "Hoglin Tusk",
+      "new": "疣猪兽獠牙",
+      "source": "gt.multiitem.food.12401"
+    },
+    "item.gregtech.holy_water": {
+      "old": "Holy Water",
+      "new": "圣水",
+      "source": "gt.multiitem.bottles.1700"
+    },
+    "item.gregtech.honey": {
+      "old": "Honey",
+      "new": "蜂蜜",
+      "source": "gt.multiitem.bottles.1300"
+    },
+    "item.gregtech.honey_comb": {
+      "old": "Honey Comb",
+      "new": "蜂蜜蜂巢",
+      "source": "gt.multiitem.food.30000"
+    },
+    "item.gregtech.honey_ice_cream": {
+      "old": "Honey Ice Cream",
+      "new": "蜂蜜冰淇淋",
+      "source": "gt.multiitem.food.13030"
+    },
+    "item.gregtech.honeydew": {
+      "old": "Honeydew",
+      "new": "蜜汁",
+      "source": "gt.multiitem.bottles.1301"
+    },
+    "item.gregtech.hoof": {
+      "old": "Hoof",
+      "new": "蹄",
+      "source": "gt.multiitem.food.12500"
+    },
+    "item.gregtech.hops_mash": {
+      "old": "Hops Mash",
+      "new": "啤酒花汁",
+      "source": "gt.multiitem.bottles.500"
+    },
+    "item.gregtech.horn": {
+      "old": "Horn",
+      "new": "角",
+      "source": "gt.multiitem.food.12600"
+    },
+    "item.gregtech.horse_hoof": {
+      "old": "Horse Hoof",
+      "new": "马蹄",
+      "source": "gt.multiitem.food.12502"
+    },
+    "item.gregtech.horse_meat": {
+      "old": "Horse Meat",
+      "new": "马肉",
+      "source": "gt.multiitem.food.1500"
+    },
+    "item.gregtech.hot_sauce": {
+      "old": "Hot Sauce",
+      "new": "特制辣酱",
+      "source": "gt.multiitem.bottles.801"
+    },
+    "item.gregtech.huge_food_can_bread": {
+      "old": "Huge Food Can (Bread)",
+      "new": "超大食物罐头 (面包)",
+      "source": "gt.multiitem.cans.46"
+    },
+    "item.gregtech.huge_food_can_chum": {
+      "old": "Huge Food Can (Chum)",
+      "new": "超大食物罐头 (基友肉)",
+      "source": "gt.multiitem.cans.76"
+    },
+    "item.gregtech.huge_food_can_cookies": {
+      "old": "Huge Food Can (Cookies)",
+      "new": "超大食物罐头 (饼干)",
+      "source": "gt.multiitem.cans.86"
+    },
+    "item.gregtech.huge_food_can_fish": {
+      "old": "Huge Food Can (Fish)",
+      "new": "超大食物罐头 (鱼)",
+      "source": "gt.multiitem.cans.66"
+    },
+    "item.gregtech.huge_food_can_fruits": {
+      "old": "Huge Food Can (Fruits)",
+      "new": "超大食物罐头 (水果)",
+      "source": "gt.multiitem.cans.36"
+    },
+    "item.gregtech.huge_food_can_meat": {
+      "old": "Huge Food Can (Meat)",
+      "new": "超大食物罐头 (肉)",
+      "source": "gt.multiitem.cans.56"
+    },
+    "item.gregtech.huge_food_can_rotten": {
+      "old": "Huge Food Can (Rotten)",
+      "new": "超大食物罐头 (腐肉)",
+      "source": "gt.multiitem.cans.16"
+    },
+    "item.gregtech.huge_food_can_unknown": {
+      "old": "Huge Food Can (Unknown)",
+      "new": "超大食物罐头 (未知)",
+      "source": "gt.multiitem.cans.6"
+    },
+    "item.gregtech.huge_food_can_vegetables": {
+      "old": "Huge Food Can (Vegetables)",
+      "new": "超大食物罐头 (蔬菜)",
+      "source": "gt.multiitem.cans.26"
+    },
+    "item.gregtech.ice_cream": {
+      "old": "Ice Cream",
+      "new": "冰淇淋",
+      "source": "gt.multiitem.food.13000"
+    },
+    "item.gregtech.ice_water": {
+      "old": "Ice Water",
+      "new": "冰水",
+      "source": "gt.multiitem.bottles.4"
+    },
+    "item.gregtech.iduns_apple_juice": {
+      "old": "Idun's Apple Juice",
+      "new": "伊顿苹果汁",
+      "source": "gt.multiitem.bottles.1500"
+    },
+    "item.gregtech.ink_bottle": {
+      "old": "Ink Bottle",
+      "new": "墨水瓶",
+      "source": "gt.multiitem.bottles.32000"
+    },
+    "item.gregtech.iron_key": {
+      "old": "Iron Key",
+      "new": "铁钥匙",
+      "source": "gt.multiitem.randomtools.30000"
+    },
+    "item.gregtech.item_retriever_cover": {
+      "old": "物品回收覆盖板",
+      "new": "物品抽取覆盖板",
+      "source": "gt.multiitem.technological.1031"
+    },
+    "item.gregtech.juice": {
+      "old": "Juice",
+      "new": "果汁",
+      "source": "gt.multiitem.bottles.2400"
+    },
+    "item.gregtech.jungle_comb": {
+      "old": "Jungle Comb",
+      "new": "丛林蜂巢",
+      "source": "gt.multiitem.food.30006"
+    },
+    "item.gregtech.kiwi_ice_cream": {
+      "old": "Kiwi Ice Cream",
+      "new": "猕猴桃冰淇淋",
+      "source": "gt.multiitem.food.13022"
+    },
+    "item.gregtech.kiwi_juice": {
+      "old": "Kiwi Juice",
+      "new": "猕猴桃汁",
+      "source": "gt.multiitem.bottles.2500"
+    },
+    "item.gregtech.kiwi_smoothie": {
+      "old": "Kiwi Smoothie",
+      "new": "猕猴桃冰沙",
+      "source": "gt.multiitem.bottles.2505"
+    },
+    "item.gregtech.large_bacon_sandwich": {
+      "old": "Large Bacon Sandwich",
+      "new": "大型培根三明治",
+      "source": "gt.multiitem.food.7014"
+    },
+    "item.gregtech.large_cheese_sandwich": {
+      "old": "Large Cheese Sandwich",
+      "new": "大型奶酪三明治",
+      "source": "gt.multiitem.food.7011"
+    },
+    "item.gregtech.large_food_can_bread": {
+      "old": "Large Food Can (Bread)",
+      "new": "大食物罐头 (面包)",
+      "source": "gt.multiitem.cans.45"
+    },
+    "item.gregtech.large_food_can_chum": {
+      "old": "Large Food Can (Chum)",
+      "new": "大食物罐头 (基友肉)",
+      "source": "gt.multiitem.cans.75"
+    },
+    "item.gregtech.large_food_can_cookies": {
+      "old": "Large Food Can (Cookies)",
+      "new": "大食物罐头 (饼干)",
+      "source": "gt.multiitem.cans.85"
+    },
+    "item.gregtech.large_food_can_fish": {
+      "old": "Large Food Can (Fish)",
+      "new": "大食物罐头 (鱼)",
+      "source": "gt.multiitem.cans.65"
+    },
+    "item.gregtech.large_food_can_fruits": {
+      "old": "Large Food Can (Fruits)",
+      "new": "大食物罐头 (水果)",
+      "source": "gt.multiitem.cans.35"
+    },
+    "item.gregtech.large_food_can_meat": {
+      "old": "Large Food Can (Meat)",
+      "new": "大食物罐头 (肉)",
+      "source": "gt.multiitem.cans.55"
+    },
+    "item.gregtech.large_food_can_rotten": {
+      "old": "Large Food Can (Rotten)",
+      "new": "大食物罐头 (腐肉)",
+      "source": "gt.multiitem.cans.15"
+    },
+    "item.gregtech.large_food_can_unknown": {
+      "old": "Large Food Can (Unknown)",
+      "new": "大食物罐头 (未知)",
+      "source": "gt.multiitem.cans.5"
+    },
+    "item.gregtech.large_food_can_vegetables": {
+      "old": "Large Food Can (Vegetables)",
+      "new": "大食物罐头 (蔬菜)",
+      "source": "gt.multiitem.cans.25"
+    },
+    "item.gregtech.large_steak_sandwich": {
+      "old": "Large Steak Sandwich",
+      "new": "大型牛排三明治",
+      "source": "gt.multiitem.food.7015"
+    },
+    "item.gregtech.large_veggie_sandwich": {
+      "old": "Large Veggie Sandwich",
+      "new": "大型蔬菜三明治",
+      "source": "gt.multiitem.food.7010"
+    },
+    "item.gregtech.laser_emitter_argon": {
+      "old": "激光发射器氩",
+      "new": "氩激光镭射器",
+      "source": "gt.multiitem.technological.11003"
+    },
+    "item.gregtech.laser_emitter_carbondioxide": {
+      "old": "激光发射器二氧化碳",
+      "new": "二氧化碳激光镭射器",
+      "source": "gt.multiitem.technological.11008"
+    },
+    "item.gregtech.laser_emitter_carbonmonoxide": {
+      "old": "激光发射器一氧化碳",
+      "new": "一氧化碳激光镭射器",
+      "source": "gt.multiitem.technological.11007"
+    },
+    "item.gregtech.laser_emitter_emptygas": {
+      "old": "激光发射器空气",
+      "new": "空的气体-激光镭射器",
+      "source": "gt.multiitem.technological.11000"
+    },
+    "item.gregtech.laser_emitter_helium": {
+      "old": "激光发射器氦",
+      "new": "氦激光镭射器",
+      "source": "gt.multiitem.technological.11001"
+    },
+    "item.gregtech.laser_emitter_heliumneon": {
+      "old": "激光发射器氦氖",
+      "new": "氦氖混合气体激光镭射器",
+      "source": "gt.multiitem.technological.11006"
+    },
+    "item.gregtech.laser_emitter_krypton": {
+      "old": "激光发射器氪",
+      "new": "氪激光镭射器",
+      "source": "gt.multiitem.technological.11004"
+    },
+    "item.gregtech.laser_emitter_neon": {
+      "old": "激光发射器氖",
+      "new": "氖激光镭射器",
+      "source": "gt.multiitem.technological.11002"
+    },
+    "item.gregtech.laser_emitter_xenon": {
+      "old": "激光发射器氙",
+      "new": "氙激光镭射器",
+      "source": "gt.multiitem.technological.11005"
+    },
+    "item.gregtech.laxative": {
+      "old": "Laxative",
+      "new": "泻药",
+      "source": "gt.multiitem.bottles.30001"
+    },
+    "item.gregtech.lead_acid_cell_empty": {
+      "old": "铅酸电池(空)",
+      "new": "铅酸单元 (空)",
+      "source": "gt.multiitem.technological.20000"
+    },
+    "item.gregtech.lead_acid_cell_filled": {
+      "old": "铅酸电池(满)",
+      "new": "铅酸单元 (满)",
+      "source": "gt.multiitem.technological.20001"
+    },
+    "item.gregtech.lead_key": {
+      "old": "Lead Key",
+      "new": "铅钥匙",
+      "source": "gt.multiitem.randomtools.30008"
+    },
+    "item.gregtech.lemon": {
+      "old": "Lemon",
+      "new": "柠檬",
+      "source": "gt.multiitem.food.0"
+    },
+    "item.gregtech.lemon_ice_cream": {
+      "old": "Lemon Ice Cream",
+      "new": "柠檬冰淇淋",
+      "source": "gt.multiitem.food.13018"
+    },
+    "item.gregtech.lemon_juice": {
+      "old": "Lemon Juice",
+      "new": "柠檬汁",
+      "source": "gt.multiitem.bottles.200"
+    },
+    "item.gregtech.lemon_slice": {
+      "old": "Lemon Slice",
+      "new": "柠檬片",
+      "source": "gt.multiitem.food.1"
+    },
+    "item.gregtech.lemon_smoothie": {
+      "old": "Lemon Smoothie",
+      "new": "柠檬冰沙",
+      "source": "gt.multiitem.bottles.205"
+    },
+    "item.gregtech.lemonade": {
+      "old": "Lemonade",
+      "new": "柠檬水",
+      "source": "gt.multiitem.bottles.201"
+    },
+    "item.gregtech.leninade": {
+      "old": "Leninade",
+      "new": "列宁柠檬水",
+      "source": "gt.multiitem.bottles.302"
+    },
+    "item.gregtech.lighter": {
+      "old": "Lighter",
+      "new": "打火机",
+      "source": "gt.multiitem.randomtools.5005"
+    },
+    "item.gregtech.lighter_empty": {
+      "old": "Lighter (Empty)",
+      "new": "打火机(空)",
+      "source": "gt.multiitem.randomtools.5004"
+    },
+    "item.gregtech.lighter_full": {
+      "old": "Lighter (Full)",
+      "new": "打火机(满)",
+      "source": "gt.multiitem.randomtools.5006"
+    },
+    "item.gregtech.lime_juice": {
+      "old": "Lime Juice",
+      "new": "酸橙汁",
+      "source": "gt.multiitem.bottles.4500"
+    },
+    "item.gregtech.lime_smoothie": {
+      "old": "Lime Smoothie",
+      "new": "酸橙冰沙",
+      "source": "gt.multiitem.bottles.4505"
+    },
+    "item.gregtech.limoncello": {
+      "old": "Limoncello",
+      "new": "柠檬酒",
+      "source": "gt.multiitem.bottles.202"
+    },
+    "item.gregtech.lin_oil": {
+      "old": "Lin Oil",
+      "new": "亚麻籽油",
+      "source": "gt.multiitem.bottles.1005"
+    },
+    "item.gregtech.lithium_cobalt_cell_empty": {
+      "old": "锂钴电池(空)",
+      "new": "钴酸锂电池单元 (空)",
+      "source": "gt.multiitem.technological.20006"
+    },
+    "item.gregtech.lithium_cobalt_cell_filled": {
+      "old": "锂钴电池(满)",
+      "new": "钴酸锂电池单元 (满)",
+      "source": "gt.multiitem.technological.20007"
+    },
+    "item.gregtech.lithium_manganese_cell_empty": {
+      "old": "锂锰电池(空)",
+      "new": "锂锰电池单元 (空)",
+      "source": "gt.multiitem.technological.20008"
+    },
+    "item.gregtech.lithium_manganese_cell_filled": {
+      "old": "锂锰电池(满)",
+      "new": "锂锰电池单元 (满)",
+      "source": "gt.multiitem.technological.20009"
+    },
+    "item.gregtech.loaf_of_toast": {
+      "old": "Loaf of Toast",
+      "new": "吐司条",
+      "source": "gt.multiitem.food.14001"
+    },
+    "item.gregtech.logistics_display_cpu_control": {
+      "old": "物流显示CPU控制",
+      "new": "物流监视器 (控制处理器)",
+      "source": "gt.multiitem.technological.1087"
+    },
+    "item.gregtech.logistics_display_cpu_conversion": {
+      "old": "物流显示CPU转换",
+      "new": "物流监视器 (转换处理器)",
+      "source": "gt.multiitem.technological.1089"
+    },
+    "item.gregtech.logistics_display_cpu_logic": {
+      "old": "物流显示CPU逻辑",
+      "new": "物流监视器 (逻辑处理器)",
+      "source": "gt.multiitem.technological.1086"
+    },
+    "item.gregtech.logistics_display_cpu_storage": {
+      "old": "物流显示CPU存储",
+      "new": "物流监视器 (存储处理器)",
+      "source": "gt.multiitem.technological.1088"
+    },
+    "item.gregtech.logistics_dump_bus_item": {
+      "old": "物流倾倒总线物品",
+      "new": "物流回收总线 (物品)",
+      "source": "gt.multiitem.technological.1099"
+    },
+    "item.gregtech.loot_pouch": {
+      "old": "Loot Pouch",
+      "new": "战利品袋",
+      "source": "gt.multiitem.randomtools.13003"
+    },
+    "item.gregtech.low_heat_extruder_shape_axehead": {
+      "old": "低温挤压模板斧头",
+      "new": "低热容压模模具 (斧头)",
+      "source": "gt.multiitem.technological.10218"
+    },
+    "item.gregtech.low_heat_extruder_shape_block": {
+      "old": "低温挤压模板块",
+      "new": "低热容压模模具 (方块)",
+      "source": "gt.multiitem.technological.10214"
+    },
+    "item.gregtech.low_heat_extruder_shape_bolt": {
+      "old": "低温挤压模板螺栓",
+      "new": "低热容压模模具 (螺栓)",
+      "source": "gt.multiitem.technological.10203"
+    },
+    "item.gregtech.low_heat_extruder_shape_bottle": {
+      "old": "低温挤压模板瓶",
+      "new": "低热容压模模具 (瓶子)",
+      "source": "gt.multiitem.technological.10224"
+    },
+    "item.gregtech.low_heat_extruder_shape_capsulecellcontainer": {
+      "old": "低温挤压模板胶囊容器",
+      "new": "低热容压模模具 (单元式流体容器)",
+      "source": "gt.multiitem.technological.10228"
+    },
+    "item.gregtech.low_heat_extruder_shape_casing": {
+      "old": "低温挤压模板弹壳",
+      "new": "低热容压模模具 (外壳)",
+      "source": "gt.multiitem.technological.10208"
+    },
+    "item.gregtech.low_heat_extruder_shape_cell": {
+      "old": "低温挤压模板电池",
+      "new": "低热容压模模具 (槽)",
+      "source": "gt.multiitem.technological.10205"
+    },
+    "item.gregtech.low_heat_extruder_shape_curvedplate": {
+      "old": "低温挤压模板弯板",
+      "new": "低热容压模模具 (弯曲板)",
+      "source": "gt.multiitem.technological.10225"
+    },
+    "item.gregtech.low_heat_extruder_shape_filehead": {
+      "old": "低温挤压模板锉刀头",
+      "new": "低热容压模模具 (锉刀刀头)",
+      "source": "gt.multiitem.technological.10221"
+    },
+    "item.gregtech.low_heat_extruder_shape_finewire": {
+      "old": "低温挤压模板细线",
+      "new": "低热容压模模具 (精细线缆)",
+      "source": "gt.multiitem.technological.10231"
+    },
+    "item.gregtech.low_heat_extruder_shape_foil": {
+      "old": "低温挤压模板箔",
+      "new": "低热容压模模具 (箔)",
+      "source": "gt.multiitem.technological.10229"
+    },
+    "item.gregtech.low_heat_extruder_shape_gear": {
+      "old": "低温挤压模板齿轮",
+      "new": "低热容压模模具 (齿轮)",
+      "source": "gt.multiitem.technological.10223"
+    },
+    "item.gregtech.low_heat_extruder_shape_hammerhead": {
+      "old": "低温挤压模板锤头",
+      "new": "低热容压模模具 (锤头)",
+      "source": "gt.multiitem.technological.10220"
+    },
+    "item.gregtech.low_heat_extruder_shape_hoehead": {
+      "old": "低温挤压模板锄头",
+      "new": "低热容压模模具 (锄头)",
+      "source": "gt.multiitem.technological.10219"
+    },
+    "item.gregtech.low_heat_extruder_shape_hugepipe": {
+      "old": "低温挤压模板巨型管",
+      "new": "低热容压模模具 (巨型管道)",
+      "source": "gt.multiitem.technological.10213"
+    },
+    "item.gregtech.low_heat_extruder_shape_ingot": {
+      "old": "低温挤压模板锭",
+      "new": "低热容压模模具 (锭)",
+      "source": "gt.multiitem.technological.10206"
+    },
+    "item.gregtech.low_heat_extruder_shape_largepipe": {
+      "old": "低温挤压模板大型管",
+      "new": "低热容压模模具 (大型管道)",
+      "source": "gt.multiitem.technological.10212"
+    },
+    "item.gregtech.low_heat_extruder_shape_longrod": {
+      "old": "低温挤压模板长杆",
+      "new": "低热容压模模具 (长杆)",
+      "source": "gt.multiitem.technological.10202"
+    },
+    "item.gregtech.low_heat_extruder_shape_pickaxehead": {
+      "old": "低温挤压模板镐头",
+      "new": "低热容压模模具 (镐头)",
+      "source": "gt.multiitem.technological.10216"
+    },
+    "item.gregtech.low_heat_extruder_shape_plate": {
+      "old": "低温挤压模板基板",
+      "new": "低热容压模模具 (板)",
+      "source": "gt.multiitem.technological.10201"
+    },
+    "item.gregtech.low_heat_extruder_shape_ring": {
+      "old": "低温挤压模板环",
+      "new": "低热容压模模具 (环)",
+      "source": "gt.multiitem.technological.10204"
+    },
+    "item.gregtech.low_heat_extruder_shape_rod": {
+      "old": "低温挤压模板杆",
+      "new": "低热容压模模具 (杆)",
+      "source": "gt.multiitem.technological.10227"
+    },
+    "item.gregtech.low_heat_extruder_shape_sawblade": {
+      "old": "低温挤压模板锯片",
+      "new": "低热容压模模具 (锯刃)",
+      "source": "gt.multiitem.technological.10222"
+    },
+    "item.gregtech.low_heat_extruder_shape_shovelhead": {
+      "old": "低温挤压模板锹头",
+      "new": "低热容压模模具 (锹头)",
+      "source": "gt.multiitem.technological.10217"
+    },
+    "item.gregtech.low_heat_extruder_shape_smallgear": {
+      "old": "低温挤压模具（小齿轮）",
+      "new": "低热容压模模具 (小型齿轮)",
+      "source": "gt.multiitem.technological.10226"
+    },
+    "item.gregtech.low_heat_extruder_shape_smallpipe": {
+      "old": "低温挤压模板小型管",
+      "new": "低热容压模模具 (小型管道)",
+      "source": "gt.multiitem.technological.10210"
+    },
+    "item.gregtech.low_heat_extruder_shape_swordblade": {
+      "old": "低温挤压模板剑刃",
+      "new": "低热容压模模具 (剑身)",
+      "source": "gt.multiitem.technological.10215"
+    },
+    "item.gregtech.low_heat_extruder_shape_tinypipe": {
+      "old": "低温挤压模板微型管",
+      "new": "低热容压模模具 (微型管道)",
+      "source": "gt.multiitem.technological.10209"
+    },
+    "item.gregtech.low_heat_extruder_shape_tinyplate": {
+      "old": "低温挤压模板小板",
+      "new": "低热容压模模具 (小块板)",
+      "source": "gt.multiitem.technological.10230"
+    },
+    "item.gregtech.low_heat_extruder_shape_wire": {
+      "old": "低温挤压模板导线",
+      "new": "低热容压模模具 (线缆)",
+      "source": "gt.multiitem.technological.10207"
+    },
+    "item.gregtech.lubricant_bottle": {
+      "old": "Lubricant Bottle",
+      "new": "润滑油瓶",
+      "source": "gt.multiitem.bottles.32764"
+    },
+    "item.gregtech.machine_status_display_cover": {
+      "old": "机器状态显示覆盖板",
+      "new": "状态显示覆盖板",
+      "source": "gt.multiitem.technological.1002"
+    },
+    "item.gregtech.magic_comb": {
+      "old": "Magic Comb",
+      "new": "魔力蜂巢",
+      "source": "gt.multiitem.food.30002"
+    },
+    "item.gregtech.magic_research_paper_introduction": {
+      "old": "Magic Research Paper (Introduction)",
+      "new": "魔法研究论文 (引论)",
+      "source": "gt.multiitem.randomtools.7990"
+    },
+    "item.gregtech.magic_research_paper_page_1_8": {
+      "old": "Magic Research Paper (Page 1 / 8)",
+      "new": "魔法研究论文 (第1/8页)",
+      "source": "gt.multiitem.randomtools.7991"
+    },
+    "item.gregtech.magic_research_paper_page_2_8": {
+      "old": "Magic Research Paper (Page 2 / 8)",
+      "new": "魔法研究论文 (第2/8页)",
+      "source": "gt.multiitem.randomtools.7992"
+    },
+    "item.gregtech.magic_research_paper_page_3_8": {
+      "old": "Magic Research Paper (Page 3 / 8)",
+      "new": "魔法研究论文 (第3/8页)",
+      "source": "gt.multiitem.randomtools.7993"
+    },
+    "item.gregtech.magic_research_paper_page_4_8": {
+      "old": "Magic Research Paper (Page 4 / 8)",
+      "new": "魔法研究论文 (第4/8页)",
+      "source": "gt.multiitem.randomtools.7994"
+    },
+    "item.gregtech.magic_research_paper_page_5_8": {
+      "old": "Magic Research Paper (Page 5 / 8)",
+      "new": "魔法研究论文 (第5/8页)",
+      "source": "gt.multiitem.randomtools.7995"
+    },
+    "item.gregtech.magic_research_paper_page_6_8": {
+      "old": "Magic Research Paper (Page 6 / 8)",
+      "new": "魔法研究论文 (第6/8页)",
+      "source": "gt.multiitem.randomtools.7996"
+    },
+    "item.gregtech.magic_research_paper_page_7_8": {
+      "old": "Magic Research Paper (Page 7 / 8)",
+      "new": "魔法研究论文 (第7/8页)",
+      "source": "gt.multiitem.randomtools.7997"
+    },
+    "item.gregtech.magic_research_paper_page_8_8": {
+      "old": "Magic Research Paper (Page 8 / 8)",
+      "new": "魔法研究论文 (第8/8页)",
+      "source": "gt.multiitem.randomtools.7998"
+    },
+    "item.gregtech.mango_juice": {
+      "old": "Mango Juice",
+      "new": "芒果汁",
+      "source": "gt.multiitem.bottles.5400"
+    },
+    "item.gregtech.mango_smoothie": {
+      "old": "Mango Smoothie",
+      "new": "芒果冰沙",
+      "source": "gt.multiitem.bottles.5405"
+    },
+    "item.gregtech.manual_selector": {
+      "old": "手动选择器",
+      "new": "手动选择面板",
+      "source": "gt.multiitem.technological.1008"
+    },
+    "item.gregtech.many_printed_pages": {
+      "old": "Many Printed Pages",
+      "new": "打印纸叠",
+      "source": "gt.multiitem.randomtools.7003"
+    },
+    "item.gregtech.maple_ice_cream": {
+      "old": "Maple Ice Cream",
+      "new": "枫树糖浆冰淇淋",
+      "source": "gt.multiitem.food.13019"
+    },
+    "item.gregtech.maple_sap": {
+      "old": "Maple Sap",
+      "new": "枫树液",
+      "source": "gt.multiitem.bottles.3500"
+    },
+    "item.gregtech.maple_syrup": {
+      "old": "Maple Syrup",
+      "new": "枫树糖浆",
+      "source": "gt.multiitem.bottles.3501"
+    },
+    "item.gregtech.match": {
+      "old": "Match",
+      "new": "火柴",
+      "source": "gt.multiitem.randomtools.5000"
+    },
+    "item.gregtech.match_box": {
+      "old": "Match Box",
+      "new": "火柴盒",
+      "source": "gt.multiitem.randomtools.5002"
+    },
+    "item.gregtech.match_box_full": {
+      "old": "Match Box (Full)",
+      "new": "火柴盒(满)",
+      "source": "gt.multiitem.randomtools.5003"
+    },
+    "item.gregtech.maxim_tomato": {
+      "old": "Maxim Tomato",
+      "new": "魔改型番茄",
+      "source": "gt.multiitem.food.20"
+    },
+    "item.gregtech.mayo": {
+      "old": "Mayo",
+      "new": "蛋黄酱",
+      "source": "gt.multiitem.bottles.1020"
+    },
+    "item.gregtech.mead": {
+      "old": "Mead",
+      "new": "蜂蜜酒",
+      "source": "gt.multiitem.bottles.1305"
+    },
+    "item.gregtech.medicine": {
+      "old": "Medicine",
+      "new": "药",
+      "source": "gt.multiitem.bottles.30000"
+    },
+    "item.gregtech.melon_ice_cream": {
+      "old": "Melon Ice Cream",
+      "new": "西瓜冰淇淋",
+      "source": "gt.multiitem.food.13023"
+    },
+    "item.gregtech.melon_juice": {
+      "old": "Melon Juice",
+      "new": "西瓜汁",
+      "source": "gt.multiitem.bottles.2300"
+    },
+    "item.gregtech.melon_smoothie": {
+      "old": "Melon Smoothie",
+      "new": "西瓜冰沙",
+      "source": "gt.multiitem.bottles.2305"
+    },
+    "item.gregtech.mercury_bottle": {
+      "old": "Mercury Bottle",
+      "new": "汞瓶",
+      "source": "gt.multiitem.bottles.32765"
+    },
+    "item.gregtech.military_comb": {
+      "old": "Military Comb",
+      "new": "军用蜂巢",
+      "source": "gt.multiitem.food.30105"
+    },
+    "item.gregtech.milk": {
+      "old": "Milk",
+      "new": "牛奶",
+      "source": "gt.multiitem.bottles.1100"
+    },
+    "item.gregtech.milk_2": {
+      "old": "Milk",
+      "new": "牛奶",
+      "source": "gt.multiitem.bottles.1100"
+    },
+    "item.gregtech.mince_meat_pizza": {
+      "old": "Mince Meat Pizza",
+      "new": "肉沫披萨",
+      "source": "gt.multiitem.food.4013"
+    },
+    "item.gregtech.mineral_soda": {
+      "old": "Mineral Soda",
+      "new": "含汽矿泉水",
+      "source": "gt.multiitem.bottles.3"
+    },
+    "item.gregtech.mineral_water": {
+      "old": "Mineral Water",
+      "new": "矿泉水",
+      "source": "gt.multiitem.bottles.0"
+    },
+    "item.gregtech.mint_chocolate_chip_ice_cream": {
+      "old": "Mint Chocolate Chip Ice Cream",
+      "new": "薄荷巧克力碎冰淇淋",
+      "source": "gt.multiitem.food.13008"
+    },
+    "item.gregtech.mint_ice_cream": {
+      "old": "Mint Ice Cream",
+      "new": "薄荷冰淇淋",
+      "source": "gt.multiitem.food.13007"
+    },
+    "item.gregtech.mocha_ice_cream": {
+      "old": "Mocha Ice Cream",
+      "new": "摩卡冰淇淋",
+      "source": "gt.multiitem.food.13005"
+    },
+    "item.gregtech.modeled_porcelain_cup": {
+      "old": "Modeled Porcelain Cup",
+      "new": "已成型的瓷杯",
+      "source": "gt.multiitem.randomtools.899"
+    },
+    "item.gregtech.moldy_grass": {
+      "old": "Moldy Grass",
+      "new": "发霉的草",
+      "source": "gt.multiitem.food.12002"
+    },
+    "item.gregtech.mud_2": {
+      "old": "Mud",
+      "new": "泥球",
+      "source": "gt.multiitem.food.12300"
+    },
+    "item.gregtech.mule_hoof": {
+      "old": "Mule Hoof",
+      "new": "骡蹄",
+      "source": "gt.multiitem.food.12503"
+    },
+    "item.gregtech.mule_meat": {
+      "old": "Mule Meat",
+      "new": "骡肉",
+      "source": "gt.multiitem.food.1510"
+    },
+    "item.gregtech.mutton": {
+      "old": "Mutton",
+      "new": "羊肉",
+      "source": "gt.multiitem.food.1400"
+    },
+    "item.gregtech.neapolitan_ice_cream": {
+      "old": "Neapolitan Ice Cream",
+      "new": "不勒斯冰淇淋",
+      "source": "gt.multiitem.food.13995"
+    },
+    "item.gregtech.nether_comb": {
+      "old": "Nether Comb",
+      "new": "下界蜂巢",
+      "source": "gt.multiitem.food.30003"
+    },
+    "item.gregtech.nickel_cadmium_cell_empty": {
+      "old": "镍镉电池(空)",
+      "new": "镍镉电池单元 (空)",
+      "source": "gt.multiitem.technological.20004"
+    },
+    "item.gregtech.nickel_cadmium_cell_filled": {
+      "old": "镍镉电池(满)",
+      "new": "镍镉电池单元 (满)",
+      "source": "gt.multiitem.technological.20005"
+    },
+    "item.gregtech.notches_brew": {
+      "old": "Notches Brew",
+      "new": "Notch汤",
+      "source": "gt.multiitem.bottles.1501"
+    },
+    "item.gregtech.nut_oil": {
+      "old": "Nut Oil",
+      "new": "坚果油",
+      "source": "gt.multiitem.bottles.1002"
+    },
+    "item.gregtech.nut_remains": {
+      "old": "Nut Remains",
+      "new": "坚果废料",
+      "source": "gt.multiitem.food.12103"
+    },
+    "item.gregtech.nutella": {
+      "old": "Nutella",
+      "new": "花生酱",
+      "source": "gt.multiitem.bottles.1901"
+    },
+    "item.gregtech.nutella_ice_cream": {
+      "old": "Nutella Ice Cream",
+      "new": "榛子可可酱冰淇淋",
+      "source": "gt.multiitem.food.13017"
+    },
+    "item.gregtech.oats": {
+      "old": "Oats",
+      "new": "燕麦",
+      "source": "gt.multiitem.food.12005"
+    },
+    "item.gregtech.olive_oil": {
+      "old": "Olive Oil",
+      "new": "橄榄油",
+      "source": "gt.multiitem.bottles.1000"
+    },
+    "item.gregtech.onion": {
+      "old": "Onion",
+      "new": "洋葱",
+      "source": "gt.multiitem.food.30"
+    },
+    "item.gregtech.onion_slice": {
+      "old": "Onion Slice",
+      "new": "洋葱片",
+      "source": "gt.multiitem.food.31"
+    },
+    "item.gregtech.orange_juice": {
+      "old": "Orange Juice",
+      "new": "橙子汁",
+      "source": "gt.multiitem.bottles.4600"
+    },
+    "item.gregtech.orange_smoothie": {
+      "old": "Orange Smoothie",
+      "new": "橙子冰沙",
+      "source": "gt.multiitem.bottles.4605"
+    },
+    "item.gregtech.paint_removal_spray": {
+      "old": "Paint Removal Spray",
+      "new": "去色喷漆",
+      "source": "gt.multiitem.randomtools.1096"
+    },
+    "item.gregtech.paint_removal_spray_2": {
+      "old": "Paint Removal Spray",
+      "new": "去色喷漆",
+      "source": "gt.multiitem.randomtools.1096"
+    },
+    "item.gregtech.papaya_juice": {
+      "old": "Papaya Juice",
+      "new": "番木瓜汁",
+      "source": "gt.multiitem.bottles.5500"
+    },
+    "item.gregtech.papaya_smoothie": {
+      "old": "Papaya Smoothie",
+      "new": "番木瓜冰沙",
+      "source": "gt.multiitem.bottles.5505"
+    },
+    "item.gregtech.peach_juice": {
+      "old": "Peach Juice",
+      "new": "桃汁",
+      "source": "gt.multiitem.bottles.4200"
+    },
+    "item.gregtech.peach_smoothie": {
+      "old": "Peach Smoothie",
+      "new": "桃冰沙",
+      "source": "gt.multiitem.bottles.4205"
+    },
+    "item.gregtech.peanut": {
+      "old": "Peanut",
+      "new": "花生",
+      "source": "gt.multiitem.food.250"
+    },
+    "item.gregtech.peanut_butter": {
+      "old": "Peanut Butter",
+      "new": "花生酱",
+      "source": "gt.multiitem.bottles.3601"
+    },
+    "item.gregtech.peanut_butter_ice_cream": {
+      "old": "Peanut Butter Ice Cream",
+      "new": "花生酱冰淇淋",
+      "source": "gt.multiitem.food.13027"
+    },
+    "item.gregtech.pear_juice": {
+      "old": "Pear Juice",
+      "new": "梨汁",
+      "source": "gt.multiitem.bottles.4800"
+    },
+    "item.gregtech.pear_smoothie": {
+      "old": "Pear Smoothie",
+      "new": "梨冰沙",
+      "source": "gt.multiitem.bottles.4805"
+    },
+    "item.gregtech.peppermint": {
+      "old": "Peppermint",
+      "new": "薄荷糖",
+      "source": "gt.multiitem.food.31002"
+    },
+    "item.gregtech.persimmon_juice": {
+      "old": "Persimmon Juice",
+      "new": "柿子汁",
+      "source": "gt.multiitem.bottles.5000"
+    },
+    "item.gregtech.persimmon_smoothie": {
+      "old": "Persimmon Smoothie",
+      "new": "柿子冰沙",
+      "source": "gt.multiitem.bottles.5005"
+    },
+    "item.gregtech.pi_a_colada": {
+      "old": "Piña Colada",
+      "new": "凤梨可乐达",
+      "source": "gt.multiitem.bottles.404"
+    },
+    "item.gregtech.pickle": {
+      "old": "Pickle",
+      "new": "腌黄瓜",
+      "source": "gt.multiitem.food.42"
+    },
+    "item.gregtech.pickle_slice": {
+      "old": "Pickle Slice",
+      "new": "腌黄瓜片",
+      "source": "gt.multiitem.food.43"
+    },
+    "item.gregtech.pink_slime_bottle": {
+      "old": "Pink Slime Bottle",
+      "new": "粉色粘液瓶",
+      "source": "gt.multiitem.bottles.2201"
+    },
+    "item.gregtech.pirate_brew": {
+      "old": "Pirate Brew",
+      "new": "海盗啤酒",
+      "source": "gt.multiitem.bottles.402"
+    },
+    "item.gregtech.pistachio_ice_cream": {
+      "old": "Pistachio Ice Cream",
+      "new": "开心果冰淇淋",
+      "source": "gt.multiitem.food.13020"
+    },
+    "item.gregtech.pizza_hawaii": {
+      "old": "Pizza Hawaii",
+      "new": "夏威夷披萨",
+      "source": "gt.multiitem.food.4017"
+    },
+    "item.gregtech.pizza_margherita": {
+      "old": "Pizza Margherita",
+      "new": "奶酪披萨",
+      "source": "gt.multiitem.food.4011"
+    },
+    "item.gregtech.plant_remains": {
+      "old": "Plant Remains",
+      "new": "植物废料",
+      "source": "gt.multiitem.food.12100"
+    },
+    "item.gregtech.plastic_key": {
+      "old": "Plastic Key",
+      "new": "塑料钥匙",
+      "source": "gt.multiitem.randomtools.30009"
+    },
+    "item.gregtech.plastic_lighter": {
+      "old": "Plastic Lighter",
+      "new": "比克打火机",
+      "source": "gt.multiitem.randomtools.5011"
+    },
+    "item.gregtech.plastic_lighter_broken": {
+      "old": "Plastic Lighter (Broken)",
+      "new": "比克打火机 (损坏)",
+      "source": "gt.multiitem.randomtools.5013"
+    },
+    "item.gregtech.plastic_lighter_empty": {
+      "old": "Plastic Lighter (Empty)",
+      "new": "比克打火机 (空)",
+      "source": "gt.multiitem.randomtools.5010"
+    },
+    "item.gregtech.plastic_lighter_full": {
+      "old": "Plastic Lighter (Full)",
+      "new": "比克打火机 (满)",
+      "source": "gt.multiitem.randomtools.5012"
+    },
+    "item.gregtech.platinum_key": {
+      "old": "Platinum Key",
+      "new": "铂钥匙",
+      "source": "gt.multiitem.randomtools.30007"
+    },
+    "item.gregtech.plum_juice": {
+      "old": "Plum Juice",
+      "new": "李子汁",
+      "source": "gt.multiitem.bottles.4100"
+    },
+    "item.gregtech.plum_smoothie": {
+      "old": "Plum Smoothie",
+      "new": "李子冰沙",
+      "source": "gt.multiitem.bottles.4105"
+    },
+    "item.gregtech.pomegranate": {
+      "old": "Pomegranate",
+      "new": "石榴",
+      "source": "gt.multiitem.food.100"
+    },
+    "item.gregtech.pomegranate_juice": {
+      "old": "Pomegranate Juice",
+      "new": "石榴汁",
+      "source": "gt.multiitem.bottles.5300"
+    },
+    "item.gregtech.pomegranate_smoothie": {
+      "old": "Pomegranate Smoothie",
+      "new": "石榴冰沙",
+      "source": "gt.multiitem.bottles.5305"
+    },
+    "item.gregtech.pomeraisins": {
+      "old": "Pomeraisins",
+      "new": "石榴干",
+      "source": "gt.multiitem.food.101"
+    },
+    "item.gregtech.portable_cropnalyzer": {
+      "old": "Portable Cropnalyzer",
+      "new": "便携式作物扫描仪",
+      "source": "gt.multiitem.randomtools.9003"
+    },
+    "item.gregtech.portable_scanner": {
+      "old": "Portable Scanner",
+      "new": "便携式扫描仪",
+      "source": "gt.multiitem.randomtools.9002"
+    },
+    "item.gregtech.potato_chips": {
+      "old": "Potato Chips",
+      "new": "薯片",
+      "source": "gt.multiitem.food.9010"
+    },
+    "item.gregtech.potato_chips_raw": {
+      "old": "Potato Chips (Raw)",
+      "new": "生马铃薯片",
+      "source": "gt.multiitem.food.9000"
+    },
+    "item.gregtech.potato_juice": {
+      "old": "Potato Juice",
+      "new": "土豆汁",
+      "source": "gt.multiitem.bottles.300"
+    },
+    "item.gregtech.potato_on_a_stick": {
+      "old": "Potato on a Stick",
+      "new": "棍上土豆",
+      "source": "gt.multiitem.food.32700"
+    },
+    "item.gregtech.potato_strips": {
+      "old": "Potato Strips",
+      "new": "土豆条",
+      "source": "gt.multiitem.food.8000"
+    },
+    "item.gregtech.press_bullet_casing_shape_large": {
+      "old": "冲压子弹弹壳模板大型",
+      "new": "弹壳模具 (大型)",
+      "source": "gt.multiitem.technological.10898"
+    },
+    "item.gregtech.press_bullet_casing_shape_medium": {
+      "old": "冲压子弹弹壳模板中型",
+      "new": "弹壳模具 (中型)",
+      "source": "gt.multiitem.technological.10897"
+    },
+    "item.gregtech.press_bullet_casing_shape_small": {
+      "old": "冲压子弹弹壳模板小型",
+      "new": "弹壳模具 (小型)",
+      "source": "gt.multiitem.technological.10896"
+    },
+    "item.gregtech.pressure_value": {
+      "old": "压力阀",
+      "new": "释压安全阀",
+      "source": "gt.multiitem.technological.2000"
+    },
+    "item.gregtech.printed_pages": {
+      "old": "Printed Pages",
+      "new": "打印纸",
+      "source": "gt.multiitem.randomtools.7002"
+    },
+    "item.gregtech.pumpkin_juice": {
+      "old": "Pumpkin Juice",
+      "new": "南瓜汁",
+      "source": "gt.multiitem.bottles.4900"
+    },
+    "item.gregtech.purple_drink": {
+      "old": "Purple Drink",
+      "new": "紫色饮料",
+      "source": "gt.multiitem.bottles.1600"
+    },
+    "item.gregtech.purple_grapes": {
+      "old": "Purple Grapes",
+      "new": "紫葡萄",
+      "source": "gt.multiitem.food.70"
+    },
+    "item.gregtech.purple_raisins": {
+      "old": "Purple Raisins",
+      "new": "紫葡萄干",
+      "source": "gt.multiitem.food.71"
+    },
+    "item.gregtech.pyro_comb": {
+      "old": "Pyro Comb",
+      "new": "纵火蜂巢",
+      "source": "gt.multiitem.food.30200"
+    },
+    "item.gregtech.quicksilver_thermometer": {
+      "old": "Quicksilver Thermometer",
+      "new": "水银温度计",
+      "source": "gt.multiitem.randomtools.10000"
+    },
+    "item.gregtech.radaway": {
+      "old": "Radaway",
+      "new": "去辐射剂",
+      "source": "gt.multiitem.food.31001"
+    },
+    "item.gregtech.rainbow_ice_cream": {
+      "old": "Rainbow Ice Cream",
+      "new": "彩虹冰淇淋",
+      "source": "gt.multiitem.food.13999"
+    },
+    "item.gregtech.rainbow_sap": {
+      "old": "Rainbow Sap",
+      "new": "彩虹汁",
+      "source": "gt.multiitem.bottles.3700"
+    },
+    "item.gregtech.raisin_cookie": {
+      "old": "Raisin Cookie",
+      "new": "葡萄干曲奇",
+      "source": "gt.multiitem.food.2003"
+    },
+    "item.gregtech.raisin_ice_cream": {
+      "old": "Raisin Ice Cream",
+      "new": "葡萄干冰淇淋",
+      "source": "gt.multiitem.food.13002"
+    },
+    "item.gregtech.raspberry": {
+      "old": "Raspberry",
+      "new": "树莓",
+      "source": "gt.multiitem.food.190"
+    },
+    "item.gregtech.raspberry_ice_cream": {
+      "old": "Raspberry Ice Cream",
+      "new": "树莓冰淇淋",
+      "source": "gt.multiitem.food.13014"
+    },
+    "item.gregtech.raspberry_juice": {
+      "old": "Raspberry Juice",
+      "new": "树莓汁",
+      "source": "gt.multiitem.bottles.2600"
+    },
+    "item.gregtech.raspberry_smoothie": {
+      "old": "Raspberry Smoothie",
+      "new": "树莓冰沙",
+      "source": "gt.multiitem.bottles.2605"
+    },
+    "item.gregtech.raw_bacon": {
+      "old": "Raw Bacon",
+      "new": "生的培根",
+      "source": "gt.multiitem.food.1112"
+    },
+    "item.gregtech.raw_cake_bottom": {
+      "old": "Raw Cake Bottom",
+      "new": "蛋糕底座 (未烤制)",
+      "source": "gt.multiitem.food.3000"
+    },
+    "item.gregtech.raw_fish_bar": {
+      "old": "Raw Fish Bar",
+      "new": "生鱼肉块",
+      "source": "gt.multiitem.food.32113"
+    },
+    "item.gregtech.raw_ham": {
+      "old": "Raw Ham",
+      "new": "生的火腿",
+      "source": "gt.multiitem.food.1100"
+    },
+    "item.gregtech.raw_ham_slice": {
+      "old": "Raw Ham Slice",
+      "new": "生的火腿片",
+      "source": "gt.multiitem.food.1102"
+    },
+    "item.gregtech.raw_meat_bar": {
+      "old": "Raw Meat Bar",
+      "new": "生肉块",
+      "source": "gt.multiitem.food.32105"
+    },
+    "item.gregtech.raw_mince_meat_pizza": {
+      "old": "Raw Mince Meat Pizza",
+      "new": "生的肉沫披萨",
+      "source": "gt.multiitem.food.4012"
+    },
+    "item.gregtech.raw_pizza_hawaii": {
+      "old": "Raw Pizza Hawaii",
+      "new": "生的夏威夷披萨",
+      "source": "gt.multiitem.food.4016"
+    },
+    "item.gregtech.raw_pizza_margherita": {
+      "old": "Raw Pizza Margherita",
+      "new": "生的芝士披萨",
+      "source": "gt.multiitem.food.4010"
+    },
+    "item.gregtech.raw_rib_eye_steak": {
+      "old": "Raw Rib Eye Steak",
+      "new": "生的肋眼牛排",
+      "source": "gt.multiitem.food.1210"
+    },
+    "item.gregtech.raw_ribs": {
+      "old": "Raw Ribs",
+      "new": "生的肋排",
+      "source": "gt.multiitem.food.1200"
+    },
+    "item.gregtech.raw_veggie_pizza": {
+      "old": "Raw Veggie Pizza",
+      "new": "生的蔬菜披萨",
+      "source": "gt.multiitem.food.4014"
+    },
+    "item.gregtech.reactor_rod_9201": {
+      "old": "空反应堆棒",
+      "new": "空燃料棒",
+      "source": "gt.multitileentity.9201"
+    },
+    "item.gregtech.reactor_rod_9204": {
+      "old": "中子慢化棒",
+      "new": "中子减速棒",
+      "source": "gt.multitileentity.9204"
+    },
+    "item.gregtech.reactor_rod_9219": {
+      "old": "Cyanite燃料棒",
+      "new": "蓝晶石燃料棒",
+      "source": "gt.multitileentity.9219"
+    },
+    "item.gregtech.reactor_rod_9222": {
+      "old": "Uranium-233燃料棒",
+      "new": "铀-233燃料棒",
+      "source": "gt.multitileentity.9222"
+    },
+    "item.gregtech.reactor_rod_9229": {
+      "old": "Yellorium燃料棒",
+      "new": "黄铀燃料棒",
+      "source": "gt.multitileentity.9229"
+    },
+    "item.gregtech.reactor_rod_9230": {
+      "old": "Plutonium-244燃料棒",
+      "new": "钚-244燃料棒",
+      "source": "gt.multitileentity.9230"
+    },
+    "item.gregtech.reactor_rod_9231": {
+      "old": "Plutonium-241燃料棒",
+      "new": "钚-241燃料棒",
+      "source": "gt.multitileentity.9231"
+    },
+    "item.gregtech.reactor_rod_9232": {
+      "old": "Plutonium-243燃料棒",
+      "new": "钚-243燃料棒",
+      "source": "gt.multitileentity.9232"
+    },
+    "item.gregtech.reactor_rod_9239": {
+      "old": "Blutonium燃料棒",
+      "new": "蓝钚燃料棒",
+      "source": "gt.multitileentity.9239"
+    },
+    "item.gregtech.reactor_rod_9240": {
+      "old": "Americium-245燃料棒",
+      "new": "镅-245燃料棒",
+      "source": "gt.multitileentity.9240"
+    },
+    "item.gregtech.reactor_rod_9249": {
+      "old": "Ludicrite燃料棒",
+      "new": "滑稽燃料棒",
+      "source": "gt.multitileentity.9249"
+    },
+    "item.gregtech.reactor_rod_9260": {
+      "old": "Enriched Naquadah燃料棒",
+      "new": "浓缩硅岩金属燃料棒",
+      "source": "gt.multitileentity.9260"
+    },
+    "item.gregtech.reactor_rod_9261": {
+      "old": "Naquadria燃料棒",
+      "new": "硅岩金属化合物燃料棒",
+      "source": "gt.multitileentity.9261"
+    },
+    "item.gregtech.reactor_rod_9310": {
+      "old": "枯竭Thorium-232燃料棒",
+      "new": "枯竭钍-232燃料棒",
+      "source": "gt.multitileentity.9310"
+    },
+    "item.gregtech.reactor_rod_9319": {
+      "old": "枯竭Cyanite燃料棒",
+      "new": "枯竭蓝晶石燃料棒",
+      "source": "gt.multitileentity.9319"
+    },
+    "item.gregtech.reactor_rod_9320": {
+      "old": "枯竭Uranium-238燃料棒",
+      "new": "枯竭铀-238燃料棒",
+      "source": "gt.multitileentity.9320"
+    },
+    "item.gregtech.reactor_rod_9321": {
+      "old": "枯竭Uranium-235燃料棒",
+      "new": "枯竭铀-235燃料棒",
+      "source": "gt.multitileentity.9321"
+    },
+    "item.gregtech.reactor_rod_9322": {
+      "old": "枯竭Uranium-233燃料棒",
+      "new": "枯竭铀-233燃料棒",
+      "source": "gt.multitileentity.9322"
+    },
+    "item.gregtech.reactor_rod_9329": {
+      "old": "枯竭Yellorium燃料棒",
+      "new": "枯竭黄铀燃料棒",
+      "source": "gt.multitileentity.9329"
+    },
+    "item.gregtech.reactor_rod_9330": {
+      "old": "枯竭Plutonium-244燃料棒",
+      "new": "枯竭钚-244燃料棒",
+      "source": "gt.multitileentity.9330"
+    },
+    "item.gregtech.reactor_rod_9331": {
+      "old": "枯竭Plutonium-241燃料棒",
+      "new": "枯竭钚-241燃料棒",
+      "source": "gt.multitileentity.9331"
+    },
+    "item.gregtech.reactor_rod_9332": {
+      "old": "枯竭Plutonium-243燃料棒",
+      "new": "枯竭钚-243燃料棒",
+      "source": "gt.multitileentity.9332"
+    },
+    "item.gregtech.reactor_rod_9333": {
+      "old": "枯竭Plutonium-239燃料棒",
+      "new": "枯竭钚-239燃料棒",
+      "source": "gt.multitileentity.9333"
+    },
+    "item.gregtech.reactor_rod_9339": {
+      "old": "枯竭Blutonium燃料棒",
+      "new": "枯竭蓝钚燃料棒",
+      "source": "gt.multitileentity.9339"
+    },
+    "item.gregtech.reactor_rod_9340": {
+      "old": "枯竭Americium-245燃料棒",
+      "new": "枯竭镅-245燃料棒",
+      "source": "gt.multitileentity.9340"
+    },
+    "item.gregtech.reactor_rod_9341": {
+      "old": "枯竭Americium-241燃料棒",
+      "new": "枯竭镅-241燃料棒",
+      "source": "gt.multitileentity.9341"
+    },
+    "item.gregtech.reactor_rod_9349": {
+      "old": "枯竭Ludicrite燃料棒",
+      "new": "枯竭滑稽燃料棒",
+      "source": "gt.multitileentity.9349"
+    },
+    "item.gregtech.reactor_rod_9350": {
+      "old": "枯竭Cobalt-60燃料棒",
+      "new": "枯竭钴-60燃料棒",
+      "source": "gt.multitileentity.9350"
+    },
+    "item.gregtech.reactor_rod_9360": {
+      "old": "枯竭Enriched Naquadah燃料棒",
+      "new": "枯竭浓缩硅岩金属燃料棒",
+      "source": "gt.multitileentity.9360"
+    },
+    "item.gregtech.reactor_rod_9361": {
+      "old": "枯竭Naquadria燃料棒",
+      "new": "枯竭硅岩金属化合物燃料棒",
+      "source": "gt.multitileentity.9361"
+    },
+    "item.gregtech.reactor_rod_9410": {
+      "old": "Thorium-232增殖棒",
+      "new": "钍-232增殖棒",
+      "source": "gt.multitileentity.9410"
+    },
+    "item.gregtech.reactor_rod_9411": {
+      "old": "Uranium-233增殖产物棒",
+      "new": "铀-233浓缩燃料棒",
+      "source": "gt.multitileentity.9411"
+    },
+    "item.gregtech.reactor_rod_9420": {
+      "old": "Uranium-238增殖棒",
+      "new": "铀-238增殖棒",
+      "source": "gt.multitileentity.9420"
+    },
+    "item.gregtech.reactor_rod_9421": {
+      "old": "Plutonium-239增殖产物棒",
+      "new": "钚-239浓缩燃料棒",
+      "source": "gt.multitileentity.9421"
+    },
+    "item.gregtech.reactor_rod_9430": {
+      "old": "Lithium增殖棒",
+      "new": "锂增殖棒",
+      "source": "gt.multitileentity.9430"
+    },
+    "item.gregtech.reactor_rod_9431": {
+      "old": "Tritium增殖产物棒",
+      "new": "氚浓缩燃料棒",
+      "source": "gt.multitileentity.9431"
+    },
+    "item.gregtech.reactor_rod_9440": {
+      "old": "Naquadah增殖棒",
+      "new": "硅岩金属增殖棒",
+      "source": "gt.multitileentity.9440"
+    },
+    "item.gregtech.reactor_rod_9441": {
+      "old": "Enriched Naquadah增殖产物棒",
+      "new": "浓缩硅岩金属浓缩燃料棒",
+      "source": "gt.multitileentity.9441"
+    },
+    "item.gregtech.red_clay": {
+      "old": "Red Clay",
+      "new": "红色粘土",
+      "source": "gt.multiitem.food.12311"
+    },
+    "item.gregtech.red_currants": {
+      "old": "Red Currants",
+      "new": "红醋栗",
+      "source": "gt.multiitem.food.170"
+    },
+    "item.gregtech.red_grapes": {
+      "old": "Red Grapes",
+      "new": "红葡萄",
+      "source": "gt.multiitem.food.66"
+    },
+    "item.gregtech.red_pill": {
+      "old": "Red Pill",
+      "new": "红色药片",
+      "source": "gt.multiitem.food.31004"
+    },
+    "item.gregtech.red_raisins": {
+      "old": "Red Raisins",
+      "new": "红葡萄干",
+      "source": "gt.multiitem.food.67"
+    },
+    "item.gregtech.red_wine": {
+      "old": "Red Wine",
+      "new": "红葡萄酒",
+      "source": "gt.multiitem.bottles.104"
+    },
+    "item.gregtech.redstone_conductor_cover_accept": {
+      "old": "红石导体覆盖板(接收)",
+      "new": "红石传导覆盖板 (接收)",
+      "source": "gt.multiitem.technological.1029"
+    },
+    "item.gregtech.redstone_conductor_cover_emit": {
+      "old": "红石导体覆盖板(发射)",
+      "new": "红石传导覆盖板 (发射)",
+      "source": "gt.multiitem.technological.1030"
+    },
+    "item.gregtech.redstone_emitter": {
+      "old": "红石发射器",
+      "new": "红石信号发射器",
+      "source": "gt.multiitem.technological.1021"
+    },
+    "item.gregtech.redstone_selector": {
+      "old": "红石选择器",
+      "new": "红石选择面板",
+      "source": "gt.multiitem.technological.1007"
+    },
+    "item.gregtech.reedwater": {
+      "old": "Reedwater",
+      "new": "甘蔗汁",
+      "source": "gt.multiitem.bottles.400"
+    },
+    "item.gregtech.remote_activator": {
+      "old": "Remote Activator",
+      "new": "远程激活器",
+      "source": "gt.multiitem.randomtools.9000"
+    },
+    "item.gregtech.ricardo_sanchez": {
+      "old": "Ricardo Sanchez",
+      "new": "里卡多·桑切斯",
+      "source": "gt.multiitem.bottles.112"
+    },
+    "item.gregtech.rice": {
+      "old": "Rice",
+      "new": "水稻",
+      "source": "gt.multiitem.food.12007"
+    },
+    "item.gregtech.rice_vinegar": {
+      "old": "Rice Vinegar",
+      "new": "米醋",
+      "source": "gt.multiitem.bottles.1802"
+    },
+    "item.gregtech.rice_water": {
+      "old": "Rice Water",
+      "new": "酒酿",
+      "source": "gt.multiitem.bottles.1800"
+    },
+    "item.gregtech.roasted_potato_on_a_stick": {
+      "old": "Roasted Potato on a Stick",
+      "new": "棍上熟土豆",
+      "source": "gt.multiitem.food.32701"
+    },
+    "item.gregtech.robot_arm_blade_tip": {
+      "old": "Robot Arm Blade Tip",
+      "new": "机械刀",
+      "source": "gt.multiitem.randomtools.8007"
+    },
+    "item.gregtech.robot_arm_chisel_tip": {
+      "old": "Robot Arm Chisel Tip",
+      "new": "凿子机械臂",
+      "source": "gt.multiitem.randomtools.8005"
+    },
+    "item.gregtech.robot_arm_cutter_tip": {
+      "old": "Robot Arm Cutter Tip",
+      "new": "剪线钳机械臂",
+      "source": "gt.multiitem.randomtools.8004"
+    },
+    "item.gregtech.robot_arm_drill_tip": {
+      "old": "Robot Arm Drill Tip",
+      "new": "机械钻",
+      "source": "gt.multiitem.randomtools.8008"
+    },
+    "item.gregtech.robot_arm_file_tip": {
+      "old": "Robot Arm File Tip",
+      "new": "锉刀机械臂",
+      "source": "gt.multiitem.randomtools.8009"
+    },
+    "item.gregtech.robot_arm_hammer_tip": {
+      "old": "Robot Arm Hammer Tip",
+      "new": "锤子机械臂",
+      "source": "gt.multiitem.randomtools.8003"
+    },
+    "item.gregtech.robot_arm_rubber_hammer_tip": {
+      "old": "Robot Arm Rubber Hammer Tip",
+      "new": "软锤机械臂",
+      "source": "gt.multiitem.randomtools.8006"
+    },
+    "item.gregtech.robot_arm_saw_tip": {
+      "old": "Robot Arm Saw Tip",
+      "new": "锯刃机械臂",
+      "source": "gt.multiitem.randomtools.8002"
+    },
+    "item.gregtech.robot_arm_screwdriver_tip": {
+      "old": "Robot Arm Screwdriver Tip",
+      "new": "螺丝刀机械臂",
+      "source": "gt.multiitem.randomtools.8001"
+    },
+    "item.gregtech.robot_arm_wrench_tip": {
+      "old": "Robot Arm Wrench Tip",
+      "new": "扳手机械臂",
+      "source": "gt.multiitem.randomtools.8000"
+    },
+    "item.gregtech.rock_comb": {
+      "old": "Rock Comb",
+      "new": "岩石蜂巢",
+      "source": "gt.multiitem.food.30005"
+    },
+    "item.gregtech.rotten_drink": {
+      "old": "Rotten Drink",
+      "new": "腐坏的饮料",
+      "source": "gt.multiitem.bottles.1601"
+    },
+    "item.gregtech.rotten_grass": {
+      "old": "Rotten Grass",
+      "new": "烂草",
+      "source": "gt.multiitem.food.12003"
+    },
+    "item.gregtech.royal_comb": {
+      "old": "Royal Comb",
+      "new": "皇室蜂巢",
+      "source": "gt.multiitem.food.30102"
+    },
+    "item.gregtech.royal_jelly": {
+      "old": "Royal Jelly",
+      "new": "蜂王浆",
+      "source": "gt.multiitem.bottles.1302"
+    },
+    "item.gregtech.rubber_resin": {
+      "old": "Rubber Resin",
+      "new": "粘性树脂",
+      "source": "gt.multiitem.food.12050"
+    },
+    "item.gregtech.rum": {
+      "old": "Rum",
+      "new": "朗姆酒",
+      "source": "gt.multiitem.bottles.401"
+    },
+    "item.gregtech.rye": {
+      "old": "Rye",
+      "new": "黑麦",
+      "source": "gt.multiitem.food.12004"
+    },
+    "item.gregtech.sake": {
+      "old": "Sake",
+      "new": "清酒 (米酒)",
+      "source": "gt.multiitem.bottles.1801"
+    },
+    "item.gregtech.salted_butter": {
+      "old": "Salted Butter",
+      "new": "盐味黄油",
+      "source": "gt.multiitem.food.32119"
+    },
+    "item.gregtech.sandy_comb": {
+      "old": "Sandy Comb",
+      "new": "颗粒蜂巢",
+      "source": "gt.multiitem.food.30009"
+    },
+    "item.gregtech.scotch": {
+      "old": "Scotch",
+      "new": "威士忌",
+      "source": "gt.multiitem.bottles.601"
+    },
+    "item.gregtech.scrambled_egg": {
+      "old": "Scrambled Egg",
+      "new": "炒蛋",
+      "source": "gt.multiitem.food.1071"
+    },
+    "item.gregtech.scrap_meat": {
+      "old": "Scrap Meat",
+      "new": "肉沫",
+      "source": "gt.multiitem.food.1998"
+    },
+    "item.gregtech.sea_water": {
+      "old": "Sea Water",
+      "new": "盐水",
+      "source": "gt.multiitem.bottles.1"
+    },
+    "item.gregtech.seed_oil": {
+      "old": "Seed Oil",
+      "new": "种子油",
+      "source": "gt.multiitem.bottles.1003"
+    },
+    "item.gregtech.seed_pouch": {
+      "old": "Seed Pouch",
+      "new": "种子袋",
+      "source": "gt.multiitem.randomtools.13001"
+    },
+    "item.gregtech.sheep_horn": {
+      "old": "Sheep Horn",
+      "new": "羊角",
+      "source": "gt.multiitem.food.12602"
+    },
+    "item.gregtech.shiny_lighter": {
+      "old": "Shiny Lighter",
+      "new": "铂打火机",
+      "source": "gt.multiitem.randomtools.5008"
+    },
+    "item.gregtech.shiny_lighter_empty": {
+      "old": "Shiny Lighter (Empty)",
+      "new": "铂打火机(空)",
+      "source": "gt.multiitem.randomtools.5007"
+    },
+    "item.gregtech.shiny_lighter_full": {
+      "old": "Shiny Lighter (Full)",
+      "new": "铂打火机(满)",
+      "source": "gt.multiitem.randomtools.5009"
+    },
+    "item.gregtech.short_mead": {
+      "old": "Short Mead",
+      "new": "蜂蜜酒",
+      "source": "gt.multiitem.bottles.1304"
+    },
+    "item.gregtech.shroomy_comb": {
+      "old": "Shroomy Comb",
+      "new": "真菌蜂巢",
+      "source": "gt.multiitem.food.30008"
+    },
+    "item.gregtech.shutter_cover": {
+      "old": "闸门覆盖板",
+      "new": "管道封闭覆盖板",
+      "source": "gt.multiitem.technological.1026"
+    },
+    "item.gregtech.silver_key": {
+      "old": "Silver Key",
+      "new": "银钥匙",
+      "source": "gt.multiitem.randomtools.30006"
+    },
+    "item.gregtech.single_use_blade": {
+      "old": "Single Use Blade",
+      "new": "一次性刀",
+      "source": "gt.multiitem.randomtools.8507"
+    },
+    "item.gregtech.single_use_chisel": {
+      "old": "Single Use Chisel",
+      "new": "一次性凿子",
+      "source": "gt.multiitem.randomtools.8505"
+    },
+    "item.gregtech.single_use_cutter": {
+      "old": "Single Use Cutter",
+      "new": "一次性剪线钳",
+      "source": "gt.multiitem.randomtools.8504"
+    },
+    "item.gregtech.single_use_drill": {
+      "old": "Single Use Drill",
+      "new": "一次性钻头",
+      "source": "gt.multiitem.randomtools.8508"
+    },
+    "item.gregtech.single_use_file": {
+      "old": "Single Use File",
+      "new": "一次性锉刀",
+      "source": "gt.multiitem.randomtools.8509"
+    },
+    "item.gregtech.single_use_hammer": {
+      "old": "Single Use Hammer",
+      "new": "一次性锤子",
+      "source": "gt.multiitem.randomtools.8503"
+    },
+    "item.gregtech.single_use_rubber_hammer": {
+      "old": "Single Use Rubber Hammer",
+      "new": "一次性软锤",
+      "source": "gt.multiitem.randomtools.8506"
+    },
+    "item.gregtech.single_use_saw": {
+      "old": "Single Use Saw",
+      "new": "一次性锯",
+      "source": "gt.multiitem.randomtools.8502"
+    },
+    "item.gregtech.single_use_screwdriver": {
+      "old": "Single Use Screwdriver",
+      "new": "一次性螺丝刀",
+      "source": "gt.multiitem.randomtools.8501"
+    },
+    "item.gregtech.single_use_wrench": {
+      "old": "Single Use Wrench",
+      "new": "一次性扳手",
+      "source": "gt.multiitem.randomtools.8500"
+    },
+    "item.gregtech.sliced_baguette": {
+      "old": "Sliced Baguette",
+      "new": "半根法式长棍",
+      "source": "gt.multiitem.food.7002"
+    },
+    "item.gregtech.sliced_bread": {
+      "old": "Sliced Bread",
+      "new": "半片面包",
+      "source": "gt.multiitem.food.6002"
+    },
+    "item.gregtech.sliced_bun": {
+      "old": "Sliced Bun",
+      "new": "半块小面包",
+      "source": "gt.multiitem.food.5002"
+    },
+    "item.gregtech.sliced_egg": {
+      "old": "Sliced Egg",
+      "new": "鸡蛋片",
+      "source": "gt.multiitem.food.1072"
+    },
+    "item.gregtech.slicer_shape_empty": {
+      "old": "切片机模板(空)",
+      "new": "切片器刀片框架",
+      "source": "gt.multiitem.technological.10900"
+    },
+    "item.gregtech.slicer_shape_flat": {
+      "old": "切片机模板(平整)",
+      "new": "切片器刀片 (扁平式)",
+      "source": "gt.multiitem.technological.10901"
+    },
+    "item.gregtech.slicer_shape_grid": {
+      "old": "切片机模板(网格)",
+      "new": "切片器刀片 (栅格式)",
+      "source": "gt.multiitem.technological.10902"
+    },
+    "item.gregtech.slicer_shape_quaters": {
+      "old": "切片机模板(四等分)",
+      "new": "切片器刀片 (四分之一)",
+      "source": "gt.multiitem.technological.10906"
+    },
+    "item.gregtech.slicer_shape_quaters_hollow": {
+      "old": "切片机模板(四等分)(空心)",
+      "new": "切片器刀片 (中空四分之一)",
+      "source": "gt.multiitem.technological.10907"
+    },
+    "item.gregtech.slicer_shape_split": {
+      "old": "切片机模板(对半)",
+      "new": "切片器刀片 (分割)",
+      "source": "gt.multiitem.technological.10905"
+    },
+    "item.gregtech.slimeball": {
+      "old": "Slimeball",
+      "new": "史莱姆球",
+      "source": "gt.multiitem.food.12099"
+    },
+    "item.gregtech.small_food_can_bread": {
+      "old": "Small Food Can (Bread)",
+      "new": "小食物罐头 (面包)",
+      "source": "gt.multiitem.cans.42"
+    },
+    "item.gregtech.small_food_can_chum": {
+      "old": "Small Food Can (Chum)",
+      "new": "小食物罐头 (基友肉)",
+      "source": "gt.multiitem.cans.72"
+    },
+    "item.gregtech.small_food_can_cookies": {
+      "old": "Small Food Can (Cookies)",
+      "new": "小食物罐头 (饼干)",
+      "source": "gt.multiitem.cans.82"
+    },
+    "item.gregtech.small_food_can_fish": {
+      "old": "Small Food Can (Fish)",
+      "new": "小食物罐头 (鱼)",
+      "source": "gt.multiitem.cans.62"
+    },
+    "item.gregtech.small_food_can_fruits": {
+      "old": "Small Food Can (Fruits)",
+      "new": "小食物罐头 (水果)",
+      "source": "gt.multiitem.cans.32"
+    },
+    "item.gregtech.small_food_can_meat": {
+      "old": "Small Food Can (Meat)",
+      "new": "小食物罐头 (肉)",
+      "source": "gt.multiitem.cans.52"
+    },
+    "item.gregtech.small_food_can_rotten": {
+      "old": "Small Food Can (Rotten)",
+      "new": "小食物罐头 (腐肉)",
+      "source": "gt.multiitem.cans.12"
+    },
+    "item.gregtech.small_food_can_unknown": {
+      "old": "Small Food Can (Unknown)",
+      "new": "小食物罐头 (未知)",
+      "source": "gt.multiitem.cans.2"
+    },
+    "item.gregtech.small_food_can_vegetables": {
+      "old": "Small Food Can (Vegetables)",
+      "new": "小食物罐头 (蔬菜)",
+      "source": "gt.multiitem.cans.22"
+    },
+    "item.gregtech.soda": {
+      "old": "Soda",
+      "new": "苏打水",
+      "source": "gt.multiitem.bottles.2"
+    },
+    "item.gregtech.soul_comb": {
+      "old": "Soul Comb",
+      "new": "灵魂蜂巢",
+      "source": "gt.multiitem.food.30103"
+    },
+    "item.gregtech.soy_milk": {
+      "old": "Soy Milk",
+      "new": "豆浆",
+      "source": "gt.multiitem.bottles.1200"
+    },
+    "item.gregtech.soylent_burger": {
+      "old": "Soylent Burger",
+      "new": "营养液汉堡",
+      "source": "gt.multiitem.food.5017"
+    },
+    "item.gregtech.spectral_dew": {
+      "old": "Spectral Dew",
+      "new": "光谱露",
+      "source": "gt.multiitem.bottles.8"
+    },
+    "item.gregtech.spumoni_chocolate_ice_cream": {
+      "old": "Spumoni Chocolate Ice Cream",
+      "new": "千层巧克力冰淇淋",
+      "source": "gt.multiitem.food.13996"
+    },
+    "item.gregtech.spumoni_vanilla_ice_cream": {
+      "old": "Spumoni Vanilla Ice Cream",
+      "new": "千层香草冰淇淋",
+      "source": "gt.multiitem.food.13997"
+    },
+    "item.gregtech.stagnant_water": {
+      "old": "Stagnant Water",
+      "new": "死水",
+      "source": "gt.multiitem.bottles.7"
+    },
+    "item.gregtech.starfruit_juice": {
+      "old": "Starfruit Juice",
+      "new": "杨桃汁",
+      "source": "gt.multiitem.bottles.5100"
+    },
+    "item.gregtech.starfruit_smoothie": {
+      "old": "Starfruit Smoothie",
+      "new": "杨桃冰沙",
+      "source": "gt.multiitem.bottles.5105"
+    },
+    "item.gregtech.steak_sandwich": {
+      "old": "Steak Sandwich",
+      "new": "牛排(steak)三明治",
+      "source": "gt.multiitem.food.6015"
+    },
+    "item.gregtech.sticky_comb": {
+      "old": "Sticky Comb",
+      "new": "粘性蜂巢",
+      "source": "gt.multiitem.food.30101"
+    },
+    "item.gregtech.sticky_goo": {
+      "old": "Sticky Goo",
+      "new": "黏糊面团",
+      "source": "gt.multiitem.food.12098"
+    },
+    "item.gregtech.stone_generator_module": {
+      "old": "Stone Generator Module",
+      "new": "刷石机模块",
+      "source": "gt.multiitem.randomtools.6000"
+    },
+    "item.gregtech.stracciatella_ice_cream": {
+      "old": "Stracciatella Ice Cream",
+      "new": "瑞士巧克力冰淇淋",
+      "source": "gt.multiitem.food.13001"
+    },
+    "item.gregtech.strawberry": {
+      "old": "Strawberry",
+      "new": "草莓",
+      "source": "gt.multiitem.food.200"
+    },
+    "item.gregtech.strawberry_ice_cream": {
+      "old": "Strawberry Ice Cream",
+      "new": "草莓冰淇淋",
+      "source": "gt.multiitem.food.13009"
+    },
+    "item.gregtech.strawberry_juice": {
+      "old": "Strawberry Juice",
+      "new": "草莓汁",
+      "source": "gt.multiitem.bottles.2000"
+    },
+    "item.gregtech.strawberry_smoothie": {
+      "old": "Strawberry Smoothie",
+      "new": "草莓冰沙",
+      "source": "gt.multiitem.bottles.2005"
+    },
+    "item.gregtech.sugary_chocolate_raisin_dough": {
+      "old": "Sugary Chocolate Raisin Dough",
+      "new": "加糖的巧克力葡萄干面团",
+      "source": "gt.multiitem.food.32005"
+    },
+    "item.gregtech.sugary_dough": {
+      "old": "Sugary Dough",
+      "new": "加糖的面团",
+      "source": "gt.multiitem.food.32001"
+    },
+    "item.gregtech.sugary_raisin_dough": {
+      "old": "Sugary Raisin Dough",
+      "new": "加糖的葡萄干面团",
+      "source": "gt.multiitem.food.32004"
+    },
+    "item.gregtech.sunflower_oil": {
+      "old": "Sunflower Oil",
+      "new": "葵花籽油",
+      "source": "gt.multiitem.bottles.1001"
+    },
+    "item.gregtech.superman_ice_cream": {
+      "old": "Superman Ice Cream",
+      "new": "超人冰淇淋",
+      "source": "gt.multiitem.food.13998"
+    },
+    "item.gregtech.swampwater": {
+      "old": "Swampwater",
+      "new": "沼泽污水",
+      "source": "gt.multiitem.bottles.6"
+    },
+    "item.gregtech.tachometer": {
+      "old": "Tachometer",
+      "new": "转速传感器",
+      "source": "gt.multiitem.randomtools.10004"
+    },
+    "item.gregtech.tall_food_can_bread": {
+      "old": "Tall Food Can (Bread)",
+      "new": "高食物罐头 (面包)",
+      "source": "gt.multiitem.cans.43"
+    },
+    "item.gregtech.tall_food_can_chum": {
+      "old": "Tall Food Can (Chum)",
+      "new": "高食物罐头 (基友肉)",
+      "source": "gt.multiitem.cans.73"
+    },
+    "item.gregtech.tall_food_can_cookies": {
+      "old": "Tall Food Can (Cookies)",
+      "new": "高食物罐头 (饼干)",
+      "source": "gt.multiitem.cans.83"
+    },
+    "item.gregtech.tall_food_can_fish": {
+      "old": "Tall Food Can (Fish)",
+      "new": "高食物罐头 (鱼)",
+      "source": "gt.multiitem.cans.63"
+    },
+    "item.gregtech.tall_food_can_fruits": {
+      "old": "Tall Food Can (Fruits)",
+      "new": "高食物罐头 (水果)",
+      "source": "gt.multiitem.cans.33"
+    },
+    "item.gregtech.tall_food_can_meat": {
+      "old": "Tall Food Can (Meat)",
+      "new": "高食物罐头 (肉)",
+      "source": "gt.multiitem.cans.53"
+    },
+    "item.gregtech.tall_food_can_rotten": {
+      "old": "Tall Food Can (Rotten)",
+      "new": "高食物罐头 (腐肉)",
+      "source": "gt.multiitem.cans.13"
+    },
+    "item.gregtech.tall_food_can_unknown": {
+      "old": "Tall Food Can (Unknown)",
+      "new": "高食物罐头 (未知)",
+      "source": "gt.multiitem.cans.3"
+    },
+    "item.gregtech.tall_food_can_vegetables": {
+      "old": "Tall Food Can (Vegetables)",
+      "new": "高食物罐头 (蔬菜)",
+      "source": "gt.multiitem.cans.23"
+    },
+    "item.gregtech.tape": {
+      "old": "Tape",
+      "new": "胶带",
+      "source": "gt.multiitem.randomtools.12000"
+    },
+    "item.gregtech.tape_2": {
+      "old": "Tape",
+      "new": "胶带",
+      "source": "gt.multiitem.randomtools.12000"
+    },
+    "item.gregtech.tar_bottle": {
+      "old": "Tar Bottle",
+      "new": "焦油瓶",
+      "source": "gt.multiitem.bottles.32762"
+    },
+    "item.gregtech.tera_comb": {
+      "old": "Tera Comb",
+      "new": "大地蜂巢",
+      "source": "gt.multiitem.food.30203"
+    },
+    "item.gregtech.there_is_no_cow_sauce": {
+      "old": "There is no Cow Sauce",
+      "new": "老干爹辣椒酱",
+      "source": "gt.multiitem.bottles.804"
+    },
+    "item.gregtech.tin_key": {
+      "old": "Tin Key",
+      "new": "锡钥匙",
+      "source": "gt.multiitem.randomtools.30003"
+    },
+    "item.gregtech.tiny_food_can_bread": {
+      "old": "Tiny Food Can (Bread)",
+      "new": "迷你食物罐头 (面包)",
+      "source": "gt.multiitem.cans.41"
+    },
+    "item.gregtech.tiny_food_can_chum": {
+      "old": "Tiny Food Can (Chum)",
+      "new": "迷你食物罐头 (基友肉)",
+      "source": "gt.multiitem.cans.71"
+    },
+    "item.gregtech.tiny_food_can_cookies": {
+      "old": "Tiny Food Can (Cookies)",
+      "new": "迷你食物罐头 (饼干)",
+      "source": "gt.multiitem.cans.81"
+    },
+    "item.gregtech.tiny_food_can_fish": {
+      "old": "Tiny Food Can (Fish)",
+      "new": "迷你食物罐头 (鱼)",
+      "source": "gt.multiitem.cans.61"
+    },
+    "item.gregtech.tiny_food_can_fruits": {
+      "old": "Tiny Food Can (Fruits)",
+      "new": "迷你食物罐头 (水果)",
+      "source": "gt.multiitem.cans.31"
+    },
+    "item.gregtech.tiny_food_can_meat": {
+      "old": "Tiny Food Can (Meat)",
+      "new": "迷你食物罐头 (肉)",
+      "source": "gt.multiitem.cans.51"
+    },
+    "item.gregtech.tiny_food_can_rotten": {
+      "old": "Tiny Food Can (Rotten)",
+      "new": "迷你食物罐头 (腐肉)",
+      "source": "gt.multiitem.cans.11"
+    },
+    "item.gregtech.tiny_food_can_unknown": {
+      "old": "Tiny Food Can (Unknown)",
+      "new": "迷你食物罐头 (未知)",
+      "source": "gt.multiitem.cans.1"
+    },
+    "item.gregtech.tiny_food_can_vegetables": {
+      "old": "Tiny Food Can (Vegetables)",
+      "new": "迷你食物罐头 (蔬菜)",
+      "source": "gt.multiitem.cans.21"
+    },
+    "item.gregtech.toast": {
+      "old": "Toast",
+      "new": "吐司",
+      "source": "gt.multiitem.food.14002"
+    },
+    "item.gregtech.toasted_toast": {
+      "old": "Toasted Toast",
+      "new": "烤吐司",
+      "source": "gt.multiitem.food.14003"
+    },
+    "item.gregtech.tofu_bar": {
+      "old": "Tofu Bar",
+      "new": "豆腐块",
+      "source": "gt.multiitem.food.32101"
+    },
+    "item.gregtech.tofu_burger": {
+      "old": "Tofu Burger",
+      "new": "豆腐汉堡",
+      "source": "gt.multiitem.food.5016"
+    },
+    "item.gregtech.tomato": {
+      "old": "Tomato",
+      "new": "番茄",
+      "source": "gt.multiitem.food.10"
+    },
+    "item.gregtech.tomato_juice": {
+      "old": "Tomato Juice",
+      "new": "番茄汁",
+      "source": "gt.multiitem.bottles.3100"
+    },
+    "item.gregtech.tomato_ketchup": {
+      "old": "Tomato Ketchup",
+      "new": "番茄酱",
+      "source": "gt.multiitem.bottles.3101"
+    },
+    "item.gregtech.tomato_slice": {
+      "old": "Tomato Slice",
+      "new": "番茄片",
+      "source": "gt.multiitem.food.11"
+    },
+    "item.gregtech.tusk": {
+      "old": "Tusk",
+      "new": "獠牙",
+      "source": "gt.multiitem.food.12400"
+    },
+    "item.gregtech.vanilla_ice_cream": {
+      "old": "Vanilla Ice Cream",
+      "new": "香草冰淇淋",
+      "source": "gt.multiitem.food.13003"
+    },
+    "item.gregtech.vegetable_remains": {
+      "old": "Vegetable Remains",
+      "new": "蔬菜废料",
+      "source": "gt.multiitem.food.12102"
+    },
+    "item.gregtech.veggie_burger": {
+      "old": "Veggie Burger",
+      "new": "无肉汉堡",
+      "source": "gt.multiitem.food.5010"
+    },
+    "item.gregtech.veggie_pizza": {
+      "old": "Veggie Pizza",
+      "new": "蔬菜披萨",
+      "source": "gt.multiitem.food.4015"
+    },
+    "item.gregtech.veggie_sandwich": {
+      "old": "Veggie Sandwich",
+      "new": "蔬菜三明治",
+      "source": "gt.multiitem.food.6010"
+    },
+    "item.gregtech.vodka": {
+      "old": "Vodka",
+      "new": "伏特加",
+      "source": "gt.multiitem.bottles.301"
+    },
+    "item.gregtech.warning_cover": {
+      "old": "警告覆盖板",
+      "new": "警告标志覆盖板",
+      "source": "gt.multiitem.technological.1028"
+    },
+    "item.gregtech.water_comb": {
+      "old": "Water Comb",
+      "new": "流水蜂巢",
+      "source": "gt.multiitem.food.30001"
+    },
+    "item.gregtech.whale_oil": {
+      "old": "Whale Oil",
+      "new": "鲸油",
+      "source": "gt.multiitem.bottles.1007"
+    },
+    "item.gregtech.wheaty_hops_mash": {
+      "old": "Wheaty Hops Mash",
+      "new": "加了小麦的啤酒花汁",
+      "source": "gt.multiitem.bottles.700"
+    },
+    "item.gregtech.wheaty_mash": {
+      "old": "Wheaty Mash",
+      "new": "小麦提取液",
+      "source": "gt.multiitem.bottles.600"
+    },
+    "item.gregtech.white_clay": {
+      "old": "White Clay",
+      "new": "白色粘土",
+      "source": "gt.multiitem.food.12314"
+    },
+    "item.gregtech.white_currants": {
+      "old": "White Currants",
+      "new": "白醋栗",
+      "source": "gt.multiitem.food.160"
+    },
+    "item.gregtech.white_grapes": {
+      "old": "White Grapes",
+      "new": "白葡萄",
+      "source": "gt.multiitem.food.63"
+    },
+    "item.gregtech.white_raisins": {
+      "old": "White Raisins",
+      "new": "白葡萄干",
+      "source": "gt.multiitem.food.64"
+    },
+    "item.gregtech.white_wine": {
+      "old": "White Wine",
+      "new": "葡萄酒",
+      "source": "gt.multiitem.bottles.101"
+    },
+    "item.gregtech.wide_food_can_bread": {
+      "old": "Wide Food Can (Bread)",
+      "new": "宽食物罐头 (面包)",
+      "source": "gt.multiitem.cans.44"
+    },
+    "item.gregtech.wide_food_can_chum": {
+      "old": "Wide Food Can (Chum)",
+      "new": "宽食物罐头 (基友肉)",
+      "source": "gt.multiitem.cans.74"
+    },
+    "item.gregtech.wide_food_can_cookies": {
+      "old": "Wide Food Can (Cookies)",
+      "new": "宽食物罐头 (饼干)",
+      "source": "gt.multiitem.cans.84"
+    },
+    "item.gregtech.wide_food_can_fish": {
+      "old": "Wide Food Can (Fish)",
+      "new": "宽食物罐头 (鱼)",
+      "source": "gt.multiitem.cans.64"
+    },
+    "item.gregtech.wide_food_can_fruits": {
+      "old": "Wide Food Can (Fruits)",
+      "new": "宽食物罐头 (水果)",
+      "source": "gt.multiitem.cans.34"
+    },
+    "item.gregtech.wide_food_can_meat": {
+      "old": "Wide Food Can (Meat)",
+      "new": "宽食物罐头 (肉)",
+      "source": "gt.multiitem.cans.54"
+    },
+    "item.gregtech.wide_food_can_rotten": {
+      "old": "Wide Food Can (Rotten)",
+      "new": "宽食物罐头 (腐肉)",
+      "source": "gt.multiitem.cans.14"
+    },
+    "item.gregtech.wide_food_can_unknown": {
+      "old": "Wide Food Can (Unknown)",
+      "new": "宽食物罐头 (未知)",
+      "source": "gt.multiitem.cans.4"
+    },
+    "item.gregtech.wide_food_can_vegetables": {
+      "old": "Wide Food Can (Vegetables)",
+      "new": "宽食物罐头 (蔬菜)",
+      "source": "gt.multiitem.cans.24"
+    },
+    "item.gregtech.wine": {
+      "old": "Wine",
+      "new": "葡萄酒",
+      "source": "gt.multiitem.bottles.111"
+    },
+    "item.gregtech.wood_pellet": {
+      "old": "Wood Pellet",
+      "new": "木颗粒",
+      "source": "gt.multiitem.randomtools.5999"
+    },
+    "item.gregtech.worldgen_debug_wand": {
+      "old": "Worldgen Debug Wand",
+      "new": "世界生成工具(调试用)",
+      "source": "gt.multiitem.randomtools.9999"
+    },
+    "item.gregtech.yellow_clay": {
+      "old": "Yellow Clay",
+      "new": "黄色粘土",
+      "source": "gt.multiitem.food.12312"
+    },
+    "item.gregtech.compact_electric_motor_ev": {
+      "old": "紧凑型电力马达(EV)",
+      "new": "微型电机 (EV)",
+      "source": "gt.multiitem.technological.12004"
+    },
+    "item.gregtech.compact_electric_motor_hv": {
+      "old": "紧凑型电力马达(HV)",
+      "new": "微型电机 (HV)",
+      "source": "gt.multiitem.technological.12003"
+    },
+    "item.gregtech.compact_electric_motor_iv": {
+      "old": "紧凑型电力马达(IV)",
+      "new": "微型电机 (IV)",
+      "source": "gt.multiitem.technological.12005"
+    },
+    "item.gregtech.compact_electric_motor_luv": {
+      "old": "紧凑型电力马达(LUV)",
+      "new": "微型电机 (LuV)",
+      "source": "gt.multiitem.technological.12006"
+    },
+    "item.gregtech.compact_electric_motor_lv": {
+      "old": "紧凑型电力马达(LV)",
+      "new": "微型电机 (LV)",
+      "source": "gt.multiitem.technological.12001"
+    },
+    "item.gregtech.compact_electric_motor_mv": {
+      "old": "紧凑型电力马达(MV)",
+      "new": "微型电机 (MV)",
+      "source": "gt.multiitem.technological.12002"
+    },
+    "item.gregtech.compact_electric_motor_puv1": {
+      "old": "紧凑型电力马达(PUV1)",
+      "new": "微型电机 (PUV1)",
+      "source": "gt.multiitem.technological.12009"
+    },
+    "item.gregtech.compact_electric_motor_ulv": {
+      "old": "紧凑型电力马达(ULV)",
+      "new": "微型电机 (ULV)",
+      "source": "gt.multiitem.technological.12000"
+    },
+    "item.gregtech.compact_electric_motor_uv": {
+      "old": "紧凑型电力马达(UV)",
+      "new": "微型电机 (UV)",
+      "source": "gt.multiitem.technological.12008"
+    },
+    "item.gregtech.compact_electric_motor_zpm": {
+      "old": "紧凑型电力马达(ZPM)",
+      "new": "微型电机 (ZPM)",
+      "source": "gt.multiitem.technological.12007"
+    },
+    "item.gregtech.compact_electric_piston_ev": {
+      "old": "紧凑型电力活塞(EV)",
+      "new": "电动活塞 (EV)",
+      "source": "gt.multiitem.technological.12064"
+    },
+    "item.gregtech.compact_electric_piston_hv": {
+      "old": "紧凑型电力活塞(HV)",
+      "new": "电动活塞 (HV)",
+      "source": "gt.multiitem.technological.12063"
+    },
+    "item.gregtech.compact_electric_piston_iv": {
+      "old": "紧凑型电力活塞(IV)",
+      "new": "电动活塞 (IV)",
+      "source": "gt.multiitem.technological.12065"
+    },
+    "item.gregtech.compact_electric_piston_luv": {
+      "old": "紧凑型电力活塞(LUV)",
+      "new": "电动活塞 (LuV)",
+      "source": "gt.multiitem.technological.12066"
+    },
+    "item.gregtech.compact_electric_piston_lv": {
+      "old": "紧凑型电力活塞(LV)",
+      "new": "电动活塞 (LV)",
+      "source": "gt.multiitem.technological.12061"
+    },
+    "item.gregtech.compact_electric_piston_mv": {
+      "old": "紧凑型电力活塞(MV)",
+      "new": "电动活塞 (MV)",
+      "source": "gt.multiitem.technological.12062"
+    },
+    "item.gregtech.compact_electric_piston_puv1": {
+      "old": "紧凑型电力活塞(PUV1)",
+      "new": "电动活塞 (PUV1)",
+      "source": "gt.multiitem.technological.12069"
+    },
+    "item.gregtech.compact_electric_piston_ulv": {
+      "old": "紧凑型电力活塞(ULV)",
+      "new": "电动活塞 (ULV)",
+      "source": "gt.multiitem.technological.12060"
+    },
+    "item.gregtech.compact_electric_piston_uv": {
+      "old": "紧凑型电力活塞(UV)",
+      "new": "电动活塞 (UV)",
+      "source": "gt.multiitem.technological.12068"
+    },
+    "item.gregtech.compact_electric_piston_zpm": {
+      "old": "紧凑型电力活塞(ZPM)",
+      "new": "电动活塞 (ZPM)",
+      "source": "gt.multiitem.technological.12067"
+    },
+    "item.gregtech.compact_electric_pump_ev": {
+      "old": "紧凑型电力泵(EV)",
+      "new": "电动泵 (EV)",
+      "source": "gt.multiitem.technological.12024"
+    },
+    "item.gregtech.compact_electric_pump_hv": {
+      "old": "紧凑型电力泵(HV)",
+      "new": "电动泵 (HV)",
+      "source": "gt.multiitem.technological.12023"
+    },
+    "item.gregtech.compact_electric_pump_iv": {
+      "old": "紧凑型电力泵(IV)",
+      "new": "电动泵 (IV)",
+      "source": "gt.multiitem.technological.12025"
+    },
+    "item.gregtech.compact_electric_pump_luv": {
+      "old": "紧凑型电力泵(LUV)",
+      "new": "电动泵 (LuV)",
+      "source": "gt.multiitem.technological.12026"
+    },
+    "item.gregtech.compact_electric_pump_lv": {
+      "old": "紧凑型电力泵(LV)",
+      "new": "电动泵 (LV)",
+      "source": "gt.multiitem.technological.12021"
+    },
+    "item.gregtech.compact_electric_pump_mv": {
+      "old": "紧凑型电力泵(MV)",
+      "new": "电动泵 (MV)",
+      "source": "gt.multiitem.technological.12022"
+    },
+    "item.gregtech.compact_electric_pump_puv1": {
+      "old": "紧凑型电力泵(PUV1)",
+      "new": "电动泵 (PUV1)",
+      "source": "gt.multiitem.technological.12029"
+    },
+    "item.gregtech.compact_electric_pump_ulv": {
+      "old": "紧凑型电力泵(ULV)",
+      "new": "电动泵 (ULV)",
+      "source": "gt.multiitem.technological.12020"
+    },
+    "item.gregtech.compact_electric_pump_uv": {
+      "old": "紧凑型电力泵(UV)",
+      "new": "电动泵 (UV)",
+      "source": "gt.multiitem.technological.12028"
+    },
+    "item.gregtech.compact_electric_pump_zpm": {
+      "old": "紧凑型电力泵(ZPM)",
+      "new": "电动泵 (ZPM)",
+      "source": "gt.multiitem.technological.12027"
+    },
+    "item.gregtech.compact_force_field_emitter_ev": {
+      "old": "紧凑型力场力场发射器(EV)",
+      "new": "力场发生器 (EV)",
+      "source": "gt.multiitem.technological.12104"
+    },
+    "item.gregtech.compact_force_field_emitter_hv": {
+      "old": "紧凑型力场力场发射器(HV)",
+      "new": "力场发生器 (HV)",
+      "source": "gt.multiitem.technological.12103"
+    },
+    "item.gregtech.compact_force_field_emitter_iv": {
+      "old": "紧凑型力场力场发射器(IV)",
+      "new": "力场发生器 (IV)",
+      "source": "gt.multiitem.technological.12105"
+    },
+    "item.gregtech.compact_force_field_emitter_luv": {
+      "old": "紧凑型力场力场发射器(LUV)",
+      "new": "力场发生器 (LuV)",
+      "source": "gt.multiitem.technological.12106"
+    },
+    "item.gregtech.compact_force_field_emitter_lv": {
+      "old": "紧凑型力场力场发射器(LV)",
+      "new": "力场发生器 (LV)",
+      "source": "gt.multiitem.technological.12101"
+    },
+    "item.gregtech.compact_force_field_emitter_mv": {
+      "old": "紧凑型力场力场发射器(MV)",
+      "new": "力场发生器 (MV)",
+      "source": "gt.multiitem.technological.12102"
+    },
+    "item.gregtech.compact_force_field_emitter_puv1": {
+      "old": "紧凑型力场力场发射器(PUV1)",
+      "new": "力场发生器 (PUV1)",
+      "source": "gt.multiitem.technological.12109"
+    },
+    "item.gregtech.compact_force_field_emitter_ulv": {
+      "old": "紧凑型力场力场发射器(ULV)",
+      "new": "力场发生器 (ULV)",
+      "source": "gt.multiitem.technological.12100"
+    },
+    "item.gregtech.compact_force_field_emitter_uv": {
+      "old": "紧凑型力场力场发射器(UV)",
+      "new": "力场发生器 (UV)",
+      "source": "gt.multiitem.technological.12108"
+    },
+    "item.gregtech.compact_force_field_emitter_zpm": {
+      "old": "紧凑型力场力场发射器(ZPM)",
+      "new": "力场发生器 (ZPM)",
+      "source": "gt.multiitem.technological.12107"
+    },
+    "item.gregtech.compact_robot_arm_ev": {
+      "old": "紧凑型机械臂(EV)",
+      "new": "机械臂 (EV)",
+      "source": "gt.multiitem.technological.12084"
+    },
+    "item.gregtech.compact_robot_arm_hv": {
+      "old": "紧凑型机械臂(HV)",
+      "new": "机械臂 (HV)",
+      "source": "gt.multiitem.technological.12083"
+    },
+    "item.gregtech.compact_robot_arm_iv": {
+      "old": "紧凑型机械臂(IV)",
+      "new": "机械臂 (IV)",
+      "source": "gt.multiitem.technological.12085"
+    },
+    "item.gregtech.compact_robot_arm_luv": {
+      "old": "紧凑型机械臂(LUV)",
+      "new": "机械臂 (LuV)",
+      "source": "gt.multiitem.technological.12086"
+    },
+    "item.gregtech.compact_robot_arm_lv": {
+      "old": "紧凑型机械臂(LV)",
+      "new": "机械臂 (LV)",
+      "source": "gt.multiitem.technological.12081"
+    },
+    "item.gregtech.compact_robot_arm_mv": {
+      "old": "紧凑型机械臂(MV)",
+      "new": "机械臂 (MV)",
+      "source": "gt.multiitem.technological.12082"
+    },
+    "item.gregtech.compact_robot_arm_puv1": {
+      "old": "紧凑型机械臂(PUV1)",
+      "new": "机械臂 (PUV1)",
+      "source": "gt.multiitem.technological.12089"
+    },
+    "item.gregtech.compact_robot_arm_ulv": {
+      "old": "紧凑型机械臂(ULV)",
+      "new": "机械臂 (ULV)",
+      "source": "gt.multiitem.technological.12080"
+    },
+    "item.gregtech.compact_robot_arm_uv": {
+      "old": "紧凑型机械臂(UV)",
+      "new": "机械臂 (UV)",
+      "source": "gt.multiitem.technological.12088"
+    },
+    "item.gregtech.compact_robot_arm_zpm": {
+      "old": "紧凑型机械臂(ZPM)",
+      "new": "机械臂 (ZPM)",
+      "source": "gt.multiitem.technological.12087"
+    },
+    "item.gregtech.compact_sensor_ev": {
+      "old": "紧凑型传感器(EV)",
+      "new": "传感器 (EV)",
+      "source": "gt.multiitem.technological.12144"
+    },
+    "item.gregtech.compact_sensor_hv": {
+      "old": "紧凑型传感器(HV)",
+      "new": "传感器 (HV)",
+      "source": "gt.multiitem.technological.12143"
+    },
+    "item.gregtech.compact_sensor_iv": {
+      "old": "紧凑型传感器(IV)",
+      "new": "传感器 (IV)",
+      "source": "gt.multiitem.technological.12145"
+    },
+    "item.gregtech.compact_sensor_luv": {
+      "old": "紧凑型传感器(LUV)",
+      "new": "传感器 (LuV)",
+      "source": "gt.multiitem.technological.12146"
+    },
+    "item.gregtech.compact_sensor_lv": {
+      "old": "紧凑型传感器(LV)",
+      "new": "传感器 (LV)",
+      "source": "gt.multiitem.technological.12141"
+    },
+    "item.gregtech.compact_sensor_mv": {
+      "old": "紧凑型传感器(MV)",
+      "new": "传感器 (MV)",
+      "source": "gt.multiitem.technological.12142"
+    },
+    "item.gregtech.compact_sensor_puv1": {
+      "old": "紧凑型传感器(PUV1)",
+      "new": "传感器 (PUV1)",
+      "source": "gt.multiitem.technological.12149"
+    },
+    "item.gregtech.compact_sensor_ulv": {
+      "old": "紧凑型传感器(ULV)",
+      "new": "传感器 (ULV)",
+      "source": "gt.multiitem.technological.12140"
+    },
+    "item.gregtech.compact_sensor_uv": {
+      "old": "紧凑型传感器(UV)",
+      "new": "传感器 (UV)",
+      "source": "gt.multiitem.technological.12148"
+    },
+    "item.gregtech.compact_sensor_zpm": {
+      "old": "紧凑型传感器(ZPM)",
+      "new": "传感器 (ZPM)",
+      "source": "gt.multiitem.technological.12147"
+    },
+    "item.gregtech.compact_signal_emitter_ev": {
+      "old": "紧凑型信号发射器(EV)",
+      "new": "信号发射器 (EV)",
+      "source": "gt.multiitem.technological.12124"
+    },
+    "item.gregtech.compact_signal_emitter_hv": {
+      "old": "紧凑型信号发射器(HV)",
+      "new": "信号发射器 (HV)",
+      "source": "gt.multiitem.technological.12123"
+    },
+    "item.gregtech.compact_signal_emitter_iv": {
+      "old": "紧凑型信号发射器(IV)",
+      "new": "信号发射器 (IV)",
+      "source": "gt.multiitem.technological.12125"
+    },
+    "item.gregtech.compact_signal_emitter_luv": {
+      "old": "紧凑型信号发射器(LUV)",
+      "new": "信号发射器 (LuV)",
+      "source": "gt.multiitem.technological.12126"
+    },
+    "item.gregtech.compact_signal_emitter_lv": {
+      "old": "紧凑型信号发射器(LV)",
+      "new": "信号发射器 (LV)",
+      "source": "gt.multiitem.technological.12121"
+    },
+    "item.gregtech.compact_signal_emitter_mv": {
+      "old": "紧凑型信号发射器(MV)",
+      "new": "信号发射器 (MV)",
+      "source": "gt.multiitem.technological.12122"
+    },
+    "item.gregtech.compact_signal_emitter_puv1": {
+      "old": "紧凑型信号发射器(PUV1)",
+      "new": "信号发射器 (PUV1)",
+      "source": "gt.multiitem.technological.12129"
+    },
+    "item.gregtech.compact_signal_emitter_ulv": {
+      "old": "紧凑型信号发射器(ULV)",
+      "new": "信号发射器 (ULV)",
+      "source": "gt.multiitem.technological.12120"
+    },
+    "item.gregtech.compact_signal_emitter_uv": {
+      "old": "紧凑型信号发射器(UV)",
+      "new": "信号发射器 (UV)",
+      "source": "gt.multiitem.technological.12128"
+    },
+    "item.gregtech.compact_signal_emitter_zpm": {
+      "old": "紧凑型信号发射器(ZPM)",
+      "new": "信号发射器 (ZPM)",
+      "source": "gt.multiitem.technological.12127"
+    },
+    "block.gregtech.boomstick": {
+      "old": "爆竹",
+      "new": "火药棒",
+      "source": "gt.multitileentity.32104"
+    },
+    "block.gregtech.rope_silk": {
+      "old": "丝绳",
+      "new": "丝带",
+      "source": "gt.multitileentity.32012"
+    },
+    "block.gregtech.strong_dynamite": {
+      "old": "强力炸药",
+      "new": "强化矿用雷管",
+      "source": "gt.multitileentity.32712"
+    },
+    "item.gregtech.dusty_guide_book": {
+      "old": "布满灰尘的指南书",
+      "new": "落灰的指导书",
+      "source": "gt.multiitem.books.32765"
+    },
+    "item.gregtech.dusty_material_dictionary": {
+      "old": "沾满灰尘的材料词典",
+      "new": "落灰的材料词典",
+      "source": "gt.multiitem.books.32766"
+    }
+  },
+  "ambiguous": {}
+}

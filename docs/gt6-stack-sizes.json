@@ -1,0 +1,2047 @@
+{
+  "categories": {
+    "Axles and Gearboxes": {
+      "16": 3
+    },
+    "Batteries": {
+      "16": 4
+    },
+    "C-Foam": {
+      "64": 1
+    },
+    "Chests": {
+      "16": 1
+    },
+    "Coins": {
+      "64": 1
+    },
+    "Computing": {
+      "16": 2
+    },
+    "Electric Wires": {
+      "64": 60,
+      "32": 60,
+      "21": 30,
+      "16": 60,
+      "12": 30,
+      "10": 30,
+      "9": 30,
+      "8": 60,
+      "7": 30,
+      "6": 30,
+      "5": 60,
+      "4": 150
+    },
+    "Fluid Containers": {
+      "16": 46
+    },
+    "Logistics": {
+      "16": 2
+    },
+    "Long Distance Transport": {
+      "16": 2
+    },
+    "Magical Energy Production": {
+      "16": 1
+    },
+    "Misc Tool Blocks": {
+      "16": 22,
+      "64": 29
+    },
+    "Multiblock Machines": {
+      "16": 72
+    },
+    "Panels": {
+      "16": 6
+    },
+    "Portable Power Cells": {
+      "16": 2
+    },
+    "Portals": {
+      "16": 19
+    },
+    "Reactors": {
+      "16": 49
+    },
+    "Ropes": {
+      "64": 6
+    },
+    "Sensors": {
+      "16": 20
+    },
+    "Storage": {
+      "16": 19
+    },
+    "Untyped": {
+      "64": 15,
+      "1": 3
+    },
+    "ZPM": {
+      "16": 2
+    }
+  },
+  "rows": [
+    {
+      "kind": "block",
+      "name": "Mossy Stone Chest",
+      "category": "Chests",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Storage Inserter",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Item Barrel (Cheap)",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Item Barrel (Cheap)",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Item Barrel (Cheap)",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Item Barrel (Cheap)",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Skyroot Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Weedwood Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Livingwood Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Dreamwood Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Shimmerwood Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ironwood Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Greatwood Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Silverwood Item Barrel",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Storage Box (1024)",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Storage Box (512)",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Storage Box (256)",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Storage Box (128)",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Bottlecrate",
+      "category": "Storage",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Nuclear Reactor Core (1x1)",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Nuclear Reactor Core (1x1)",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Nuclear Reactor Core (2x2)",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Empty Reactor Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Neutron Absorber Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Neutron Reflector Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Neutron Moderator Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Thorium-232 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Cyanite Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Uranium-238 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Uranium-235 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Uranium-233 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Yellorium Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plutonium-244 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plutonium-241 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plutonium-243 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plutonium-239 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Blutonium Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Americium-245 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Americium-241 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ludicrite Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Cobalt-60 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Enriched Naquadah Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Naquadria Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Thorium-232 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Cyanite Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Uranium-238 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Uranium-235 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Uranium-233 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Yellorium Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Plutonium-244 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Plutonium-241 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Plutonium-243 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Plutonium-239 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Blutonium Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Americium-245 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Americium-241 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Ludicrite Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Cobalt-60 Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Enriched Naquadah Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Depleted Naquadria Fuel Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Thorium-232 Breeder Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Uranium-238 Breeder Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Lithium Breeder Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Naquadah Breeder Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Uranium-233 Enriched Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plutonium-239 Enriched Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tritium Enriched Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Enriched Naquadah Enriched Rod",
+      "category": "Reactors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Long Distance Item Pipeline Endpoint",
+      "category": "Long Distance Transport",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Long Distance Fluid Pipeline Endpoint",
+      "category": "Long Distance Transport",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "ZPM Decharger (Quantum)",
+      "category": "ZPM",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "ZPM Decharger (Electric)",
+      "category": "ZPM",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Magic Field Absorber",
+      "category": "Magical Energy Production",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Red Energium Crystal (T4)",
+      "category": "Batteries",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Red Energium Crystal (T5)",
+      "category": "Batteries",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Cyan Energium Crystal (T4)",
+      "category": "Batteries",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Cyan Energium Crystal (T5)",
+      "category": "Batteries",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Aneutronic Fusion Power Cell (Empty)",
+      "category": "Portable Power Cells",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Aneutronic Fusion Power Cell (Helium-3)",
+      "category": "Portable Power Cells",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "USB Switch",
+      "category": "Computing",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "HDD Switch",
+      "category": "Computing",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Coke Oven",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wood Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Stainless Steel Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Invar Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Titanium Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Tungstensteel Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Tungsten Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Adamantium Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Dense Stainless Steel Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Dense Invar Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Dense Titanium Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Dense Tungstensteel Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Dense Tungsten Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Small Dense Adamantium Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Stainless Steel Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Invar Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Titanium Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Tungstensteel Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Tungsten Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Adamantium Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Dense Stainless Steel Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Dense Invar Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Dense Titanium Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Dense Tungstensteel Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Dense Tungsten Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Dense Adamantium Tank Main Valve",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Distillation Tower",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Cryo Distillation Tower",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Implosion Compressor",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Centrifuge",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Electrolyzer",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Coagulator Array",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Autoclave",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Bathing Vat",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Batch Mixer",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Fermenter",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Electric Oven",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Sluice",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Crusher",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Shredder",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Squeezer",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Matter Fabricator",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Fusion Reactor",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Heat Exchanger",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Steel Boiler Main Barometer",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Invar Boiler Main Barometer",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Titanium Boiler Main Barometer",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tungstensteel Boiler Main Barometer",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Adamantium Boiler Main Barometer",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Magnalium Steam Turbine Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Trinitanium Steam Turbine Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Graphene Steam Turbine Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Vibramantium Steam Turbine Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Steel Dynamo Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Titanium Dynamo Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tungstensteel Dynamo Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Adamantium Dynamo Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Magnalium Gas Turbine Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Trinitanium Gas Turbine Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Graphene Gas Turbine Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Vibramantium Gas Turbine Main Housing",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Steel Crucible",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Stainless Steel Crucible",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Invar Crucible",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Titanium Crucible",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Tungstensteel Crucible",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Tungsten Crucible",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Tantalum Hafnium Carbide Crucible",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Large Adamantium Crucible",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Von da Graagg Generator",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Logistics Core",
+      "category": "Logistics",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Lightning Rod Electric Output",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Bedrock Mining Drill Controller",
+      "category": "Multiblock Machines",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Rotation Engine",
+      "category": "Axles and Gearboxes",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Transformer Gearbox",
+      "category": "Axles and Gearboxes",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Custom Wooden Gearbox",
+      "category": "Axles and Gearboxes",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Thermometer Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Luminometer Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Chronometer Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Gibbl-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Item-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Stack-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Fluid-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Bucket-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Kilo-Bucket-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Light Weight-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Medium Weight-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Heavy Weight-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Super Heavy Weight-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "TPS Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Player Counter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Progress Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Geiger Counter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Electrometer Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tachometer Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Laser-O-Meter Sensor",
+      "category": "Sensors",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Nether Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature End Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Twilight Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Erebus Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Atum Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Betweenlands Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Aether Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Enviromine Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Mining Dimension Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Caveworld Dimension Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Cavern Dimension Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Aqua Cavern Dimension Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Caveland Dimension Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Cavenia Dimension Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Alfheim Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Tropics Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Candy Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Deep Dark Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Miniature Last Millenium Portal",
+      "category": "Portals",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "C-Foam Block",
+      "category": "C-Foam",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Loot Crate",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Supporter Certificate",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Fluid Spring",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Rubber Resin Hole",
+      "category": "Untyped",
+      "stack": 1
+    },
+    {
+      "kind": "block",
+      "name": "Tapped Maple",
+      "category": "Untyped",
+      "stack": 1
+    },
+    {
+      "kind": "block",
+      "name": "Tapped Rainbowood",
+      "category": "Untyped",
+      "stack": 1
+    },
+    {
+      "kind": "block",
+      "name": "Berry Bush",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Greg o'Lantern",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Sandwich",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Rock",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Rock",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Stick",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Stick",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Ingots",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Plates",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Gem Plates",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Scrap",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Bumble Hive",
+      "category": "Untyped",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Concrete Panel",
+      "category": "Panels",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "C-Foam Panel",
+      "category": "Panels",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Asphalt Panel",
+      "category": "Panels",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Panel",
+      "category": "Panels",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Panel",
+      "category": "Panels",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Panel",
+      "category": "Panels",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Rope",
+      "category": "Ropes",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Silk Rope",
+      "category": "Ropes",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Grass Rope",
+      "category": "Ropes",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Vine Rope",
+      "category": "Ropes",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Rope",
+      "category": "Ropes",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Steel Rope",
+      "category": "Ropes",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Porcelain Cup",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ceramic Jug",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ceramic Measuring Pot",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Measuring Pot",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tungsten Measuring Pot",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tantalum Hafnium Carbide Measuring Pot",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Thermos Can",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Steel Barometer Gas Cylinder",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Barometer Gas Cylinder",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tungsten Barometer Gas Cylinder",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tantalum Hafnium Carbide Barometer Gas Cylinder",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Hand Crank",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ceramic Tap",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Tap",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Tap",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Tungsten Tap",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Tantalum Hafnium Carbide Tap",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Adamantium Tap",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Ceramic Funnel",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Funnel",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Funnel",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Tungsten Funnel",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Tantalum Hafnium Carbide Funnel",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Adamantium Funnel",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Steel Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Tungsten Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Tantalum Hafnium Carbide Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Adamantium Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Cap Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Steel Cap Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Cap Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Tungsten Cap Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Tantalum Hafnium Carbide Cap Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Adamantium Cap Nozzle",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Barrel (Cheap)",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Barrel (Cheap)",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Barrel (Cheap)",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Barrel (Cheap)",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Rainbowood Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Skyroot Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Weedwood Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Livingwood Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Dreamwood Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Shimmerwood Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ironwood Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Greatwood Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Silverwood Barrel",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Plastic Canister",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Bronze Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Invar Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Stainless Steel Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Desh Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Syrmorite Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Efrine Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Thaumium Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Manasteel Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tungsten Alloy Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Titanium Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Netherite Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tungstensteel Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tungsten Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Tantalum Hafnium Carbide Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Voidmetal Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Gaia Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Adamantium Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Draconium Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Awakened Draconium Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Infinity Drum",
+      "category": "Fluid Containers",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Logistics Tank",
+      "category": "Logistics",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Bathing Pot",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Wooden Bathing Pot Table",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Bathing Pot",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Bathing Pot Table",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ceramic Bowl",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ceramic Bowl Table",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Mortar",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Mortar",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Mortar",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Mortar",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Mortar",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Juicer",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Resin/Sap Bag",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Bumbliary",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Advanced Bumbliary",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Dust Funnel",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Grindstone",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Sifting Table",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Universal Plant Pot",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ender Garbage Dump",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Ender Garbage Bin",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Advanced Button",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Boomstick",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Dynamite",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Strong Dynamite",
+      "category": "Misc Tool Blocks",
+      "stack": 64
+    },
+    {
+      "kind": "block",
+      "name": "Coinage Mold",
+      "category": "Misc Tool Blocks",
+      "stack": 16
+    },
+    {
+      "kind": "block",
+      "name": "Coin",
+      "category": "Coins",
+      "stack": 64
+    }
+  ]
+}

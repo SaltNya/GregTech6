@@ -1,0 +1,6 @@
+{
+  "tool": "extract_bush_colours",
+  "error": null,
+  "output": "GT6 BushesGT.put rows: 8\n// name, bush, bloom, immature, berry\n        entry(\"blueberry\", 0x22ff22, 0xffcccc, 0x6666dd, 0x0000ff),\n        entry(\"candleberry\", 0x44ff44, 0xccffcc, 0xaaffaa, 0xccffcc),\n        entry(\"cranberry\", 0x00dd00, 0xffcccc, 0x66ff66, 0xff0000),\n        entry(\"black_currants\", 0x33ff33, 0xaaaaaa, 0x66ff66, 0x111111),\n        entry(\"white_currants\", 0x33ff33, 0xaaaaaa, 0x66ff66, 0xeeeedd),\n        entry(\"red_currants\", 0x33ff33, 0xaaaaaa, 0x66ff66, 0xee0000),\n        entry(\"blackberry\", 0x11ff11, 0xffcccc, 0x663333, 0x331111),\n        entry(\"raspberry\", 0x11ff11, 0xffcccc, 0x664444, 0xffaaaa),\n",
+  "builtSourceEqualsOriginal": true
+}

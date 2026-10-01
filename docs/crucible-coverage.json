@@ -1,0 +1,18 @@
+{
+  "chain": [
+    "Iron melting 1811 K → Iron",
+    "PigIron melting 2011 K → WroughtIron",
+    "WroughtIron melting 2011 K → WroughtIron",
+    "Steel melting 2046 K → Steel",
+    "Copper melting 1357 K → Copper",
+    "AnnealedCopper melting 2800 K → AnnealedCopper",
+    "Bauxite melting 2800 K → Bauxite",
+    "Ilmenite melting 782 K → Ilmenite",
+    "Hematite melting 1207 K → Hematite",
+    "Magnetite melting 1811 K → Magnetite"
+  ],
+  "crucibleAlloyingRecipes": 159,
+  "crucibleSmeltingRecipes": 1911,
+  "furnaceRecipes": 2548,
+  "specialValueLabel": "Temperature: %s K"
+}

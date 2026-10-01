@@ -1,0 +1,16 @@
+{
+  "source": "brokestar233",
+  "ref": "3118acbf83a84d05fa37d57af1705cf00e423ca9",
+  "commit": "3118acbf83a84d05fa37d57af1705cf00e423ca9",
+  "manifest_sha256": "a609e32f240426ba08c47fd6c5fde2d33bf25fba59b3e9b37043654cae96feed",
+  "git_tracked_blobs": 220275,
+  "matching_blobs": 220275,
+  "changed_from_git": [],
+  "missing_from_snapshot": [],
+  "snapshot_only": [],
+  "gitlinks": {
+    "third-party/modularui": "ec524db7a5724f8cf3c837436b1ae742c778c62f"
+  },
+  "status": "exact-tracked-file-match",
+  "scope": "Git blob byte comparison; extra snapshot files and submodule contents are reported separately"
+}

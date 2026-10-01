@@ -1,0 +1,17 @@
+{
+  "source": "gregtech/loaders/b/Loader_MultiTileEntities.java:1819",
+  "entries": [
+    {
+      "machine": "Logistics Wire",
+      "registryId": "24901",
+      "tier": "MT.NULL",
+      "pattern": ["PEP", "dFx", "POP"],
+      "keys": {
+        "F": "aRegistry.getItem(24900)",
+        "O": "OP.wireFine.dat(MT.Os)",
+        "P": "OP.foil.dat(ANY.Plastic)",
+        "E": "OP.gem.dat(ANY.Emerald)"
+      }
+    }
+  ]
+}

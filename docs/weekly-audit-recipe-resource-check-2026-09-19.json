@@ -1,0 +1,14 @@
+{
+  "components": {
+    "recipes": 84,
+    "modelFilesChecked": 82,
+    "modelIssues": [],
+    "unexpectedMirror": []
+  },
+  "extruder_shapes": {
+    "recipes": 78,
+    "modelFilesChecked": 78,
+    "modelIssues": [],
+    "unexpectedMirror": []
+  }
+}

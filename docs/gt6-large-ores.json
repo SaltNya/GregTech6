@@ -1,0 +1,1294 @@
+{
+  "registrations": [
+    {
+      "name": "lignite",
+      "default": "T",
+      "indicator": "T",
+      "minY": "50",
+      "maxY": "130",
+      "weight": "160",
+      "count": "8",
+      "size": "32",
+      "materials": [
+        "MT.Lignite",
+        "MT.Lignite",
+        "MT.Lignite",
+        "MT.Coal"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "coal",
+      "default": "T",
+      "indicator": "T",
+      "minY": "50",
+      "maxY": "80",
+      "weight": "80",
+      "count": "6",
+      "size": "32",
+      "materials": [
+        "MT.Coal",
+        "MT.Coal",
+        "MT.Coal",
+        "MT.Lignite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "apatite",
+      "default": "T",
+      "indicator": "T",
+      "minY": "40",
+      "maxY": "60",
+      "weight": "60",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.Apatite",
+        "MT.Apatite",
+        "MT.PhosphorusBlue",
+        "MT.PO4"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "lapis",
+      "default": "T",
+      "indicator": "T",
+      "minY": "20",
+      "maxY": "50",
+      "weight": "40",
+      "count": "5",
+      "size": "16",
+      "materials": [
+        "MT.Lazurite",
+        "MT.Sodalite",
+        "MT.Lapis",
+        "MT.Azurite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "bauxite",
+      "default": "T",
+      "indicator": "T",
+      "minY": "50",
+      "maxY": "90",
+      "weight": "80",
+      "count": "4",
+      "size": "24",
+      "materials": [
+        "MT.OREMATS.Bauxite",
+        "MT.OREMATS.Bauxite",
+        "MT.OREMATS.Bauxite",
+        "MT.OREMATS.Ilmenite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "iodinesalt",
+      "default": "T",
+      "indicator": "T",
+      "minY": "50",
+      "maxY": "60",
+      "weight": "30",
+      "count": "3",
+      "size": "24",
+      "materials": [
+        "MT.KIO3",
+        "MT.NaCl",
+        "MT.OREMATS.Borax",
+        "MT.OREMATS.Zeolite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "rocksalt",
+      "default": "T",
+      "indicator": "T",
+      "minY": "50",
+      "maxY": "60",
+      "weight": "30",
+      "count": "3",
+      "size": "24",
+      "materials": [
+        "MT.KCl",
+        "MT.OREMATS.Coltan",
+        "MT.OREMATS.Lepidolite",
+        "MT.OREMATS.Spodumene"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "asbestos",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "30",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Chromite",
+        "MT.Talc",
+        "MT.Gypsum",
+        "MT.Asbestos"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "sapphire",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "30",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.BlueSapphire",
+        "MT.OrangeSapphire",
+        "MT.YellowSapphire",
+        "MT.Ruby"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "sapphire2",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "30",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.GreenSapphire",
+        "MT.Ruby",
+        "MT.BlueSapphire",
+        "MT.PurpleSapphire"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "garnet",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "60",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.Almandine",
+        "MT.Pyrope",
+        "MT.Andradite",
+        "MT.Uvarovite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "pitchblende",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "40",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Pitchblende",
+        "MT.OREMATS.Pitchblende",
+        "MT.OREMATS.Uraninite",
+        "MT.OREMATS.Uraninite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "monazite",
+      "default": "T",
+      "indicator": "T",
+      "minY": "20",
+      "maxY": "40",
+      "weight": "30",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Bastnasite",
+        "MT.OREMATS.Bastnasite",
+        "MT.Monazite",
+        "MT.Nd"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "diamond",
+      "default": "T",
+      "indicator": "T",
+      "minY": "5",
+      "maxY": "20",
+      "weight": "40",
+      "count": "2",
+      "size": "16",
+      "materials": [
+        "MT.Graphite",
+        "MT.Graphite",
+        "MT.Diamond",
+        "MT.Graphite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "galena",
+      "default": "T",
+      "indicator": "T",
+      "minY": "30",
+      "maxY": "60",
+      "weight": "40",
+      "count": "5",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Galena",
+        "MT.OREMATS.Galena",
+        "MT.Ag",
+        "MT.Pb"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "quartz",
+      "default": "T",
+      "indicator": "T",
+      "minY": "40",
+      "maxY": "80",
+      "weight": "60",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.MilkyQuartz",
+        "MT.OREMATS.Barite",
+        "MT.CertusQuartz",
+        "MT.CertusQuartz"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ASTEROIDS",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_MOON",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "peridot",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "60",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Kyanite",
+        "MT.MgCO3",
+        "MT.Peridot",
+        "MT.OREMATS.Glauconite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_MOON",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "gold",
+      "default": "T",
+      "indicator": "T",
+      "minY": "20",
+      "maxY": "30",
+      "weight": "5",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.Pyrite",
+        "MT.OREMATS.Chalcopyrite",
+        "MT.OREMATS.Arsenopyrite",
+        "MT.Au"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ASTEROIDS",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "platinum",
+      "default": "T",
+      "indicator": "T",
+      "minY": "40",
+      "maxY": "50",
+      "weight": "5",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Cooperite",
+        "MT.Pd",
+        "MT.OREMATS.Sperrylite",
+        "MT.Ir"
+      ],
+      "dims": [
+        "GEN_OVERWORLD",
+        "GEN_END"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ASTEROIDS",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_END",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "molybdenum",
+      "default": "T",
+      "indicator": "T",
+      "minY": "20",
+      "maxY": "50",
+      "weight": "5",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Wulfenite",
+        "MT.OREMATS.Molybdenite",
+        "MT.Mo",
+        "MT.OREMATS.Powellite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD",
+        "GEN_END"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_END",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "cassiterite",
+      "default": "T",
+      "indicator": "T",
+      "minY": "40",
+      "maxY": "90",
+      "weight": "170",
+      "count": "5",
+      "size": "24",
+      "materials": [
+        "MT.OREMATS.Stannite",
+        "MT.OREMATS.Kesterite",
+        "MT.OREMATS.Huebnerite",
+        "MT.OREMATS.Cassiterite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD",
+        "GEN_END"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_END",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "tungstate",
+      "default": "T",
+      "indicator": "T",
+      "minY": "20",
+      "maxY": "50",
+      "weight": "10",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Scheelite",
+        "MT.OREMATS.Russellite",
+        "MT.OREMATS.Tungstate",
+        "MT.OREMATS.Pinalite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ASTEROIDS",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "manganese",
+      "default": "T",
+      "indicator": "T",
+      "minY": "20",
+      "maxY": "30",
+      "weight": "20",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.Grossular",
+        "MT.Spessartine",
+        "MT.MnO2",
+        "MT.OREMATS.Coltan"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "beryllium",
+      "default": "T",
+      "indicator": "T",
+      "minY": "5",
+      "maxY": "30",
+      "weight": "15",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.Aquamarine",
+        "MT.Maxixe",
+        "MT.Emerald",
+        "MT.Th"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "beryllium2",
+      "default": "T",
+      "indicator": "T",
+      "minY": "5",
+      "maxY": "30",
+      "weight": "15",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.Bixbite",
+        "MT.Goshenite",
+        "MT.Heliodor",
+        "MT.Morganite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "titanium",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "40",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.TiO2",
+        "MT.TiO2",
+        "MT.Zircon",
+        "MT.OREMATS.Ilmenite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "nickel",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "40",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.Garnierite",
+        "MT.Ni",
+        "MT.OREMATS.Cobaltite",
+        "MT.OREMATS.Pentlandite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "redstone",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "60",
+      "count": "3",
+      "size": "24",
+      "materials": [
+        "MT.Redstone",
+        "MT.Redstone",
+        "MT.Ruby",
+        "MT.OREMATS.Cinnabar"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "tetrahedrite",
+      "default": "T",
+      "indicator": "T",
+      "minY": "70",
+      "maxY": "120",
+      "weight": "150",
+      "count": "4",
+      "size": "24",
+      "materials": [
+        "MT.OREMATS.Tetrahedrite",
+        "MT.OREMATS.Tetrahedrite",
+        "MT.Cu",
+        "MT.OREMATS.Stibnite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "iron",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "40",
+      "weight": "120",
+      "count": "4",
+      "size": "24",
+      "materials": [
+        "MT.OREMATS.BrownLimonite",
+        "MT.OREMATS.YellowLimonite",
+        "MT.Fe2O3",
+        "MT.OREMATS.Malachite"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "copper",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "30",
+      "weight": "80",
+      "count": "4",
+      "size": "24",
+      "materials": [
+        "MT.OREMATS.Chalcopyrite",
+        "MT.Fe2O3",
+        "MT.Pyrite",
+        "MT.Cu"
+      ],
+      "dims": [
+        "GEN_OVERWORLD"
+      ],
+      "oreSets": [
+        "ORE_A97",
+        "ORE_ATUM",
+        "ORE_BETWEENLANDS",
+        "ORE_CW2_AquaCavern",
+        "ORE_CW2_Caveland",
+        "ORE_CW2_Cavenia",
+        "ORE_CW2_Cavern",
+        "ORE_CW2_Caveworld",
+        "ORE_ENVM",
+        "ORE_EREBUS",
+        "ORE_MARS",
+        "ORE_OVERWORLD"
+      ]
+    },
+    {
+      "name": "adamantium",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "120",
+      "weight": "5",
+      "count": "2",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.BrownLimonite",
+        "MT.OREMATS.YellowLimonite",
+        "MT.Fe2O3",
+        "MT.Adamantine"
+      ],
+      "dims": [],
+      "oreSets": [
+        "ORE_MARS"
+      ]
+    },
+    {
+      "name": "naquadah",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "60",
+      "weight": "10",
+      "count": "4",
+      "size": "32",
+      "materials": [
+        "MT.Nq",
+        "MT.Nq",
+        "MT.Nq",
+        "MT.Nq"
+      ],
+      "dims": [
+        "GEN_END"
+      ],
+      "oreSets": [
+        "ORE_ASTEROIDS",
+        "ORE_END",
+        "ORE_MARS",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "trinium",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "90",
+      "weight": "100",
+      "count": "1",
+      "size": "12",
+      "materials": [
+        "MT.Ke",
+        "MT.Ke",
+        "MT.Ke",
+        "MT.Ke"
+      ],
+      "dims": [
+        "GEN_END"
+      ],
+      "oreSets": [
+        "ORE_ASTEROIDS",
+        "ORE_END",
+        "ORE_MARS",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "dolamide",
+      "default": "T",
+      "indicator": "T",
+      "minY": "5",
+      "maxY": "60",
+      "weight": "40",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.DuraniumHexaiodide",
+        "MT.OREMATS.DuraniumHexafluoride",
+        "MT.OREMATS.DuraniumHexachloride",
+        "MT.Dolamide"
+      ],
+      "dims": [],
+      "oreSets": [
+        "ORE_ASTEROIDS",
+        "ORE_MARS",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "moonmars",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "90",
+      "weight": "240",
+      "count": "1",
+      "size": "8",
+      "materials": [
+        "MT.MgCO3",
+        "MT.MnO2",
+        "MT.Al2O3",
+        "MT.TiO2"
+      ],
+      "dims": [],
+      "oreSets": [
+        "ORE_MARS",
+        "ORE_MOON",
+        "ORE_PLANETS"
+      ]
+    },
+    {
+      "name": "cheese",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "90",
+      "weight": "100",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.Cheese",
+        "MT.Cheese",
+        "MT.Cheese",
+        "MT.Se"
+      ],
+      "dims": [],
+      "oreSets": [
+        "ORE_MOON"
+      ]
+    },
+    {
+      "name": "desh",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "90",
+      "weight": "100",
+      "count": "3",
+      "size": "16",
+      "materials": [
+        "MT.OREMATS.TritaniumHexafluoride",
+        "MT.OREMATS.DuraniumHexaastatide",
+        "MT.OREMATS.DuraniumHexabromide",
+        "MT.Desh"
+      ],
+      "dims": [],
+      "oreSets": [
+        "ORE_MARS"
+      ]
+    },
+    {
+      "name": "syrmorite",
+      "default": "T",
+      "indicator": "T",
+      "minY": "30",
+      "maxY": "45",
+      "weight": "160",
+      "count": "2",
+      "size": "32",
+      "materials": [
+        "MT.Syrmorite",
+        "MT.Syrmorite",
+        "MT.Syrmorite",
+        "MT.Syrmorite"
+      ],
+      "dims": [],
+      "oreSets": [
+        "ORE_BETWEENLANDS"
+      ]
+    },
+    {
+      "name": "octine",
+      "default": "T",
+      "indicator": "T",
+      "minY": "10",
+      "maxY": "25",
+      "weight": "40",
+      "count": "1",
+      "size": "32",
+      "materials": [
+        "MT.Octine",
+        "MT.Octine",
+        "MT.Octine",
+        "MT.Octine"
+      ],
+      "dims": [],
+      "oreSets": [
+        "ORE_BETWEENLANDS"
+      ]
+    },
+    {
+      "name": "custom\"+(i<10?\"0\":\"\") + i",
+      "default": "F",
+      "indicator": "T",
+      "minY": "0",
+      "maxY": "0",
+      "weight": "0",
+      "count": "0",
+      "size": "0",
+      "materials": [
+        "MT.NULL",
+        "MT.NULL",
+        "MT.NULL",
+        "MT.NULL"
+      ],
+      "dims": [],
+      "oreSets": [
+        "ORE_ALL"
+      ]
+    }
+  ],
+  "report": {
+    "GEN_OVERWORLD": {
+      "gt6": 31,
+      "gated": [],
+      "port": 26,
+      "missing": [
+        "bauxite",
+        "coal",
+        "iodinesalt",
+        "lignite",
+        "rocksalt"
+      ],
+      "extra": [],
+      "mismatch": []
+    },
+    "GEN_NETHER": {
+      "gt6": 0,
+      "gated": [],
+      "port": 0,
+      "missing": [],
+      "extra": [],
+      "mismatch": []
+    },
+    "GEN_END": {
+      "gt6": 5,
+      "gated": [],
+      "port": 2,
+      "missing": [
+        "cassiterite",
+        "molybdenum",
+        "platinum"
+      ],
+      "extra": [],
+      "mismatch": []
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "recentJavaModules": {
+    "GregTech.java": 1,
+    "api": 19,
+    "block": 35,
+    "blockentity": 27,
+    "client": 11,
+    "content": 70,
+    "damage": 2,
+    "data": 26,
+    "gametest": 96,
+    "item": 23,
+    "jei": 3,
+    "loaders": 31,
+    "mixin": 2,
+    "recipe": 9,
+    "registry": 23,
+    "util": 1,
+    "world": 1,
+    "worldgen": 53
+  },
+  "capabilityReviewCandidates": [
+    "src\\main\\java\\com\\gregtech\\gregtech\\blockentity\\inventory\\BottleCrateBlockEntity.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\blockentity\\inventory\\UsbSwitchBlockEntity.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\item\\FluidItem.java"
+  ],
+  "standardTranslationMismatches": [
+    {
+      "key": "block.gregtech.control_processor_unit",
+      "current": "控制四核处理器组件",
+      "standard": "控制四核处理器"
+    },
+    {
+      "key": "block.gregtech.fusion_ventilation_unit",
+      "current": "通风组件",
+      "standard": "通风单元"
+    },
+    {
+      "key": "block.gregtech.galvanized_steel_wall",
+      "current": "镀锌钢墙",
+      "standard": "镀锌钢壁板"
+    },
+    {
+      "key": "block.gregtech.logic_processor_unit",
+      "current": "逻辑四核处理器组件",
+      "standard": "逻辑四核处理器"
+    },
+    {
+      "key": "block.gregtech.solar_panel_germanium",
+      "current": "太阳能板(锗)",
+      "standard": "太阳能电池板 (锗)"
+    },
+    {
+      "key": "block.gregtech.solar_panel_silicon",
+      "current": "太阳能板(硅)",
+      "standard": "太阳能电池板"
+    },
+    {
+      "key": "block.gregtech.versatile_processor_unit",
+      "current": "通用四核处理器组件",
+      "standard": "多功能四核处理器"
+    }
+  ]
+}

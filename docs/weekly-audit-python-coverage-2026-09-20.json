@@ -1,0 +1,1555 @@
+{
+  "note": "Named references only: absence can mean an evidence-mapping gap, not necessarily unread code. A reference is not automatic approval. Inventory covers 171 timestamp candidates.",
+  "files": [
+    {
+      "path": "tools\\_heap_report.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 内存、门禁和 jar 交接工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_bumble_scanned_lang.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个语言维护工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_coin_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 硬币生成与多方块部件补丁核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_loot_crate_lang.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个语言维护工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_sensor_variants.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 传感器变体与补充树叶工具核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_track_lang.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个语言维护工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_tree_species_lang.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 128. 树苗名称偏离用户标准中文，补键脚本也无法补齐部分缺失",
+        "## 七个语言维护工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_usb_tooltip_lang.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个语言维护工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_valve_part_lang.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个语言维护工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\add_valve_parts.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 硬币生成与多方块部件补丁核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\apply_recipe_mirror_flags.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 124. 镜像规则工具的 --check 与 --reset 组合仍会写文件",
+        "### 125. 石头生成模块接受原版未允许的左右镜像配方"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\audit_bedrock_ores.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 方块资源补齐与材料报告工具的边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\audit_missing_models.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 方块资源补齐与材料报告工具的边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\audit_multiblock_parts.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 硬币生成与多方块部件补丁核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\audit_porting_progress.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 123. 缺失内容清单在零缺失日志下不会清空，进度会沿用旧值"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\audit_recipe_sources.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 四个配方来源统计器与既有提取证据归档（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\audit_tech_item_tokens.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 化工 token 诊断与别名工具的静态边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\census_gt6_recipe_map_sources.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 四个配方来源统计器与既有提取证据归档（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\census_gt6_recipe_mirror_flags.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 注册与镜像清单、材料字段及模具生成复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\census_gt6_recipe_sites.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 四个配方来源统计器与既有提取证据归档（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\census_gt6_registrations.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 注册与镜像清单、材料字段及模具生成复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_enchant_table_coverage.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个小型校验工具的实际覆盖（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_form_flags.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个小型校验工具的实际覆盖（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_hive_jar_contents.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 内存、门禁和 jar 交接工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_masonry_rows.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 工具与石材配方比对器复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_material_forms.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个小型校验工具的实际覆盖（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_material_id_agreement.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个小型校验工具的实际覆盖（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_material_lang_collisions.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个小型校验工具的实际覆盖（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_nether_ore_forms.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个小型校验工具的实际覆盖（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_retired_cover_refs.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 130. 退役覆盖板检查找到坏引用也不会使检查失败",
+        "## 七个小型校验工具的实际覆盖（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_stone_extrusions.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 工具与石材配方比对器复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\check_tool_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 工具与石材配方比对器复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\compare_prefix_conditions.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 137. 前缀条件审计跨越下一个声明，零缺失不等于条件一致"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\count_gt6_recipe_map_usage.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 四个配方来源统计器与既有提取证据归档（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\debug_early_tool_rows.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个解析辅助视图复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\debug_masonry_parse.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个解析辅助视图复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\debug_material_ids.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个解析辅助视图复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\debug_prefix_conditions.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个解析辅助视图复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\derive_missing_tech_aliases.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 化工 token 诊断与别名工具的静态边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\diagnose_chem_transpile.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 化工 token 诊断与别名工具的静态边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\drop_retired_cover_lang.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 七个语言维护工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_alloy_table.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 合金字典、石材挤压与胶囊测试覆盖补充"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_basic_machine_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 最后六个生成器的定向复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_bush_colours.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 扫描蜜蜂、轨道、树洞与灌木资源补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_enchantment_table.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 矿物、附魔与蜜蜂抽取工具复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_block_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 138. 方块配方抽取器的默认分类匹配会把有效分类报成零条"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_bottles.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 四个配方来源统计器与既有提取证据归档（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_bumbles.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 矿物、附魔与蜜蜂抽取工具复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_comb_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 矿物、附魔与蜜蜂抽取工具复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_drinks.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 四个配方来源统计器与既有提取证据归档（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_food_items.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 四个配方来源统计器与既有提取证据归档（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_food_stats.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 四个配方来源统计器与既有提取证据归档（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_form_flags.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 最后六个生成器的定向复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_large_ores.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 矿物、附魔与蜜蜂抽取工具复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_material_fields.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 注册与镜像清单、材料字段及模具生成复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_multiblock_ids.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 107. 多方块主控被登记为结构端口，注册覆盖率掩盖材料系列功能缺口"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_processing_targets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 材料加工侧表的生成一致性核查"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_recyclable_prefixes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 材料加工侧表的生成一致性核查"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_sensor_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 90. 传感器配方生成把部分原版类别原料缩成单一物品"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_small_ores.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 矿物、附魔与蜜蜂抽取工具复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_stack_sizes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 矿物、附魔与蜜蜂抽取工具复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_tool_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 工具与石材配方比对器复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\extract_gt6_workability.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 材料加工侧表的生成一致性核查"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\find_alloy_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\find_multiitem_id.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\find_water_fluids.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\fix_deposit_twigs.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\fix_duplicate_didyouknow.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\fix_duplicate_machine_parts.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\fix_flowing_fluid_import.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\fix_hint_zinc_fluid.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\fix_nether_quartz_test.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\fix_recipe_hint_rows.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 136. 旧配方提示脚本会重复声明配方类别，另一个脚本会撤销提示修复"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_bumble_hive_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 非 Java 清单格式与脚本副作用复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_bumble_scanned_models.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 扫描蜜蜂、轨道、树洞与灌木资源补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_bush_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 扫描蜜蜂、轨道、树洞与灌木资源补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_covers_usb_logistics_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 最后六个生成器的定向复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_damage_types.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 通用物品及伤害注册补记"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_energy_node_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 能源、多方块与地牢资源生成复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_food_item_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 133. 食品资源检查报告缺图却仍返回成功"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_generator_module_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 125. 石头生成模块接受原版未允许的左右镜像配方"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_gt6_tree_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 当前仍存在的资源缺口",
+        "## 六个资源工具隔离重生成检查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_guide_book_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 六个资源工具隔离重生成检查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_loot_bottle_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 六个资源工具隔离重生成检查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_loot_chest_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 战利品箱资源生成器补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_machine_params_table.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 机器注册与生成表核查边界"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_machine_recipe_table.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 机器等级映射与参数视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_material_dictionary_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 六个资源工具隔离重生成检查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_missing_block_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 方块资源补齐与材料报告工具的边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_missing_component_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 最后六个生成器的定向复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_missing_leaves_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 传感器变体与补充树叶工具核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_multiblock_recipe_table.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 最后六个生成器的定向复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_ore_block_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 非 Java 清单格式与脚本副作用复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_pile_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 非 Java 清单格式与脚本副作用复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_pit_shape.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 世界生成接入、坑轮廓和 ID 检索工具补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_prefix_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 135. 材料前缀生成器会批量删除非前缀物品翻译"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_rope_dynamite_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 六个资源工具隔离重生成检查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_rope_dynamite_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 工具与石材配方比对器复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_shape_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 注册与镜像清单、材料字段及模具生成复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_track_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 扫描蜜蜂、轨道、树洞与灌木资源补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_tree_hole_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 扫描蜜蜂、轨道、树洞与灌木资源补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_wood_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 木材/石材手工配方及生成器核查补充"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_wood_tags.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 六个资源工具隔离重生成检查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\generate_wooden_pipe_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 工具与石材配方比对器复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\gt6_machine_map.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 机器等级映射与参数视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\gt6_machine_params.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 机器等级映射与参数视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\gt6_part_ids.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 机器等级映射与参数视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\handoff_check.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 6. 测试和交接结论存在盲区",
+        "## 内存、门禁和 jar 交接工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\import_gt_lang.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 标准中文导入入口复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\inventory_gt6_worldgen.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 矿物、附魔与蜜蜂抽取工具复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\inventory_port_ids.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 世界生成接入、坑轮廓和 ID 检索工具补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\javac_selfcheck.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 非 Java 清单格式与脚本副作用复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\list_layer_seams.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 129. 岩层统计使用失效的方法锚点，错误报告全部材料为零",
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\list_material_prefixes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个解析辅助视图复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\list_recipe_ingredients.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\list_tooltip_keys.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\lowercase_materialicons.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 非 Java 清单格式与脚本副作用复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\port_recipe_hints.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 136. 旧配方提示脚本会重复声明配方类别，另一个脚本会撤销提示修复"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\probe_port_form_families.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个解析辅助视图复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\rank_missing_content.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 127. 缺失内容排行漏掉三段材料 token，并把出现次数混称配方数",
+        "## 八个缺口报告工具的证据边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\register_spring_fluid_blocks.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 134. 旧书架资源脚本会恢复已失效的贴图路径"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\register_water_body_blocks.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 134. 旧书架资源脚本会恢复已失效的贴图路径"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\rename_nether_lava_level.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_block_condition_delta.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 方块资源补齐与材料报告工具的边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_extruder_skips.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个报告视图的当前输出与解释范围（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_form_flag_materials.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个解析辅助视图复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_gt6_books.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个报告视图的当前输出与解释范围（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_gt6_loot_rows.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个报告视图的当前输出与解释范围（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_gt6_only_prefixes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个报告视图的当前输出与解释范围（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_items_without_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个缺口报告工具的证据边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_material_form_flags.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 方块资源补齐与材料报告工具的边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_material_form_gaps.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个缺口报告工具的证据边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_material_form_idless.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个缺口报告工具的证据边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_material_form_key_collisions.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个缺口报告工具的证据边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_material_form_lookup.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 材料形态可达性与前缀扫描边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_material_form_unreachable.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 材料形态可达性与前缀扫描边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_missing_item_prefixes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 材料形态可达性与前缀扫描边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_missing_machine_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个缺口报告工具的证据边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_missing_materials.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 126. 缺失材料扫描会被同名材料和任意字符串掩盖",
+        "## 八个缺口报告工具的证据边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_missing_prefix_usage.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 材料形态可达性与前缀扫描边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_non_ascii_chars.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 132. 非 ASCII 查看器的 BOM 检测使用了转义文本而不是真正字节",
+        "## 内存、门禁和 jar 交接工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_prefixless_delegates.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个报告视图的当前输出与解释范围（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_tool_shaped_mirror.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个报告视图的当前输出与解释范围（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_unparsed_prefix_conditions.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个报告视图的当前输出与解释范围（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_unused_form_flags.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个缺口报告工具的证据边界（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\report_wood_leaf_colours.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个报告视图的当前输出与解释范围（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\resolve_port_materials.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 八个解析辅助视图复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\restore_fusion_assets.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 5. 资源生成脚本会再次写回非标准中文",
+        "## 剩余结构模板与文本快照检查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\restore_multiblock_appearance.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 能源、多方块与地牢资源生成复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\search_gt6_statements.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 世界生成接入、坑轮廓和 ID 检索工具补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\show_basic_machine_recipes.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\show_gate_failures.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 131. 失败日志查看器不验证测试完成，空日志或启动崩溃也返回成功",
+        "## 内存、门禁和 jar 交接工具复查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\show_machine_parts.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\show_material_enchantments.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\show_material_form_entry.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\show_missing_veins.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\show_vein_order.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个只读诊断视图核查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\transpile_gt6_books.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 书籍生成与查询补充核查边界"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\transpile_gt6_chem.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 八份批量配方表的生成一致性"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\transpile_gt6_loot.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 最后六个生成器的定向复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\transpile_gt6_materials.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 121. 材料元数据生成器会覆盖已修正的别名和显示名"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\transpile_gt6_multiitems.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 122. 重跑 MultiItem 生成器会移除 320 个已扫描蜜蜂变体"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_black_sand_turf.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 世界生成接入、坑轮廓和 ID 检索工具补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_book_shelf.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "### 134. 旧书架资源脚本会恢复已失效的贴图路径"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_cfoam.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_coltan.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_dungeon_keys_and_portals.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 能源、多方块与地牢资源生成复核（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_fluid_springs.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 世界生成接入、坑轮廓和 ID 检索工具补查（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_nether_bedrock_ores.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_rocks_deep_ocean.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    },
+    {
+      "path": "tools\\wire_water_bodies.py",
+      "formatChecked": true,
+      "reportReferences": [
+        "## 十二个一次性修补脚本的当前重跑行为（2026-09-20）"
+      ],
+      "status": "has-named-report-evidence",
+      "notAnAutomaticSemanticApproval": true
+    }
+  ]
+}

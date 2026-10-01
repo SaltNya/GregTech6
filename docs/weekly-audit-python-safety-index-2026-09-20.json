@@ -1,0 +1,2019 @@
+[
+  {
+    "path": "tools\\_heap_report.py",
+    "lines": 53,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_bumble_scanned_lang.py",
+    "lines": 122,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 86,
+        "call": "path.write_bytes((newline.join(lines) + (newline if trailing else \"\")).encode(\"utf-8\"))"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_coin_assets.py",
+    "lines": 97,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 92,
+        "call": "MANIFEST.write_text(json.dumps(dict(sorted(manifest.items())), indent=2) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 74,
+        "call": "(ICONS / entry / \"coin_overlay.png\").write_bytes(overlay)"
+      },
+      {
+        "line": 76,
+        "call": "(MODELS / entry / \"coin.json\").write_text(json.dumps({\n            \"parent\": \"minecraft:item/generated\",\n            \"textures\": {\n                \"layer0\": f\"gregtech:item/material_icons/{entry}/coin\",\n                \"layer1\": f\"gregtech:item/material_icons/"
+      },
+      {
+        "line": 89,
+        "call": "path.write_text(json.dumps(dict(sorted(data.items())), indent=2, ensure_ascii=False) + \"\\n\",\n                        encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_loot_crate_lang.py",
+    "lines": 28,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 27,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_sensor_variants.py",
+    "lines": 203,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 94,
+        "call": "io.open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 170,
+        "call": "io.open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 122,
+        "call": "open(dst, \"wb\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_track_lang.py",
+    "lines": 85,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 64,
+        "call": "path.write_text(\"\\n\".join(lines) + \"\\n\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_tree_species_lang.py",
+    "lines": 46,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 45,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_usb_tooltip_lang.py",
+    "lines": 60,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 53,
+        "call": "io.open(path, 'w', encoding='utf-8', newline='\\n')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_valve_part_lang.py",
+    "lines": 42,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 41,
+        "call": "io.open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\add_valve_parts.py",
+    "lines": 86,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 83,
+        "call": "io.open(PORT, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\apply_recipe_mirror_flags.py",
+    "lines": 81,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 70,
+        "call": "path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 55,
+        "call": "path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\audit_bedrock_ores.py",
+    "lines": 78,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\audit_missing_models.py",
+    "lines": 171,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 72,
+        "call": "os.path.relpath(full, root).replace('\\\\', '/')"
+      },
+      {
+        "line": 112,
+        "call": "os.path.relpath(full, gregtech_dir).replace('\\\\', '/')"
+      },
+      {
+        "line": 83,
+        "call": "open(full, 'wb')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\audit_multiblock_parts.py",
+    "lines": 43,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\audit_porting_progress.py",
+    "lines": 229,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 202,
+        "call": "(DOCS / \"porting-progress.json\").write_text(\n        json.dumps(report, indent=2, ensure_ascii=False), encoding=\"utf-8\")"
+      },
+      {
+        "line": 162,
+        "call": "path.write_text(\"\\n\".join(tokens) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\audit_recipe_sources.py",
+    "lines": 72,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 52,
+        "call": "os.path.relpath(path, GT6).replace(\"\\\\\", \"/\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\audit_tech_item_tokens.py",
+    "lines": 116,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 106,
+        "call": "out.write_text(json.dumps({\n            \"referenced\": counts,\n            \"ok\": ok,\n            \"aliasable\": [{\"gt6\": t, \"port\": p, \"recipes\": c} for t, p, c in aliasable],\n            \"missing\": [{\"id\": t, \"recipes\": c} for t, c in missing],\n        }, indent"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\census_gt6_recipe_map_sources.py",
+    "lines": 36,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\census_gt6_recipe_mirror_flags.py",
+    "lines": 170,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 159,
+        "call": "OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\census_gt6_recipe_sites.py",
+    "lines": 70,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\census_gt6_registrations.py",
+    "lines": 146,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 140,
+        "call": "(ROOT / \"docs/gt6-registration-census.json\").write_text(\n        json.dumps(report, indent=2, ensure_ascii=False), encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_enchant_table_coverage.py",
+    "lines": 54,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_form_flags.py",
+    "lines": 23,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_hive_jar_contents.py",
+    "lines": 28,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_masonry_rows.py",
+    "lines": 246,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 240,
+        "call": "out.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_material_forms.py",
+    "lines": 30,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_material_id_agreement.py",
+    "lines": 55,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_material_lang_collisions.py",
+    "lines": 65,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_nether_ore_forms.py",
+    "lines": 22,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_retired_cover_refs.py",
+    "lines": 15,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_stone_extrusions.py",
+    "lines": 239,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 233,
+        "call": "out.write_text(json.dumps(report, indent=2, sort_keys=True), encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\check_tool_recipes.py",
+    "lines": 173,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 167,
+        "call": "out.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\compare_prefix_conditions.py",
+    "lines": 258,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 242,
+        "call": "OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\count_gt6_recipe_map_usage.py",
+    "lines": 45,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\debug_early_tool_rows.py",
+    "lines": 18,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\debug_masonry_parse.py",
+    "lines": 22,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\debug_material_ids.py",
+    "lines": 40,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\debug_prefix_conditions.py",
+    "lines": 22,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\derive_missing_tech_aliases.py",
+    "lines": 106,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 97,
+        "call": "OUT.write_text(json.dumps(report, indent=2, ensure_ascii=False) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\diagnose_chem_transpile.py",
+    "lines": 101,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\drop_retired_cover_lang.py",
+    "lines": 21,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 20,
+        "call": "path.write_text(\"\".join(kept), encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_alloy_table.py",
+    "lines": 87,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 86,
+        "call": "io.open(TARGET, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_basic_machine_recipes.py",
+    "lines": 221,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 213,
+        "call": "args.out.write_text(data, encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_bush_colours.py",
+    "lines": 43,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_enchantment_table.py",
+    "lines": 121,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 120,
+        "call": "io.open(TARGET, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_block_recipes.py",
+    "lines": 120,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_bottles.py",
+    "lines": 143,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 135,
+        "call": "io.open(OUT, \"w\", encoding=\"utf-8\", newline=\"\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_bumbles.py",
+    "lines": 156,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 150,
+        "call": "io.open(TARGET, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_comb_recipes.py",
+    "lines": 248,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 242,
+        "call": "io.open(TARGET, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_drinks.py",
+    "lines": 169,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 162,
+        "call": "io.open(OUT, 'w', encoding='utf-8', newline='\\n')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_food_items.py",
+    "lines": 602,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 587,
+        "call": "io.open(OUT, 'w', encoding='utf-8', newline='\\n')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_food_stats.py",
+    "lines": 413,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 406,
+        "call": "io.open(OUT, 'w', encoding='utf-8', newline='\\n')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_form_flags.py",
+    "lines": 499,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 355,
+        "call": "open(OUT_JSON, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 494,
+        "call": "open(OUT_JAVA, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_large_ores.py",
+    "lines": 129,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 122,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_material_fields.py",
+    "lines": 98,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 92,
+        "call": "io.open(TARGET, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_multiblock_ids.py",
+    "lines": 199,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 180,
+        "call": "io.open(OUT, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_processing_targets.py",
+    "lines": 186,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 180,
+        "call": "io.open(TARGET, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 181,
+        "call": "os.path.relpath(TARGET, ROOT).replace(\"\\\\\", \"/\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_recyclable_prefixes.py",
+    "lines": 115,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 85,
+        "call": "open(OUT_JAVA, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 90,
+        "call": "open(OUT_JSON, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_sensor_recipes.py",
+    "lines": 214,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 201,
+        "call": "io.open(OUT, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_small_ores.py",
+    "lines": 136,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 129,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_stack_sizes.py",
+    "lines": 88,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 81,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_tool_recipes.py",
+    "lines": 172,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 166,
+        "call": "out.write_text(json.dumps(data, indent=2, sort_keys=True), encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\extract_gt6_workability.py",
+    "lines": 213,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 172,
+        "call": "open(OUT_JAVA, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 187,
+        "call": "open(OUT_JSON, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\find_alloy_recipes.py",
+    "lines": 16,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\find_multiitem_id.py",
+    "lines": 26,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\find_water_fluids.py",
+    "lines": 17,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\fix_deposit_twigs.py",
+    "lines": 50,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 49,
+        "call": "io.open(PATH, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\fix_duplicate_didyouknow.py",
+    "lines": 17,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 16,
+        "call": "io.open(PATH, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\fix_duplicate_machine_parts.py",
+    "lines": 48,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 42,
+        "call": "io.open(PARTS, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\fix_flowing_fluid_import.py",
+    "lines": 13,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 12,
+        "call": "io.open(PATH, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\fix_hint_zinc_fluid.py",
+    "lines": 12,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 11,
+        "call": "io.open(PATH, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\fix_nether_quartz_test.py",
+    "lines": 35,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 15,
+        "call": "io.open(FEATURE, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 34,
+        "call": "io.open(TEST, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\fix_recipe_hint_rows.py",
+    "lines": 45,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 44,
+        "call": "io.open(PATH, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_bumble_hive_assets.py",
+    "lines": 187,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 88,
+        "call": "os.path.relpath(path, ROOT).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 136,
+        "call": "os.path.relpath(path, ROOT).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 91,
+        "call": "open(path, \"wb\")"
+      },
+      {
+        "line": 138,
+        "call": "open(path, \"w\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 164,
+        "call": "os.remove(buffer)"
+      },
+      {
+        "line": 166,
+        "call": "os.path.relpath(target, ROOT).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 169,
+        "call": "open(target, \"wb\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_bumble_scanned_models.py",
+    "lines": 67,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 58,
+        "call": "io.open(target, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_bush_assets.py",
+    "lines": 120,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 46,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 49,
+        "call": "os.path.relpath(path, ASSETS).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 94,
+        "call": "os.path.relpath(dst, ASSETS).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 114,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_covers_usb_logistics_recipes.py",
+    "lines": 312,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 243,
+        "call": "path.write_text(text, encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_damage_types.py",
+    "lines": 176,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 129,
+        "call": "io.open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_energy_node_assets.py",
+    "lines": 224,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 87,
+        "call": "open(path, \"w\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 217,
+        "call": "open(lang_path, \"w\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 103,
+        "call": "shutil.copy(s, d)"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_food_item_assets.py",
+    "lines": 150,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 133,
+        "call": "io.open(path, 'w', encoding='utf-8', newline='\\n')"
+      },
+      {
+        "line": 105,
+        "call": "io.open(model, 'w', encoding='utf-8', newline='\\n')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_generator_module_recipes.py",
+    "lines": 83,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 78,
+        "call": "path.write_text(text, encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_gt6_tree_assets.py",
+    "lines": 63,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 29,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 32,
+        "call": "os.path.relpath(path, ASSETS).replace(\"\\\\\", \"/\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_guide_book_assets.py",
+    "lines": 75,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 55,
+        "call": "path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 64,
+        "call": "MODEL.write_text(json.dumps(\n        {\"parent\": \"minecraft:item/generated\",\n         \"textures\": {\"layer0\": f\"gregtech:item/books/{ITEM_ID}\"}}, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_loot_bottle_assets.py",
+    "lines": 68,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 48,
+        "call": "path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 57,
+        "call": "MODEL.write_text(json.dumps(\n        {\"parent\": \"minecraft:item/generated\",\n         \"textures\": {\"layer0\": f\"gregtech:item/bottles/{ITEM_ID}\"}}, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_loot_chest_assets.py",
+    "lines": 106,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 61,
+        "call": "path.write_text(json.dumps(data, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 71,
+        "call": "path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_machine_params_table.py",
+    "lines": 141,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 112,
+        "call": "OUT.write_text(header + \",\\n\".join(rows) + \"\\n\" + footer, encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_machine_recipe_table.py",
+    "lines": 517,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 499,
+        "call": "(OUT).write_text(header + \",\\n\".join(rows) + \"\\n\" + footer, encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_material_dictionary_assets.py",
+    "lines": 65,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 50,
+        "call": "MODEL.write_text(json.dumps(\n        {\"parent\": \"minecraft:item/generated\", \"textures\": {\"layer0\": f\"gregtech:item/books/{ITEM_ID}\"}},\n        indent=2) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 57,
+        "call": "path.write_text(json.dumps(data, indent=2, ensure_ascii=False, sort_keys=True) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_missing_block_assets.py",
+    "lines": 206,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 123,
+        "call": "io.open(target_path, 'w', encoding='utf-8', newline='\\n')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_missing_component_recipes.py",
+    "lines": 194,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 181,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 169,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_missing_leaves_assets.py",
+    "lines": 130,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 78,
+        "call": "io.open(path, 'w', encoding='utf-8', newline='\\n')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_multiblock_recipe_table.py",
+    "lines": 422,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 408,
+        "call": "OUT.write_text(header + \",\\n\".join(rows) + \"\\n\" + footer, encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_ore_block_assets.py",
+    "lines": 242,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 157,
+        "call": "path.write_text(body, encoding=\"utf-8\")"
+      },
+      {
+        "line": 218,
+        "call": "f.unlink()"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_pile_assets.py",
+    "lines": 267,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 161,
+        "call": "path.write_text(json.dumps(data, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 182,
+        "call": "path.write_text(\"\\n\".join(lines) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 260,
+        "call": "obsolete.unlink()"
+      },
+      {
+        "line": 255,
+        "call": "obsolete.unlink()"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_pit_shape.py",
+    "lines": 70,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 68,
+        "call": "open(OUT, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_prefix_assets.py",
+    "lines": 203,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 197,
+        "call": "path.write_text(json.dumps(dict(sorted(existing.items())), indent=2, ensure_ascii=False) + \"\\n\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 177,
+        "call": "path.write_text(model_json(tex_set, tex_file), encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_rope_dynamite_assets.py",
+    "lines": 60,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 36,
+        "call": "path.write_text(text, encoding=\"utf-8\")"
+      },
+      {
+        "line": 54,
+        "call": "path.write_text(json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + \"\\n\",\n                        encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_rope_dynamite_recipes.py",
+    "lines": 87,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 82,
+        "call": "path.write_text(text, encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_shape_recipes.py",
+    "lines": 100,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 90,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_track_assets.py",
+    "lines": 127,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 72,
+        "call": "(MODELS / (name + \".json\")).write_text(json.dumps({\n        \"parent\": parent,\n        # Rails cut the texture out; without it the transparent pixels render black.\n        \"render_type\": \"minecraft:cutout\",\n        \"textures\": {\"rail\": \"gregtech:block/iconsets/"
+      },
+      {
+        "line": 81,
+        "call": "(BLOCKSTATES / (name + \".json\")).write_text(\n        json.dumps({\"variants\": variants}, indent=2) + \"\\n\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_tree_hole_assets.py",
+    "lines": 100,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 34,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 37,
+        "call": "os.path.relpath(path, ASSETS).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 94,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_wood_recipes.py",
+    "lines": 1034,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 1026,
+        "call": "open(OUT_FILE, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_wood_tags.py",
+    "lines": 34,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 23,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\generate_wooden_pipe_recipes.py",
+    "lines": 69,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 57,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\gt6_machine_map.py",
+    "lines": 191,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\gt6_machine_params.py",
+    "lines": 69,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\gt6_part_ids.py",
+    "lines": 66,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\handoff_check.py",
+    "lines": 57,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\import_gt_lang.py",
+    "lines": 176,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 69,
+        "call": "path.write_text(json.dumps(dict(sorted(data.items())), ensure_ascii=False, indent=2) + \"\\n\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\inventory_gt6_worldgen.py",
+    "lines": 110,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\inventory_port_ids.py",
+    "lines": 38,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\javac_selfcheck.py",
+    "lines": 92,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 78,
+        "call": "io.open(ARGFILE, 'w', encoding='utf-8', newline='\\n')"
+      }
+    ],
+    "subprocess": [
+      {
+        "line": 80,
+        "call": "subprocess.run(['javac', '-J-Duser.language=en', '@' + ARGFILE],\n                          capture_output=True)"
+      }
+    ]
+  },
+  {
+    "path": "tools\\list_layer_seams.py",
+    "lines": 22,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\list_material_prefixes.py",
+    "lines": 39,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\list_recipe_ingredients.py",
+    "lines": 33,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\list_tooltip_keys.py",
+    "lines": 12,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\lowercase_materialicons.py",
+    "lines": 83,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 74,
+        "call": "os.rename(src, dst)"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\port_recipe_hints.py",
+    "lines": 128,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 127,
+        "call": "io.open(MAIN, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 28,
+        "call": "io.open(MAPS, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\probe_port_form_families.py",
+    "lines": 43,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\rank_missing_content.py",
+    "lines": 69,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\register_spring_fluid_blocks.py",
+    "lines": 163,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 33,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 36,
+        "call": "os.path.relpath(path, ASSETS).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 116,
+        "call": "io.open(LOADER, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 160,
+        "call": "io.open(file, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\register_water_body_blocks.py",
+    "lines": 111,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 53,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 56,
+        "call": "os.path.relpath(path, ASSETS).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 67,
+        "call": "io.open(LOADER, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 108,
+        "call": "io.open(file, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\rename_nether_lava_level.py",
+    "lines": 19,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 18,
+        "call": "io.open(PATH, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_block_condition_delta.py",
+    "lines": 72,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_extruder_skips.py",
+    "lines": 59,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_form_flag_materials.py",
+    "lines": 30,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_gt6_books.py",
+    "lines": 72,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_gt6_loot_rows.py",
+    "lines": 33,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_gt6_only_prefixes.py",
+    "lines": 54,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_items_without_recipes.py",
+    "lines": 99,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_material_form_flags.py",
+    "lines": 68,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_material_form_gaps.py",
+    "lines": 19,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_material_form_idless.py",
+    "lines": 31,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_material_form_key_collisions.py",
+    "lines": 55,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_material_form_lookup.py",
+    "lines": 80,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_material_form_unreachable.py",
+    "lines": 58,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_missing_item_prefixes.py",
+    "lines": 66,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_missing_machine_recipes.py",
+    "lines": 68,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_missing_materials.py",
+    "lines": 70,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_missing_prefix_usage.py",
+    "lines": 60,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_non_ascii_chars.py",
+    "lines": 26,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_prefixless_delegates.py",
+    "lines": 41,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_tool_shaped_mirror.py",
+    "lines": 43,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_unparsed_prefix_conditions.py",
+    "lines": 31,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_unused_form_flags.py",
+    "lines": 42,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\report_wood_leaf_colours.py",
+    "lines": 31,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\resolve_port_materials.py",
+    "lines": 40,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\restore_fusion_assets.py",
+    "lines": 75,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 54,
+        "call": "manifest.write_text(json.dumps(entries,indent=2,sort_keys=True)+'\\n',encoding='utf8')"
+      },
+      {
+        "line": 68,
+        "call": "path.write_text(json.dumps(data,indent=2)+'\\n',encoding='utf8')"
+      },
+      {
+        "line": 73,
+        "call": "path.write_bytes(gzip.compress(nbt,mtime=0))"
+      },
+      {
+        "line": 63,
+        "call": "path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\\n',encoding='utf8')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\restore_multiblock_appearance.py",
+    "lines": 233,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 135,
+        "call": "path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\search_gt6_statements.py",
+    "lines": 64,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\show_basic_machine_recipes.py",
+    "lines": 22,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\show_gate_failures.py",
+    "lines": 60,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\show_machine_parts.py",
+    "lines": 12,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\show_material_enchantments.py",
+    "lines": 13,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\show_material_form_entry.py",
+    "lines": 26,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\show_missing_veins.py",
+    "lines": 15,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\show_vein_order.py",
+    "lines": 26,
+    "parseError": null,
+    "mutations": [],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\transpile_gt6_books.py",
+    "lines": 186,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 172,
+        "call": "OUT.write_text(\"\\n\".join(lines), encoding=\"utf-8\")"
+      },
+      {
+        "line": 174,
+        "call": "OUT_JSON.write_text(json.dumps(\n        {\"books\": len(books), \"droppedLongPages\": long_pages,\n         \"names\": [b[\"name\"] for b in books],\n         \"pageCounts\": {b[\"name\"]: len(b[\"pages\"]) for b in books}},\n        indent=2, ensure_ascii=False) + \"\\n\", encod"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\transpile_gt6_chem.py",
+    "lines": 792,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 785,
+        "call": "open(OUT, \"w\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\transpile_gt6_loot.py",
+    "lines": 294,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 280,
+        "call": "OUT_JAVA.write_text(\"\\n\".join(lines), encoding=\"utf-8\")"
+      },
+      {
+        "line": 282,
+        "call": "OUT_JSON.write_text(json.dumps(\n        {\"rows\": len(rows), \"skipped\": len(skipped), \"perTable\": {k: len(v) for k, v in tables.items()},\n         \"skippedRows\": skipped,\n         \"vanillaRows\": [r for r in rows if r[\"table\"].startswith(\"van.\")]},\n        inden"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\transpile_gt6_materials.py",
+    "lines": 1160,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 1153,
+        "call": "(OUT / \"MaterialOreProcessing.java\").write_text(readable_java(processing), encoding=\"utf-8\")"
+      },
+      {
+        "line": 1141,
+        "call": "model_path.write_text(content, encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\transpile_gt6_multiitems.py",
+    "lines": 249,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 66,
+        "call": "shutil.copy(src, os.path.join(dst_dir, dst_name + \".png\"))"
+      },
+      {
+        "line": 69,
+        "call": "shutil.copy(meta, os.path.join(dst_dir, dst_name + \".png.mcmeta\"))"
+      },
+      {
+        "line": 75,
+        "call": "open(os.path.join(ITEM_MODELS, item_id + \".json\"), \"w\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 227,
+        "call": "open(OUT_JAVA, \"w\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 90,
+        "call": "os.remove(model)"
+      },
+      {
+        "line": 95,
+        "call": "shutil.rmtree(folder)"
+      },
+      {
+        "line": 102,
+        "call": "open(lang_path, \"w\", encoding=\"utf-8\")"
+      },
+      {
+        "line": 180,
+        "call": "shutil.copy(src, os.path.join(dst_dir, overlay + \".png\"))"
+      },
+      {
+        "line": 239,
+        "call": "open(lang_path, \"w\", encoding=\"utf-8\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_black_sand_turf.py",
+    "lines": 52,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 24,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 43,
+        "call": "io.open(FEATURES, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_book_shelf.py",
+    "lines": 92,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 39,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 42,
+        "call": "os.path.relpath(path, ASSETS).replace(\"\\\\\", \"/\")"
+      },
+      {
+        "line": 53,
+        "call": "io.open(DECOR, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 62,
+        "call": "io.open(BE, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 89,
+        "call": "io.open(file, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_cfoam.py",
+    "lines": 37,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 16,
+        "call": "io.open(decor, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 34,
+        "call": "io.open(be, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_coltan.py",
+    "lines": 39,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 13,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 28,
+        "call": "io.open(FEATURES, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_dungeon_keys_and_portals.py",
+    "lines": 276,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 120,
+        "call": "path.write_text(text, encoding=\"utf-8\")"
+      },
+      {
+        "line": 247,
+        "call": "path.write_bytes((newline.join(lines) + (newline if trailing else \"\")).encode(\"utf-8\"))"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_fluid_springs.py",
+    "lines": 73,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 15,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 29,
+        "call": "io.open(decor, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 45,
+        "call": "io.open(be, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 59,
+        "call": "io.open(features, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_nether_bedrock_ores.py",
+    "lines": 24,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 21,
+        "call": "open(PATH, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_rocks_deep_ocean.py",
+    "lines": 50,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 22,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 41,
+        "call": "io.open(FEATURES, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  },
+  {
+    "path": "tools\\wire_water_bodies.py",
+    "lines": 44,
+    "parseError": null,
+    "mutations": [
+      {
+        "line": 17,
+        "call": "open(path, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      },
+      {
+        "line": 33,
+        "call": "io.open(FEATURES, \"w\", encoding=\"utf-8\", newline=\"\\n\")"
+      }
+    ],
+    "subprocess": []
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "generator": "generate_machine_recipe_table",
+    "exit": 0,
+    "matchesCurrent": true,
+    "entries": 245,
+    "log": "wrote build\\weekly-audit\\crafting-tables\\BasicMachineCraftingRecipes.java (245 entries)\n"
+  },
+  {
+    "generator": "generate_multiblock_recipe_table",
+    "exit": 0,
+    "matchesCurrent": false,
+    "entries": 55,
+    "log": "wrote build\\weekly-audit\\crafting-tables\\MultiblockCraftingRecipes.java (55 entries)\n"
+  }
+]

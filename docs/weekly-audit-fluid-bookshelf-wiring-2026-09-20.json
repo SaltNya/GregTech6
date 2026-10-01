@@ -1,0 +1,28 @@
+[
+  {
+    "tool": "register_spring_fluid_blocks.py",
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"F:\\Dev\\GregTech6\\GregTech6\\tools\\register_spring_fluid_blocks.py\", line 108, in <module>\n    assert text.count(old) == 1, \"fluid registration anchor\"\n           ^^^^^^^^^^^^^^^^^^^^\nAssertionError: fluid registration anchor\n",
+    "identical": 5,
+    "differences": []
+  },
+  {
+    "tool": "register_water_body_blocks.py",
+    "exit": 0,
+    "stdout": "Loader_Fluids: already wired\nen_us.json: 0 water block keys\nzh_cn.json: 0 water block keys\nwrote 9 asset files\n",
+    "stderr": "",
+    "identical": 14,
+    "differences": []
+  },
+  {
+    "tool": "wire_book_shelf.py",
+    "exit": 0,
+    "stdout": "GTDecorBlocks: already wired\nGTBlockEntities: already wired\nen_us.json: key present\nzh_cn.json: key present\nwrote 3 asset files\n",
+    "stderr": "",
+    "identical": 7,
+    "differences": [
+      "src/main/resources/assets/gregtech/models/block/bookshelf.json"
+    ]
+  }
+]

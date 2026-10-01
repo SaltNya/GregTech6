@@ -1,0 +1,104 @@
+{
+  "method": "Static inventory of declarations using MaterialFactories.elec, not a runtime registry or fluid compatibility test",
+  "count": 14,
+  "declarations": [
+    {
+      "field": "HexafluorosilicicAcid",
+      "id": 8011,
+      "name": "Hexafluorosilicic Acid",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 61
+    },
+    {
+      "field": "BlackVitriol",
+      "id": 8403,
+      "name": "Black Vitriol",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 113
+    },
+    {
+      "field": "NitroCarbon",
+      "id": 9820,
+      "name": "Nitro Carbon",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 132
+    },
+    {
+      "field": "Apatite",
+      "id": 8209,
+      "name": "Apatite",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 189
+    },
+    {
+      "field": "Phosphorite",
+      "id": 8226,
+      "name": "Phosphorite",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 190
+    },
+    {
+      "field": "EnderPearl",
+      "id": 8318,
+      "name": "EnderPearl",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 325
+    },
+    {
+      "field": "Azurite",
+      "id": 8420,
+      "name": "Azurite",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 332
+    },
+    {
+      "field": "Lazurite",
+      "id": 8330,
+      "name": "Lazurite",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 333
+    },
+    {
+      "field": "Sodalite",
+      "id": 8331,
+      "name": "Sodalite",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 334
+    },
+    {
+      "field": "Monazite",
+      "id": 8338,
+      "name": "Monazite",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 390
+    },
+    {
+      "field": "Obsidian",
+      "id": 8214,
+      "name": "Obsidian",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 394
+    },
+    {
+      "field": "GraniteRed",
+      "id": 8507,
+      "name": "GraniteRed",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 580
+    },
+    {
+      "field": "GraniteBlack",
+      "id": 8508,
+      "name": "GraniteBlack",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 581
+    },
+    {
+      "field": "Granite",
+      "id": 8518,
+      "name": "Granite",
+      "file": "src\\main\\java\\com\\gregtech\\gregtech\\content\\material\\generated\\CompoundMaterials.java",
+      "line": 582
+    }
+  ]
+}

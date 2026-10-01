@@ -1,0 +1,16 @@
+{
+  "source": "gregtech/loaders/b/Loader_MultiTileEntities.java:1281",
+  "entries": [
+    {
+      "machine": "Logistics Core",
+      "registryId": "17997",
+      "tier": "MT.SteelGalvanized",
+      "pattern": ["CCC", "PMP", "CCC"],
+      "keys": {
+        "M": "OP.casingMachine.dat(aMat)",
+        "P": "IL.Processor_Crystal_Emerald",
+        "C": "OD_CIRCUITS[6]"
+      }
+    }
+  ]
+}

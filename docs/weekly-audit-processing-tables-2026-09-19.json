@@ -1,0 +1,17 @@
+[
+  {
+    "file": "MaterialProcessingTargets",
+    "matchesRegeneration": true,
+    "generatorOutput": "GT6 processing target calls: 38 (38 rows after override, 17 owners, kinds: Bending, Compressing, Cutting, Forging, Smashing, Solidifying, Working)\nowners: Ceramic, EndSandBlack, EndSandWhite, FishRaw, FrozenIron, GildedIron, H2O, IronMagnetic, Lava, MeatRaw, NeodymiumMagnetic, Porcelain, RedSand, Sand, SteelGalvanized, SteelMagnetic, TungstenSintered\nwrote build/weekly-audit/processing-tables/MaterialProcessingTargets.java (38 rows)\n"
+  },
+  {
+    "file": "RecyclablePrefixes",
+    "matchesRegeneration": true,
+    "generatorOutput": "recyclable prefixes: 107\ncounts: {\"declared\": 326, \"recyclable\": 174, \"withByproducts\": 23, \"excludedFlags\": 21, \"excludedNames\": 23}\nnames: armorBoots, armorChestplate, armorHelmet, armorLeggings, billet, blockGem, blockIngot, blockPlate, blockPlateGem, blockSolid, bolt, bouleGt, capcellcon, casingMachine, casingMachineDense, casingMachineDouble, casingMachineQuadruple, casingSmall, chain, chunkGt, compressed, crystal, crystalPure, foil, frameGt, gearGt, gearGtSmall, gem, gemChipped, gemExquisite, gemFlawed, gemFlawless, gemLegendary, ingot, ingotDouble, ingotQuadruple, ingotQuintuple, ingotTriple, lens, minecartWheels, nugget, oreberry, plantGtBerry, plantGtBlossom, plantGtFiber, plantGtWart, plate, plateCurved, plateDense, plateDouble, plateGem, plateGemTiny, plateQuadruple, plateQuintuple, plateSteamcraft, plateTiny, plateTriple, railGt, ring, rotor, round, scrapGt, screw, sheetGt, spring, springSmall, stick, stickLong, toolAxe, toolHeadArrow, toolHeadAxe, toolHeadAxeDouble, toolHeadBuilderwand, toolHeadBuzzSaw, toolHeadChisel, toolHeadConstructionPickaxe, toolHeadFile, toolHeadHammer, toolHeadHoe, toolHeadPickaxe, toolHeadPlow, toolHeadRawArrow, toolHeadRawAxe, toolHeadRawAxeDouble, toolHeadRawChisel, toolHeadRawHoe, toolHeadRawPickaxe, toolHeadRawPlow, toolHeadRawSaw, toolHeadRawSense, toolHeadRawShovel, toolHeadRawSpade, toolHeadRawSword, toolHeadRawUniversalSpade, toolHeadSaw, toolHeadScrewdriver, toolHeadSense, toolHeadShovel, toolHeadSpade, toolHeadSword, toolHeadUniversalSpade, toolHoe, toolPickaxe, toolShears, toolShovel, toolSword, wireFine\nwrote F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\processing-tables\\RecyclablePrefixes.java\nwrote F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\processing-tables\\RecyclablePrefixes.json\n"
+  },
+  {
+    "file": "MaterialWorkability",
+    "matchesRegeneration": true,
+    "generatorOutput": "SOFT: 37  FURNACE: 56  easy workable union: 76\nMORTAR: 195  BRITTLE: 78  FOOD: 26  CRYSTALLISABLE: 43\nmulti-declaration statements seen: 0\nwrote F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\processing-tables\\MaterialWorkability.java\nwrote F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\processing-tables\\MaterialWorkability.json\n"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "scope": "Original timestamp inventory; format checks only, not semantics or rendering",
+  "checked": {
+    ".json": 9742,
+    ".png": 686,
+    ".mcmeta": 20,
+    ".py": 171
+  },
+  "missing": [],
+  "errors": [],
+  "pngFullDecode": {
+    "checked": 686,
+    "errors": []
+  }
+}

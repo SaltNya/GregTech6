@@ -1,0 +1,34 @@
+[
+  {
+    "author": "saltnya",
+    "files": 78768,
+    "bytes": 55619870,
+    "java_files": 1262,
+    "git_metadata_available": false,
+    "manifest_sha256": "1750da8b29ba549abcfb51d78ca0d81f4473bf5b4eff1aea8c0021c91bf00f7a",
+    "baseline_copy_missing": [],
+    "baseline_copy_changed": [],
+    "manifest_file": "saltnya.json.gz",
+    "compressed_sha256": "144382c6fd47782d6a0fbd83fe2df8952a1e63683a91a77174c1f28405540a05"
+  },
+  {
+    "author": "brokestar233",
+    "files": 220275,
+    "bytes": 109252524,
+    "java_files": 1235,
+    "git_metadata_available": false,
+    "manifest_sha256": "a609e32f240426ba08c47fd6c5fde2d33bf25fba59b3e9b37043654cae96feed",
+    "manifest_file": "brokestar233.json.gz",
+    "compressed_sha256": "b48ff7499e7f1d2b2d96756f55674e8bb6c289fca1bade8810ae07244c8f0cdf"
+  },
+  {
+    "author": "masson",
+    "files": 61192,
+    "bytes": 966331492,
+    "java_files": 1716,
+    "git_metadata_available": false,
+    "manifest_sha256": "d7deb98c93c90e173234f599f607cb6b7ae52d888b924c6e3d87f5a43342a635",
+    "manifest_file": "masson.json.gz",
+    "compressed_sha256": "59288a96d12a650e3bb71c038d2be1eaf38cac5b98406d6d2819b1e8eed75c75"
+  }
+]

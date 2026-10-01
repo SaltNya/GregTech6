@@ -1,0 +1,30 @@
+{
+  "standardTreeNames": [
+    {
+      "key": "block.gregtech.sapling_hazel",
+      "legacyKey": "gt.block.sapling.4",
+      "actual": "榛木树苗",
+      "expected": "榛树树苗"
+    },
+    {
+      "key": "block.gregtech.sapling_cinnamon",
+      "legacyKey": "gt.block.sapling.5",
+      "actual": "桂皮树苗",
+      "expected": "肉桂树苗"
+    },
+    {
+      "key": "block.gregtech.sapling_coconut",
+      "legacyKey": "gt.block.sapling.6",
+      "actual": "椰木树苗",
+      "expected": "椰子树木树苗"
+    }
+  ],
+  "partialTreeRun": {
+    "output": "en_us.json: already has 1 of the new keys, skipping\nzh_cn.json: already has 1 of the new keys, skipping\n",
+    "coconutStillMissing": {
+      "en_us": true,
+      "zh_cn": true
+    }
+  },
+  "productionWrites": false
+}

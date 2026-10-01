@@ -1,0 +1,139 @@
+{
+  "scope": "Static local registry-reference check only; not runtime registration, biome tag membership, feature ordering or terrain generation validation.",
+  "registeredCodeTypes": 20,
+  "configuredFiles": 20,
+  "placedFiles": 20,
+  "biomeModifierReferences": [
+    {
+      "modifier": "gt_black_sand",
+      "feature": "gregtech:gt_black_sand",
+      "step": "top_layer_modification"
+    },
+    {
+      "modifier": "gt_bumble_hives",
+      "feature": "gregtech:gt_bumble_hives",
+      "step": "vegetal_decoration"
+    },
+    {
+      "modifier": "gt_bumble_hives_end",
+      "feature": "gregtech:gt_bumble_hives",
+      "step": "vegetal_decoration"
+    },
+    {
+      "modifier": "gt_bumble_hives_nether",
+      "feature": "gregtech:gt_bumble_hives",
+      "step": "vegetal_decoration"
+    },
+    {
+      "modifier": "gt_bushes",
+      "feature": "gregtech:gt_bushes",
+      "step": "vegetal_decoration"
+    },
+    {
+      "modifier": "gt_coltan",
+      "feature": "gregtech:gt_coltan",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_deep_ocean",
+      "feature": "gregtech:gt_deep_ocean",
+      "step": "top_layer_modification"
+    },
+    {
+      "modifier": "gt_dungeon",
+      "feature": "gregtech:gt_dungeon",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_end_ores",
+      "feature": "gregtech:gt_ore_veins",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_end_ores",
+      "feature": "gregtech:gt_small_ores",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_fluid_springs",
+      "feature": "gregtech:gt_fluid_springs",
+      "step": "underground_decoration"
+    },
+    {
+      "modifier": "gt_nether_bedrock_ores",
+      "feature": "gregtech:gt_bedrock_ores",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_nether_ores",
+      "feature": "gregtech:gt_small_ores",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_nether_ores",
+      "feature": "gregtech:gt_nether_deposits",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_nether_scatter",
+      "feature": "gregtech:gt_nether_scatter",
+      "step": "underground_decoration"
+    },
+    {
+      "modifier": "gt_overworld_ores",
+      "feature": "gregtech:gt_stone_layers",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_overworld_ores",
+      "feature": "gregtech:gt_ore_veins",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_overworld_ores",
+      "feature": "gregtech:gt_small_ores",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_overworld_ores",
+      "feature": "gregtech:gt_bedrock_ores",
+      "step": "underground_ores"
+    },
+    {
+      "modifier": "gt_pits",
+      "feature": "gregtech:gt_pits",
+      "step": "top_layer_modification"
+    },
+    {
+      "modifier": "gt_rocks",
+      "feature": "gregtech:gt_rocks",
+      "step": "vegetal_decoration"
+    },
+    {
+      "modifier": "gt_surface_deposits",
+      "feature": "gregtech:gt_surface_deposits",
+      "step": "top_layer_modification"
+    },
+    {
+      "modifier": "gt_surface_flora",
+      "feature": "gregtech:gt_surface_flora",
+      "step": "vegetal_decoration"
+    },
+    {
+      "modifier": "gt_trees",
+      "feature": "gregtech:gt_trees",
+      "step": "vegetal_decoration"
+    },
+    {
+      "modifier": "gt_turf",
+      "feature": "gregtech:gt_turf",
+      "step": "top_layer_modification"
+    },
+    {
+      "modifier": "gt_water_bodies",
+      "feature": "gregtech:gt_water_bodies",
+      "step": "top_layer_modification"
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "Arithmetic only, from source formulas; not a running registry or furnace test. Earlier recipes may shadow generated rows.",
+  "U": 648648000,
+  "rows": [
+    {
+      "material": "Galena",
+      "inputUnits": 648648000,
+      "smeltingTargetUnits": 216216000,
+      "originalOutputUnits": 216216000,
+      "currentGeneratorOutputUnits": 72072000,
+      "originalNuggetsFloor": 3,
+      "currentNuggetsFloor": 1
+    },
+    {
+      "material": "Tetrahedrite",
+      "inputUnits": 648648000,
+      "smeltingTargetUnits": 162162000,
+      "originalOutputUnits": 162162000,
+      "currentGeneratorOutputUnits": 40540500,
+      "originalNuggetsFloor": 2,
+      "currentNuggetsFloor": 0
+    },
+    {
+      "material": "Malachite",
+      "inputUnits": 648648000,
+      "smeltingTargetUnits": 108108000,
+      "originalOutputUnits": 108108000,
+      "currentGeneratorOutputUnits": 18018000,
+      "originalNuggetsFloor": 1,
+      "currentNuggetsFloor": 0
+    }
+  ]
+}

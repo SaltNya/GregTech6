@@ -1,0 +1,922 @@
+{
+  "shapedRows": 1188,
+  "skippedRows": 140,
+  "byFlag": {
+    "CR.DEF_NCC": 258,
+    "DEF": 256,
+    "CR.DEF_REV": 203,
+    "CR.DEF_REV_NCC": 122,
+    "CR.DEF": 83,
+    "CR.DEF_MIR": 51,
+    "CR.DEF | CR.DEL_OTHER_SHAPED_RECIPES": 29,
+    "DEF_NCC": 24,
+    "CR.DEF_NCC_MIR": 23,
+    "DEF_REV_NCC": 23,
+    "CR.DEF_REM": 20,
+    "CR.DEF_REM_REV_NCC": 19,
+    "CR.ONLY_IF_HAS_RESULT | CR.DEF_NCC": 18,
+    "DEF_MIR": 9,
+    "CR.DEF_REV_NCC_MIR": 8,
+    "CR.DEF_REV_NCC | CR.DEL_OTHER_SHAPED_RECIPES": 6,
+    "CR.DEF_NAC_NCC": 6,
+    "CR.DEF_NCC | (mDismantleable?CR.DISMANTLE:0)": 6,
+    "CR.DEF_REM_NCC": 5,
+    "RECIPE_BITS": 4,
+    "CR.DEF | CR.DEL_OTHER_SHAPED_RECIPES | CR.DEL_OTHER_NATIVE_RECIPES": 3,
+    "CR.DEF_NAC": 2,
+    "CR.DEF_REM_REV": 2,
+    "DEFAULT": 2,
+    "CR.NONE": 1,
+    "CR.DEF_REV_MIR | CR.DEL_OTHER_NATIVE_RECIPES": 1,
+    "DEF_REV": 1,
+    "CR.DEL_OTHER_NATIVE_RECIPES | CR.DEF_MIR": 1,
+    "CR.DEF_NCC | CR.ONLY_IF_HAS_RESULT": 1,
+    "DEF_REM_REV": 1
+  },
+  "mirrorAllowedRows": 93,
+  "mirrorRows": [
+    {
+      "file": "gregtech/compat/Compat_Recipes_ArsMagica.java",
+      "result": "ST.make(MD.ARS, \"crystal_wrench\", 1, 0)",
+      "flags": "CR.DEF_REV_MIR | CR.DEL_OTHER_NATIVE_RECIPES"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Bluepower.java",
+      "result": "ST.make(MD.BP, \"tiles\"            , 1, 0)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Erebus.java",
+      "result": "ST.make(MD.ERE, \"mirbrick\", 1, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Erebus.java",
+      "result": "ST.make(MD.ERE, \"mirbrick\", 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Block_Copper_Cut.get(1)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Block_Copper_Cut.get(1)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut.get(1)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut.get(1)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut                .get(2)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut_Exposed        .get(2)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut_Weathered      .get(2)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut_Oxidized       .get(2)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut_Waxed          .get(2)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut_Exposed_Waxed  .get(2)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut_Weathered_Waxed.get(2)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Slabs_Copper_Cut_Oxidized_Waxed .get(2)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut                .get(4)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut_Exposed        .get(4)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut_Weathered      .get(4)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut_Oxidized       .get(4)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut_Waxed          .get(4)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut_Exposed_Waxed  .get(4)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut_Weathered_Waxed.get(4)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "IL.EtFu_Stair_Copper_Cut_Oxidized_Waxed .get(4)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "ST.make(MD.EtFu, \"purpur_stairs\", 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Ganys.java",
+      "result": "ST.make(MD.EtFu, \"purpur_slab\", 6, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_SaltyMod.java",
+      "result": "ST.make(MD.Salt, \"mudBrickWet\", 2, 0)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_SaltyMod.java",
+      "result": "ST.make(MD.Salt, \"mudBrickWet\", 2, 0)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_SaltyMod.java",
+      "result": "ST.make(MD.Salt, \"mudBrickWet\", 2, 0)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockRawBlueSlateStairs\"        , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockRawBlackSlateStairs\"       , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockRawRedSlateStairs\"         , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockCobbleBlueSlateStairs\"     , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockCobbleBlackSlateStairs\"    , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockCobbleRedSlateStairs\"      , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockBrickBlueSlateStairs\"      , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockBrickBlackSlateStairs\"     , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockBrickRedSlateStairs\"       , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockRawLightBlueSlateStairs\"   , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockRawGreySlateStairs\"        , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockRawLightRedSlateStairs\"    , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockCobbleLightBlueSlateStairs\", 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockCobbleGreySlateStairs\"     , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockCobbleLightRedSlateStairs\" , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockBrickLightBlueSlateStairs\" , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockBrickGreySlateStairs\"      , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "result": "ST.make(MD.SC2, \"BlockBrickLightRedSlateStairs\"  , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Tropicraft.java",
+      "result": "ST.make(tChair   , 1, 15-i)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Tropicraft.java",
+      "result": "ST.make(tUmbrella, 1, 15-i)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Tropicraft.java",
+      "result": "ST.make(MD.TROPIC, \"portalEnchanter\", 1, 0)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Tropicraft.java",
+      "result": "ST.make(MD.TROPIC, \"blowGun\"        , 1, 0)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Tropicraft.java",
+      "result": "ST.make(MD.TROPIC, \"waterWand\"      , 1, 0)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Tropicraft.java",
+      "result": "ST.make(MD.TROPIC, \"coconutBomb\"    , 1, 0)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/compat/Compat_Recipes_Voltz.java",
+      "result": "ST.make(MD.ICBM, \"icbmCMissile\", 1, 24)",
+      "flags": "CR.DEF_REV_NCC_MIR"
+    },
+    {
+      "file": "gregtech/items/MultiItemRandomTools.java",
+      "result": "IL.Tool_Fire_Starter.get(1)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/items/MultiItemRandomTools.java",
+      "result": "IL.Tool_Fire_Starter_Bark.get(1)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/a/Loader_Blocks.java",
+      "result": "ST.make(BlocksGT.ConcreteReinforced, 1, i)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/a/Loader_Tools.java",
+      "result": "ST.make(Items.flint_and_steel, 1, 0)",
+      "flags": "CR.DEL_OTHER_NATIVE_RECIPES | CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/b/Loader_MultiTileEntities.java",
+      "result": "ST.amount(6, tPanel)",
+      "flags": "CR.DEF_REV_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/b/Loader_MultiTileEntities.java",
+      "result": "ST.amount(6, tPanel)",
+      "flags": "CR.DEF_REV_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/b/Loader_MultiTileEntities.java",
+      "result": "ST.amount(6, tPanel)",
+      "flags": "CR.DEF_REV_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/b/Loader_MultiTileEntities.java",
+      "result": "ST.amount(6, tPanel)",
+      "flags": "CR.DEF_REV_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/b/Loader_MultiTileEntities.java",
+      "result": "ST.amount(6, tPanel)",
+      "flags": "CR.DEF_REV_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/b/Loader_MultiTileEntities.java",
+      "result": "ST.amount(6, tPanel)",
+      "flags": "CR.DEF_REV_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Blocks.quartz_stairs              , 1, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Blocks.stone_stairs               , 1, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Blocks.stone_stairs               , 4, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Items.lead                    , 1, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Items.lead                    , 1, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Items.lead                    , 1, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Items.bow                     , 1, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Blocks.dispenser              , 1, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "ST.make(Items.name_tag                , 1, 0)",
+      "flags": "DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "arrowGtWood    .mat(MT.Empty, 1)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "arrowGtPlastic .mat(MT.Empty, 1)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "arrowGtWood    .mat(MT.Empty, 1)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Vanilla.java",
+      "result": "arrowGtPlastic .mat(MT.Empty, 1)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Woods.java",
+      "result": "ToolsGT.sMetaTool.getToolWithStats(ToolsGT.CLUB, aEntry.mMaterialWood, MT.Wood)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Woods.java",
+      "result": "ToolsGT.sMetaTool.getToolWithStats(ToolsGT.CLUB, aEntry.mMaterialBeam, MT.Wood)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Woods.java",
+      "result": "ToolsGT.sMetaTool.getToolWithStats(ToolsGT.ROLLING_PIN, aEntry.mMaterialPlank, MT.Wood)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Woods.java",
+      "result": "ToolsGT.sMetaTool.getToolWithStats(ToolsGT.ROLLING_PIN, aEntry.mMaterialPlank, MT.Wood)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Woods.java",
+      "result": "ST.validMeta_(4, aEntry.mStair)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Woods.java",
+      "result": "ST.validMeta_(2, aEntry.mSlab)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Woods.java",
+      "result": "ST.validMeta_(1, aEntry.mSlab )",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregtech/loaders/c/Loader_Recipes_Woods.java",
+      "result": "ST.validMeta_(2, aEntry.mStair)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregapi/data/RM.java",
+      "result": "ST.amount(4, aStair)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregapi/data/RM.java",
+      "result": "aStair",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregapi/data/RM.java",
+      "result": "ST.amount(2, aStair)",
+      "flags": "CR.DEF_NCC_MIR"
+    },
+    {
+      "file": "gregapi/block/metatype/BlockStones.java",
+      "result": "ST.make(Blocks.stone_stairs, 1, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregapi/block/metatype/BlockStones.java",
+      "result": "ST.make(Blocks.stone_stairs    , 4, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregapi/block/metatype/BlockStones.java",
+      "result": "ST.make(Blocks.cobblestone_wall, 6, 0)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregapi/block/metatype/BlockStones.java",
+      "result": "ST.make(this, 1, RNFBR)",
+      "flags": "CR.DEF_MIR"
+    },
+    {
+      "file": "gregapi/block/misc/BlockBaseBars.java",
+      "result": "ST.make(this, 3, 0)",
+      "flags": "CR.DEF_REV_NCC_MIR"
+    }
+  ],
+  "mirrorConstants": [
+    "DEF_MIR",
+    "DEF_NAC_MIR",
+    "DEF_NAC_NCC_MIR",
+    "DEF_NAC_REV_MIR",
+    "DEF_NAC_REV_NCC_MIR",
+    "DEF_NCC_MIR",
+    "DEF_REM_NAC_REV_MIR",
+    "DEF_REM_NAC_REV_NCC_MIR",
+    "DEF_REM_REV_NCC_MIR",
+    "DEF_REV_MIR",
+    "DEF_REV_NCC_MIR"
+  ],
+  "patternMirror": {
+    "  A\n S\nS": true,
+    "  P\n  d": false,
+    "  P\n d": false,
+    "  P\nd": false,
+    "  P\nr v": false,
+    "  S\n P\nS f": true,
+    "  S\n P\nS k": true,
+    "  X\n S\nS": false,
+    "  X\n XX\nXXX": true,
+    "  d\nP": false,
+    "  d\nWQW\nCPC": false,
+    "  h\n P": false,
+    "  r\nWQW\nCPC": false,
+    "  s\n W\nr": false,
+    "  s\nW W\nr": false,
+    "  s\nWWW\nr": false,
+    "  w\nWQW\nCPC": false,
+    "  x\n P": false,
+    " B\n B": false,
+    " B\nBB": true,
+    " B\nBBB": false,
+    " B\nDOD\nOOO": false,
+    " B\nS": true,
+    " B\nSCS\nS": false,
+    " Bf\nBOB\n Bs": false,
+    " C": false,
+    " C\nCCC\nkCR": false,
+    " C\nG G\n G": false,
+    " C\nWQX\n B": false,
+    " C\nk R": false,
+    " D\nDID\n D": false,
+    " D\nDMD\nTAT": false,
+    " F\nFGF\n F": false,
+    " Fh\nFPF\nxF": false,
+    " G\nGCG\n G": true,
+    " G\nRMR\n R": false,
+    " GD\nGQG\nPG": false,
+    " L\n Q\n Cd": false,
+    " L\n Q\ndC": false,
+    " L\nS": true,
+    " Ld\n Q\n C": false,
+    " N\nNBN\n N": false,
+    " Of\nBBB\n  s": false,
+    " P\n  h": false,
+    " P\n  x": false,
+    " P\n x": false,
+    " P\nd": false,
+    " P\nr v": false,
+    " P\nrPv": false,
+    " P\ns": false,
+    " PP\nr v": false,
+    " PP\nrPv": false,
+    " Ph": false,
+    " Px": false,
+    " R\nRGR\n R": false,
+    " R\nRhR\n R": false,
+    " S": false,
+    " S\nF": true,
+    " S\nLML\n L": false,
+    " S\nPq": true,
+    " S\nSCS\nSBS": false,
+    " S\nSPS\n S": false,
+    " S\nSS": true,
+    " SS\n GS\nS": true,
+    " Ss\nF F": false,
+    " T\nTQT\nSSS": false,
+    " WS\nWDS\n WS": true,
+    " WS\nWkS\n WS": true,
+    " X": false,
+    " X\n G\nXPX": false,
+    " X\n SX\nS": false,
+    " X\nX": false,
+    " X\nXX": true,
+    " X\ns": false,
+    " Z\nZQZ\n Z": false,
+    " d\n  P": false,
+    " d\nP": false,
+    " d\nWQW\nCPC": false,
+    " f\nBFB": false,
+    " h\n P": false,
+    " k\nD": false,
+    " k\nX": false,
+    " r\nWQW\nCPC": false,
+    " w\n X\n M": false,
+    " w\nPMP\nWCW": false,
+    " w\nWQW\nCPC": false,
+    " w\nXXX\nXXX": false,
+    " x\n P": false,
+    " x\nWSW": false,
+    "ABZ\nZBA\n B": true,
+    "AIA\nI I\nAIA": false,
+    "Ak": false,
+    "B\n  k": false,
+    "B\n C\n  B": true,
+    "B\nB": false,
+    "B\nD": false,
+    "B B\ns f\nBOB": false,
+    "B B\nsRf\nBOB": false,
+    "B f\nBO\nB s": false,
+    "BB": false,
+    "BB\nBB": false,
+    "BBB": true,
+    "BBB\n B": false,
+    "BCB\nBXB\nBMB": false,
+    "BPB\nPsP\nBPB": false,
+    "BQB\nWXW": false,
+    "BRB\nBRB": false,
+    "BRB\nGPG\nBRB": false,
+    "BS\nSCS\n SS": false,
+    "BTB\nTPT\nBTB": false,
+    "BW\nCQ": false,
+    "BW\nCQ\n  d": false,
+    "BW\nCQ\n d": false,
+    "BW\nCQ\nd": false,
+    "BW\nCQd": false,
+    "BWB\nBWB\nBWB": true,
+    "BWd\nCQ": false,
+    "BXB\nBQB\nBCB": false,
+    "Be\n W": false,
+    "Be\nBW": false,
+    "BeB\nBWB": false,
+    "C\nQ": false,
+    "C\nZ": false,
+    "C C\nCCC\nk R": false,
+    "C C\nkCR": false,
+    "CAR\nFOR\nNON": true,
+    "CCC\nMSM\nPES": false,
+    "CCR\nkC": false,
+    "CLB\nWQW": false,
+    "CLC\nLBL\nCLC": false,
+    "CLF\nXSG\nFLP": false,
+    "CMC\nEBR\nWXW": false,
+    "CPC\nLMW\nCOC": false,
+    "CRC": false,
+    "CRC\nkC": false,
+    "CSC\nWMW": false,
+    "CWM\nWGx\nMTd": false,
+    "CWR\nWIW\nPWC": false,
+    "CXC\nCMC": false,
+    "CkC\nCCR": false,
+    "CkC\nCRC\n C": false,
+    "CkC\nCRC\nCCC": false,
+    "D\nD\nW": false,
+    "D\nW\nW": false,
+    "D D\nWDW\nSSS": false,
+    "DDD": false,
+    "Dh\nX": false,
+    "DwD\nGMG\nCPC": false,
+    "EEE\nIPI\nIMI": false,
+    "EXR\nCPU\nBXB": false,
+    "FFF\nIPI\nIDI": false,
+    "G\nP": false,
+    "G G\n G": false,
+    "GB\nYQ": false,
+    "GGG\nEDE\nGGG": false,
+    "GGG\nG G\nCXC": false,
+    "GGG\nGDG\nGGG": false,
+    "GGG\nQQQ\nPPP": false,
+    "GQG": false,
+    "GSG\nSGS\nGSG": false,
+    "GhG\nSSS\nGwG": false,
+    "GwG\nPMP\nWCW": false,
+    "I\nB": false,
+    "I F\nPPP\n W": false,
+    "I I\nCVD\n I": true,
+    "ICI\nGIG\nDPD": false,
+    "IF\ndP\nxP": false,
+    "III\nI I\nIII": false,
+    "KSM\nOPF\nCWZ": false,
+    "LCL\nLSL\nLCL": false,
+    "LLB\nCQW": false,
+    "LOE\nPPC\ndTA": false,
+    "LqL\nSCS\nLPL": false,
+    "MBM\nBXB\nMBM": false,
+    "MwM\n X\nM M": false,
+    "OOO\nGGG\nOOO": false,
+    "OOO\nOEO\nOOO": false,
+    "OOO\nOFO\nOOO": false,
+    "OSP\nSWI\nPIW": false,
+    "P": false,
+    "P\n  d": false,
+    "P\n P\n CP": false,
+    "P\n d": false,
+    "P\n f": false,
+    "P\n k": false,
+    "P\n s": false,
+    "P\nP": false,
+    "P\nS": false,
+    "P\nd": false,
+    "P\nfk": false,
+    "P P\nwMh\nPCP": false,
+    "P Q\nPS\nCPP": false,
+    "P d": false,
+    "PCP\nCXC\nPCP": false,
+    "PCP\nWIW\nPMP": false,
+    "PDP\nPCP\nPWP": false,
+    "PF\nhG": false,
+    "PGF\nhSW": false,
+    "PI\nPI\nCLC": false,
+    "PLT\ndRW\nTCP": false,
+    "PP": false,
+    "PP\nPP": false,
+    "PP\nPPg\nPPv": false,
+    "PPF\n hG": false,
+    "PPP\n G": false,
+    "PPP\nDDD": false,
+    "PPP\nPPP\nr v": false,
+    "PPP\nS S\nPPP": false,
+    "PPP\nXSS\nCPP": false,
+    "PPP\nr v": false,
+    "PPP\nrgv": false,
+    "PS\nsP": true,
+    "PSP\nSPS\nPSP": false,
+    "PTP\nP P\nPPP": false,
+    "PTP\nPXP\nPPP": false,
+    "PXP\nCPC\nCPC": false,
+    "PXP\nPCP\nR R": false,
+    "Pd": false,
+    "PwP\nIMI\nPCP": false,
+    "Q\nR": false,
+    "QGQ\nGQG\nQGQ": false,
+    "R\nC": false,
+    "R\nG\nP": false,
+    "R\nL": false,
+    "R\nQ": false,
+    "R R\nRBR\nR R": false,
+    "RBR\nRPR\nRDR": false,
+    "RCR\nGCG\nGGG": false,
+    "RDR\nGBG\nRDR": false,
+    "RPR\nCQC": false,
+    "RRR\nMCM\nRRR": false,
+    "RRR\nRXR\nRRR": false,
+    "RRR\nRwR\nRRR": false,
+    "RSR\nGDG\nRSR": false,
+    "RSR\nPWP\nRSR": false,
+    "RSR\nRPR\nRDR": false,
+    "RSR\nRSR\nRSR": false,
+    "RTR": false,
+    "RTR\nGHG\nGGG": false,
+    "RX": false,
+    "Rf\nCs": false,
+    "S\nGS": true,
+    "S\nM\nI": false,
+    "S\nM\nO": false,
+    "S\nS": false,
+    "S\nW\nD": false,
+    "SPC\nWQP\nCWS": false,
+    "SPS\nPfP\nSPS": false,
+    "SPS\nPwP\nSPS": false,
+    "SS": false,
+    "SS\n C\n B": false,
+    "SS\nSS": false,
+    "SSW\n rf": false,
+    "Se\nX": true,
+    "Sh\nPd": false,
+    "SkS": false,
+    "Ss\nF": false,
+    "SsS": false,
+    "SsS\n F": false,
+    "SsS\nF F": false,
+    "T\n F": true,
+    "TBT\nBPB\nTBT": false,
+    "TCT\nwPd": false,
+    "TDC\nBMR\nFwW": false,
+    "TDT\nSSS": false,
+    "TPE\nBCd\nxPT": false,
+    "TPP\ndSS\nTMG": false,
+    "TPT\ndyh\nSPS": false,
+    "TXO\ndPw\nOMT": false,
+    "TXT\nPCP\nTdT": false,
+    "Ts\nPd": false,
+    "TsT\nTPT\nTdT": true,
+    "TwT\nPQP\nTdT": false,
+    "WC\nS": false,
+    "WCW\nWSW": false,
+    "WPW\n Wh": false,
+    "WPW\nCGC\nWPW": false,
+    "WQW\nBCB": false,
+    "WQW\nBCX": false,
+    "WQW\nCPC": false,
+    "WWW": false,
+    "WWW\n B\n B": true,
+    "WWW\n S\nS S": false,
+    "WWW\nWXW\nCMC": false,
+    "WWW\nWwW\nCMC": false,
+    "WWW\nWxW\nWWW": false,
+    "WWs\nW W\nrWW": false,
+    "WwW\nW W\nCMC": false,
+    "X\n X": false,
+    "X\n f": false,
+    "X\n s": false,
+    "X\n x": false,
+    "X\nS": false,
+    "X\nX": true,
+    "X\nk": false,
+    "XX": true,
+    "XX\nXX": true,
+    "XXX": false,
+    "XXX\nX X\nXXX": false,
+    "XXX\nXCX\nXXX": false,
+    "XXX\nXFX\nXXX": false,
+    "XXX\nXXX": true,
+    "XXX\nXXX\n w": false,
+    "XXX\nXXX\nXXX": false,
+    "XY\nYX": true,
+    "XYZ\nCMC": false,
+    "Z Z\n Q\nZ Z": false,
+    "b\n X": false,
+    "d\n  P": false,
+    "d\n P": false,
+    "d\nP": false,
+    "d\nWQW\nCPC": false,
+    "d P": false,
+    "dL\n Q\n C": false,
+    "dP": false,
+    "f\nX": false,
+    "fB\nB s\n O": false,
+    "fB\nBRs\n O": false,
+    "fPx": false,
+    "fX": false,
+    "fh\noP": false,
+    "h\n P": false,
+    "h\nX": false,
+    "h R\n R\nR f": false,
+    "hf\nxP": false,
+    "k\nX": false,
+    "k R\nC C\nCCC": false,
+    "kCR\nC C\nCCC": false,
+    "kCR\nCCC": false,
+    "kCR\nCCC\n C": false,
+    "kPR": false,
+    "kX": false,
+    "ks\nfP": false,
+    "lX\nXBX\n X": false,
+    "q\n X": false,
+    "r\nWQW\nCPC": false,
+    "rPv": false,
+    "s\n P": false,
+    "s\n S": false,
+    "s\nB": false,
+    "s\nL": false,
+    "s\nP": false,
+    "s\nX": false,
+    "sB": false,
+    "sB\nBB": true,
+    "sBf": false,
+    "sLf": false,
+    "sX": true,
+    "sX\nXX": true,
+    "v\nA": false,
+    "v\nC": false,
+    "vP": true,
+    "vP\nPP": true,
+    "w\nWQW\nCPC": false,
+    "wGd\nWSW\nCMC": false,
+    "wMr\nTWT\nxXd": false,
+    "wPh\nCMC\n X": false,
+    "wPh\nCMC\nDXd": false,
+    "wPh\nCMC\nXfX": false,
+    "wPh\nCMC\nfX": false,
+    "x\n P": false,
+    "xP": false,
+    "xWd\nPCP\nTCT": false,
+    "y\nX": false
+  },
+  "mirrorPatterns": [
+    "  A\n S\nS",
+    "  S\n P\nS f",
+    "  S\n P\nS k",
+    "  X\n XX\nXXX",
+    " B\nBB",
+    " B\nS",
+    " G\nGCG\n G",
+    " L\nS",
+    " S\nF",
+    " S\nPq",
+    " S\nSS",
+    " SS\n GS\nS",
+    " WS\nWDS\n WS",
+    " WS\nWkS\n WS",
+    " X\nXX",
+    "ABZ\nZBA\n B",
+    "B\n C\n  B",
+    "BBB",
+    "BWB\nBWB\nBWB",
+    "CAR\nFOR\nNON",
+    "I I\nCVD\n I",
+    "PS\nsP",
+    "S\nGS",
+    "Se\nX",
+    "T\n F",
+    "TsT\nTPT\nTdT",
+    "WWW\n B\n B",
+    "X\nX",
+    "XX",
+    "XX\nXX",
+    "XXX\nXXX",
+    "XY\nYX",
+    "sB\nBB",
+    "sX",
+    "sX\nXX",
+    "vP",
+    "vP\nPP"
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "method": "Static literal map counts and current MachineGuiLayout 16x16 rectangles, no rendered client verification",
+  "mapsParsed": 85,
+  "collisions": [],
+  "guiNamesParsed": 79,
+  "missingGuiTextures": [],
+  "textureDimensions": {
+    "alloying": [
+      256,
+      256
+    ],
+    "anvil": [
+      256,
+      256
+    ],
+    "anvilbendingbig": [
+      256,
+      256
+    ],
+    "anvilbendingsmall": [
+      256,
+      256
+    ],
+    "default": [
+      256,
+      256
+    ],
+    "autoclave": [
+      256,
+      256
+    ],
+    "bath": [
+      256,
+      256
+    ],
+    "bedrockorelist": [
+      256,
+      256
+    ],
+    "boxinator": [
+      256,
+      256
+    ],
+    "bumblelyzer": [
+      256,
+      256
+    ],
+    "burnmixer": [
+      256,
+      256
+    ],
+    "calciner": [
+      256,
+      256
+    ],
+    "canner": [
+      256,
+      256
+    ],
+    "catalyticcracking": [
+      256,
+      256
+    ],
+    "centrifuge": [
+      256,
+      256
+    ],
+    "clustermill": [
+      256,
+      256
+    ],
+    "coagulator": [
+      256,
+      256
+    ],
+    "cokeoven": [
+      256,
+      256
+    ],
+    "compressor": [
+      256,
+      256
+    ],
+    "cooker": [
+      256,
+      256
+    ],
+    "crafting": [
+      256,
+      256
+    ],
+    "crafting2by2": [
+      256,
+      256
+    ],
+    "crusher": [
+      256,
+      256
+    ],
+    "cryodistillationtower": [
+      256,
+      256
+    ],
+    "cryomixer": [
+      256,
+      256
+    ],
+    "crystallisationcrucible": [
+      256,
+      256
+    ],
+    "cutter": [
+      256,
+      256
+    ],
+    "distillationtower": [
+      256,
+      256
+    ],
+    "distillery": [
+      256,
+      256
+    ],
+    "dryer": [
+      256,
+      256
+    ],
+    "electrolyzer": [
+      256,
+      256
+    ],
+    "extruder": [
+      256,
+      256
+    ],
+    "familytree": [
+      256,
+      256
+    ],
+    "fermenter": [
+      256,
+      256
+    ],
+    "freezer": [
+      256,
+      256
+    ],
+    "fusion": [
+      256,
+      256
+    ],
+    "generifier": [
+      256,
+      256
+    ],
+    "hammer": [
+      256,
+      256
+    ],
+    "implosioncompressor": [
+      256,
+      256
+    ],
+    "injector": [
+      256,
+      256
+    ],
+    "juicer": [
+      256,
+      256
+    ],
+    "laminator": [
+      256,
+      256
+    ],
+    "laserengraver": [
+      256,
+      256
+    ],
+    "lathe": [
+      256,
+      256
+    ],
+    "lightning": [
+      256,
+      256
+    ],
+    "loom": [
+      256,
+      256
+    ],
+    "magneticseparator": [
+      256,
+      256
+    ],
+    "massfab": [
+      256,
+      256
+    ],
+    "melter": [
+      256,
+      256
+    ],
+    "mixer": [
+      256,
+      256
+    ],
+    "mortar": [
+      256,
+      256
+    ],
+    "nanofab": [
+      256,
+      256
+    ],
+    "orebyproducts": [
+      256,
+      256
+    ],
+    "oven": [
+      256,
+      256
+    ],
+    "plantalyzer": [
+      256,
+      256
+    ],
+    "polarizer": [
+      256,
+      256
+    ],
+    "press": [
+      256,
+      256
+    ],
+    "pressurewasher": [
+      256,
+      256
+    ],
+    "printer": [
+      256,
+      256
+    ],
+    "replicator": [
+      256,
+      256
+    ],
+    "roaster": [
+      256,
+      256
+    ],
+    "rollbender": [
+      256,
+      256
+    ],
+    "rollformer": [
+      256,
+      256
+    ],
+    "rollingmill": [
+      256,
+      256
+    ],
+    "scannermolecular": [
+      256,
+      256
+    ],
+    "scannervisuals": [
+      256,
+      256
+    ],
+    "sharpener": [
+      256,
+      256
+    ],
+    "shredder": [
+      256,
+      256
+    ],
+    "sifter": [
+      256,
+      256
+    ],
+    "slicer": [
+      256,
+      256
+    ],
+    "sluice": [
+      256,
+      256
+    ],
+    "smelter": [
+      256,
+      256
+    ],
+    "squeezer": [
+      256,
+      256
+    ],
+    "steamcracking": [
+      256,
+      256
+    ],
+    "unboxinator": [
+      256,
+      256
+    ],
+    "welder": [
+      256,
+      256
+    ],
+    "wiremill": [
+      256,
+      256
+    ]
+  }
+}

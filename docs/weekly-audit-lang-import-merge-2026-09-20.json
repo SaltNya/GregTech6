@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "path": "F:\\Dev\\GregTech6\\GregTech6\\tools\\generated\\materials-source.java.txt",
+      "exists": true
+    },
+    {
+      "path": "F:\\Dev\\GregTech6\\GregTech6\\src\\main\\java\\com\\gregtech\\gregtech\\data\\ImportedMaterialData.java",
+      "exists": true
+    },
+    {
+      "path": "F:\\Dev\\GregTech6\\GregTech6\\src\\main\\java\\com\\gregtech\\gregtech\\data\\AntimatterMaterials.java",
+      "exists": true
+    }
+  ],
+  "materialCounts": [
+    1067,
+    1067
+  ],
+  "changesBeforeStandardSync": {
+    "zh": {},
+    "en": {}
+  },
+  "note": "In-memory material merge only; main and its final sync_standard_chinese were not run."
+}

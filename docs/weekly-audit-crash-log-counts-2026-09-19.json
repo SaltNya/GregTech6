@@ -1,0 +1,17 @@
+{
+  "WARN net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING": 4,
+  "WARN net.minecraftforge.jarjar.selection.JarSelector/": 2,
+  "WARN net.minecraft.server.packs.VanillaPackResourcesBuilder/": 2,
+  "WARN GregTechCEu/": 5,
+  "WARN net.minecraftforge.fml.DeferredWorkQueue/LOADING": 2,
+  "WARN mixin/": 1,
+  "ERROR net.minecraft.Util/": 8,
+  "WARN net.minecraft.client.renderer.texture.SpriteContents/": 85,
+  "ERROR net.minecraft.client.renderer.texture.SpriteLoader/": 1,
+  "WARN net.minecraft.client.resources.model.ModelBakery/": 61331,
+  "WARN net.minecraft.client.resources.model.ModelManager/": 66,
+  "WARN net.minecraft.client.sounds.SoundEngine/": 2,
+  "WARN net.minecraft.client.renderer.ShaderInstance/": 1,
+  "WARN io.netty.util.internal.SystemPropertyUtil/": 1,
+  "WARN net.minecraft.world.level.chunk.LevelChunk/": 4
+}

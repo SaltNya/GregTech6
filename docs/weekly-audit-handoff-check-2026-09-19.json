@@ -1,0 +1,16 @@
+{
+  "jarBytes": 34045205,
+  "jarSha256": "16661AFA3C3C04847C296B49E2D9E4D334E13464A691A8407F853931B8A5C79B",
+  "newestJava": "src\\main\\java\\com\\gregtech\\gregtech\\content\\logistics\\LogisticsCoreStructure.java",
+  "javaBeforeGate": true,
+  "gateBeforeJar": true,
+  "entries": 72845,
+  "jarAssemblySerializerMatchesClasses": false,
+  "saplingModelInJar": {
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "gregtech:block/iconsets/sapling_small_blue_mahoe"
+    }
+  },
+  "saplingReferencedTextureInJar": false
+}

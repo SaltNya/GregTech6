@@ -1,0 +1,50 @@
+[
+  {
+    "set": "chem",
+    "class": "GTChemGen",
+    "equal": true,
+    "summary": "[chem] translated 358 / 402 RM calls -> 358 recipes (GTChemGen.java)"
+  },
+  {
+    "set": "other",
+    "class": "GTOtherGen",
+    "equal": true,
+    "summary": "[other] translated 250 / 597 RM calls -> 265 recipes (GTOtherGen.java)"
+  },
+  {
+    "set": "potions",
+    "class": "GTPotionGen",
+    "equal": true,
+    "summary": "[potions] translated 500 / 655 RM calls -> 500 recipes (GTPotionGen.java)"
+  },
+  {
+    "set": "food",
+    "class": "GTFoodGen",
+    "equal": true,
+    "summary": "[food] translated 243 / 359 RM calls -> 243 recipes (GTFoodGen.java)"
+  },
+  {
+    "set": "extruder",
+    "class": "GTExtruderGen",
+    "equal": true,
+    "summary": "[extruder] translated 142 / 175 RM calls -> 322 recipes (GTExtruderGen.java)"
+  },
+  {
+    "set": "vanilla",
+    "class": "GTVanillaGen",
+    "equal": true,
+    "summary": "[vanilla] translated 135 / 235 RM calls -> 228 recipes (GTVanillaGen.java)"
+  },
+  {
+    "set": "temporary",
+    "class": "GTTemporaryGen",
+    "equal": true,
+    "summary": "[temporary] translated 34 / 90 RM calls -> 34 recipes (GTTemporaryGen.java)"
+  },
+  {
+    "set": "ores",
+    "class": "GTOresGen",
+    "equal": true,
+    "summary": "[ores] translated 138 / 280 RM calls -> 138 recipes (GTOresGen.java)"
+  }
+]

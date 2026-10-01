@@ -1,0 +1,45 @@
+[
+  {
+    "tool": "handoff_check",
+    "error": null,
+    "output": "gate: [20:55:16] [Server thread/INFO] [minecraft/GameTestServer]: ========= 681 GAME TESTS COMPLETE ======================\ngate: [20:55:16] [Server thread/INFO] [minecraft/GameTestServer]: All 681 required tests passed :)\ngate log mtime: Sat Sep 19 20:55:53 2026\nregistry: {\"materials\": 1156, \"items\": 70760, \"blocks\": 12099, \"fluids\": 925, \"queued\": {\"material items\": 55960, \"technological items\": 326, \"multi-items (tools/bottles/\nmissingContent: {\"total\": 49, \"byPrefix\": {\"tech\": 36, \"i\": 11, \"omd\": 2}}\nmultiblock parts: 89\njar: build\\libs\\gregtech-1.0.0.jar  32.5 MB  sha256=16661AFA3C3C04847C296B49E2D9E4D334E13464A691A8407F853931B8A5C79B\njava newest < gate log: True\ngate log < jar: True\n"
+  },
+  {
+    "tool": "show_gate_failures",
+    "error": null,
+    "output": "'[20:48:44] [Server thread/INFO] [minecraft/GameTestServer]: 681 tests are now running!'\n'[20:55:16] [Server thread/INFO] [minecraft/GameTestServer]: ========= 681 GAME TESTS COMPLETE ======================'\n'[20:55:16] [Server thread/INFO] [minecraft/GameTestServer]: All 681 required tests passed :)'\n0 failures in 1506 log lines\n"
+  },
+  {
+    "tool": "check_hive_jar_contents",
+    "error": null,
+    "output": "hive textures in jar: 73\nhive block models in jar: 16\nassets/gregtech/blockstates/bumble_hive.json                           OK\nassets/gregtech/models/item/bumble_hive.json                           OK\nassets/gregtech/lang/en_us.json                                        OK\nassets/gregtech/lang/zh_cn.json                                        OK\ndata/gregtech/worldgen/configured_feature/gt_bumble_hives.json         OK\ndata/gregtech/worldgen/placed_feature/gt_bumble_hives.json             OK\ndata/gregtech/forge/biome_modifier/gt_bumble_hives.json                OK\ndata/gregtech/forge/biome_modifier/gt_bumble_hives_nether.json         OK\ndata/gregtech/forge/biome_modifier/gt_bumble_hives_end.json            OK\nhive/bee classes in jar: 8\n    BumbleHiveBlock.class\n    BumbleHiveBlockEntity.class\n    BumbleBeeGenes.class\n    BumbleBeeType.class\n    GTBumbleSpecies.class\n    BumbleHiveTests.class\n    GTCombGen.class\n    GTBumbleHivesFeature.class\n"
+  },
+  {
+    "tool": "_heap_report",
+    "error": null,
+    "output": "samples: 14\ntime      usedMB  chunks      oreBE   BE/chunk   MapNode ItemStack\n21:28:18    3727    3059    1013909        331    6972862   797977\n21:29:19    5929    3431    1409450        411    8561866   781904\n21:30:21    3457    3568    1529235        429    8840141   848039\n21:31:23    5789    4031    1615761        401    9883899   847726\n21:32:25    4419    3236    1561438        483    9400016   847611\n21:33:27    4507    3366    1613418        479    9741782   847810\n21:34:28    5083    3375    1636241        485   10044054   847860\n21:35:29    5095    3646    1812658        497   10489766   848588\n21:36:30    5996    3646    1812658        497   10489194   848310\n21:37:31    4776    3646    1812658        497   10489187   848306\n21:38:32    4635    3646    1812658        497   10489183   848305\n21:39:33    4385    3646    1812658        497   10489240   848309\n21:40:34    4069    3646    1812658        497   10489393   848287\n21:41:35    3936       -          -          -       None     None\n\nlast 4 samples: ore delta 0, chunk delta 0, used delta -699 MB\n"
+  },
+  {
+    "tool": "show_gate_failures",
+    "case": "empty",
+    "exitCode": 0,
+    "output": "0 failures in 0 log lines\n"
+  },
+  {
+    "tool": "show_gate_failures",
+    "case": "crashed",
+    "exitCode": 0,
+    "output": "0 failures in 1 log lines\n"
+  },
+  {
+    "tool": "show_gate_failures",
+    "case": "still-running",
+    "exitCode": 0,
+    "output": "'681 tests are now running'\n0 failures in 1 log lines\n"
+  },
+  {
+    "tool": "report_non_ascii_chars",
+    "case": "real UTF-8 BOM",
+    "output": "F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\log-checks\\bom.txt: bom=False, distinct non-ascii=0\n"
+  }
+]

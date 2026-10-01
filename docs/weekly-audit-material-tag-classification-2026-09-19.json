@@ -1,0 +1,33 @@
+{
+  "method": "Source-path audit: these items have null prefix after composition load; MaterialTagPack infers ore from 2U alone. No game tag reload executed.",
+  "cases": [
+    {
+      "item": "minecraft:iron_door",
+      "material": "Iron",
+      "amount": 1297296000,
+      "recoverable": false,
+      "incorrectGeneratedTag": "forge:ores/iron"
+    },
+    {
+      "item": "minecraft:heavy_weighted_pressure_plate",
+      "material": "Iron",
+      "amount": 1297296000,
+      "recoverable": true,
+      "incorrectGeneratedTag": "forge:ores/iron"
+    },
+    {
+      "item": "minecraft:light_weighted_pressure_plate",
+      "material": "Gold",
+      "amount": 1297296000,
+      "recoverable": true,
+      "incorrectGeneratedTag": "forge:ores/gold"
+    },
+    {
+      "item": "minecraft:bone",
+      "material": "Bone",
+      "amount": 1297296000,
+      "recoverable": true,
+      "incorrectGeneratedTag": "forge:ores/bone"
+    }
+  ]
+}

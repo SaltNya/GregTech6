@@ -1,0 +1,37 @@
+{
+  "totalRows": 1278,
+  "scannedRows": 320,
+  "sample": [
+    [
+      "wild_bumblebee_scanned_drone",
+      "Wild Bumblebee Drone (Scanned)",
+      "bumblebee",
+      ""
+    ],
+    [
+      "wild_bumblebee_scanned_princess",
+      "Wild Bumblebee Princess (Scanned)",
+      "bumblebee",
+      ""
+    ],
+    [
+      "wild_bumblebee_scanned_queen",
+      "Wild Bumblebee Queen (Scanned)",
+      "bumblebee",
+      ""
+    ],
+    [
+      "wild_bumblebee_scanned_dead",
+      "Wild Bumblebee (Dead, Scanned)",
+      "bumblebee",
+      ""
+    ]
+  ],
+  "generatorEmittedBeeSuffixes": [
+    "_drone",
+    "_princess",
+    "_queen",
+    "_dead"
+  ],
+  "generatorWasNotRun": true
+}

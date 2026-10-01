@@ -1,0 +1,34 @@
+{
+  "gt6Groups": [
+    "COBBL",
+    "STONE"
+  ],
+  "gt6Rows": 60,
+  "portFlags": [
+    "false",
+    "false",
+    "false",
+    "false",
+    "true"
+  ],
+  "portMouldFamilies": [
+    "extruder_shape_",
+    "low_heat_extruder_shape_"
+  ],
+  "portShapes": [
+    "axehead",
+    "bolt",
+    "curvedplate",
+    "gear",
+    "hammerhead",
+    "hoehead",
+    "longrod",
+    "pickaxehead",
+    "plate",
+    "rod",
+    "shovelhead",
+    "smallgear",
+    "swordblade"
+  ],
+  "problems": []
+}

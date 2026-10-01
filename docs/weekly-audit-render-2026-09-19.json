@@ -1,0 +1,151 @@
+{
+  "scope": "all-declarations",
+  "filesChecked": 49057,
+  "issues": [
+    {
+      "source": "models/block/wood/beam_ebony_x.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_ebony"
+    },
+    {
+      "source": "models/block/wood/beam_ebony_y.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_ebony"
+    },
+    {
+      "source": "models/block/wood/beam_ebony_z.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_ebony"
+    },
+    {
+      "source": "models/block/wood/beam_pine_x.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_pine"
+    },
+    {
+      "source": "models/block/wood/beam_pine_y.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_pine"
+    },
+    {
+      "source": "models/block/wood/beam_pine_z.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_pine"
+    },
+    {
+      "source": "models/block/wood/beam_white_mahoe_x.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_white_mahoe"
+    },
+    {
+      "source": "models/block/wood/beam_white_mahoe_y.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_white_mahoe"
+    },
+    {
+      "source": "models/block/wood/beam_white_mahoe_z.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_white_mahoe"
+    },
+    {
+      "source": "models/block/wood/leaves_ebony.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/leaves_ebony"
+    },
+    {
+      "source": "models/block/wood/leaves_pine.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/leaves_pine"
+    },
+    {
+      "source": "models/block/wood/leaves_white_mahoe.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/leaves_white_mahoe"
+    },
+    {
+      "source": "models/block/wood/log_ebony.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/log_ebony"
+    },
+    {
+      "source": "models/block/wood/log_ebony.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/log_ebony_top"
+    },
+    {
+      "source": "models/block/wood/log_pine.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/log_pine"
+    },
+    {
+      "source": "models/block/wood/log_pine.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/log_pine_top"
+    },
+    {
+      "source": "models/block/wood/log_white_mahoe.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/log_white_mahoe"
+    },
+    {
+      "source": "models/block/wood/log_white_mahoe.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/log_white_mahoe_top"
+    },
+    {
+      "source": "models/block/wood/planks_ebony.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_ebony"
+    },
+    {
+      "source": "models/block/wood/planks_pine.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_pine"
+    },
+    {
+      "source": "models/block/wood/planks_white_mahoe.json",
+      "kind": "texture",
+      "target": "gregtech:block/wood/planks_white_mahoe"
+    },
+    {
+      "source": "models/block/wood/sapling_blue_mahoe.json",
+      "kind": "texture",
+      "target": "gregtech:block/iconsets/sapling_small_blue_mahoe"
+    },
+    {
+      "source": "models/block/wood/sapling_ebony.json",
+      "kind": "texture",
+      "target": "gregtech:block/iconsets/sapling_small_ebony"
+    },
+    {
+      "source": "models/block/wood/sapling_pine.json",
+      "kind": "texture",
+      "target": "gregtech:block/iconsets/sapling_small_pine"
+    },
+    {
+      "source": "models/block/wood/sapling_white_mahoe.json",
+      "kind": "texture",
+      "target": "gregtech:block/iconsets/sapling_small_white_mahoe"
+    },
+    {
+      "source": "models/item/sapling_blue_mahoe.json",
+      "kind": "texture",
+      "target": "gregtech:block/iconsets/sapling_small_blue_mahoe"
+    },
+    {
+      "source": "models/item/sapling_ebony.json",
+      "kind": "texture",
+      "target": "gregtech:block/iconsets/sapling_small_ebony"
+    },
+    {
+      "source": "models/item/sapling_pine.json",
+      "kind": "texture",
+      "target": "gregtech:block/iconsets/sapling_small_pine"
+    },
+    {
+      "source": "models/item/sapling_white_mahoe.json",
+      "kind": "texture",
+      "target": "gregtech:block/iconsets/sapling_small_white_mahoe"
+    }
+  ]
+}

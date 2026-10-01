@@ -1,0 +1,15 @@
+{
+  "scope": "Integer arithmetic witness; no terrain generation executed. Original GT6 has the same int expression.",
+  "centre": [
+    0,
+    0
+  ],
+  "chunkOrigin": [
+    50000,
+    0
+  ],
+  "actualSquaredDistance": 2500000000,
+  "javaIntSquaredDistance": -1794967296,
+  "acceptedAs480BlockField": true,
+  "acceptedAs64BlockInnerField": true
+}

@@ -1,0 +1,37 @@
+{
+  "zero": {
+    "summary": {
+      "total": 1,
+      "byPrefix": {
+        "stale": 1
+      }
+    },
+    "content": "stale:old\n"
+  },
+  "absent": {
+    "summary": {
+      "total": 1,
+      "byPrefix": {
+        "stale": 1
+      }
+    },
+    "content": "stale:old\n"
+  },
+  "positive": {
+    "summary": {
+      "total": 1,
+      "byPrefix": {
+        "i": 1
+      }
+    },
+    "content": "i:gem:Ta\n"
+  },
+  "materialSnapshotGroups": {
+    "Elements": 172,
+    "Compounds": 570,
+    "Ores": 125,
+    "Stones": 71,
+    "Woods": 120
+  },
+  "materialSnapshotTotal": 1058
+}

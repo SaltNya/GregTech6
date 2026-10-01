@@ -1,0 +1,7 @@
+{
+  "output": "en_us.json: tree-hole keys already present\nzh_cn.json: tree-hole keys already present\nholes: 3, wrote 9 asset files\n  blockstates/resin_hole_rubber.json\n  models/block/wood/resin_hole_rubber_hole.json\n  models/block/wood/resin_hole_rubber_resin.json\n  blockstates/tapped_maple.json\n  models/block/wood/tapped_maple_hole.json\n  models/block/wood/tapped_maple_resin.json\n  blockstates/tapped_rainbowood.json\n  models/block/wood/tapped_rainbowood_hole.json\n  models/block/wood/tapped_rainbowood_resin.json\nwrote 340 models and 30 blockstates for 30 tracks\nwould write 0 scanned bee models\n",
+  "compared": 201,
+  "differences": [],
+  "directTextureReferencesMissing": [],
+  "productionWrites": false
+}

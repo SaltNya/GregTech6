@@ -1,0 +1,20 @@
+[
+  {
+    "tool": "restore_multiblock_appearance",
+    "stdout": "Restored 111 block definitions (74 from LargeMachineParts); 0 blockstates synthesised, 1128 texture/metadata files copied\n",
+    "identical": 652,
+    "differences": []
+  },
+  {
+    "tool": "generate_energy_node_assets",
+    "stdout": "textures copied: 154\ndevices: 42, lang: 42\n",
+    "identical": 282,
+    "differences": []
+  },
+  {
+    "tool": "wire_dungeon_keys_and_portals",
+    "stdout": "key textures copied: 10, End portal texture: yes, asset files written: 18, lang keys: +0/+0\n",
+    "identical": 32,
+    "differences": []
+  }
+]

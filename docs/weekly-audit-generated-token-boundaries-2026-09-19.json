@@ -1,0 +1,17 @@
+{
+  "scope": "Literal token scan in loaders/c/*Gen.java; no gameplay verification",
+  "tables": [
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTChemGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTCombGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTExtruderGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTFoodGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTLootGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTOresGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTOtherGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTPotionGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTTemporaryGen.java",
+    "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTVanillaGen.java"
+  ],
+  "zeroVanillaOrCellTokens": [],
+  "blockCountsAbove64": []
+}

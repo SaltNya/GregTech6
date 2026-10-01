@@ -1,0 +1,65 @@
+[
+  {
+    "tool": "add_tree_species_lang",
+    "error": null,
+    "changes": {
+      "en_us": {},
+      "zh_cn": {}
+    },
+    "output": "en_us.json: already has 1 of the new keys, skipping\nzh_cn.json: already has 1 of the new keys, skipping\n"
+  },
+  {
+    "tool": "add_loot_crate_lang",
+    "error": null,
+    "changes": {
+      "en_us": {},
+      "zh_cn": {}
+    },
+    "output": "en_us.json: tooltip key already present\nzh_cn.json: tooltip key already present\n"
+  },
+  {
+    "tool": "add_valve_part_lang",
+    "error": null,
+    "changes": {
+      "en_us": {},
+      "zh_cn": {}
+    },
+    "output": "lang keys to add: 98\nen_us.json: 0 keys\nzh_cn.json: 0 keys\n"
+  },
+  {
+    "tool": "add_usb_tooltip_lang",
+    "error": null,
+    "changes": {
+      "en_us": {},
+      "zh_cn": {}
+    },
+    "output": "en_us.json: 9075 keys, 0 updated\nzh_cn.json: 9075 keys, 0 updated\n"
+  },
+  {
+    "tool": "drop_retired_cover_lang",
+    "error": null,
+    "changes": {
+      "en_us": {},
+      "zh_cn": {}
+    },
+    "output": "en_us.json: removed 0 lines, 9077 remain\nzh_cn.json: removed 0 lines, 9077 remain\n"
+  },
+  {
+    "tool": "add_track_lang",
+    "error": null,
+    "changes": {
+      "en_us": {},
+      "zh_cn": {}
+    },
+    "output": "en_us: +0 keys, 30 entries, 0 still missing\nzh_cn: +0 keys, 30 entries, 0 still missing\n"
+  },
+  {
+    "tool": "add_bumble_scanned_lang",
+    "error": null,
+    "changes": {
+      "en_us": {},
+      "zh_cn": {}
+    },
+    "output": "en_us: +0 keys, 320 entries, 0 still missing\nzh_cn: +0 keys, 320 entries, 0 still missing\n"
+  }
+]

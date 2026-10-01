@@ -1,0 +1,1705 @@
+{
+  "assemblies": [
+    "axe",
+    "builder_wand",
+    "chisel",
+    "construction_pick",
+    "double_axe",
+    "file",
+    "gem_tipped_pickaxe",
+    "hammer",
+    "hoe",
+    "magnifying_glass",
+    "pickaxe",
+    "plow",
+    "saw",
+    "screwdriver",
+    "sense",
+    "shovel",
+    "soft_hammer",
+    "spade",
+    "sword",
+    "universal_spade"
+  ],
+  "headAndHandle": 20,
+  "headPatterns": 35,
+  "heads": {
+    "axe": [
+      {
+        "forms": {
+          "I": "ingot",
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "PIh",
+          "P  ",
+          "f  "
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "CG ",
+          "C  ",
+          "f  "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "builder_wand": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " P ",
+          "f h",
+          " s "
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer",
+          "s": "saw"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " C ",
+          "f h",
+          " s "
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer",
+          "s": "saw"
+        }
+      },
+      {
+        "forms": {
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " G ",
+          "f h",
+          " s "
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer",
+          "s": "saw"
+        }
+      }
+    ],
+    "chisel": [
+      {
+        "forms": {
+          "P": "plate",
+          "S": "stick"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "hPf",
+          " S "
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "S": "stick"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "Cf",
+          "S "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "construction_pick": [
+      {
+        "forms": {
+          "I": "ingot",
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "PIP",
+          "f h"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "CGC",
+          "f  "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "double_axe": [
+      {
+        "forms": {
+          "I": "ingot",
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "PIP",
+          "P P",
+          "f h"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "CGC",
+          "C C",
+          "f  "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "file": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " P ",
+          " Pk"
+        ],
+        "tools": {
+          "k": "knife"
+        }
+      }
+    ],
+    "hammer": [
+      {
+        "forms": {
+          "I": "ingot"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "II ",
+          "IIh",
+          "II "
+        ],
+        "tools": {
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "GG ",
+          "GGf",
+          "GG "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "hoe": [
+      {
+        "forms": {
+          "I": "ingot",
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "PIh",
+          "f  "
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "CG ",
+          "f  "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "pickaxe": [
+      {
+        "forms": {
+          "I": "ingot",
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "PII",
+          "f h"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "CGG",
+          "f  "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "plow": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "PPP",
+          "PPP",
+          "f h"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "CCC",
+          "CCC",
+          "f  "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "saw": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "PP",
+          "fh"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "CC",
+          "f "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "screwdriver": [
+      {
+        "forms": {
+          "S": "stick"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "hS",
+          "Sf"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      }
+    ],
+    "sense": [
+      {
+        "forms": {
+          "I": "ingot",
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "PPI",
+          "f h"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "CCG",
+          "f  "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "shovel": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "fPh"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "fC "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "soft_hammer": [
+      {
+        "forms": {
+          "I": "ingot"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "II ",
+          "IIr",
+          "II "
+        ],
+        "tools": {
+          "r": "soft_hammer"
+        }
+      },
+      {
+        "forms": {
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "GG ",
+          "GGr",
+          "GG "
+        ],
+        "tools": {
+          "r": "soft_hammer"
+        }
+      }
+    ],
+    "spade": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "fPh",
+          " s "
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer",
+          "s": "saw"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "fC ",
+          " s "
+        ],
+        "tools": {
+          "f": "file",
+          "s": "saw"
+        }
+      }
+    ],
+    "sword": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " P ",
+          "fPh"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " C ",
+          "fC "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "wrench": [
+      {
+        "forms": {
+          "P": "plate",
+          "V": "plate",
+          "W": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "hPW",
+          "PVP",
+          "WPd"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "V": "plateGem",
+          "W": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "hCW",
+          "CVC",
+          "WCd"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "h": "hammer"
+        }
+      }
+    ]
+  },
+  "shaped": {
+    "axe": [
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {
+            "X": "minecraft:flint"
+          },
+          "onlyStone": false,
+          "toolMaterial": "Flint"
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "XX",
+          "XH"
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "Obsidian",
+          "onlyStone": false
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "XX",
+          "XH"
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "PetrifiedWood",
+          "onlyStone": false
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "XX",
+          "XH"
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": true
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "XX",
+          "XH"
+        ],
+        "tools": {}
+      }
+    ],
+    "bending_cylinder": [
+      {
+        "forms": {
+          "I": "ingot"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "sfh",
+          "III",
+          "III"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer",
+          "s": "saw"
+        }
+      }
+    ],
+    "branch_cutter": [
+      {
+        "forms": {
+          "P": "plate",
+          "S": "stick",
+          "T": "screw"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "PfP",
+          "PdP",
+          "STS"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "f": "file"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "S": "stick",
+          "T": "screw"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "CfC",
+          "CdC",
+          "STS"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "f": "file"
+        }
+      }
+    ],
+    "butchery_knife": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "fPP",
+          "hPP",
+          "  H"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "fCC",
+          " CC",
+          "  H"
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "club": [
+      {
+        "forms": {
+          "I": "ingot"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " II",
+          "III",
+          "HI "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "G": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " GG",
+          "GGG",
+          "HG "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "R": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          " RR",
+          "RRR",
+          "HR "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {
+            "X": "minecraft:bone"
+          },
+          "onlyStone": false,
+          "toolMaterial": "Bone"
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "  X",
+          " X ",
+          "H  "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "PetrifiedWood",
+          "onlyStone": false
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          " XX",
+          "XXX",
+          "HX "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": true
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          " XX",
+          "XXX",
+          "HX "
+        ],
+        "tools": {}
+      }
+    ],
+    "crowbar": [
+      {
+        "forms": {
+          "S": "stick",
+          "V": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "hVS",
+          "VSV",
+          "SVf"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      }
+    ],
+    "flint_and_tinder": [
+      {
+        "forms": {
+          "T": "gem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": true,
+        "normalHandle": false,
+        "rows": [
+          "T ",
+          " F"
+        ],
+        "tools": {}
+      }
+    ],
+    "hammer": [
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "PetrifiedWood",
+          "onlyStone": false
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "XX ",
+          "XXH",
+          "XX "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": true
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "XX ",
+          "XXH",
+          "XX "
+        ],
+        "tools": {}
+      }
+    ],
+    "hand_drill": [
+      {
+        "forms": {
+          "X": "plate",
+          "Y": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "  X",
+          "HYH",
+          "YH "
+        ],
+        "tools": {}
+      }
+    ],
+    "hoe": [
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "PetrifiedWood",
+          "onlyStone": false
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "XX",
+          " H"
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": true
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "XX",
+          " H"
+        ],
+        "tools": {}
+      }
+    ],
+    "knife": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "fP",
+          "hH"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "fC",
+          "hH"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {
+            "X": "minecraft:flint"
+          },
+          "onlyStone": false,
+          "toolMaterial": "Flint"
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "HX"
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "Obsidian",
+          "onlyStone": false
+        },
+        "mirror": true,
+        "normalHandle": true,
+        "rows": [
+          "HX"
+        ],
+        "tools": {}
+      }
+    ],
+    "monkey_wrench": [
+      {
+        "forms": {
+          "P": "plate",
+          "T": "screw"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "PPd",
+          "hPT",
+          " P "
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "T": "screw"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "CCd",
+          "fCT",
+          " C "
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "f": "file"
+        }
+      }
+    ],
+    "pickaxe": [
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {
+            "X": "minecraft:flint"
+          },
+          "onlyStone": false,
+          "toolMaterial": "Flint"
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "XXX",
+          " H "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "Obsidian",
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "XXX",
+          " H "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "PetrifiedWood",
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "XXX",
+          " H "
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": true
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "XXX",
+          " H "
+        ],
+        "tools": {}
+      }
+    ],
+    "pincers": [
+      {
+        "forms": {
+          "S": "stick",
+          "T": "screw",
+          "X": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "XhX",
+          " T ",
+          "SdS"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "h": "hammer"
+        }
+      }
+    ],
+    "plunger": [
+      {
+        "forms": {
+          "S": "stick",
+          "V": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "xVV",
+          " SV",
+          "S f"
+        ],
+        "tools": {
+          "f": "file",
+          "x": "wire_cutter"
+        }
+      }
+    ],
+    "rolling_pin": [
+      {
+        "forms": {
+          "I": "ingot",
+          "S": "stick"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": true,
+        "normalHandle": false,
+        "rows": [
+          "  S",
+          " I ",
+          "S f"
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ],
+    "scissors": [
+      {
+        "forms": {
+          "O": "ring",
+          "P": "plate",
+          "T": "screw"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "PfP",
+          " T ",
+          "OdO"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "f": "file"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "O": "ring",
+          "T": "screw"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "CfC",
+          " T ",
+          "OdO"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "f": "file"
+        }
+      }
+    ],
+    "scoop": [
+      {
+        "forms": {
+          "S": "stick",
+          "V": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "SVS",
+          "SSS",
+          "xSh"
+        ],
+        "tools": {
+          "h": "hammer",
+          "x": "wire_cutter"
+        }
+      }
+    ],
+    "shovel": [
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {
+            "X": "minecraft:flint"
+          },
+          "onlyStone": false,
+          "toolMaterial": "Flint"
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "X",
+          "H"
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "Obsidian",
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "X",
+          "H"
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyMaterial": "PetrifiedWood",
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "X",
+          "H"
+        ],
+        "tools": {}
+      },
+      {
+        "forms": {
+          "X": "rockGt"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": true
+        },
+        "mirror": false,
+        "normalHandle": true,
+        "rows": [
+          "X",
+          "H"
+        ],
+        "tools": {}
+      }
+    ],
+    "small_bending_cylinder": [
+      {
+        "forms": {
+          "I": "ingot"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "sfh",
+          "III"
+        ],
+        "tools": {
+          "f": "file",
+          "h": "hammer",
+          "s": "saw"
+        }
+      }
+    ],
+    "universal_spade": [
+      {
+        "forms": {
+          "S": "stick"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "AT",
+          "Sd"
+        ],
+        "tools": {
+          "d": "screwdriver"
+        }
+      }
+    ],
+    "wire_cutter": [
+      {
+        "forms": {
+          "P": "plate",
+          "S": "stick",
+          "T": "screw"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "PfP",
+          "hPd",
+          "STS"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "f": "file",
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem",
+          "S": "stick",
+          "T": "screw"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "CfC",
+          "hCd",
+          "STS"
+        ],
+        "tools": {
+          "d": "screwdriver",
+          "f": "file",
+          "h": "hammer"
+        }
+      }
+    ],
+    "wrench": [
+      {
+        "forms": {
+          "P": "plate"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "PhP",
+          " P ",
+          " P "
+        ],
+        "tools": {
+          "h": "hammer"
+        }
+      },
+      {
+        "forms": {
+          "C": "plateGem"
+        },
+        "gate": {
+          "items": {},
+          "onlyStone": false
+        },
+        "mirror": false,
+        "normalHandle": false,
+        "rows": [
+          "CfC",
+          " C ",
+          " C "
+        ],
+        "tools": {
+          "f": "file"
+        }
+      }
+    ]
+  },
+  "shapedOrForms": 17,
+  "shapedPatterns": 48,
+  "toolTypes": 37,
+  "tools": 37,
+  "toolsWithoutManualRecipe": []
+}

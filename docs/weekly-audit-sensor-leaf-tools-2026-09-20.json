@@ -1,0 +1,52 @@
+[
+  {
+    "tool": "add_sensor_variants",
+    "exitCode": 0,
+    "output": "textures copied: 0 (unchanged: 36)\nfiles written: 0 (unchanged: 36)\nlang keys added: 0 (already present: 8)\n  sensor_weightometer_light          Light Weight-O-Meter Sensor      Loader_MultiTileEntities:1988\n  sensor_weightometer_medium         Medium Weight-O-Meter Sensor     Loader_MultiTileEntities:1989\n  sensor_weightometer_super_heavy    Super Heavy Weight-O-Meter Sensor Loader_MultiTileEntities:1990\n  sensor_tpsmeter                    TPS Sensor                       Loader_MultiTileEntities:1992\n"
+  },
+  {
+    "tool": "generate_missing_leaves_assets",
+    "exitCode": 0,
+    "output": "all 4 species have a leaf model and texture\n"
+  },
+  {
+    "species": "blue_mahoe",
+    "modelMatchesGenerator": true,
+    "pixelsMatchSourceOrAlgorithm": true,
+    "size": [
+      16,
+      16
+    ],
+    "synthesised": false
+  },
+  {
+    "species": "pine",
+    "modelMatchesGenerator": true,
+    "pixelsMatchSourceOrAlgorithm": true,
+    "size": [
+      16,
+      16
+    ],
+    "synthesised": true
+  },
+  {
+    "species": "ebony",
+    "modelMatchesGenerator": true,
+    "pixelsMatchSourceOrAlgorithm": true,
+    "size": [
+      16,
+      16
+    ],
+    "synthesised": true
+  },
+  {
+    "species": "white_mahoe",
+    "modelMatchesGenerator": true,
+    "pixelsMatchSourceOrAlgorithm": true,
+    "size": [
+      16,
+      16
+    ],
+    "synthesised": true
+  }
+]

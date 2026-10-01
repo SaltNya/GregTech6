@@ -1,0 +1,24 @@
+[
+  {
+    "tool": "inventory_port_ids",
+    "args": [
+      "casing",
+      "--blocks",
+      "--limit",
+      "5"
+    ],
+    "error": null,
+    "output": "== 'casing': 17 ==\n    clay_item_casing_mold\n    extruder_shape_casing\n    item_casing\n    low_heat_extruder_shape_casing\n    press_bullet_casing_shape_large\n"
+  },
+  {
+    "tool": "search_gt6_statements",
+    "args": [
+      "CR\\.shaped",
+      "Module_Stone_Generator",
+      "--limit",
+      "2"
+    ],
+    "error": null,
+    "output": "MultiItemRandomTools.java: CR.shaped(IL.Module_Stone_Generator .get(1), CR.DEF_REV_NCC, \"CPC\", \"LMW\", \"COC\", 'M', OP.casingMachine.dat(MT.SteelGalvanized), 'O', IL.Shape_Extruder_Block, 'C', OD_CIRCUITS[4], 'P', OD.craftingPiston, 'L', OD.container1000lava, 'W', OD.container1000water);\nMultiItemRandomTools.java: CR.shaped(IL.Module_Basalt_Generator .get(1), CR.DEF_REV_NCC, \"S\", \"M\", \"I\", 'M', IL.Module_Stone_Generator, 'S', OD.soulsand, 'I', Blocks.packed_ice);\n... (stopped at 2 hits)\n"
+  }
+]

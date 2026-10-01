@@ -1,0 +1,82 @@
+[
+  {
+    "tool": "fix_duplicate_didyouknow",
+    "error": null,
+    "output": "removed 0 lines of the duplicate declaration",
+    "changes": []
+  },
+  {
+    "tool": "fix_duplicate_machine_parts",
+    "error": null,
+    "output": "names owned by GTMultiblocks: 18, ids handled by find(): 9\nnothing to remove\nparts left: 89",
+    "changes": []
+  },
+  {
+    "tool": "fix_flowing_fluid_import",
+    "error": null,
+    "output": "FlowingFluid import fixed",
+    "changes": [
+      {
+        "path": "src/main/java/com/gregtech/gregtech/loaders/a/Loader_Fluids.java",
+        "beforeLines": 140,
+        "afterLines": 141,
+        "flowingImportCountBefore": 1,
+        "flowingImportCountAfter": 2
+      }
+    ]
+  },
+  {
+    "tool": "fix_hint_zinc_fluid",
+    "error": "AssertionError: ",
+    "output": "",
+    "changes": []
+  },
+  {
+    "tool": "rename_nether_lava_level",
+    "error": null,
+    "output": "already renamed",
+    "changes": []
+  },
+  {
+    "tool": "wire_nether_bedrock_ores",
+    "error": null,
+    "output": "already written: src/main/resources/data/gregtech/forge/biome_modifier/gt_nether_bedrock_ores.json",
+    "changes": []
+  },
+  {
+    "tool": "fix_nether_quartz_test",
+    "error": "AssertionError: seam pass anchor",
+    "output": "",
+    "changes": []
+  },
+  {
+    "tool": "wire_cfoam",
+    "error": null,
+    "changedFiles": [],
+    "output": "GTDecorBlocks: already wired\nGTBlockEntities: already wired\n"
+  },
+  {
+    "tool": "wire_coltan",
+    "error": null,
+    "changedFiles": [],
+    "output": "GTFeatures: already wired\n  src/main/resources/data/gregtech/worldgen/configured_feature/gt_coltan.json\n  src/main/resources/data/gregtech/worldgen/placed_feature/gt_coltan.json\n  src/main/resources/data/gregtech/forge/biome_modifier/gt_coltan.json\n"
+  },
+  {
+    "tool": "wire_water_bodies",
+    "error": null,
+    "changedFiles": [],
+    "output": "GTFeatures: already wired\n  src/main/resources/data/gregtech/worldgen/configured_feature/gt_water_bodies.json\n  src/main/resources/data/gregtech/worldgen/placed_feature/gt_water_bodies.json\n  src/main/resources/data/gregtech/forge/biome_modifier/gt_water_bodies.json\n"
+  },
+  {
+    "tool": "wire_rocks_deep_ocean",
+    "error": null,
+    "changedFiles": [],
+    "output": "GTFeatures: ROCKS already wired\nGTFeatures: DEEP_OCEAN already wired\n  src/main/resources/data/gregtech/worldgen/configured_feature/gt_rocks.json\n  src/main/resources/data/gregtech/worldgen/placed_feature/gt_rocks.json\n  src/main/resources/data/gregtech/forge/biome_modifier/gt_rocks.json\n  src/main/resources/data/gregtech/worldgen/configured_feature/gt_deep_ocean.json\n  src/main/resources/data/gregtech/worldgen/placed_feature/gt_deep_ocean.json\n  src/main/resources/data/gregtech/forge/biome_modifier/gt_deep_ocean.json\n"
+  },
+  {
+    "tool": "fix_deposit_twigs",
+    "error": "SystemExit: anchor not found exactly once (0): '        // Twigs (GT6 WorldgenSticks, 2 attempts/chunk): sti'",
+    "changedFiles": [],
+    "output": ""
+  }
+]

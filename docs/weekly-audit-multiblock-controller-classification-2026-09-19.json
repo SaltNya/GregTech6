@@ -1,0 +1,373 @@
+[
+  {
+    "gt6Id": 17001,
+    "portId": "wood_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Wood",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17002,
+    "portId": "small_stainless_steel_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17003,
+    "portId": "small_tungstensteel_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17004,
+    "portId": "small_tungsten_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17005,
+    "portId": "small_adamantium_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17006,
+    "portId": "small_titanium_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17007,
+    "portId": "small_invar_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17022,
+    "portId": "small_dense_stainless_steel_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17023,
+    "portId": "small_dense_tungstensteel_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17024,
+    "portId": "small_dense_tungsten_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17025,
+    "portId": "small_dense_adamantium_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17026,
+    "portId": "small_dense_titanium_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17027,
+    "portId": "small_dense_invar_tank_main_valve",
+    "originalClass": "MultiTileEntityTank3x3x3Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17042,
+    "portId": "large_stainless_steel_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17043,
+    "portId": "large_tungstensteel_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17044,
+    "portId": "large_tungsten_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17045,
+    "portId": "large_adamantium_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17046,
+    "portId": "large_titanium_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17047,
+    "portId": "large_invar_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17062,
+    "portId": "large_dense_stainless_steel_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17063,
+    "portId": "large_dense_tungstensteel_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17064,
+    "portId": "large_dense_tungsten_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17065,
+    "portId": "large_dense_adamantium_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17066,
+    "portId": "large_dense_titanium_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17067,
+    "portId": "large_dense_invar_tank_main_valve",
+    "originalClass": "MultiTileEntityTank5x5x5Metal",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17201,
+    "portId": "stainless_steel_boiler_main_barometer",
+    "originalClass": "MultiTileEntityLargeBoiler",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17202,
+    "portId": "titanium_boiler_main_barometer",
+    "originalClass": "MultiTileEntityLargeBoiler",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17203,
+    "portId": "tungstensteel_boiler_main_barometer",
+    "originalClass": "MultiTileEntityLargeBoiler",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17204,
+    "portId": "adamantium_boiler_main_barometer",
+    "originalClass": "MultiTileEntityLargeBoiler",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17205,
+    "portId": "invar_boiler_main_barometer",
+    "originalClass": "MultiTileEntityLargeBoiler",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17211,
+    "portId": "magnalium_steam_turbine_main_housing",
+    "originalClass": "MultiTileEntityLargeTurbineSteam",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17212,
+    "portId": "trinitanium_steam_turbine_main_housing",
+    "originalClass": "MultiTileEntityLargeTurbineSteam",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17213,
+    "portId": "graphene_steam_turbine_main_housing",
+    "originalClass": "MultiTileEntityLargeTurbineSteam",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17214,
+    "portId": "vibramantium_steam_turbine_main_housing",
+    "originalClass": "MultiTileEntityLargeTurbineSteam",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17221,
+    "portId": "stainless_steel_dynamo_main_housing",
+    "originalClass": "MultiTileEntityLargeDynamo",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17222,
+    "portId": "titanium_dynamo_main_housing",
+    "originalClass": "MultiTileEntityLargeDynamo",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17223,
+    "portId": "tungstensteel_dynamo_main_housing",
+    "originalClass": "MultiTileEntityLargeDynamo",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17224,
+    "portId": "adamantium_dynamo_main_housing",
+    "originalClass": "MultiTileEntityLargeDynamo",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17231,
+    "portId": "magnalium_gas_turbine_main_housing",
+    "originalClass": "MultiTileEntityLargeTurbineGas",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17232,
+    "portId": "trinitanium_gas_turbine_main_housing",
+    "originalClass": "MultiTileEntityLargeTurbineGas",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17233,
+    "portId": "graphene_gas_turbine_main_housing",
+    "originalClass": "MultiTileEntityLargeTurbineGas",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17234,
+    "portId": "vibramantium_gas_turbine_main_housing",
+    "originalClass": "MultiTileEntityLargeTurbineGas",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17302,
+    "portId": "large_stainless_steel_crucible",
+    "originalClass": "MultiTileEntityCrucible",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17303,
+    "portId": "large_tungstensteel_crucible",
+    "originalClass": "MultiTileEntityCrucible",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17304,
+    "portId": "large_tungsten_crucible",
+    "originalClass": "MultiTileEntityCrucible",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17305,
+    "portId": "large_adamantium_crucible",
+    "originalClass": "MultiTileEntityCrucible",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17306,
+    "portId": "large_titanium_crucible",
+    "originalClass": "MultiTileEntityCrucible",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17307,
+    "portId": "large_invar_crucible",
+    "originalClass": "MultiTileEntityCrucible",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17309,
+    "portId": "large_steel_crucible",
+    "originalClass": "MultiTileEntityCrucible",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17312,
+    "portId": "large_tantalum_hafnium_carbide_crucible",
+    "originalClass": "MultiTileEntityCrucible",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17996,
+    "portId": "von_da_graagg_generator",
+    "originalClass": "MultiTileEntityVonDaGraagg",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17998,
+    "portId": "lightning_rod_electric_output",
+    "originalClass": "MultiTileEntityLightningRod",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  },
+  {
+    "gt6Id": 17999,
+    "portId": "bedrock_mining_drill_controller",
+    "originalClass": "MultiTileEntityBedrockDrill",
+    "portClass": "MultiblockPortBlock",
+    "note": "Named registration is a relay part; separate generic/tiered controllers may exist, so this is not a count of entirely absent machine families."
+  }
+]

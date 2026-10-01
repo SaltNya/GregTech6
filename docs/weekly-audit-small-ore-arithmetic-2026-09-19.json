@@ -1,0 +1,81 @@
+{
+  "scope": "Pure arithmetic and static host-name examples; no gameplay test",
+  "counts": [
+    {
+      "baseMultiplier": 1,
+      "fortuneRoll": 0,
+      "original": 1,
+      "port": 1
+    },
+    {
+      "baseMultiplier": 1,
+      "fortuneRoll": 1,
+      "original": 1,
+      "port": 1
+    },
+    {
+      "baseMultiplier": 1,
+      "fortuneRoll": 3,
+      "original": 2,
+      "port": 2
+    },
+    {
+      "baseMultiplier": 2,
+      "fortuneRoll": 0,
+      "original": 2,
+      "port": 1
+    },
+    {
+      "baseMultiplier": 2,
+      "fortuneRoll": 1,
+      "original": 2,
+      "port": 1
+    },
+    {
+      "baseMultiplier": 2,
+      "fortuneRoll": 3,
+      "original": 3,
+      "port": 2
+    },
+    {
+      "baseMultiplier": 4,
+      "fortuneRoll": 0,
+      "original": 4,
+      "port": 2
+    },
+    {
+      "baseMultiplier": 4,
+      "fortuneRoll": 1,
+      "original": 4,
+      "port": 2
+    },
+    {
+      "baseMultiplier": 4,
+      "fortuneRoll": 3,
+      "original": 5,
+      "port": 3
+    }
+  ],
+  "hostMappings": [
+    {
+      "host": "stone_granite_black",
+      "constructedLookup": "Granite_black",
+      "actualMaterial": "GraniteBlack"
+    },
+    {
+      "host": "stone_granite_red",
+      "constructedLookup": "Granite_red",
+      "actualMaterial": "GraniteRed"
+    },
+    {
+      "host": "stone_prismarine_light",
+      "constructedLookup": "Prismarine_light",
+      "actualMaterial": "Prismarine"
+    },
+    {
+      "host": "stone_prismarine_dark",
+      "constructedLookup": "Prismarine_dark",
+      "actualMaterial": "PrismarineDark"
+    }
+  ]
+}

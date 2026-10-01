@@ -1,0 +1,62 @@
+[
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\LICENSE.txt",
+    "copy": "notices/saltnya/LICENSE.txt",
+    "sha256": "481c96d94d182382c4225d5b210f8c658c85350cf548f25c9f56c058804f1e57"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\CREDITS.txt",
+    "copy": "notices/saltnya/CREDITS.txt",
+    "sha256": "7be4dedbc5b2f09361820e04758c01ff10fc70cb693117e112d683466a8a7fba"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\gradle.properties",
+    "copy": "notices/saltnya/source-gradle.properties",
+    "sha256": "e0ce49d3d6e925fdf62269644fde69da6bbbee56fea2f43fb54f99133625621f"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6reborn\\src\\main\\resources\\META-INF\\mods.toml",
+    "copy": "notices/saltnya/source-mods.toml",
+    "sha256": "ad3e314a22965fda3df4d5a5206019a08e3bbfc9a08f71d9284cfb1ea3fe4d5c"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6-main\\LICENSE",
+    "copy": "notices/brokestar233/LICENSE",
+    "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6-main\\NOTICE.md",
+    "copy": "notices/brokestar233/NOTICE.md",
+    "sha256": "863b679c6ff38120f5258ef76bc90124d8e1e0749a57fadd783282800be1e1e1"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6-main\\mdk\\gradle.properties",
+    "copy": "notices/brokestar233/source-mod-gradle.properties",
+    "sha256": "81fde295672330130c12efb9c25b3a212df419f354561ba91b7cfeeb0c6ad4fb"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6-main\\mdk\\src\\main\\resources\\assets\\README.md",
+    "copy": "notices/brokestar233/assets-README.md",
+    "sha256": "9b17a360245df2b1e825e07529e731a9f568f8c3d1681a53c96cc0ea0d96edc2"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\gregtech6-main\\docs\\licenses\\amazawa-gui-authorization.png",
+    "copy": "notices/brokestar233/amazawa-gui-authorization.png",
+    "sha256": "e3c5839a72265d402789b3321eca9d757d787a3a2e02bd7c65baedcec53a1137"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\cruciblecraft\\LICENSE",
+    "copy": "notices/masson/LICENSE",
+    "sha256": "2ce8c2ea64669335d6c3be608f91dc8f2974c6399b98ac51dbb34de94c52f060"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\cruciblecraft\\NOTICE",
+    "copy": "notices/masson/NOTICE",
+    "sha256": "f42a8bc23755b96b777b71f780d20ec9ab320871e452873074e1f76d65b1af3b"
+  },
+  {
+    "source": "F:\\Dev\\GregtTech6New\\Libs\\cruciblecraft\\CREDITS.md",
+    "copy": "notices/masson/CREDITS.md",
+    "sha256": "ae781c18d88a882a7d0861e75f2974e433297775409b18e8995f77c226ae9196"
+  }
+]

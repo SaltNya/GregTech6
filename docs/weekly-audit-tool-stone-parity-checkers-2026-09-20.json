@@ -1,0 +1,20 @@
+[
+  {
+    "tool": "check_stone_extrusions.py",
+    "exit": 0,
+    "stdout": "GT6 BlockStones extruder rows : 60 in groups ['COBBL', 'STONE']\nport shapes                   : 13 x 2 mould families + 2 block rows\nport extrude() flags          : false, false, false, false, true\n\nOK: the port's stone extrusion table matches GT6 row for row.\n",
+    "stderr": ""
+  },
+  {
+    "tool": "check_masonry_rows.py",
+    "exit": 0,
+    "stdout": "GT6 per rock type : {'hammer': 16, 'crusher': 16, 'shredder': 16, 'smelt': 14, 'smeltPreamble': 1, 'generify': 14, 'cleanmoss': 2, 'sawing': 15, 'crafting': 28}\nport rows         : {'cleanmoss': 54, 'crusher': 432, 'dust': 22, 'generify': 378, 'hammer': 432, 'sawing': 405, 'shredder': 432, 'smelt': 378}\nport crafting     : 597 registered + 132 documented skips + 27 data-pack\n\nOK: GT6's masonry rows and the port agree row for row.\n",
+    "stderr": ""
+  },
+  {
+    "tool": "check_tool_recipes.py",
+    "exit": 0,
+    "stdout": "tools compared        : 35\nport shaped rows      : 23 tools\nport head rows        : 18 tools, 35 patterns\nGT6 advanced (shapeless) tools: 19; GT6 early hand-written rows: 42\n\nOK: the port's tool patterns match GT6's rows.\n",
+    "stderr": ""
+  }
+]

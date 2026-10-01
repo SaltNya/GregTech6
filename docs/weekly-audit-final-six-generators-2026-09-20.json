@@ -1,0 +1,159 @@
+[
+  {
+    "tool": "generate_missing_component_recipes",
+    "stdout": "wrote 28 recipes: motor_zpm, pump_zpm, conveyor_zpm, piston_zpm, robot_arm_zpm, field_emitter_zpm, signal_emitter_zpm, sensor_zpm, motor_uv, pump_uv, conveyor_uv, piston_uv, robot_arm_uv, field_emitter_uv, signal_emitter_uv, sensor_uv, motor_puv1, pump_puv1, conveyor_puv1, piston_puv1, robot_arm_puv1, field_emitter_puv1, signal_emitter_puv1, sensor_puv1, robot_arm_ulv, field_emitter_ulv, signal_emitter_ulv, sensor_ulv\nNOTE: tiers above PUV1 (PUV2..XV) have no crafting recipe in GT6 either (VN[] has 16 names, the crafting loops stop at index 9).\n",
+    "identical": 22,
+    "differences": [
+      {
+        "path": "src\\main\\resources\\data\\gregtech\\recipes\\components\\piston_puv1.json",
+        "diff": [
+          "--- \n",
+          "+++ \n",
+          "@@ -28,7 +28,5 @@\n",
+          "   \"result\": {",
+          "     \"item\": \"gregtech:compact_electric_piston_puv1\",",
+          "     \"count\": 1",
+          "-  },",
+          "-  \"allow_mirror\": false,",
+          "-  \"_mirror_flags\": \"gt6-census\"",
+          "+  }",
+          " }"
+        ]
+      },
+      {
+        "path": "src\\main\\resources\\data\\gregtech\\recipes\\components\\piston_uv.json",
+        "diff": [
+          "--- \n",
+          "+++ \n",
+          "@@ -28,7 +28,5 @@\n",
+          "   \"result\": {",
+          "     \"item\": \"gregtech:compact_electric_piston_uv\",",
+          "     \"count\": 1",
+          "-  },",
+          "-  \"allow_mirror\": false,",
+          "-  \"_mirror_flags\": \"gt6-census\"",
+          "+  }",
+          " }"
+        ]
+      },
+      {
+        "path": "src\\main\\resources\\data\\gregtech\\recipes\\components\\piston_zpm.json",
+        "diff": [
+          "--- \n",
+          "+++ \n",
+          "@@ -28,7 +28,5 @@\n",
+          "   \"result\": {",
+          "     \"item\": \"gregtech:compact_electric_piston_zpm\",",
+          "     \"count\": 1",
+          "-  },",
+          "-  \"allow_mirror\": false,",
+          "-  \"_mirror_flags\": \"gt6-census\"",
+          "+  }",
+          " }"
+        ]
+      },
+      {
+        "path": "src\\main\\resources\\data\\gregtech\\recipes\\components\\pump_puv1.json",
+        "diff": [
+          "--- \n",
+          "+++ \n",
+          "@@ -31,7 +31,5 @@\n",
+          "   \"result\": {",
+          "     \"item\": \"gregtech:compact_electric_pump_puv1\",",
+          "     \"count\": 1",
+          "-  },",
+          "-  \"allow_mirror\": false,",
+          "-  \"_mirror_flags\": \"gt6-census\"",
+          "+  }",
+          " }"
+        ]
+      },
+      {
+        "path": "src\\main\\resources\\data\\gregtech\\recipes\\components\\pump_uv.json",
+        "diff": [
+          "--- \n",
+          "+++ \n",
+          "@@ -31,7 +31,5 @@\n",
+          "   \"result\": {",
+          "     \"item\": \"gregtech:compact_electric_pump_uv\",",
+          "     \"count\": 1",
+          "-  },",
+          "-  \"allow_mirror\": false,",
+          "-  \"_mirror_flags\": \"gt6-census\"",
+          "+  }",
+          " }"
+        ]
+      },
+      {
+        "path": "src\\main\\resources\\data\\gregtech\\recipes\\components\\pump_zpm.json",
+        "diff": [
+          "--- \n",
+          "+++ \n",
+          "@@ -31,7 +31,5 @@\n",
+          "   \"result\": {",
+          "     \"item\": \"gregtech:compact_electric_pump_zpm\",",
+          "     \"count\": 1",
+          "-  },",
+          "-  \"allow_mirror\": false,",
+          "-  \"_mirror_flags\": \"gt6-census\"",
+          "+  }",
+          " }"
+        ]
+      }
+    ]
+  },
+  {
+    "tool": "generate_covers_usb_logistics_recipes",
+    "stdout": "wrote 71 recipes: hand_components=37, hand_covers=6, logistics=28\nwrote tags/items/integrated_circuits.json (25 selector circuits)\n",
+    "identical": 72,
+    "differences": []
+  },
+  {
+    "tool": "generate_multiblock_recipe_table",
+    "stdout": "wrote F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\final-six-verified-nzi6hpre\\generate_multiblock_recipe_table\\MultiblockCraftingRecipes.java (55 entries)\n",
+    "identical": 0,
+    "differences": [
+      {
+        "path": "src\\main\\java\\com\\gregtech\\gregtech\\data\\MultiblockCraftingRecipes.java",
+        "diff": [
+          "--- \n",
+          "+++ \n",
+          "@@ -20,12 +20,12 @@\n",
+          "     }",
+          " ",
+          "     public static final List<Entry> ENTRIES = List.of(",
+          "-            // GT6 registers the distillation tower / cryo tower / fusion reactor ONLY as multiblocks, so",
+          "-            // the single-block machine items of the same name no longer exist (BasicMachineDefinitions",
+          "-            // MULTIBLOCK_ONLY) and only the controller blocks carry the crafting recipe.",
+          "             new Entry(\"distillation_tower_main\", \"Distillation Tower\", \"PPP|PMP|PPP\", Map.of('M', \"item:gregtech:distillation_tower_part\", 'P', \"pipe:nonuple@StainlessSteel\")),",
+          "+            new Entry(\"distillationtower_stainless_steel\", \"Distillation Tower\", \"PPP|PMP|PPP\", Map.of('M', \"item:gregtech:distillation_tower_part\", 'P', \"pipe:nonuple@StainlessSteel\")),",
+          "             new Entry(\"cryo_distillation_main\", \"Cryo Distillation Tower\", \"PPP|PMP|PPP\", Map.of('M', \"item:gregtech:cryo_distillation_wall\", 'P', \"pipe:nonuple@Copper\")),",
+          "+            new Entry(\"cryodistillationtower_stainless_steel\", \"Cryo Distillation Tower\", \"PPP|PMP|PPP\", Map.of('M', \"item:gregtech:cryo_distillation_wall\", 'P', \"pipe:nonuple@Copper\")),",
+          "             new Entry(\"fusion_reactor_main\", \"Fusion Reactor\", \"FFF|FMF|FFF\", Map.of('F', \"il:FIELD_GENERATORS\", 'M', \"item:gregtech:fusion_reactor_wall\")),",
+          "+            new Entry(\"fusionreactor_stainless_steel\", \"Fusion Reactor\", \"FFF|FMF|FFF\", Map.of('F', \"il:FIELD_GENERATORS\", 'M', \"item:gregtech:fusion_reactor_wall\")),",
+          "             new Entry(\"largecentrifuge_tungsten_steel\", \"Large Centrifuge\", \"CMC|RCR\", Map.of('C', \"circuit:6\", 'M', \"item:gregtech:centrifuge_part\", 'R', \"item:gregtech:crystal_processor_ruby\")),",
+          "             new Entry(\"largeelectrolyzer_stainless_steel\", \"Large Electrolyzer\", \"CMC|RCR\", Map.of('C', \"circuit:6\", 'M', \"item:gregtech:electrolyzer_part\", 'R', \"item:gregtech:crystal_processor_ruby\")),",
+          "             new Entry(\"largecoagulator_stainless_steel\", \"Large Coagulator Array\", \"CRC|PMP|PPP\", Map.of('C', \"circuit:6\", 'M', \"item:gregtech:tank_wall\", 'P', \"mat:plateDense@StainlessSteel\", 'R', \"item:gregtech:crystal_processor_ruby\")),"
+        ]
+      }
+    ]
+  },
+  {
+    "tool": "extract_gt6_form_flags",
+    "stdout": "materials with a form set: 1157  (declarations without forms: 406)\n  PLANTS               1129\n  DUSTS                1046\n  PLATES               800\n  PROJECTILES          792\n  STICKS               788\n  ARMORS               560\n  ORES                 541\n  FOILS                488\n  INGOTS               404\n  DENSEPLATES          357\n  MULTIINGOTS          356\n  MULTIPLATES          355\n  INGOTS_HOT           354\n  GEMS                 233\n  MOLTEN               186\n  PARTS                164\n  LENSES               140\n  CONTAINERS           93\n  CONTAINERS_FLUID     61\n  CONTAINERS_GAS       36\n  GASES                32\n  LIQUID               32\n  RAILS                28\n  WIRES                14\n  EMPTY                1\nwrote F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\final-six-verified-nzi6hpre\\extract_gt6_form_flags\\gt6-form-flags.json\nwrote F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\final-six-verified-nzi6hpre\\extract_gt6_form_flags\\MaterialForms.java\n",
+    "identical": 2,
+    "differences": []
+  },
+  {
+    "tool": "transpile_gt6_loot",
+    "stdout": "219 rows transpiled, 176 skipped\n  gt.books         13 rows\n  gt.bottles       19 rows\n  gt.flawless      20 rows\n  gt.gems          13 rows\n  gt.misc          38 rows\n  gt.saplings      12 rows\n  gt.seeds          7 rows\n  van.BONUS_CHEST    5 rows\n  van.DUNGEON_CHEST   23 rows\n  van.MINESHAFT_CORRIDOR   18 rows\n  van.PYRAMID_DESERT_CHEST    4 rows\n  van.PYRAMID_JUNGLE_CHEST    8 rows\n  van.PYRAMID_JUNGLE_DISPENSER    3 rows\n  van.STRONGHOLD_CORRIDOR    6 rows\n  van.STRONGHOLD_CROSSING    4 rows\n  van.STRONGHOLD_LIBRARY    2 rows\n  van.VILLAGE_BLACKSMITH   24 rows\nwrote F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\final-six-verified-nzi6hpre\\transpile_gt6_loot\\GTLootGen.java and F:\\Dev\\GregTech6\\GregTech6\\build\\weekly-audit\\final-six-verified-nzi6hpre\\transpile_gt6_loot\\gt6-loot-rows.json\n",
+    "identical": 2,
+    "differences": []
+  },
+  {
+    "tool": "extract_basic_machine_recipes",
+    "basicEntries": 251,
+    "multiblockEntries": 117,
+    "multiblockSnapshotEqual": true
+  }
+]

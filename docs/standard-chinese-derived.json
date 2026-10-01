@@ -1,0 +1,34 @@
+{
+  "item.gregtech.compact_electric_conveyor_xv": {
+    "source": "gt.multiitem.technological.12040",
+    "rule": "ULV tier suffix replaced by port-only XV"
+  },
+  "item.gregtech.compact_electric_motor_xv": {
+    "source": "gt.multiitem.technological.12000",
+    "rule": "ULV tier suffix replaced by port-only XV"
+  },
+  "item.gregtech.compact_electric_piston_xv": {
+    "source": "gt.multiitem.technological.12060",
+    "rule": "ULV tier suffix replaced by port-only XV"
+  },
+  "item.gregtech.compact_electric_pump_xv": {
+    "source": "gt.multiitem.technological.12020",
+    "rule": "ULV tier suffix replaced by port-only XV"
+  },
+  "item.gregtech.compact_force_field_emitter_xv": {
+    "source": "gt.multiitem.technological.12100",
+    "rule": "ULV tier suffix replaced by port-only XV"
+  },
+  "item.gregtech.compact_robot_arm_xv": {
+    "source": "gt.multiitem.technological.12080",
+    "rule": "ULV tier suffix replaced by port-only XV"
+  },
+  "item.gregtech.compact_sensor_xv": {
+    "source": "gt.multiitem.technological.12140",
+    "rule": "ULV tier suffix replaced by port-only XV"
+  },
+  "item.gregtech.compact_signal_emitter_xv": {
+    "source": "gt.multiitem.technological.12120",
+    "rule": "ULV tier suffix replaced by port-only XV"
+  }
+}

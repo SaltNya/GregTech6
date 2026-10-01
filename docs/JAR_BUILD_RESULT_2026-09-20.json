@@ -1,0 +1,16 @@
+{
+  "builtAt": "2026-09-20T01:28:42.840814",
+  "jar": "gregtech-1.0.0.jar",
+  "bytes": 34045204,
+  "entries": 72845,
+  "sha256": "00bcc24f379933ba569f6094436818a9059c06643ad04e5080a904209c9c6f59",
+  "zipCRC": "passed",
+  "gradleBuild": "BUILD SUCCESSFUL in 1m",
+  "command": "gradlew.bat reobfJar build -x jar --offline --no-daemon --max-workers=1 -Dorg.gradle.jvmargs=-Xmx256m -Xms32m -Dfile.encoding=UTF-8",
+  "note": "Reused the completed jar task output from earlier attempt; reobfJar succeeded and then build/test/check succeeded. No clean. No game client or GameTest run. Temporary JAVA_TOOL_OPTIONS=-Xms32m -Xmx512m -XX:ActiveProcessorCount=2 -XX:+UseSerialGC.",
+  "tests": [],
+  "gradleTestCount": 0,
+  "gradleTestEvidence": "build/reports/tests/test/index.html reports 0 tests; no TEST XML results; task success does not establish test coverage.",
+  "gameTestRun": false,
+  "clientRun": false
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "script": "tools/extract_gt6_bottles.py",
+    "exitCode": 0,
+    "stdout": "check: 169 bottle rows, 1 skipped -> up to date\n",
+    "stderr": ""
+  },
+  {
+    "script": "tools/extract_gt6_drinks.py",
+    "exitCode": 0,
+    "stdout": "drink rows: 272, skipped: 73\n  SKIPPED short row: FL.create(\"potion.awkward\" , \"Awkward Brew\" , null , 1, 1000\n  SKIPPED short row: FL.create(\"potion.mundane\" , \"Mundane Brew\" , null , 1, 1000\n  SKIPPED short row: FL.create(\"potion.thick\" , \"Thick Brew\" , null , 1, 1000, 30\n  SKIPPED unknown fluid expression: \"binnie.beerale\"\n  SKIPPED unknown fluid expression: \"binnie.beercorn\"\n  SKIPPED unknown fluid expression: \"binnie.beerlager\"\nunchanged src\\main\\java\\com\\gregtech\\gregtech\\data\\generated\\GTDrinksGen.java\n",
+    "stderr": ""
+  },
+  {
+    "script": "tools/extract_gt6_food_stats.py",
+    "exitCode": 0,
+    "stdout": "vanilla rows: 20, GT6 FoodStat rows: 181, total: 201\nskipped: 47, unknown: 0\nunchanged src\\main\\java\\com\\gregtech\\gregtech\\data\\generated\\GTFoodStatsGen.java\n",
+    "stderr": ""
+  },
+  {
+    "script": "tools/extract_gt6_food_items.py",
+    "exitCode": 0,
+    "stdout": "rows: 266 (with a FoodStat: 207, carrying statistics: 181, display-only: 59)\nempty containers: 9, vanilla-aliased rows: 7, hidden stubs: 1, skipped notes: 39\nunchanged src\\main\\java\\com\\gregtech\\gregtech\\data\\generated\\GTFoodItemsGen.java\n",
+    "stderr": ""
+  }
+]

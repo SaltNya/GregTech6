@@ -1,0 +1,98 @@
+{
+  "generate_wooden_pipe_recipes": [
+    {
+      "id": "pipe_tiny_wood",
+      "equal": false,
+      "differentKeys": [
+        "_mirror_flags",
+        "allow_mirror"
+      ]
+    },
+    {
+      "id": "pipe_small_wood",
+      "equal": false,
+      "differentKeys": [
+        "_mirror_flags",
+        "allow_mirror"
+      ]
+    },
+    {
+      "id": "pipe_medium_wood",
+      "equal": false,
+      "differentKeys": [
+        "_mirror_flags",
+        "allow_mirror"
+      ]
+    },
+    {
+      "id": "pipe_large_wood",
+      "equal": false,
+      "differentKeys": [
+        "_mirror_flags",
+        "allow_mirror"
+      ]
+    },
+    {
+      "id": "pipe_huge_wood",
+      "equal": false,
+      "differentKeys": [
+        "_mirror_flags",
+        "allow_mirror"
+      ]
+    }
+  ],
+  "generate_rope_dynamite_recipes": [
+    {
+      "id": "rope_silk",
+      "equal": true,
+      "differentKeys": []
+    },
+    {
+      "id": "rope_grass",
+      "equal": true,
+      "differentKeys": []
+    },
+    {
+      "id": "rope_vine",
+      "equal": true,
+      "differentKeys": []
+    },
+    {
+      "id": "rope_steel",
+      "equal": true,
+      "differentKeys": []
+    },
+    {
+      "id": "boomstick",
+      "equal": true,
+      "differentKeys": []
+    }
+  ],
+  "generate_generator_module_recipes": [
+    {
+      "id": "stone_generator_module",
+      "equal": true,
+      "differentKeys": []
+    },
+    {
+      "id": "basalt_generator_module",
+      "equal": true,
+      "differentKeys": []
+    },
+    {
+      "id": "blackstone_generator_module",
+      "equal": true,
+      "differentKeys": []
+    }
+  ],
+  "checkAndReset": {
+    "mutated": true,
+    "after": {
+      "type": "gregtech:tool_shaped",
+      "pattern": [
+        "A"
+      ]
+    },
+    "productionWrites": false
+  }
+}

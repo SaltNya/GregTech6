@@ -1,0 +1,50 @@
+{
+  "note": "Static arithmetic comparison of explicit OP.setMaterialStats; no runtime verification",
+  "differences": [
+    {
+      "prefix": "dustImpure",
+      "originalUnits": "10/9",
+      "portUnits": "1"
+    },
+    {
+      "prefix": "bouleGt",
+      "originalUnits": "4",
+      "portUnits": "1"
+    },
+    {
+      "prefix": "plantGtBerry",
+      "originalUnits": "1/9",
+      "portUnits": "1"
+    },
+    {
+      "prefix": "plantGtBlossom",
+      "originalUnits": "1/9",
+      "portUnits": "1"
+    },
+    {
+      "prefix": "plantGtFiber",
+      "originalUnits": "1/9",
+      "portUnits": "1"
+    },
+    {
+      "prefix": "plantGtTwig",
+      "originalUnits": "1/9",
+      "portUnits": "1"
+    },
+    {
+      "prefix": "plantGtWart",
+      "originalUnits": "1/4",
+      "portUnits": "1"
+    },
+    {
+      "prefix": "toolHeadConstructionPickaxe",
+      "originalUnits": "26/9",
+      "portUnits": "1"
+    },
+    {
+      "prefix": "toolHeadBuilderwand",
+      "originalUnits": "1",
+      "portUnits": "26/9"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "tool": "extract_gt6_stack_sizes.py",
+    "exit": 0,
+    "stdout": "stack sizes per GT6 category\n  Axles and Gearboxes          16x3\n  Batteries                    16x4\n  C-Foam                       64x1\n  Chests                       16x1\n  Coins                        64x1\n  Computing                    16x2\n  Electric Wires               64x60, 32x60, 21x30, 16x60, 12x30, 10x30, 9x30, 8x60, 7x30, 6x30, 5x60, 4x150\n  Fluid Containers             16x46\n  Logistics                    16x2\n  Long Distance Transport      16x2\n  Magical Energy Production    16x1\n  Misc Tool Blocks             64x29, 16x22\n  Multiblock Machines          16x72\n  Panels                       16x6\n  Portable Power Cells         16x2\n  Portals                      16x19\n  Reactors                     16x49\n  Ropes                        64x6\n  Sensors                      16x20\n  Storage                      16x19\n  Untyped                      64x15, 1x3\n  ZPM                          16x2\n",
+    "stderr": ""
+  },
+  {
+    "tool": "extract_gt6_small_ores.py",
+    "exit": 0,
+    "stdout": "GT6 WorldgenOresSmall registrations: 76\n\n== GEN_OVERWORLD: GT6 36 always-on (+22 other-mod gated) / port 36\n  missing in port (0): -\n  port-only (0): -\n  Y/amount mismatches (0): -\n  other-mod gated: aer, aqua, bischofite, blackquartz, certus, chimerite, datolite, gypsum, hexorium_black, hexorium_blue, hexorium_green, hexorium_red, hexorium_white, ignis, mica, nikolite, ordo, perdito, potassiumfeldspar, terra, trona, vinteum\n\n== GEN_NETHER: GT6 18 always-on (+8 other-mod gated) / port 18\n  missing in port (0): -\n  port-only (0): -\n  Y/amount mismatches (0): -\n  other-mod gated: aer, ancientdebris, aqua, ignis, nikolite, ordo, perdito, terra\n\n== GEN_END: GT6 32 always-on (+7 other-mod gated) / port 32\n  missing in port (0): -\n  port-only (0): -\n  Y/amount mismatches (0): -\n  other-mod gated: aer, aqua, ignis, nikolite, ordo, perdito, terra\n",
+    "stderr": ""
+  },
+  {
+    "tool": "extract_gt6_large_ores.py",
+    "exit": 0,
+    "stdout": "GT6 WorldgenOresLarge registrations: 41\n\n== GEN_OVERWORLD: GT6 31 always-on (+0 gated) / port 31\n  missing in port (0): -\n  port-only (0): -\n  parameter mismatches (0): -\n  other-mod gated: -\n\n== GEN_NETHER: GT6 0 always-on (+0 gated) / port 0\n  missing in port (0): -\n  port-only (0): -\n  parameter mismatches (0): -\n  other-mod gated: -\n\n== GEN_END: GT6 5 always-on (+0 gated) / port 5\n  missing in port (0): -\n  port-only (0): -\n  parameter mismatches (0): -\n  other-mod gated: -\n",
+    "stderr": ""
+  },
+  {
+    "tool": "inventory_gt6_worldgen.py",
+    "exit": 0,
+    "stdout": "GT6 class                    in loader port\nWorldgenAetherRocks          yes       another mod's dimension (Aether)\nWorldgenAlfheimRocks         yes       another mod's dimension (Botania Alfheim)\nWorldgenBeacon               yes       GT6 registers it disabled by default (world-centre feature)\nWorldgenBlackSand            yes       worldgen/GTBlackSandFeature.java\nWorldgenBlob                 -         GT6's base class for blob-shaped generators, not content\nWorldgenBushes               yes       worldgen/GTBushesFeature.java\nWorldgenCenterBiomes         yes       skipped below\nWorldgenColtan               yes       worldgen/GTColtanFeature.java\nWorldgenDeepOcean            yes       worldgen/GTDeepOceanFeature.java\nWorldgenDungeonGT            yes       worldgen/GTDungeonFeature.java + worldgen/dungeon/GTDungeonChunk*.java (27-cell ledger: layout + 15 cell types + keys + Nether/End portals, see section 76/79)\nWorldgenErebusRocks          yes       another mod's dimension (Erebus)\nWorldgenFlowers              yes       worldgen/GTSurfaceFloraFeature.java\nWorldgenFluid                -         GT6's fluid-spring base class, see WorldgenFluidSpring\nWorldgenFluidSpring          yes       worldgen/GTFluidSpringsFeature.java\nWorldgenGlowtus              yes       worldgen/GTSurfaceFloraFeature.java\nWorldgenHives                yes       worldgen/GTBumbleHivesFeature.java (see section 75)\nWorldgenLogDry               yes       worldgen/GTSurfaceFloraFeature.java (dry log scatter)\nWorldgenLogFrozen            yes       worldgen/GTSurfaceFloraFeature.java (frozen log scatter)\nWorldgenLogMossy             yes       worldgen/GTSurfaceFloraFeature.java (mossy log scatter)\nWorldgenLogRotten            yes       worldgen/GTSurfaceFloraFeature.java (rotten log scatter)\nWorldgenMarsRocks            yes       another mod's dimension (Galacticraft)\nWorldgenMoonRocks            yes       another mod's dimension (Galacticraft)\nWorldgenNetherClay           yes       worldgen/GTNetherDepositFeature.java\nWorldgenNetherCrystals       yes       worldgen/GTNetherScatterFeature.java\nWorldgenNetherQuartz         yes       worldgen/GTNetherDepositFeature.java\nWorldgenNexus                yes       GT6 registers it disabled by default (world-centre feature)\nWorldgenObject               -         GT6's base class for the generators below, not content\nWorldgenOcean                yes       worldgen/GTWaterBodyFeature.java\nWorldgenOnSurface            -         GT6's base class for surface generators, not content\nWorldgenOresBedrock          yes       worldgen/GTBedrockOreFeature.java\nWorldgenOresLarge            yes       worldgen/GTOreVeinFeature.java\nWorldgenOresSmall            yes       worldgen/GTSmallOreFeature.java\nWorldgenOresVanilla          yes       vanilla ore generation, replaced by the port's own ore veins/tables\nWorldgenPit                  yes       worldgen/GTPitFeature.java\nWorldgenPlanetRocks          yes       another mod's dimensions (Galacticraft)\nWorldgenRacks                yes       worldgen/GTFeatures.java (rack/bookshelf scatter)\nWorldgenRiver                yes       worldgen/GTWaterBodyFeature.java\nWorldgenRocks                yes       worldgen/GTRocksFeature.java\nWorldgenSticks               yes       worldgen/GTRocksFeature.java (twigs)\nWorldgenStone                yes       worldgen/GTStoneLayersGen.java\nWorldgenStoneLayers          yes       worldgen/GTStoneLayerFeature.java\nWorldgenStreets              yes       GT6 registers it disabled by default (world-centre feature)\nWorldgenSwamp                yes       worldgen/GTWaterBodyFeature.java\nWorldgenTesting              yes       GT6 registers it disabled by default (developer test world)\nWorldgenTreeBlueMahoe        yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTreeBlueSpruce       yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTreeCinnamon         yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTreeCoconut          yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTreeHazel            yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTreeMaple            yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTreeRainbowood       yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTreeRubber           yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTreeWillow           yes       worldgen/GTTreesFeature.java + GTTreeShapes.java\nWorldgenTurf                 yes       worldgen/GTTurfFeature.java\n\nunclassified: 0 []\nnot ported on purpose: []\n",
+    "stderr": ""
+  },
+  {
+    "tool": "extract_enchantment_table.py",
+    "exit": 0,
+    "stdout": "enchantment entries: 507 (materials: 177)\nkinds: {'Damage': 150, 'Ranged': 148, 'Tools': 75, 'Weapons': 31, 'Ammo': 31, 'Fishing': 31, 'Armors': 41}\nwrote src/main/java/com/gregtech/gregtech/loaders/c/GTEnchantmentTable.java (177 materials)\n",
+    "stderr": "",
+    "identical": true
+  },
+  {
+    "tool": "extract_gt6_comb_recipes.py",
+    "exit": 0,
+    "stdout": "comb centrifuge rows: 20 (skipped 0)\nwrote src/main/java/com/gregtech/gregtech/loaders/c/GTCombGen.java (20 rows)\n",
+    "stderr": "",
+    "identical": true
+  }
+]

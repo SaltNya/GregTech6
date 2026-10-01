@@ -1,0 +1,27 @@
+[
+  {
+    "tool": "generate_loot_bottle_assets",
+    "differences": [],
+    "equalFiles": 4
+  },
+  {
+    "tool": "generate_guide_book_assets",
+    "differences": [],
+    "equalFiles": 4
+  },
+  {
+    "tool": "generate_material_dictionary_assets",
+    "differences": [
+      {
+        "path": "lang\\zh_cn.json",
+        "changedKeys": {
+          "item.gregtech.dusty_material_dictionary": {
+            "before": "落灰的材料词典",
+            "after": "沾满灰尘的材料词典"
+          }
+        }
+      }
+    ],
+    "equalFiles": 3
+  }
+]

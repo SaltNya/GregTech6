@@ -1,0 +1,28 @@
+{
+  "template": {
+    "DataVersion": 3465,
+    "size": [
+      25,
+      9,
+      25
+    ],
+    "entities": [],
+    "blocks": [],
+    "palette": [
+      {
+        "Name": "minecraft:air"
+      }
+    ]
+  },
+  "compressedBytes": 112,
+  "decodedBytes": 114,
+  "trailingBytes": 0,
+  "missingTokens": {
+    "count": 49,
+    "unique": 49,
+    "logMatches": 1,
+    "lastReportedCount": 49,
+    "matchesLastLog": true
+  },
+  "runtimeVerified": false
+}

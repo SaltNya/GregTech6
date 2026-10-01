@@ -1,0 +1,32 @@
+[
+  {
+    "table": "OVERWORLD_VEINS",
+    "portRows": 31,
+    "originalRows": 31,
+    "differences": []
+  },
+  {
+    "table": "END_VEINS",
+    "portRows": 5,
+    "originalRows": 5,
+    "differences": []
+  },
+  {
+    "table": "OVERWORLD_SMALL_ORES",
+    "portRows": 36,
+    "originalRows": 36,
+    "differences": []
+  },
+  {
+    "table": "NETHER_SMALL_ORES",
+    "portRows": 18,
+    "originalRows": 18,
+    "differences": []
+  },
+  {
+    "table": "END_SMALL_ORES",
+    "portRows": 32,
+    "originalRows": 32,
+    "differences": []
+  }
+]

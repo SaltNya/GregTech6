@@ -1,0 +1,423 @@
+{
+  "referenced": {
+    "module_blackstone_generator": 28,
+    "extruder_shape_plate": 11,
+    "extruder_shape_curvedplate": 11,
+    "extruder_shape_rod": 12,
+    "extruder_shape_longrod": 12,
+    "extruder_shape_bolt": 11,
+    "extruder_shape_shovelhead": 11,
+    "extruder_shape_swordblade": 11,
+    "extruder_shape_hoehead": 11,
+    "extruder_shape_pickaxehead": 11,
+    "extruder_shape_axehead": 11,
+    "extruder_shape_gear": 11,
+    "extruder_shape_smallgear": 11,
+    "extruder_shape_hammerhead": 11,
+    "low_heat_extruder_shape_plate": 11,
+    "low_heat_extruder_shape_curvedplate": 11,
+    "low_heat_extruder_shape_rod": 11,
+    "low_heat_extruder_shape_longrod": 11,
+    "low_heat_extruder_shape_bolt": 11,
+    "low_heat_extruder_shape_shovelhead": 11,
+    "low_heat_extruder_shape_swordblade": 11,
+    "low_heat_extruder_shape_hoehead": 11,
+    "low_heat_extruder_shape_pickaxehead": 11,
+    "low_heat_extruder_shape_axehead": 11,
+    "low_heat_extruder_shape_gear": 11,
+    "low_heat_extruder_shape_smallgear": 11,
+    "low_heat_extruder_shape_hammerhead": 11,
+    "module_basalt_generator": 28,
+    "module_stone_generator": 33,
+    "extruder_shape_ingot": 9,
+    "extruder_shape_block": 9,
+    "low_heat_extruder_shape_ingot": 9,
+    "low_heat_extruder_shape_block": 9,
+    "food_dough": 1,
+    "food_butter": 5,
+    "food_cheese": 2,
+    "food_dough_abyssal": 1,
+    "food_butter_salted": 3,
+    "food_potatochips": 3,
+    "food_chilichips": 3,
+    "bop_grass_smoldering": 1,
+    "clay_ball_brown": 4,
+    "salt_dirt_1": 1,
+    "salt_dirt_2": 1,
+    "salt_dirt_3": 1,
+    "bop_coarse_loamy": 1,
+    "clay_ball_blue": 1,
+    "bop_coarse_silty": 1,
+    "clay_ball_white": 2,
+    "bop_coarse_sandy": 1,
+    "clay_ball_yellow": 3,
+    "bop_dirt_dried": 1,
+    "bop_dirt_hard": 1,
+    "bop_mud": 1,
+    "macu_bait_worm": 4,
+    "ere_mud": 1,
+    "btl_mud": 1,
+    "macu_bait_ant": 3,
+    "macu_bait_maggot": 1,
+    "clay_ball_red": 3,
+    "aether_sand": 1,
+    "bop_quicksand": 1,
+    "bop_sand_hard": 1,
+    "tropic_sand_black": 3,
+    "slicer_shape_grid": 1,
+    "etfu_dirt": 1,
+    "boomstick": 2,
+    "dynamite": 2,
+    "dynamite_strong": 2,
+    "shape_press_bulletcasingsmall": 4,
+    "shape_press_bulletcasingmedium": 4,
+    "shape_press_bulletcasinglarge": 4,
+    "rope": 1,
+    "rope_silk": 1,
+    "rope_plastic": 1,
+    "rope_vine": 1,
+    "rope_steel": 1,
+    "food_potato_poisonous": 4,
+    "etfu_rabbit_foot": 3,
+    "tf_mushgloom": 3,
+    "neli_reed": 3,
+    "remains_plant": 2,
+    "neli_foxfire_lily": 2,
+    "neli_foxfire_powder": 3,
+    "neli_wart_crimson": 1,
+    "neli_wart_warped": 2,
+    "neli_wart_soggy": 2,
+    "neli_wither_rose": 1,
+    "neli_bone_rose": 1,
+    "neli_soul_rose": 1,
+    "rh_sand_olivine": 1,
+    "rh_sand_gypsum": 1,
+    "rh_sand_magnetite": 3,
+    "rh_sand_coral": 1,
+    "slicer_shape_split": 4,
+    "slicer_shape_eigths": 1,
+    "crop_wheat": 1,
+    "bale_wheat": 1,
+    "dye_bonemeal": 4,
+    "wimo_thick_bone": 2,
+    "wimo_infected_meat": 1
+  },
+  "ok": [
+    "extruder_shape_longrod",
+    "extruder_shape_rod",
+    "extruder_shape_axehead",
+    "extruder_shape_bolt",
+    "extruder_shape_curvedplate",
+    "extruder_shape_gear",
+    "extruder_shape_hammerhead",
+    "extruder_shape_hoehead",
+    "extruder_shape_pickaxehead",
+    "extruder_shape_plate",
+    "extruder_shape_shovelhead",
+    "extruder_shape_smallgear",
+    "extruder_shape_swordblade",
+    "low_heat_extruder_shape_axehead",
+    "low_heat_extruder_shape_bolt",
+    "low_heat_extruder_shape_curvedplate",
+    "low_heat_extruder_shape_gear",
+    "low_heat_extruder_shape_hammerhead",
+    "low_heat_extruder_shape_hoehead",
+    "low_heat_extruder_shape_longrod",
+    "low_heat_extruder_shape_pickaxehead",
+    "low_heat_extruder_shape_plate",
+    "low_heat_extruder_shape_rod",
+    "low_heat_extruder_shape_shovelhead",
+    "low_heat_extruder_shape_smallgear",
+    "low_heat_extruder_shape_swordblade",
+    "extruder_shape_block",
+    "extruder_shape_ingot",
+    "low_heat_extruder_shape_block",
+    "low_heat_extruder_shape_ingot",
+    "slicer_shape_split",
+    "boomstick",
+    "dynamite",
+    "rope",
+    "rope_plastic",
+    "rope_silk",
+    "rope_steel",
+    "rope_vine",
+    "slicer_shape_grid"
+  ],
+  "aliasable": [
+    {
+      "gt6": "module_stone_generator",
+      "port": "stone_generator_module",
+      "recipes": 33
+    },
+    {
+      "gt6": "module_basalt_generator",
+      "port": "basalt_generator_module",
+      "recipes": 28
+    },
+    {
+      "gt6": "module_blackstone_generator",
+      "port": "blackstone_generator_module",
+      "recipes": 28
+    },
+    {
+      "gt6": "food_butter",
+      "port": "butter",
+      "recipes": 5
+    },
+    {
+      "gt6": "clay_ball_brown",
+      "port": "brown_clay",
+      "recipes": 4
+    },
+    {
+      "gt6": "dye_bonemeal",
+      "port": "minecraft:bone_meal",
+      "recipes": 4
+    },
+    {
+      "gt6": "food_potato_poisonous",
+      "port": "minecraft:poisonous_potato",
+      "recipes": 4
+    },
+    {
+      "gt6": "shape_press_bulletcasinglarge",
+      "port": "press_bullet_casing_shape_large",
+      "recipes": 4
+    },
+    {
+      "gt6": "shape_press_bulletcasingmedium",
+      "port": "press_bullet_casing_shape_medium",
+      "recipes": 4
+    },
+    {
+      "gt6": "shape_press_bulletcasingsmall",
+      "port": "press_bullet_casing_shape_small",
+      "recipes": 4
+    },
+    {
+      "gt6": "clay_ball_red",
+      "port": "red_clay",
+      "recipes": 3
+    },
+    {
+      "gt6": "clay_ball_yellow",
+      "port": "yellow_clay",
+      "recipes": 3
+    },
+    {
+      "gt6": "food_butter_salted",
+      "port": "salted_butter",
+      "recipes": 3
+    },
+    {
+      "gt6": "food_chilichips",
+      "port": "chili_chips",
+      "recipes": 3
+    },
+    {
+      "gt6": "food_potatochips",
+      "port": "potato_chips",
+      "recipes": 3
+    },
+    {
+      "gt6": "clay_ball_white",
+      "port": "white_clay",
+      "recipes": 2
+    },
+    {
+      "gt6": "dynamite_strong",
+      "port": "strong_dynamite",
+      "recipes": 2
+    },
+    {
+      "gt6": "food_cheese",
+      "port": "cheese",
+      "recipes": 2
+    },
+    {
+      "gt6": "remains_plant",
+      "port": "plant_remains",
+      "recipes": 2
+    },
+    {
+      "gt6": "bale_wheat",
+      "port": "minecraft:hay_block",
+      "recipes": 1
+    },
+    {
+      "gt6": "clay_ball_blue",
+      "port": "blue_clay",
+      "recipes": 1
+    },
+    {
+      "gt6": "crop_wheat",
+      "port": "minecraft:wheat",
+      "recipes": 1
+    },
+    {
+      "gt6": "food_dough",
+      "port": "dough",
+      "recipes": 1
+    },
+    {
+      "gt6": "food_dough_abyssal",
+      "port": "abyssal_dough",
+      "recipes": 1
+    },
+    {
+      "gt6": "slicer_shape_eigths",
+      "port": "slicer_shape_eights",
+      "recipes": 1
+    }
+  ],
+  "missing": [
+    {
+      "id": "macu_bait_worm",
+      "recipes": 4
+    },
+    {
+      "id": "etfu_rabbit_foot",
+      "recipes": 3
+    },
+    {
+      "id": "macu_bait_ant",
+      "recipes": 3
+    },
+    {
+      "id": "neli_foxfire_powder",
+      "recipes": 3
+    },
+    {
+      "id": "neli_reed",
+      "recipes": 3
+    },
+    {
+      "id": "rh_sand_magnetite",
+      "recipes": 3
+    },
+    {
+      "id": "tf_mushgloom",
+      "recipes": 3
+    },
+    {
+      "id": "tropic_sand_black",
+      "recipes": 3
+    },
+    {
+      "id": "neli_foxfire_lily",
+      "recipes": 2
+    },
+    {
+      "id": "neli_wart_soggy",
+      "recipes": 2
+    },
+    {
+      "id": "neli_wart_warped",
+      "recipes": 2
+    },
+    {
+      "id": "wimo_thick_bone",
+      "recipes": 2
+    },
+    {
+      "id": "aether_sand",
+      "recipes": 1
+    },
+    {
+      "id": "bop_coarse_loamy",
+      "recipes": 1
+    },
+    {
+      "id": "bop_coarse_sandy",
+      "recipes": 1
+    },
+    {
+      "id": "bop_coarse_silty",
+      "recipes": 1
+    },
+    {
+      "id": "bop_dirt_dried",
+      "recipes": 1
+    },
+    {
+      "id": "bop_dirt_hard",
+      "recipes": 1
+    },
+    {
+      "id": "bop_grass_smoldering",
+      "recipes": 1
+    },
+    {
+      "id": "bop_mud",
+      "recipes": 1
+    },
+    {
+      "id": "bop_quicksand",
+      "recipes": 1
+    },
+    {
+      "id": "bop_sand_hard",
+      "recipes": 1
+    },
+    {
+      "id": "btl_mud",
+      "recipes": 1
+    },
+    {
+      "id": "ere_mud",
+      "recipes": 1
+    },
+    {
+      "id": "etfu_dirt",
+      "recipes": 1
+    },
+    {
+      "id": "macu_bait_maggot",
+      "recipes": 1
+    },
+    {
+      "id": "neli_bone_rose",
+      "recipes": 1
+    },
+    {
+      "id": "neli_soul_rose",
+      "recipes": 1
+    },
+    {
+      "id": "neli_wart_crimson",
+      "recipes": 1
+    },
+    {
+      "id": "neli_wither_rose",
+      "recipes": 1
+    },
+    {
+      "id": "rh_sand_coral",
+      "recipes": 1
+    },
+    {
+      "id": "rh_sand_gypsum",
+      "recipes": 1
+    },
+    {
+      "id": "rh_sand_olivine",
+      "recipes": 1
+    },
+    {
+      "id": "salt_dirt_1",
+      "recipes": 1
+    },
+    {
+      "id": "salt_dirt_2",
+      "recipes": 1
+    },
+    {
+      "id": "salt_dirt_3",
+      "recipes": 1
+    },
+    {
+      "id": "wimo_infected_meat",
+      "recipes": 1
+    }
+  ]
+}

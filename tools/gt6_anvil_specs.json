@@ -1,0 +1,142 @@
+[
+  {
+    "material": "Stone",
+    "durability": 10000
+  },
+  {
+    "material": "Blackstone",
+    "durability": 100000
+  },
+  {
+    "material": "GraniteBlack",
+    "durability": 100000
+  },
+  {
+    "material": "GraniteRed",
+    "durability": 100000
+  },
+  {
+    "material": "Lead",
+    "durability": 800000
+  },
+  {
+    "material": "Bronze",
+    "durability": 1000000
+  },
+  {
+    "material": "ArsenicCopper",
+    "durability": 1000000
+  },
+  {
+    "material": "ArsenicBronze",
+    "durability": 2000000
+  },
+  {
+    "material": "Syrmorite",
+    "durability": 2000000
+  },
+  {
+    "material": "Ironwood",
+    "durability": 7500000
+  },
+  {
+    "material": "Steel",
+    "durability": 10000000
+  },
+  {
+    "material": "Desh",
+    "durability": 12500000
+  },
+  {
+    "material": "Efrine",
+    "durability": 20000000
+  },
+  {
+    "material": "Thaumium",
+    "durability": 25000000
+  },
+  {
+    "material": "Manasteel",
+    "durability": 25000000
+  },
+  {
+    "material": "BlackSteel",
+    "durability": 30000000
+  },
+  {
+    "material": "BlueSteel",
+    "durability": 40000000
+  },
+  {
+    "material": "RedSteel",
+    "durability": 50000000
+  },
+  {
+    "material": "VanadiumSteel",
+    "durability": 70000000
+  },
+  {
+    "material": "Octine",
+    "durability": 80000000
+  },
+  {
+    "material": "FierySteel",
+    "durability": 90000000
+  },
+  {
+    "material": "HSLATungstenAlloy",
+    "durability": 100000000
+  },
+  {
+    "material": "Titanium",
+    "durability": 100000000
+  },
+  {
+    "material": "Netherite",
+    "durability": 150000000
+  },
+  {
+    "material": "Terrasteel",
+    "durability": 200000000
+  },
+  {
+    "material": "VoidMetal",
+    "durability": 300000000
+  },
+  {
+    "material": "TitaniumGold",
+    "durability": 400000000
+  },
+  {
+    "material": "Tungstensteel",
+    "durability": 1000000000
+  },
+  {
+    "material": "Tungsten",
+    "durability": 2000000000
+  },
+  {
+    "material": "Iridium",
+    "durability": 10000000000
+  },
+  {
+    "material": "GaiaSpirit",
+    "durability": 100000000000
+  },
+  {
+    "material": "Adamantium",
+    "durability": 1000000000000
+  },
+  {
+    "material": "Draconium",
+    "durability": 1000000000000
+  },
+  {
+    "material": "DraconiumAwakened",
+    "durability": 2000000000000
+  },
+  {
+    "material": "Infinity",
+    "durability": 1000000000000000
+  }
+]

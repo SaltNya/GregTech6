@@ -1,0 +1,7890 @@
+{
+ "source": "F:\\Dev\\GregTech6\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+ "tab": "Basic Machines",
+ "count": 251,
+ "machines": [
+  "Autoclave",
+  "Autocrafter",
+  "Bath",
+  "Boxinator",
+  "Bumblelyzer",
+  "Burner Mixer",
+  "Buzzsaw",
+  "Canning Machine",
+  "Catalytic Cracker",
+  "Centrifuge",
+  "Cluster Mill",
+  "Coagulator",
+  "Compressor",
+  "Crusher",
+  "Cryo Mixer (T1)",
+  "Cryo Mixer (T2)",
+  "Cryo Mixer (T3)",
+  "Cryo Mixer (T4)",
+  "Cryo Mixer (T5)",
+  "Crystallisation Crucible",
+  "Distillery",
+  "Dryer",
+  "Electric Loom",
+  "Electric Mixer",
+  "Electric Sifter",
+  "Electrolyzer",
+  "Extruder",
+  "Fermenter",
+  "Freezer (T1)",
+  "Freezer (T2)",
+  "Freezer (T3)",
+  "Freezer (T4)",
+  "Freezer (T5)",
+  "Generifier",
+  "Injector",
+  "Laminator",
+  "Laser Engraver (T1)",
+  "Laser Engraver (T2)",
+  "Laser Engraver (T3)",
+  "Laser Engraver (T4)",
+  "Laser Engraver (T5)",
+  "Laser Welder (T1)",
+  "Laser Welder (T2)",
+  "Laser Welder (T3)",
+  "Laser Welder (T4)",
+  "Laser Welder (T5)",
+  "Lathe",
+  "Lightning Processor",
+  "Loom",
+  "Low Heat Extruder",
+  "Magnetic Separator",
+  "Matter Fabricator (T1)",
+  "Matter Fabricator (T2)",
+  "Matter Fabricator (T3)",
+  "Matter Fabricator (T4)",
+  "Matter Fabricator (T5)",
+  "Matter Replicator (T1)",
+  "Matter Replicator (T2)",
+  "Matter Replicator (T3)",
+  "Matter Replicator (T4)",
+  "Matter Replicator (T5)",
+  "Melter",
+  "Mixer",
+  "Molecular Scanner (T1)",
+  "Molecular Scanner (T2)",
+  "Molecular Scanner (T3)",
+  "Molecular Scanner (T4)",
+  "Molecular Scanner (T5)",
+  "Nanoscale Fabricator",
+  "Oven",
+  "Plantalyzer",
+  "Polarizer",
+  "Press",
+  "Pressure Washer",
+  "Printer",
+  "Roasting Oven",
+  "Roll Bender",
+  "Roll Former",
+  "Rolling Mill",
+  "Sanding Machine",
+  "Scanner (Visuals,",
+  "Shredder",
+  "Sifter",
+  "Slicer",
+  "Sluice",
+  "Smelter",
+  "Squeezer",
+  "Steam Cracker",
+  "Unboxinator",
+  "Wiremill"
+ ],
+ "entries": [
+  {
+   "display": "\"Oven (\"                          +aMat.getLocal()+\")\"",
+   "machine": "Oven",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20001",
+   "pattern": [
+    "wMh",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1288
+  },
+  {
+   "display": "\"Oven (\"                          +aMat.getLocal()+\")\"",
+   "machine": "Oven",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20002",
+   "pattern": [
+    "wMh",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1289
+  },
+  {
+   "display": "\"Oven (\"                          +aMat.getLocal()+\")\"",
+   "machine": "Oven",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20003",
+   "pattern": [
+    "wMh",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1290
+  },
+  {
+   "display": "\"Oven (\"                          +aMat.getLocal()+\")\"",
+   "machine": "Oven",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20004",
+   "pattern": [
+    "wMh",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1291
+  },
+  {
+   "display": "\"Shredder (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Shredder",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20011",
+   "pattern": [
+    "GDG",
+    "hMw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "D": "OP.plateGem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1294
+  },
+  {
+   "display": "\"Shredder (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Shredder",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20012",
+   "pattern": [
+    "GDG",
+    "hMw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "D": "OP.plateGem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1295
+  },
+  {
+   "display": "\"Shredder (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Shredder",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20013",
+   "pattern": [
+    "GDG",
+    "hMw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "D": "OP.plateGem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1296
+  },
+  {
+   "display": "\"Shredder (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Shredder",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20014",
+   "pattern": [
+    "GDG",
+    "hMw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "D": "OP.plateGem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1297
+  },
+  {
+   "display": "\"Crusher (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Crusher",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20021",
+   "pattern": [
+    "DMD",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "D": "OP.gem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1300
+  },
+  {
+   "display": "\"Crusher (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Crusher",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20022",
+   "pattern": [
+    "DMD",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "D": "OP.gem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1301
+  },
+  {
+   "display": "\"Crusher (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Crusher",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20023",
+   "pattern": [
+    "DMD",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "D": "OP.gem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1302
+  },
+  {
+   "display": "\"Crusher (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Crusher",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20024",
+   "pattern": [
+    "DMD",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "D": "OP.gem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1303
+  },
+  {
+   "display": "\"Lathe (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Lathe",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20041",
+   "pattern": [
+    "TDS",
+    "dMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "D": "OP.plateGemTiny.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1306
+  },
+  {
+   "display": "\"Lathe (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Lathe",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20042",
+   "pattern": [
+    "TDS",
+    "dMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "D": "OP.plateGemTiny.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1307
+  },
+  {
+   "display": "\"Lathe (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Lathe",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20043",
+   "pattern": [
+    "TDS",
+    "dMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "D": "OP.plateGemTiny.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1308
+  },
+  {
+   "display": "\"Lathe (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Lathe",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20044",
+   "pattern": [
+    "TDS",
+    "dMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "D": "OP.plateGemTiny.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1309
+  },
+  {
+   "display": "\"Sifter (\"                        +aMat.getLocal()+\")\"",
+   "machine": "Sifter",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20051",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1312
+  },
+  {
+   "display": "\"Sifter (\"                        +aMat.getLocal()+\")\"",
+   "machine": "Sifter",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20052",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1313
+  },
+  {
+   "display": "\"Sifter (\"                        +aMat.getLocal()+\")\"",
+   "machine": "Sifter",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20053",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1314
+  },
+  {
+   "display": "\"Sifter (\"                        +aMat.getLocal()+\")\"",
+   "machine": "Sifter",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20054",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1315
+  },
+  {
+   "display": "\"Buzzsaw (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Buzzsaw",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20061",
+   "pattern": [
+    "DGS",
+    "wMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "D": "OP.dust.dat(ANY.Diamond)",
+    "G": "OP.toolHeadBuzzSaw.dat(ANY.Steel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1318
+  },
+  {
+   "display": "\"Buzzsaw (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Buzzsaw",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20062",
+   "pattern": [
+    "DGS",
+    "wMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "D": "OP.dust.dat(ANY.Diamond)",
+    "G": "OP.toolHeadBuzzSaw.dat(MT.CobaltBrass)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1319
+  },
+  {
+   "display": "\"Buzzsaw (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Buzzsaw",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20063",
+   "pattern": [
+    "DGS",
+    "wMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "D": "OP.dust.dat(ANY.Diamond)",
+    "G": "OP.toolHeadBuzzSaw.dat(MT.CobaltBrass)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1320
+  },
+  {
+   "display": "\"Buzzsaw (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Buzzsaw",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20064",
+   "pattern": [
+    "DGS",
+    "wMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "D": "OP.dust.dat(ANY.Diamond)",
+    "G": "OP.toolHeadBuzzSaw.dat(MT.CobaltBrass)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1321
+  },
+  {
+   "display": "\"Squeezer (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Squeezer",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20071",
+   "pattern": [
+    "RS",
+    "PM",
+    "Pw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "P": "OP.plateTriple.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1324
+  },
+  {
+   "display": "\"Squeezer (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Squeezer",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20072",
+   "pattern": [
+    "RS",
+    "PM",
+    "Pw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "P": "OP.plateTriple.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1325
+  },
+  {
+   "display": "\"Squeezer (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Squeezer",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20073",
+   "pattern": [
+    "RS",
+    "PM",
+    "Pw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "P": "OP.plateTriple.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1326
+  },
+  {
+   "display": "\"Squeezer (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Squeezer",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20074",
+   "pattern": [
+    "RS",
+    "PM",
+    "Pw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "P": "OP.plateTriple.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1327
+  },
+  {
+   "display": "\"Centrifuge (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Centrifuge",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20081",
+   "pattern": [
+    "Gw",
+    "SM",
+    "Gh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 1,
+    "parallelDuration": true,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1330
+  },
+  {
+   "display": "\"Centrifuge (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Centrifuge",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20082",
+   "pattern": [
+    "Gw",
+    "SM",
+    "Gh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 2,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1331
+  },
+  {
+   "display": "\"Centrifuge (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Centrifuge",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20083",
+   "pattern": [
+    "Gw",
+    "SM",
+    "Gh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1332
+  },
+  {
+   "display": "\"Centrifuge (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Centrifuge",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20084",
+   "pattern": [
+    "Gw",
+    "SM",
+    "Gh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1333
+  },
+  {
+   "display": "\"Electrolyzer (\"                            +VN[1]+\")\"",
+   "machine": "Electrolyzer",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20091",
+   "pattern": [
+    "SMS",
+    "WwW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.wireGt01.dat(MT.Pt)",
+    "W": "MT.DATA.CABLES_01[1]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 1,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1336
+  },
+  {
+   "display": "\"Electrolyzer (\"                            +VN[2]+\")\"",
+   "machine": "Electrolyzer",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20092",
+   "pattern": [
+    "SMS",
+    "WwW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.wireGt01.dat(MT.Pt)",
+    "W": "MT.DATA.CABLES_01[2]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 2,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1337
+  },
+  {
+   "display": "\"Electrolyzer (\"                            +VN[3]+\")\"",
+   "machine": "Electrolyzer",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20093",
+   "pattern": [
+    "SMS",
+    "WwW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.wireGt01.dat(MT.Pt)",
+    "W": "MT.DATA.CABLES_01[3]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1338
+  },
+  {
+   "display": "\"Electrolyzer (\"                            +VN[4]+\")\"",
+   "machine": "Electrolyzer",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20094",
+   "pattern": [
+    "SMS",
+    "WwW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.wireGt01.dat(MT.Pt)",
+    "W": "MT.DATA.CABLES_01[4]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1339
+  },
+  {
+   "display": "\"Electrolyzer (\"                            +VN[5]+\")\"",
+   "machine": "Electrolyzer",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20095",
+   "pattern": [
+    "SMS",
+    "WwW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.wireGt01.dat(MT.Pt)",
+    "W": "MT.DATA.CABLES_01[5]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1340
+  },
+  {
+   "display": "\"Compressor (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Compressor",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20101",
+   "pattern": [
+    "PPR",
+    "wMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "P": "OP.plateQuintuple.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1343
+  },
+  {
+   "display": "\"Compressor (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Compressor",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20102",
+   "pattern": [
+    "PPR",
+    "wMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "P": "OP.plateQuintuple.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1344
+  },
+  {
+   "display": "\"Compressor (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Compressor",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20103",
+   "pattern": [
+    "PPR",
+    "wMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "P": "OP.plateQuintuple.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1345
+  },
+  {
+   "display": "\"Compressor (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Compressor",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20104",
+   "pattern": [
+    "PPR",
+    "wMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "P": "OP.plateQuintuple.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1346
+  },
+  {
+   "display": "\"Rolling Mill (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Rolling Mill",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20111",
+   "pattern": [
+    "Gh",
+    "M ",
+    "Gw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1349
+  },
+  {
+   "display": "\"Rolling Mill (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Rolling Mill",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20112",
+   "pattern": [
+    "Gh",
+    "M ",
+    "Gw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1350
+  },
+  {
+   "display": "\"Rolling Mill (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Rolling Mill",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20113",
+   "pattern": [
+    "Gh",
+    "M ",
+    "Gw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1351
+  },
+  {
+   "display": "\"Rolling Mill (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Rolling Mill",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20114",
+   "pattern": [
+    "Gh",
+    "M ",
+    "Gw"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1352
+  },
+  {
+   "display": "\"Roll Bender (\"                   +aMat.getLocal()+\")\"",
+   "machine": "Roll Bender",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20121",
+   "pattern": [
+    "wS ",
+    "GMG",
+    " Sh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1355
+  },
+  {
+   "display": "\"Roll Bender (\"                   +aMat.getLocal()+\")\"",
+   "machine": "Roll Bender",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20122",
+   "pattern": [
+    "wS ",
+    "GMG",
+    " Sh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1356
+  },
+  {
+   "display": "\"Roll Bender (\"                   +aMat.getLocal()+\")\"",
+   "machine": "Roll Bender",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20123",
+   "pattern": [
+    "wS ",
+    "GMG",
+    " Sh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1357
+  },
+  {
+   "display": "\"Roll Bender (\"                   +aMat.getLocal()+\")\"",
+   "machine": "Roll Bender",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20124",
+   "pattern": [
+    "wS ",
+    "GMG",
+    " Sh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1358
+  },
+  {
+   "display": "\"Roll Former (\"                   +aMat.getLocal()+\")\"",
+   "machine": "Roll Former",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20131",
+   "pattern": [
+    "wG ",
+    "GMG",
+    " Gh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1361
+  },
+  {
+   "display": "\"Roll Former (\"                   +aMat.getLocal()+\")\"",
+   "machine": "Roll Former",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20132",
+   "pattern": [
+    "wG ",
+    "GMG",
+    " Gh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1362
+  },
+  {
+   "display": "\"Roll Former (\"                   +aMat.getLocal()+\")\"",
+   "machine": "Roll Former",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20133",
+   "pattern": [
+    "wG ",
+    "GMG",
+    " Gh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1363
+  },
+  {
+   "display": "\"Roll Former (\"                   +aMat.getLocal()+\")\"",
+   "machine": "Roll Former",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20134",
+   "pattern": [
+    "wG ",
+    "GMG",
+    " Gh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1364
+  },
+  {
+   "display": "\"Cluster Mill (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Cluster Mill",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20141",
+   "pattern": [
+    "SSS",
+    "wGh",
+    "SMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineQuadruple.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1367
+  },
+  {
+   "display": "\"Cluster Mill (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Cluster Mill",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20142",
+   "pattern": [
+    "SSS",
+    "wGh",
+    "SMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineQuadruple.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1368
+  },
+  {
+   "display": "\"Cluster Mill (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Cluster Mill",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20143",
+   "pattern": [
+    "SSS",
+    "wGh",
+    "SMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineQuadruple.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1369
+  },
+  {
+   "display": "\"Cluster Mill (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Cluster Mill",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20144",
+   "pattern": [
+    "SSS",
+    "wGh",
+    "SMS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineQuadruple.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1370
+  },
+  {
+   "display": "\"Wiremill (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Wiremill",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20151",
+   "pattern": [
+    "SGS",
+    "wMh"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1373
+  },
+  {
+   "display": "\"Wiremill (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Wiremill",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20152",
+   "pattern": [
+    "SGS",
+    "wMh"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1374
+  },
+  {
+   "display": "\"Wiremill (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Wiremill",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20153",
+   "pattern": [
+    "SGS",
+    "wMh"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1375
+  },
+  {
+   "display": "\"Wiremill (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Wiremill",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20154",
+   "pattern": [
+    "SGS",
+    "wMh"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1376
+  },
+  {
+   "display": "\"Canning Machine (\"                         +VN[1]+\")\"",
+   "machine": "Canning Machine",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20161",
+   "pattern": [
+    "wPh",
+    "XMX",
+    "CPW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PUMPS[1]",
+    "C": "OD_CIRCUITS[1]",
+    "W": "MT.DATA.CABLES_01[1]",
+    "P": "OP.pipeTiny  .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1379
+  },
+  {
+   "display": "\"Canning Machine (\"                         +VN[2]+\")\"",
+   "machine": "Canning Machine",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20162",
+   "pattern": [
+    "wPh",
+    "XMX",
+    "CPW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PUMPS[2]",
+    "C": "OD_CIRCUITS[2]",
+    "W": "MT.DATA.CABLES_01[2]",
+    "P": "OP.pipeSmall .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1380
+  },
+  {
+   "display": "\"Canning Machine (\"                         +VN[3]+\")\"",
+   "machine": "Canning Machine",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20163",
+   "pattern": [
+    "wPh",
+    "XMX",
+    "CPW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PUMPS[3]",
+    "C": "OD_CIRCUITS[3]",
+    "W": "MT.DATA.CABLES_01[3]",
+    "P": "OP.pipeMedium.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1381
+  },
+  {
+   "display": "\"Canning Machine (\"                         +VN[4]+\")\"",
+   "machine": "Canning Machine",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20164",
+   "pattern": [
+    "wPh",
+    "XMX",
+    "CPW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PUMPS[4]",
+    "C": "OD_CIRCUITS[4]",
+    "W": "MT.DATA.CABLES_01[4]",
+    "P": "OP.pipeLarge .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1382
+  },
+  {
+   "display": "\"Canning Machine (\"                         +VN[5]+\")\"",
+   "machine": "Canning Machine",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20165",
+   "pattern": [
+    "wPh",
+    "XMX",
+    "CPW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PUMPS[5]",
+    "C": "OD_CIRCUITS[5]",
+    "W": "MT.DATA.CABLES_01[5]",
+    "P": "OP.pipeHuge  .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1383
+  },
+  {
+   "display": "\"Roasting Oven (\"                 +aMat.getLocal()+\")\"",
+   "machine": "Roasting Oven",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20171",
+   "pattern": [
+    "wPh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 1,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1386
+  },
+  {
+   "display": "\"Roasting Oven (\"                 +aMat.getLocal()+\")\"",
+   "machine": "Roasting Oven",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20172",
+   "pattern": [
+    "wPh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 2,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1387
+  },
+  {
+   "display": "\"Roasting Oven (\"                 +aMat.getLocal()+\")\"",
+   "machine": "Roasting Oven",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20173",
+   "pattern": [
+    "wPh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1388
+  },
+  {
+   "display": "\"Roasting Oven (\"                 +aMat.getLocal()+\")\"",
+   "machine": "Roasting Oven",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20174",
+   "pattern": [
+    "wPh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1389
+  },
+  {
+   "display": "\"Mixer (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Mixer",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20181",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plate.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1392
+  },
+  {
+   "display": "\"Mixer (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Mixer",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20182",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plateDouble.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1393
+  },
+  {
+   "display": "\"Mixer (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Mixer",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20183",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plateTriple.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1394
+  },
+  {
+   "display": "\"Mixer (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Mixer",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20184",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plateQuadruple.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1395
+  },
+  {
+   "display": "\"Distillery (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Distillery",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20191",
+   "pattern": [
+    "GPG",
+    "WMW",
+    "hCw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "OP.wireGt02.dat(MT.Constantan)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "G": "OD.blockGlassColorless",
+    "P": "OP.pipeTiny  .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1398
+  },
+  {
+   "display": "\"Distillery (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Distillery",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20192",
+   "pattern": [
+    "GPG",
+    "WMW",
+    "hCw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "OP.wireGt04.dat(MT.Kanthal   )",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "G": "OD.blockGlassColorless",
+    "P": "OP.pipeSmall .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1399
+  },
+  {
+   "display": "\"Distillery (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Distillery",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20193",
+   "pattern": [
+    "GPG",
+    "WMW",
+    "hCw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "OP.wireGt08.dat(MT.Nichrome  )",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "G": "OD.blockGlassColorless",
+    "P": "OP.pipeMedium.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1400
+  },
+  {
+   "display": "\"Distillery (\"                    +aMat.getLocal()+\")\"",
+   "machine": "Distillery",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20194",
+   "pattern": [
+    "GPG",
+    "WMW",
+    "hCw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "OP.wireGt16.dat(MT.SiC       )",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "G": "OD.blockGlassColorless",
+    "P": "OP.pipeLarge .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1401
+  },
+  {
+   "display": "\"Low Heat Extruder (\"             +aMat.getLocal()+\")\"",
+   "machine": "Low Heat Extruder",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20201",
+   "pattern": [
+    "GPw",
+    "PMS",
+    "GPD"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.toolHeadBuzzSaw.dat(ANY.Steel          )",
+    "D": "OP.dust.dat(ANY.Diamond)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.plate            .dat(ANY.Steel)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1406
+  },
+  {
+   "display": "\"Extruder (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Extruder",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20202",
+   "pattern": [
+    "GPw",
+    "PMS",
+    "GPD"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.toolHeadBuzzSaw.dat(MT.TungstenCarbide )",
+    "D": "OP.dust.dat(ANY.Diamond)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.plateDouble      .dat(MT.TungstenCarbide)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1407
+  },
+  {
+   "display": "\"Extruder (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Extruder",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20203",
+   "pattern": [
+    "GPw",
+    "PMS",
+    "GPD"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.toolHeadBuzzSaw.dat(MT.TungstenCarbide )",
+    "D": "OP.dust.dat(ANY.Diamond)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.plateTriple      .dat(MT.TungstenCarbide)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1408
+  },
+  {
+   "display": "\"Extruder (\"                      +aMat.getLocal()+\")\"",
+   "machine": "Extruder",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20204",
+   "pattern": [
+    "GPw",
+    "PMS",
+    "GPD"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.toolHeadBuzzSaw.dat(MT.TungstenCarbide )",
+    "D": "OP.dust.dat(ANY.Diamond)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.plateQuadruple   .dat(MT.TungstenCarbide)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1409
+  },
+  {
+   "display": "\"Loom (\"                          +aMat.getLocal()+\")\"",
+   "machine": "Loom",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20211",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1412
+  },
+  {
+   "display": "\"Loom (\"                          +aMat.getLocal()+\")\"",
+   "machine": "Loom",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20212",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1413
+  },
+  {
+   "display": "\"Loom (\"                          +aMat.getLocal()+\")\"",
+   "machine": "Loom",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20213",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1414
+  },
+  {
+   "display": "\"Loom (\"                          +aMat.getLocal()+\")\"",
+   "machine": "Loom",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20214",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1415
+  },
+  {
+   "display": "\"Polarizer (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Polarizer",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20221",
+   "pattern": [
+    "TwT",
+    "PMP",
+    "TdT"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1418
+  },
+  {
+   "display": "\"Polarizer (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Polarizer",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20222",
+   "pattern": [
+    "TwT",
+    "PMP",
+    "TdT"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1419
+  },
+  {
+   "display": "\"Polarizer (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Polarizer",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20223",
+   "pattern": [
+    "TwT",
+    "PMP",
+    "TdT"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1420
+  },
+  {
+   "display": "\"Polarizer (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Polarizer",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20224",
+   "pattern": [
+    "TwT",
+    "PMP",
+    "TdT"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1421
+  },
+  {
+   "display": "\"Polarizer (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Polarizer",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20225",
+   "pattern": [
+    "TwT",
+    "PMP",
+    "TdT"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1422
+  },
+  {
+   "display": "\"Press (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Press",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20231",
+   "pattern": [
+    "RS",
+    "PM",
+    "Pw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plateDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1425
+  },
+  {
+   "display": "\"Press (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Press",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20232",
+   "pattern": [
+    "RS",
+    "PM",
+    "Pw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plateDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1426
+  },
+  {
+   "display": "\"Press (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Press",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20233",
+   "pattern": [
+    "RS",
+    "PM",
+    "Pw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plateDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1427
+  },
+  {
+   "display": "\"Press (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Press",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20234",
+   "pattern": [
+    "RS",
+    "PM",
+    "Pw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plateDouble.dat(aMat)",
+    "S": "OP.spring.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "KU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1428
+  },
+  {
+   "display": "\"Smelter (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Smelter",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20241",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "U": "aRegistry.getItem(1024)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 1000,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1431
+  },
+  {
+   "display": "\"Smelter (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Smelter",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20242",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "U": "aRegistry.getItem(1019)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 1000,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1432
+  },
+  {
+   "display": "\"Smelter (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Smelter",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20243",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "U": "aRegistry.getItem(1019)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 1000,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1433
+  },
+  {
+   "display": "\"Smelter (\"                       +aMat.getLocal()+\")\"",
+   "machine": "Smelter",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20244",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "U": "aRegistry.getItem(1043)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 1000,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1434
+  },
+  {
+   "display": "\"Crystallisation Crucible (\"      +aMat.getLocal()+\")\"",
+   "machine": "Crystallisation Crucible",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20251",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "U": "aRegistry.getItem(1018)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1437
+  },
+  {
+   "display": "\"Crystallisation Crucible (\"      +aMat.getLocal()+\")\"",
+   "machine": "Crystallisation Crucible",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20252",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "U": "aRegistry.getItem(1039)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1438
+  },
+  {
+   "display": "\"Crystallisation Crucible (\"      +aMat.getLocal()+\")\"",
+   "machine": "Crystallisation Crucible",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20253",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "U": "aRegistry.getItem(1039)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1439
+  },
+  {
+   "display": "\"Crystallisation Crucible (\"      +aMat.getLocal()+\")\"",
+   "machine": "Crystallisation Crucible",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20254",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "U": "aRegistry.getItem(1039)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1440
+  },
+  {
+   "display": "\"Injector (\"                                +VN[1]+\")\"",
+   "machine": "Injector",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20261",
+   "pattern": [
+    "XPw",
+    "CMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PISTONS[1]",
+    "C": "OD_CIRCUITS[1]",
+    "W": "MT.DATA.CABLES_01[1]",
+    "P": "OP.pipeTiny  .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1443
+  },
+  {
+   "display": "\"Injector (\"                                +VN[2]+\")\"",
+   "machine": "Injector",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20262",
+   "pattern": [
+    "XPw",
+    "CMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PISTONS[2]",
+    "C": "OD_CIRCUITS[2]",
+    "W": "MT.DATA.CABLES_01[2]",
+    "P": "OP.pipeSmall .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1444
+  },
+  {
+   "display": "\"Injector (\"                                +VN[3]+\")\"",
+   "machine": "Injector",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20263",
+   "pattern": [
+    "XPw",
+    "CMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PISTONS[3]",
+    "C": "OD_CIRCUITS[3]",
+    "W": "MT.DATA.CABLES_01[3]",
+    "P": "OP.pipeMedium.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1445
+  },
+  {
+   "display": "\"Injector (\"                                +VN[4]+\")\"",
+   "machine": "Injector",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20264",
+   "pattern": [
+    "XPw",
+    "CMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PISTONS[4]",
+    "C": "OD_CIRCUITS[4]",
+    "W": "MT.DATA.CABLES_01[4]",
+    "P": "OP.pipeLarge .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1446
+  },
+  {
+   "display": "\"Injector (\"                                +VN[5]+\")\"",
+   "machine": "Injector",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20265",
+   "pattern": [
+    "XPw",
+    "CMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.PISTONS[5]",
+    "C": "OD_CIRCUITS[5]",
+    "W": "MT.DATA.CABLES_01[5]",
+    "P": "OP.pipeHuge  .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1447
+  },
+  {
+   "display": "\"Printer (\"                                 +VN[1]+\")\"",
+   "machine": "Printer",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20271",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[1]",
+    "C": "OD_CIRCUITS[1]",
+    "W": "MT.DATA.CABLES_01[1]",
+    "P": "OP.pipeTiny.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1450
+  },
+  {
+   "display": "\"Printer (\"                                 +VN[2]+\")\"",
+   "machine": "Printer",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20272",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[2]",
+    "C": "OD_CIRCUITS[2]",
+    "W": "MT.DATA.CABLES_01[2]",
+    "P": "OP.pipeTiny.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1451
+  },
+  {
+   "display": "\"Printer (\"                                 +VN[3]+\")\"",
+   "machine": "Printer",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20273",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[3]",
+    "C": "OD_CIRCUITS[3]",
+    "W": "MT.DATA.CABLES_01[3]",
+    "P": "OP.pipeTiny.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1452
+  },
+  {
+   "display": "\"Printer (\"                                 +VN[4]+\")\"",
+   "machine": "Printer",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20274",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[4]",
+    "C": "OD_CIRCUITS[4]",
+    "W": "MT.DATA.CABLES_01[4]",
+    "P": "OP.pipeTiny.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1453
+  },
+  {
+   "display": "\"Printer (\"                                 +VN[5]+\")\"",
+   "machine": "Printer",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20275",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[5]",
+    "C": "OD_CIRCUITS[5]",
+    "W": "MT.DATA.CABLES_01[5]",
+    "P": "OP.pipeTiny.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1454
+  },
+  {
+   "display": "\"Scanner (Visuals, \"                        +VN[1]+\")\"",
+   "machine": "Scanner (Visuals,",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20281",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[1]",
+    "C": "OD_CIRCUITS[1]",
+    "W": "MT.DATA.CABLES_01[1]",
+    "P": "OP.plate.dat(MT.Lumium)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1457
+  },
+  {
+   "display": "\"Scanner (Visuals, \"                        +VN[2]+\")\"",
+   "machine": "Scanner (Visuals,",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20282",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[2]",
+    "C": "OD_CIRCUITS[2]",
+    "W": "MT.DATA.CABLES_01[2]",
+    "P": "OP.plate.dat(MT.Lumium)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1458
+  },
+  {
+   "display": "\"Scanner (Visuals, \"                        +VN[3]+\")\"",
+   "machine": "Scanner (Visuals,",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20283",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[3]",
+    "C": "OD_CIRCUITS[3]",
+    "W": "MT.DATA.CABLES_01[3]",
+    "P": "OP.plate.dat(MT.Lumium)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1459
+  },
+  {
+   "display": "\"Scanner (Visuals, \"                        +VN[4]+\")\"",
+   "machine": "Scanner (Visuals,",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20284",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[4]",
+    "C": "OD_CIRCUITS[4]",
+    "W": "MT.DATA.CABLES_01[4]",
+    "P": "OP.plate.dat(MT.Lumium)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1460
+  },
+  {
+   "display": "\"Scanner (Visuals, \"                        +VN[5]+\")\"",
+   "machine": "Scanner (Visuals,",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20285",
+   "pattern": [
+    "CPC",
+    "wXh",
+    "WMW"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "X": "IL.CONVEYERS[5]",
+    "C": "OD_CIRCUITS[5]",
+    "W": "MT.DATA.CABLES_01[5]",
+    "P": "OP.plate.dat(MT.Lumium)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1461
+  },
+  {
+   "display": "\"Sluice (\"                        +aMat.getLocal()+\")\"",
+   "machine": "Sluice",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20291",
+   "pattern": [
+    "PPP",
+    "RGR",
+    "GMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "R": "OP.rotor.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.plateDouble.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1464
+  },
+  {
+   "display": "\"Sluice (\"                        +aMat.getLocal()+\")\"",
+   "machine": "Sluice",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20292",
+   "pattern": [
+    "PPP",
+    "RGR",
+    "GMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "R": "OP.rotor.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.plateDouble.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1465
+  },
+  {
+   "display": "\"Sluice (\"                        +aMat.getLocal()+\")\"",
+   "machine": "Sluice",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20293",
+   "pattern": [
+    "PPP",
+    "RGR",
+    "GMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "R": "OP.rotor.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.plateDouble.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1466
+  },
+  {
+   "display": "\"Sluice (\"                        +aMat.getLocal()+\")\"",
+   "machine": "Sluice",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20294",
+   "pattern": [
+    "PPP",
+    "RGR",
+    "GMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "R": "OP.rotor.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.plateDouble.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1467
+  },
+  {
+   "display": "\"Magnetic Separator (\"            +aMat.getLocal()+\")\"",
+   "machine": "Magnetic Separator",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20301",
+   "pattern": [
+    "TwT",
+    "TdT",
+    "PMP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1470
+  },
+  {
+   "display": "\"Magnetic Separator (\"            +aMat.getLocal()+\")\"",
+   "machine": "Magnetic Separator",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20302",
+   "pattern": [
+    "TwT",
+    "TdT",
+    "PMP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1471
+  },
+  {
+   "display": "\"Magnetic Separator (\"            +aMat.getLocal()+\")\"",
+   "machine": "Magnetic Separator",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20303",
+   "pattern": [
+    "TwT",
+    "TdT",
+    "PMP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1472
+  },
+  {
+   "display": "\"Magnetic Separator (\"            +aMat.getLocal()+\")\"",
+   "machine": "Magnetic Separator",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20304",
+   "pattern": [
+    "TwT",
+    "TdT",
+    "PMP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1473
+  },
+  {
+   "display": "\"Magnetic Separator (\"            +aMat.getLocal()+\")\"",
+   "machine": "Magnetic Separator",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20305",
+   "pattern": [
+    "TwT",
+    "TdT",
+    "PMP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OP.plate.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "MU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1474
+  },
+  {
+   "display": "\"Dryer (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Dryer",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20311",
+   "pattern": [
+    "wPh",
+    "BMB",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1477
+  },
+  {
+   "display": "\"Dryer (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Dryer",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20312",
+   "pattern": [
+    "wPh",
+    "BMB",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1478
+  },
+  {
+   "display": "\"Dryer (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Dryer",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20313",
+   "pattern": [
+    "wPh",
+    "BMB",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1479
+  },
+  {
+   "display": "\"Dryer (\"                         +aMat.getLocal()+\")\"",
+   "machine": "Dryer",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20314",
+   "pattern": [
+    "wPh",
+    "BMB",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1480
+  },
+  {
+   "display": "\"Laser Engraver (T1)\"",
+   "machine": "Laser Engraver (T1)",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20321",
+   "pattern": [
+    "TdT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[1]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1483
+  },
+  {
+   "display": "\"Laser Engraver (T2)\"",
+   "machine": "Laser Engraver (T2)",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20322",
+   "pattern": [
+    "TdT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[2]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1484
+  },
+  {
+   "display": "\"Laser Engraver (T3)\"",
+   "machine": "Laser Engraver (T3)",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20323",
+   "pattern": [
+    "TdT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[3]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1485
+  },
+  {
+   "display": "\"Laser Engraver (T4)\"",
+   "machine": "Laser Engraver (T4)",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20324",
+   "pattern": [
+    "TdT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[4]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1486
+  },
+  {
+   "display": "\"Laser Engraver (T5)\"",
+   "machine": "Laser Engraver (T5)",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20325",
+   "pattern": [
+    "TdT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[5]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1487
+  },
+  {
+   "display": "\"Laser Welder (T1)\"",
+   "machine": "Laser Welder (T1)",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20331",
+   "pattern": [
+    "TLT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[1]",
+    "L": "DYE_OREDICTS_LENS[DYE_INDEX_Yellow]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1490
+  },
+  {
+   "display": "\"Laser Welder (T2)\"",
+   "machine": "Laser Welder (T2)",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20332",
+   "pattern": [
+    "TLT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[2]",
+    "L": "DYE_OREDICTS_LENS[DYE_INDEX_Yellow]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1491
+  },
+  {
+   "display": "\"Laser Welder (T3)\"",
+   "machine": "Laser Welder (T3)",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20333",
+   "pattern": [
+    "TLT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[3]",
+    "L": "DYE_OREDICTS_LENS[DYE_INDEX_Yellow]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1492
+  },
+  {
+   "display": "\"Laser Welder (T4)\"",
+   "machine": "Laser Welder (T4)",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20334",
+   "pattern": [
+    "TLT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[4]",
+    "L": "DYE_OREDICTS_LENS[DYE_INDEX_Yellow]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1493
+  },
+  {
+   "display": "\"Laser Welder (T5)\"",
+   "machine": "Laser Welder (T5)",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20335",
+   "pattern": [
+    "TLT",
+    "GPG",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "OD.craftingHardenedClay",
+    "C": "OD_CIRCUITS[5]",
+    "L": "DYE_OREDICTS_LENS[DYE_INDEX_Yellow]",
+    "T": "OP.screw.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "LU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1494
+  },
+  {
+   "display": "\"Autocrafter (\"                             +VN[1]+\")\"",
+   "machine": "Autocrafter",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20341",
+   "pattern": [
+    "WRW",
+    "RwR",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OD_CIRCUITS[1]",
+    "W": "MT.DATA.CABLES_01[1]",
+    "R": "IL.ROBOT_ARMS[1]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1497
+  },
+  {
+   "display": "\"Autocrafter (\"                             +VN[2]+\")\"",
+   "machine": "Autocrafter",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20342",
+   "pattern": [
+    "WRW",
+    "RwR",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OD_CIRCUITS[2]",
+    "W": "MT.DATA.CABLES_01[2]",
+    "R": "IL.ROBOT_ARMS[2]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1498
+  },
+  {
+   "display": "\"Autocrafter (\"                             +VN[3]+\")\"",
+   "machine": "Autocrafter",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20343",
+   "pattern": [
+    "WRW",
+    "RwR",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OD_CIRCUITS[3]",
+    "W": "MT.DATA.CABLES_01[3]",
+    "R": "IL.ROBOT_ARMS[3]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1499
+  },
+  {
+   "display": "\"Autocrafter (\"                             +VN[4]+\")\"",
+   "machine": "Autocrafter",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20344",
+   "pattern": [
+    "WRW",
+    "RwR",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OD_CIRCUITS[4]",
+    "W": "MT.DATA.CABLES_01[4]",
+    "R": "IL.ROBOT_ARMS[4]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1500
+  },
+  {
+   "display": "\"Autocrafter (\"                             +VN[5]+\")\"",
+   "machine": "Autocrafter",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20345",
+   "pattern": [
+    "WRW",
+    "RwR",
+    "CMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OD_CIRCUITS[5]",
+    "W": "MT.DATA.CABLES_01[5]",
+    "R": "IL.ROBOT_ARMS[5]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1501
+  },
+  {
+   "display": "\"Electric Mixer (\"                          +VN[1]+\")\"",
+   "machine": "Electric Mixer",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20351",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "IL.MOTORS[1]",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plate.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1504
+  },
+  {
+   "display": "\"Electric Mixer (\"                          +VN[2]+\")\"",
+   "machine": "Electric Mixer",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20352",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "IL.MOTORS[2]",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plateDouble.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1505
+  },
+  {
+   "display": "\"Electric Mixer (\"                          +VN[3]+\")\"",
+   "machine": "Electric Mixer",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20353",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "IL.MOTORS[3]",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plateTriple.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1506
+  },
+  {
+   "display": "\"Electric Mixer (\"                          +VN[4]+\")\"",
+   "machine": "Electric Mixer",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20354",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "IL.MOTORS[4]",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plateQuadruple.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1507
+  },
+  {
+   "display": "\"Electric Mixer (\"                          +VN[5]+\")\"",
+   "machine": "Electric Mixer",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20355",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "IL.MOTORS[5]",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.plateQuadruple.dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1508
+  },
+  {
+   "display": "\"Electric Loom (\"                           +VN[1]+\")\"",
+   "machine": "Electric Loom",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20361",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "IL.MOTORS[1]",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1511
+  },
+  {
+   "display": "\"Electric Loom (\"                           +VN[2]+\")\"",
+   "machine": "Electric Loom",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20362",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "IL.MOTORS[2]",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1512
+  },
+  {
+   "display": "\"Electric Loom (\"                           +VN[3]+\")\"",
+   "machine": "Electric Loom",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20363",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "IL.MOTORS[3]",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1513
+  },
+  {
+   "display": "\"Electric Loom (\"                           +VN[4]+\")\"",
+   "machine": "Electric Loom",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20364",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "IL.MOTORS[4]",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1514
+  },
+  {
+   "display": "\"Electric Loom (\"                           +VN[5]+\")\"",
+   "machine": "Electric Loom",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20365",
+   "pattern": [
+    "ShS",
+    "GMG",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "IL.MOTORS[5]",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1515
+  },
+  {
+   "display": "\"Electric Sifter (\"                         +VN[1]+\")\"",
+   "machine": "Electric Sifter",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20371",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "IL.PISTONS[1]",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1518
+  },
+  {
+   "display": "\"Electric Sifter (\"                         +VN[2]+\")\"",
+   "machine": "Electric Sifter",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20372",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "IL.PISTONS[2]",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1519
+  },
+  {
+   "display": "\"Electric Sifter (\"                         +VN[3]+\")\"",
+   "machine": "Electric Sifter",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20373",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "IL.PISTONS[3]",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1520
+  },
+  {
+   "display": "\"Electric Sifter (\"                         +VN[4]+\")\"",
+   "machine": "Electric Sifter",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20374",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "IL.PISTONS[4]",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1521
+  },
+  {
+   "display": "\"Electric Sifter (\"                         +VN[5]+\")\"",
+   "machine": "Electric Sifter",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20375",
+   "pattern": [
+    "WxW",
+    "RMR",
+    "SwS"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "IL.PISTONS[5]",
+    "W": "OP.wireFine.dat(aMat)",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1522
+  },
+  {
+   "display": "\"Slicer (\"                                  +VN[1]+\")\"",
+   "machine": "Slicer",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20381",
+   "pattern": [
+    "PRw",
+    "YMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[1]",
+    "Y": "IL.CONVEYERS[1]",
+    "C": "OD_CIRCUITS[1]",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1525
+  },
+  {
+   "display": "\"Slicer (\"                                  +VN[2]+\")\"",
+   "machine": "Slicer",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20382",
+   "pattern": [
+    "PRw",
+    "YMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[2]",
+    "Y": "IL.CONVEYERS[2]",
+    "C": "OD_CIRCUITS[2]",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1526
+  },
+  {
+   "display": "\"Slicer (\"                                  +VN[3]+\")\"",
+   "machine": "Slicer",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20383",
+   "pattern": [
+    "PRw",
+    "YMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[3]",
+    "Y": "IL.CONVEYERS[3]",
+    "C": "OD_CIRCUITS[3]",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1527
+  },
+  {
+   "display": "\"Slicer (\"                                  +VN[4]+\")\"",
+   "machine": "Slicer",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20384",
+   "pattern": [
+    "PRw",
+    "YMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[4]",
+    "Y": "IL.CONVEYERS[4]",
+    "C": "OD_CIRCUITS[4]",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1528
+  },
+  {
+   "display": "\"Slicer (\"                                  +VN[5]+\")\"",
+   "machine": "Slicer",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20385",
+   "pattern": [
+    "PRw",
+    "YMC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[5]",
+    "Y": "IL.CONVEYERS[5]",
+    "C": "OD_CIRCUITS[5]",
+    "R": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1529
+  },
+  {
+   "display": "\"Laminator (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Laminator",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20391",
+   "pattern": [
+    "SwS",
+    "GMG",
+    "SCS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1532
+  },
+  {
+   "display": "\"Laminator (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Laminator",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20392",
+   "pattern": [
+    "SwS",
+    "GMG",
+    "SCS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1533
+  },
+  {
+   "display": "\"Laminator (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Laminator",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20393",
+   "pattern": [
+    "SwS",
+    "GMG",
+    "SCS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1534
+  },
+  {
+   "display": "\"Laminator (\"                     +aMat.getLocal()+\")\"",
+   "machine": "Laminator",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20394",
+   "pattern": [
+    "SwS",
+    "GMG",
+    "SCS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1535
+  },
+  {
+   "display": "\"Matter Fabricator (T1)\"",
+   "machine": "Matter Fabricator (T1)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20411",
+   "pattern": [
+    "RFS",
+    "FMF",
+    "RFS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[1]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1542
+  },
+  {
+   "display": "\"Matter Fabricator (T2)\"",
+   "machine": "Matter Fabricator (T2)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20412",
+   "pattern": [
+    "RFS",
+    "FMF",
+    "RFS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[2]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1543
+  },
+  {
+   "display": "\"Matter Fabricator (T3)\"",
+   "machine": "Matter Fabricator (T3)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20413",
+   "pattern": [
+    "RFS",
+    "FMF",
+    "RFS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[3]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1544
+  },
+  {
+   "display": "\"Matter Fabricator (T4)\"",
+   "machine": "Matter Fabricator (T4)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20414",
+   "pattern": [
+    "RFS",
+    "FMF",
+    "RFS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[4]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1545
+  },
+  {
+   "display": "\"Matter Fabricator (T5)\"",
+   "machine": "Matter Fabricator (T5)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20415",
+   "pattern": [
+    "RFS",
+    "FMF",
+    "RFS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[5]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1546
+  },
+  {
+   "display": "\"Molecular Scanner (T1)\"",
+   "machine": "Molecular Scanner (T1)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20421",
+   "pattern": [
+    "DXE",
+    "FMF",
+    "RYS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "D": "IL.Processor_Crystal_Diamond",
+    "E": "IL.Processor_Crystal_Emerald",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[1]",
+    "X": "IL.EMITTERS[1]",
+    "Y": "IL.SENSORS[1]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1549
+  },
+  {
+   "display": "\"Molecular Scanner (T2)\"",
+   "machine": "Molecular Scanner (T2)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20422",
+   "pattern": [
+    "DXE",
+    "FMF",
+    "RYS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "D": "IL.Processor_Crystal_Diamond",
+    "E": "IL.Processor_Crystal_Emerald",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[2]",
+    "X": "IL.EMITTERS[2]",
+    "Y": "IL.SENSORS[2]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1550
+  },
+  {
+   "display": "\"Molecular Scanner (T3)\"",
+   "machine": "Molecular Scanner (T3)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20423",
+   "pattern": [
+    "DXE",
+    "FMF",
+    "RYS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "D": "IL.Processor_Crystal_Diamond",
+    "E": "IL.Processor_Crystal_Emerald",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[3]",
+    "X": "IL.EMITTERS[3]",
+    "Y": "IL.SENSORS[3]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1551
+  },
+  {
+   "display": "\"Molecular Scanner (T4)\"",
+   "machine": "Molecular Scanner (T4)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20424",
+   "pattern": [
+    "DXE",
+    "FMF",
+    "RYS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "D": "IL.Processor_Crystal_Diamond",
+    "E": "IL.Processor_Crystal_Emerald",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[4]",
+    "X": "IL.EMITTERS[4]",
+    "Y": "IL.SENSORS[4]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1552
+  },
+  {
+   "display": "\"Molecular Scanner (T5)\"",
+   "machine": "Molecular Scanner (T5)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20425",
+   "pattern": [
+    "DXE",
+    "FMF",
+    "RYS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "D": "IL.Processor_Crystal_Diamond",
+    "E": "IL.Processor_Crystal_Emerald",
+    "R": "IL.Processor_Crystal_Ruby",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "F": "IL.FIELD_GENERATORS[5]",
+    "X": "IL.EMITTERS[5]",
+    "Y": "IL.SENSORS[5]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1553
+  },
+  {
+   "display": "\"Matter Replicator (T1)\"",
+   "machine": "Matter Replicator (T1)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20431",
+   "pattern": [
+    "EXE",
+    "FMF",
+    "SXS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "E": "IL.Processor_Crystal_Emerald",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "X": "IL.EMITTERS[1]",
+    "F": "IL.FIELD_GENERATORS[1]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1556
+  },
+  {
+   "display": "\"Matter Replicator (T2)\"",
+   "machine": "Matter Replicator (T2)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20432",
+   "pattern": [
+    "EXE",
+    "FMF",
+    "SXS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "E": "IL.Processor_Crystal_Emerald",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "X": "IL.EMITTERS[2]",
+    "F": "IL.FIELD_GENERATORS[2]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1557
+  },
+  {
+   "display": "\"Matter Replicator (T3)\"",
+   "machine": "Matter Replicator (T3)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20433",
+   "pattern": [
+    "EXE",
+    "FMF",
+    "SXS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "E": "IL.Processor_Crystal_Emerald",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "X": "IL.EMITTERS[3]",
+    "F": "IL.FIELD_GENERATORS[3]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1558
+  },
+  {
+   "display": "\"Matter Replicator (T4)\"",
+   "machine": "Matter Replicator (T4)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20434",
+   "pattern": [
+    "EXE",
+    "FMF",
+    "SXS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "E": "IL.Processor_Crystal_Emerald",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "X": "IL.EMITTERS[4]",
+    "F": "IL.FIELD_GENERATORS[4]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1559
+  },
+  {
+   "display": "\"Matter Replicator (T5)\"",
+   "machine": "Matter Replicator (T5)",
+   "tier": "MT.Osmiridium",
+   "registryId": "20435",
+   "pattern": [
+    "EXE",
+    "FMF",
+    "SXS"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "E": "IL.Processor_Crystal_Emerald",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "X": "IL.EMITTERS[5]",
+    "F": "IL.FIELD_GENERATORS[5]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 16.0,
+    "resistance": 16.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1560
+  },
+  {
+   "display": "\"Nanoscale Fabricator (\"                    +VN[1]+\")\"",
+   "machine": "Nanoscale Fabricator",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20441",
+   "pattern": [
+    "KAX",
+    "ZMY",
+    "CSC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "A": "IL.Comp_Laser_Gas_Ar",
+    "K": "IL.Comp_Laser_Gas_Kr",
+    "X": "IL.Comp_Laser_Gas_Xe",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "Y": "IL.EMITTERS[1]",
+    "Z": "IL.SENSORS[1]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1563
+  },
+  {
+   "display": "\"Nanoscale Fabricator (\"                    +VN[2]+\")\"",
+   "machine": "Nanoscale Fabricator",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20442",
+   "pattern": [
+    "KAX",
+    "ZMY",
+    "CSC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "A": "IL.Comp_Laser_Gas_Ar",
+    "K": "IL.Comp_Laser_Gas_Kr",
+    "X": "IL.Comp_Laser_Gas_Xe",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "Y": "IL.EMITTERS[2]",
+    "Z": "IL.SENSORS[2]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1564
+  },
+  {
+   "display": "\"Nanoscale Fabricator (\"                    +VN[3]+\")\"",
+   "machine": "Nanoscale Fabricator",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20443",
+   "pattern": [
+    "KAX",
+    "ZMY",
+    "CSC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "A": "IL.Comp_Laser_Gas_Ar",
+    "K": "IL.Comp_Laser_Gas_Kr",
+    "X": "IL.Comp_Laser_Gas_Xe",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "Y": "IL.EMITTERS[3]",
+    "Z": "IL.SENSORS[3]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1565
+  },
+  {
+   "display": "\"Nanoscale Fabricator (\"                    +VN[4]+\")\"",
+   "machine": "Nanoscale Fabricator",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20444",
+   "pattern": [
+    "KAX",
+    "ZMY",
+    "CSC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "A": "IL.Comp_Laser_Gas_Ar",
+    "K": "IL.Comp_Laser_Gas_Kr",
+    "X": "IL.Comp_Laser_Gas_Xe",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "Y": "IL.EMITTERS[4]",
+    "Z": "IL.SENSORS[4]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1566
+  },
+  {
+   "display": "\"Nanoscale Fabricator (\"                    +VN[5]+\")\"",
+   "machine": "Nanoscale Fabricator",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20445",
+   "pattern": [
+    "KAX",
+    "ZMY",
+    "CSC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "A": "IL.Comp_Laser_Gas_Ar",
+    "K": "IL.Comp_Laser_Gas_Kr",
+    "X": "IL.Comp_Laser_Gas_Xe",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "Y": "IL.EMITTERS[5]",
+    "Z": "IL.SENSORS[5]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1567
+  },
+  {
+   "display": "\"Catalytic Cracker (\"             +aMat.getLocal()+\")\"",
+   "machine": "Catalytic Cracker",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20481",
+   "pattern": [
+    "IPI",
+    "ZMZ",
+    "ICI"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OP.plateDouble   .dat(ANY.Cu)",
+    "I": "OP.plateDouble   .dat(MT.Invar)",
+    "P": "OP.pipeQuadruple.dat(aMat)",
+    "Z": "OP.dust.dat(MT.OREMATS.Zeolite)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1570
+  },
+  {
+   "display": "\"Catalytic Cracker (\"             +aMat.getLocal()+\")\"",
+   "machine": "Catalytic Cracker",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20482",
+   "pattern": [
+    "IPI",
+    "ZMZ",
+    "ICI"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OP.plateTriple   .dat(ANY.Cu)",
+    "I": "OP.plateTriple   .dat(MT.Invar)",
+    "P": "OP.pipeQuadruple.dat(aMat)",
+    "Z": "OP.dust.dat(MT.OREMATS.Zeolite)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1571
+  },
+  {
+   "display": "\"Catalytic Cracker (\"             +aMat.getLocal()+\")\"",
+   "machine": "Catalytic Cracker",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20483",
+   "pattern": [
+    "IPI",
+    "ZMZ",
+    "ICI"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OP.plateQuadruple.dat(ANY.Cu)",
+    "I": "OP.plateQuadruple.dat(MT.Invar)",
+    "P": "OP.pipeQuadruple.dat(aMat)",
+    "Z": "OP.dust.dat(MT.OREMATS.Zeolite)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1572
+  },
+  {
+   "display": "\"Catalytic Cracker (\"             +aMat.getLocal()+\")\"",
+   "machine": "Catalytic Cracker",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20484",
+   "pattern": [
+    "IPI",
+    "ZMZ",
+    "ICI"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OP.plateQuintuple.dat(ANY.Cu)",
+    "I": "OP.plateQuintuple.dat(MT.Invar)",
+    "P": "OP.pipeQuadruple.dat(aMat)",
+    "Z": "OP.dust.dat(MT.OREMATS.Zeolite)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1573
+  },
+  {
+   "display": "\"Steam Cracker (\"                 +aMat.getLocal()+\")\"",
+   "machine": "Steam Cracker",
+   "tier": "MT.DATA.Heat_T[1]",
+   "registryId": "20491",
+   "pattern": [
+    "IwI",
+    "PMP",
+    "ICI"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OP.plateDouble   .dat(ANY.Cu)",
+    "I": "OP.plateDouble   .dat(MT.Invar)",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1576
+  },
+  {
+   "display": "\"Steam Cracker (\"                 +aMat.getLocal()+\")\"",
+   "machine": "Steam Cracker",
+   "tier": "MT.DATA.Heat_T[2]",
+   "registryId": "20492",
+   "pattern": [
+    "IwI",
+    "PMP",
+    "ICI"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OP.plateTriple   .dat(ANY.Cu)",
+    "I": "OP.plateTriple   .dat(MT.Invar)",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1577
+  },
+  {
+   "display": "\"Steam Cracker (\"                 +aMat.getLocal()+\")\"",
+   "machine": "Steam Cracker",
+   "tier": "MT.DATA.Heat_T[3]",
+   "registryId": "20493",
+   "pattern": [
+    "IwI",
+    "PMP",
+    "ICI"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OP.plateQuadruple.dat(ANY.Cu)",
+    "I": "OP.plateQuadruple.dat(MT.Invar)",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1578
+  },
+  {
+   "display": "\"Steam Cracker (\"                 +aMat.getLocal()+\")\"",
+   "machine": "Steam Cracker",
+   "tier": "MT.DATA.Heat_T[4]",
+   "registryId": "20494",
+   "pattern": [
+    "IwI",
+    "PMP",
+    "ICI"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "C": "OP.plateQuintuple.dat(ANY.Cu)",
+    "I": "OP.plateQuintuple.dat(MT.Invar)",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1579
+  },
+  {
+   "display": "\"Lightning Processor (\"                     +VN[1]+\")\"",
+   "machine": "Lightning Processor",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20501",
+   "pattern": [
+    "XxX",
+    "WwW",
+    "XMX"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "MT.DATA.WIRES_04[1]",
+    "X": "OP.wireGt01.dat(ANY.Iron)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1582
+  },
+  {
+   "display": "\"Lightning Processor (\"                     +VN[2]+\")\"",
+   "machine": "Lightning Processor",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20502",
+   "pattern": [
+    "XxX",
+    "WwW",
+    "XMX"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "MT.DATA.WIRES_04[2]",
+    "X": "OP.wireGt02.dat(ANY.Iron)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1583
+  },
+  {
+   "display": "\"Lightning Processor (\"                     +VN[3]+\")\"",
+   "machine": "Lightning Processor",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20503",
+   "pattern": [
+    "XxX",
+    "WwW",
+    "XMX"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "MT.DATA.WIRES_04[3]",
+    "X": "OP.wireGt04.dat(ANY.Iron)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1584
+  },
+  {
+   "display": "\"Lightning Processor (\"                     +VN[4]+\")\"",
+   "machine": "Lightning Processor",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20504",
+   "pattern": [
+    "XxX",
+    "WwW",
+    "XMX"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "MT.DATA.WIRES_04[4]",
+    "X": "OP.wireGt08.dat(ANY.Iron)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1585
+  },
+  {
+   "display": "\"Lightning Processor (\"                     +VN[5]+\")\"",
+   "machine": "Lightning Processor",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20505",
+   "pattern": [
+    "XxX",
+    "WwW",
+    "XMX"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "MT.DATA.WIRES_04[5]",
+    "X": "OP.wireGt16.dat(ANY.Iron)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1586
+  },
+  {
+   "display": "\"Sanding Machine (\"               +aMat.getLocal()+\")\"",
+   "machine": "Sanding Machine",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20511",
+   "pattern": [
+    "SGS",
+    "XXX",
+    "wMh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "X": "OD.sandstone"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1589
+  },
+  {
+   "display": "\"Sanding Machine (\"               +aMat.getLocal()+\")\"",
+   "machine": "Sanding Machine",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20512",
+   "pattern": [
+    "SGS",
+    "XXX",
+    "wMh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "X": "OD.sandstone"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1590
+  },
+  {
+   "display": "\"Sanding Machine (\"               +aMat.getLocal()+\")\"",
+   "machine": "Sanding Machine",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20513",
+   "pattern": [
+    "SGS",
+    "XXX",
+    "wMh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "X": "OD.sandstone"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1591
+  },
+  {
+   "display": "\"Sanding Machine (\"               +aMat.getLocal()+\")\"",
+   "machine": "Sanding Machine",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20514",
+   "pattern": [
+    "SGS",
+    "XXX",
+    "wMh"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "X": "OD.sandstone"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1592
+  },
+  {
+   "display": "\"Burner Mixer (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Burner Mixer",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20521",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "R": "OP.rotor.dat(MT.Invar)",
+    "P": "OP.plate.dat(MT.Invar)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1595
+  },
+  {
+   "display": "\"Burner Mixer (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Burner Mixer",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20522",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "R": "OP.rotor.dat(MT.Invar)",
+    "P": "OP.plateDouble.dat(MT.Invar)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1596
+  },
+  {
+   "display": "\"Burner Mixer (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Burner Mixer",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20523",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "R": "OP.rotor.dat(MT.Invar)",
+    "P": "OP.plateTriple.dat(MT.Invar)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1597
+  },
+  {
+   "display": "\"Burner Mixer (\"                  +aMat.getLocal()+\")\"",
+   "machine": "Burner Mixer",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20524",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.stick.dat(aMat)",
+    "R": "OP.rotor.dat(MT.Invar)",
+    "P": "OP.plateQuadruple.dat(MT.Invar)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1598
+  },
+  {
+   "display": "\"Plantalyzer (\"                             +VN[1]+\")\"",
+   "machine": "Plantalyzer",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20531",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[1]",
+    "W": "MT.DATA.CABLES_01[1]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[1]",
+    "Y": "IL.SENSORS[1]",
+    "Z": "OP.treeSapling"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1601
+  },
+  {
+   "display": "\"Plantalyzer (\"                             +VN[2]+\")\"",
+   "machine": "Plantalyzer",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20532",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[2]",
+    "W": "MT.DATA.CABLES_01[2]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[2]",
+    "Y": "IL.SENSORS[2]",
+    "Z": "OP.treeSapling"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1602
+  },
+  {
+   "display": "\"Plantalyzer (\"                             +VN[3]+\")\"",
+   "machine": "Plantalyzer",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20533",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[3]",
+    "W": "MT.DATA.CABLES_01[3]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[3]",
+    "Y": "IL.SENSORS[3]",
+    "Z": "OP.treeSapling"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1603
+  },
+  {
+   "display": "\"Plantalyzer (\"                             +VN[4]+\")\"",
+   "machine": "Plantalyzer",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20534",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[4]",
+    "W": "MT.DATA.CABLES_01[4]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[4]",
+    "Y": "IL.SENSORS[4]",
+    "Z": "OP.treeSapling"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1604
+  },
+  {
+   "display": "\"Plantalyzer (\"                             +VN[5]+\")\"",
+   "machine": "Plantalyzer",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20535",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[5]",
+    "W": "MT.DATA.CABLES_01[5]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[5]",
+    "Y": "IL.SENSORS[5]",
+    "Z": "OP.treeSapling"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1605
+  },
+  {
+   "display": "\"Bumblelyzer (\"                             +VN[1]+\")\"",
+   "machine": "Bumblelyzer",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20541",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[1]",
+    "W": "MT.DATA.CABLES_01[1]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[1]",
+    "Y": "IL.SENSORS[1]",
+    "Z": "OD.container1000honey"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1608
+  },
+  {
+   "display": "\"Bumblelyzer (\"                             +VN[2]+\")\"",
+   "machine": "Bumblelyzer",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20542",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[2]",
+    "W": "MT.DATA.CABLES_01[2]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[2]",
+    "Y": "IL.SENSORS[2]",
+    "Z": "OD.container1000honey"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1609
+  },
+  {
+   "display": "\"Bumblelyzer (\"                             +VN[3]+\")\"",
+   "machine": "Bumblelyzer",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20543",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[3]",
+    "W": "MT.DATA.CABLES_01[3]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[3]",
+    "Y": "IL.SENSORS[3]",
+    "Z": "OD.container1000honey"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1610
+  },
+  {
+   "display": "\"Bumblelyzer (\"                             +VN[4]+\")\"",
+   "machine": "Bumblelyzer",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20544",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[4]",
+    "W": "MT.DATA.CABLES_01[4]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[4]",
+    "Y": "IL.SENSORS[4]",
+    "Z": "OD.container1000honey"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1611
+  },
+  {
+   "display": "\"Bumblelyzer (\"                             +VN[5]+\")\"",
+   "machine": "Bumblelyzer",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20545",
+   "pattern": [
+    "WXW",
+    "ZMP",
+    "CYC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[5]",
+    "W": "MT.DATA.CABLES_01[5]",
+    "P": "IL.Processor_Crystal_Diamond",
+    "X": "IL.EMITTERS[5]",
+    "Y": "IL.SENSORS[5]",
+    "Z": "OD.container1000honey"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1612
+  },
+  {
+   "display": "\"Pressure Washer (\"               +aMat.getLocal()+\")\"",
+   "machine": "Pressure Washer",
+   "tier": "MT.DATA.Kinetic_T[1]",
+   "registryId": "20551",
+   "pattern": [
+    "RPG",
+    "wMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.pipeSmall    .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 7.0,
+    "resistance": 7.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1615
+  },
+  {
+   "display": "\"Pressure Washer (\"               +aMat.getLocal()+\")\"",
+   "machine": "Pressure Washer",
+   "tier": "MT.DATA.Kinetic_T[2]",
+   "registryId": "20552",
+   "pattern": [
+    "RPG",
+    "wMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.pipeMedium   .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1616
+  },
+  {
+   "display": "\"Pressure Washer (\"               +aMat.getLocal()+\")\"",
+   "machine": "Pressure Washer",
+   "tier": "MT.DATA.Kinetic_T[3]",
+   "registryId": "20553",
+   "pattern": [
+    "RPG",
+    "wMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.pipeLarge    .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1617
+  },
+  {
+   "display": "\"Pressure Washer (\"               +aMat.getLocal()+\")\"",
+   "machine": "Pressure Washer",
+   "tier": "MT.DATA.Kinetic_T[4]",
+   "registryId": "20554",
+   "pattern": [
+    "RPG",
+    "wMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "P": "OP.pipeHuge     .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1618
+  },
+  {
+   "display": "\"Freezer (T1)\"",
+   "machine": "Freezer (T1)",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20561",
+   "pattern": [
+    "hPw",
+    "PMP",
+    "PSP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.plate           .dat(MT.Si)",
+    "P": "OP.plate          .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1621
+  },
+  {
+   "display": "\"Freezer (T2)\"",
+   "machine": "Freezer (T2)",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20562",
+   "pattern": [
+    "hPw",
+    "PMP",
+    "PSP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.plateDouble     .dat(MT.Si)",
+    "P": "OP.plateDouble    .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1622
+  },
+  {
+   "display": "\"Freezer (T3)\"",
+   "machine": "Freezer (T3)",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20563",
+   "pattern": [
+    "hPw",
+    "PMP",
+    "PSP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.plateTriple     .dat(MT.Si)",
+    "P": "OP.plateTriple    .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1623
+  },
+  {
+   "display": "\"Freezer (T4)\"",
+   "machine": "Freezer (T4)",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20564",
+   "pattern": [
+    "hPw",
+    "PMP",
+    "PSP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.plateQuadruple  .dat(MT.Si)",
+    "P": "OP.plateQuadruple .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1624
+  },
+  {
+   "display": "\"Freezer (T5)\"",
+   "machine": "Freezer (T5)",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20565",
+   "pattern": [
+    "hPw",
+    "PMP",
+    "PSP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "S": "OP.plateQuintuple  .dat(MT.Si)",
+    "P": "OP.plateQuadruple .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1625
+  },
+  {
+   "display": "\"Cryo Mixer (T1)\"",
+   "machine": "Cryo Mixer (T1)",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20571",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "S": "OP.plate           .dat(MT.Si)",
+    "P": "OP.plate          .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 4,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1628
+  },
+  {
+   "display": "\"Cryo Mixer (T2)\"",
+   "machine": "Cryo Mixer (T2)",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20572",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "S": "OP.plateDouble     .dat(MT.Si)",
+    "P": "OP.plateDouble    .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 8,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1629
+  },
+  {
+   "display": "\"Cryo Mixer (T3)\"",
+   "machine": "Cryo Mixer (T3)",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20573",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "S": "OP.plateTriple     .dat(MT.Si)",
+    "P": "OP.plateTriple    .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1630
+  },
+  {
+   "display": "\"Cryo Mixer (T4)\"",
+   "machine": "Cryo Mixer (T4)",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20574",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "S": "OP.plateQuadruple  .dat(MT.Si)",
+    "P": "OP.plateQuadruple .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 32,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1631
+  },
+  {
+   "display": "\"Cryo Mixer (T5)\"",
+   "machine": "Cryo Mixer (T5)",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20575",
+   "pattern": [
+    "PMP",
+    "PRP",
+    "hSw"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "R": "OP.rotor.dat(MT.StainlessSteel)",
+    "S": "OP.plateQuintuple  .dat(MT.Si)",
+    "P": "OP.plateQuadruple .dat(MT.StainlessSteel)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1632
+  },
+  {
+   "display": "\"Boxinator (\"                               +VN[1]+\")\"",
+   "machine": "Boxinator",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20581",
+   "pattern": [
+    "wP",
+    "CY",
+    "CM"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[1]",
+    "Y": "IL.CONVEYERS[1]",
+    "C": "OD_CIRCUITS[1]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1635
+  },
+  {
+   "display": "\"Boxinator (\"                               +VN[2]+\")\"",
+   "machine": "Boxinator",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20582",
+   "pattern": [
+    "wP",
+    "CY",
+    "CM"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[2]",
+    "Y": "IL.CONVEYERS[2]",
+    "C": "OD_CIRCUITS[2]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1636
+  },
+  {
+   "display": "\"Boxinator (\"                               +VN[3]+\")\"",
+   "machine": "Boxinator",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20583",
+   "pattern": [
+    "wP",
+    "CY",
+    "CM"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[3]",
+    "Y": "IL.CONVEYERS[3]",
+    "C": "OD_CIRCUITS[3]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1637
+  },
+  {
+   "display": "\"Boxinator (\"                               +VN[4]+\")\"",
+   "machine": "Boxinator",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20584",
+   "pattern": [
+    "wP",
+    "CY",
+    "CM"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[4]",
+    "Y": "IL.CONVEYERS[4]",
+    "C": "OD_CIRCUITS[4]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1638
+  },
+  {
+   "display": "\"Boxinator (\"                               +VN[5]+\")\"",
+   "machine": "Boxinator",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20585",
+   "pattern": [
+    "wP",
+    "CY",
+    "CM"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[5]",
+    "Y": "IL.CONVEYERS[5]",
+    "C": "OD_CIRCUITS[5]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1639
+  },
+  {
+   "display": "\"Unboxinator (\"                             +VN[1]+\")\"",
+   "machine": "Unboxinator",
+   "tier": "MT.DATA.Electric_T[1]",
+   "registryId": "20591",
+   "pattern": [
+    "Pw",
+    "YC",
+    "MC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[1]",
+    "Y": "IL.CONVEYERS[1]",
+    "C": "OD_CIRCUITS[1]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1642
+  },
+  {
+   "display": "\"Unboxinator (\"                             +VN[2]+\")\"",
+   "machine": "Unboxinator",
+   "tier": "MT.DATA.Electric_T[2]",
+   "registryId": "20592",
+   "pattern": [
+    "Pw",
+    "YC",
+    "MC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[2]",
+    "Y": "IL.CONVEYERS[2]",
+    "C": "OD_CIRCUITS[2]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 128,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1643
+  },
+  {
+   "display": "\"Unboxinator (\"                             +VN[3]+\")\"",
+   "machine": "Unboxinator",
+   "tier": "MT.DATA.Electric_T[3]",
+   "registryId": "20593",
+   "pattern": [
+    "Pw",
+    "YC",
+    "MC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[3]",
+    "Y": "IL.CONVEYERS[3]",
+    "C": "OD_CIRCUITS[3]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1644
+  },
+  {
+   "display": "\"Unboxinator (\"                             +VN[4]+\")\"",
+   "machine": "Unboxinator",
+   "tier": "MT.DATA.Electric_T[4]",
+   "registryId": "20594",
+   "pattern": [
+    "Pw",
+    "YC",
+    "MC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[4]",
+    "Y": "IL.CONVEYERS[4]",
+    "C": "OD_CIRCUITS[4]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 2048,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1645
+  },
+  {
+   "display": "\"Unboxinator (\"                             +VN[5]+\")\"",
+   "machine": "Unboxinator",
+   "tier": "MT.DATA.Electric_T[5]",
+   "registryId": "20595",
+   "pattern": [
+    "Pw",
+    "YC",
+    "MC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.PISTONS[5]",
+    "Y": "IL.CONVEYERS[5]",
+    "C": "OD_CIRCUITS[5]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 4.0,
+    "resistance": 4.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1646
+  },
+  {
+   "display": "\"Coagulator\"",
+   "machine": "Coagulator",
+   "tier": "MT.StainlessSteel",
+   "registryId": "22000",
+   "pattern": [
+    "T T",
+    "hMw",
+    "TdT"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1651
+  },
+  {
+   "display": "\"Generifier\"",
+   "machine": "Generifier",
+   "tier": "MT.StainlessSteel",
+   "registryId": "22001",
+   "pattern": [
+    "ChC",
+    "CMC",
+    "CwC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.casingSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": 100,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1652
+  },
+  {
+   "display": "\"Bath\"",
+   "machine": "Bath",
+   "tier": "MT.StainlessSteel",
+   "registryId": "22002",
+   "pattern": [
+    "CwC",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.casingSmall.dat(aMat)",
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1653
+  },
+  {
+   "display": "\"Fermenter\"",
+   "machine": "Fermenter",
+   "tier": "MT.StainlessSteel",
+   "registryId": "22003",
+   "pattern": [
+    "wMh",
+    "PPP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeLarge.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": 16,
+    "inputMax": 64,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1654
+  },
+  {
+   "display": "\"Autoclave\"",
+   "machine": "Autoclave",
+   "tier": "MT.StainlessSteel",
+   "registryId": "22004",
+   "pattern": [
+    "CwC",
+    "PMP",
+    "GPG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineQuadruple.dat(aMat)",
+    "C": "OP.casingSmall.dat(aMat)",
+    "G": "OP.gearGtSmall.dat(aMat)",
+    "P": "OP.pipeSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1655
+  },
+  {
+   "display": "\"Melter\"",
+   "machine": "Melter",
+   "tier": "ANY.Iron",
+   "registryId": "22010",
+   "pattern": [
+    "wUh",
+    "PMP",
+    "BCB"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "U": "aRegistry.getItem(1005)",
+    "C": "OP.plateDouble.dat(ANY.Cu)",
+    "B": "Blocks.brick_block",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 32,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": 1000,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1657
+  }
+ ]
+}

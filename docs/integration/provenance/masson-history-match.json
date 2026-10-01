@@ -1,0 +1,14 @@
+{
+  "source": "masson",
+  "ref": "upstream-masson/master",
+  "commit": "2ba4e4b60f7a770360b2ec7ca2adad3507ec4a28",
+  "manifest_sha256": "d7deb98c93c90e173234f599f607cb6b7ae52d888b924c6e3d87f5a43342a635",
+  "git_tracked_blobs": 61192,
+  "matching_blobs": 61192,
+  "changed_from_git": [],
+  "missing_from_snapshot": [],
+  "snapshot_only": [],
+  "gitlinks": {},
+  "status": "exact-tracked-file-match",
+  "scope": "Git blob byte comparison; extra snapshot files and submodule contents are reported separately"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "file": "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTEnchantmentTable.java",
+    "matchesRegeneration": true
+  },
+  {
+    "file": "src\\main\\java\\com\\gregtech\\gregtech\\loaders\\c\\GTLootGen.java",
+    "matchesRegeneration": true
+  }
+]

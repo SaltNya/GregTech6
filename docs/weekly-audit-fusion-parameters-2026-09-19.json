@@ -1,0 +1,6 @@
+{
+  "scope": "circuit,duration,eut,startup arithmetic only; not runtime phase resolution",
+  "portRows": 18,
+  "originalRows": 18,
+  "allParametersMatch": true
+}

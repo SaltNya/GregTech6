@@ -1,0 +1,3472 @@
+{
+ "source": "F:\\Dev\\GregTech6\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+ "tab": "Multiblock Machines",
+ "count": 117,
+ "machines": [
+  "Adamantium Boiler Main Barometer",
+  "Adamantium Dynamo Main Housing",
+  "Adamantium Wall",
+  "Bedrock Mining Drill Controller",
+  "Bedrock Mining Drill Head",
+  "Bronze Wall",
+  "Centrifuge Part",
+  "Coke Oven",
+  "Control Quadcore Processor Unit",
+  "Conversion Quadcore Processor Unit",
+  "Crusher Wheels",
+  "Cryo Distillation Tower",
+  "Dense Adamantium Wall",
+  "Dense Bronze Wall",
+  "Dense Galvanized Steel Wall",
+  "Dense Invar Wall",
+  "Dense Lead Wall",
+  "Dense Stainless Steel Wall",
+  "Dense Steel Wall",
+  "Dense Tantalum Hafnium Carbide Wall",
+  "Dense Titanium Wall",
+  "Dense Tungsten Wall",
+  "Dense Tungstensteel Wall",
+  "Distillation Tower",
+  "Distillation Tower Part",
+  "Electrolyzer Part",
+  "Fire Bricks",
+  "Fusion Reactor",
+  "Galvanized Steel Wall",
+  "Graphene Gas Turbine Main Housing",
+  "Graphene Steam Turbine Main Housing",
+  "Heat Transmitter",
+  "Implosion Compressor",
+  "Invar Boiler Main Barometer",
+  "Invar Wall",
+  "Large Adamantium Crucible",
+  "Large Adamantium Tank Main Valve",
+  "Large Autoclave",
+  "Large Batch Mixer",
+  "Large Bathing Vat",
+  "Large Carborundum Coil",
+  "Large Centrifuge",
+  "Large Coagulator Array",
+  "Large Copper Coil",
+  "Large Crusher",
+  "Large Dense Adamantium Tank Main Valve",
+  "Large Dense Invar Tank Main Valve",
+  "Large Dense Stainless Steel Tank Main Valve",
+  "Large Dense Titanium Tank Main Valve",
+  "Large Dense Tungsten Tank Main Valve",
+  "Large Dense Tungstensteel Tank Main Valve",
+  "Large Electric Oven",
+  "Large Electrolyzer",
+  "Large Fermenter",
+  "Large Heat Exchanger",
+  "Large Invar Crucible",
+  "Large Invar Tank Main Valve",
+  "Large Iridium Coil",
+  "Large Matter Fabricator",
+  "Large Nichrome Coil",
+  "Large Niobium-Titanium Coil",
+  "Large Osmium Coil",
+  "Large Shredder",
+  "Large Sluice",
+  "Large Squeezer",
+  "Large Stainless Steel Crucible",
+  "Large Stainless Steel Tank Main Valve",
+  "Large Steel Crucible",
+  "Large Tantalum Hafnium Carbide Crucible",
+  "Large Titanium Crucible",
+  "Large Titanium Tank Main Valve",
+  "Large Tungsten Crucible",
+  "Large Tungsten Tank Main Valve",
+  "Large Tungstensteel Crucible",
+  "Large Tungstensteel Tank Main Valve",
+  "Lead Wall",
+  "Lightning Rod",
+  "Lightning Rod Electric Output",
+  "Logic Quadcore Processor Unit",
+  "Magnalium Gas Turbine Main Housing",
+  "Magnalium Steam Turbine Main Housing",
+  "Shredder Blades",
+  "Sluice Part",
+  "Small Adamantium Tank Main Valve",
+  "Small Dense Adamantium Tank Main Valve",
+  "Small Dense Invar Tank Main Valve",
+  "Small Dense Stainless Steel Tank Main Valve",
+  "Small Dense Titanium Tank Main Valve",
+  "Small Dense Tungsten Tank Main Valve",
+  "Small Dense Tungstensteel Tank Main Valve",
+  "Small Invar Tank Main Valve",
+  "Small Stainless Steel Tank Main Valve",
+  "Small Titanium Tank Main Valve",
+  "Small Tungsten Tank Main Valve",
+  "Small Tungstensteel Tank Main Valve",
+  "Stainless Steel Boiler Main Barometer",
+  "Stainless Steel Dynamo Main Housing",
+  "Stainless Steel Wall",
+  "Steel Wall",
+  "Storage Quadcore Processor Unit",
+  "Tantalum Hafnium Carbide Wall",
+  "Titanium Boiler Main Barometer",
+  "Titanium Dynamo Main Housing",
+  "Titanium Wall",
+  "Trinitanium Gas Turbine Main Housing",
+  "Trinitanium Steam Turbine Main Housing",
+  "Tungsten Wall",
+  "Tungstensteel Boiler Main Barometer",
+  "Tungstensteel Dynamo Main Housing",
+  "Tungstensteel Wall",
+  "Ventilation Unit",
+  "Versatile Quadcore Processor Unit",
+  "Vibramantium Gas Turbine Main Housing",
+  "Vibramantium Steam Turbine Main Housing",
+  "Von da Graagg Generator",
+  "Wood Tank Main Valve",
+  "Wood Wall"
+ ],
+ "entries": [
+  {
+   "display": "\"Fire Bricks\"",
+   "machine": "Fire Bricks",
+   "tier": "MT.Ceramic",
+   "registryId": "18000",
+   "pattern": [
+    "CBC",
+    "BWB",
+    "CBC"
+   ],
+   "keys": {
+    "B": "OP.ingot.dat(MT.Brick)",
+    "C": "OP.dust.dat(ANY.Clay)",
+    "W": "OD.container1000water"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 5.0,
+    "resistance": 5.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1138
+  },
+  {
+   "display": "\"Wood Wall\"",
+   "machine": "Wood Wall",
+   "tier": "MT.WoodTreated",
+   "registryId": "18001",
+   "pattern": [
+    "W W",
+    "sPh",
+    "W W"
+   ],
+   "keys": {
+    "W": "OP.plate.dat(aMat)",
+    "P": "OP.plate.dat(MT.Pb)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 5.0,
+    "resistance": 5.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1139
+  },
+  {
+   "display": "\"Lead Wall\"",
+   "machine": "Lead Wall",
+   "tier": "MT.Pb",
+   "registryId": "18011",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1143
+  },
+  {
+   "display": "\"Bronze Wall\"",
+   "machine": "Bronze Wall",
+   "tier": "MT.Bronze",
+   "registryId": "18010",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1144
+  },
+  {
+   "display": "\"Steel Wall\"",
+   "machine": "Steel Wall",
+   "tier": "ANY.Steel",
+   "registryId": "18009",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1145
+  },
+  {
+   "display": "\"Galvanized Steel Wall\"",
+   "machine": "Galvanized Steel Wall",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18008",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1146
+  },
+  {
+   "display": "\"Stainless Steel Wall\"",
+   "machine": "Stainless Steel Wall",
+   "tier": "MT.StainlessSteel",
+   "registryId": "18002",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1147
+  },
+  {
+   "display": "\"Invar Wall\"",
+   "machine": "Invar Wall",
+   "tier": "MT.Invar",
+   "registryId": "18007",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1148
+  },
+  {
+   "display": "\"Titanium Wall\"",
+   "machine": "Titanium Wall",
+   "tier": "MT.Ti",
+   "registryId": "18006",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1149
+  },
+  {
+   "display": "\"Tungstensteel Wall\"",
+   "machine": "Tungstensteel Wall",
+   "tier": "MT.TungstenSteel",
+   "registryId": "18003",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1150
+  },
+  {
+   "display": "\"Tungsten Wall\"",
+   "machine": "Tungsten Wall",
+   "tier": "ANY.W",
+   "registryId": "18004",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1151
+  },
+  {
+   "display": "\"Tantalum Hafnium Carbide Wall\"",
+   "machine": "Tantalum Hafnium Carbide Wall",
+   "tier": "MT.Ta4HfC5",
+   "registryId": "18012",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1152
+  },
+  {
+   "display": "\"Adamantium Wall\"",
+   "machine": "Adamantium Wall",
+   "tier": "MT.Ad",
+   "registryId": "18005",
+   "pattern": [
+    "wPP",
+    "hPP"
+   ],
+   "keys": {
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1153
+  },
+  {
+   "display": "\"Dense Lead Wall\"",
+   "machine": "Dense Lead Wall",
+   "tier": "MT.Pb",
+   "registryId": "18031",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1155
+  },
+  {
+   "display": "\"Dense Bronze Wall\"",
+   "machine": "Dense Bronze Wall",
+   "tier": "MT.Bronze",
+   "registryId": "18030",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1156
+  },
+  {
+   "display": "\"Dense Steel Wall\"",
+   "machine": "Dense Steel Wall",
+   "tier": "ANY.Steel",
+   "registryId": "18029",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1157
+  },
+  {
+   "display": "\"Dense Galvanized Steel Wall\"",
+   "machine": "Dense Galvanized Steel Wall",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18028",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1158
+  },
+  {
+   "display": "\"Dense Stainless Steel Wall\"",
+   "machine": "Dense Stainless Steel Wall",
+   "tier": "MT.StainlessSteel",
+   "registryId": "18022",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1159
+  },
+  {
+   "display": "\"Dense Invar Wall\"",
+   "machine": "Dense Invar Wall",
+   "tier": "MT.Invar",
+   "registryId": "18027",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1160
+  },
+  {
+   "display": "\"Dense Titanium Wall\"",
+   "machine": "Dense Titanium Wall",
+   "tier": "MT.Ti",
+   "registryId": "18026",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1161
+  },
+  {
+   "display": "\"Dense Tungstensteel Wall\"",
+   "machine": "Dense Tungstensteel Wall",
+   "tier": "MT.TungstenSteel",
+   "registryId": "18023",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1162
+  },
+  {
+   "display": "\"Dense Tungsten Wall\"",
+   "machine": "Dense Tungsten Wall",
+   "tier": "ANY.W",
+   "registryId": "18024",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1163
+  },
+  {
+   "display": "\"Dense Tantalum Hafnium Carbide Wall\"",
+   "machine": "Dense Tantalum Hafnium Carbide Wall",
+   "tier": "MT.Ta4HfC5",
+   "registryId": "18032",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1164
+  },
+  {
+   "display": "\"Dense Adamantium Wall\"",
+   "machine": "Dense Adamantium Wall",
+   "tier": "MT.Ad",
+   "registryId": "18025",
+   "pattern": [],
+   "keys": {},
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1165
+  },
+  {
+   "display": "\"Large Copper Coil\"",
+   "machine": "Large Copper Coil",
+   "tier": "MT.AnnealedCopper",
+   "registryId": "18040",
+   "pattern": [
+    "WWW",
+    "WxW",
+    "WWW"
+   ],
+   "keys": {
+    "W": "OP.wireGt04.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1167
+  },
+  {
+   "display": "\"Large Niobium-Titanium Coil\"",
+   "machine": "Large Niobium-Titanium Coil",
+   "tier": "MT.NiobiumTitanium",
+   "registryId": "18041",
+   "pattern": [
+    "WWW",
+    "WxW",
+    "WWW"
+   ],
+   "keys": {
+    "W": "OP.wireGt04.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1168
+  },
+  {
+   "display": "\"Large Nichrome Coil\"",
+   "machine": "Large Nichrome Coil",
+   "tier": "MT.Nichrome",
+   "registryId": "18042",
+   "pattern": [
+    "WWW",
+    "WxW",
+    "WWW"
+   ],
+   "keys": {
+    "W": "OP.wireGt04.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1169
+  },
+  {
+   "display": "\"Large Carborundum Coil\"",
+   "machine": "Large Carborundum Coil",
+   "tier": "MT.SiC",
+   "registryId": "18043",
+   "pattern": [
+    "WWW",
+    "WxW",
+    "WWW"
+   ],
+   "keys": {
+    "W": "OP.wireGt04.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1170
+  },
+  {
+   "display": "\"Large Osmium Coil\"",
+   "machine": "Large Osmium Coil",
+   "tier": "MT.Os",
+   "registryId": "18044",
+   "pattern": [
+    "WWW",
+    "WxW",
+    "WWW"
+   ],
+   "keys": {
+    "W": "OP.wireGt04.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1171
+  },
+  {
+   "display": "\"Large Iridium Coil\"",
+   "machine": "Large Iridium Coil",
+   "tier": "MT.Ir",
+   "registryId": "18045",
+   "pattern": [
+    "WWW",
+    "WxW",
+    "WWW"
+   ],
+   "keys": {
+    "W": "OP.wireGt04.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1172
+  },
+  {
+   "display": "\"Centrifuge Part\"",
+   "machine": "Centrifuge Part",
+   "tier": "MT.TungstenSteel",
+   "registryId": "18100",
+   "pattern": [
+    "TwT",
+    "GMG",
+    "TdT"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1174
+  },
+  {
+   "display": "\"Electrolyzer Part\"",
+   "machine": "Electrolyzer Part",
+   "tier": "MT.StainlessSteel",
+   "registryId": "18105",
+   "pattern": [
+    "WwW",
+    "WMW",
+    "CCC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "OP.wireGt01.dat(MT.Pt)",
+    "C": "OD_CIRCUITS[6]"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1175
+  },
+  {
+   "display": "\"Heat Transmitter\"",
+   "machine": "Heat Transmitter",
+   "tier": "MT.Invar",
+   "registryId": "18101",
+   "pattern": [
+    "MPM",
+    "hRw",
+    "MPM"
+   ],
+   "keys": {
+    "M": "OP.plate.dat(aMat)",
+    "P": "OP.plateTriple.dat(ANY.Cu)",
+    "R": "OP.stickLong.dat(ANY.Cu)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1176
+  },
+  {
+   "display": "\"Distillation Tower Part\"",
+   "machine": "Distillation Tower Part",
+   "tier": "MT.StainlessSteel",
+   "registryId": "18102",
+   "pattern": [
+    "TMT",
+    "hPd",
+    "TMT"
+   ],
+   "keys": {
+    "M": "OP.plate.dat(aMat)",
+    "P": "OP.pipeSmall.dat(aMat)",
+    "T": "OP.screw.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1177
+  },
+  {
+   "display": "\"Bedrock Mining Drill Head\"",
+   "machine": "Bedrock Mining Drill Head",
+   "tier": "MT.TungstenSteel",
+   "registryId": "18103",
+   "pattern": [
+    "DID",
+    "GMG",
+    "DID"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDense.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "I": "OP.toolHeadDrill.dat(aMat)",
+    "D": "OP.gem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1178
+  },
+  {
+   "display": "\"Lightning Rod\"",
+   "machine": "Lightning Rod",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18104",
+   "pattern": [
+    "MWM",
+    "WRW",
+    "MWM"
+   ],
+   "keys": {
+    "M": "OP.plate.dat(aMat)",
+    "R": "OP.stick.dat(MT.Ir)",
+    "W": "OP.wireGt01.dat(MT.NiobiumTitanium)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 8.0,
+    "resistance": 8.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1179
+  },
+  {
+   "display": "\"Sluice Part\"",
+   "machine": "Sluice Part",
+   "tier": "MT.Ti",
+   "registryId": "18106",
+   "pattern": [
+    "GGG",
+    "PMP",
+    "PwP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "P": "OP.pipeMedium.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1180
+  },
+  {
+   "display": "\"Crusher Wheels\"",
+   "machine": "Crusher Wheels",
+   "tier": "MT.TungstenSteel",
+   "registryId": "18107",
+   "pattern": [
+    "DDD",
+    "GDG",
+    "GMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "D": "OP.gem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1181
+  },
+  {
+   "display": "\"Shredder Blades\"",
+   "machine": "Shredder Blades",
+   "tier": "MT.TungstenSteel",
+   "registryId": "18108",
+   "pattern": [
+    "DGD",
+    "GwG",
+    "GMG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDouble.dat(aMat)",
+    "G": "OP.gearGt.dat(aMat)",
+    "D": "OP.plateGem.dat(ANY.Diamond)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1182
+  },
+  {
+   "display": "\"Ventilation Unit\"",
+   "machine": "Ventilation Unit",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18299",
+   "pattern": [
+    "FwF",
+    "CMC",
+    "EdE"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[3]",
+    "F": "IL.Cover_Vent",
+    "E": "IL.MOTORS[1]"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1184
+  },
+  {
+   "display": "\"Versatile Quadcore Processor Unit\"",
+   "machine": "Versatile Quadcore Processor Unit",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18200",
+   "pattern": [
+    "DCS",
+    "CMC",
+    "RCE"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "S": "IL.Processor_Crystal_Sapphire",
+    "D": "IL.Processor_Crystal_Diamond",
+    "R": "IL.Processor_Crystal_Ruby",
+    "E": "IL.Processor_Crystal_Emerald"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1185
+  },
+  {
+   "display": "\"Logic Quadcore Processor Unit\"",
+   "machine": "Logic Quadcore Processor Unit",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18201",
+   "pattern": [
+    "PCP",
+    "CMC",
+    "PCP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "P": "IL.Processor_Crystal_Diamond"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1186
+  },
+  {
+   "display": "\"Control Quadcore Processor Unit\"",
+   "machine": "Control Quadcore Processor Unit",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18202",
+   "pattern": [
+    "PCP",
+    "CMC",
+    "PCP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "P": "IL.Processor_Crystal_Ruby"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1187
+  },
+  {
+   "display": "\"Storage Quadcore Processor Unit\"",
+   "machine": "Storage Quadcore Processor Unit",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18203",
+   "pattern": [
+    "PCP",
+    "CMC",
+    "PCP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "P": "IL.Processor_Crystal_Emerald"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1188
+  },
+  {
+   "display": "\"Conversion Quadcore Processor Unit\"",
+   "machine": "Conversion Quadcore Processor Unit",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "18204",
+   "pattern": [
+    "PCP",
+    "CMC",
+    "PCP"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "P": "IL.Processor_Crystal_Sapphire"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1189
+  },
+  {
+   "display": "\"Coke Oven\"",
+   "machine": "Coke Oven",
+   "tier": "MT.Ceramic",
+   "registryId": "17000",
+   "pattern": [
+    "hRT",
+    "PMR",
+    "dRT"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18000)",
+    "R": "OP.stick.dat(ANY.Iron)",
+    "P": "OP.plate.dat(ANY.Iron)",
+    "T": "OP.screw.dat(ANY.Iron)"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": 16,
+    "parallelDuration": false,
+    "hardness": 5.0,
+    "resistance": 5.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1193
+  },
+  {
+   "display": "\"Wood Tank Main Valve\"",
+   "machine": "Wood Tank Main Valve",
+   "tier": "MT.WoodTreated",
+   "registryId": "17001",
+   "pattern": [
+    " R ",
+    "rMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18001)",
+    "R": "OP.ring.dat(MT.Pb)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 5.0,
+    "resistance": 5.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1195
+  },
+  {
+   "display": "\"Small Stainless Steel Tank Main Valve\"",
+   "machine": "Small Stainless Steel Tank Main Valve",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17002",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18002)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1196
+  },
+  {
+   "display": "\"Small Invar Tank Main Valve\"",
+   "machine": "Small Invar Tank Main Valve",
+   "tier": "MT.Invar",
+   "registryId": "17007",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18007)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1197
+  },
+  {
+   "display": "\"Small Titanium Tank Main Valve\"",
+   "machine": "Small Titanium Tank Main Valve",
+   "tier": "MT.Ti",
+   "registryId": "17006",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18006)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1198
+  },
+  {
+   "display": "\"Small Tungstensteel Tank Main Valve\"",
+   "machine": "Small Tungstensteel Tank Main Valve",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17003",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18003)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1199
+  },
+  {
+   "display": "\"Small Tungsten Tank Main Valve\"",
+   "machine": "Small Tungsten Tank Main Valve",
+   "tier": "ANY.W",
+   "registryId": "17004",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18004)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1200
+  },
+  {
+   "display": "\"Small Adamantium Tank Main Valve\"",
+   "machine": "Small Adamantium Tank Main Valve",
+   "tier": "MT.Ad",
+   "registryId": "17005",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18005)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1201
+  },
+  {
+   "display": "\"Small Dense Stainless Steel Tank Main Valve\"",
+   "machine": "Small Dense Stainless Steel Tank Main Valve",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17022",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18022)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1203
+  },
+  {
+   "display": "\"Small Dense Invar Tank Main Valve\"",
+   "machine": "Small Dense Invar Tank Main Valve",
+   "tier": "MT.Invar",
+   "registryId": "17027",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18027)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1204
+  },
+  {
+   "display": "\"Small Dense Titanium Tank Main Valve\"",
+   "machine": "Small Dense Titanium Tank Main Valve",
+   "tier": "MT.Ti",
+   "registryId": "17026",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18026)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1205
+  },
+  {
+   "display": "\"Small Dense Tungstensteel Tank Main Valve\"",
+   "machine": "Small Dense Tungstensteel Tank Main Valve",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17023",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18023)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1206
+  },
+  {
+   "display": "\"Small Dense Tungsten Tank Main Valve\"",
+   "machine": "Small Dense Tungsten Tank Main Valve",
+   "tier": "ANY.W",
+   "registryId": "17024",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18024)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1207
+  },
+  {
+   "display": "\"Small Dense Adamantium Tank Main Valve\"",
+   "machine": "Small Dense Adamantium Tank Main Valve",
+   "tier": "MT.Ad",
+   "registryId": "17025",
+   "pattern": [
+    " R ",
+    "hMs",
+    " R "
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18025)",
+    "R": "OP.ring.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1208
+  },
+  {
+   "display": "\"Large Stainless Steel Tank Main Valve\"",
+   "machine": "Large Stainless Steel Tank Main Valve",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17042",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17002)",
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1210
+  },
+  {
+   "display": "\"Large Invar Tank Main Valve\"",
+   "machine": "Large Invar Tank Main Valve",
+   "tier": "MT.Invar",
+   "registryId": "17047",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17007)",
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1211
+  },
+  {
+   "display": "\"Large Titanium Tank Main Valve\"",
+   "machine": "Large Titanium Tank Main Valve",
+   "tier": "MT.Ti",
+   "registryId": "17046",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17006)",
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1212
+  },
+  {
+   "display": "\"Large Tungstensteel Tank Main Valve\"",
+   "machine": "Large Tungstensteel Tank Main Valve",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17043",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17003)",
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1213
+  },
+  {
+   "display": "\"Large Tungsten Tank Main Valve\"",
+   "machine": "Large Tungsten Tank Main Valve",
+   "tier": "ANY.W",
+   "registryId": "17044",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17004)",
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1214
+  },
+  {
+   "display": "\"Large Adamantium Tank Main Valve\"",
+   "machine": "Large Adamantium Tank Main Valve",
+   "tier": "MT.Ad",
+   "registryId": "17045",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17005)",
+    "P": "OP.plate.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1215
+  },
+  {
+   "display": "\"Large Dense Stainless Steel Tank Main Valve\"",
+   "machine": "Large Dense Stainless Steel Tank Main Valve",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17062",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17022)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1217
+  },
+  {
+   "display": "\"Large Dense Invar Tank Main Valve\"",
+   "machine": "Large Dense Invar Tank Main Valve",
+   "tier": "MT.Invar",
+   "registryId": "17067",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17027)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1218
+  },
+  {
+   "display": "\"Large Dense Titanium Tank Main Valve\"",
+   "machine": "Large Dense Titanium Tank Main Valve",
+   "tier": "MT.Ti",
+   "registryId": "17066",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17026)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1219
+  },
+  {
+   "display": "\"Large Dense Tungstensteel Tank Main Valve\"",
+   "machine": "Large Dense Tungstensteel Tank Main Valve",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17063",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17023)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1220
+  },
+  {
+   "display": "\"Large Dense Tungsten Tank Main Valve\"",
+   "machine": "Large Dense Tungsten Tank Main Valve",
+   "tier": "ANY.W",
+   "registryId": "17064",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17024)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1221
+  },
+  {
+   "display": "\"Large Dense Adamantium Tank Main Valve\"",
+   "machine": "Large Dense Adamantium Tank Main Valve",
+   "tier": "MT.Ad",
+   "registryId": "17065",
+   "pattern": [
+    "PPP",
+    "hMs",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17025)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1222
+  },
+  {
+   "display": "\"Distillation Tower\"",
+   "machine": "Distillation Tower",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17101",
+   "pattern": [
+    "PPP",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18102)",
+    "P": "OP.pipeNonuple.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 1,
+    "inputMax": 1024,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1226
+  },
+  {
+   "display": "\"Cryo Distillation Tower\"",
+   "machine": "Cryo Distillation Tower",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17111",
+   "pattern": [
+    "PPP",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18102)",
+    "P": "OP.pipeNonuple.dat(ANY.Cu)"
+   },
+   "params": {
+    "energy": "CU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 1,
+    "inputMax": 1024,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1227
+  },
+  {
+   "display": "\"Implosion Compressor\"",
+   "machine": "Implosion Compressor",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17110",
+   "pattern": [
+    "CPC",
+    "PAP",
+    "RMR"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18023)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "P": "OP.plateDense.dat(aMat)",
+    "A": "IL.ROBOT_ARMS[2]"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1228
+  },
+  {
+   "display": "\"Large Centrifuge\"",
+   "machine": "Large Centrifuge",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17100",
+   "pattern": [
+    "CMC",
+    "RCR"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18100)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 512,
+    "inputMax": 4096,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1229
+  },
+  {
+   "display": "\"Large Electrolyzer\"",
+   "machine": "Large Electrolyzer",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17103",
+   "pattern": [
+    "CMC",
+    "RCR"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18105)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 512,
+    "inputMax": 4096,
+    "parallel": 16,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1230
+  },
+  {
+   "display": "\"Large Coagulator Array\"",
+   "machine": "Large Coagulator Array",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17105",
+   "pattern": [
+    "CRC",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18002)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1231
+  },
+  {
+   "display": "\"Large Autoclave\"",
+   "machine": "Large Autoclave",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17112",
+   "pattern": [
+    "CRC",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18022)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": 16,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1232
+  },
+  {
+   "display": "\"Large Bathing Vat\"",
+   "machine": "Large Bathing Vat",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17104",
+   "pattern": [
+    "CRC",
+    "PMP",
+    "APA"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18002)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "P": "OP.plateDense.dat(aMat)",
+    "A": "IL.ROBOT_ARMS[2]"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 16,
+    "parallel": 64,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1233
+  },
+  {
+   "display": "\"Large Batch Mixer\"",
+   "machine": "Large Batch Mixer",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17102",
+   "pattern": [
+    "PSP",
+    "PSP",
+    "RMC"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18002)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "P": "OP.plateDense.dat(aMat)",
+    "S": "OP.stickLong.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 512,
+    "inputMax": 4096,
+    "parallel": 256,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1234
+  },
+  {
+   "display": "\"Large Fermenter\"",
+   "machine": "Large Fermenter",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17113",
+   "pattern": [
+    "PPP",
+    "CRC",
+    "PMP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18002)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 1,
+    "inputMax": 4096,
+    "parallel": 256,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1235
+  },
+  {
+   "display": "\"Large Electric Oven\"",
+   "machine": "Large Electric Oven",
+   "tier": "MT.Invar",
+   "registryId": "17106",
+   "pattern": [
+    "PPP",
+    "PwP",
+    "RMC"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18007)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 512,
+    "inputMax": 4096,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1236
+  },
+  {
+   "display": "\"Large Sluice\"",
+   "machine": "Large Sluice",
+   "tier": "MT.Ti",
+   "registryId": "17107",
+   "pattern": [
+    "GGG",
+    "SwS",
+    "RMC"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18006)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.stick.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 512,
+    "inputMax": 4096,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1237
+  },
+  {
+   "display": "\"Large Crusher\"",
+   "machine": "Large Crusher",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17108",
+   "pattern": [
+    "GSG",
+    "SGS",
+    "RMC"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18003)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 512,
+    "inputMax": 4096,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1238
+  },
+  {
+   "display": "\"Large Shredder\"",
+   "machine": "Large Shredder",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17109",
+   "pattern": [
+    "SGS",
+    "GSG",
+    "RMC"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18003)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 512,
+    "inputMax": 4096,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1239
+  },
+  {
+   "display": "\"Large Squeezer\"",
+   "machine": "Large Squeezer",
+   "tier": "ANY.Steel",
+   "registryId": "17114",
+   "pattern": [
+    "GSG",
+    "GSG",
+    "RMC"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18009)",
+    "R": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "G": "OP.gearGt.dat(aMat)",
+    "S": "OP.gearGtSmall.dat(aMat)"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 512,
+    "inputMin": 512,
+    "inputMax": 4096,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1240
+  },
+  {
+   "display": "\"Large Matter Fabricator\"",
+   "machine": "Large Matter Fabricator",
+   "tier": "MT.Pb",
+   "registryId": "17199",
+   "pattern": [
+    "FFF",
+    "FMF",
+    "FFF"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18031)",
+    "F": "IL.FIELD_GENERATORS[5]"
+   },
+   "params": {
+    "energy": "QU",
+    "energy2": null,
+    "input": 1,
+    "inputMin": 1,
+    "inputMax": 2097152,
+    "parallel": 64,
+    "parallelDuration": true,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1241
+  },
+  {
+   "display": "\"Fusion Reactor\"",
+   "machine": "Fusion Reactor",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "17198",
+   "pattern": [
+    "FFF",
+    "FMF",
+    "FFF"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18003)",
+    "F": "IL.FIELD_GENERATORS[5]"
+   },
+   "params": {
+    "energy": "TU",
+    "energy2": "LU",
+    "input": 8192,
+    "inputMin": 1,
+    "inputMax": 16384,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1242
+  },
+  {
+   "display": "\"Large Heat Exchanger\"",
+   "machine": "Large Heat Exchanger",
+   "tier": "ANY.W",
+   "registryId": "17197",
+   "pattern": [
+    "DDD",
+    "PMP",
+    "DDD"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18024)",
+    "D": "OP.plateDense.dat(MT.AnnealedCopper)",
+    "P": "OP.pipeHuge.dat(ANY.Cu)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1245
+  },
+  {
+   "display": "\"Stainless Steel Boiler Main Barometer\"",
+   "machine": "Stainless Steel Boiler Main Barometer",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17201",
+   "pattern": [
+    "PPh",
+    "PMP",
+    "wPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18022)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1248
+  },
+  {
+   "display": "\"Invar Boiler Main Barometer\"",
+   "machine": "Invar Boiler Main Barometer",
+   "tier": "MT.Invar",
+   "registryId": "17205",
+   "pattern": [
+    "PPh",
+    "PMP",
+    "wPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18027)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1249
+  },
+  {
+   "display": "\"Titanium Boiler Main Barometer\"",
+   "machine": "Titanium Boiler Main Barometer",
+   "tier": "MT.Ti",
+   "registryId": "17202",
+   "pattern": [
+    "PPh",
+    "PMP",
+    "wPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18026)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1250
+  },
+  {
+   "display": "\"Tungstensteel Boiler Main Barometer\"",
+   "machine": "Tungstensteel Boiler Main Barometer",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17203",
+   "pattern": [
+    "PPh",
+    "PMP",
+    "wPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18023)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1251
+  },
+  {
+   "display": "\"Adamantium Boiler Main Barometer\"",
+   "machine": "Adamantium Boiler Main Barometer",
+   "tier": "MT.Ad",
+   "registryId": "17204",
+   "pattern": [
+    "PPh",
+    "PMP",
+    "wPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18025)",
+    "P": "OP.plateDense.dat(aMat)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1252
+  },
+  {
+   "display": "\"Magnalium Steam Turbine Main Housing\"",
+   "machine": "Magnalium Steam Turbine Main Housing",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17211",
+   "pattern": [
+    "PPP",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18022)",
+    "P": "OP.blockPlate.dat(MT.Magnalium)"
+   },
+   "params": {
+    "energy": "STEAM",
+    "energy2": null,
+    "input": 6144,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1254
+  },
+  {
+   "display": "\"Trinitanium Steam Turbine Main Housing\"",
+   "machine": "Trinitanium Steam Turbine Main Housing",
+   "tier": "MT.Ti",
+   "registryId": "17212",
+   "pattern": [
+    "PPP",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18026)",
+    "P": "OP.blockPlate.dat(MT.Trinitanium)"
+   },
+   "params": {
+    "energy": "STEAM",
+    "energy2": null,
+    "input": 12288,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1255
+  },
+  {
+   "display": "\"Graphene Steam Turbine Main Housing\"",
+   "machine": "Graphene Steam Turbine Main Housing",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17213",
+   "pattern": [
+    "PPP",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18023)",
+    "P": "OP.blockPlate.dat(MT.Graphene)"
+   },
+   "params": {
+    "energy": "STEAM",
+    "energy2": null,
+    "input": 24576,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1256
+  },
+  {
+   "display": "\"Vibramantium Steam Turbine Main Housing\"",
+   "machine": "Vibramantium Steam Turbine Main Housing",
+   "tier": "MT.Ad",
+   "registryId": "17214",
+   "pattern": [
+    "PPP",
+    "PMP",
+    "PPP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18025)",
+    "P": "OP.blockPlate.dat(MT.Vibramantium)"
+   },
+   "params": {
+    "energy": "STEAM",
+    "energy2": null,
+    "input": 196608,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1257
+  },
+  {
+   "display": "\"Stainless Steel Dynamo Main Housing\"",
+   "machine": "Stainless Steel Dynamo Main Housing",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17221",
+   "pattern": [
+    "SwS",
+    "CMC",
+    "SBS"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18022)",
+    "S": "OP.stickLong.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "B": "\"gt:re-battery1\""
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 4096,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1259
+  },
+  {
+   "display": "\"Titanium Dynamo Main Housing\"",
+   "machine": "Titanium Dynamo Main Housing",
+   "tier": "MT.Ti",
+   "registryId": "17222",
+   "pattern": [
+    "SwS",
+    "CMC",
+    "SBS"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18026)",
+    "S": "OP.stickLong.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "B": "\"gt:re-battery1\""
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 8192,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1260
+  },
+  {
+   "display": "\"Tungstensteel Dynamo Main Housing\"",
+   "machine": "Tungstensteel Dynamo Main Housing",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17223",
+   "pattern": [
+    "SwS",
+    "CMC",
+    "SBS"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18023)",
+    "S": "OP.stickLong.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "B": "\"gt:re-battery1\""
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 16384,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1261
+  },
+  {
+   "display": "\"Adamantium Dynamo Main Housing\"",
+   "machine": "Adamantium Dynamo Main Housing",
+   "tier": "MT.Ad",
+   "registryId": "17224",
+   "pattern": [
+    "SwS",
+    "CMC",
+    "SBS"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18025)",
+    "S": "OP.stickLong.dat(aMat)",
+    "C": "OD_CIRCUITS[6]",
+    "B": "\"gt:re-battery1\""
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": 131072,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1262
+  },
+  {
+   "display": "\"Magnalium Gas Turbine Main Housing\"",
+   "machine": "Magnalium Gas Turbine Main Housing",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17231",
+   "pattern": [
+    "PwP",
+    "BMC",
+    "PEP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17211)",
+    "B": "\"gt:re-battery1\"",
+    "C": "OD_CIRCUITS[6]",
+    "E": "IL.MOTORS[1]",
+    "P": "OP.plateDense.dat(MT.Invar)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 6144,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1264
+  },
+  {
+   "display": "\"Trinitanium Gas Turbine Main Housing\"",
+   "machine": "Trinitanium Gas Turbine Main Housing",
+   "tier": "MT.Ti",
+   "registryId": "17232",
+   "pattern": [
+    "PwP",
+    "BMC",
+    "PEP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17212)",
+    "B": "\"gt:re-battery2\"",
+    "C": "OD_CIRCUITS[6]",
+    "E": "IL.MOTORS[2]",
+    "P": "OP.plateDense.dat(MT.TungstenSteel)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 12288,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1265
+  },
+  {
+   "display": "\"Graphene Gas Turbine Main Housing\"",
+   "machine": "Graphene Gas Turbine Main Housing",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17233",
+   "pattern": [
+    "PwP",
+    "BMC",
+    "PEP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17213)",
+    "B": "\"gt:re-battery3\"",
+    "C": "OD_CIRCUITS[6]",
+    "E": "IL.MOTORS[3]",
+    "P": "OP.plateDense.dat(MT.W)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 24576,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1266
+  },
+  {
+   "display": "\"Vibramantium Gas Turbine Main Housing\"",
+   "machine": "Vibramantium Gas Turbine Main Housing",
+   "tier": "MT.Ad",
+   "registryId": "17234",
+   "pattern": [
+    "PwP",
+    "BMC",
+    "PEP"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(17214)",
+    "B": "\"gt:re-battery4\"",
+    "C": "OD_CIRCUITS[6]",
+    "E": "IL.MOTORS[4]",
+    "P": "OP.plateDense.dat(MT.Ad)"
+   },
+   "params": {
+    "energy": "HU",
+    "energy2": null,
+    "input": 196608,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1267
+  },
+  {
+   "display": "\"Large Steel Crucible\"",
+   "machine": "Large Steel Crucible",
+   "tier": "MT.Steel",
+   "registryId": "17309",
+   "pattern": [
+    "hMy"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18009)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1270
+  },
+  {
+   "display": "\"Large Stainless Steel Crucible\"",
+   "machine": "Large Stainless Steel Crucible",
+   "tier": "MT.StainlessSteel",
+   "registryId": "17302",
+   "pattern": [
+    "hMy"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18002)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1271
+  },
+  {
+   "display": "\"Large Invar Crucible\"",
+   "machine": "Large Invar Crucible",
+   "tier": "MT.Invar",
+   "registryId": "17307",
+   "pattern": [
+    "hMy"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18007)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1272
+  },
+  {
+   "display": "\"Large Titanium Crucible\"",
+   "machine": "Large Titanium Crucible",
+   "tier": "MT.Ti",
+   "registryId": "17306",
+   "pattern": [
+    "hMy"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18006)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1273
+  },
+  {
+   "display": "\"Large Tungstensteel Crucible\"",
+   "machine": "Large Tungstensteel Crucible",
+   "tier": "MT.TungstenSteel",
+   "registryId": "17303",
+   "pattern": [
+    "hMy"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18003)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1274
+  },
+  {
+   "display": "\"Large Tungsten Crucible\"",
+   "machine": "Large Tungsten Crucible",
+   "tier": "ANY.W",
+   "registryId": "17304",
+   "pattern": [
+    "hMy"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18004)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1275
+  },
+  {
+   "display": "\"Large Tantalum Hafnium Carbide Crucible\"",
+   "machine": "Large Tantalum Hafnium Carbide Crucible",
+   "tier": "MT.Ta4HfC5",
+   "registryId": "17312",
+   "pattern": [
+    "hMy"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18012)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 12.5,
+    "resistance": 12.5,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1276
+  },
+  {
+   "display": "\"Large Adamantium Crucible\"",
+   "machine": "Large Adamantium Crucible",
+   "tier": "MT.Ad",
+   "registryId": "17305",
+   "pattern": [
+    "hMy"
+   ],
+   "keys": {
+    "M": "aRegistry.getItem(18005)"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 100.0,
+    "resistance": 100.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1277
+  },
+  {
+   "display": "\"Von da Graagg Generator\"",
+   "machine": "Von da Graagg Generator",
+   "tier": "MT.SteelGalvanized",
+   "registryId": "17996",
+   "pattern": [
+    "CSC",
+    "PMP",
+    "CEC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "P": "IL.Processor_Crystal_Ruby",
+    "C": "OD_CIRCUITS[6]",
+    "S": "OP.gem.dat(MT.NetherStar)",
+    "E": "OP.gem.dat(MT.EnderEye)"
+   },
+   "params": {
+    "energy": "EU",
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 6.0,
+    "resistance": 6.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1280
+  },
+  {
+   "display": "\"Lightning Rod Electric Output\"",
+   "machine": "Lightning Rod Electric Output",
+   "tier": "ANY.W",
+   "registryId": "17998",
+   "pattern": [
+    "CWC",
+    "PMP",
+    "CWC"
+   ],
+   "keys": {
+    "M": "OP.casingMachine.dat(aMat)",
+    "W": "OP.wireGt16.dat(MT.NiobiumTitanium)",
+    "P": "IL.Processor_Crystal_Sapphire",
+    "C": "OD_CIRCUITS[6]"
+   },
+   "params": {
+    "energy": null,
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 10.0,
+    "resistance": 10.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1282
+  },
+  {
+   "display": "\"Bedrock Mining Drill Controller\"",
+   "machine": "Bedrock Mining Drill Controller",
+   "tier": "MT.Ti",
+   "registryId": "17999",
+   "pattern": [
+    "PYP",
+    "CMC",
+    "GIG"
+   ],
+   "keys": {
+    "M": "OP.casingMachineDense.dat(aMat)",
+    "G": "OP.gearGt.dat(MT.TungstenSteel)",
+    "I": "OP.toolHeadDrill.dat(MT.TungstenSteel)",
+    "P": "IL.Processor_Crystal_Ruby",
+    "Y": "IL.CONVEYERS[5]",
+    "C": "OD_CIRCUITS[6]"
+   },
+   "params": {
+    "energy": "RU",
+    "energy2": null,
+    "input": null,
+    "inputMin": null,
+    "inputMax": null,
+    "parallel": null,
+    "parallelDuration": false,
+    "hardness": 9.0,
+    "resistance": 9.0,
+    "overflow": null,
+    "texture": null
+   },
+   "line": 1283
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "tool": "check_form_flags",
+    "error": null,
+    "output": "Coal             ORES=True  flags=ARMORS,DUSTS,GEMS,INGOTS,ORES,PLANTS,PLATES,PROJECTILES,STICKS\nCinnamon         ORES=False flags=DUSTS,FOILS,PLANTS,PLATES,PROJECTILES,STICKS\n"
+  },
+  {
+    "tool": "check_material_forms",
+    "error": null,
+    "output": "rows 2232: id keys 1081, name keys 1151\n  id  1260 ARMORS,DENSEPLATES,DUSTS,FOILS,INGOTS,INGOTS_HOT,MOLTEN,MULTIINGOTS,MULTIPLATES,ORES,PARTS,PLANTS,PLATES,PROJECTILES,STICKS\n  id  1740 ARMORS,DENSEPLATES,DUSTS,FOILS,INGOTS,INGOTS_HOT,MOLTEN,MULTIINGOTS,MULTIPLATES,ORES,PARTS,PLANTS,PLATES,PROJECTILES,STICKS\n  id   790 ARMORS,DENSEPLATES,DUSTS,FOILS,INGOTS,INGOTS_HOT,MOLTEN,MULTIINGOTS,MULTIPLATES,ORES,PARTS,PLANTS,PLATES,PROJECTILES,RAILS,STICKS\n  id  9369 DUSTS,FOILS,PLANTS,PLATES,PROJECTILES,STICKS\n  id  9311 DUSTS,FOILS,PLANTS,PLATES,PROJECTILES,STICKS\n  id  9079 \n--- sample name keys ---\n  trinium    (absent)\n  naquadah   (absent)\n  gold       DUSTS,FOILS,PLANTS,PLATES,PROJECTILES,STICKS\n  co         (absent)\n  clay       DUSTS,ORES,PLANTS,PLATES\n  metal      (absent)\n  goldwood   (absent)\n  mossy      DUSTS,FOILS,PLANTS,PLATES,PROJECTILES,STICKS\n"
+  },
+  {
+    "tool": "check_nether_ore_forms",
+    "error": null,
+    "output": "materials entries: 1157\nsample: Ac -> {'flags': ['ARMORS', 'DENSEPLATES', 'DUSTS', 'FOILS', 'INGOTS', 'INGOTS_HOT', 'MULTIINGOTS', 'MULTIPLATES', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': [], 'ids': [890]}\nAncientDebris    ORES=True  {'flags': ['ARMORS', 'DENSEPLATES', 'DUSTS', 'FOILS', 'INGOTS', 'INGOTS_HOT', 'MOLTEN', 'MULTIINGOTS', 'MULTIPLATES', 'ORES', 'PLANTS', 'PLATES', 'PRO\nGlowstone        ORES=True  {'flags': ['ARMORS', 'DUSTS', 'GEMS', 'LENSES', 'MOLTEN', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': [], 'ids': [8341]}\nGloomstone       ORES=True  {'flags': ['ARMORS', 'DUSTS', 'GEMS', 'LENSES', 'MOLTEN', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': [], 'ids': [8456]}\nEfrine           ORES=True  {'flags': ['ARMORS', 'DENSEPLATES', 'DUSTS', 'FOILS', 'INGOTS', 'INGOTS_HOT', 'MOLTEN', 'MULTIINGOTS', 'MULTIPLATES', 'ORES', 'PLANTS', 'PLATES', 'PRO\nFirestone        ORES=True  {'flags': ['DUSTS', 'GEMS', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': ['G_QUARTZ_ORES'], 'ids': [8342]}\nVoidQuartz       ORES=True  {'flags': ['DUSTS', 'GEMS', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': [], 'ids': [8457]}\nNetherQuartz     ORES=True  {'flags': ['DUSTS', 'GEMS', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': [], 'ids': [8346]}\nColtan           ORES=True  {'flags': ['DUSTS', 'ORES', 'PLANTS'], 'sets': [], 'ids': [9247]}\nEudialyte        ORES=True  {'flags': ['ARMORS', 'DUSTS', 'GEMS', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': ['G_GEM_ORES'], 'ids': [8421]}\nDiamond          ORES=True  {'flags': ['ARMORS', 'DUSTS', 'GEMS', 'LENSES', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': [], 'ids': [8300]}\nCoal             ORES=True  {'flags': ['ARMORS', 'DUSTS', 'GEMS', 'INGOTS', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': [], 'ids': [8334]}\nRedstone         ORES=True  {'flags': ['ARMORS', 'DUSTS', 'GEMS', 'LENSES', 'ORES', 'PLANTS', 'PLATES', 'PROJECTILES', 'STICKS'], 'sets': [], 'ids': [8333]}\n"
+  },
+  {
+    "tool": "check_retired_cover_refs",
+    "error": null,
+    "output": "no recipe references a retired cover item\n"
+  },
+  {
+    "tool": "check_enchant_table_coverage",
+    "error": null,
+    "output": "table rows: 177, field table: 1106, port materials: 1530\nresolved to a port material: 173\nrows pointing at a material the port does not have: 4\n   Vinteum              -> Vinteum\n   STONES               -> STONES\n   Sunstone             -> Sunstone\n   Pyrotheum            -> Pyrotheum\n\nrows that only resolve through GT6's field table (short or differently spelled names):\n   Polycarbonate        -> Hard Plastic\n   InfusedAir           -> Infused Air\n   DarkIron             -> Dark Iron\n   DarkMatter           -> Dark Matter\n   RedMeteor            -> Red Meteor\n   IronWood             -> Ironwood\n   ElvenQuartz          -> Elven Quartz\n   DarkThaumium         -> Dark Thaumium\n   VoidMetal            -> Void Metal\n   InfusedWater         -> Infused Water\n   RedMatter            -> Red Matter\n   EnderAmethyst        -> AmethystEnder\n   Ma                   -> Magic\n   VibraniumSteel       -> Vibranium Steel\n   Vb                   -> Vibranium\n   Ad                   -> Adamantium\n   AmberGolden          -> Golden Amber\n   AmberDominican       -> Dominican Amber\n   ManaQuartz           -> Mana Quartz\n   NetherStar           -> Nether Star\n   total: 91\n"
+  },
+  {
+    "tool": "check_material_id_agreement",
+    "error": null,
+    "output": "joined by id: 226; names that do not look alike: 0\n"
+  },
+  {
+    "tool": "check_material_lang_collisions",
+    "error": null,
+    "output": "en_us.json: 0 entries disagree with their material's display name\nzh_cn.json: 0 entries disagree with their material's display name\n"
+  },
+  {
+    "tool": "check_retired_cover_refs",
+    "case": "isolated invalid recipe",
+    "exitCode": 0,
+    "output": "src\\main\\resources\\data\\gregtech\\recipes\\bad.json: gregtech:cover_pump\n",
+    "productionWrites": false
+  }
+]

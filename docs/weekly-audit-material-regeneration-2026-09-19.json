@@ -1,0 +1,33 @@
+{
+  "materialCount": 1058,
+  "comparisons": [
+    {
+      "path": "content/material/Materials.java",
+      "equal": true
+    },
+    {
+      "path": "data/generated/GT6Materials.java",
+      "equal": true
+    },
+    {
+      "path": "content/material/generated/ElementMaterials.java",
+      "equal": true
+    },
+    {
+      "path": "content/material/generated/CompoundMaterials.java",
+      "equal": true
+    },
+    {
+      "path": "content/material/generated/OreMaterials.java",
+      "equal": true
+    },
+    {
+      "path": "content/material/generated/StoneMaterials.java",
+      "equal": true
+    },
+    {
+      "path": "content/material/generated/WoodMaterials.java",
+      "equal": true
+    }
+  ]
+}

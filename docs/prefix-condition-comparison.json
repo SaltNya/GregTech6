@@ -1,0 +1,3495 @@
+{
+  "gt6Prefixes": 225,
+  "portPrefixNames": 453,
+  "shared": 215,
+  "sharedWithParsedPortCondition": 129,
+  "generatorFlags": [
+    "ARMORS",
+    "CONTAINERS",
+    "CONTAINERS_FLUID",
+    "CONTAINERS_GAS",
+    "CONTAINERS_PLASMA",
+    "CONTAINERS_SOLID",
+    "DENSEPLATES",
+    "DIRTY_DUSTS",
+    "DUSTS",
+    "EMPTY",
+    "FOILS",
+    "GASES",
+    "GEMS",
+    "INGOTS",
+    "INGOTS_HOT",
+    "LENSES",
+    "LIQUID",
+    "MOLTEN",
+    "MULTIINGOTS",
+    "MULTIPLATES",
+    "ORES",
+    "PARTS",
+    "PIPES",
+    "PLANTS",
+    "PLASMA",
+    "PLATES",
+    "PROJECTILES",
+    "RAILS",
+    "STICKS",
+    "TOOLS",
+    "VAPORS",
+    "WEAPONS",
+    "WIRES"
+  ],
+  "deadFlags": [
+    "CONTAINERS_PLASMA",
+    "CONTAINERS_SOLID",
+    "DIRTY_DUSTS",
+    "PIPES",
+    "PLASMA",
+    "TOOLS",
+    "VAPORS",
+    "WEAPONS"
+  ],
+  "gt6Only": [
+    "casingSmall",
+    "chemtube",
+    "pipeHuge",
+    "pipeLarge",
+    "pipeMedium",
+    "pipeNonuple",
+    "pipeQuadruple",
+    "pipeRestrictiveMedium",
+    "pipeSmall",
+    "pipeTiny"
+  ],
+  "portOnly": [
+    "alloy",
+    "bamboo",
+    "bar",
+    "bars",
+    "battery",
+    "batterySingleuse",
+    "bauble",
+    "beach",
+    "beam",
+    "beans",
+    "bee",
+    "berrybush",
+    "bit",
+    "blade",
+    "block",
+    "blockBamboo",
+    "blockGlass",
+    "blockWool",
+    "block_",
+    "book",
+    "boule",
+    "bowl",
+    "brick",
+    "bud",
+    "cable",
+    "cactus",
+    "chest",
+    "chipset",
+    "circuit",
+    "cloth",
+    "cobblestone",
+    "coin",
+    "component",
+    "compressedCobblestone",
+    "compressedDirt",
+    "compressedGravel",
+    "compressedSand",
+    "compressedStone",
+    "computer",
+    "cones",
+    "consumable",
+    "cooking",
+    "coral",
+    "craft",
+    "crafting",
+    "craftingTool",
+    "crop",
+    "desert",
+    "dinosaur",
+    "dirt",
+    "door",
+    "drop",
+    "dye",
+    "dyeCeramic",
+    "dyeMixable",
+    "element",
+    "elven",
+    "epiphyte",
+    "essence",
+    "fabric",
+    "fence",
+    "fern",
+    "fertilizer",
+    "floating",
+    "flower",
+    "fluidPipeHuge",
+    "fluidPipeLarge",
+    "fluidPipeMedium",
+    "fluidPipeNonuple",
+    "fluidPipeQuadruple",
+    "fluidPipeSmall",
+    "fluidPipeTiny",
+    "food",
+    "forest",
+    "frame",
+    "fuel",
+    "fungus",
+    "ganys",
+    "gate",
+    "gear",
+    "glass",
+    "glasstube",
+    "glowstone",
+    "grafter",
+    "grass",
+    "gravel",
+    "ground",
+    "handle",
+    "hanging",
+    "head",
+    "immersed",
+    "item",
+    "itemCasing",
+    "item_",
+    "jungle",
+    "junk",
+    "ladder",
+    "lamp",
+    "leaf",
+    "leafy",
+    "liquid",
+    "list",
+    "log",
+    "lumar",
+    "lump",
+    "mana",
+    "material",
+    "mffs",
+    "molecule",
+    "motor",
+    "mountain",
+    "mushroom",
+    "mystic",
+    "obsidian",
+    "ocean",
+    "orb",
+    "oreAndesite",
+    "oreBasalt",
+    "oreBetweenstone",
+    "oreBlackgranite",
+    "oreBlackstone",
+    "oreBlueschist",
+    "oreCallisto",
+    "oreCeres",
+    "oreDeadrock",
+    "oreDeepslate",
+    "oreDeimos",
+    "oreDiorite",
+    "oreEris",
+    "oreEuropa",
+    "oreGanymede",
+    "oreGneiss",
+    "oreGrayschist",
+    "oreGreenschist",
+    "oreHolystone",
+    "oreIapetus",
+    "oreIo",
+    "oreJupiter",
+    "oreKepler22b",
+    "oreKomatiite",
+    "oreLimestone",
+    "oreLivingrock",
+    "oreMarble",
+    "oreMars",
+    "oreMercury",
+    "oreMoon",
+    "oreNeptune",
+    "oreOberon",
+    "orePhobos",
+    "orePinkschist",
+    "orePitstone",
+    "orePluto",
+    "oreRedgranite",
+    "oreRhea",
+    "oreSaturn",
+    "oreShale",
+    "oreSiltstone",
+    "oreSlate",
+    "oreSpace",
+    "oreTitan",
+    "oreTitania",
+    "oreTriton",
+    "oreUmberstone",
+    "oreUranus",
+    "oreVanillagranite",
+    "oreVanillastone",
+    "oreVenus",
+    "paneGlass",
+    "panel",
+    "paper",
+    "parent",
+    "part",
+    "pearl",
+    "pellet",
+    "petal",
+    "plains",
+    "plank",
+    "plant",
+    "plasma",
+    "plating",
+    "pole",
+    "powder",
+    "projred",
+    "quartz",
+    "raw",
+    "reactor",
+    "record",
+    "reed",
+    "river",
+    "rock",
+    "rod",
+    "rune",
+    "sand",
+    "savanna",
+    "scoop",
+    "scrap",
+    "scraps",
+    "seed",
+    "shard",
+    "shears",
+    "sheet",
+    "sheetDouble",
+    "shrub",
+    "skull",
+    "slab",
+    "soulsand",
+    "stainedClay",
+    "stainedGlass",
+    "stair",
+    "stone",
+    "stoneBricks",
+    "stoneChiseled",
+    "stoneCobble",
+    "stoneCracked",
+    "stoneMossy",
+    "stoneMossyBricks",
+    "stonePolished",
+    "stoneSmooth",
+    "storage",
+    "tiny",
+    "tome",
+    "torch",
+    "trapdoor",
+    "travelgear",
+    "tree",
+    "treeLeaves",
+    "treeSapling",
+    "tube",
+    "turbine",
+    "unit",
+    "vine",
+    "wafer",
+    "wall",
+    "water",
+    "wax",
+    "wetlands",
+    "wire",
+    "wood"
+  ],
+  "prefixesWithMissingFlags": 1,
+  "conditions": {
+    "armor": {
+      "gt6Expression": "ARMORS",
+      "gt6Flags": [
+        "ARMORS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "armorBoots": {
+      "gt6Expression": "ARMORS",
+      "gt6Flags": [
+        "ARMORS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "armorChestplate": {
+      "gt6Expression": "ARMORS",
+      "gt6Flags": [
+        "ARMORS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "armorHelmet": {
+      "gt6Expression": "ARMORS",
+      "gt6Flags": [
+        "ARMORS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "armorLeggings": {
+      "gt6Expression": "ARMORS",
+      "gt6Flags": [
+        "ARMORS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "arrow": {
+      "gt6Expression": "toolHeadArrow",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadArrow"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "arrowGtPlastic": {
+      "gt6Expression": "new Or(toolHeadArrow, EMPTY)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadArrow"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "PROJECTILES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "arrowGtWood": {
+      "gt6Expression": "new Or(toolHeadArrow, EMPTY)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadArrow"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "PROJECTILES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "billet": {
+      "gt6Expression": "ingot",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "ingot"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "blockDust": {
+      "gt6Expression": "dust",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "dust"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "DUSTS"
+      ],
+      "portProperties": [
+        "STONE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "blockGem": {
+      "gt6Expression": "gem",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "blockIngot": {
+      "gt6Expression": "ingot",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "ingot"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "blockPlate": {
+      "gt6Expression": "plate",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "plate"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PLATES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "blockPlateGem": {
+      "gt6Expression": "plateGem",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "plateGem"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "PLATES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "blockRaw": {
+      "gt6Expression": "oreRaw",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "oreRaw"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "blockSolid": {
+      "gt6Expression": "blockIngot",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "blockIngot"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "bolt": {
+      "gt6Expression": "stick",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "stick"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "bottle": {
+      "gt6Expression": "new Or(CONTAINERS, EMPTY, CONTAINERS_FLUID)",
+      "gt6Flags": [
+        "CONTAINERS",
+        "CONTAINERS_FLUID"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "bouleGt": {
+      "gt6Expression": "ICondition.FALSE",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "ICondition"
+      ],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "bucket": {
+      "gt6Expression": "new Or(CONTAINERS, EMPTY, CONTAINERS_FLUID)",
+      "gt6Flags": [
+        "CONTAINERS",
+        "CONTAINERS_FLUID"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "bulletGtLarge": {
+      "gt6Expression": "new Or(PROJECTILES, EMPTY)",
+      "gt6Flags": [
+        "PROJECTILES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "PROJECTILES"
+      ],
+      "portProperties": [
+        "HIDDEN"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "bulletGtMedium": {
+      "gt6Expression": "new Or(PROJECTILES, EMPTY)",
+      "gt6Flags": [
+        "PROJECTILES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "PROJECTILES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "bulletGtSmall": {
+      "gt6Expression": "new Or(PROJECTILES, EMPTY)",
+      "gt6Flags": [
+        "PROJECTILES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "PROJECTILES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "cableGt01": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "cableGt02": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "cableGt04": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "cableGt08": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "cableGt12": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "capcellcon": {
+      "gt6Expression": "PIPES",
+      "gt6Flags": [
+        "PIPES"
+      ],
+      "gt6DeadFlags": [
+        "PIPES"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "capsule": {
+      "gt6Expression": "new Or(CONTAINERS, EMPTY, CONTAINERS_FLUID, CONTAINERS_GAS)",
+      "gt6Flags": [
+        "CONTAINERS",
+        "CONTAINERS_FLUID",
+        "CONTAINERS_GAS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "casingMachine": {
+      "gt6Expression": "new And(PARTS, SMITHABLE)",
+      "gt6Flags": [
+        "PARTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "SMITHABLE"
+      ],
+      "portFlags": [
+        "PARTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "casingMachineDense": {
+      "gt6Expression": "casingMachine",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "casingMachine"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "PARTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "casingMachineDouble": {
+      "gt6Expression": "casingMachine",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "casingMachine"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "PARTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "casingMachineQuadruple": {
+      "gt6Expression": "casingMachine",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "casingMachine"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "PARTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "cell": {
+      "gt6Expression": "new Or(CONTAINERS, EMPTY, CONTAINERS_FLUID, CONTAINERS_GAS)",
+      "gt6Flags": [
+        "CONTAINERS",
+        "CONTAINERS_FLUID",
+        "CONTAINERS_GAS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "chain": {
+      "gt6Expression": "ring",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "ring"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "chunk": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "chunkGt": {
+      "gt6Expression": "ingot",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "ingot"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "cleanGravel": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "clump": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "cluster": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "compressed": {
+      "gt6Expression": "PLATES",
+      "gt6Flags": [
+        "PLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "crateGt64Dust": {
+      "gt6Expression": "crateGtDust",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crateGtDust"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "DUSTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGt64Gem": {
+      "gt6Expression": "crateGtGem",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crateGtGem"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGt64Ingot": {
+      "gt6Expression": "crateGtIngot",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crateGtIngot"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGt64Plate": {
+      "gt6Expression": "crateGtPlate",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crateGtPlate"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PLATES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGt64PlateGem": {
+      "gt6Expression": "crateGtPlateGem",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crateGtPlateGem"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "PLATES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGt64Raw": {
+      "gt6Expression": "crateGtRaw",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crateGtRaw"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGtDust": {
+      "gt6Expression": "dust",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "dust"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "DUSTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGtGem": {
+      "gt6Expression": "gem",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGtIngot": {
+      "gt6Expression": "ingot",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "ingot"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGtPlate": {
+      "gt6Expression": "plate",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "plate"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PLATES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGtPlateGem": {
+      "gt6Expression": "plateGem",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "plateGem"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "PLATES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crateGtRaw": {
+      "gt6Expression": "oreRaw",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "oreRaw"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crushed": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crushedCentrifuged": {
+      "gt6Expression": "crushedPurified",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crushedPurified"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crushedCentrifugedTiny": {
+      "gt6Expression": "crushedCentrifuged",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crushedCentrifuged"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crushedPurified": {
+      "gt6Expression": "crushed",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crushed"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crushedPurifiedTiny": {
+      "gt6Expression": "crushedPurified",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crushedPurified"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crushedTiny": {
+      "gt6Expression": "crushed",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "crushed"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "crystal": {
+      "gt6Expression": "GEMS",
+      "gt6Flags": [
+        "GEMS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "crystalPure": {
+      "gt6Expression": "GEMS",
+      "gt6Flags": [
+        "GEMS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "crystalline": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "dirtyGravel": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "dust": {
+      "gt6Expression": "new Or(DUSTS, DIRTY_DUSTS)",
+      "gt6Flags": [
+        "DIRTY_DUSTS",
+        "DUSTS"
+      ],
+      "gt6DeadFlags": [
+        "DIRTY_DUSTS"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "DUSTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "dustDiv72": {
+      "gt6Expression": "dust",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "dust"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "dustImpure": {
+      "gt6Expression": "DIRTY_DUSTS",
+      "gt6Flags": [
+        "DIRTY_DUSTS"
+      ],
+      "gt6DeadFlags": [
+        "DIRTY_DUSTS"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "dustPure": {
+      "gt6Expression": "DIRTY_DUSTS",
+      "gt6Flags": [
+        "DIRTY_DUSTS"
+      ],
+      "gt6DeadFlags": [
+        "DIRTY_DUSTS"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "dustRefined": {
+      "gt6Expression": "DIRTY_DUSTS",
+      "gt6Flags": [
+        "DIRTY_DUSTS"
+      ],
+      "gt6DeadFlags": [
+        "DIRTY_DUSTS"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "dustSmall": {
+      "gt6Expression": "dust",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "dust"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "dustTiny": {
+      "gt6Expression": "dust",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "dust"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "foil": {
+      "gt6Expression": "FOILS",
+      "gt6Flags": [
+        "FOILS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "FOILS",
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [
+        "GENERATE_FOIL",
+        "WOOD"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "frameGt": {
+      "gt6Expression": "stick",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "stick"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "gearGt": {
+      "gt6Expression": "PARTS",
+      "gt6Flags": [
+        "PARTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PARTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "gearGtSmall": {
+      "gt6Expression": "gearGt",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gearGt"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "gem": {
+      "gt6Expression": "GEMS",
+      "gt6Flags": [
+        "GEMS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "gemChipped": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "gemExquisite": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "gemFlawed": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "gemFlawless": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "gemLegendary": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [
+        "GEMS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "gemOre": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "gemPolished": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "gemRaw": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "gemUncut": {
+      "gt6Expression": "new And(gem, TRANSPARENT, CRYSTAL, PEARL.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem"
+      ],
+      "gt6Tags": [
+        "CRYSTAL",
+        "NOT",
+        "PEARL",
+        "TRANSPARENT"
+      ],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "ingot": {
+      "gt6Expression": "INGOTS",
+      "gt6Flags": [
+        "INGOTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "ingotDouble": {
+      "gt6Expression": "MULTIINGOTS",
+      "gt6Flags": [
+        "MULTIINGOTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS",
+        "MULTIINGOTS"
+      ],
+      "portProperties": [
+        "GENERATE_MULTIINGOT"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "ingotHot": {
+      "gt6Expression": "new And(INGOTS_HOT, SMITHABLE, OreDictMaterialCondition.meltmin(800))",
+      "gt6Flags": [
+        "INGOTS_HOT"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "OreDictMaterialCondition",
+        "SMITHABLE",
+        "meltmin"
+      ],
+      "portFlags": [
+        "INGOTS",
+        "INGOTS_HOT"
+      ],
+      "portProperties": [
+        "SMITHABLE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "ingotQuadruple": {
+      "gt6Expression": "MULTIINGOTS",
+      "gt6Flags": [
+        "MULTIINGOTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS",
+        "MULTIINGOTS"
+      ],
+      "portProperties": [
+        "GENERATE_MULTIINGOT"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "ingotQuintuple": {
+      "gt6Expression": "MULTIINGOTS",
+      "gt6Flags": [
+        "MULTIINGOTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS",
+        "MULTIINGOTS"
+      ],
+      "portProperties": [
+        "GENERATE_MULTIINGOT"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "ingotTriple": {
+      "gt6Expression": "MULTIINGOTS",
+      "gt6Flags": [
+        "MULTIINGOTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS",
+        "MULTIINGOTS"
+      ],
+      "portProperties": [
+        "GENERATE_MULTIINGOT"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "lens": {
+      "gt6Expression": "LENSES",
+      "gt6Flags": [
+        "LENSES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "LENSES"
+      ],
+      "portProperties": [
+        "GENERATE_LENS"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "minecartWheels": {
+      "gt6Expression": "new And(PARTS, SMITHABLE)",
+      "gt6Flags": [
+        "PARTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "SMITHABLE"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PARTS"
+      ],
+      "portProperties": [
+        "SMITHABLE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "nugget": {
+      "gt6Expression": "ingot",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "ingot"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "ore": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [
+        "GENERATE_ORE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "oreBedrock": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreDarkprismarine": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreDense": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": [
+        "ORES"
+      ]
+    },
+    "oreEnd": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreEndstone": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreGravel": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreKimberlite": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreLightprismarine": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreMud": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreNether": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreNetherrack": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreNormal": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "orePoor": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreQuartzite": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreRaw": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "oreRedSand": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreRich": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreSand": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreSandstone": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreSmall": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [
+        "GENERATE_ORE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "oreStrangesand": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "oreberry": {
+      "gt6Expression": "PLANTS",
+      "gt6Flags": [
+        "PLANTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "orebush": {
+      "gt6Expression": "PLANTS",
+      "gt6Flags": [
+        "PLANTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "pebbles": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "pipe": {
+      "gt6Expression": "PIPES",
+      "gt6Flags": [
+        "PIPES"
+      ],
+      "gt6DeadFlags": [
+        "PIPES"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "pipeRestrictiveHuge": {
+      "gt6Expression": "PIPES",
+      "gt6Flags": [
+        "PIPES"
+      ],
+      "gt6DeadFlags": [
+        "PIPES"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "pipeRestrictiveLarge": {
+      "gt6Expression": "PIPES",
+      "gt6Flags": [
+        "PIPES"
+      ],
+      "gt6DeadFlags": [
+        "PIPES"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "pipeRestrictiveSmall": {
+      "gt6Expression": "PIPES",
+      "gt6Flags": [
+        "PIPES"
+      ],
+      "gt6DeadFlags": [
+        "PIPES"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "pipeRestrictiveTiny": {
+      "gt6Expression": "PIPES",
+      "gt6Flags": [
+        "PIPES"
+      ],
+      "gt6DeadFlags": [
+        "PIPES"
+      ],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "plantGtBerry": {
+      "gt6Expression": "PLANTS",
+      "gt6Flags": [
+        "PLANTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "PLANTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plantGtBlossom": {
+      "gt6Expression": "PLANTS",
+      "gt6Flags": [
+        "PLANTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "PLANTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plantGtFiber": {
+      "gt6Expression": "PLANTS",
+      "gt6Flags": [
+        "PLANTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "PLANTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plantGtTwig": {
+      "gt6Expression": "PLANTS",
+      "gt6Flags": [
+        "PLANTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "PLANTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plantGtWart": {
+      "gt6Expression": "PLANTS",
+      "gt6Flags": [
+        "PLANTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "PLANTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plate": {
+      "gt6Expression": "new And(new Or(ingot, gem.NOT), PLATES)",
+      "gt6Flags": [
+        "PLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gem",
+        "ingot"
+      ],
+      "gt6Tags": [
+        "NOT"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PLATES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateCurved": {
+      "gt6Expression": "plate",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "plate"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateDense": {
+      "gt6Expression": "DENSEPLATES",
+      "gt6Flags": [
+        "DENSEPLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "DENSEPLATES",
+        "GEMS",
+        "INGOTS",
+        "PLATES"
+      ],
+      "portProperties": [
+        "GENERATE_DENSEPLATE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateDouble": {
+      "gt6Expression": "MULTIPLATES",
+      "gt6Flags": [
+        "MULTIPLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "MULTIPLATES",
+        "PLATES"
+      ],
+      "portProperties": [
+        "GENERATE_MULTIPLATE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateGem": {
+      "gt6Expression": "new And(new Or(gem, bouleGt), PLATES)",
+      "gt6Flags": [
+        "PLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "bouleGt",
+        "gem"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "PLATES"
+      ],
+      "portProperties": [
+        "GENERATE_PLATE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateGemTiny": {
+      "gt6Expression": "plateGem",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "plateGem"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateQuadruple": {
+      "gt6Expression": "MULTIPLATES",
+      "gt6Flags": [
+        "MULTIPLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "MULTIPLATES",
+        "PLATES"
+      ],
+      "portProperties": [
+        "GENERATE_MULTIPLATE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateQuintuple": {
+      "gt6Expression": "MULTIPLATES",
+      "gt6Flags": [
+        "MULTIPLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "MULTIPLATES",
+        "PLATES"
+      ],
+      "portProperties": [
+        "GENERATE_MULTIPLATE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateSteamcraft": {
+      "gt6Expression": "PLATES",
+      "gt6Flags": [
+        "PLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "plateTiny": {
+      "gt6Expression": "plate",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "plate"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "plateTriple": {
+      "gt6Expression": "MULTIPLATES",
+      "gt6Flags": [
+        "MULTIPLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "MULTIPLATES",
+        "PLATES"
+      ],
+      "portProperties": [
+        "GENERATE_MULTIPLATE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "railGt": {
+      "gt6Expression": "RAILS",
+      "gt6Flags": [
+        "RAILS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS",
+        "RAILS"
+      ],
+      "portProperties": [
+        "GENERATE_RAIL"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "rawOreChunk": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "reduced": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "ring": {
+      "gt6Expression": "PARTS",
+      "gt6Flags": [
+        "PARTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PARTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "rockGt": {
+      "gt6Expression": "new Or(ORES, STONE)",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "STONE"
+      ],
+      "portFlags": [
+        "ORES"
+      ],
+      "portProperties": [
+        "STONE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "rotor": {
+      "gt6Expression": "PARTS",
+      "gt6Flags": [
+        "PARTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PARTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "round": {
+      "gt6Expression": "new Or(PARTS, new And(PROJECTILES, nugget))",
+      "gt6Flags": [
+        "PARTS",
+        "PROJECTILES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "nugget"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PARTS",
+        "PROJECTILES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "rubble": {
+      "gt6Expression": "ORES",
+      "gt6Flags": [
+        "ORES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "scrapGt": {
+      "gt6Expression": "new Or<>(dust, ingot, gem)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "dust",
+        "gem",
+        "ingot"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "DUSTS",
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "screw": {
+      "gt6Expression": "bolt",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "bolt"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "sheetGt": {
+      "gt6Expression": "PLATES",
+      "gt6Flags": [
+        "PLATES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "spring": {
+      "gt6Expression": "new And(PARTS, new Or(STRETCHY, BOUNCY, BRITTLE.NOT))",
+      "gt6Flags": [
+        "PARTS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "BOUNCY",
+        "BRITTLE",
+        "NOT",
+        "STRETCHY"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PARTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "springSmall": {
+      "gt6Expression": "spring",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "spring"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "stick": {
+      "gt6Expression": "STICKS",
+      "gt6Flags": [
+        "STICKS"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "INGOTS",
+        "STICKS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "stickLong": {
+      "gt6Expression": "stick",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "stick"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "tool": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "toolAxe": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "toolHeadArrow": {
+      "gt6Expression": "new And(PROJECTILES, typemin(1))",
+      "gt6Flags": [
+        "PROJECTILES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PROJECTILES"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadAxe": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadAxeDouble": {
+      "gt6Expression": "new And(toolHeadAxe, typemin(2))",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadAxe"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadBuilderwand": {
+      "gt6Expression": "typemin(2)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadBuzzSaw": {
+      "gt6Expression": "new And(typemin(2), BOUNCY.NOT, STRETCHY.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "BOUNCY",
+        "NOT",
+        "STRETCHY"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadChainsaw": {
+      "gt6Expression": "new And(typemin(2), BOUNCY.NOT, STRETCHY.NOT, chain)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "chain"
+      ],
+      "gt6Tags": [
+        "BOUNCY",
+        "NOT",
+        "STRETCHY"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadChisel": {
+      "gt6Expression": "new And(typemin(2), BOUNCY.NOT, STRETCHY.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "BOUNCY",
+        "NOT",
+        "STRETCHY"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadConstructionPickaxe": {
+      "gt6Expression": "new And(toolHeadPickaxe, typemin(2))",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadPickaxe"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadDrill": {
+      "gt6Expression": "new And(typemin(2), BOUNCY.NOT, STRETCHY.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "BOUNCY",
+        "NOT",
+        "STRETCHY"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadFile": {
+      "gt6Expression": "new And(typemin(2), BOUNCY.NOT, STRETCHY.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "BOUNCY",
+        "NOT",
+        "STRETCHY"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadHammer": {
+      "gt6Expression": "new And(typemin(1), new Or(BOUNCY, STRETCHY, WOOD, qualmin(1)))",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "BOUNCY",
+        "STRETCHY",
+        "WOOD",
+        "qualmin"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadHoe": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadPickaxe": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadPickaxeGem": {
+      "gt6Expression": "new And(gemFlawed, typemin(1))",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "gemFlawed"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadPlow": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawArrow": {
+      "gt6Expression": "toolHeadArrow",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadArrow"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawAxe": {
+      "gt6Expression": "toolHeadAxe",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadAxe"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawAxeDouble": {
+      "gt6Expression": "toolHeadAxeDouble",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadAxeDouble"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawChisel": {
+      "gt6Expression": "toolHeadChisel",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadChisel"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawHoe": {
+      "gt6Expression": "toolHeadHoe",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadHoe"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawPickaxe": {
+      "gt6Expression": "toolHeadPickaxe",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadPickaxe"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawPlow": {
+      "gt6Expression": "toolHeadPlow",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadPlow"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawSaw": {
+      "gt6Expression": "toolHeadSaw",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadSaw"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawSense": {
+      "gt6Expression": "toolHeadSense",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadSense"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawShovel": {
+      "gt6Expression": "toolHeadShovel",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadShovel"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawSpade": {
+      "gt6Expression": "toolHeadSpade",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadSpade"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawSword": {
+      "gt6Expression": "toolHeadSword",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadSword"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadRawUniversalSpade": {
+      "gt6Expression": "toolHeadUniversalSpade",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadUniversalSpade"
+      ],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadSaw": {
+      "gt6Expression": "new And(typemin(2), BOUNCY.NOT, STRETCHY.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "BOUNCY",
+        "NOT",
+        "STRETCHY"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadScrewdriver": {
+      "gt6Expression": "typemin(2)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadSense": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadShovel": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadSpade": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadSword": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadUniversalSpade": {
+      "gt6Expression": "new And(toolHeadShovel, toolHeadSaw)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [
+        "toolHeadSaw",
+        "toolHeadShovel"
+      ],
+      "gt6Tags": [],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHeadWrench": {
+      "gt6Expression": "new And(typemin(2), BOUNCY.NOT, STRETCHY.NOT)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "BOUNCY",
+        "NOT",
+        "STRETCHY"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS"
+      ],
+      "portProperties": [],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "toolHoe": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "toolPickaxe": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "toolShears": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "toolShovel": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "toolSword": {
+      "gt6Expression": "typemin(1)",
+      "gt6Flags": [],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireFine": {
+      "gt6Expression": "new Or(WIRES, new And(PARTS, SMITHABLE))",
+      "gt6Flags": [
+        "PARTS",
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [
+        "SMITHABLE"
+      ],
+      "portFlags": [
+        "GEMS",
+        "INGOTS",
+        "PARTS",
+        "WIRES"
+      ],
+      "portProperties": [
+        "GENERATE_WIRE"
+      ],
+      "portConditionParsed": true,
+      "missingFlags": []
+    },
+    "wireGt01": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt02": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt03": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt04": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt05": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt06": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt07": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt08": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt09": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt10": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt11": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt12": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt13": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt14": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt15": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    },
+    "wireGt16": {
+      "gt6Expression": "WIRES",
+      "gt6Flags": [
+        "WIRES"
+      ],
+      "gt6DeadFlags": [],
+      "gt6PrefixRefs": [],
+      "gt6Tags": [],
+      "portFlags": [],
+      "portProperties": [],
+      "portConditionParsed": false,
+      "missingFlags": []
+    }
+  }
+}

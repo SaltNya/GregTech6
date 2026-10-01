@@ -1,0 +1,6 @@
+{
+  "exit": 0,
+  "stdout": "GT6 bee species: 80, comb tiers: 20\nwrote src/main/java/com/gregtech/gregtech/content/bumble/GTBumbleSpecies.java (80 species)\n",
+  "stderr": "",
+  "diff": []
+}

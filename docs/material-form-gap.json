@@ -1,0 +1,119 @@
+{
+  "byFlag": {
+    "DENSEPLATES": {
+      "prefix": "plateDense",
+      "gt6Materials": 327,
+      "portMaterials": 327,
+      "examplesMissing": []
+    },
+    "DIRTY_DUSTS": {
+      "prefix": "dustImpure",
+      "gt6Materials": 0,
+      "portMaterials": 0,
+      "examplesMissing": []
+    },
+    "DUSTS": {
+      "prefix": "dust",
+      "gt6Materials": 948,
+      "portMaterials": 947,
+      "examplesMissing": [
+        "Magic"
+      ]
+    },
+    "FOILS": {
+      "prefix": "foil",
+      "gt6Materials": 457,
+      "portMaterials": 456,
+      "examplesMissing": [
+        "Magic"
+      ]
+    },
+    "GEMS": {
+      "prefix": "gem",
+      "gt6Materials": 191,
+      "portMaterials": 191,
+      "examplesMissing": []
+    },
+    "INGOTS": {
+      "prefix": "ingot",
+      "gt6Materials": 374,
+      "portMaterials": 374,
+      "examplesMissing": []
+    },
+    "INGOTS_HOT": {
+      "prefix": "ingotHot",
+      "gt6Materials": 268,
+      "portMaterials": 268,
+      "examplesMissing": []
+    },
+    "LENSES": {
+      "prefix": "lens",
+      "gt6Materials": 102,
+      "portMaterials": 102,
+      "examplesMissing": []
+    },
+    "MULTIINGOTS": {
+      "prefix": "ingotDouble",
+      "gt6Materials": 326,
+      "portMaterials": 326,
+      "examplesMissing": []
+    },
+    "MULTIPLATES": {
+      "prefix": "plateDouble",
+      "gt6Materials": 325,
+      "portMaterials": 325,
+      "examplesMissing": []
+    },
+    "ORES": {
+      "prefix": "oreRaw",
+      "gt6Materials": 484,
+      "portMaterials": 484,
+      "examplesMissing": []
+    },
+    "PARTS": {
+      "prefix": "gearGt",
+      "gt6Materials": 157,
+      "portMaterials": 157,
+      "examplesMissing": []
+    },
+    "PLANTS": {
+      "prefix": "plantGtFiber",
+      "gt6Materials": 1031,
+      "portMaterials": 1030,
+      "examplesMissing": [
+        "Magic"
+      ]
+    },
+    "PLATES": {
+      "prefix": "plate",
+      "gt6Materials": 551,
+      "portMaterials": 550,
+      "examplesMissing": [
+        "Magic"
+      ]
+    },
+    "PROJECTILES": {
+      "prefix": "arrowGtWood",
+      "gt6Materials": 716,
+      "portMaterials": 715,
+      "examplesMissing": [
+        "Magic"
+      ]
+    },
+    "RAILS": {
+      "prefix": "railGt",
+      "gt6Materials": 28,
+      "portMaterials": 28,
+      "examplesMissing": []
+    },
+    "STICKS": {
+      "prefix": "stick",
+      "gt6Materials": 712,
+      "portMaterials": 711,
+      "examplesMissing": [
+        "Magic"
+      ]
+    }
+  },
+  "materialsWithForms": 2014
+}

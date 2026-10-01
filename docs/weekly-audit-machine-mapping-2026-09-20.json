@@ -1,0 +1,100 @@
+{
+  "variants": 243,
+  "sourceEntries": 251,
+  "missing": [],
+  "sourceKeyCollisions": [],
+  "fallback": [
+    [
+      "massfab",
+      2,
+      "Matter Fabricator (T2)",
+      "20412"
+    ],
+    [
+      "massfab",
+      3,
+      "Matter Fabricator (T3)",
+      "20413"
+    ],
+    [
+      "massfab",
+      4,
+      "Matter Fabricator (T4)",
+      "20414"
+    ],
+    [
+      "massfab",
+      5,
+      "Matter Fabricator (T5)",
+      "20415"
+    ],
+    [
+      "scannermolecular",
+      3,
+      "Molecular Scanner (T3)",
+      "20423"
+    ],
+    [
+      "replicator",
+      2,
+      "Matter Replicator (T2)",
+      "20432"
+    ],
+    [
+      "replicator",
+      3,
+      "Matter Replicator (T3)",
+      "20433"
+    ],
+    [
+      "replicator",
+      4,
+      "Matter Replicator (T4)",
+      "20434"
+    ],
+    [
+      "replicator",
+      5,
+      "Matter Replicator (T5)",
+      "20435"
+    ]
+  ],
+  "diagnostics": [
+    {
+      "tool": "gt6_machine_params",
+      "arguments": [
+        "Distillation Tower",
+        "Fusion Reactor",
+        "Molecular Scanner"
+      ],
+      "error": null,
+      "output": "Distillation Tower         mat=MT.StainlessSteel  energy=HU   input=512    min=1     max=1024    parallel=-     parDur=False hardness=6.0    tex=distillationtower\nFusion Reactor             mat=MT.SteelGalvanized energy=TU   input=8192   min=1     max=16384   parallel=-     parDur=False hardness=12.5   tex=fusionreactor\nMolecular Scanner          NOT FOUND\n"
+    },
+    {
+      "tool": "gt6_part_ids",
+      "arguments": [
+        "--used"
+      ],
+      "error": null,
+      "output": "== part ids referenced by multiblock crafting recipes ==\n  17002  Small Stainless Steel Tank Main Valve        x1\n  17003  Small Tungstensteel Tank Main Valve          x1\n  17004  Small Tungsten Tank Main Valve               x1\n  17005  Small Adamantium Tank Main Valve             x1\n  17006  Small Titanium Tank Main Valve               x1\n  17007  Small Invar Tank Main Valve                  x1\n  17022  Small Dense Stainless Steel Tank Main Valve  x1\n  17023  Small Dense Tungstensteel Tank Main Valve    x1\n  17024  Small Dense Tungsten Tank Main Valve         x1\n  17025  Small Dense Adamantium Tank Main Valve       x1\n  17026  Small Dense Titanium Tank Main Valve         x1\n  17027  Small Dense Invar Tank Main Valve            x1\n  17211  Magnalium Steam Turbine Main Housing         x1\n  17212  Trinitanium Steam Turbine Main Housing       x1\n  17213  Graphene Steam Turbine Main Housing          x1\n  17214  Vibramantium Steam Turbine Main Housing      x1\n  18000  Fire Bricks                                  x1\n  18001  Wood Wall                                    x1\n  18002  Stainless Steel Wall                         x6\n  18003  Tungstensteel Wall                           x5\n  18004  Tungsten Wall                                x2\n  18005  Adamantium Wall                              x2\n  18006  Titanium Wall                                x3\n  18007  Invar Wall                                   x3\n  18009  Steel Wall                                   x2\n  18012  Tantalum Hafnium Carbide Wall                x1\n  18022  Dense Stainless Steel Wall                   x5\n  18023  Dense Tungstensteel Wall                     x5\n  18024  Dense Tungsten Wall                          x2\n  18025  Dense Adamantium Wall                        x4\n  18026  Dense Titanium Wall                          x4\n  18027  Dense Invar Wall                             x2\n  18031  Dense Lead Wall                              x1\n  18100  Centrifuge Part                              x1\n  18102  Distillation Tower Part                      x2\n  18105  Electrolyzer Part                            x1\n"
+    }
+  ],
+  "recipeGeneratorComparison": {
+    "mappingEquality": {
+      "SAME_NAME": true,
+      "PER_TIER_NAME": true,
+      "EXPLICIT_TIERS": true,
+      "EXTRA_TIERS": true,
+      "TIER_NUMBERS": true,
+      "SKIP": false
+    },
+    "extraMultiblockRows": {
+      "cokeoven": "Coke Oven",
+      "implosioncompressor": "Implosion Compressor"
+    },
+    "skipDifferences": [
+      "laserengraver_alias"
+    ],
+    "skipDifferencesInCurrentParsedMachines": []
+  }
+}

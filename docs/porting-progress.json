@@ -1,0 +1,326 @@
+{
+  "scale": {
+    "port": {
+      "files": 1252,
+      "lines": 190859
+    },
+    "gt6": {
+      "files": 1228,
+      "lines": 205762
+    }
+  },
+  "subsystems": [
+    {
+      "label": "多方块机器 multiblocks",
+      "gt6": 35,
+      "port": 17
+    },
+    {
+      "label": "传送门/空间站 portals",
+      "gt6": 20,
+      "port": 0
+    },
+    {
+      "label": "传感器 sensors",
+      "gt6": 20,
+      "port": 7
+    },
+    {
+      "label": "能源机器 energy",
+      "gt6": 52,
+      "port": 58
+    },
+    {
+      "label": "电池 batteries",
+      "gt6": 19,
+      "port": 16
+    },
+    {
+      "label": "储罐 tanks",
+      "gt6": 12,
+      "port": 49
+    },
+    {
+      "label": "工具方块 tools",
+      "gt6": 30,
+      "port": 48
+    },
+    {
+      "label": "容器/库存 inventories",
+      "gt6": 16,
+      "port": 27
+    },
+    {
+      "label": "面板 panels",
+      "gt6": 6,
+      "port": 9
+    },
+    {
+      "label": "可放置物 placeables",
+      "gt6": 9,
+      "port": 0
+    },
+    {
+      "label": "植物 plants",
+      "gt6": 4,
+      "port": 0
+    },
+    {
+      "label": "其它机器 misc",
+      "gt6": 7,
+      "port": 0
+    },
+    {
+      "label": "延伸器 extenders",
+      "gt6": 6,
+      "port": 1
+    },
+    {
+      "label": "自动工具 autotools",
+      "gt6": 2,
+      "port": 0
+    },
+    {
+      "label": "电脑/CC computer",
+      "gt6": 2,
+      "port": 0
+    },
+    {
+      "label": "食物 food",
+      "gt6": 1,
+      "port": 0
+    },
+    {
+      "label": "红石 redstone",
+      "gt6": 1,
+      "port": 0
+    },
+    {
+      "label": "覆盖板 covers",
+      "gt6": 65,
+      "port": 14
+    },
+    {
+      "label": "物品工具 items/tools",
+      "gt6": 68,
+      "port": 6
+    },
+    {
+      "label": "物品行为 behaviors",
+      "gt6": 30,
+      "port": 3
+    },
+    {
+      "label": "木头方块 blocks/wood",
+      "gt6": 16,
+      "port": 9
+    },
+    {
+      "label": "树木 blocks/tree",
+      "gt6": 12,
+      "port": 0
+    },
+    {
+      "label": "工具方块 blocks/tool",
+      "gt6": 13,
+      "port": 17
+    },
+    {
+      "label": "石材 blocks/stone",
+      "gt6": 4,
+      "port": 8
+    },
+    {
+      "label": "流体方块 blocks/fluids",
+      "gt6": 4,
+      "port": 43
+    },
+    {
+      "label": "配方加载器 loaders",
+      "gt6": 20,
+      "port": 22
+    },
+    {
+      "label": "兼容模块 compat",
+      "gt6": 59,
+      "port": 12
+    },
+    {
+      "label": "世界生成 worldgen",
+      "gt6": 46,
+      "port": 66
+    },
+    {
+      "label": "GUI",
+      "gt6": 15,
+      "port": 16
+    },
+    {
+      "label": "渲染 render",
+      "gt6": 16,
+      "port": 123
+    },
+    {
+      "label": "网络 network",
+      "gt6": 35,
+      "port": 2
+    },
+    {
+      "label": "矿物词典层 oredict",
+      "gt6": 19,
+      "port": 21
+    },
+    {
+      "label": "伤害 damage",
+      "gt6": 15,
+      "port": 0
+    },
+    {
+      "label": "附魔 enchants",
+      "gt6": 4,
+      "port": 0
+    },
+    {
+      "label": "木头字典 wooddict",
+      "gt6": 6,
+      "port": 0
+    },
+    {
+      "label": "核心修改 asm",
+      "gt6": 18,
+      "port": 0
+    }
+  ],
+  "probes": [
+    {
+      "label": "手册/书籍 books",
+      "gt6": 9,
+      "port": 16
+    },
+    {
+      "label": "养蜂 apiculture",
+      "gt6": 8,
+      "port": 13
+    },
+    {
+      "label": "地牢 dungeon",
+      "gt6": 27,
+      "port": 38
+    },
+    {
+      "label": "作物 crops",
+      "gt6": 2,
+      "port": 5
+    },
+    {
+      "label": "物流 logistics",
+      "gt6": 1,
+      "port": 16
+    },
+    {
+      "label": "战利品表 loot",
+      "gt6": 2,
+      "port": 17
+    },
+    {
+      "label": "村民交易 trades",
+      "gt6": 0,
+      "port": 0
+    }
+  ],
+  "registry": {
+    "materials": 1156,
+    "items": 74327,
+    "blocks": 15607,
+    "fluids": 925,
+    "queued": {
+      "material items": 56036,
+      "technological items": 326,
+      "multi-items (tools/bottles/food/bumblebees)": 1281,
+      "fuel rod items": 49,
+      "material blocks": 11263,
+      "stone blocks": 432,
+      "stone slab blocks": 432,
+      "icon set blocks": 182
+    }
+  },
+  "recipes": {
+    "transpiled": {
+      "recipeMaps": {
+        "Bath": 1154,
+        "Centrifuge": 834,
+        "Coagulator": 5,
+        "CokeOven": 68,
+        "CrystallisationCrucible": 48,
+        "Distillery": 426,
+        "Drying": 53,
+        "Extruder": 59147,
+        "Fermenter": 2447,
+        "ImplosionCompressor": 408,
+        "Injector": 26,
+        "Juicer": 53,
+        "LaserEngraver": 14,
+        "Loom": 1057,
+        "Melter": 325,
+        "Mixer": 843,
+        "Mortar": 1912,
+        "Nanofab": 49,
+        "Press": 3606,
+        "Replicator": 14,
+        "Smelter": 327,
+        "Squeezer": 66
+      },
+      "set.chem": "added 312, skipped 46",
+      "set.combs": "added 20, skipped 0",
+      "set.extruder": "added 278, skipped 44",
+      "set.food": "added 217, skipped 26",
+      "set.ores": "added 101, skipped 37",
+      "set.other": "added 174, skipped 91",
+      "set.potions": "added 491, skipped 9",
+      "set.temporary": "added 12, skipped 22",
+      "set.vanilla": "added 57, skipped 171",
+      "totalAdded": 1662,
+      "totalSkipped": 446
+    },
+    "recipeMapTotals": {
+      "gt.recipe.anvil": 8958,
+      "gt.recipe.anvil.bend.big": 903,
+      "gt.recipe.anvil.bend.small": 301,
+      "gt.recipe.autoclave": 456,
+      "gt.recipe.boxinator": 13172,
+      "gt.recipe.clustermill": 301,
+      "gt.recipe.compressor": 1336,
+      "gt.recipe.crusher": 6622,
+      "gt.recipe.cutter": 9847,
+      "gt.recipe.extruder": 59147,
+      "gt.recipe.lathe": 2784,
+      "gt.recipe.loom": 1057,
+      "gt.recipe.mortar": 1912,
+      "gt.recipe.press": 3606,
+      "gt.recipe.rollbender": 1205,
+      "gt.recipe.rollformer": 300,
+      "gt.recipe.rollingmill": 2113,
+      "gt.recipe.sharpener": 8988,
+      "gt.recipe.shredder": 42744,
+      "gt.recipe.sifter": 380,
+      "gt.recipe.sluice": 4288,
+      "gt.recipe.unboxinator": 10884,
+      "gt.recipe.welder": 5370,
+      "gt.recipe.wiremill": 631
+    },
+    "formConversions": {
+      "boxinator": 13110,
+      "compressor": 1303,
+      "unboxinator": 8187
+    },
+    "craftingGridConversions": 26226
+  },
+  "missingContent": {
+    "total": 49,
+    "byPrefix": {
+      "tech": 36,
+      "i": 11,
+      "omd": 2
+    }
+  }
+}

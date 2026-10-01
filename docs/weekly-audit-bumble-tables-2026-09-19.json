@@ -1,0 +1,11 @@
+{
+  "method": "Static source literal comparison, not a game test",
+  "originalSpecies": 80,
+  "portSpecies": 80,
+  "missingSpecies": [],
+  "extraSpecies": [],
+  "originalCombinationRows": 20,
+  "portCombinationRows": 20,
+  "combinationTablesEqualInOrder": true,
+  "allCombinationSpeciesRegistered": true
+}
