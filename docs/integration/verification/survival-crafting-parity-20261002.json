@@ -1,0 +1,158 @@
+{
+  "status": "passed-with-explicit-scope",
+  "source_base": "4ed96559d942f803fde50dbae0409e612178f7a6",
+  "families": {
+    "_root": 2,
+    "bales": 16,
+    "bedrock_flowers": 1,
+    "bookshelves": 75,
+    "diggable": 13,
+    "fusion": 6,
+    "grass": 12,
+    "hand_components": 37,
+    "matter": 8,
+    "polymer_forming": 4,
+    "scaffolds": 60,
+    "smelting": 2,
+    "stone_survival": 81,
+    "tool_blocks": 5,
+    "tools": 10,
+    "wood": 1
+  },
+  "new_recipe_count": 333,
+  "shared_equipment_recipe_count": 2146,
+  "logs": {
+    "neo-survival-crafting-20261002.log": {
+      "sha256": "72a946067fa0a5db6b5702a14b2b4ef02f0de2ba86a0a4e26a27991aa26263df",
+      "gradle_duration": "1m 49s",
+      "server_success": [],
+      "server_failed": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "1069ca39-a7c3-4baf-b3db-9e6b96cb55b3",
+          "pid": 76564,
+          "specimenId": "e44dc190-1e3d-47c8-8630-5643b88a9566",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\survival-crafting-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 0,
+          "elapsedMs": 925,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": false,
+          "reason": "stopped_or_saved_files",
+          "error": "java.lang.IllegalStateException: Server stopped without the requested ordinary-tick normal lifecycle"
+        }
+      ],
+      "equipment_success": [],
+      "survival_success": [],
+      "status": "runtime-failed"
+    },
+    "neo-survival-crafting-fixed-20261002.log": {
+      "sha256": "4bb5d35669ce6f1d981e38b00511d64f6f6b57d6efc0be379c805c9a351380b8",
+      "gradle_duration": "2m 20s",
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "0db2524b-7c76-497c-aa75-6b3c66b49cb4",
+          "pid": 78032,
+          "specimenId": "275fe40f-fb26-49a7-944d-780d710116f4",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\survival-crafting-fixed-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10741,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": false,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\survival-crafting-fixed-20261002\\world\\level.dat",
+          "levelDatBytes": 1900,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\survival-crafting-fixed-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 929792
+        }
+      ],
+      "server_failed": [],
+      "equipment_success": [
+        "[05:43:02] [Server thread/INFO] [co.gr.gr.in.se.NeoManualToolCheckpoint/]: EQUIPMENT_CRAFTING_CHECKPOINT_SUCCESS loaded=2146 resolvedIngredients=true boiler=true burner=true transformer=true mirrorRejected=true clayFiringRecipe=true reclaimCount=7 wrenchWear=800 hammerWear=400"
+      ],
+      "survival_success": [
+        "[05:43:02] [Server thread/INFO] [co.gr.gr.in.se.NeoManualToolCheckpoint/]: SURVIVAL_CRAFTING_CHECKPOINT_SUCCESS selector=true selectorWear=100 selectorMirrorRejected=true usbCable=true scaffold=true bookshelf=true barleyRoundTrip=9 sawaxeChoices=4 woodMirrorAllowed=true bowlFiringQuery=true"
+      ],
+      "status": "runtime-passed"
+    },
+    "survival-crafting-jars-20261002.log": {
+      "sha256": "98e47ec912da82ba5d1d83ffe99a1493739540dbd3c2f67c0fc1a72ef1c1ac72",
+      "gradle_duration": "3m 44s",
+      "server_success": [],
+      "server_failed": [],
+      "equipment_success": [],
+      "survival_success": [],
+      "status": "build-only-passed"
+    }
+  },
+  "artifacts": {
+    "forge": {
+      "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38556628,
+      "sha256": "0ae404e0d0c13464ba41aa70a44242925a67746c71a8b8d915de21240cd94d49",
+      "new_shared_recipe_bytes_verified": 333,
+      "new_shared_tag_bytes_verified": 7
+    },
+    "neoforge": {
+      "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36746873,
+      "sha256": "6cc9ca29037b7fc1d1e839558951473765f51d304855917ff9d09e8ebdab9263",
+      "new_shared_recipe_bytes_verified": 333,
+      "new_shared_tag_bytes_verified": 7
+    }
+  },
+  "packaging": {
+    "status": "passed",
+    "shared_classes": 573
+  },
+  "verified": [
+    "2146 actual Native recipe entries/nonempty outputs/resolved non-blank ingredient candidates using Ingredient.EMPTY identity",
+    "selected actual selector creation/reconfiguration and screwdriver wear/non-mirror/network",
+    "USB1 cable, steel scaffold and oak bookshelf crafting queries",
+    "barley packing/unpacking to nine original crops",
+    "saw/axe/double-axe/universal-spade tag membership and mirrored blue-spruce slab recipe yields two slabs",
+    "clay bowl firing recipe query yields mixing bowl",
+    "ordinary Native dedicated server 200 ticks and normal saved shutdown",
+    "333 recipe/seven tag hashes match in both final jars; redundant native tag copies absent"
+  ],
+  "previous_evidence_limit": "Earlier checks skipped Ingredient.isEmpty() and could miss unresolved tags. Their resolvedIngredients markers alone did not prove complete source tag closure; the stricter current 2146-entry check supplies current evidence.",
+  "unverified": [
+    "every actual craft/player GUI",
+    "fuel-driven natural furnace ticks",
+    "full survival and ordinary piston-engine crafting",
+    "USB data operations and installed cover routing in this wave",
+    "Forge runtime",
+    "current clients",
+    "this wave reload",
+    "installed production jars",
+    "all machines/old saves"
+  ]
+}

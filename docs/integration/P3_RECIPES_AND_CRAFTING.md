@@ -42,3 +42,7 @@ Neo 基础机器工作台配方采用同一 BasicMachineCraftingRecipes 表、�
 ## 2026-10-02 线材与模具后续
 
 1,394 条线材/模具 JSON 共享；全部 1,316 线材制作查询导体守恒及选定空白→杆→线模具查询/工具磨损通过。详见 verification/manufacturing-crafting-parity-20261002.md。其实际通电、玩家制作与完整生存仍待验。
+
+## 2026-10-02 剩余静态配方后续
+
+共享剩余 333 原配方及七原料标签；当前 2,146 静态设备/制造配方通过严格非空格原料候选检查与选定实际制作查询。此前 Ingredient.isEmpty 可能跳过空标签，原 resolvedIngredients 回执有该证据限制。细节和首轮大麦反馈见 verification/survival-crafting-parity-20261002.md。
