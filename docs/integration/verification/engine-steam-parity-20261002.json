@@ -1,0 +1,255 @@
+{
+  "status": "passed-with-explicit-scope",
+  "source_base": "4914a00244da2096aa5362987c650108b61f97c3",
+  "scope": [
+    "both versions engine-face compilation/packaging",
+    "Native cold-start physical coal/HU/boiler/steam pipe/KU/registered crusher recipe/automatic output and water supply",
+    "Native vertical engine north-side one-mB condensate recovery",
+    "Native same-world independent-process restart of observed completed outputs and condensate"
+  ],
+  "time_scope": "prepare uses 12000 ordinary Minecraft world ticks with vanilla tick sprint; verify uses 200 ordinary real-time ticks; provided equipment/ingredients/water; no direct HU/KU injection or manual machine ticks",
+  "unverified": [
+    "full survival acquisition and all crafting entry points",
+    "Forge runtime",
+    "current clients",
+    "normal wall-clock gameplay performance",
+    "electric generators/cables",
+    "all facing neighbor interactions",
+    "all machine state exact snapshots",
+    "old saves",
+    "production-installed jars"
+  ],
+  "logs": {
+    "engine-face-compile-20261002.log": {
+      "sha256": "c2a92d0b85e8bda38da2219722827c1afaf47cb5fd8881e36eb179f624cc9352",
+      "gradle_build_successful": true,
+      "gradle_duration": "54s",
+      "server_success": [],
+      "server_failed": [],
+      "steam_markers": [],
+      "status": "build-only-passed"
+    },
+    "neo-steam-chain-prepare-20261002.log": {
+      "sha256": "88ec501d999823bde7d26db4ef8aebcfaa763be645efc91f74a6559a2f9b6523",
+      "gradle_build_successful": true,
+      "gradle_duration": "1m 51s",
+      "server_success": [],
+      "server_failed": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "ec01304c-4b7f-4bcf-8c6b-119431183f2c",
+          "pid": 77120,
+          "specimenId": "50c40b56-e65c-4971-ac71-e65fc3c54ac4",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 0,
+          "elapsedMs": 95,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": true,
+          "reason": "start_or_world_check",
+          "error": "java.lang.IllegalStateException: Actual coal ignition failed"
+        }
+      ],
+      "steam_markers": [],
+      "status": "runtime-failed"
+    },
+    "neo-steam-chain-events-prepare-20261002.log": {
+      "sha256": "5ba24f4ef687081dc6eef5231c8c8f2c42016898b6a92b7b9e6ded4c28171416",
+      "gradle_build_successful": true,
+      "gradle_duration": "1m 46s",
+      "server_success": [],
+      "server_failed": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "a1fcfb4f-cf85-4239-b4ef-1713d8f4da32",
+          "pid": 70416,
+          "specimenId": "b57149b8-b090-4e26-8a9b-8e1c01d8fbce",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-events-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 12000,
+          "elapsedMs": 951,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": true,
+          "reason": "tick_or_stop",
+          "error": "java.lang.IllegalStateException: Natural steam chain did not complete: water=3911 progress=0/0"
+        }
+      ],
+      "steam_markers": [],
+      "status": "runtime-failed"
+    },
+    "neo-steam-chain-loaded-prepare-20261002.log": {
+      "sha256": "ae457d8f41effb66015b26af02b890d9873d3036a840b5625add9a1d86fa05cd",
+      "gradle_build_successful": true,
+      "gradle_duration": "1m 43s",
+      "server_success": [],
+      "server_failed": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "224b0486-2645-44a3-b27a-2470ce8bf552",
+          "pid": 78632,
+          "specimenId": "7d302064-8745-4c96-85fd-8193fb68a617",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-loaded-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 12000,
+          "elapsedMs": 1878,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": true,
+          "reason": "tick_or_stop",
+          "error": "java.lang.IllegalStateException: Natural steam chain did not complete: water=401 progress=0/1024"
+        }
+      ],
+      "steam_markers": [],
+      "status": "runtime-failed"
+    },
+    "neo-steam-chain-supply-prepare-20261002.log": {
+      "sha256": "8d9632cc46e9c47874033ee6e68b1678afc33ec52713e536952dcb6307e9b2ef",
+      "gradle_build_successful": true,
+      "gradle_duration": "1m 55s",
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "8b24a6a4-ee83-4315-a202-e40bce34af41",
+          "pid": 80632,
+          "specimenId": "7215bc34-71ac-464b-a350-22b592e9f2a5",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-supply-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 12000,
+          "elapsedMs": 6091,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": true,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-supply-20261002\\world\\level.dat",
+          "levelDatBytes": 1900,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-supply-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 929792
+        }
+      ],
+      "server_failed": [],
+      "steam_markers": [
+        "[04:32:51] [Server thread/INFO] [co.gr.gr.in.se.NeoForgeDedicatedSmoke/]: STEAM_CHAIN_COMPLETE ordinaryTicks=12000 coldStart=true directEnergyInjection=false manualMachineTicks=false water=4000 coal=32"
+      ],
+      "status": "runtime-passed"
+    },
+    "neo-steam-chain-supply-verify-20261002.log": {
+      "sha256": "b34003c7eaa1810349355db89c98dfc692cea054f36f178331faf15686992ba4",
+      "gradle_build_successful": true,
+      "gradle_duration": "1m 49s",
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "verify",
+          "sessionId": "fa2d50f0-8ddd-44b3-8836-392d21089342",
+          "pid": 43172,
+          "specimenId": "7215bc34-71ac-464b-a350-22b592e9f2a5",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-supply-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10200,
+          "restartWorldReadVerified": true,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": true,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-supply-20261002\\world\\level.dat",
+          "levelDatBytes": 1902,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\steam-chain-supply-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 933888
+        }
+      ],
+      "server_failed": [],
+      "steam_markers": [
+        "[04:36:05] [Server thread/INFO] [co.gr.gr.in.se.NeoForgeDedicatedSmoke/]: STEAM_CHAIN_COMPLETE ordinaryTicks=0 coldStart=true directEnergyInjection=false manualMachineTicks=false water=4000 coal=32",
+        "[04:36:15] [Server thread/INFO] [co.gr.gr.in.se.NeoForgeDedicatedSmoke/]: STEAM_CHAIN_COMPLETE ordinaryTicks=200 coldStart=true directEnergyInjection=false manualMachineTicks=false water=4000 coal=32"
+      ],
+      "status": "runtime-passed"
+    },
+    "engine-steam-jars-20261002.log": {
+      "sha256": "a17d76e33b362c8962af382a2bcb0303905d6ab562ed4f286e8a906cdc94bde6",
+      "gradle_build_successful": true,
+      "gradle_duration": "3m 49s",
+      "server_success": [],
+      "server_failed": [],
+      "steam_markers": [],
+      "status": "build-only-passed"
+    }
+  },
+  "artifacts": {
+    "forge": {
+      "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38530001,
+      "sha256": "793124653a8e6532444ed95b3d9f0e49ce7a704373443ef8380da06b4c53a840"
+    },
+    "neoforge": {
+      "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 35892913,
+      "sha256": "ec45f3ba6941bb765171d0367a8b0e3790246887a158002325d6af7cd486a415"
+    }
+  },
+  "packaging": {
+    "status": "passed",
+    "shared_classes": 572
+  },
+  "receipt_note": "steamChainChecked denotes opt-in mode; count only explicit success receipts with STEAM_CHAIN_COMPLETE, not requested mode alone or Gradle exit zero"
+}
