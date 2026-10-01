@@ -6,7 +6,7 @@ A community integration project bringing GregTech 6 to modern Minecraft, with a 
 
 ## About
 
-GregTech 6 Community Edition combines work from **saltnya's gregtech6reborn**, **brokestar233's gregtech6-main**, and **masson's cruciblecraft**. The project uses saltnya's implementation as its initial content baseline while comparing and integrating the strengths of all three ports.
+GregTech 6 Community Edition combines work from **saltnya's gregtech6reborn**, **brokestar233's gregtech6**, and **lombinaxmasson's cruciblecraft**. The project uses saltnya's implementation as its initial content baseline while comparing and integrating the strengths of all three ports.
 
 The goal is a coherent, maintainable mod with shared materials, recipes, machines, energy, and logistics, supported by the platform adaptations needed for each Minecraft version.
 

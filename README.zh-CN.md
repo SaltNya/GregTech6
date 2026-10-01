@@ -6,7 +6,7 @@
 
 ## 项目介绍
 
-GregTech 6 Community Edition 整合了 **saltnya 的 gregtech6reborn**、**brokestar233 的 gregtech6-main** 和 **masson 的 cruciblecraft** 三个项目的工作。项目以 saltnya 的实现作为初始内容基准，逐项比较并吸收三个移植项目的完善部分。
+GregTech 6 Community Edition 整合了 **saltnya 的 gregtech6reborn**、**brokestar233 的 gregtech6** 和 **lombinaxmasson 的 cruciblecraft** 三个项目的工作。项目以 saltnya 的实现作为初始内容基准，逐项比较并吸收三个移植项目的完善部分。
 
 目标是形成系统互通、便于维护的模组，让材料、配方、机器、能源和物流使用共享底层，并为各 Minecraft 版本保留必要的平台适配。
 
