@@ -1,0 +1,99 @@
+{
+  "status": "passed-with-explicit-scope",
+  "source_base": "a7b55da3c4f1afbe65f7fab52b6c6c19961c163b",
+  "families": {
+    "wire_working": 1316,
+    "extruder_shapes": 78
+  },
+  "new_recipe_count": 1394,
+  "shared_equipment_recipe_count": 1813,
+  "logs": {
+    "neo-manufacturing-crafting-20261002.log": {
+      "sha256": "6a792640c1bab37aa26e13f9bb48909ac8d87c51261a40c8910d100322f9a81d",
+      "gradle_duration": "1m 56s",
+      "server_success": [
+        {
+          "platform": "neoforge",
+          "minecraft": "1.21.1",
+          "phase": "prepare",
+          "sessionId": "7a5a3f4d-4e6c-4bcc-a5b1-aa0692963880",
+          "pid": 76188,
+          "specimenId": "ae9cd1d0-1bdd-45b1-81aa-a935113c6f9d",
+          "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+          "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\manufacturing-crafting-20261002\\world",
+          "x": 0,
+          "y": 240,
+          "z": 0,
+          "dirtX": 1,
+          "dirtY": 240,
+          "dirtZ": 0,
+          "copperCount": 3,
+          "ironCount": 1,
+          "observedTicks": 200,
+          "elapsedMs": 10731,
+          "restartWorldReadVerified": false,
+          "smelteryWorldChecked": false,
+          "machineWorldChecked": false,
+          "machineJobCompleted": false,
+          "steamChainChecked": false,
+          "normalStopObserved": true,
+          "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\manufacturing-crafting-20261002\\world\\level.dat",
+          "levelDatBytes": 1900,
+          "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\manufacturing-crafting-20261002\\world\\region\\r.0.0.mca",
+          "regionBytes": 929792
+        }
+      ],
+      "equipment_success": [
+        "[05:20:52] [Server thread/INFO] [co.gr.gr.in.se.NeoManualToolCheckpoint/]: EQUIPMENT_CRAFTING_CHECKPOINT_SUCCESS loaded=1813 resolvedIngredients=true boiler=true burner=true transformer=true mirrorRejected=true clayFiringRecipe=true reclaimCount=7 wrenchWear=800 hammerWear=400"
+      ],
+      "manufacturing_success": [
+        "[05:20:52] [Server thread/INFO] [co.gr.gr.in.se.NeoManualToolCheckpoint/]: MANUFACTURING_CRAFTING_CHECKPOINT_SUCCESS wireRecipes=1316 conductorAmountConserved=true materialFamilyPreserved=true blankToRodToWire=true toolsWorn=true previousShapeConsumed=true rodMirrorRejected=true rodUniqueAmong78=true network=true"
+      ]
+    },
+    "manufacturing-crafting-jars-20261002.log": {
+      "sha256": "657dc64140cb23b3ebb76ed746e40baba47b1b77bfadf553e70dc5165ef39239",
+      "gradle_duration": "3m 35s",
+      "server_success": [],
+      "equipment_success": [],
+      "manufacturing_success": []
+    }
+  },
+  "artifacts": {
+    "forge": {
+      "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38552146,
+      "sha256": "c3c943456c6ddd5d808c4b35ab800f68f3ec24355125934525d03b90b90e9ba2",
+      "new_shared_recipe_bytes_verified": 1394
+    },
+    "neoforge": {
+      "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36601267,
+      "sha256": "5b6fe039be003432b9e9e6ea9b79d8383651cee71634bf29a7c4f5623141bbc0",
+      "new_shared_recipe_bytes_verified": 1394
+    }
+  },
+  "packaging": {
+    "status": "passed",
+    "shared_classes": 573
+  },
+  "verified": [
+    "1813 actual Native recipe entries/nonempty outputs/resolved ingredient candidates",
+    "all 1316 wire recipe input matching and assembly conserve conductor amount and material family",
+    "actual double tungsten-carbide plate to blank shape to rod shape to wire shape queries",
+    "hammer/file/cutter wear 400/100/400 and previous shape consumed",
+    "selected rod shape unique among 78 and rejects mirror before/after native packet round trip",
+    "ordinary Native dedicated server 200 ticks and normal saved shutdown",
+    "1394 original resource hashes match in both jars"
+  ],
+  "unverified": [
+    "every shaping recipe actual craft or orientation",
+    "player UI and complete survival",
+    "electric transfer/cable hazards in this batch",
+    "ordinary piston-engine crafting",
+    "Forge runtime",
+    "current clients",
+    "this batch world reload",
+    "installed production jars",
+    "all machines and old saves"
+  ]
+}

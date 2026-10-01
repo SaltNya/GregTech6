@@ -38,3 +38,7 @@ Neo 基础机器工作台配方采用同一 BasicMachineCraftingRecipes 表、�
 ## 2026-10-02 部件与物流后续
 
 185 条部件/物流/覆盖物/木管/多方块 JSON 原字节共享，Neo 419 设备原料候选与选定入口制作查询通过；详见 verification/routing-crafting-parity-20261002.md。物流设备运行、所有逐件制作和普通活塞引擎生存入口仍待验。
+
+## 2026-10-02 线材与模具后续
+
+1,394 条线材/模具 JSON 共享；全部 1,316 线材制作查询导体守恒及选定空白→杆→线模具查询/工具磨损通过。详见 verification/manufacturing-crafting-parity-20261002.md。其实际通电、玩家制作与完整生存仍待验。
