@@ -1,0 +1,61 @@
+{
+  "status": "passed-with-explicit-scope",
+  "integration_base": "68682331a7d354ab7d31ea49e9fffad245645d6a",
+  "goal_status": "active",
+  "logs": {
+    "crucible-raw-preview-compile-20261002": {
+      "path": "work\\crucible-raw-preview-compile-20261002.log",
+      "sha256": "e871b2335a37fbd43b116145cf1ed374024ee0fe92687be6d28686c3bc193bab",
+      "exit_code": 0,
+      "duration": "39s"
+    },
+    "raw-ore-playflow-20261002": {
+      "path": "work\\raw-ore-playflow-20261002.log",
+      "sha256": "e7e235d94944e8efbd8a0cb006dd9c8933603fcd7688fa216947a4af0db66822",
+      "exit_code": 1,
+      "duration": "1m 30s"
+    },
+    "raw-ore-playflow-fixed-20261002": {
+      "path": "work\\raw-ore-playflow-fixed-20261002.log",
+      "sha256": "da6e0ee45903619401d3ffbde1e607de84dc1ab9dec6186aba911f8d27eb05ab",
+      "exit_code": 0,
+      "duration": "1m 49s"
+    }
+  },
+  "material_assertions": 6160,
+  "both_platforms_compiled": true,
+  "neoforge_game_test": {
+    "test": "coalCopperTinToFourBronzeIngots",
+    "required_tests": 1,
+    "world": "neoforge/build/raw-ore-playflow-fixed-20261002",
+    "game_test_ticks": 3020,
+    "accelerated_game_test_ticks_not_real_time": true,
+    "raw_copper": 3,
+    "raw_tin": 1,
+    "bronze_ingots": 4,
+    "alloy_temperature_K": 1357,
+    "flint_pick_wear": 300,
+    "chisel_wear": 15,
+    "pincers_wear": 4,
+    "receipts": [
+      "material=Copper output=minecraft:copper_ingot count=1 temperature=1357",
+      "material=Tin output=gregtech:ingot_tin count=1 temperature=505",
+      "actualHarvests=4 rawCopper=3 rawTin=1 flintPickWear=300 recipePreviewOneU=true",
+      "GT6_NEO_PLAYFLOW_ALLOY tick=3011 temperature=1357 amount=2594592000",
+      "GT6_NEO_PLAYFLOW_COMPLETE tick=3020 ingots=4 chiselWear=15 pincersWear=4",
+      "GT6_NEO_STACKED_BASIN_COMPLETE ingots=9 remaining=0 hotPickupRejected=true",
+      "All 1 required tests passed"
+    ]
+  },
+  "failed_attempt": "Initial output-ID assertion rejected valid vanilla copper canonicalization; production behavior retained, material/form/count assertion corrected.",
+  "new_production_jars_built": false,
+  "limits": [
+    "Equipment, placed ore blocks, starter flint/stick, coal and assembled steel tools are supplied; natural world generation/equipment acquisition/full survival not proved.",
+    "Uses actual server-side survival FakePlayer crafting, harvesting, burning, alloying and casting; no client or installed JAR run.",
+    "Stacked-basin subcase injects nine U and manually ticks cooling; not the mined raw-material chain.",
+    "No independent restart of this bronze-chain world; historical tool/world checkpoints remain separate evidence.",
+    "Forge corresponding whole raw-ore chain not run; Forge input guard compiled but not separately runtime-tested.",
+    "Bronze ingots to cast tool head/grind/tool assembly remains a separate progression gap.",
+    "Current delivered JARs still bc89c7201 until the grouped build completes."
+  ]
+}
