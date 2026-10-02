@@ -1,0 +1,322 @@
+{
+  "status": "passed-with-explicit-scope",
+  "integration_base": "69f730b8ff9c97d52b5c712bdcc54c748fc466b8",
+  "goal_status": "active",
+  "logs": {
+    "forge_prepare": {
+      "path": "work/forge-diesel-power-prepare-20261002.log",
+      "sha256": "416ebbfef602d4128df7f6dc409cbc3855ead083d32a95769fac0538ac7f650b",
+      "duration": "2m 24s"
+    },
+    "forge_reload": {
+      "path": "work/forge-diesel-power-reload-20261002.log",
+      "sha256": "1ba3e33a6adaa1dba494561f98b5791d42be6acd07065c6b63d1ad9c3326f5cd",
+      "duration": "2m 42s"
+    },
+    "neo_rate_reload": {
+      "path": "work/neo-diesel-power-rate-reload-20261002.log",
+      "sha256": "b54590490b3d36e5a7171fa8dd1cb2e5ecb31a7a2028944a256e437cee1b5b3f",
+      "duration": "1m 57s"
+    },
+    "forge-diesel-power-compile-20261002": {
+      "path": "work/forge-diesel-power-compile-20261002.log",
+      "sha256": "826654c225ebbe3da46ec417bc0e1bc6bf5c74622edf506a329b0197f24cc759",
+      "duration": "29s"
+    },
+    "forge-diesel-power-jars-20261002": {
+      "path": "work/forge-diesel-power-jars-20261002.log",
+      "sha256": "c959fd197a63948c604fcddb4bac64ecea8a622f51a56d3638d1d3810b2b85cd",
+      "duration": "3m 13s"
+    }
+  },
+  "ordinary_runs": {
+    "forge_prepare": {
+      "exit_code": 0,
+      "started": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "prepare",
+        "sessionId": "14f0e7ba-6371-48e1-a883-9bcad13c54c9",
+        "pid": 75524,
+        "specimenId": "2ee972bb-c271-4055-b8c4-e93db84d0d9b",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-diesel-power-20261002-2ee972bb-c271-4055-b8c4-e93db84d0d9b\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 1,
+        "restartWorldReadVerified": false
+      },
+      "prior_disk_stock": null,
+      "final_checkpoint": {
+        "stage": "powered",
+        "specimenId": "2ee972bb-c271-4055-b8c4-e93db84d0d9b",
+        "-1": {
+          "energy": 320,
+          "fuel": 87,
+          "exhaust": 13,
+          "stopped": true
+        },
+        "4": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 1,
+          "stopped": true
+        },
+        "8": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 0,
+          "stopped": false
+        }
+      },
+      "success": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "prepare",
+        "sessionId": "14f0e7ba-6371-48e1-a883-9bcad13c54c9",
+        "pid": 75524,
+        "specimenId": "2ee972bb-c271-4055-b8c4-e93db84d0d9b",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-diesel-power-20261002-2ee972bb-c271-4055-b8c4-e93db84d0d9b\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 11185,
+        "restartWorldReadVerified": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-diesel-power-20261002-2ee972bb-c271-4055-b8c4-e93db84d0d9b\\world\\level.dat",
+        "levelDatBytes": 787921,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-diesel-power-20261002-2ee972bb-c271-4055-b8c4-e93db84d0d9b\\world\\region\\r.0.0.mca",
+        "regionBytes": 2174976
+      }
+    },
+    "forge_reload": {
+      "exit_code": 0,
+      "started": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "verify",
+        "sessionId": "d44de5cb-c8cb-4566-a735-183229b6ae2c",
+        "pid": 13356,
+        "specimenId": "2ee972bb-c271-4055-b8c4-e93db84d0d9b",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-diesel-power-20261002-2ee972bb-c271-4055-b8c4-e93db84d0d9b\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 1,
+        "restartWorldReadVerified": false
+      },
+      "prior_disk_stock": {
+        "stage": "powered",
+        "specimenId": "2ee972bb-c271-4055-b8c4-e93db84d0d9b",
+        "-1": {
+          "energy": 320,
+          "fuel": 87,
+          "exhaust": 13,
+          "stopped": true
+        },
+        "4": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 1,
+          "stopped": true
+        },
+        "8": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 0,
+          "stopped": false
+        }
+      },
+      "final_checkpoint": {
+        "stage": "powered",
+        "specimenId": "2ee972bb-c271-4055-b8c4-e93db84d0d9b",
+        "-1": {
+          "energy": 0,
+          "fuel": 87,
+          "exhaust": 13,
+          "stopped": true
+        },
+        "4": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 1,
+          "stopped": true
+        },
+        "8": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 0,
+          "stopped": false
+        }
+      },
+      "success": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "verify",
+        "sessionId": "d44de5cb-c8cb-4566-a735-183229b6ae2c",
+        "pid": 13356,
+        "specimenId": "2ee972bb-c271-4055-b8c4-e93db84d0d9b",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-diesel-power-20261002-2ee972bb-c271-4055-b8c4-e93db84d0d9b\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 11099,
+        "restartWorldReadVerified": true,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-diesel-power-20261002-2ee972bb-c271-4055-b8c4-e93db84d0d9b\\world\\level.dat",
+        "levelDatBytes": 787920,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-diesel-power-20261002-2ee972bb-c271-4055-b8c4-e93db84d0d9b\\world\\region\\r.0.0.mca",
+        "regionBytes": 2179072
+      }
+    },
+    "neo_rate_reload": {
+      "exit_code": 0,
+      "started": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "verify",
+        "sessionId": "36fe94fd-2a53-42d5-9a47-96dd7881a505",
+        "pid": 81096,
+        "specimenId": "e40eaf48-83ca-451b-86f7-01b3a874013d",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\diesel-power-20261002-e40eaf48-83ca-451b-86f7-01b3a874013d\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 1,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": false,
+        "machineJobCompleted": false,
+        "steamChainChecked": false
+      },
+      "prior_disk_stock": {
+        "stage": "powered",
+        "specimenId": "e40eaf48-83ca-451b-86f7-01b3a874013d",
+        "-1": {
+          "energy": 0,
+          "fuel": 86,
+          "exhaust": 14,
+          "stopped": true
+        },
+        "4": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 1,
+          "stopped": true
+        },
+        "8": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 0,
+          "stopped": false
+        }
+      },
+      "final_checkpoint": {
+        "stage": "powered",
+        "specimenId": "e40eaf48-83ca-451b-86f7-01b3a874013d",
+        "-1": {
+          "energy": 0,
+          "fuel": 86,
+          "exhaust": 14,
+          "stopped": true
+        },
+        "4": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 1,
+          "stopped": true
+        },
+        "8": {
+          "energy": 0,
+          "fuel": 0,
+          "exhaust": 0,
+          "stopped": false
+        }
+      },
+      "success": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "verify",
+        "sessionId": "36fe94fd-2a53-42d5-9a47-96dd7881a505",
+        "pid": 81096,
+        "specimenId": "e40eaf48-83ca-451b-86f7-01b3a874013d",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\diesel-power-20261002-e40eaf48-83ca-451b-86f7-01b3a874013d\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 10233,
+        "restartWorldReadVerified": true,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": false,
+        "machineJobCompleted": false,
+        "steamChainChecked": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\diesel-power-20261002-e40eaf48-83ca-451b-86f7-01b3a874013d\\world\\level.dat",
+        "levelDatBytes": 1903,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\diesel-power-20261002-e40eaf48-83ca-451b-86f7-01b3a874013d\\world\\region\\r.0.0.mca",
+        "regionBytes": 933888
+      }
+    }
+  },
+  "packaging_shared_classes": 574,
+  "artifacts": {
+    "forge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38595766,
+      "sha256": "34fbeb57d60dcf1caf53f7c4eeaae14ec589fabc761c93a907b602ee132fd3c5"
+    },
+    "neoforge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36786869,
+      "sha256": "d04873894d9c4720f291370c0a28459b1340885f6638779f054da51aa3f053d4"
+    }
+  },
+  "limitations": [
+    "Physical Forge chain uses supplied registered machines, 100mB Diesel and one chipped-diamond input; no full survival acquisition or actual crafting UI.",
+    "Selected steel/bronze horizontal machines prove this layout only; not all fuels/tier/orientations/activity animations/overvoltage.",
+    "Selected Forge current-source world is saved/reloaded, not the earlier pre-RU Forge layout, original GT6 or cross-Minecraft/source save import.",
+    "Client powered-world/GUI, installed production-JAR launch, Forge thermal steam chain and complete donor integration remain pending."
+  ]
+}

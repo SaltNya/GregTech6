@@ -3,7 +3,7 @@
 更新：2026-10-02。Goal active。当前工作目录为 `F:\Dev\GregtTech6New\GregTech6`；优先对齐 Forge 1.20.1 与 NeoForge 1.21.1，继续采用集中小检查节奏。
 
 - P0：三源审计、全部逐文件清单、项目1副本校验及原始Forge构建已完成；项目1授权和历史仍待用户信息。
-- P1：恢复完整后续移植源码，最新两平台构建与 573 个共享 core class 验包通过；两版当前源码普通专服实际启动与指定蒸汽引擎制作产物保存重载通过；NeoForge 指定青铜/蒸汽动力链通过。当前双版开发主菜单、Neo 材料/流体库存模型及六物品绘制已通过；Neo 客户端停机机器实际菜单/转移/流体更新/独立 JVM 保存重载已通过；Forge 客户端世界与成品生产环境启动仍待验。
+- P1：恢复完整后续移植源码，最新两平台构建与 574 个共享 core class 验包通过；两版当前源码普通专服实际启动与指定蒸汽引擎制作产物保存重载通过；NeoForge 指定青铜/蒸汽动力链通过。当前双版开发主菜单、Neo 材料/流体库存模型及六物品绘制已通过；Neo 客户端停机机器实际菜单/转移/流体更新/独立 JVM 保存重载已通过；Forge 客户端世界与成品生产环境启动仍待验。
 - P2：NeoForge 给定设备/原料的煤炭供热、铜锡合金、四次青铜铸锭通过，并验证叠放模具逐次消费 9U 盆内容。生存取得设备与原料、制作工具及 Forge 对应运行流程仍未满足完整验收。
 - 世界重载：两版普通专服已保存并重新读取实际制作查询的普通/强化青铜引擎物品。NeoForge 普通专服独立进程同一世界检查已覆盖铜模具/青铜盆、粉碎机未完成作业继续完成、搅拌机命名库存/流体，以及实际蒸汽动力链的产物和竖直冷凝水保留。不是全部机器、精确热量快照、跨版本或旧存档证明。
 - P3–P4：原完整快照的机器、能源、物流、世界生成、渲染、界面与配方移植源码已恢复；各系统的双平台运行、世界持久化和旧存档范围继续逐批补证，不按源码数量声明完成。
@@ -17,7 +17,7 @@
 ## 当前任务
 
 1. 修复两版实际玩法阻塞，优先 NeoForge；集中完成一批再编译/短运行。
-2. 模具/盆与基础机器指定作业已通过 NeoForge 世界重启；继续覆盖热量、燃料、其他配方状态与 Forge 对应运行。柴油系列已同步恢复原 RU/完整燃料记账/背面排气；Neo 同一隔离旧世界实际旋转活塞动力链和保存重载通过，Forge 对应运行仍待验。旧直接 KU 布局需增加旋转活塞；原精确输出 min/max 范围和动画三态继续对齐。
+2. 模具/盆与基础机器指定作业已通过 NeoForge 世界重启；继续覆盖热量、燃料、其他配方状态与 Forge 对应运行。柴油系列已同步恢复原 RU/完整燃料记账/背面排气；Neo 同一隔离旧世界和 Forge 新隔离世界实际旋转活塞动力链、产物自动出箱与保存重载通过；两版原精确输出 min/max 范围已同步。旧直接 KU 布局需增加旋转活塞；动画三态和全燃料/姿态继续对齐。
 3. 已完成 Neo 指定机器客户端界面/方块画面/重载，下一批推进客户端实际动力制作与 Forge 对应运行，补齐生存链与两版差异；木辞典三种种类的原贴图缺口保持未完成。
 4. 保留来源、贡献、许可、历史与未验证范围记录；完整三源整合 goal 保持 active。
 
@@ -99,3 +99,26 @@ Neo 当前开发客户端对同一隔离世界的两个独立 JVM，真实右键
 ## 2026-10-02 / 柴油原RU、燃料完整记账与背面排气
 
 两版柴油修正输出RU/完整配方能量/一包每tick原浪费语义/背面排气，复用共享LiquidFuelCycle。Neo修复前真实1mB柴油只留32、KU链不能供RU旋转活塞；保存旧世界后，新独立JVM原数值读入再由柴油RU→旋转KU完成真实粉碎，完整512能量及背面1mBCO2铜鼓通过；第三独立JVM读取原余量/产物/排气后200tick正常保存。当前字段数值保留，旧直接KU布局需加旋转活塞，不称通用旧档迁移。两包574core类与当前柴油代码通过；Forge动力、客户端和全生存待验，见verification/diesel-power-parity-20261002.md/.json。Goal active。
+
+## 2026-10-02 / Forge 柴油真实动力与双版额定输出
+
+
+
+Forge 1.20.1 新隔离世界给定实际钢柴油机 100mB、青铜旋转活塞、青铜粉碎机一块注册钻石碎片，产物自动进入真实下方箱子。两个另置青铜柴油机各一 mB，观察真实单次燃烧 512 能量，并确认其中一台把 1mB CO2 自动排到后方青铜鼓。没有有效外部 HU/RU/KU 注能、手动机器 tick 或 tick sprint。200 普通世界 tick 后停止供新燃料及加工，正常保存退出。
+
+第二个 Forge JVM 不供应任何燃料或新产物，先比较前一进程保存的三台引擎能量、燃料、排气和 stopped 全部精确数值，再确认箱中产物及鼓中 1mB CO2。三个实际引擎检查 RU 尺寸范围、KU 范围为零和拒绝外部 KU/RU 注能，继续 200 普通 tick 并正常保存退出。停止开关不保留残余功率，其随原每 tick 一包语义自然消耗，不误称全部状态不变。
+
+Neo 1.21.1 对前批同一真实隔离柴油世界再次独立 JVM 重载，读原保存值、箱中产物和鼓中排气，执行新增精确额定范围检查，200 普通 tick 正常保存退出；没有补燃料或替换原状态。此前修复前 KU/32 与修复后 RU/512 的实际差分证据保留在 diesel-power-parity-20261002.md。
+
+- forge_prepare：2m 24s，PID 75524，实际退出 0，200 普通 tick，正常保存停止。
+- forge_reload：2m 42s，PID 13356，实际退出 0，200 普通 tick，正常保存停止。
+- neo_rate_reload：1m 57s，PID 81096，实际退出 0，200 普通 tick，正常保存停止。
+
+双版集中编译 29s，最终双包 3m 13s，574 共享 class 精确一致和生产柴油固定尺寸 class 验包通过。
+
+- Physical Forge chain uses supplied registered machines, 100mB Diesel and one chipped-diamond input; no full survival acquisition or actual crafting UI.
+- Selected steel/bronze horizontal machines prove this layout only; not all fuels/tier/orientations/activity animations/overvoltage.
+- Selected Forge current-source world is saved/reloaded, not the earlier pre-RU Forge layout, original GT6 or cross-Minecraft/source save import.
+- Client powered-world/GUI, installed production-JAR launch, Forge thermal steam chain and complete donor integration remain pending.
+
+复现：Java17 Gradle，Neo 使用现有 Java21 工具链；Forge 新 flat/offline/loopback 隔离目录和既有获用户同意的 EULA 副本。`-PdirectCoreResources=true -PdirectCoreClasspath=true -PdieselPowerSmoke=true -PserverSmokePhase=prepare|verify -PserverSmokeId=<同UUID> -PserverDirectory=build/<新隔离目录> -PserverSmokeX=0 -PserverSmokeY=240 -PserverSmokeZ=0 :runServer`。Neo 同前批世界用 `verify` 加 `-PdieselPowerReadOnly=true :neoforge:runServer`。正式双包不加 directCoreClasspath。第三方许可未改，完整 goal active。
