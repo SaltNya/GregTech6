@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-02",
+  "root_license": "LICENSE",
+  "license_sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+  "gpl_full_text": "docs/licenses/GPL-3.0.txt",
+  "gpl_sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+  "removed_exact_duplicates": [
+    "LICENSE.txt",
+    "COPYING.LESSER",
+    "core/src/main/resources/META-INF/gregtech6/COPYING.LESSER"
+  ],
+  "unchanged_code_license": "LGPL-3.0-or-later",
+  "third_party_notices_preserved": true
+}

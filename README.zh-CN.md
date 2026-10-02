@@ -122,7 +122,7 @@ GregTech6/
 
 ## 许可证
 
-项目代码采用 **LGPL-3.0-or-later**。saltnya 项目所有者于2026-10-02确认采用另外两份移植项目的代码许可。全文见 [LICENSE](LICENSE)、[COPYING](COPYING)，署名与分项范围见 [NOTICE](NOTICE) 和[来源许可记录](docs/integration/LICENSE_REVIEW.md)。
+项目代码采用 **LGPL-3.0-or-later**。saltnya 项目所有者于2026-10-02确认采用另外两份移植项目的代码许可。全文见 [LICENSE](LICENSE)、[GPL 3.0 全文](docs/licenses/GPL-3.0.txt)，署名与分项范围见 [NOTICE](NOTICE) 和[来源许可记录](docs/integration/LICENSE_REVIEW.md)。
 
 原 GT6 默认资产仍为 CC0-1.0（另有声明除外）；GregTech 标志及衍生物仍为 CC BY-NC 4.0。其他第三方声明和作者署名继续保留，代码许可不覆盖重授权资产。原 Forge MDK 模板原文保存在来源审计中，与当前项目声明分开。
 

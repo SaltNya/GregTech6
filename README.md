@@ -122,7 +122,7 @@ Both platforms expose the shared `GregTechAddon` / `GregTechAddons` recipe lifec
 
 ## License
 
-Project code is licensed under **LGPL-3.0-or-later**. The saltnya project owner confirmed this choice on 2026-10-02, aligning the integration with the brokestar233 and masson code declarations. See [LICENSE](LICENSE), [COPYING](COPYING), [NOTICE](NOTICE) and the [source license record](docs/integration/LICENSE_REVIEW.md).
+Project code is licensed under **LGPL-3.0-or-later**. The saltnya project owner confirmed this choice on 2026-10-02, aligning the integration with the brokestar233 and masson code declarations. See [LICENSE](LICENSE), [GPL 3.0 text](docs/licenses/GPL-3.0.txt), [NOTICE](NOTICE) and the [source license record](docs/integration/LICENSE_REVIEW.md).
 
 Upstream GT6 default assets remain CC0-1.0 unless otherwise stated; GregTech logos and derivatives remain CC BY-NC 4.0. Other third-party notices and author attribution are retained. The code license does not relicense assets or third-party components. The old Forge MDK template is preserved in the source audit, separately from the current project declaration.
 

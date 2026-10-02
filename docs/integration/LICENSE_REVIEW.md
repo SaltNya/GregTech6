@@ -1,5 +1,11 @@
 # 许可审查记录
 
+## 2026-10-02 / GitHub 许可导航去重
+
+用户要求将 GitHub 仓库页面的四个许可标签缩减为一个。根目录仅保留原文不变的 LICENSE（LGPL 3.0）；删除其逐字重复的 LICENSE.txt 与 COPYING.LESSER。原 COPYING 是 GPL 3.0 全文，并非另一份 LGPL，原文不变移至 docs/licenses/GPL-3.0.txt，作为 LGPL 引用条款保留。双语 README 与 NOTICE 链接同步更新。
+
+两个模组及 addon SDK 的 META-INF/gregtech6 中同样仅保留 LICENSE、GPL-3.0.txt 和 NOTICE；不删除来源审计中的第三方许可，不变更 LGPL-3.0-or-later 声明和作者署名。新打包后生效，旧成品仍保留旧布局。
+
 ## 当前代码许可 — 2026-10-02
 
 用户直接确认“我就是saltnya所以不管这个项目所属”，并明确要求协议沿用另外两个项目。此前“刚刚这些是坩埚工艺作者说的”属于反馈转述，未用作saltnya授权依据；采用许可依据是随后本人身份确认与同一会话的直接许可选择。
