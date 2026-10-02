@@ -1,0 +1,171 @@
+{
+  "base_commit": "d0bfbea08ae2a32652742c533a89f2930b6e8110",
+  "compiled_sources": [
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/api/machine/BasicMachineEnergy.java",
+      "sha256": "d33a6b24e93f6974477450a24c602dd0fda88831583d4b4d76baf1f73e8f0858"
+    },
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/api/recipe/MachineWorkCost.java",
+      "sha256": "93d9fafb25dde44085cf143a53bdd2c4df87a3b218ab3bac1f231ebb9672e54a"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity.java",
+      "sha256": "59acf9f763c5b8b880937918454ae7434d2e9dfa9e71d60bb4b18b5ea117b102"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity.java",
+      "sha256": "d8966f8c768204250148966557144a2fc73af4f2541c1a709bddd271f5d7da7e"
+    }
+  ],
+  "compile": {
+    "log_path": "work\\machine-energy-compile-20261002.log",
+    "sha256": "f034dbd6636efaefbf10a0c748bfc61266515d322a6870d5a6bb9b76ac83d7d3",
+    "duration": "50s",
+    "core_assertions": 88,
+    "platforms": [
+      "forge",
+      "neoforge"
+    ]
+  },
+  "world": {
+    "id": "112bc23e-bb1f-4f57-b01e-020f66a37661",
+    "directory": "build/machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661",
+    "world": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world"
+  },
+  "runtime": [
+    {
+      "phase": "prepare",
+      "started": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "prepare",
+        "sessionId": "98a2aff9-70ef-4938-b6f6-45ef305e3563",
+        "pid": 79800,
+        "specimenId": "112bc23e-bb1f-4f57-b01e-020f66a37661",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 0,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": true,
+        "machineJobCompleted": false,
+        "steamChainChecked": false
+      },
+      "success": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "prepare",
+        "sessionId": "98a2aff9-70ef-4938-b6f6-45ef305e3563",
+        "pid": 79800,
+        "specimenId": "112bc23e-bb1f-4f57-b01e-020f66a37661",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 10618,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": true,
+        "machineJobCompleted": false,
+        "steamChainChecked": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world\\level.dat",
+        "levelDatBytes": 1904,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world\\region\\r.0.0.mca",
+        "regionBytes": 929792
+      },
+      "admission_checks": 2,
+      "loaded_job_completed": false,
+      "log_path": "work\\machine-energy-neoforge-prepare-20261002.log",
+      "log_sha256": "09087ceba969b3d4a48756eb58cb2622cd97a1cdc384c6b7567cf1bc5ae8bd87",
+      "duration": "1m 48s"
+    },
+    {
+      "phase": "verify",
+      "started": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "verify",
+        "sessionId": "e941a3eb-9642-4cae-83e8-57db89c0d26a",
+        "pid": 34256,
+        "specimenId": "112bc23e-bb1f-4f57-b01e-020f66a37661",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 0,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": true,
+        "machineJobCompleted": false,
+        "steamChainChecked": false
+      },
+      "success": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "verify",
+        "sessionId": "e941a3eb-9642-4cae-83e8-57db89c0d26a",
+        "pid": 34256,
+        "specimenId": "112bc23e-bb1f-4f57-b01e-020f66a37661",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 10177,
+        "restartWorldReadVerified": true,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": true,
+        "machineJobCompleted": true,
+        "steamChainChecked": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world\\level.dat",
+        "levelDatBytes": 1901,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\machine-energy-20261002-112bc23e-bb1f-4f57-b01e-020f66a37661\\world\\region\\r.0.0.mca",
+        "regionBytes": 933888
+      },
+      "admission_checks": 2,
+      "loaded_job_completed": true,
+      "log_path": "work\\machine-energy-neoforge-verify-20261002.log",
+      "log_sha256": "2d87f587178bc97873f9cefe17729f99e71333d6b0c2272000a85c227e488221",
+      "duration": "1m 35s"
+    }
+  ],
+  "limits": [
+    "Neo runtime uses existing development dedicated-server machine checkpoint, not installed production JAR.",
+    "Stopped mixer rejection and simulation preserve actual inventory/fluid components.",
+    "The loaded crusher job completes with supplied KU and manual machine tick calls in the existing fixture; not a new natural powered survival proof.",
+    "No runtime Forge counterpart, external provider misbehavior/transactions, all cover modes, all high-tier recipes or universal legacy/cross-version migration proof."
+  ],
+  "full_integration_complete": false
+}
