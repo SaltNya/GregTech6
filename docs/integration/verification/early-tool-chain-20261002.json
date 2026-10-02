@@ -1,0 +1,218 @@
+{
+  "status": "passed-with-explicit-scope",
+  "goal_status": "active",
+  "integration_base": "0d6cca56375ccbc6182d3deed4f43766eeabebff",
+  "production_build_commit": "4a8f7b246f54b5e430b8070fba7ce0ff16f166e3",
+  "production_sources_unchanged": true,
+  "logs": {
+    "prepare": {
+      "path": "work/early-tool-chain-prepare-20261002.log",
+      "sha256": "af4cf64e39712d94af0018f315bef226ba40d63194e3f3ca7dc3eeabb54c3cc6",
+      "duration": "1m 54s"
+    },
+    "verify": {
+      "path": "work/early-tool-chain-verify-20261002.log",
+      "sha256": "49d21fd3ec3cc32d1acb8ac7e6592a4ec10fa8be8f6b724441e2ab677611eaef",
+      "duration": "1m 52s"
+    },
+    "compile": {
+      "path": "work/early-tool-chain-compile-20261002.log",
+      "sha256": "c321cb61ad298e7d6c0b23eaea3faa846ccbd1841de5994c4059fc9d01b916ff",
+      "exit_code": 0,
+      "duration": "20s"
+    },
+    "failed_probe_compile": {
+      "path": "work/early-tool-chain-compile-failed-prefix-20261002.log",
+      "sha256": "6b51f199e97eb62c89166fd40c23686736b600dd9dc13f3af76d57076cd77428",
+      "exit_code": 1,
+      "duration": "38s"
+    }
+  },
+  "ordinary_neoforge_runs": {
+    "prepare": {
+      "exit_code": 0,
+      "started": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "prepare",
+        "sessionId": "06640cf8-8cff-4745-b8e4-b7d925d875dc",
+        "pid": 77032,
+        "specimenId": "7cde66b9-44e4-4b39-bed5-4310706171ec",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\early-tool-chain-20261002-7cde66b9-44e4-4b39-bed5-4310706171ec\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 1,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": false,
+        "machineJobCompleted": false,
+        "steamChainChecked": false
+      },
+      "actual_stock_receipts": [
+        {
+          "specimenId": "7cde66b9-44e4-4b39-bed5-4310706171ec",
+          "workbenchResultSlotClicked": true,
+          "actualOreHarvests": 4,
+          "pickWear": 300,
+          "items": {
+            "2": "{components:{\"minecraft:attribute_modifiers\":{modifiers:[{amount:4.0d,id:\"gregtech:tool_attack_damage\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_damage\"},{amount:-2.799999952316284d,id:\"gregtech:tool_attack_speed\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_speed\"}],show_in_tooltip:0b},\"minecraft:custom_data\":{GT.ToolStats:{handle:\"Wood\",head:\"Flint\"}},\"minecraft:damage\":300,\"minecraft:max_damage\":4800},count:1,id:\"gregtech:tool_pickaxe\"}",
+            "3": "{count:3,id:\"gregtech:ore_raw_copper\"}",
+            "4": "{count:1,id:\"gregtech:ore_raw_tin\"}"
+          }
+        }
+      ],
+      "success": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "prepare",
+        "sessionId": "06640cf8-8cff-4745-b8e4-b7d925d875dc",
+        "pid": 77032,
+        "specimenId": "7cde66b9-44e4-4b39-bed5-4310706171ec",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\early-tool-chain-20261002-7cde66b9-44e4-4b39-bed5-4310706171ec\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 10968,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": false,
+        "machineJobCompleted": false,
+        "steamChainChecked": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\early-tool-chain-20261002-7cde66b9-44e4-4b39-bed5-4310706171ec\\world\\level.dat",
+        "levelDatBytes": 1900,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\early-tool-chain-20261002-7cde66b9-44e4-4b39-bed5-4310706171ec\\world\\region\\r.0.0.mca",
+        "regionBytes": 929792
+      }
+    },
+    "verify": {
+      "exit_code": 0,
+      "started": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "verify",
+        "sessionId": "364318c4-4402-4bcf-b784-cb4a1ab6b386",
+        "pid": 78896,
+        "specimenId": "7cde66b9-44e4-4b39-bed5-4310706171ec",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\early-tool-chain-20261002-7cde66b9-44e4-4b39-bed5-4310706171ec\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 0,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": false,
+        "machineJobCompleted": false,
+        "steamChainChecked": false
+      },
+      "actual_stock_receipts": [
+        {
+          "specimenId": "7cde66b9-44e4-4b39-bed5-4310706171ec",
+          "workbenchResultSlotClicked": true,
+          "actualOreHarvests": 4,
+          "pickWear": 300,
+          "items": {
+            "2": "{components:{\"minecraft:attribute_modifiers\":{modifiers:[{amount:4.0d,id:\"gregtech:tool_attack_damage\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_damage\"},{amount:-2.799999952316284d,id:\"gregtech:tool_attack_speed\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_speed\"}],show_in_tooltip:0b},\"minecraft:custom_data\":{GT.ToolStats:{handle:\"Wood\",head:\"Flint\"}},\"minecraft:damage\":300,\"minecraft:max_damage\":4800},count:1,id:\"gregtech:tool_pickaxe\"}",
+            "3": "{count:3,id:\"gregtech:ore_raw_copper\"}",
+            "4": "{count:1,id:\"gregtech:ore_raw_tin\"}"
+          }
+        },
+        {
+          "specimenId": "7cde66b9-44e4-4b39-bed5-4310706171ec",
+          "workbenchResultSlotClicked": true,
+          "actualOreHarvests": 4,
+          "pickWear": 300,
+          "items": {
+            "2": "{components:{\"minecraft:attribute_modifiers\":{modifiers:[{amount:4.0d,id:\"gregtech:tool_attack_damage\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_damage\"},{amount:-2.799999952316284d,id:\"gregtech:tool_attack_speed\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_speed\"}],show_in_tooltip:0b},\"minecraft:custom_data\":{GT.ToolStats:{handle:\"Wood\",head:\"Flint\"}},\"minecraft:damage\":300,\"minecraft:max_damage\":4800},count:1,id:\"gregtech:tool_pickaxe\"}",
+            "3": "{count:3,id:\"gregtech:ore_raw_copper\"}",
+            "4": "{count:1,id:\"gregtech:ore_raw_tin\"}"
+          }
+        }
+      ],
+      "success": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "verify",
+        "sessionId": "364318c4-4402-4bcf-b784-cb4a1ab6b386",
+        "pid": 78896,
+        "specimenId": "7cde66b9-44e4-4b39-bed5-4310706171ec",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\early-tool-chain-20261002-7cde66b9-44e4-4b39-bed5-4310706171ec\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 10218,
+        "restartWorldReadVerified": true,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": false,
+        "machineJobCompleted": false,
+        "steamChainChecked": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\early-tool-chain-20261002-7cde66b9-44e4-4b39-bed5-4310706171ec\\world\\level.dat",
+        "levelDatBytes": 1899,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\early-tool-chain-20261002-7cde66b9-44e4-4b39-bed5-4310706171ec\\world\\region\\r.0.0.mca",
+        "regionBytes": 933888
+      }
+    }
+  },
+  "actual_snapshot": {
+    "specimenId": "7cde66b9-44e4-4b39-bed5-4310706171ec",
+    "workbenchResultSlotClicked": true,
+    "actualOreHarvests": 4,
+    "pickWear": 300,
+    "items": {
+      "2": "{components:{\"minecraft:attribute_modifiers\":{modifiers:[{amount:4.0d,id:\"gregtech:tool_attack_damage\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_damage\"},{amount:-2.799999952316284d,id:\"gregtech:tool_attack_speed\",operation:\"add_value\",slot:\"mainhand\",type:\"minecraft:generic.attack_speed\"}],show_in_tooltip:0b},\"minecraft:custom_data\":{GT.ToolStats:{handle:\"Wood\",head:\"Flint\"}},\"minecraft:damage\":300,\"minecraft:max_damage\":4800},count:1,id:\"gregtech:tool_pickaxe\"}",
+      "3": "{count:3,id:\"gregtech:ore_raw_copper\"}",
+      "4": "{count:1,id:\"gregtech:ore_raw_tin\"}"
+    }
+  },
+  "shared_classes": 574,
+  "artifacts": {
+    "forge": {
+      "delivered_path": "C:\\Users\\Asus\\Documents\\Codex\\2026-09-30\\goal-gregtech-6-minecraft-1-20-3\\outputs\\release-0.0.0\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38595766,
+      "sha256": "34fbeb57d60dcf1caf53f7c4eeaae14ec589fabc761c93a907b602ee132fd3c5"
+    },
+    "neoforge": {
+      "delivered_path": "C:\\Users\\Asus\\Documents\\Codex\\2026-09-30\\goal-gregtech-6-minecraft-1-20-3\\outputs\\release-0.0.0\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36786869,
+      "sha256": "d04873894d9c4720f291370c0a28459b1340885f6638779f054da51aa3f053d4"
+    }
+  },
+  "limitations": [
+    "Standing flint rocks, twigs, crafting table, supports and normal copper/tin ore are placed by the opt-in checkpoint. Natural generation/discovery and survival workbench acquisition are not proved.",
+    "A server FakePlayer in survival performs actual right-click collection, real CraftingMenu result-slot click and ServerPlayerGameMode.destroyBlock. No real client GUI or wall-clock mining delay is claimed.",
+    "Actual ore ItemEntity drops are transferred to the actor inventory by the checkpoint; walking-based native client pickup is not proved.",
+    "Exact saved chest ItemStack SNBT components are compared semantically using TagParser before any reload ticks and again at tick 200; no synthetic item load or stock repair. Only these selected three chest slots are claimed.",
+    "Selected NeoForge Flint/Wood pick and four normal Cu/Tin ores; no all-tool/all-material/fortune/Forge counterpart runtime coverage this batch.",
+    "Smelting these actual raw ores into bronze, bronze head casting/assembly, natural world survival, powered clients, installed JAR runtime and complete three-source integration remain pending."
+  ]
+}
