@@ -1,0 +1,196 @@
+{
+  "status": "passed-with-explicit-scope",
+  "goal_status": "active",
+  "integration_base": "ff90ac50886b10b7cf19dc4eed00ac532da62b88",
+  "new_shared_recipes": 8,
+  "new_shared_tags": 4,
+  "shared_static_recipe_count": 2192,
+  "ordinary_server_runs": {
+    "neoforge": {
+      "exit_code": 0,
+      "started": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "prepare",
+        "sessionId": "b240fd2e-de25-4a6e-9872-b59a0a198cb0",
+        "pid": 78356,
+        "specimenId": "28dddafa-c046-4023-9914-b29440712f0c",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\diesel-crafting-20261002-28dddafa-c046-4023-9914-b29440712f0c\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 0,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": false,
+        "machineJobCompleted": false,
+        "steamChainChecked": false
+      },
+      "crafting_checkpoint": {
+        "platform": "neoforge",
+        "recipes": 8,
+        "actualSerializerRoundTrips": 25,
+        "bottle250AndVessel1000": true,
+        "lubRoCantAlias": true,
+        "emptyContainersReturned": true,
+        "legacyFillingStill1000": true,
+        "rejectEarlyOilAndShortVessel": true,
+        "nonMirrorShape": true,
+        "playerCraftingClickVerified": false
+      },
+      "success": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "phase": "prepare",
+        "sessionId": "b240fd2e-de25-4a6e-9872-b59a0a198cb0",
+        "pid": 78356,
+        "specimenId": "28dddafa-c046-4023-9914-b29440712f0c",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\diesel-crafting-20261002-28dddafa-c046-4023-9914-b29440712f0c\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 10914,
+        "restartWorldReadVerified": false,
+        "smelteryWorldChecked": false,
+        "machineWorldChecked": false,
+        "machineJobCompleted": false,
+        "steamChainChecked": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\diesel-crafting-20261002-28dddafa-c046-4023-9914-b29440712f0c\\world\\level.dat",
+        "levelDatBytes": 1900,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\diesel-crafting-20261002-28dddafa-c046-4023-9914-b29440712f0c\\world\\region\\r.0.0.mca",
+        "regionBytes": 929792
+      }
+    },
+    "forge": {
+      "exit_code": 0,
+      "started": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "prepare",
+        "sessionId": "2e2478a7-b0c7-4588-81ba-eed2a8f448d5",
+        "pid": 80936,
+        "specimenId": "ac6cac56-15fe-4057-b170-d82e2d79d900",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\diesel-crafting-20261002-ac6cac56-15fe-4057-b170-d82e2d79d900\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "elapsedMs": 1,
+        "restartWorldReadVerified": false
+      },
+      "crafting_checkpoint": {
+        "platform": "forge",
+        "recipes": 8,
+        "actualSerializerRoundTrips": 17,
+        "bottle250AndVessel1000": true,
+        "emptyContainersReturned": true,
+        "legacyFillingStill1000": true,
+        "rejectEarlyOil": true,
+        "nonMirrorShape": true,
+        "playerCraftingClickVerified": false
+      },
+      "success": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "prepare",
+        "sessionId": "2e2478a7-b0c7-4588-81ba-eed2a8f448d5",
+        "pid": 80936,
+        "specimenId": "ac6cac56-15fe-4057-b170-d82e2d79d900",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\diesel-crafting-20261002-ac6cac56-15fe-4057-b170-d82e2d79d900\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "elapsedMs": 11335,
+        "restartWorldReadVerified": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\diesel-crafting-20261002-ac6cac56-15fe-4057-b170-d82e2d79d900\\world\\level.dat",
+        "levelDatBytes": 787954,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\diesel-crafting-20261002-ac6cac56-15fe-4057-b170-d82e2d79d900\\world\\region\\r.0.0.mca",
+        "regionBytes": 2174976
+      }
+    }
+  },
+  "logs": {
+    "diesel-crafting-compile-20261002-failed-probe-import": {
+      "path": "work/diesel-crafting-compile-20261002-failed-probe-import.log",
+      "sha256": "a28e09b142136ea26aa79af0fcd032a162c30e7dcfce44941bcaffd80cea1ae8",
+      "exit_code": 1,
+      "duration": "43s"
+    },
+    "diesel-crafting-compile-final-20261002": {
+      "path": "work/diesel-crafting-compile-final-20261002.log",
+      "sha256": "4f9557ef190779dbb4033c9633b4aac55c8185a9a2dd9dd723f17da36450f8db",
+      "exit_code": 0,
+      "duration": "17s"
+    },
+    "diesel-crafting-jars-20261002": {
+      "path": "work/diesel-crafting-jars-20261002.log",
+      "sha256": "2b4154b573b272d0da3cf898894d0eda729f7d69b053aeccac327fa0e47fd517",
+      "exit_code": 0,
+      "duration": "1m 1s"
+    },
+    "neo-diesel-crafting-20261002": {
+      "path": "work/neo-diesel-crafting-20261002.log",
+      "sha256": "625967af6a4c51b381c24fe2a44c34f946861db9d24ed0028b9c6798841198d9",
+      "exit_code": 0,
+      "duration": "1m 57s"
+    },
+    "forge-diesel-crafting-20261002": {
+      "path": "work/forge-diesel-crafting-20261002.log",
+      "sha256": "b75aa6062a1b5353f5e7a291a79ef7c33dd7040a73983296dfe481eff934b1d1",
+      "exit_code": 0,
+      "duration": "2m 17s"
+    }
+  },
+  "initial_failed_attempt": "Probe referenced BlockMaterialPrefix in wrong package; production sources compiled. Corrected probe to existing api.prefix class; 43s failed log retained.",
+  "packaging_shared_classes": 573,
+  "all_new_resources_match_both_jars": true,
+  "artifacts": {
+    "forge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38593987,
+      "sha256": "01e0c89dc97cbaca816c1a4f0a3b7ba2dc4c0694023745dc616a68b2d74a9895"
+    },
+    "neoforge": {
+      "path": "F:\\Dev\\GregtTech6New\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36785077,
+      "sha256": "d4333c223d0fdee543baf06f76445abae7ed16cc77eaa5c1231cf5466236693b"
+    }
+  },
+  "limitations": [
+    "Supplied-input crafting queries, not player workbench clicks, survival acquisition or placed/fuel-powered diesel engines.",
+    "Each platform has one ordinary prepare server, 200 ticks and a normal saved stop; no crafted diesel item/block world-reload check in this batch.",
+    "Original GT6 9145–9149/9197–9199 diesel family emits RU; retained Forge and Neo engine family emits KU. This inherited semantic gap remains unresolved. No balancing change made by this crafting batch.",
+    "New opt-in ingredient flag adds a field to Forge recipe network codec. Matching client/server builds are required; old-build network compatibility is not established. Saves/registry IDs unchanged.",
+    "Native additionally verifies actual LubRoCant alias, empty/999mB/display rejection; these extra cases were not exercised on Forge in this batch. Neither platform exercises every ANY.Steel equivalent or arbitrary third-party container.",
+    "No new client launch, installed production JAR, old-world migration, source-directory edit or licensing change."
+  ]
+}
