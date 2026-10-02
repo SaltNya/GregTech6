@@ -1,0 +1,305 @@
+{
+  "status": "passed-with-explicit-scope",
+  "integration_base": "4a8f7b246f54b5e430b8070fba7ce0ff16f166e3",
+  "goal_status": "active",
+  "production_build_commit": "4a8f7b246f54b5e430b8070fba7ce0ff16f166e3",
+  "production_sources_unchanged": true,
+  "logs": {
+    "prepare": {
+      "path": "work/forge-steam-chain-prepare-20261002.log",
+      "sha256": "1b29c878433ff626311673c8648d90f2b49703bddf715b2441fb671c9ccd7419",
+      "duration": "6m 50s"
+    },
+    "verify": {
+      "path": "work/forge-steam-chain-verify-20261002.log",
+      "sha256": "cbcd6e84567f9d8a22117f7721ce7562c54faacfc18e33e6101a54040916f3c3",
+      "duration": "2m 40s"
+    },
+    "compile": {
+      "path": "work/forge-steam-chain-compile-20261002.log",
+      "sha256": "ed4f4784849aab8e6a8cd2aebd06cdf7836f2de7fda2d03909de55fbfd9c685c",
+      "duration": "19s"
+    }
+  },
+  "ordinary_forge_runs": {
+    "prepare": {
+      "exit_code": 0,
+      "started": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "prepare",
+        "sessionId": "92cdb055-36fb-4bf1-93f2-65c20bc64f42",
+        "pid": 69008,
+        "specimenId": "9ddcd04f-398d-42c6-88f2-4f440326eff5",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-steam-chain-20261002-9ddcd04f-398d-42c6-88f2-4f440326eff5\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "requiredTicks": 12000,
+        "steamChainChecked": true,
+        "elapsedMs": 2,
+        "restartWorldReadVerified": false
+      },
+      "prior_disk_stock": null,
+      "final_checkpoint": {
+        "specimenId": "9ddcd04f-398d-42c6-88f2-4f440326eff5",
+        "ordinaryTicks": 5559,
+        "states": {
+          "burningBox": {
+            "block": "gregtech:burning_box_solid_dense_bronze",
+            "persistentNbt": "{gt.active:1b,gt.efficiency:7500,gt.energy:6528L,gt.inv:{Items:[{Count:46b,Slot:0,id:\"minecraft:coal\"},{Count:36b,Slot:1,id:\"gregtech:dust_tiny_darkashes\"}],Size:2},gt.output:96L,gt.painted:0b}"
+          },
+          "boiler": {
+            "block": "gregtech:strong_steam_boiler_bronze",
+            "persistentNbt": "{gt.cooldown:127,gt.efficiency:10000s,gt.heat:32L,gt.painted:0b,gt.steam:{Amount:960064L,Capacity:1920000L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},gt.water:{Amount:4000L,Capacity:4000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}}}"
+          },
+          "steamPipe": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:0b,gt.painted:0b,gt.tank.0:{Amount:191L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},gt.temperature:289L,gt.transferred:192L}"
+          },
+          "engine": {
+            "block": "gregtech:engine_steam_strong_bronze",
+            "persistentNbt": "{enabled:1b,fc_energyIn:0,fc_energyOut:8,fc_fluidIn:32,fc_fluidOut:23,gt.engine_state:8,gt.painted:0b,gt.piston:1,kuEnergy:25624L,outputRate:48L,shutdown:0b,steamTank:{Amount:25L,Capacity:19200L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},waterTank:{Amount:0L,Capacity:19200L}}"
+          },
+          "crusher": {
+            "block": "gregtech:crusher_bronze",
+            "persistentNbt": "{gt.control_stopped:0b,gt.cover_ticks:5558L,gt.energy:0L,gt.inventory:{Items:[],Size:13},gt.max_progress:0L,gt.min_energy:0L,gt.painted:0b,gt.parallel:1,gt.progress:0L}"
+          },
+          "outputChest": {
+            "block": "minecraft:chest",
+            "persistentNbt": "{Items:[{Count:1b,Slot:0b,id:\"gregtech:dust_small_diamond\"}]}"
+          },
+          "waterPipe1": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:32b,gt.painted:0b,gt.tank.0:{Amount:1199L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L,gt.transferred:1L}"
+          },
+          "waterPipe2": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:0b,gt.painted:0b,gt.tank.0:{Amount:1200L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L,gt.transferred:1L}"
+          },
+          "waterDrum": {
+            "block": "gregtech:drum_bronze",
+            "persistentNbt": "{gt.auto_output:1b,gt.max_sealed_time:0L,gt.painted:0b,gt.sealed_time:0L,gt.soft_hammer:0b,gt.tank:{Amount:40933L,Capacity:64000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L}"
+          },
+          "verticalEngine": {
+            "block": "gregtech:engine_steam_bronze",
+            "persistentNbt": "{enabled:1b,fc_energyIn:0,fc_energyOut:8,fc_fluidIn:32,fc_fluidOut:23,gt.engine_state:0,gt.painted:0b,gt.piston:0,kuEnergy:50L,outputRate:12L,shutdown:0b,steamTank:{Amount:0L,Capacity:4800L},waterTank:{Amount:0L,Capacity:4800L}}"
+          },
+          "condensateDrum": {
+            "block": "gregtech:drum_bronze",
+            "persistentNbt": "{gt.auto_output:0b,gt.max_sealed_time:0L,gt.painted:0b,gt.sealed_time:0L,gt.soft_hammer:0b,gt.tank:{Amount:1L,Capacity:64000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L}"
+          }
+        }
+      },
+      "success": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "prepare",
+        "sessionId": "92cdb055-36fb-4bf1-93f2-65c20bc64f42",
+        "pid": 69008,
+        "specimenId": "9ddcd04f-398d-42c6-88f2-4f440326eff5",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-steam-chain-20261002-9ddcd04f-398d-42c6-88f2-4f440326eff5\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 5559,
+        "requiredTicks": 5559,
+        "steamChainChecked": true,
+        "elapsedMs": 279184,
+        "restartWorldReadVerified": false,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-steam-chain-20261002-9ddcd04f-398d-42c6-88f2-4f440326eff5\\world\\level.dat",
+        "levelDatBytes": 787927,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-steam-chain-20261002-9ddcd04f-398d-42c6-88f2-4f440326eff5\\world\\region\\r.0.0.mca",
+        "regionBytes": 2174976
+      }
+    },
+    "verify": {
+      "exit_code": 0,
+      "started": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "verify",
+        "sessionId": "93ccd14c-668b-49fd-a094-e08804c07636",
+        "pid": 79680,
+        "specimenId": "9ddcd04f-398d-42c6-88f2-4f440326eff5",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-steam-chain-20261002-9ddcd04f-398d-42c6-88f2-4f440326eff5\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 0,
+        "requiredTicks": 200,
+        "steamChainChecked": true,
+        "elapsedMs": 1,
+        "restartWorldReadVerified": false
+      },
+      "prior_disk_stock": {
+        "specimenId": "9ddcd04f-398d-42c6-88f2-4f440326eff5",
+        "ordinaryTicks": 5559,
+        "states": {
+          "burningBox": {
+            "block": "gregtech:burning_box_solid_dense_bronze",
+            "persistentNbt": "{gt.active:1b,gt.efficiency:7500,gt.energy:6528L,gt.inv:{Items:[{Count:46b,Slot:0,id:\"minecraft:coal\"},{Count:36b,Slot:1,id:\"gregtech:dust_tiny_darkashes\"}],Size:2},gt.output:96L,gt.painted:0b}"
+          },
+          "boiler": {
+            "block": "gregtech:strong_steam_boiler_bronze",
+            "persistentNbt": "{gt.cooldown:127,gt.efficiency:10000s,gt.heat:32L,gt.painted:0b,gt.steam:{Amount:960064L,Capacity:1920000L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},gt.water:{Amount:4000L,Capacity:4000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}}}"
+          },
+          "steamPipe": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:0b,gt.painted:0b,gt.tank.0:{Amount:191L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},gt.temperature:289L,gt.transferred:192L}"
+          },
+          "engine": {
+            "block": "gregtech:engine_steam_strong_bronze",
+            "persistentNbt": "{enabled:1b,fc_energyIn:0,fc_energyOut:8,fc_fluidIn:32,fc_fluidOut:23,gt.engine_state:8,gt.painted:0b,gt.piston:1,kuEnergy:25624L,outputRate:48L,shutdown:0b,steamTank:{Amount:25L,Capacity:19200L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},waterTank:{Amount:0L,Capacity:19200L}}"
+          },
+          "crusher": {
+            "block": "gregtech:crusher_bronze",
+            "persistentNbt": "{gt.control_stopped:0b,gt.cover_ticks:5558L,gt.energy:0L,gt.inventory:{Items:[],Size:13},gt.max_progress:0L,gt.min_energy:0L,gt.painted:0b,gt.parallel:1,gt.progress:0L}"
+          },
+          "outputChest": {
+            "block": "minecraft:chest",
+            "persistentNbt": "{Items:[{Count:1b,Slot:0b,id:\"gregtech:dust_small_diamond\"}]}"
+          },
+          "waterPipe1": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:32b,gt.painted:0b,gt.tank.0:{Amount:1199L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L,gt.transferred:1L}"
+          },
+          "waterPipe2": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:0b,gt.painted:0b,gt.tank.0:{Amount:1200L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L,gt.transferred:1L}"
+          },
+          "waterDrum": {
+            "block": "gregtech:drum_bronze",
+            "persistentNbt": "{gt.auto_output:1b,gt.max_sealed_time:0L,gt.painted:0b,gt.sealed_time:0L,gt.soft_hammer:0b,gt.tank:{Amount:40933L,Capacity:64000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L}"
+          },
+          "verticalEngine": {
+            "block": "gregtech:engine_steam_bronze",
+            "persistentNbt": "{enabled:1b,fc_energyIn:0,fc_energyOut:8,fc_fluidIn:32,fc_fluidOut:23,gt.engine_state:0,gt.painted:0b,gt.piston:0,kuEnergy:50L,outputRate:12L,shutdown:0b,steamTank:{Amount:0L,Capacity:4800L},waterTank:{Amount:0L,Capacity:4800L}}"
+          },
+          "condensateDrum": {
+            "block": "gregtech:drum_bronze",
+            "persistentNbt": "{gt.auto_output:0b,gt.max_sealed_time:0L,gt.painted:0b,gt.sealed_time:0L,gt.soft_hammer:0b,gt.tank:{Amount:1L,Capacity:64000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L}"
+          }
+        }
+      },
+      "final_checkpoint": {
+        "specimenId": "9ddcd04f-398d-42c6-88f2-4f440326eff5",
+        "ordinaryTicks": 200,
+        "states": {
+          "burningBox": {
+            "block": "gregtech:burning_box_solid_dense_bronze",
+            "persistentNbt": "{gt.active:1b,gt.efficiency:7500,gt.energy:17424L,gt.inv:{Items:[{Count:45b,Slot:0,id:\"minecraft:coal\"},{Count:38b,Slot:1,id:\"gregtech:dust_tiny_darkashes\"}],Size:2},gt.output:96L,gt.painted:0b}"
+          },
+          "boiler": {
+            "block": "gregtech:strong_steam_boiler_bronze",
+            "persistentNbt": "{gt.cooldown:127,gt.efficiency:10000s,gt.heat:96L,gt.painted:0b,gt.steam:{Amount:960128L,Capacity:1920000L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},gt.water:{Amount:4000L,Capacity:4000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}}}"
+          },
+          "steamPipe": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:0b,gt.painted:0b,gt.tank.0:{Amount:383L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},gt.temperature:289L,gt.transferred:192L}"
+          },
+          "engine": {
+            "block": "gregtech:engine_steam_strong_bronze",
+            "persistentNbt": "{enabled:1b,fc_energyIn:0,fc_energyOut:8,fc_fluidIn:32,fc_fluidOut:23,gt.engine_state:9,gt.painted:0b,gt.piston:1,kuEnergy:29294L,outputRate:48L,shutdown:0b,steamTank:{Amount:249L,Capacity:19200L,Fluid:{Amount:1,FluidName:\"gregtech:steam\"}},waterTank:{Amount:0L,Capacity:19200L}}"
+          },
+          "crusher": {
+            "block": "gregtech:crusher_bronze",
+            "persistentNbt": "{gt.control_stopped:0b,gt.cover_ticks:5757L,gt.energy:30L,gt.inventory:{Items:[],Size:13},gt.max_progress:0L,gt.min_energy:0L,gt.painted:0b,gt.parallel:1,gt.progress:0L}"
+          },
+          "outputChest": {
+            "block": "minecraft:chest",
+            "persistentNbt": "{Items:[{Count:1b,Slot:0b,id:\"gregtech:dust_small_diamond\"}]}"
+          },
+          "waterPipe1": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:32b,gt.painted:0b,gt.tank.0:{Amount:1199L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L,gt.transferred:2L}"
+          },
+          "waterPipe2": {
+            "block": "gregtech:pipe_medium_steel",
+            "persistentNbt": "{gt.last_received0:0b,gt.painted:0b,gt.tank.0:{Amount:1198L,Capacity:1200L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L,gt.transferred:2L}"
+          },
+          "waterDrum": {
+            "block": "gregtech:drum_bronze",
+            "persistentNbt": "{gt.auto_output:1b,gt.max_sealed_time:0L,gt.painted:0b,gt.sealed_time:0L,gt.soft_hammer:0b,gt.tank:{Amount:40697L,Capacity:64000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L}"
+          },
+          "verticalEngine": {
+            "block": "gregtech:engine_steam_bronze",
+            "persistentNbt": "{enabled:1b,fc_energyIn:0,fc_energyOut:8,fc_fluidIn:32,fc_fluidOut:23,gt.engine_state:0,gt.painted:0b,gt.piston:0,kuEnergy:50L,outputRate:12L,shutdown:0b,steamTank:{Amount:0L,Capacity:4800L},waterTank:{Amount:0L,Capacity:4800L}}"
+          },
+          "condensateDrum": {
+            "block": "gregtech:drum_bronze",
+            "persistentNbt": "{gt.auto_output:0b,gt.max_sealed_time:0L,gt.painted:0b,gt.sealed_time:0L,gt.soft_hammer:0b,gt.tank:{Amount:1L,Capacity:64000L,Fluid:{Amount:1,FluidName:\"gregtech:ic2distilledwater\"}},gt.temperature:289L}"
+          }
+        }
+      },
+      "success": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "phase": "verify",
+        "sessionId": "93ccd14c-668b-49fd-a094-e08804c07636",
+        "pid": 79680,
+        "specimenId": "9ddcd04f-398d-42c6-88f2-4f440326eff5",
+        "serverClass": "net.minecraft.server.dedicated.DedicatedServer",
+        "worldRoot": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-steam-chain-20261002-9ddcd04f-398d-42c6-88f2-4f440326eff5\\world",
+        "x": 0,
+        "y": 240,
+        "z": 0,
+        "dirtX": 1,
+        "dirtY": 240,
+        "dirtZ": 0,
+        "copperCount": 3,
+        "ironCount": 1,
+        "observedTicks": 200,
+        "requiredTicks": 200,
+        "steamChainChecked": true,
+        "elapsedMs": 10920,
+        "restartWorldReadVerified": true,
+        "normalStopObserved": true,
+        "levelDat": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-steam-chain-20261002-9ddcd04f-398d-42c6-88f2-4f440326eff5\\world\\level.dat",
+        "levelDatBytes": 787925,
+        "region": "F:\\Dev\\GregtTech6New\\GregTech6\\build\\forge-steam-chain-20261002-9ddcd04f-398d-42c6-88f2-4f440326eff5\\world\\region\\r.0.0.mca",
+        "regionBytes": 2179072
+      }
+    }
+  },
+  "shared_classes": 574,
+  "artifacts": {
+    "forge": {
+      "delivered_path": "C:\\Users\\Asus\\Documents\\Codex\\2026-09-30\\goal-gregtech-6-minecraft-1-20-3\\outputs\\release-0.0.0\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 38595766,
+      "sha256": "34fbeb57d60dcf1caf53f7c4eeaae14ec589fabc761c93a907b602ee132fd3c5"
+    },
+    "neoforge": {
+      "delivered_path": "C:\\Users\\Asus\\Documents\\Codex\\2026-09-30\\goal-gregtech-6-minecraft-1-20-3\\outputs\\release-0.0.0\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 36786869,
+      "sha256": "d04873894d9c4720f291370c0a28459b1340885f6638779f054da51aa3f053d4"
+    }
+  },
+  "limitations": [
+    "Given machines, 64 coal, 4000mB boiler distilled water plus 50000mB supply and registered chipped-diamond feed; not full survival acquisition/tool crafting.",
+    "Selected dense-bronze box/strong bronze boiler/steel pipes/strong bronze engine/bronze crusher and vertical bronze condensate path only.",
+    "Actual exact persisted NBT before first reload tick covers selected heat/cooldown/efficiency/tanks/engine buffer and pressure state/fuel/ash/pipe inventory/temperature/transfer/sides/tank automation/output; volatile unsaved animation clocks are not claimed.",
+    "Current local Forge world; no original GT6, other-source or cross-Minecraft save import. After reload normal machines continue changing state.",
+    "No current Forge client powered-world or installed-JAR launch; full integration remains active. Existing Neo steam evidence retains its earlier snapshot/sprint scope."
+  ]
+}

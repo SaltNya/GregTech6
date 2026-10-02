@@ -3,7 +3,7 @@
 更新：2026-10-02。Goal active。当前工作目录为 `F:\Dev\GregtTech6New\GregTech6`；优先对齐 Forge 1.20.1 与 NeoForge 1.21.1，继续采用集中小检查节奏。
 
 - P0：三源审计、全部逐文件清单、项目1副本校验及原始Forge构建已完成；项目1授权和历史仍待用户信息。
-- P1：恢复完整后续移植源码，最新两平台构建与 574 个共享 core class 验包通过；两版当前源码普通专服实际启动与指定蒸汽引擎制作产物保存重载通过；NeoForge 指定青铜/蒸汽动力链通过。当前双版开发主菜单、Neo 材料/流体库存模型及六物品绘制已通过；Neo 客户端停机机器实际菜单/转移/流体更新/独立 JVM 保存重载已通过；Forge 客户端世界与成品生产环境启动仍待验。
+- P1：恢复完整后续移植源码，最新两平台构建与 574 个共享 core class 验包通过；两版当前源码普通专服实际启动与指定蒸汽引擎制作产物保存重载通过；NeoForge 指定青铜/蒸汽动力链与 Forge 指定普通蒸汽动力/精确持久化状态重载通过。当前双版开发主菜单、Neo 材料/流体库存模型及六物品绘制已通过；Neo 客户端停机机器实际菜单/转移/流体更新/独立 JVM 保存重载已通过；Forge 客户端世界与成品生产环境启动仍待验。
 - P2：NeoForge 给定设备/原料的煤炭供热、铜锡合金、四次青铜铸锭通过，并验证叠放模具逐次消费 9U 盆内容。生存取得设备与原料、制作工具及 Forge 对应运行流程仍未满足完整验收。
 - 世界重载：两版普通专服已保存并重新读取实际制作查询的普通/强化青铜引擎物品。NeoForge 普通专服独立进程同一世界检查已覆盖铜模具/青铜盆、粉碎机未完成作业继续完成、搅拌机命名库存/流体，以及实际蒸汽动力链的产物和竖直冷凝水保留。不是全部机器、精确热量快照、跨版本或旧存档证明。
 - P3–P4：原完整快照的机器、能源、物流、世界生成、渲染、界面与配方移植源码已恢复；各系统的双平台运行、世界持久化和旧存档范围继续逐批补证，不按源码数量声明完成。
@@ -17,7 +17,7 @@
 ## 当前任务
 
 1. 修复两版实际玩法阻塞，优先 NeoForge；集中完成一批再编译/短运行。
-2. 模具/盆与基础机器指定作业已通过 NeoForge 世界重启；继续覆盖热量、燃料、其他配方状态与 Forge 对应运行。柴油系列已同步恢复原 RU/完整燃料记账/背面排气；Neo 同一隔离旧世界和 Forge 新隔离世界实际旋转活塞动力链、产物自动出箱与保存重载通过；两版原精确输出 min/max 范围已同步。旧直接 KU 布局需增加旋转活塞；动画三态和全燃料/姿态继续对齐。
+2. 模具/盆与基础机器指定作业已通过 NeoForge 世界重启；Forge 指定蒸汽链与11台实际持久化状态重载通过；继续覆盖其他配方和完整生存。柴油系列已同步恢复原 RU/完整燃料记账/背面排气；Neo 同一隔离旧世界和 Forge 新隔离世界实际旋转活塞动力链、产物自动出箱与保存重载通过；两版原精确输出 min/max 范围已同步。旧直接 KU 布局需增加旋转活塞；动画三态和全燃料/姿态继续对齐。
 3. 已完成 Neo 指定机器客户端界面/方块画面/重载，下一批推进客户端实际动力制作与 Forge 对应运行，补齐生存链与两版差异；木辞典三种种类的原贴图缺口保持未完成。
 4. 保留来源、贡献、许可、历史与未验证范围记录；完整三源整合 goal 保持 active。
 
@@ -122,3 +122,22 @@ Neo 1.21.1 对前批同一真实隔离柴油世界再次独立 JVM 重载，读�
 - Client powered-world/GUI, installed production-JAR launch, Forge thermal steam chain and complete donor integration remain pending.
 
 复现：Java17 Gradle，Neo 使用现有 Java21 工具链；Forge 新 flat/offline/loopback 隔离目录和既有获用户同意的 EULA 副本。`-PdirectCoreResources=true -PdirectCoreClasspath=true -PdieselPowerSmoke=true -PserverSmokePhase=prepare|verify -PserverSmokeId=<同UUID> -PserverDirectory=build/<新隔离目录> -PserverSmokeX=0 -PserverSmokeY=240 -PserverSmokeZ=0 :runServer`。Neo 同前批世界用 `verify` 加 `-PdieselPowerReadOnly=true :neoforge:runServer`。正式双包不加 directCoreClasspath。第三方许可未改，完整 goal active。
+
+## 2026-10-02 / Forge 普通冷启动蒸汽动力与精确状态重载
+
+
+
+准备进程在停止前记录11个实际block entity的完整持久化NBT：燃烧箱、锅炉、蒸汽管、强活塞、粉碎机、输出箱、两水管、自动供水鼓、竖直活塞、冷凝水鼓。正常关闭保存真实region。独立第二JVM从同一真实世界加载，先逐项对比block身份和完整NBT语义（TagParser/CompoundTag.equals），没有直接调用load或补造状态；验证原箱中产物与冷凝水后再运行200普通tick，正常保存退出。该证据覆盖持久化的热量/冷却/效率/压力库存、燃料灰、缓冲和管内容等，未保存的动画计时不扩大声明。
+
+- prepare：6m 50s，PID 69008，5559普通tick，实际退出0、正常保存停止。
+- verify：2m 40s，PID 79680，200普通tick，实际退出0、正常保存停止。
+
+检查入口编译19s；双包仍为生产构建`4a8f7b246f54b5e430b8070fba7ce0ff16f166e3`，574共享class。
+
+- Given machines, 64 coal, 4000mB boiler distilled water plus 50000mB supply and registered chipped-diamond feed; not full survival acquisition/tool crafting.
+- Selected dense-bronze box/strong bronze boiler/steel pipes/strong bronze engine/bronze crusher and vertical bronze condensate path only.
+- Actual exact persisted NBT before first reload tick covers selected heat/cooldown/efficiency/tanks/engine buffer and pressure state/fuel/ash/pipe inventory/temperature/transfer/sides/tank automation/output; volatile unsaved animation clocks are not claimed.
+- Current local Forge world; no original GT6, other-source or cross-Minecraft save import. After reload normal machines continue changing state.
+- No current Forge client powered-world or installed-JAR launch; full integration remains active. Existing Neo steam evidence retains its earlier snapshot/sprint scope.
+
+复现：Java17 Gradle，显式同UUID和新的flat/offline/loopback隔离目录，既有获同意EULA副本。`-PdirectCoreResources=true -PdirectCoreClasspath=true -PsteamChainSmoke=true -PserverSmokePhase=prepare|verify -PserverSmokeId=<同UUID> -PserverDirectory=build/<新隔离目录> -PserverSmokeX=0 -PserverSmokeY=240 -PserverSmokeZ=0 :runServer`。prepare最多12000普通tick/660s，实际产物出箱后且至少200tick即停；verify固定200tick。第三方许可未改，完整goal active。
