@@ -3,7 +3,7 @@
 更新：2026-10-02。Goal active。当前工作目录为 `F:\Dev\GregtTech6New\GregTech6`；优先对齐 Forge 1.20.1 与 NeoForge 1.21.1，继续采用集中小检查节奏。
 
 - P0：三源审计、全部逐文件清单、项目1副本校验及原始Forge构建已完成；项目1授权和历史仍待用户信息。
-- P1：恢复完整后续移植源码，最新两平台构建与 574 个共享 core class 验包通过；两版当前源码普通专服实际启动与指定蒸汽引擎制作产物保存重载通过；NeoForge 指定青铜/蒸汽动力链与 Forge 指定普通蒸汽动力/精确持久化状态重载通过。当前双版开发主菜单、Neo 材料/流体库存模型及六物品绘制已通过；Neo 客户端停机机器实际菜单/转移/流体更新/独立 JVM 保存重载已通过；Forge 客户端世界与成品生产环境启动仍待验。
+- P1：恢复完整后续移植源码，最新两平台构建与 581 个共享 core class 验包通过；两版当前源码普通专服实际启动与指定蒸汽引擎制作产物保存重载通过；NeoForge 指定青铜/蒸汽动力链与 Forge 指定普通蒸汽动力/精确持久化状态重载通过。当前双版开发主菜单、Neo 材料/流体库存模型及六物品绘制已通过；Neo 客户端停机机器实际菜单/转移/流体更新/独立 JVM 保存重载已通过；Forge 客户端世界与成品生产环境启动仍待验。
 - P2：NeoForge 给定设备/原料的煤炭供热、铜锡合金、四次青铜铸锭通过，并验证叠放模具逐次消费 9U 盆内容。生存取得设备与原料、制作工具及 Forge 对应运行流程仍未满足完整验收。
 - 世界重载：两版普通专服已保存并重新读取实际制作查询的普通/强化青铜引擎物品。NeoForge 普通专服独立进程同一世界检查已覆盖铜模具/青铜盆、粉碎机未完成作业继续完成、搅拌机命名库存/流体，以及实际蒸汽动力链的产物和竖直冷凝水保留。不是全部机器、精确热量快照、跨版本或旧存档证明。
 - P3–P4：原完整快照的机器、能源、物流、世界生成、渲染、界面与配方移植源码已恢复；各系统的双平台运行、世界持久化和旧存档范围继续逐批补证，不按源码数量声明完成。
@@ -11,7 +11,7 @@
 - 本机 Java 21：用户提供 `.minecraft/runtime/java-runtime-delta`，已执行 `java -version` 和 `javac -version`，均为 Microsoft OpenJDK 21.0.7。
 - 原始 Git 历史：提供目录均无.git；已获取 brokestar 3055个提交及masson 202个提交，保留原作者。逐文件Git blob核对：brokestar快照准确对应3118acbf83a84d05fa37d57af1705cf00e423ca9（220275/220275文件），masson对应2ba4e4b60f7a770360b2ec7ca2adad3507ec4a28（61192/61192文件）。本地source/*标签保留对应原提交；项目1远程和原历史仍缺失。
 - brokestar 的 ModularUI 子模块目录为空；已从对应原始Git树恢复gitlink ec524db7a5724f8cf3c837436b1ae742c778c62f，并获取其公开原仓历史，保存source/modularui-brokestar-snapshot标签。尚未导入其运行时。
-- 授权未决：项目1 `mod_license=All Rights Reserved`，LICENSE.txt 是 Forge MDK 文本；保留原文，待作者明确适用授权。后续发布门禁未通过。
+- 2026-10-02 用户本人确认是saltnya并要求统一采用另外两项目代码许可：当前代码/双版元数据为LGPL-3.0-or-later；旧MDK原文、作者与第三方资产分项声明保留。授权选择不等于完整玩法/来源分项资料门全部通过。
 - 双版本开发服务器接线与上述指定两版普通专服/产物世界重载已通过；两版完整客户端、专服玩法、所有状态重载和旧存档迁移仍未满足完整验收。
 
 ## 当前任务
@@ -165,3 +165,33 @@ NeoForge 1.21.1 在生存模式服务器 FakePlayer 下实际右键拾取三个�
 - Smelting these actual raw ores into bronze, bronze head casting/assembly, natural world survival, powered clients, installed JAR runtime and complete three-source integration remain pending.
 
 复现：Java17启动Gradle、Neo使用已有Java21工具链，新的flat/offline/loopback隔离目录及既有获同意EULA副本。`-PdirectCoreResources=true -PdirectCoreClasspath=true -PearlyToolChainSmoke=true -PserverSmokePhase=prepare|verify -PserverSmokeId=<同UUID> -PserverDirectory=build/<新隔离目录> -PserverSmokeX=0 -PserverSmokeY=240 -PserverSmokeZ=0 :neoforge:runServer`。完整goal保持active，来源和许可不变。
+
+## 2026-10-02 / 共享工具装配、Addon、电压与代码许可
+
+两版原头/柄装配规则合并为共享ToolAssemblyRules，平台只转换物品栈和调用实际配方接口。两版生存FakePlayer实际安装砂岩磨料（8次）、十次右键磨制给定青铜粗制镐头（余7次），用所得成品头和3木棍点击原版工作台结果槽，得到真实Bronze/Wood镐并留下2木棍。未加工头、双镐头和第三输入槽均拒绝装配。两版独立新JVM实际读原保存镐、余木棍及磨石完整NBT，前tick与200tick后语义一致，正常保存停止。没有手造load或补物品。
+
+响应坩埚工艺作者反馈，新增共享GregTechAddon/GregTechAddons API版本1。Addon在自己的模组构造中注册；两版材料/物品关联及内置机器配方完成后派发一次配方就绪回调，按ID排序，重复/晚注册和失败显式报错。API JAR只含共享Java17类和许可，不含素材，不重新shade进Addon。新增材料自动注册/新机器/完整旧GregAPI仍待完善。域合同实际跑两个Provider；当前两版服务器确认生产入口初始化，但没有安装外部Addon，不把空列表日志当成完整生态验证。
+
+核对原GT6 CS.java:146-157，纠正显示层UV后的GT5/GTCE名称为PUV1..PUV5/XV，并把旧GregTechConstants.V末两项2147483647/Long.MAX_VALUE改成原2147483648/8589934592。旧常量改由同一规范表复制，避免两份规则漂移；HU/KU/RU不是EU电压。
+
+用户直接确认本人是saltnya，并要求沿用另外两份来源许可证，因此本项目代码采用LGPL-3.0-or-later，双版元数据和中英README同步，GNU原文及NOTICE进入两包和SDK。旧Forge MDK文本原文仍在审计记录，原第三方资产/组件和作者署名未重授权。CI增加SDK构建/验包，并移除已失效的saltnya授权未决公开测试包限制；没有推送或创建GitHub Release，远程CI未验证。
+
+- neo_prepare：2m，PID 21396，200普通tick，实际退出0、正常保存停止。
+- forge_prepare：2m 20s，PID 82744，200普通tick，实际退出0、正常保存停止。
+- neo_initial_reload：1m 55s，PID 68808，200普通tick，实际退出0、正常保存停止。
+- neo_current_reload：2m 22s，PID 16004，200普通tick，实际退出0、正常保存停止。
+- forge_current_reload：3m 18s，PID 70056，200普通tick，实际退出0、正常保存停止。
+
+集中工具编译52s，Addon/电压编译与75条域断言35s，最终双包7m 58s；581共享class逐字节匹配，SDK 1380921 bytes、Java17。
+
+## 验证范围
+
+- Grinding/workbench checks start with a supplied registered raw Bronze head, sandstone, grindstone/workbench and wooden sticks. They do not bridge the previous actually mined raw Cu/Tin through actual heating/alloying/casting.
+- Real survival server FakePlayer performs sandstone installation and ten right clicks, then actual workbench result-slot click. No client click timing/rendering or full survival equipment acquisition is claimed.
+- Both selected real saved Bronze tools, two remaining sticks and actual grindstone NBT are read semantically in independent current-code JVMs before ticks and again at tick 200. No stock repair or synthetic load.
+- Addon domain contracts exercise two providers and deterministic once-only/context behavior. Actual loader startups exercise the wired callback lifecycle with no external addons installed; a separately built third-party addon has not been runtime-validated.
+- API version 1 is the initial recipe-ready/material-query/energy-domain surface; automatic new-material/item/fluid/machine registration and old GregAPI completeness remain pending.
+- Original table values/names are checked; this is not all-tiers machine/bridge/overvoltage runtime coverage or universal saved-world migration.
+- Production mod JARs are packaged and checked, while runtime launches use the current development source sets. Installed production-JAR client/server launches, complete source integration and full survival remain pending.
+
+复现工具段：Java17 Gradle及Native已有Java21工具链；隔离flat/offline/loopback目录和获同意EULA副本，`-PdirectCoreResources=true -PdirectCoreClasspath=true -PtoolAssemblySmoke=true -PserverSmokePhase=prepare|verify -PserverSmokeId=<同UUID> -PserverDirectory=build/<隔离目录> -PserverSmokeX=0 -PserverSmokeY=240 -PserverSmokeZ=0 :runServer`或`:neoforge:runServer`。正式打包不加directCoreClasspath。完整goal仍active。

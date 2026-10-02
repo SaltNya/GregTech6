@@ -116,16 +116,15 @@ GregTech6/
 
 较大改动开始前，请阅读[协作说明](docs/integration/COLLABORATION.md)、[整合计划](docs/integration/PLAN.md)和[来源记录](docs/integration/SOURCES.md)。
 
+## Addon 开发
+
+两版提供共享 `GregTechAddon` / `GregTechAddons` 配方生命周期、材料领域与能源合同。用 `:core:addonApiJar` 构建仅供编译的 SDK，Addon 不应再次打包这些类。见 [Addon 接口说明](docs/ADDON_API.zh-CN.md)及[电压等级说明](docs/VOLTAGE_TIERS.md)。API版本1目前支持配方就绪回调，新材料自动注册生命周期尚待完善。
+
 ## 许可证
 
-整合项目的整体许可仍在核查中。目前模组元数据保留基准项目的 **`All Rights Reserved`（保留所有权利）** 声明；该声明不替代已采用第三方内容的原有许可。
+项目代码采用 **LGPL-3.0-or-later**。saltnya 项目所有者于2026-10-02确认采用另外两份移植项目的代码许可。全文见 [LICENSE](LICENSE)、[COPYING](COPYING)，署名与分项范围见 [NOTICE](NOTICE) 和[来源许可记录](docs/integration/LICENSE_REVIEW.md)。
 
-- **原版 GregTech 6**：代码声明为 [LGPL-3.0-or-later](https://github.com/GregTech6/gregtech6/blob/master/LICENSE)。
-- **brokestar233 与 masson 的移植项目**：代码声明为 LGPL-3.0-or-later，原始声明保留在来源记录中。
-- **saltnya 的移植项目**：移植新增代码和资源的授权范围仍待确认。
-- **资源素材**：原版 GregTech 6 的默认资源[除另有声明外采用 CC0 1.0](https://github.com/GregTech6/gregtech6/blob/master/src/main/resources/LICENSE.assets)；GregTech 标志及其衍生作品采用 [CC BY-NC 4.0](https://github.com/GregTech6/gregtech6/blob/master/src/main/resources/LICENSE.logos)。其他第三方素材保留各自许可。
-
-根目录 `LICENSE.txt` 是继承的 Forge MDK 许可文件。适用许可与署名记录见[许可证核查](docs/integration/LICENSE_REVIEW.md)。本整合项目尚未采用统一的 LGPL 许可声明。
+原 GT6 默认资产仍为 CC0-1.0（另有声明除外）；GregTech 标志及衍生物仍为 CC BY-NC 4.0。其他第三方声明和作者署名继续保留，代码许可不覆盖重授权资产。原 Forge MDK 模板原文保存在来源审计中，与当前项目声明分开。
 
 ## 致谢
 

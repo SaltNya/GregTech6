@@ -116,16 +116,15 @@ Contributions to code, documentation, translations, testing, and assets are welc
 
 Read the [collaboration guide](docs/integration/COLLABORATION.md), [integration plan](docs/integration/PLAN.md), and [source records](docs/integration/SOURCES.md) before preparing substantial changes.
 
+## Addon development
+
+Both platforms expose the shared `GregTechAddon` / `GregTechAddons` recipe lifecycle, material domain and energy contracts. Build the compile-only SDK with `:core:addonApiJar`; do not bundle its classes into an addon. See [the addon API guide](docs/ADDON_API.md) and [voltage tiers](docs/VOLTAGE_TIERS.md). API version 1 currently supports recipe-ready callbacks; new-material registration is not yet a supported automatic lifecycle.
+
 ## License
 
-Project-wide licensing is still under review. The current mod metadata retains the baseline declaration, **`All Rights Reserved`**; it does not replace the licenses of incorporated third-party work.
+Project code is licensed under **LGPL-3.0-or-later**. The saltnya project owner confirmed this choice on 2026-10-02, aligning the integration with the brokestar233 and masson code declarations. See [LICENSE](LICENSE), [COPYING](COPYING), [NOTICE](NOTICE) and the [source license record](docs/integration/LICENSE_REVIEW.md).
 
-- **Original GregTech 6:** its code is declared [LGPL-3.0-or-later](https://github.com/GregTech6/gregtech6/blob/master/LICENSE).
-- **brokestar233 and masson ports:** their code declares LGPL-3.0-or-later. Original notices are retained in the source records.
-- **saltnya port:** the scope of permission for port-specific code and resources remains to be confirmed.
-- **Assets:** upstream GregTech 6 default assets are [CC0 1.0 unless otherwise stated](https://github.com/GregTech6/gregtech6/blob/master/src/main/resources/LICENSE.assets). The GregTech logo and its derivatives are [CC BY-NC 4.0](https://github.com/GregTech6/gregtech6/blob/master/src/main/resources/LICENSE.logos). Additional third-party assets retain their own licenses.
-
-The root `LICENSE.txt` is an inherited Forge MDK license document. Applicable licenses and attribution are tracked in the [license review](docs/integration/LICENSE_REVIEW.md). A unified LGPL declaration for this integration has not yet been adopted.
+Upstream GT6 default assets remain CC0-1.0 unless otherwise stated; GregTech logos and derivatives remain CC BY-NC 4.0. Other third-party notices and author attribution are retained. The code license does not relicense assets or third-party components. The old Forge MDK template is preserved in the source audit, separately from the current project declaration.
 
 ## Credits
 
