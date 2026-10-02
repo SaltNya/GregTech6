@@ -2,8 +2,8 @@
 
 更新：2026-10-02。Goal active。当前工作目录为 `F:\Dev\GregtTech6New\GregTech6`；优先对齐 Forge 1.20.1 与 NeoForge 1.21.1，继续采用集中小检查节奏。
 
-- P0：三源审计、全部逐文件清单、项目1副本校验及原始Forge构建已完成；项目1授权和历史仍待用户信息。
-- P1：恢复完整后续移植源码，最新两平台构建与 581 个共享 core class 验包通过；两版当前源码普通专服实际启动与指定蒸汽引擎制作产物保存重载通过；NeoForge 指定青铜/蒸汽动力链与 Forge 指定普通蒸汽动力/精确持久化状态重载通过。当前双版开发主菜单、Neo 材料/流体库存模型及六物品绘制已通过；Neo 客户端停机机器实际菜单/转移/流体更新/独立 JVM 保存重载已通过；Forge 客户端世界与成品生产环境启动仍待验。
+- P0：三源审计、全部逐文件清单、项目1副本校验及原始Forge构建已完成；项目1代码授权已由用户本人确认，原始历史仍待补充。
+- P1：恢复完整后续移植源码，最新两平台构建与 581 个共享 core class 验包通过；两版当前源码普通专服实际启动与指定蒸汽引擎制作产物保存重载通过；NeoForge 指定青铜/蒸汽动力链与 Forge 指定普通蒸汽动力/精确持久化状态重载通过。当前双版开发主菜单、Neo 材料/流体库存模型及六物品绘制已通过；Neo 客户端停机机器实际菜单/转移/流体更新/独立 JVM 保存重载已通过；NeoForge 成品独立专服加载与所选方块/库存重载通过；Forge 客户端世界、成品专服与两版成品客户端仍待验。
 - P2：NeoForge 给定设备/原料的煤炭供热、铜锡合金、四次青铜铸锭通过，并验证叠放模具逐次消费 9U 盆内容。生存取得设备与原料、制作工具及 Forge 对应运行流程仍未满足完整验收。
 - 世界重载：两版普通专服已保存并重新读取实际制作查询的普通/强化青铜引擎物品。NeoForge 普通专服独立进程同一世界检查已覆盖铜模具/青铜盆、粉碎机未完成作业继续完成、搅拌机命名库存/流体，以及实际蒸汽动力链的产物和竖直冷凝水保留。不是全部机器、精确热量快照、跨版本或旧存档证明。
 - P3–P4：原完整快照的机器、能源、物流、世界生成、渲染、界面与配方移植源码已恢复；各系统的双平台运行、世界持久化和旧存档范围继续逐批补证，不按源码数量声明完成。
@@ -195,3 +195,8 @@ NeoForge 1.21.1 在生存模式服务器 FakePlayer 下实际右键拾取三个�
 - Production mod JARs are packaged and checked, while runtime launches use the current development source sets. Installed production-JAR client/server launches, complete source integration and full survival remain pending.
 
 复现工具段：Java17 Gradle及Native已有Java21工具链；隔离flat/offline/loopback目录和获同意EULA副本，`-PdirectCoreResources=true -PdirectCoreClasspath=true -PtoolAssemblySmoke=true -PserverSmokePhase=prepare|verify -PserverSmokeId=<同UUID> -PserverDirectory=build/<隔离目录> -PserverSmokeX=0 -PserverSmokeY=240 -PserverSmokeZ=0 :runServer`或`:neoforge:runServer`。正式打包不加directCoreClasspath。完整goal仍active。
+
+
+## 2026-10-02 / NeoForge 成品专服
+
+交付的 bc89c7201 生产 JAR 用官方安装的 NeoForge 21.1.243 和用户 Java21 独立加载，两个不同 JVM 正常保存/停服，铜原矿库存和青铜粉碎机实际保存身份读取通过。控制台放置不视作生存玩法，外部 Addon 未安装，Forge 成品和两版成品客户端仍待验。生产源码与二进制本批不变，不重复大资源构建。见 [验证回执](verification/installed-neoforge-20261002.md)。

@@ -1,0 +1,78 @@
+{
+  "build_commit": "bc89c720121a52dec61daf6110a0dcb87486cae9",
+  "java": "C:/Users/Asus/AppData/Roaming/.minecraft/runtime/java-runtime-delta/bin/java.exe",
+  "command": [
+    "C:/Users/Asus/AppData/Roaming/.minecraft/runtime/java-runtime-delta/bin/java.exe",
+    "@user_jvm_args.txt",
+    "@libraries/net/neoforged/neoforge/21.1.243/win_args.txt",
+    "nogui"
+  ],
+  "server_directory": "F:\\Dev\\GregtTech6New\\GregTech6\\work\\installed-jars-neoforge-20261002-bc89c7201",
+  "jar": "C:\\Users\\Asus\\Documents\\Codex\\2026-09-30\\goal-gregtech-6-minecraft-1-20-3\\outputs\\release-0.0.0\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+  "jar_sha256": "dbccee862a5de45a0eba63796c4fa2f6502f8d039215a11eb6bf456605c94e33",
+  "mods": [
+    "gregtech6-neoforge-1.21.1-0.0.0.jar"
+  ],
+  "neo_version": "21.1.243",
+  "runs": [
+    {
+      "phase": "prepare",
+      "pid": 81208,
+      "exit_code": 0,
+      "seconds": 71.9,
+      "ready": "[10:54:20] [Server thread/INFO] [minecraft/DedicatedServer]: Done (0.531s)! For help, type \"help\"",
+      "receipts": [
+        "[10:54:21] [Server thread/INFO] [minecraft/MinecraftServer]: Marked chunk [0, 0] in Overworld to be force loaded",
+        "[10:54:21] [Server thread/INFO] [minecraft/MinecraftServer]: Changed the block at 0, 64, 0",
+        "[10:54:21] [Server thread/INFO] [minecraft/MinecraftServer]: Changed the block at 2, 64, 0",
+        "[10:54:21] [Server thread/INFO] [minecraft/MinecraftServer]: Replaced a slot at 0, 64, 0 with [Copper Raw Ore]",
+        "[10:54:21] [Server thread/INFO] [minecraft/MinecraftServer]: 0, 64, 0 has the following block data: {x: 0, y: 64, Items: [{count: 3, Slot: 0b, id: \"gregtech:ore_raw_copper\"}], z: 0, id: \"minecraft:chest\"}",
+        "[10:54:21] [Server thread/INFO] [minecraft/MinecraftServer]: 2, 64, 0 has the following block data: {gt.parallel: 1, gt.cover_ticks: 3L, gt.progress: 0L, gt.inventory: {Size: 13, Items: []}, gt.max_progress: 0L, gt.energy: 0L, gt.control_stopped: 0b, x: 2, y: 64, z: 0, gt.min_energy: 0L, id: \"gregtech:be_crusher_bronze\", gt.painted: 0b}",
+        "[10:54:21] [Server thread/INFO] [minecraft/MinecraftServer]: Saved the game"
+      ],
+      "log_path": "work\\installed-neoforge-prepare-20261002.log",
+      "log_sha256": "3d671093ee00107399935b5966a2ce838645cafda959d539fa6bf3606381f76e",
+      "addon_ready": true
+    },
+    {
+      "phase": "reload",
+      "pid": 28688,
+      "exit_code": 0,
+      "seconds": 73.5,
+      "ready": "[10:55:35] [Server thread/INFO] [minecraft/DedicatedServer]: Done (0.354s)! For help, type \"help\"",
+      "receipts": [
+        "[10:55:35] [Server thread/INFO] [minecraft/MinecraftServer]: 0, 64, 0 has the following block data: {x: 0, y: 64, Items: [{count: 3, Slot: 0b, id: \"gregtech:ore_raw_copper\"}], z: 0, id: \"minecraft:chest\"}",
+        "[10:55:35] [Server thread/INFO] [minecraft/MinecraftServer]: 2, 64, 0 has the following block data: {gt.parallel: 1, gt.cover_ticks: 5L, gt.progress: 0L, gt.inventory: {Size: 13, Items: []}, gt.max_progress: 0L, gt.energy: 0L, gt.control_stopped: 0b, x: 2, y: 64, z: 0, gt.min_energy: 0L, id: \"gregtech:be_crusher_bronze\", gt.painted: 0b}",
+        "[10:55:35] [Server thread/INFO] [minecraft/MinecraftServer]: Saved the game"
+      ],
+      "log_path": "work\\installed-neoforge-reload-20261002.log",
+      "log_sha256": "af130013ede9a4ccba67969a6236a4553272128ecfe5275ea3220c723c736817",
+      "addon_ready": true
+    }
+  ],
+  "full_integration_complete": false,
+  "installer": {
+    "path": "F:\\Dev\\GregtTech6New\\GregTech6\\work\\installed-jars-neoforge-20261002-bc89c7201\\neoforge-21.1.243-installer.jar",
+    "sha256": "29493a719a69c9593040ddbb589488b1231583824018e383f6dcd39b79411980",
+    "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.243/neoforge-21.1.243-installer.jar",
+    "offline_exit": 0,
+    "vanilla_server_sha1": "59353fb40c36d304f2035d51e7d6e6baa98dc05c",
+    "win_args_sha256": "c9cc40e2d59a8a5999f6e49e5af961af124a3deb446de9b88c44dc49d303ee12"
+  },
+  "java_version": "openjdk version \"21.0.7\" 2025-04-15 LTS\nOpenJDK Runtime Environment Microsoft-11369940 (build 21.0.7+6-LTS)\nOpenJDK 64-Bit Server VM Microsoft-11369940 (build 21.0.7+6-LTS, mixed mode)",
+  "scope": [
+    "Official installed NeoForge 21.1.243 server, delivered production mod JAR only, Microsoft Java21, no Gradle/dev classpath/test addon.",
+    "Normal flat/offline/loopback world startup and command-created bronze crusher/three raw copper chest items saved and independently reloaded.",
+    "Selected chest NBT unchanged; actual bronze crusher BE identity/inventory reads from saved world. Full machine NBT ticks differ naturally and are not declared identical."
+  ],
+  "pending": [
+    "Installed production Forge server and both production clients.",
+    "Third-party addon runtime compatibility; current server has no external addons.",
+    "Powered processing in this installed world; command placement/stock do not prove survival acquisition or crafting.",
+    "Complete three-source integration, world generation and universal old/cross-version save migration."
+  ],
+  "startup_notes": [
+    "Java installer network TLS/read timeouts occurred before mod loading; dependencies were populated from hash-checked caches/downloads and official offline installer succeeded.",
+    "Loader warns about deferred initialization taking roughly 16 seconds and union asset schema; offline authentication warning is expected for this isolated loopback run. No ERROR log entries in these two runs."
+  ]
+}
