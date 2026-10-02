@@ -1,0 +1,322 @@
+{
+  "scope": "Source-derived catalog changes; original registry IDs preserved. Temperature defaults use material melting point times 1.25 truncated to long.",
+  "upstream": "Loader_MultiTileEntities.java:1846-1885",
+  "changes": [
+    {
+      "id": "wood",
+      "changes": {
+        "explicit_temperature_K": 340
+      }
+    },
+    {
+      "id": "treated_wood",
+      "changes": {
+        "explicit_temperature_K": 340
+      }
+    },
+    {
+      "id": "plastic",
+      "changes": {
+        "explicit_temperature_K": 370
+      }
+    },
+    {
+      "id": "rubber",
+      "changes": {
+        "explicit_temperature_K": 350
+      }
+    },
+    {
+      "id": "bronze",
+      "changes": {
+        "base_capacity": [
+          120,
+          150
+        ]
+      }
+    },
+    {
+      "id": "desh",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "tungsten_alloy",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "tungsten_steel",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "tungsten_carbide",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "desh_alloy",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "palladium",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "tantalum_hafnium_carbide",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "titanium",
+      "changes": {
+        "base_capacity": [
+          400,
+          300
+        ],
+        "acid_proof": [
+          true,
+          false
+        ],
+        "plasma_proof": [
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "id": "tungsten",
+      "changes": {
+        "base_capacity": [
+          600,
+          350
+        ],
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "efrine",
+      "changes": {
+        "acid_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "netherite",
+      "changes": {
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "iridium",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "ironwood",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "thaumium",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "manasteel",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "void_metal",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "terrasteel",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "gaia_spirit",
+      "changes": {
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "bedrock_hsla",
+      "changes": {
+        "plasma_proof": [
+          true,
+          false
+        ],
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "adamantium",
+      "changes": {
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "draconium",
+      "changes": {
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "awakened_draconium",
+      "changes": {
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "infinity",
+      "changes": {
+        "magic_proof": [
+          false,
+          true
+        ]
+      }
+    }
+  ]
+}

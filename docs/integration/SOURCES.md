@@ -1,5 +1,37 @@
 # 来源与贡献记录
 
+## 2026-10-02 / 超温与木管火焰参数
+
+以原 GT6 `MultiTileEntityPipeFluid:320-331`、`WD.burn/fire:702-727`、`TileEntityBase01Root.setToFire` 为过热顺序和火焰依据；木管可燃性来自原注册参数及 `TileEntityBase07Paintable:107-108`，并核实 `TileEntityBase10ConnectorRendered` 的泡沫屏蔽尚需迁移。GT 非易燃保护的依据是原 `IBlockBase/IItemGT`、`BlockBaseFluid` 和多实体块族；现代归属与外部标签映射的取舍、来源哈希及游戏夹具修正见 [过热记录](verification/fluid-pipe-overheat-20261002.md)。沿用作者及许可，无新外部依赖。
+
+## 2026-10-02 / 管道魔法危害
+
+原 GT6 `MultiTileEntityPipeFluid:284-295` 与 wolfram 对应分支提供魔法泄漏量、处理顺序、范围中毒及损毁规则；`FL:1119` 提供材料派生流体的 MAGICAL 分类来源。缺失 Thaumcraft 时的空气回退由原版 `IL.block`、`ST.block`、`CS.NB` 核实。双版沿用既有流体标志和材料解析，新增真实管道后果及共享损失规则，无新库和来源目录修改；来源哈希、可复现场景和未实现的污染兼容见 [魔法危害记录](verification/fluid-pipe-magic-20261002.md)。
+
+## 2026-10-02 / 管材参数目录
+
+逐项采用原 GT6 `Loader_MultiTileEntities:1846-1885` 的 40 条管材容量、四耐性及耐温参数，并用 `MultiTileEntityPipeFluid.addFluidPipes:83-98` 核对尺寸倍率和默认阈值。原版与 wolfram 本地快照的全部 40 条注册参数去除排版后相同。特殊材料别名通过原版 MT 声明核实；保留当前注册 ID。来源哈希、28 行改动明细和现代存档迁移选择见 [目录批次记录](verification/fluid-pipe-catalog-20261002.md)。原作者与许可归属沿用 NOTICE，无新依赖。
+
+## 2026-10-02 / 流体管温度与物理危险
+
+对照只读原 GT6 `MultiTileEntityPipeFluid.onServerTickPre:277-341` 与 wolfram0108 同路径实现，适配实际温度、独立气体/等离子/酸性危害及泄漏统计；纯规则进入共享 core，游戏实体和世界操作保留平台实现。来源哈希与验收范围见 [本批记录](verification/fluid-pipe-safety-20261002.md)。另读取原版 `Loader_MultiTileEntities:1846-1885`，确认当前管材目录的容量、耐性和专用耐温差异，留待后续逐项修正。本批未修改来源、引入新库或改变已有 NOTICE 归属。
+
+## 2026-10-02 / 玩家流体容器事务
+
+对照原 GT6 `TileEntityBase06Covers` 的面拦截、`MultiTileEntityPipeFluid` 的连接规则，以及 `TileEntityBase08FluidContainer.onBlockActivated3` 的单件容器消费与结果返还。Forge 的现代实现采用本项目已有 NeoForge 容器适配方式，并直接调用 Forge 47.4.20 的 `FluidUtil`；排查时读取本机相同版本源码包的 `FluidBucketWrapper` 和玩家物品能力。没有新增外部库或修改来源目录；原作者、许可、资源声明保持。详情见 [交互记录](verification/fluid-container-interaction-20261002.md)。
+
+## 2026-10-02 / 流体分配第二批
+
+原 GT6 `gregapi/tileentity/connectors/MultiTileEntityPipeFluid.java` 提供炼药锅耗量、多目标均值、随机目标顺序、压力、面连接和拆管转移规则；wolfram0108 同路径的 BUG-025 注释和实现提供现代空锅/水锅拆分的核对依据。GT6 `FL.java` 的 WATER 集合对应本工程共享 `FluidCatalog.FluidFlags.WATER`。本批将规则适配到现有双平台实体并共享纯数值计算，未整体导入 wolfram 的注册/运行时。作者、LGPL-3.0-or-later 与第三方资源分项声明沿用 NOTICE；参见 [实现和验收记录](verification/fluid-pipe-distribution-20261002.md)。
+
+## 2026-10-02 / 当前本机路径与新增参考
+
+当前工作树为 `C:\Dev\GregTech6\GregTech6-main`，无 `.git`；下文旧机器上的提交、标签及历史恢复记录不代表这些 Git 对象存在于本次解压目录。
+
+新增用户提供的 **wolfram0108 / gregtech6_w** 快照实际位于 `C:\Dev\gregtech6_w-main\gregtech6_w-main`，README 标注 Minecraft 26.1.2 / NeoForge 26.1.2.109 / Java 25，代码 LGPL-3.0-or-later。源码头保留 GregTech-6 Team 版权及 wolfram0108 的 2026 移植声明。作为行为和适配思路参考，不改变当前项目目标版本。没有将无 Git 元数据的快照认作远程最新提交。
+
+本批对照其多通道流体管与原 GT6，实现共享流体通道选择，未整体引入该项目代码或资产。来源文件哈希、各来源比较、采用边界和验证见 [流体管道记录](verification/fluid-pipe-channels-20261002.md)。其余本机只读来源为 `C:\Dev\gregtech6-master\gregtech6-master`、`C:\Dev\cruciblecraft-master\cruciblecraft-master`、`C:\Dev\gregtech6yizhi-main\gregtech6-main`。
+
 更新：2026-09-30。本文件记录来源归属和采用边界；功能完成以 `STATUS.md`、`VERIFICATION.md` 的当前证据为准。
 
 ## 三个来源快照

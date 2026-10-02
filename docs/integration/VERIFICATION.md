@@ -1,5 +1,29 @@
 # 验证账本
 
+## 2026-10-02 / 当前 C 盘快照：魔法流体管道危害
+
+共享 7,821 条断言通过；Forge 18:24:06 / NeoForge 18:27:09 各 `All 39 required tests passed`，新增五项魔法分类、范围中毒、防护、残液损失和损毁回归，原 34 项全部通过，两服务器正常保存退出。合并测试 7m35s、正式双版构建 6m43s，均退出 0。双包 587 个当前共享 class、元数据、许可/NOTICE、无重复与测试专用条目校验通过；详见 [验收记录](verification/fluid-pipe-magic-20261002.md) 与 [验包回执](verification/fluid-pipe-magic-artifacts-20261002.json)。世界场景采用魔法液体；魔法气体数值有共享合同，未扩展为注册魔法气体实体行为或第三方污染兼容验收。不是客户端、生存、独立存档重载或成品安装运行证明。
+
+## 2026-10-02 / 当前 C 盘快照：管材目录与旧容量迁移
+
+共享 7,814 条断言通过，包括新增 1,430 条固定目录合同。Forge 18:02:38 / NeoForge 18:05:42 各 `All 34 required tests passed`，新增注册规格与容量加载/同步场景，既有 31 项回归全部通过，两服务器正常保存退出。测试任务 7m53s、正式双版构建 6m31s，均退出 0。双包 587 个当前共享 class、元数据、许可/NOTICE、无重复与测试条目检查通过；见 [验收记录](verification/fluid-pipe-catalog-20261002.md) 和 [验包回执](verification/fluid-pipe-catalog-artifacts-20261002.json)。目录验收限容量、四耐性、通道数及耐温参数；不包含魔法/过热行为、独立 JVM 存档重载或成品运行。
+
+## 2026-10-02 / 当前 C 盘快照：流体管安全第一批
+
+共享 6,384 条断言通过；Forge 17:43:05 / NeoForge 17:46:09 各 `All 31 required tests passed`，两服务器保存并正常退出。新增 7 项管道温度、复合危害、泄漏统计、腐蚀销毁和蒸汽活体伤害回归，原 24 项交互/分配场景全部通过。合并测试任务 7m41s，正式双平台构建 3m05s，均退出 0。双包 587 个当前共享 class、元数据、许可/NOTICE、无重复和测试专用条目校验通过；见 [验收记录](verification/fluid-pipe-safety-20261002.md) 与 [验包回执](verification/fluid-pipe-safety-artifacts-20261002.json)。这些开发服务端场景不证明材质目录已完全对齐、魔法/过热完整实现、客户端或成品安装运行。
+
+## 2026-10-02 / 当前 C 盘快照：玩家流体容器
+
+最终 `:core:check :runGameTestServer :neoforge:runGameTestServer` 成功（7m09s）：共享 6,370 条断言通过，Forge 17:12:49 / NeoForge 17:15:52 各 `All 24 required tests passed`，两服务器正常保存退出。9 项新增容器场景覆盖所用手的回写、点击面、过滤配置和双向过滤、整桶容量、堆叠、满背包实物掉落、创造模式标志、储液桶及倒桶回流；另回归 15 项管道场景。使用 3g 测试堆，修复了测试 API 差异、实体查询区域及复用世界的夹具污染；先前失败不计通过。正式双版完整构建通过（6m11s），585 个当前 core class、模组信息、许可/NOTICE、无重复及测试专用条目验包通过。完整过程与最终校验值见 [本批记录](verification/fluid-container-interaction-20261002.md) 和 [验包回执](verification/fluid-container-artifacts-20261002.json)。开发环境直接调用方块使用入口，不等于客户端网络交互或成品安装运行。
+
+## 2026-10-02 / 当前 C 盘快照：流体分配第二批
+
+最终共享 6,370 条断言通过；Forge 16:23:14、NeoForge 16:24:48 各 `All 15 required tests passed`，两测试服务器保存并正常关闭，任务退出 0（3m55s）。新增真实拆管回调、炼药锅各档消耗、源与多目标统一均值、二次压力、拒收机器排除、连接关闭及外部通道回流场景。正式 `:build :neoforge:build` 通过（3m59s），双包 585 个当前 core class 逐字节一致，元数据/NOTICE/许可、重复项和测试专用条目检查通过。最终 [验收记录](verification/fluid-pipe-distribution-20261002.md) 与 [验包回执](verification/fluid-pipe-distribution-artifacts-20261002.json) 已保存。不是客户端、独立 JVM 世界重载、完整生存或成品安装运行证明。
+
+## 2026-10-02 / 当前 C 盘快照：多通道流体管
+
+当前树双平台完整构建与 bootstrap 测试编译通过（32m46s），共享 core 四组合同 6,360 条断言通过；Forge 15:27:08、NeoForge 15:34:42 各有 `All 5 required tests passed`，两测试服务器正常保存关闭，合并运行任务退出 0（10m12s，含首次下载）。测试使用真实管道、给定流体和直接单 tick 调用，不计作玩家生存、独立 JVM 重载或成品安装验收。首次验包发现 NOTICE 副本未同步，修正后最终双包构建通过（7m53s），585 个当前共享 class、元数据、许可声明及无重复/测试条目验包通过。完整证据与最终产物记录见 [本批记录](verification/fluid-pipe-channels-20261002.md)。
+
 日期采用 Asia/Shanghai；日志存放于本地忽略的 `work/`，阶段收官时将必要摘要及校验和纳入记录。
 
 ## 2026-09-30 / P0
