@@ -1,5 +1,9 @@
 # 验证账本
 
+## 2026-10-02 / 超温起火与双版成品
+
+共享 8,107 条断言通过，Forge / NeoForge 各 47 项游戏回归通过。正式双版构建 9m34s 成功；在当前 `C:\Dev\GregTech6` 下重新验包，587 个当前共享 class、元数据、许可、重复及测试条目检查通过，另确认两包都不含测试用保护标签。见 [验收记录](verification/fluid-pipe-overheat-20261002.md) 和 [验包回执](verification/fluid-pipe-overheat-artifacts-20261002.json)。不作为客户端、生存链路、独立世界重载或成品安装运行的证明。
+
 ## 2026-10-02 / 当前 C 盘快照：魔法流体管道危害
 
 共享 7,821 条断言通过；Forge 18:24:06 / NeoForge 18:27:09 各 `All 39 required tests passed`，新增五项魔法分类、范围中毒、防护、残液损失和损毁回归，原 34 项全部通过，两服务器正常保存退出。合并测试 7m35s、正式双版构建 6m43s，均退出 0。双包 587 个当前共享 class、元数据、许可/NOTICE、无重复与测试专用条目校验通过；详见 [验收记录](verification/fluid-pipe-magic-20261002.md) 与 [验包回执](verification/fluid-pipe-magic-artifacts-20261002.json)。世界场景采用魔法液体；魔法气体数值有共享合同，未扩展为注册魔法气体实体行为或第三方污染兼容验收。不是客户端、生存、独立存档重载或成品安装运行证明。

@@ -37,7 +37,12 @@
 
 复现采用本地已校验 Gradle 8.8、Java 17/21、`--offline --no-daemon`，开发参数 `-PdirectCoreResources=true -PdirectCoreClasspath=true -PgameTestHeap=3g -PgameTestNamespaces=gregtech_fluid_channels`。两模块测试目录各为 `build/fluid-overheat-tests`。正式构建不带 directCore 参数。
 
-正式构建与成品检查运行中，最终验包待写入。
+正式 `:build :neoforge:build` 成功，9m34s，28 项任务（17 执行、11 最新），日志 `work/fluid-overheat-build.log`。当前项目位于 `C:\Dev\GregTech6`；已在此目录重新运行成品校验，587 个当前共享 class、双平台元数据、许可及测试条目检查通过，见 [验包回执](fluid-pipe-overheat-artifacts-20261002.json)。另逐包确认不包含测试用 `pipe_fire_protected.json`。
+
+| 成品 | 字节 | SHA-256 |
+| --- | ---: | --- |
+| Forge 1.20.1 | 38490775 | `6bb413ec70450672b51d5a6ce04ae3cf7c2be2df741482b36ef0b3573b6e6060` |
+| NeoForge 1.21.1 | 36681247 | `41415fafc83b2b7f325a2e372e4018b576158a998589330475d1ccf892166286` |
 
 ## 来源与验收边界
 
