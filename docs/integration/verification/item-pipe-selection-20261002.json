@@ -1,0 +1,68 @@
+{
+  "base_commit": "4b0ccb31f2005b07f63dc3f130ff5335a150c62f",
+  "compiled_sources": [
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/content/transport/WeightedItemPipeRoutes.java",
+      "baseline_git_blob_sha256": "3a672f8e0694d1d93cbf29039728e054d0221ee6b874a07a238dd23b8400576b",
+      "sha256": "4203b3fb85f38d8058d475efbcf93f36ef266d19c095de8f316df374fd3bc36b"
+    },
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/content/transport/ItemPipeTransfer.java",
+      "baseline_git_blob_sha256": "f6bf5065fa6a62ae1477ceae4a8b00ab5a964d8fa3009f02efa93d660509804f",
+      "sha256": "1c9bd5d7da9c2e601486bfcf7b1f96f2499986e186c198ec7f3a0415873783a2"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/content/transport/ItemPipeTransferAdapter.java",
+      "baseline_git_blob_sha256": "07758ad405f43a4abdf822f8703910cebfc227b18dbf32b72f5872d07e16c88c",
+      "sha256": "66e278ecd4aab420f64dfbceea8b312a3059a6cd8e0d8f3cc1b2edf90cbe594e"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/content/transport/ItemPipeTransferAdapter.java",
+      "baseline_git_blob_sha256": "6768274b3a17788740c2497ddf6c8930ef24b27953046a7cb6f99e4d98ab0b83",
+      "sha256": "011b4fd0baf7e5694afa9edf85ffd622e9f851e1d3d5e2b55ea27d87b169d7ef"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/blockentity/machine/ItemPipeBlockEntity.java",
+      "baseline_git_blob_sha256": "ac7780ddfce8a15e8bc79493503e5039225e05d8e1e6121ec88f0d5930cb2600",
+      "sha256": "2f432c91a248cb31debbd4f872b01a50d97f4b1476aa174f1f87c9e9a86e1a6c"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/blockentity/machine/ItemPipeBlockEntity.java",
+      "baseline_git_blob_sha256": "7a8993d1876eb3c9325bd9df251a9ef4c2a84660c92b54fbea706410ae63493d",
+      "sha256": "40dc2f7947ac1cf76f768247d97e79af18b25a73e8152c1848c64bd32bccc2c0"
+    }
+  ],
+  "compile": {
+    "path": "work\\item-pipe-selection-compile-20261002.log",
+    "sha256": "4092eb59da28b27bf87492e751c5448546b64eff370b1c1b7c848e1bd655b9cb",
+    "exit_code": 0,
+    "duration": "24s",
+    "platforms": [
+      "forge",
+      "neoforge"
+    ],
+    "core_assertions": 102,
+    "core_groups": 10
+  },
+  "new_contract_cases": [
+    "Cheapest shared exit across competing first hops",
+    "Old single-source API",
+    "Equal-cost original first-face ordering even with longer route",
+    "Long.MAX_VALUE saturated valid exit remains selectable",
+    "One common visit limit",
+    "Zero-cost cycle termination",
+    "Validated partial probe without actual insertion",
+    "Actual partial delivery smaller than simulated plan",
+    "Failed provider probe retained/no mutation"
+  ],
+  "runtime_launched_this_batch": false,
+  "new_production_jars_built": false,
+  "full_integration_complete": false,
+  "limits": [
+    "No fresh world/client/installed-JAR logistics run in this batch; historical earlier route checkpoint is not proof for the new multi-source algorithm.",
+    "Combined visit budget may leave very large networks unvisited; exact full-scale performance not measured.",
+    "Source/destination mutations followed by a lying/throwing provider before a valid remainder still lack transaction guarantees.",
+    "Masson topology cache/reservation and complete cover parity not claimed integrated.",
+    "Production JARs remain bc89c7201; this and 4b0ccb31f machine source changes await grouped rebuild."
+  ]
+}
