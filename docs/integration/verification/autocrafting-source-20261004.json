@@ -1,0 +1,313 @@
+{
+  "batch": "autocrafting-20261004",
+  "source_commit": "651d5a5fade5b73bc9dce3444be2b362225e35ce",
+  "sources": [
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/recipes/maps/RecipeMapAutocrafting.java",
+      "lines": "49-171",
+      "sha256": "76c79b611b286bfbe331f516fed22ce7877b366ceb656a56749a9d8aab9a04e9",
+      "purpose": "special slot, exact grid, allowed/recent crafting lookup, infinite ingredients and containers",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/recipes/Recipe.java",
+      "lines": "882-939",
+      "sha256": "8bb9a0bd00aa839a48a2c082281a988e9a796a540137d1cf50249d2250ad1c7e",
+      "purpose": "constructor flags, cancellation and proportional optimization",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/util/UT.java",
+      "lines": "2056-2081",
+      "sha256": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709",
+      "purpose": "gt.blueprint.craft compound, cells 0-8, one item per cell",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/recipes/ICraftingRecipeGT.java",
+      "lines": "39-47",
+      "sha256": "59e2725a0a832970fb6c82b2a25e9d31377a87fbadcf628a7619bd4eec79c519",
+      "purpose": "isAutocraftableByGT API",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/util/CR.java",
+      "lines": "45-110",
+      "sha256": "952f94e0dfff66d27d2ac2b97ed47b6aa0c8250aa19babd5cc528c89616c0760",
+      "purpose": "NO_AUTO crafting permissions; full metadata extraction remains pending",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/tileentity/machines/MultiTileEntityBasicMachine.java",
+      "lines": "526-558",
+      "sha256": "1798706545c33c801735ac5fb56b0ae37a8b6e3b7819f40f41183a2057b0c860",
+      "purpose": "separate special slot; automation and insertion rules",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/gui/ContainerCommonBasicMachine.java",
+      "lines": "49,300-302",
+      "sha256": "be68939d7c9696058b8ae030b4b3cbf7536da5d15038adc2ceaf860340fcf2a9",
+      "purpose": "blueprint slot 80,43 and shift-click routing",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/tileentity/tools/MultiTileEntityAdvancedCraftingTable.java",
+      "lines": "190-211",
+      "sha256": "730747ed9b5c401c6128ec09a481c9b0bcbc68c186c46f231afb07b4bf8231d0",
+      "purpose": "empty blueprint recording and result naming",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregtech/items/MultiItemRandomTools.java",
+      "lines": "434-437,470-479",
+      "sha256": "f2eef98ddb1b10298a981ff78369bccb7e8317fb421f7bdd84086257819ad84d",
+      "purpose": "blueprints, blue dye bath, robot arm tips infinite",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/load/LoaderOreDictReRegistrations.java",
+      "lines": "346-349",
+      "sha256": "d34719309a5ddf5bd7fc01c0462b57af52b4cf980a69fae4d4042c2ab78b07ef",
+      "purpose": "USB tier-1 substitutes and blueprint whitelist",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/recipes/maps/RecipeMapScannerVisuals.java",
+      "lines": "89-99",
+      "sha256": "eb79301ab2ffd0c7320d94f414699aeadfead0972156ce02cdfff030a707a135",
+      "purpose": "USB blueprint scan, returned sheet, tier-1 file",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/recipes/maps/RecipeMapPrinter.java",
+      "lines": "99-104,120-124",
+      "sha256": "84a1536f4865fa03c9670c529078fdbfaf273a531be331d1919e8f856d67508c",
+      "purpose": "white/blue chemical dye printing; retained USB",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregtech/loaders/a/Loader_Fluids.java",
+      "lines": "111-123",
+      "sha256": "fdc9a697adc7822159cb8ea82389cc83e6494fc9723551f2983607ed46505fcb",
+      "purpose": "four blue dyes, 144mB each",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregtech/GT6_Main.java",
+      "lines": "339,357-358",
+      "sha256": "a7dca874bef8dd25c9f98d64ddd372f081faf17899d5053156d4f78f4b3499ed",
+      "purpose": "blueprint display rows",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/data/LH.java",
+      "lines": "636",
+      "sha256": "2c23ddef3f7eb68bed39aad4a2d8189be8b99b53e04f198ade4c299500ebf1d8",
+      "purpose": "source empty program slot tooltip",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregtech/loaders/b/Loader_MultiTileEntities.java",
+      "lines": "1497-1501",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393",
+      "purpose": "autocrafter machine family, existing native registrations",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/worldgen/WorldgenOresBedrock.java",
+      "lines": "181-212",
+      "sha256": "cfd42311493c2e18283bcaf286df8bd0e3ae0924a07be178b0dee273c0d03a1a",
+      "purpose": "latest user audit: first six muffin layers replace upper bedrock",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/util/WD.java",
+      "lines": "782-801",
+      "sha256": "c8335988b7bd9dbf44df6790d867ac6cfe2e6414793abb0cdd14c32cd342f095",
+      "purpose": "removeBedrock means region stone, not air",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    }
+  ],
+  "current_files": [
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/api/recipe/AutocraftableCraftingRecipe.java",
+      "sha256": "5ae49c0e7fb637203a0fc2318f7fc13c30eb94d72108b9310e5b5431cf2c0fcf"
+    },
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/content/recipe/AutocraftingRules.java",
+      "sha256": "fa8bec1be5200716caa7da9f3b9665f49db6366cef3b0522d78befd99e29f470"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/lang/en_us.json",
+      "sha256": "661f4955936946e646d8e52dd712a0d5e0f46c3dd2181d1bfd850caffb84caef"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/lang/zh_cn.json",
+      "sha256": "d0b6bbaca6b8fd837d7c3020268510fc90231eb6c7e3ee87cff0886bfd41c986"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/api/recipe/Recipe.java",
+      "sha256": "edd924bc2a057e6ed2f84e6fa427a595dc33867bc143f4a0f3d68c4ae288a126"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/api/recipe/RecipeInputs.java",
+      "sha256": "b30659f72e7179f8038bed6fe167ed6a7596484972aa48f38d9ea77c7ce5b8d2"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/api/recipe/RecipeMap.java",
+      "sha256": "af7f54c08971b953c661ef54db507611e2c667a011fea99f2436faab943adab4"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity.java",
+      "sha256": "31ca5eae2351386df3f252f62001cff9d28780754e554787166134405d6857c9"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity.java",
+      "sha256": "398672254d99217706d11a48a06a0f29070d11e900e1240b5ff28d5eb62b2275"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/client/gui/AdvancedCraftingScreen.java",
+      "sha256": "ebd25d39f7f4083f5b23546c91ee1e67da3da6b91ade89afeb33bb98ddaccb5c"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/client/gui/BasicMachineContainerMenu.java",
+      "sha256": "f313189bbf242fb412448e7e090e91b1a499eb8511a6cf431c5ebf306d41e789"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/client/gui/BasicMachineScreen.java",
+      "sha256": "b6cb0007ee20667bcb05ab59c4e682890035e82be7833db81b9e3bd1ebbc5cca"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/content/data/CraftingBlueprintData.java",
+      "sha256": "8e146c828d487e2c72f2ad8d4d4223e5d4b323edfb53499984f176048bc930b7"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/content/data/UsbDataCable.java",
+      "sha256": "ade2356cec8cd1954e21b243049e34d232e98a5e35cb76c841c6a0dc3fe3dca6"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/content/recipe/AutocraftingRecipes.java",
+      "sha256": "a3ad198f25ac561d11914f0df8551fc00c6152203c6583c7f43ddd8a3b1a3598"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/content/recipe/BlueprintRecipes.java",
+      "sha256": "6601ea6e161346c4844b8ce03b5b2cc9d0e4bcd1870a745f354b2531b1c548f8"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/content/recipe/GTMainRecipes.java",
+      "sha256": "61f65fcbf9d97afef6a0da70320558b5f3907b8a541c3e3abee504f273f79a67"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/content/recipe/GTMaterialDataRecipes.java",
+      "sha256": "24cd165ba11d3396db1d6e5fee56caf18367e7c45811096feee9c3fc434c4521"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/data/MachineRecipeMaps.java",
+      "sha256": "8b13e1ab2b0b378b6418eab2497a7f59477ed8d034d574f11fa9245e97ee6e30"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/api/recipe/Recipe.java",
+      "sha256": "196d2efbdd479eabd40b55600ef62afd9515ce5d9da29098718bd5b42d6d0373"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/api/recipe/RecipeInputs.java",
+      "sha256": "ed60a5519fbb654b8d57d878f0c003b07db1ba0dae448b282c4507ff0218f157"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/api/recipe/RecipeMap.java",
+      "sha256": "7fe9744f06f64e048d5da08aed7c113ebd0b73afbcfba2206e0e37aabea21f71"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity.java",
+      "sha256": "ffbba0ebaab544d7d7f0d6181240703e2612b1f9981e3a477e149003b4dd4ca4"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity.java",
+      "sha256": "446bb93262ccd88504e57cc2f8c4512262dd461dc8bb316144d4eff2904ad6fe"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/client/gui/AdvancedCraftingScreen.java",
+      "sha256": "bee1a0564db2248ad1d77412dfae9f36c428390c678382ad8630735797778c6b"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/client/gui/BasicMachineContainerMenu.java",
+      "sha256": "cd91a4f70a9a2ba8ee627f312387056a7592e9015c1f73e5eab5f89396e014a8"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/client/gui/BasicMachineScreen.java",
+      "sha256": "7d65d16ba7e412cb91fb037ca8f6c28c271a9c6baf1c96c85ac9ecd867b651fd"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/content/data/CraftingBlueprintData.java",
+      "sha256": "e89a049ec76404452afe8c7e82755e2a1c3a7804056f95200da11d8ec41d394e"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/content/data/UsbDataCable.java",
+      "sha256": "ab30773a89493a474e380d0307943f8c2e2e1a38e8cbd6a844aed68e0ddb55e9"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/content/recipe/AutocraftingRecipes.java",
+      "sha256": "a73d7b5047f4b21885321a7dec939aee63d437d1187b6b3cf3ac26fa2ee5e85c"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/content/recipe/BlueprintRecipes.java",
+      "sha256": "48526447754c5454206ad36c6d322cc435f35d5bf8806c57faf7ed2a4db8eb14"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/content/recipe/GTMainRecipes.java",
+      "sha256": "caeee52f569117e9c073c75e854a82d65aa1295672c7c86df8a3dc60aa5fa848"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/content/recipe/GTMaterialDataRecipes.java",
+      "sha256": "30246e76e927e7081e58029ded445bbd63dbdf083df213d50ed73e6ebd809fa8"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/data/MachineRecipeMaps.java",
+      "sha256": "ad8fec7241e15e412b67b704f6e63454e09cbdb42490630e566da329409821cd"
+    }
+  ],
+  "evidence_boundary": "Read-only original sources; compilation, shared contracts and packaging. No Minecraft client, survival or save reload performed. Global CR.NO_AUTO metadata import remains pending.",
+  "shared_check_source": {
+    "path": "core/src/test/java/com/gregtech/gregtech/core/CoreBehaviorContracts.java",
+    "sha256": "1f5ec2b7e2bb6e6fd2642b11cd0183abb97d569de4cf8408b38cb0891e14082d",
+    "added_fixed_source_samples": 16,
+    "total_shared_assertions": 9763
+  }
+}

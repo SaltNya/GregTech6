@@ -1,0 +1,424 @@
+{
+  "batch": "autocrafting-20261004",
+  "source_commit": "651d5a5fade5b73bc9dce3444be2b362225e35ce",
+  "jars": [
+    {
+      "platform": "Forge",
+      "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+      "sha256": "053fbb6372e51d72ce041836cb8ebe33a8bc3181a8e9f87d1c9207e788d5bf32",
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/Recipe.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeInputs.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeInputs$Remaining.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeMap.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeMap$ContextRecipes.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeMap$DynamicRecipes.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$1.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$2.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$3.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$4.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$5.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$Plan.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$1.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$2.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$3.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$4.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$MachineItemHandler$1.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$MachineItemHandler.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$SidedFluidHandler.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$SidedItemHandler.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/AdvancedCraftingScreen.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/BasicMachineContainerMenu.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/BasicMachineContainerMenu$1.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/BasicMachineContainerMenu$2.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/BasicMachineScreen.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/data/CraftingBlueprintData.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/data/UsbDataCable.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$1.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$Cache.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/BlueprintRecipes.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/BlueprintRecipes$1.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/GTMainRecipes.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/GTMainRecipes$Row.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/GTMaterialDataRecipes.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/data/MachineRecipeMaps.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        }
+      ],
+      "resources": [
+        {
+          "entry": "assets/gregtech/lang/en_us.json",
+          "source_bytes_equal": true,
+          "sha256": "661f4955936946e646d8e52dd712a0d5e0f46c3dd2181d1bfd850caffb84caef"
+        },
+        {
+          "entry": "assets/gregtech/lang/zh_cn.json",
+          "source_bytes_equal": true,
+          "sha256": "d0b6bbaca6b8fd837d7c3020268510fc90231eb6c7e3ee87cff0886bfd41c986"
+        }
+      ]
+    },
+    {
+      "platform": "NeoForge",
+      "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "sha256": "714ee1b4d3db4c7288f1f3db6b25eec14c0ce773069afc5fe8d5565057468855",
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/Recipe.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeInputs.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeInputs$Remaining.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeMap.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeMap$ContextRecipes.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/recipe/RecipeMap$DynamicRecipes.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$1.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$2.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$3.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$4.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$5.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/misc/AdvancedCraftingTableBlockEntity$Plan.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$1.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$2.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$3.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$4.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$MachineItemHandler$1.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$MachineItemHandler.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$SidedFluidHandler.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/machine/BasicMachineBlockEntity$SidedItemHandler.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/AdvancedCraftingScreen.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/BasicMachineContainerMenu.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/BasicMachineContainerMenu$1.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/BasicMachineContainerMenu$2.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/gui/BasicMachineScreen.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/data/CraftingBlueprintData.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/data/UsbDataCable.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$1.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$Cache.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/BlueprintRecipes.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/BlueprintRecipes$1.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/GTMainRecipes.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/GTMainRecipes$Row.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/GTMaterialDataRecipes.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/data/MachineRecipeMaps.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact compiled bytes"
+        }
+      ],
+      "resources": [
+        {
+          "entry": "assets/gregtech/lang/en_us.json",
+          "source_bytes_equal": true,
+          "sha256": "661f4955936946e646d8e52dd712a0d5e0f46c3dd2181d1bfd850caffb84caef"
+        },
+        {
+          "entry": "assets/gregtech/lang/zh_cn.json",
+          "source_bytes_equal": true,
+          "sha256": "d0b6bbaca6b8fd837d7c3020268510fc90231eb6c7e3ee87cff0886bfd41c986"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # 来源与贡献记录
 
+## 2026-10-04 / 自动合成机、原版蓝图结构与复制
+
+使用 Gregorius Techneticies / GregTech-6 Team 的 RecipeMapAutocrafting、Recipe 优化、UT.NBT 蓝图格式、BasicMachine/Container 程序槽、MultiItemRandomTools 蓝图与机械臂、Loader_Fluids 四种蓝染液、ScannerVisuals/Printer 数据分支和 GT6_Main 展示行。保留 LGPL-3.0-or-later 及原作者署名，原目录只读，没有增加依赖或资产。18 个源文件散列（含最新基岩矿提问的 WorldgenOresBedrock/WD 复核）及当前文件回执见 [本批来源](verification/autocrafting-source-20261004.json)。原版 NO_AUTO 全局元数据抽取仍待完成。
+
 ## 2026-10-04 / 扫描仪 EnergyStat 与 IC2 作物接口
 
 来源为 Gregorius Techneticies / GregTech-6 Team 的 MultiItemRandomTools:516–518、Behavior_Scanner、Behavior_Cropnalyzer、EnergyStat/EnergyStatDebug、MultiItem 能量提示/堆叠和 WD.scan。保留原作者署名与 LGPL，来源目录只读；没有新增纹理、音效或外部依赖。原版方法面用可选反射接续，九项中性接口样例不能证明真实 IC2 兼容。源文件 SHA-256 与当前改动散列见 [来源回执](verification/scanner-energy-source-20261004.json)。
