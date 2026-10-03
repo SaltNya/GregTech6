@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-03",
+  "source_commit": "56686b7fac87377796f1cee4a36dc90681a28078",
+  "shared_assertions": 8107,
+  "world_regression": {
+    "path": "C:\\Dev\\GregTech6\\work\\plant-variants-gametest-final-20261003.log",
+    "sha256": "9def0061c27e93a645ae0a5fc0915e0d430c9e5846ed5ac11a31768e2ded3131",
+    "exit_code": 0,
+    "namespace": "gregtech_issues",
+    "forge": 17,
+    "neoforge": 17
+  },
+  "production_build": {
+    "path": "C:\\Dev\\GregTech6\\work\\visual-plants-production-build-20261003.log",
+    "sha256": "77f95735cb5dec5cf6b82165a382524fc5e2528d1736e59d013b3d3da18242f6",
+    "exit_code": 0,
+    "duration": "4m32s",
+    "direct_core_shortcuts": false
+  },
+  "clients": {
+    "forge": {
+      "path": "C:\\Dev\\GregTech6\\work\\visual-plants-forge-client-final-20261003.log",
+      "sha256": "7706335fb28aa0c18f83bfcca18109a9612df50a185ff04779414e2480444f91",
+      "exit_code": 0,
+      "success": {
+        "platform": "forge",
+        "minecraft": "1.20.1",
+        "timeoutSeconds": 300,
+        "elapsedMs": 99994,
+        "screenshot": "C:\\Dev\\GregTech6\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-forge-1.20.1-5f3e5cae-bf02-45cd-afad-05b64fa15cbb.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 118,
+        "screen": "net.minecraft.client.gui.screens.TitleScreen"
+      },
+      "material_items": 56036,
+      "material_blocks": 12127,
+      "foreign_items": 3,
+      "tooltip_modes": [
+        "normal",
+        "advanced"
+      ],
+      "hive_inventory_models": 16,
+      "bush_state_geometries": 28,
+      "screenshot_review": {
+        "path": "C:\\Dev\\GregTech6\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-forge-1.20.1-5f3e5cae-bf02-45cd-afad-05b64fa15cbb.png",
+        "sha256": "24872a95c8cd4a66976e1f43a07330ef1cd05eca32951fa16e99b9f3552b0ad6",
+        "viewed": true,
+        "observations": "Sixteen distinct hive colors, full cubic blueberry bush, and white/red/blue glowtus visible; no missing-texture squares."
+      }
+    },
+    "neoforge": {
+      "path": "C:\\Dev\\GregTech6\\work\\visual-plants-neoforge-client-final-20261003.log",
+      "sha256": "9bfbe76a37721e7e8164d2edca47e696949a08ddc027e9de9bdc03a19fec96e3",
+      "exit_code": 0,
+      "success": {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "timeoutSeconds": 300,
+        "elapsedMs": 67906,
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-764229e4-7e39-448e-8e41-9c288b7101b1.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 110,
+        "screen": "net.minecraft.client.gui.screens.TitleScreen"
+      },
+      "material_items": 56036,
+      "material_blocks": 12127,
+      "foreign_items": 3,
+      "tooltip_modes": [
+        "normal",
+        "advanced"
+      ],
+      "hive_inventory_models": 16,
+      "bush_state_geometries": 28,
+      "screenshot_review": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-764229e4-7e39-448e-8e41-9c288b7101b1.png",
+        "sha256": "e93ce860169327692a06839256aec245c86b370061c97bb57f78e74ae10a9605",
+        "viewed": true,
+        "observations": "Sixteen distinct hive colors, full cubic blueberry bush, and white/red/blue glowtus visible; no missing-texture squares."
+      },
+      "item_layers": {
+        "materials": 56036,
+        "fine_wires": 323,
+        "electric_tools": 4,
+        "hand_tool_stacks": 74,
+        "alpha": 255
+      }
+    }
+  },
+  "artifacts": {
+    "forge": {
+      "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "sha256": "c3032b7b8a185ab5832b04b7de423047d0b2baac82c9f83507cc811b493d51e9",
+      "bytes": 38551647,
+      "hive_variants": 16,
+      "bush_state_models": 28,
+      "no_bundled_recipe_viewer": true
+    },
+    "neoforge": {
+      "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "sha256": "df06765c29eb8b16b0ef1691802f701dd85e028276738d93237351b4ddede384",
+      "bytes": 36752626,
+      "hive_variants": 16,
+      "bush_state_models": 28,
+      "no_bundled_recipe_viewer": true
+    }
+  },
+  "neo_rgb_callbacks": {
+    "classes": 31,
+    "callbacks": 51,
+    "files": [
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\AxleClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\BarsClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\BasicMachineClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\BookShelfClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\BumbleClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\BurningBoxClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\ChemicalBatteryClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\ConstructionClientSetup.java",
+        2
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\CraftingTableClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\ElectricWireClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\EnergyNodeClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\EngineClientSetup.java",
+        5
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\FluidTransportClientSetup.java",
+        2
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\GearboxClientSetup.java",
+        2
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\ItemLogisticsClientSetup.java",
+        3
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\LaserClientSetup.java",
+        3
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\MaterialBlockClientColors.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\MaterialClientModels.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\MetalChestClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\MultiblockClientSetup.java",
+        2
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\NuclearClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\PanelClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\PoweredToolClient.java",
+        2
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\RelayFilterClientSetup.java",
+        2
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\SafeClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\SignalWireClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\SmelteryCompanionClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\SpikesClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\StorageClientSetup.java",
+        1
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\StorageContainerClientSetup.java",
+        7
+      ],
+      [
+        "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\SurfaceLifeClientSetup.java",
+        1
+      ]
+    ]
+  },
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\plants\\MultiTileEntityBush.java",
+      "sha256": "b56bed74378f647c66d98e4b241da47c838114165088ac020a952bf258bf890a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\WorldgenBushes.java",
+      "sha256": "e1a1f5f3262f9a00c900485ca44b8b3843b9a5def54ba8fa4b8d39c934e60a7d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    }
+  ],
+  "failures_retained": [
+    "Initial bootstrap fixture API compile errors",
+    "First Forge title smoke timed out on world/JEI screen"
+  ],
+  "unverified": [
+    "Installed production client",
+    "Independent saved-world legacy migration restart",
+    "Full natural survival chain",
+    "Oxygen/Aether/HarvestCraft compatibility and snow-cover appearance"
+  ],
+  "overall_port_complete": false
+}

@@ -1,5 +1,9 @@
 # 来源与贡献记录
 
+## 2026-10-03 / 灌木恢复与蜂巢身份扁平化
+
+只读原 GT6 `MultiTileEntityBush` 提供主体/枝条几何、支撑继承、采摘与 byte 生长溢出规则；`WorldgenBushes` 提供成熟核心和五方向生成枝条；`CS.BushesGT` 的默认 string 条目补齐棉花。原作者 Gregorius Techneticies，沿用本仓库 NOTICE 与许可。蜂巢变种复用工程中已有的 16 色模型和纹理，没有新增外部图片或库；现代睡莲直接继承平台 API，不复制其源码。来源文件 SHA-256 及未覆盖的兼容行为见 [本批来源与验证](verification/visual-plants-20261003.md)。没有修改来源目录。
+
 ## 2026-10-02 / 超温与木管火焰参数
 
 以原 GT6 `MultiTileEntityPipeFluid:320-331`、`WD.burn/fire:702-727`、`TileEntityBase01Root.setToFire` 为过热顺序和火焰依据；木管可燃性来自原注册参数及 `TileEntityBase07Paintable:107-108`，并核实 `TileEntityBase10ConnectorRendered` 的泡沫屏蔽尚需迁移。GT 非易燃保护的依据是原 `IBlockBase/IItemGT`、`BlockBaseFluid` 和多实体块族；现代归属与外部标签映射的取舍、来源哈希及游戏夹具修正见 [过热记录](verification/fluid-pipe-overheat-20261002.md)。沿用作者及许可，无新外部依赖。
