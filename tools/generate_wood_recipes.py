@@ -40,11 +40,12 @@ BEAM_ENTRY_FILE = os.path.join(GT6, "gregapi", "wooddict", "BeamEntry.java")
 PLANK_ENTRY_FILE = os.path.join(GT6, "gregapi", "wooddict", "PlankEntry.java")
 
 PORT = os.path.join(ROOT, "src", "main", "java", "com", "gregtech", "gregtech")
-SPECIES_FILE = os.path.join(PORT, "block", "wood", "WoodSpecies.java")
+CORE = os.path.join(ROOT, "core", "src", "main", "java", "com", "gregtech", "gregtech")
+SPECIES_FILE = os.path.join(CORE, "block", "wood", "WoodSpecies.java")
 WOODS_FILE = os.path.join(PORT, "registry", "GTWoods.java")
-MATERIALS_DIR = os.path.join(PORT, "content", "material", "generated")
-MATERIAL_FORMS_FILE = os.path.join(PORT, "data", "generated", "MaterialForms.java")
-OUT_FILE = os.path.join(PORT, "content", "recipe", "GTWoodRecipes.java")
+MATERIALS_DIR = os.path.join(CORE, "content", "material", "generated")
+MATERIAL_FORMS_FILE = os.path.join(CORE, "data", "generated", "MaterialForms.java")
+OUT_FILE = os.path.join(CORE, "content", "recipe", "GTWoodRecipes.java")
 
 # GT6's own trees, as the port's WoodSpecies enum spells them. The dictionary row
 # (LoaderWoodDictionary) is verified against the material field below, so a GT6 rename fails loudly.
@@ -193,10 +194,10 @@ package com.gregtech.gregtech.content.recipe;
  *       per-species log rows would only duplicate {@code minecraft:oak_planks} and friends.</li>
  *   <li>Other mods' wood (IC2/MFR/Atum/Fossil/BoP/TC/TF/BTL/Aether/Botania/Witchery/AbyssalCraft/
  *       Steamcraft/EBXL/Bamboo/Caveworld/TCFM/Forestry) is absent from 1.20.1.</li>
- *   <li>{@code MT.WOODS.Cinnamon} (GT6 material id 9317, "Cinnamonwood") is not registered by the port -
- *       it has only the Cinnamon <i>spice</i> (9785) - so the cinnamon entry contributes its four plank
- *       rows but not its four rod rows; those are listed in {@code SKIPPED_CRAFT_ROWS}, which together
- *       with {@code CRAFT_ROWS} accounts for the dictionary's {@code 9 x 8} rows.</li>
+ *   <li>{@code MT.WOODS.Cinnamon} is the registered Cinnamonwood material (9317), separate from
+ *       Cinnamon spice (9785). All eight dictionary rows are emitted for this species.</li>
+ *   <li>The four fallen Log1 entries are registered separately by {@code NaturalWoodCraftingRows};
+ *       this generated tree-species table does not duplicate those rows.</li>
  * </ul>
  *
  * <p>{@code CRAFT_ROWS} entries are {@code path|shape|mirror|pattern|keys|result|gt6}: pattern rows are
