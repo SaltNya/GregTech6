@@ -32,7 +32,7 @@ def layer(folder, overlay):
 
 
 def model(folder, active):
-    return {"loader": "forge:composite",
+    return {"parent": "minecraft:block/block", "loader": "forge:composite",
             "children": {"colored": layer(folder, None),
                          "overlay": layer(folder, "overlay_active" if active else "overlay")}}
 
