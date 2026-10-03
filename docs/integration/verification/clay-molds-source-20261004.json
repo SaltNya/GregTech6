@@ -1,0 +1,1992 @@
+{
+  "source_commit": "87a526e5d56bcfd7f118a461e532c78c07eac732",
+  "scope": "source extraction only; not Minecraft registration or gameplay",
+  "author": "Gregorius Techneticies / GregTech 6 team",
+  "license": "LGPL; repository NOTICE retained",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemRandomTools.java",
+      "sha256": "f2eef98ddb1b10298a981ff78369bccb7e8317fb421f7bdd84086257819ad84d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\tools\\MultiTileEntityMold.java",
+      "sha256": "60a916a836f1bcb00ed6ed846e05c203d1bb8bae9a83478eb39afabea67884fd"
+    }
+  ],
+  "factory_families": {
+    "STONE": [
+      "Stone",
+      "Concrete",
+      "Netherrack",
+      "NetherBrick",
+      "Endstone",
+      "PrismarineLight",
+      "PrismarineDark",
+      "Greenstone",
+      "Bluestone",
+      "Epidote",
+      "SpaceRock",
+      "MoonRock",
+      "MoonTurf",
+      "MarsRock",
+      "MarsSand",
+      "SkyStone",
+      "Holystone",
+      "Livingrock",
+      "Deadrock",
+      "Betweenstone",
+      "Pitstone",
+      "Cragrock",
+      "Umber",
+      "Shale",
+      "Redrock",
+      "Komatiite",
+      "Pumice",
+      "Gabbro",
+      "Basalt",
+      "Marble",
+      "Limestone",
+      "Greenschist",
+      "Blueschist",
+      "Grayschist",
+      "Pinkschist",
+      "Gneiss",
+      "Kimberlite",
+      "Quartzite",
+      "GraniteRed",
+      "GraniteBlack",
+      "Granite",
+      "Andesite",
+      "Diorite",
+      "Greywacke",
+      "Siltstone",
+      "Rhyolite",
+      "Migmatite",
+      "Chert",
+      "Dacite",
+      "Slate",
+      "Deepslate",
+      "Eclogite",
+      "PhobosRock",
+      "DeimosRock",
+      "VenusRock",
+      "MercuryRock",
+      "CeresRock",
+      "JupiterRock",
+      "IoRock",
+      "EuropaRock",
+      "GanymedeRock",
+      "CallistoRock",
+      "SaturnRock",
+      "RheaRock",
+      "TitanRock",
+      "OberonRock",
+      "IapetusRock",
+      "UranusRock",
+      "TitaniaRock",
+      "NeptuneRock",
+      "TritonRock",
+      "PlutoRock",
+      "ErisRock",
+      "Kepler22bRock"
+    ],
+    "WAX": [
+      "Wax",
+      "WaxBee",
+      "WaxRefractory",
+      "WaxParaffin",
+      "WaxPlant",
+      "WaxMagic",
+      "WaxAmnesic",
+      "WaxSoulful"
+    ]
+  },
+  "crafting_rows": 422,
+  "material_forms": 273,
+  "firing": [
+    {
+      "id": "clay_mold",
+      "shape": 0,
+      "source_line": 352
+    },
+    {
+      "id": "clay_ingot_mold",
+      "shape": 15153614,
+      "source_line": 391
+    },
+    {
+      "id": "clay_billet_mold",
+      "shape": 13597056,
+      "source_line": 392
+    },
+    {
+      "id": "clay_chunk_mold",
+      "shape": 25952256,
+      "source_line": 393
+    },
+    {
+      "id": "clay_plate_mold",
+      "shape": 33554431,
+      "source_line": 394
+    },
+    {
+      "id": "clay_tiny_plate_mold",
+      "shape": 473536,
+      "source_line": 395
+    },
+    {
+      "id": "clay_bolt_mold",
+      "shape": 4224,
+      "source_line": 396
+    },
+    {
+      "id": "clay_rod_mold",
+      "shape": 31744,
+      "source_line": 397
+    },
+    {
+      "id": "clay_long_rod_mold",
+      "shape": 17043521,
+      "source_line": 398
+    },
+    {
+      "id": "clay_item_casing_mold",
+      "shape": 31388732,
+      "source_line": 399
+    },
+    {
+      "id": "clay_ring_mold",
+      "shape": 469440,
+      "source_line": 400
+    },
+    {
+      "id": "clay_gear_mold",
+      "shape": 22506965,
+      "source_line": 401
+    },
+    {
+      "id": "clay_small_gear_mold",
+      "shape": 11512810,
+      "source_line": 402
+    },
+    {
+      "id": "clay_sword_mold",
+      "shape": 4667854,
+      "source_line": 403
+    },
+    {
+      "id": "clay_pickaxe_mold",
+      "shape": 476160,
+      "source_line": 404
+    },
+    {
+      "id": "clay_spade_mold",
+      "shape": 15153472,
+      "source_line": 405
+    },
+    {
+      "id": "clay_shovel_mold",
+      "shape": 4667840,
+      "source_line": 406
+    },
+    {
+      "id": "clay_universal_spade_mold",
+      "shape": 4665792,
+      "source_line": 407
+    },
+    {
+      "id": "clay_axe_mold",
+      "shape": 473344,
+      "source_line": 408
+    },
+    {
+      "id": "clay_double_axe_mold",
+      "shape": 1048096,
+      "source_line": 409
+    },
+    {
+      "id": "clay_saw_mold",
+      "shape": 1047552,
+      "source_line": 410
+    },
+    {
+      "id": "clay_hammer_mold",
+      "shape": 15149518,
+      "source_line": 411
+    },
+    {
+      "id": "clay_file_mold",
+      "shape": 15153284,
+      "source_line": 412
+    },
+    {
+      "id": "clay_screwdriver_mold",
+      "shape": 135300,
+      "source_line": 413
+    },
+    {
+      "id": "clay_chisel_mold",
+      "shape": 14815364,
+      "source_line": 414
+    },
+    {
+      "id": "clay_arrow_mold",
+      "shape": 135616,
+      "source_line": 415
+    },
+    {
+      "id": "clay_hoe_mold",
+      "shape": 210944,
+      "source_line": 416
+    },
+    {
+      "id": "clay_sense_mold",
+      "shape": 523264,
+      "source_line": 417
+    },
+    {
+      "id": "clay_plow_mold",
+      "shape": 33554404,
+      "source_line": 418
+    },
+    {
+      "id": "clay_builders_wand_mold",
+      "shape": 163274,
+      "source_line": 419
+    },
+    {
+      "id": "clay_nugget_mold",
+      "shape": 4096,
+      "source_line": 420
+    }
+  ],
+  "recipes": {
+    "reclaim_clay_ingot_mold": {
+      "source": "GT6 MultiItemRandomTools:80",
+      "sha256": "b5eaddcfcc4b15f4bf9380bbb1dbf4c4a3b3026278d59d42170b93bbb6f69584"
+    },
+    "reclaim_clay_chunk_mold": {
+      "source": "GT6 MultiItemRandomTools:81",
+      "sha256": "36e29cbe7cb584fe9b6398e5a0287a6d56be6cccf63a9eb31aa6bd4774c4539b"
+    },
+    "reclaim_clay_plate_mold": {
+      "source": "GT6 MultiItemRandomTools:82",
+      "sha256": "22bd817142d6cdd76ca91a85d05305bb2066d74699f2ccbf6fb863d96484c27f"
+    },
+    "reclaim_clay_tiny_plate_mold": {
+      "source": "GT6 MultiItemRandomTools:83",
+      "sha256": "77c24c2bcede5b3206dd6120a04e12e747dcce0b47834db931fb475ed6738149"
+    },
+    "reclaim_clay_bolt_mold": {
+      "source": "GT6 MultiItemRandomTools:84",
+      "sha256": "d5e2ac422e31c9bb88c08a1ead5c956dde6a865428b6ad8f902910631e9ae67b"
+    },
+    "reclaim_clay_rod_mold": {
+      "source": "GT6 MultiItemRandomTools:85",
+      "sha256": "d1d31a0ab012900de38ca77f9f015ad7cccb9b980b1d74aaef0ed461219d6688"
+    },
+    "reclaim_clay_long_rod_mold": {
+      "source": "GT6 MultiItemRandomTools:86",
+      "sha256": "745ca78511debd8a389a1fea1fa29e25594bf5387ee58088d203fbac0e67de3b"
+    },
+    "reclaim_clay_item_casing_mold": {
+      "source": "GT6 MultiItemRandomTools:87",
+      "sha256": "cbec25a49a236cfc8d62a8e538c1de5f61205f1918a5e415b6bab0b0f32ad02e"
+    },
+    "reclaim_clay_ring_mold": {
+      "source": "GT6 MultiItemRandomTools:88",
+      "sha256": "3e83f3e0aa7d349aef963144e68ff7a4b21a36d058f49521ed4b0d22155d650e"
+    },
+    "reclaim_clay_gear_mold": {
+      "source": "GT6 MultiItemRandomTools:89",
+      "sha256": "67fcaef72c78df1ffc2b202cf0006bc230d8df0de6b13098d694aa3f8b6a18c0"
+    },
+    "reclaim_clay_small_gear_mold": {
+      "source": "GT6 MultiItemRandomTools:90",
+      "sha256": "23b9523033d31aabf313ba41e1339d5f300df0b992632676e2db66073e3d7ddf"
+    },
+    "reclaim_clay_sword_mold": {
+      "source": "GT6 MultiItemRandomTools:91",
+      "sha256": "7f73555e98b2731a12e80bf3b5e6f747a2f3b92a77888a7c7a224706861b6a3b"
+    },
+    "reclaim_clay_pickaxe_mold": {
+      "source": "GT6 MultiItemRandomTools:92",
+      "sha256": "cd7f860683121314d7cd052717c41e7e3dcb73cd2a7602cc24fda4f55b99addc"
+    },
+    "reclaim_clay_spade_mold": {
+      "source": "GT6 MultiItemRandomTools:93",
+      "sha256": "4e9b512934b566ddbda701cb0dc24a306d2fbef33dee24191a13595c8a4743c4"
+    },
+    "reclaim_clay_shovel_mold": {
+      "source": "GT6 MultiItemRandomTools:94",
+      "sha256": "18590cb755e9c4b8a8cfb0095e67ffcbfa42d65f970c6f62a25b39e8fab7f99a"
+    },
+    "reclaim_clay_universal_spade_mold": {
+      "source": "GT6 MultiItemRandomTools:95",
+      "sha256": "8f643fa00d5f0a6b2c434b60ec518f0d5af4a685c2b3660c3bfd977fa15e28d0"
+    },
+    "reclaim_clay_axe_mold": {
+      "source": "GT6 MultiItemRandomTools:96",
+      "sha256": "4870e7032262022dff2469b2a3b9d6b2880fce965d6c78cc8fbb180674c08c94"
+    },
+    "reclaim_clay_double_axe_mold": {
+      "source": "GT6 MultiItemRandomTools:97",
+      "sha256": "0741641ef70149bfbc831c9acbc8b1cc220037574eb70e2974de40a75a295a99"
+    },
+    "reclaim_clay_saw_mold": {
+      "source": "GT6 MultiItemRandomTools:98",
+      "sha256": "d8fa668d4bccad92c0a6ab54a094930487bd727d96c9936656687ec8aed50ae8"
+    },
+    "reclaim_clay_hammer_mold": {
+      "source": "GT6 MultiItemRandomTools:99",
+      "sha256": "aa359da0658c03cec62284c2cb16edc372aa24662bb6bef63b5e65d28b5e0a52"
+    },
+    "reclaim_clay_file_mold": {
+      "source": "GT6 MultiItemRandomTools:100",
+      "sha256": "a37886372b801e0ea638a4fffa05282970e39be52f61eca6cc8415d651b59f8c"
+    },
+    "reclaim_clay_screwdriver_mold": {
+      "source": "GT6 MultiItemRandomTools:101",
+      "sha256": "d77541f914921225dcf4b3d1d1c5169870dbb0e10c01071f5f4832706b02b311"
+    },
+    "reclaim_clay_chisel_mold": {
+      "source": "GT6 MultiItemRandomTools:102",
+      "sha256": "0bcf2a3fb31b1a5622776209813f7b8bbc6fa99b77185a8bc4e6870a346bb263"
+    },
+    "reclaim_clay_arrow_mold": {
+      "source": "GT6 MultiItemRandomTools:103",
+      "sha256": "deb3d9e40d3ed73fcb7f493e441dd7b1d49d56b93ccca2ecbc99105e09818177"
+    },
+    "reclaim_clay_hoe_mold": {
+      "source": "GT6 MultiItemRandomTools:104",
+      "sha256": "d56825a946ff9c08e92f99f9bb889e5365025e796c1c205f4d68dc7315f12f99"
+    },
+    "reclaim_clay_sense_mold": {
+      "source": "GT6 MultiItemRandomTools:105",
+      "sha256": "81dc9adaa5406ccdf9c2d859487da5816b2b1dbe98cf01f890ab640c76f1c9f1"
+    },
+    "reclaim_clay_plow_mold": {
+      "source": "GT6 MultiItemRandomTools:106",
+      "sha256": "7e2d19e0ac1152d4674fc18151a79be9605f66e5a5729b083020c7dc1412ad23"
+    },
+    "reclaim_clay_builders_wand_mold": {
+      "source": "GT6 MultiItemRandomTools:107",
+      "sha256": "b3871fef3c50088513f6b370ccbf73e6d69916f069d3921fbc4ac1a97efd33e3"
+    },
+    "reclaim_clay_nugget_mold": {
+      "source": "GT6 MultiItemRandomTools:108",
+      "sha256": "a87e5a16b69d6e915d813b6d0c1aa5ba9a1eecd53878b007e3f642f6a839800b"
+    },
+    "reclaim_clay_billet_mold": {
+      "source": "GT6 MultiItemRandomTools:109",
+      "sha256": "10837c3f8a0f659fed3c1aa80fbe0b70669d3dc6df2e743c426c02b858a36b23"
+    },
+    "reclaim_clay_mold": {
+      "source": "GT6 MultiItemRandomTools:115",
+      "sha256": "83e943b82b511f6361e44b4c42a9128ba0071ce5809da8aa867382a7886bf022"
+    },
+    "form_clay_mold": {
+      "source": "GT6 MultiItemRandomTools:127",
+      "sha256": "bd185a4bff4a537c8a4e6d4e3d629d47653482da749c5a23e76b9402db7c7042"
+    },
+    "imprint_137_all": {
+      "source": "GT6 MultiItemRandomTools:137",
+      "sha256": "b1169b36415c2f9eb871d932bcfa7bc40fd3be8bbad3aeb513f07f588738cbc9"
+    },
+    "imprint_138_all": {
+      "source": "GT6 MultiItemRandomTools:138",
+      "sha256": "e0ed8f7b054f5adc3ff16e779944d2b3fbe00f8fa97d36ee4820cdea5ca20b6e"
+    },
+    "imprint_139_all": {
+      "source": "GT6 MultiItemRandomTools:139",
+      "sha256": "46b24f822b21ae34fbeda922735a769e24c8acb80901fe568f20a38671755a52"
+    },
+    "imprint_140_all": {
+      "source": "GT6 MultiItemRandomTools:140",
+      "sha256": "ea43ec59e9dc811a5c0331f96681252ae1f7aadc887ade65936bff144927acc8"
+    },
+    "imprint_141_all": {
+      "source": "GT6 MultiItemRandomTools:141",
+      "sha256": "81880c24c500fe9dc7b33f5ec9d7f6abab185370d06b9b6298e43a1530204b05"
+    },
+    "imprint_142_all": {
+      "source": "GT6 MultiItemRandomTools:142",
+      "sha256": "77281361d11f3fb4d98f53d7580c4dbf4a6fefef634561d2a7337963e802739e"
+    },
+    "imprint_143_all": {
+      "source": "GT6 MultiItemRandomTools:143",
+      "sha256": "3a8561a5a96fa1ccacf9de4360becb32e4b560f0524ebfac2a7d9a3443696624"
+    },
+    "imprint_144_all": {
+      "source": "GT6 MultiItemRandomTools:144",
+      "sha256": "2f0e830bcef1e57cee7580e772bda4f83974652692aaa82ac54703deb73dbc19"
+    },
+    "imprint_145_all": {
+      "source": "GT6 MultiItemRandomTools:145",
+      "sha256": "b4adf3da5be9729424a76ed949e6a127a9eaa25c9cd15f8bade89708fd9c33cb"
+    },
+    "imprint_146_all": {
+      "source": "GT6 MultiItemRandomTools:146",
+      "sha256": "8cc57d2891ae479430e5cf0f1b4bb93527c7b0d423c2b6a6071650b9a9e382fd"
+    },
+    "imprint_147_all": {
+      "source": "GT6 MultiItemRandomTools:147",
+      "sha256": "4a8f6d8fc9d890f754f418fd1ddb2ceeb40d2b0980da566d02b2f3b723cecffe"
+    },
+    "imprint_148_all": {
+      "source": "GT6 MultiItemRandomTools:148",
+      "sha256": "f98e8dd8813b8adb87b285976e8ba9fc7a846c74e06700ae8a765421e0bc826b"
+    },
+    "imprint_149_all": {
+      "source": "GT6 MultiItemRandomTools:149",
+      "sha256": "442f80bf3887adae36e8190776ac4fca7333ede28053570e2fb3df7ee314790d"
+    },
+    "imprint_150_all": {
+      "source": "GT6 MultiItemRandomTools:150",
+      "sha256": "aca739d71d47299e2ca89bebb533dded44370bbd2d93f604a7dd854b3c86f718"
+    },
+    "imprint_151_all": {
+      "source": "GT6 MultiItemRandomTools:151",
+      "sha256": "353a3aae52f20231e74239868af708a0eec418cb49cd590e9ace025fca0bfd31"
+    },
+    "imprint_152_all": {
+      "source": "GT6 MultiItemRandomTools:152",
+      "sha256": "e7ce3276a1906f6a8ffff201bc2a9482ae8ba45e2647ae3cf2e9a5cf918878f0"
+    },
+    "imprint_153_all": {
+      "source": "GT6 MultiItemRandomTools:153",
+      "sha256": "64b8e5fb4aec1c6b5141358d7a20e2b758ff3db20f405a1a2d5db4ecd1a20e9d"
+    },
+    "imprint_154_all": {
+      "source": "GT6 MultiItemRandomTools:154",
+      "sha256": "ccf3889a5ab390d844c0c57f86d8285e0151c47147ddab2753967a49e42325e2"
+    },
+    "imprint_155_all": {
+      "source": "GT6 MultiItemRandomTools:155",
+      "sha256": "eeb14f4f8c1a99d34fc87ce547cafe153671ab77289205832bb228722a0cd762"
+    },
+    "imprint_156_all": {
+      "source": "GT6 MultiItemRandomTools:156",
+      "sha256": "5da53357e35c619bee7ccc8b3b8d66e92b293c0d5c0a8b46df3d96d9fae50c47"
+    },
+    "imprint_157_all": {
+      "source": "GT6 MultiItemRandomTools:157",
+      "sha256": "4ebc1bbc4f489ea073f18425cb32135a46e4cf1a5bcab554a6b2ba0cd9fe5f75"
+    },
+    "imprint_158_all": {
+      "source": "GT6 MultiItemRandomTools:158",
+      "sha256": "21e5c7b598b157ae45eb0bcd1cfb3a238f979b73dbc568d02ab221f8a88d8d3f"
+    },
+    "imprint_159_all": {
+      "source": "GT6 MultiItemRandomTools:159",
+      "sha256": "fefe855acb13d8433db4df9cbda88ee65248c0c3e911ad033fe894675ee16380"
+    },
+    "imprint_160_all": {
+      "source": "GT6 MultiItemRandomTools:160",
+      "sha256": "6091cdac68fc809f88f5356dcbf0f6aca659d65822c427c08ad2d593445b7099"
+    },
+    "imprint_161_all": {
+      "source": "GT6 MultiItemRandomTools:161",
+      "sha256": "276ea3ffb74f67f89f34b7a67b90ebdf679aedb97800d98b19c6b87e623135fb"
+    },
+    "imprint_162_all": {
+      "source": "GT6 MultiItemRandomTools:162",
+      "sha256": "e6534cd0389fed9c846238d07e96f1f3b4bc04dce87217684124676ac9250684"
+    },
+    "imprint_163_all": {
+      "source": "GT6 MultiItemRandomTools:163",
+      "sha256": "68defff8ca5f35fd5713105bc982be42a8e532d771c43c9d8e77605777ec19f4"
+    },
+    "imprint_164_all": {
+      "source": "GT6 MultiItemRandomTools:164",
+      "sha256": "e917b3daca392d9f0dd446fef3ba9d60a971393aeacb34ef9cb633dd7eea8fe6"
+    },
+    "imprint_165_all": {
+      "source": "GT6 MultiItemRandomTools:165",
+      "sha256": "e36425d9616144e186f030001a8f7a11eb1bfad9e7170d54a06cff14f0d2d1e6"
+    },
+    "imprint_166_all": {
+      "source": "GT6 MultiItemRandomTools:166",
+      "sha256": "d347fe95c58dd33e09ae36ded8e573c1b697bdd0ed316c5b9b3984de41158296"
+    },
+    "imprint_167_all": {
+      "source": "GT6 MultiItemRandomTools:167",
+      "sha256": "2742799523fc9d200a08ed46084f5b5ac5b2c1f8376ba408287bf9925d485f34"
+    },
+    "imprint_168_all": {
+      "source": "GT6 MultiItemRandomTools:168",
+      "sha256": "c51a95ebdfdb52b8768c7f5f7b48ed7f83b8bd79282caa9be26d09791cf72378"
+    },
+    "imprint_169_all": {
+      "source": "GT6 MultiItemRandomTools:169",
+      "sha256": "d6e8ef6d0e001d6260aecb94479ae4c6fb836519a192c8d9ac72ff64d0998d37"
+    },
+    "imprint_170_all": {
+      "source": "GT6 MultiItemRandomTools:170",
+      "sha256": "51cf9caae6cb3e0fd449f55143600573d9709c510e89a486ce6f4494c3bc1886"
+    },
+    "imprint_171_all": {
+      "source": "GT6 MultiItemRandomTools:171",
+      "sha256": "36380fb53381e8a9157abac5387727ffa21dd03ca85b7722590eaefa89234318"
+    },
+    "imprint_172_all": {
+      "source": "GT6 MultiItemRandomTools:172",
+      "sha256": "edf1bc628ff02693525fa58a21a65ce95cf9a6f75b5297fefde07c20cd1313b7"
+    },
+    "imprint_175_all": {
+      "source": "GT6 MultiItemRandomTools:175",
+      "sha256": "6a0351e92963ffb040b84810ede0053132f21584e80a9acebe79acffcd001394"
+    },
+    "imprint_176_all": {
+      "source": "GT6 MultiItemRandomTools:176",
+      "sha256": "3b3a75525392b857cf217e8ca93845de5c0824d5848c8136fdf6a59d76586508"
+    },
+    "imprint_177_all": {
+      "source": "GT6 MultiItemRandomTools:177",
+      "sha256": "a2bec7a8886cca3c3f8cfccd8cae1eb8f119a2fa2197bd30d3bdb1a112a6c248"
+    },
+    "imprint_178_all": {
+      "source": "GT6 MultiItemRandomTools:178",
+      "sha256": "200997e9144becb7bbfa8e95e231c01ee4088089d42af7a139dfd92922473bfc"
+    },
+    "imprint_179_all": {
+      "source": "GT6 MultiItemRandomTools:179",
+      "sha256": "a5a062121d94ca1d54a46203776068970b07853fbff189bd3d873f23850a126c"
+    },
+    "imprint_180_all": {
+      "source": "GT6 MultiItemRandomTools:180",
+      "sha256": "a29029ea68eae576a26af219d82c1894fb735c7327287e3505e6bbbaebe45a44"
+    },
+    "imprint_181_all": {
+      "source": "GT6 MultiItemRandomTools:181",
+      "sha256": "8ebe0eea48cd26f12189099915d80644829a5a0ed0624c136e571cb00b36fd20"
+    },
+    "imprint_182_all": {
+      "source": "GT6 MultiItemRandomTools:182",
+      "sha256": "ae5d67041f7858436f92f57c3e4005087d33cd636621f2b956355295fd96cb34"
+    },
+    "imprint_183_all": {
+      "source": "GT6 MultiItemRandomTools:183",
+      "sha256": "3585d0e3a57c95bc3a358267805c37a9d16a6b78e7ec47c2252cead2daf8bc74"
+    },
+    "imprint_184_all": {
+      "source": "GT6 MultiItemRandomTools:184",
+      "sha256": "34feabf39551783843085201aaf5d56945609226f7e7edb89c99d54f19de1f3d"
+    },
+    "imprint_185_all": {
+      "source": "GT6 MultiItemRandomTools:185",
+      "sha256": "0efb61bc21566368a9d6a0b4e702ed44179196adf48b6ffcd45d88a1098f2556"
+    },
+    "imprint_186_all": {
+      "source": "GT6 MultiItemRandomTools:186",
+      "sha256": "63b3cae6232b17077860b118a006ed0d30878666085a4b04c79814df469bf24c"
+    },
+    "imprint_187_all": {
+      "source": "GT6 MultiItemRandomTools:187",
+      "sha256": "5b3f3a57dbcbfb039e18294748cbfff89a70431ad3e461daa330c5a278ef5fd2"
+    },
+    "imprint_188_all": {
+      "source": "GT6 MultiItemRandomTools:188",
+      "sha256": "211dba2cdcc83e2881687c078f99b1abfe319dde63cdee04b33eb553c7e6cd03"
+    },
+    "imprint_189_all": {
+      "source": "GT6 MultiItemRandomTools:189",
+      "sha256": "677c94bf4909aa461c4c8f4877eb62f1a6f0d3257e4567d2b44e3cada4461443"
+    },
+    "imprint_190_all": {
+      "source": "GT6 MultiItemRandomTools:190",
+      "sha256": "4b29e15c743ba0f3228134ec1d4ac6ee3e3ff966dcc327d3a4a0927fb6131007"
+    },
+    "imprint_191_all": {
+      "source": "GT6 MultiItemRandomTools:191",
+      "sha256": "8388d83e9536df10532513a2060aea52ca33526c62b8e85e58923bfd66dd2c7b"
+    },
+    "imprint_192_all": {
+      "source": "GT6 MultiItemRandomTools:192",
+      "sha256": "b3a21d71ada27804da1eaf0bd44fc162c7f4d02cc09e5dda26d52c714d0d33d9"
+    },
+    "imprint_193_all": {
+      "source": "GT6 MultiItemRandomTools:193",
+      "sha256": "7816e8209a81e96de349d7809a55b9b9a37615328f300110383aa08bafc682c3"
+    },
+    "imprint_194_all": {
+      "source": "GT6 MultiItemRandomTools:194",
+      "sha256": "d1087bd70f63b2a40fba4bf82307e2dedb8e83463a2c43aa1c04b6b0d90956df"
+    },
+    "imprint_195_all": {
+      "source": "GT6 MultiItemRandomTools:195",
+      "sha256": "c76be19a4a906e18e0d024f8a3611c33a2c9a1adbad6377729b70aee3904552c"
+    },
+    "imprint_196_all": {
+      "source": "GT6 MultiItemRandomTools:196",
+      "sha256": "12cff9ff0aff7974ce8aa020cd4b175b87e24a047d1b84d3cd6007b74597580f"
+    },
+    "imprint_197_all": {
+      "source": "GT6 MultiItemRandomTools:197",
+      "sha256": "fb8176493ab3f231c83816301d8928534f983c19c95b3f49eba7ec8e8ca0173f"
+    },
+    "imprint_198_all": {
+      "source": "GT6 MultiItemRandomTools:198",
+      "sha256": "54cad40f52c8b8b707a10047a26d23d8d460e2139eb1eb7345f47cce4f7629da"
+    },
+    "imprint_199_all": {
+      "source": "GT6 MultiItemRandomTools:199",
+      "sha256": "226a3c25ab3eda85d0f7cc1343f16484dd3b7726fb2c285220787c0546cf566d"
+    },
+    "imprint_200_all": {
+      "source": "GT6 MultiItemRandomTools:200",
+      "sha256": "155be5ee6e8f8a9f717c3bc4797764656269b36e5dbfd43d6d38e0772c530efb"
+    },
+    "imprint_201_all": {
+      "source": "GT6 MultiItemRandomTools:201",
+      "sha256": "62c8cd05bac3fd0cccb87215142da3c10c8636c5063ba37828de59d303060fb0"
+    },
+    "imprint_202_all": {
+      "source": "GT6 MultiItemRandomTools:202",
+      "sha256": "61cfa8d8aeab1be54ec3dc07ea5a116d548e6a18e9eee316a5b00f88f29174ce"
+    },
+    "imprint_203_all": {
+      "source": "GT6 MultiItemRandomTools:203",
+      "sha256": "af73a758fe51de0d1bac3dffa56d28db1c3c8df80089cc200c81d98619e86355"
+    },
+    "imprint_204_all": {
+      "source": "GT6 MultiItemRandomTools:204",
+      "sha256": "f35a1abbd7f3b1f35b40430e0f83ea92cd58328f8627116068b71be6fa355c1b"
+    },
+    "imprint_205_all": {
+      "source": "GT6 MultiItemRandomTools:205",
+      "sha256": "53f1516960006d071d8e99dd3ce18804d36031f5081de803833e1e557c3f1285"
+    },
+    "imprint_206_all": {
+      "source": "GT6 MultiItemRandomTools:206",
+      "sha256": "574408c37fa80af27a488baafa17209c1aa5cb4922bbb5f4cb4a734448429607"
+    },
+    "imprint_207_all": {
+      "source": "GT6 MultiItemRandomTools:207",
+      "sha256": "6cdb84b86f6310adcf6b3094132966fa363c683cb85ef51ff13617a9e47368ee"
+    },
+    "imprint_208_all": {
+      "source": "GT6 MultiItemRandomTools:208",
+      "sha256": "67bc70f892115bf04a2a22f9f27bc4086b101010cf3ad72e071e77432caed1bd"
+    },
+    "imprint_212_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "92b2f570435a715de4cfbfe7cfc0748fc55d48ef6f155e9b5906d2700353bf06"
+    },
+    "imprint_212_anystone": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "c0329263f7272a5b4aeebcf868a19013d9081683143e6566d750980686c97b93"
+    },
+    "imprint_212_glass": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "834353d90810e79ef11f001dab2327a76b49ecb02cfccef833c7088cae7bbbad"
+    },
+    "imprint_212_anywax": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "df41b40331c6aac493d4e4eb88fbe422208053f284acff5dbb55812eb73e8eb0"
+    },
+    "imprint_212_anyiron": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "caf216ba1db5a63b7b67f5f34f88c206c61088bc052fd01a3949d661c764d88b"
+    },
+    "imprint_212_anycu": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "ea5145fb4345e2fecd7587fd552fdb112c203b1ceca397485c41461e5001b9e1"
+    },
+    "imprint_212_sn": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "e75dd254e76c194fa18521f0954552d51a2868d06e31673ad33d1809c4eee26a"
+    },
+    "imprint_212_zn": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "83b0cbca5c170711b6921ea92bb0c7d7b714a36bc2ec6a31d752bdaa38bc85a7"
+    },
+    "imprint_212_pb": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "39d322aaa2b36782f7dc1d18705d88089ac4e7e09654b16255be8a61027dbf2a"
+    },
+    "imprint_212_bi": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "3ec81bd6edd90b3fd724e7c6e3b82e0b5319e5cfecc509feef78a7ed7994638c"
+    },
+    "imprint_212_brass": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "d65dae4ada012e5dd26512f7e0ee789774ccaa6eac92dcd7b4d02b9bbf1bff01"
+    },
+    "imprint_212_bronze": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "5e823d25773908aac5585683d28ceba504fae90d622b892b22c5afb3b2a4fe04"
+    },
+    "imprint_212_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "49f5af1b550870f563014d7d5ecddd2cc00b326ba3683e7577971491ae70b1b6"
+    },
+    "imprint_212_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "4a89838e36656a8d9eee3b8fac3bb6e28a9d12bfd26eb9856e1d3e7b0b567dbd"
+    },
+    "imprint_212_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "0f73f5fc8b86e621389e13d386dcb51c275676f8aa7c566cff138b1c3c641f30"
+    },
+    "imprint_212_au": {
+      "source": "GT6 MultiItemRandomTools:212",
+      "sha256": "778ccf7193f525874aa06808f5ffaf9872b7fd06c3027db29be1e6e8fe2593cd"
+    },
+    "imprint_213_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "15512dd7805c345ee307c0f4801aa72648f09a76471f4c38f6134315723d707c"
+    },
+    "imprint_213_anystone": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "9a2a0cfe7a45ef7e239b566e2ea30860af8fe61005462ef574b3c5e9fa1a682f"
+    },
+    "imprint_213_glass": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "9966f67351fe7ece1a1a21972e3e6360c4d4d29ef4215ebd3eb483bc35a159bf"
+    },
+    "imprint_213_anywax": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "032791c6cd8c540e87ec920586a6805c5ea89c9f2705b6928b4d2c16f38abc82"
+    },
+    "imprint_213_anyiron": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "88c8a48473ec57d359e66cc9c8e08b00e9883d8df5cd4d6d50996cc5897b80ad"
+    },
+    "imprint_213_anycu": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "57a534a2a7c7fe3d44c6d9a0218fb540c1979569ab05e1e8717abf4197d6a505"
+    },
+    "imprint_213_sn": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "8b5e3d5e388a8ea0616adc864bf2133a4393fc7cde1e96c804f4384535ab01fc"
+    },
+    "imprint_213_zn": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "e5fb0b2c475d1a3014c4df37bda212028e79d5edf0bf3df3d26d630019142e36"
+    },
+    "imprint_213_pb": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "145a6a670ba1a17db0c17e5d58182d9a0947edd15b955f5d9e2998e2336fd54c"
+    },
+    "imprint_213_bi": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "e62b447d8ec9487ebbcc1418b8708d3e2e8d777b24c17f49a6e8211595942337"
+    },
+    "imprint_213_brass": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "9a00e0a5bd3f36a210471db82942788370a24330d143de6ae72431a9a426889f"
+    },
+    "imprint_213_bronze": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "ff6a7164c7117f05e77bd7671e07695e0bd4181502df3ece1557cc5e10617b9d"
+    },
+    "imprint_213_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "901b955b8305d94b6be27087c523f129dc41e19dc2a0d0b8834c6fcffb29a0a7"
+    },
+    "imprint_213_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "fc22f3b7b7492df3c5410106c1d55e3d96922c0ee0bf2c3628c363d479dfe333"
+    },
+    "imprint_213_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "618fd7ea7777fc47e8e9c5e6728205ddf39e77107a3884c2a477dcc0bb6e1d00"
+    },
+    "imprint_213_au": {
+      "source": "GT6 MultiItemRandomTools:213",
+      "sha256": "148df9c58abf16ab98302facbcb838dfec62135ffd43ffab2e8e3e892f2cfc4f"
+    },
+    "imprint_214_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "4011b2db878ec8c4e807cdf49b46a372c24d856895de43b1f7f98c70cfa6390e"
+    },
+    "imprint_214_anystone": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "308cad6454afe8d573f0467feaf2ed58910af1925d718c2bc916efa445802bd9"
+    },
+    "imprint_214_glass": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "45457064e8c3494d05fc1b4d2b90e54ae5e4955d81e91e9a5d3170055397953b"
+    },
+    "imprint_214_anywax": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "d4402d3355fc2869622afc9f931073a9f529d7fe996a044ab4ccc093acf66b7b"
+    },
+    "imprint_214_anyiron": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "9eb20dc84a66126274df46ed1a49131b4d458bba5cafc912219ec49da5fb14fb"
+    },
+    "imprint_214_anycu": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "2859179f90dad6b42618abd5e97e130d68e0b07d5722146e56b3ac06c5e021d3"
+    },
+    "imprint_214_sn": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "a2cb79fb06fe980d51b5d7141194795ddf9bf5cc3bd26b8164ac510aae6cf64b"
+    },
+    "imprint_214_zn": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "b768834a50a126bedd29c735a1982b63f752996ce3a49c0dc486cb65345b52e9"
+    },
+    "imprint_214_pb": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "13084f8e56e191d96bcdef24caf6c692aa3778928fb77cf2213098c796c3203f"
+    },
+    "imprint_214_bi": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "27af97e34c1375947d90d953babf7bcb06485b0be695ec72457794e185b391fe"
+    },
+    "imprint_214_brass": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "592087bb6f383aea91ec5e1623f4ea4ac1f70100749b030fd2dc912ab27e896e"
+    },
+    "imprint_214_bronze": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "da70727023da4ea44ce704042bea722819fc0e9f9a237494607c120d1f33cd88"
+    },
+    "imprint_214_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "29b202b9ba7b1d6c3e09444924f55fed6a7fafe2febf779ac0cd0096816b6fa3"
+    },
+    "imprint_214_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "7c733ef359feed5a6b86ad87353d926a7026a012e728a3da9c55dced69924f5c"
+    },
+    "imprint_214_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "4314b684919cff3eb010392890fdf955ff0b1d5edd30dc21ce22c1ab507bc73f"
+    },
+    "imprint_214_au": {
+      "source": "GT6 MultiItemRandomTools:214",
+      "sha256": "e9530c0527dedcf5b466769e4af012eb920c1bf13ac942dbc8c8735a9125c349"
+    },
+    "imprint_215_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "dae1fbce93b2a2fbc2cbb14f9f5f4143cdf784a21f9df1fb013aab1d3b01ae88"
+    },
+    "imprint_215_anystone": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "309398c39ed71172485490e42f314450eb52bec4b6efcbae6961f1cd31fe8654"
+    },
+    "imprint_215_glass": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "327980c25519f32ba047daf72df46dcdd30bec3f637d065713c26a2cf9dd0637"
+    },
+    "imprint_215_anywax": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "bfec4c790eca7f5818eb38a193ad3e6ce37e1949fe253a72266f4bc8a1587f1b"
+    },
+    "imprint_215_anyiron": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "7a8f9035056cc2fa4c2c44e5cda504d707a849061204719a4d69cb031b9e248d"
+    },
+    "imprint_215_anycu": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "60349e74f03519547eac1c484436a4d3167af5dc2f39b704d3a1eff32adb7821"
+    },
+    "imprint_215_sn": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "9331fd1acaf8b9b419909eab23be4fd50dfdaebbd314a14c4826e87adb798dcb"
+    },
+    "imprint_215_zn": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "788a62bd312cc86b58e21d4d25a5f91d41c2d19b7fafad63566951ed2c8928dc"
+    },
+    "imprint_215_pb": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "4a7da9b3400145cd25d481709f50482a5e292d618f79e39d6a797cab202f95c8"
+    },
+    "imprint_215_bi": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "e60a0da91abc4ef745397e986365719ff58b617fa13b915ed8d7a762d5df4515"
+    },
+    "imprint_215_brass": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "262dc9367b2f7f034aee5bd19efeeb70cbadfd78820102619ac8a2766b32d640"
+    },
+    "imprint_215_bronze": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "e1126b19bb0e9cc7ae0b93a7fcdd33cb809b7609bea69d984ce1dfaac1a9beab"
+    },
+    "imprint_215_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "b9df04773e674514d804e7a0e583b8d92156335e30f168981f7249b3db30c2c4"
+    },
+    "imprint_215_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "4b2f43dc4d74a1d4f199677af46e558639d7a12803a4f99b31587875b05cabda"
+    },
+    "imprint_215_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "db3f614be8aaa3769a1c1cb3efc31f535c3c68e835e4a40942eeaecca0d2f13f"
+    },
+    "imprint_215_au": {
+      "source": "GT6 MultiItemRandomTools:215",
+      "sha256": "1cfe8411c2af720f9563b9f86bf5807c934aaa78c9fb14681f97120e9199f4b5"
+    },
+    "imprint_216_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "dee0b6d17533ec2dc940dc54f1f52e08f830bfc8dc250d5640b249de2a8fd30e"
+    },
+    "imprint_216_anystone": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "00b9310b808637af3983718d551b566c7bc559d1ab24ffff22f74685303a819e"
+    },
+    "imprint_216_glass": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "75b753c59873b22765d9ccaa9db72146a44a03f1e40d59218c2deba79fb07360"
+    },
+    "imprint_216_anywax": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "966949c8bdf40648aa439e67894f3986fb9bb4c7e0531ccc57cdcc06245eef94"
+    },
+    "imprint_216_anyiron": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "d7af4f346b4de0b6c7842b17b80077d2838567243ad2c96b717cc8baa1f1ae04"
+    },
+    "imprint_216_anycu": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "b6e062ee8731c7762bcd3bc53c8b93743587a7ad48f45789067f3054349547a7"
+    },
+    "imprint_216_sn": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "56ae1a75412129dbfd5869135d60e72a858409db9a6394e456ef7b1b71ec39aa"
+    },
+    "imprint_216_zn": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "6bed82b982cc91cc8f8c14e56df3c6cc386bf44b0540dd10b3f093a76bad6ddf"
+    },
+    "imprint_216_pb": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "bfa7d846a8bd7bea11bbfc41c596002b2016679af028922a6f74cd3afde99092"
+    },
+    "imprint_216_bi": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "8cdde96269b57984250002e46cf3725499ab5aa619bc98fc67e316cec6bae69a"
+    },
+    "imprint_216_brass": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "02669ab1e2ed4393461e159f66903a5403e72f59cb393bf4029f002947336ee7"
+    },
+    "imprint_216_bronze": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "c3db2743183b2808c6aab09a3dacb625523d8842d3c1603b8766f2058ebc953d"
+    },
+    "imprint_216_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "18c1e163239a1081bb8d359e04506cf6e6d9433860ca86ed8f0c003a95fc0e3d"
+    },
+    "imprint_216_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "293ae485bd9ebc954afccece7106f3cbdf0b8c1d3978dd4c8cb2292ad9acb09b"
+    },
+    "imprint_216_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "5058a67bb8e786fa76bbda172afa7aac2bcc9db51def5234127894bcce742588"
+    },
+    "imprint_216_au": {
+      "source": "GT6 MultiItemRandomTools:216",
+      "sha256": "94c353dd5fe4a179bc43b5c866eaa86f3faa8471d0053ced95933cc4de09f75d"
+    },
+    "imprint_217_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "2498b2521d623d34a4099e8b229d20ed88b4a241f156f3e90b957f4922d01a7a"
+    },
+    "imprint_217_anystone": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "78544c0d22679ff9bad840f3b3e960378ec26f2de2377a4a569c2d61846456e4"
+    },
+    "imprint_217_glass": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "af974f8c3210c86443d805cebcaa10bdb12435388a5be4d550d4a1dab8a86857"
+    },
+    "imprint_217_anywax": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "628079a4bd14ac5e0cb638fbe80077f21ea6477b67a96c20791d4e4824c051f6"
+    },
+    "imprint_217_anyiron": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "b376ef237ad78d2434578b07ee012beaad2ab90aa2d82110895c8fd9bbfbc739"
+    },
+    "imprint_217_anycu": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "96a23a761d2d8b0f360d89f9dacf2ad410f6c5df66f47598de14638b04b8f6ec"
+    },
+    "imprint_217_sn": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "cd234d286850cf03c17ec4f2a9559140d18631d599815629d19b7ac66dd207f6"
+    },
+    "imprint_217_zn": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "60d51d8e34eb55292b7850edae2775fe1d4faa4cb0d793cff08ae6f52fdd436c"
+    },
+    "imprint_217_pb": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "8b0f238d1c3e8da037cc00a7f5b48df56efbba6f1dffdfff5f50497d4df51c6b"
+    },
+    "imprint_217_bi": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "31d391d52010d6fe250fef05c4acecd17642a8bb5c81cbd4b9672ee23f0b17eb"
+    },
+    "imprint_217_brass": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "209ab71bb1f19733824c2ad8f05932e0f89a1be66768d433f37d60890b7cc823"
+    },
+    "imprint_217_bronze": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "079b1ce9530b77f7ac5c6aa7987f317d84d31b2642e81182c7528d8eeec74d10"
+    },
+    "imprint_217_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "f298334b7b9aac730918b724c1a5aa48b97bf611609e4ab2423056288b5c594d"
+    },
+    "imprint_217_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "07943a2fcf84a2d630c2808cdcdd8c9dded92238a407c2c2d86716d1283a73a9"
+    },
+    "imprint_217_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "2ead5c63fd7a54e64a9023b02b44a28147a45cb31c5eda511c558af8ab449475"
+    },
+    "imprint_217_au": {
+      "source": "GT6 MultiItemRandomTools:217",
+      "sha256": "de060fb2d9d87450a42c103d0d8bb52cca5389aa1d48d9e1ca1c6ab436e69dd7"
+    },
+    "imprint_218_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "a3c7652777a25df8a24d39277b39d345bf47b6b6a947eaad20bca5fbf04c923c"
+    },
+    "imprint_218_anystone": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "40d211a54cead8c3d48077fbeff79118079b7cfc7c67e49695292027291cd7b4"
+    },
+    "imprint_218_glass": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "1d28563d0eaafa237ecc2a6b66a3f258140151cd07b4b17f97c046af52037567"
+    },
+    "imprint_218_anywax": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "cf2b87a9ceb02db667fe3c0dc874e28341725c58f7170df32c43a5a64a5ffef0"
+    },
+    "imprint_218_anyiron": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "06f3b77006194843490717afcd4ecfc30a107102f4a4a2d6c719c7574af336ff"
+    },
+    "imprint_218_anycu": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "215021eaf5947ffd71e620e837636c969396329e9c8f253029e734e78615d4ab"
+    },
+    "imprint_218_sn": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "0f7f6c3751ce09d3ffc3ea4d56fc369c68a4f6852432bd16962ad87d7f97c3de"
+    },
+    "imprint_218_zn": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "6d9346704e243b578b1baf1243f5ed4d1a8c5e9dae859b2bbcc88d6136f21f24"
+    },
+    "imprint_218_pb": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "b7db49004e2e99b07c9d81fe26ab0bb0eb38e97652cefc303f47af0e1777a553"
+    },
+    "imprint_218_bi": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "c27a1b62125b28b6b0211245007b3612f263f7cf6be039926abb062a4bae33ba"
+    },
+    "imprint_218_brass": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "e13cc1d63f11f4eea58ac6b31acd92aff15e5ba30498a41c8f7b0fae86cfea67"
+    },
+    "imprint_218_bronze": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "71dd8f84b9f74349b03315729b3960f6432c27652f30d0ddabe06add56db97aa"
+    },
+    "imprint_218_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "8d4d8bd16692e022eb2764ba6e8f12d4657fa291e35dca1af089ba4b97d1dd23"
+    },
+    "imprint_218_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "337de995e34a904a66374c3622651b3c7ee10d4715fe5571b1301eba43486a72"
+    },
+    "imprint_218_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "798792ba67a538fe7308851b50fceac0d0a4d255eb7e9701be93f550d78aba91"
+    },
+    "imprint_218_au": {
+      "source": "GT6 MultiItemRandomTools:218",
+      "sha256": "92e94a8194ea3577ddb542bfb67765462e30d00fc6e5734c45003f5e303d87c6"
+    },
+    "imprint_219_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "5aa36b8444a89e3ed06bdb74e288ed0e11ece3371338c5eb66fbe15d15b55dca"
+    },
+    "imprint_219_anystone": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "745561fcb74e059c9e149b17eb810fcb6ca6ca715d9daf19d479fa2d32803221"
+    },
+    "imprint_219_glass": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "6a4e4ab5d99f5396a727023d18aab65d72e7b0f78e369c0778c64cb8307fd02c"
+    },
+    "imprint_219_anywax": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "48cab88f80108ef4bc4921313d2b4d438f3207e991b30e93c3d6d77a4e3f8540"
+    },
+    "imprint_219_anyiron": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "b6e0708684e485ad5dc680dfdbb355d5fcaf9d1d725260c80b7388e8704847ab"
+    },
+    "imprint_219_anycu": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "48bbb6bbb62ead2ec7b53e005d3ffd709106608ed107225cb995308efda0d79f"
+    },
+    "imprint_219_sn": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "7c58eabf6aaa54757fd0f42fce4e4eb68a0d638a1360c926d6b36063c084a099"
+    },
+    "imprint_219_zn": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "4a4cc7d120443100944af9169264fbba269fdf64fe8084666df540281a9f8cea"
+    },
+    "imprint_219_pb": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "0b61c7712a74bda5a14c31c174806bf571a1c9b5f74e814e6a0a60d9a60de416"
+    },
+    "imprint_219_bi": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "a1b362994bcd5baf7e9f8524a555639e3abaab90c32636e02b8ce7ee117cfa0e"
+    },
+    "imprint_219_brass": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "c858332194b362fb7bee397a333d7fbbdeee69f9a3946e61fa361ff4e9fe15bd"
+    },
+    "imprint_219_bronze": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "e4585a925d2b8eff61a39bb4406798c5f522519077bc9edd959fd4fc49da17d4"
+    },
+    "imprint_219_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "5446fb1119c02f5163289c3c3f7a227e412b01e5500cc633554507bfddffeb3e"
+    },
+    "imprint_219_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "dc1da5e4726cfdcbd1ddf538ff3624eb9951cb667f833106b3da37a6c6595320"
+    },
+    "imprint_219_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "b80a140bb40fd0962f3becd2dc9f95e8a513092f2751b22ef2753cb51f49774c"
+    },
+    "imprint_219_au": {
+      "source": "GT6 MultiItemRandomTools:219",
+      "sha256": "0c075ce508b7a74994ba7a9f0b1cf6517cca0cf0fb9509cd6d7a2e6768fbf7b2"
+    },
+    "imprint_220_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "9cc992b2a268960fed989df17db899ce411116a29e2ddf663a88e2f996217a15"
+    },
+    "imprint_220_anystone": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "b2b622befe0abc155021b4b05ae8101e2bb37c2139e6cac1ecbf815e525e7a14"
+    },
+    "imprint_220_glass": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "630c40ff54d9d1f098f107442ee11e6393ac3e9897f6c34df45c1438a9bf8c67"
+    },
+    "imprint_220_anywax": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "7da94c79f1a0cbe6439fc645083841b7cd3e839a56a4802a6f662c0823b68d96"
+    },
+    "imprint_220_anyiron": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "d92afafb730a6f57bf8d8987d2b894c4234fb25c6942ebe2aa12b565e2b2be10"
+    },
+    "imprint_220_anycu": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "0ed0f038925d3ddcc7aa06f99805ddfefe2a3afe4831b0fd19c73a8d1cd01071"
+    },
+    "imprint_220_sn": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "2b41bd5774cc0853e49a3a409bfb4439c58eb341182afa160916242cbe7952b9"
+    },
+    "imprint_220_zn": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "fab69eebb9223b01cc1c71ccc836ce32e52302db563b95fd60f74fb1ba01a16b"
+    },
+    "imprint_220_pb": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "9a3bf3776de3e03a8af7cf41c36198bcb7c36324bbfa1393496a516d8b937cb4"
+    },
+    "imprint_220_bi": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "20319a451c2962549ad9132c9a1ebbe08e663231f34bd43357c6b101fb1e4bfb"
+    },
+    "imprint_220_brass": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "952ac11135b34dec20d2dd6a62073263df14b6f2b10709c56ddf345126bca12f"
+    },
+    "imprint_220_bronze": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "5fbae4d75c7dab37ec80e4b3ac18ad8db391c49a4edb3f8e182ce85a8da28f9e"
+    },
+    "imprint_220_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "1c412ebf2203373efce1f69b2467f3fa5bbc900ba042ba21aad4f723c2d196e4"
+    },
+    "imprint_220_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "0ec9ccfcebdac2e6bcab6b517c84a6c95822d5f154753ed68479358e011b931e"
+    },
+    "imprint_220_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "2e26b97e04bedc6e76eb35bba819fe64e9a60ba93468af62db0f96f8f839934d"
+    },
+    "imprint_220_au": {
+      "source": "GT6 MultiItemRandomTools:220",
+      "sha256": "36167923b98be2ed331927a23e9827dd1dd2a9afb826545da23ffd0d9d50c013"
+    },
+    "imprint_221_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "46d7ff1f17d333e510768edeb1930cde8fdb5ca9de6c5cfeadbb75b3ccd096a8"
+    },
+    "imprint_221_anystone": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "f597b4d7fc1b182280c8ad4ed4bc015ab0c4152b90d1c78c96b54c1652d79b9b"
+    },
+    "imprint_221_glass": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "8584ef4357c1971065ac4f341da74b361eee67b066b31cd1e992fd38269f05f0"
+    },
+    "imprint_221_anywax": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "b64ab60421336d181257f20afedba25f094e18ab320f03aad335c164e6e2a6cb"
+    },
+    "imprint_221_anyiron": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "24014a3fc10dac14a3475302da14c2826195574a666af8f52b2e924731bc55b8"
+    },
+    "imprint_221_anycu": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "7ecb1d1e87bcb8e14575417c74b8821eb9f1e7ac723665ff70da9d970b3c3e93"
+    },
+    "imprint_221_sn": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "edcb5d68470657689e463ccd382b397b8f425a4c057b5ddaa10e7d5a36408aa8"
+    },
+    "imprint_221_zn": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "2187250e3a7237b0379cfeb34ffc1126eb094a4aa29d018d8e960c92598942a5"
+    },
+    "imprint_221_pb": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "91a5b2df426e9108bcfbc7443cb884a929a16a56fab6fbece7047a855ac20378"
+    },
+    "imprint_221_bi": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "dda49581d00f25844845f692ade894dcf0679ecac231830ce1ba45ce8000607b"
+    },
+    "imprint_221_brass": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "06efa925f534fadb47a44a0876d7ef039d2763d9d3b388b14abeb69e40967ec5"
+    },
+    "imprint_221_bronze": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "3c9a825f282212b4b7c7f3d7e0114efc0d76293234ed1f73cc3f1eb6f5c7ac28"
+    },
+    "imprint_221_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "02b04ae4d5d20b071a791b163891beb73b29643bf2cb2da5a22400fdd7c23495"
+    },
+    "imprint_221_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "97b131703a665e92345cb091418c77a064617cced4d59a539fa483462faba744"
+    },
+    "imprint_221_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "fd0cdc48beec720f271f8bcc153609d79779126f1c4d833df4b3e14f24e59b06"
+    },
+    "imprint_221_au": {
+      "source": "GT6 MultiItemRandomTools:221",
+      "sha256": "efecc706e5d5d449759a77d8a01367c25a57295f717c7654dda854925ce1f40f"
+    },
+    "imprint_222_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "95ed2be66b840d847d1c4335c3535e345c93ffeb7553b8cf13d67e577f08e45d"
+    },
+    "imprint_222_anystone": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "28224189558aa42a05d2ef431a9622e172561ac6b2ec772b3960e66daf2189bc"
+    },
+    "imprint_222_glass": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "865f6b8dbf679c363b799a128845fda3cefc6d8fe754564edd296ef96e7fb0b2"
+    },
+    "imprint_222_anywax": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "195a9ea27220dd484c093fc4c03363a2ad9ff2f639531eaa78464c2758b00fb3"
+    },
+    "imprint_222_anyiron": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "56dca650ebc4f17a64e56160d1a7469dfd9b4be4387f8c8c9499cdd3c3ad71cb"
+    },
+    "imprint_222_anycu": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "cb81e5c1f0ca261e0544bcb95b2d5d9a5317dfc8c2a9dac999b1b25fe5f57676"
+    },
+    "imprint_222_sn": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "771bc60bf28f00f8992612446872e8245a905b0e8a27b7d6726e9505afddb38f"
+    },
+    "imprint_222_zn": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "8ed0fd798b186fb5b4427db28b41fe3051a9086dcac162ae44d2e89f3913778f"
+    },
+    "imprint_222_pb": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "404200c5c44546c4d051b3ef9e7622cd0fdac9b024acb2ae0f245e26666555d3"
+    },
+    "imprint_222_bi": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "b58f51a44f05091b623cbff8a5b2b2fa224fd2c02c8793cfff906dfc018c8b0b"
+    },
+    "imprint_222_brass": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "d7226289a58ce80604b4a71b217315a2210ab6437c6060f900b594bcaee40744"
+    },
+    "imprint_222_bronze": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "56c7d5cf575f275e2d538268697f7cf15d8dd3a70c0cc42d3e8eabc40b0a312e"
+    },
+    "imprint_222_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "971024e682b98652efab2d0bd7cc7ad7205e466d0f840e04f45733a709a5b2f3"
+    },
+    "imprint_222_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "751ea3c3841e898d0ada441c3a98936ed1ada35d0e9a44240ce701b8382a2d5b"
+    },
+    "imprint_222_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "2565ea38b68c2658493860a732e7ebafb52dbeedb68b5a0aada1280f7546962a"
+    },
+    "imprint_222_au": {
+      "source": "GT6 MultiItemRandomTools:222",
+      "sha256": "3903b2a0ab3fe5ad480dbf6d8ce8baccdb385307ba435579abb0a0f26563355d"
+    },
+    "imprint_223_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "360be3f5166ffca5d7e47b3031c28cd3a128f0362cc7665aadc9e5e080f1d803"
+    },
+    "imprint_223_anystone": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "edd9a08e38120cfc27f46e9d279552d5515623914731d06eb540c1f31a0612bd"
+    },
+    "imprint_223_glass": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "dd77a7a9512fec9331be130594583589463361c5e95734f4b51ef568422487c8"
+    },
+    "imprint_223_anywax": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "fc9586bf03ff18c6ff12543d7bb191a71edaaffa8788869555d8b0e913e971c3"
+    },
+    "imprint_223_anyiron": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "90b2a873756bd9faface417c89ce567775d5c2b83a80654b119f92f388bf00f0"
+    },
+    "imprint_223_anycu": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "e2453db0b93a071036771abb581b8676ba84ef9b069f04b60b2d8975a8917e68"
+    },
+    "imprint_223_sn": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "39cf51ba24e0491299a42d752dc2ac0006c68d472bb192bddea2abe834a77617"
+    },
+    "imprint_223_zn": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "46cb805a6919a34eee0e9022001610e3ce32bc6b95aeb32d7befaae41cd4f1f0"
+    },
+    "imprint_223_pb": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "57fb82b99e2f846cbb81701893b6b2efe9206bb33b45382d629773ab810e14ff"
+    },
+    "imprint_223_bi": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "8de71c195dc67d860a00cf9f37b17355a7a277490837161d3b8187621752db4a"
+    },
+    "imprint_223_brass": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "a05fbf6376d9d8a0a0669960562ebeedb9fb3dabcad267d669b446eaed72a9d8"
+    },
+    "imprint_223_bronze": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "9e40162b302388224706702517dd591263407418c8a75784c9bf13ee61d0e806"
+    },
+    "imprint_223_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "071252d98617bdc78851c5007652feffc2005f64f3a89c040492d264093333a3"
+    },
+    "imprint_223_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "89f66662e8fdf450a86d50ccc60654e7248fbdf679691210eefdc2670addefbc"
+    },
+    "imprint_223_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "76a7dec063bda7095ab393539e6d47e45bebe63b10afb97f693824a4d0fd5358"
+    },
+    "imprint_223_au": {
+      "source": "GT6 MultiItemRandomTools:223",
+      "sha256": "66d3f8d87d49447f7580c4142672a779c2850e12454f8b26b18c1a75aa544d26"
+    },
+    "imprint_224_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "c0ab31a1d7c70913c6a770338cb6e72f9408eb3211bfba83b2ad0708802e39c4"
+    },
+    "imprint_224_anystone": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "f31d6b5cd2bbac2ce9a17db47495e6250447ca5270fc385435c25d45f0b31ad3"
+    },
+    "imprint_224_glass": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "be8e63d5bc8a3e9f3f4ee9bfacb2a83f7aff523f3d93b692a3a9a620fcea20db"
+    },
+    "imprint_224_anywax": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "696f3b6a69ff36c7083ec2a87eea234d87d1c0d2c0be4c3f33f3e21820f5d544"
+    },
+    "imprint_224_anyiron": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "7fea1473c2eb4b5d356ad39b67be6efbf3923bc450abf9df6b05a05c0b70a7b1"
+    },
+    "imprint_224_anycu": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "b24cae8921d7464f27dd85c4a032b328d4fbd8343d8f368f70b92e6601089573"
+    },
+    "imprint_224_sn": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "e47bfec5d57940881045fa576823d202e9ffbecbe28d7b16175356a773c7bc41"
+    },
+    "imprint_224_zn": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "8167d0df7cfafb9962f3f385b6fdd555b95ed2320095bd199320b514df70b44f"
+    },
+    "imprint_224_pb": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "ac809957c4d5e41dfcca99354aefa6b7d7590846cdf90a05c91d62d2bdcf7e69"
+    },
+    "imprint_224_bi": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "0ab0f5dc2a5c1edbe59795bd7a71326162008afb117f569e602bdcb878b6c782"
+    },
+    "imprint_224_brass": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "3bd2887990fde385dd3d839d5d79567cbe2eb08d1923b4b76560ff6fdc3ebae2"
+    },
+    "imprint_224_bronze": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "4555f2b5314545e3eeb48f785db49a01a524c650e5334f3c766d1b2f5c1224e1"
+    },
+    "imprint_224_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "635857d1ccab27511b4f8a135e223d4c9e636598da34c6a1e643279ed3621cc5"
+    },
+    "imprint_224_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "68e34878baf92b800a09c72219a2ca552a70650d9efddf3a5a5fe5924bc9c6e5"
+    },
+    "imprint_224_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "4910e561480c0d0ab1b94feef8066b956ff803d000f9475caac0351b028588ca"
+    },
+    "imprint_224_au": {
+      "source": "GT6 MultiItemRandomTools:224",
+      "sha256": "2fd632b0ae1e7928585e4a010318815afa5db63132e249f3b73b7cc98acbbc7d"
+    },
+    "imprint_225_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "7a9f075f7f2e06f49b41adb3e1d0c60ef8550e882e2212cc48b37b8b8c781782"
+    },
+    "imprint_225_anystone": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "1144fa2a94a60de6cd996f085508c2f16b571f1a80ef4f37c7b06389655b3809"
+    },
+    "imprint_225_glass": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "8b505411a1fd8d88db89a4b112e2bfa7a3472dbbfbda75c02e33d02a94c21a46"
+    },
+    "imprint_225_anywax": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "9df0d972099c518702513892194dee65b359277370177546e109f4f29e998b93"
+    },
+    "imprint_225_anyiron": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "c79f4a8026b59f8eeb53ce1d4fb931b37ca0cde0db5c83d38929b8d4688da881"
+    },
+    "imprint_225_anycu": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "50c7b35c3e6b4463ca99d09b7c5dd0e170ee02b4d648bb622df08f2792ef016e"
+    },
+    "imprint_225_sn": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "1c45073f8272f14a3784582ec04f10c8fc76905d0a86dc8344706283add65f8f"
+    },
+    "imprint_225_zn": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "179b33a3a3dac74111c685d926410a7255ab7ca1d08b5ec49d5542094ac5bdf5"
+    },
+    "imprint_225_pb": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "832022192a68a3e188f4a31fbe49c69f3ac7a1a5b97331a4b80723a48fd0b350"
+    },
+    "imprint_225_bi": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "9a4c75e7152d0990933310a9733f999c38d5635def570bfc9bb12283f4625758"
+    },
+    "imprint_225_brass": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "69cf8b507ad83ae4c359f872cf488df79f2bcd7e43765076f52dad7069fa6a42"
+    },
+    "imprint_225_bronze": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "5d19c9502e0100e7a45e516c1eb0bc518ce50c7034b6371eab8f0f601414493d"
+    },
+    "imprint_225_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "456f02ccb816f0d70554e5b922633e5a3479b5864e81bf4b46f3fa1f53c6b34e"
+    },
+    "imprint_225_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "807e4e8d312d4f86513fc59c6d5feffefe8ed93fc812480c8ae5d80216c6b8e9"
+    },
+    "imprint_225_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "e55ad6ee2de6c34082cd69b0b509a358a176d3928c03b62ed4df18cb9bb6e6c8"
+    },
+    "imprint_225_au": {
+      "source": "GT6 MultiItemRandomTools:225",
+      "sha256": "6651a82c8fc6cdb442521afcc8cd14a67b42844ebcec11ca577ed1a71ddd07f2"
+    },
+    "imprint_226_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "d4ec16ca598c57f03666e2db03a49fcf9b45ac27805b80c2edb476015adf50a4"
+    },
+    "imprint_226_anystone": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "a3889ba1854d89c2a1a5aca4fe8c868bce1ef30c939f7fbaf11c46135accf1e3"
+    },
+    "imprint_226_glass": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "a6e45e855ff6ccbac34a97e1c1db1986b864699b1954a6891a58702eca89a91f"
+    },
+    "imprint_226_anywax": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "e0e3a83ae6c667c74fec528bf490efdb2503e691a2c9101bfac4f13a39d1e809"
+    },
+    "imprint_226_anyiron": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "309dfb5566786434e9b2fb48aadcf3c09671669fd2f16ed872431778091ae0f5"
+    },
+    "imprint_226_anycu": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "0f197af3f4d5eafbfe133755061b11f08907dbceef59ba119b5e2a1e659d8052"
+    },
+    "imprint_226_sn": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "4e59ff453b46f1bd2c5c30fa12f2fc75e26a433ee15ea17538cb7a3243ba29dc"
+    },
+    "imprint_226_zn": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "e691745d81190c31221fb77e1c17ae4f8a828584d867770023d5643e4d8c0295"
+    },
+    "imprint_226_pb": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "4ea63aadee5492aef35b2e0fbb6746e80a56d426282ef2c56aa3dd5d91eb721b"
+    },
+    "imprint_226_bi": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "0ebbbb1d159ad8f331565adcdf26b5c6ed818a1f74a160ec3d2d1e9a0769773a"
+    },
+    "imprint_226_brass": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "c2563e758b9abdf762928aa3481be01c824c0f044e0b41d0c4a250f372c76a80"
+    },
+    "imprint_226_bronze": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "1f1db74747ed666be3e250e881e2e8a71d2b3ac863bead9b364fbe7e1c6d4135"
+    },
+    "imprint_226_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "4e53110f8c1172fb9c23ae1c5bac4e6e84be9b795290c921abf47313c4b2803a"
+    },
+    "imprint_226_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "2d31efaedc102708be89eea5150f84c8e4558d5b13223f432a841f020c1107fb"
+    },
+    "imprint_226_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "7206f8e174180aa79215f6edf198e6137213ce52c480b8ffc0b51d4d66c23a18"
+    },
+    "imprint_226_au": {
+      "source": "GT6 MultiItemRandomTools:226",
+      "sha256": "47fffe9600bb7a2ce5a1da496d2a31c8527ce9364386282e4efaa10d943694bc"
+    },
+    "imprint_227_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "3083bdb7ed33e955b1bd4794b5e8ebd582ad7ca5fddfc2a17fe2535294c7e32b"
+    },
+    "imprint_227_anystone": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "f2b85de78034ddbce0fdfa6d018fa6f85899742be4decd194eeaaaed71590231"
+    },
+    "imprint_227_glass": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "b4001aba300140f0d4dd3e21d96fb46778a5cff51f6fcea11717591bda07ffad"
+    },
+    "imprint_227_anywax": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "b3081e511e0592aa33d4a03f1a8c5586fc6980b5d35cd74e8c39f42aee175561"
+    },
+    "imprint_227_anyiron": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "33d1835e609cdfde9875b02b80a93c0c4d766a4d18b831f54f889e044e36f3e8"
+    },
+    "imprint_227_anycu": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "0ae9ef35aa546c51e722d37690ec10deb853cf46a2aa2257c0c08dacfc35f96e"
+    },
+    "imprint_227_sn": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "55ad9c1785ffabbf44bef1b50e57ae9595a7095443afe54d43477f22310fd7f2"
+    },
+    "imprint_227_zn": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "1bdfa32e241fee77a4a7c4d68637ff4bb1e942cfdd2100cd9cc8aa26989df299"
+    },
+    "imprint_227_pb": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "14e951f9991c3f5e98dd40a16d14a54475b0cd0ac9fcbade6baea055e345370c"
+    },
+    "imprint_227_bi": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "e903b6d9653d23d8743f975711c42b59eb88d8ac3d87ef1b1985d8141961bcc3"
+    },
+    "imprint_227_brass": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "c394332ec9617729ed2c5e1cc24183061ced0003803563fbb1cd99b757fea225"
+    },
+    "imprint_227_bronze": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "4ffda653effd76f0ba6e26876fff901156f0583ef1dc93a7e02bdb047ba04348"
+    },
+    "imprint_227_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "6a93179702faabbfd977aafa99667146b33656efc06be7eefa742a8281376fc3"
+    },
+    "imprint_227_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "e1b7f7270a923034bb06a68747d3256885839bf278676fc85e3c8f161c73a8a4"
+    },
+    "imprint_227_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "99c6d76077f38a5abaa9946fdee45fba2d960a1f7de7d90309ae2f3377435cda"
+    },
+    "imprint_227_au": {
+      "source": "GT6 MultiItemRandomTools:227",
+      "sha256": "cac497ec761c20f5b6f6967452742cbd49f863fe0d813411f5cbce1da0902eff"
+    },
+    "imprint_228_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "58f0bdf13a8a0295744b2103d3922e02ec303dfcd085a18f8b547d19311bc992"
+    },
+    "imprint_228_anystone": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "2decf1bd4134ef18b151bd20d204a6a79ea5f6c3cd105ff85f702672f74c1df8"
+    },
+    "imprint_228_glass": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "fa2e7d106e90064de7bc84e1443fbf734c10aa4fb589304da2b22f272ac8998b"
+    },
+    "imprint_228_anywax": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "c90f6d68b01c487d3d94c9418b8cafdba6d19f8c2ff2a495953f95973d2f8ca6"
+    },
+    "imprint_228_anyiron": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "4ae0c6e4bbe3e12d6e25dfa2addb03dd3769c7b58515040764753ad8a6525a53"
+    },
+    "imprint_228_anycu": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "e6070c2c759db29c7f7465695c4db19997dea0b1f0c7e12da08a5621c6baf8ba"
+    },
+    "imprint_228_sn": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "e3a6e13772e9fe89dc4603af37f37e71c27186e9f9b8af2b79293efaee2c7fe4"
+    },
+    "imprint_228_zn": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "ef4837f7db25abe043c0734ad900b0404d1f4e4fb08309ca96dd46e8d15c260f"
+    },
+    "imprint_228_pb": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "252a738978c151382240fc79604172be6d7b9327307895ad43692762bce2476a"
+    },
+    "imprint_228_bi": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "90352d578ac2548c9b2777dd59383970792552ff7fffffb00187372234a77275"
+    },
+    "imprint_228_brass": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "b5e95966b99543016030836b5987ad9b857835cf7b211d393978d80155e04896"
+    },
+    "imprint_228_bronze": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "88737f2b14fa4c431e7216b3de00538413ae4b94b606b56f74d1d53c2f84d20f"
+    },
+    "imprint_228_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "783a713c519eb865c975f76afab5a110cba175a3c8fd88dc162dcb0a3165e118"
+    },
+    "imprint_228_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "9b83c439393c4d3f1f9f9aaaa9da1e7336190e5d521950e7e8225ecdb154b46f"
+    },
+    "imprint_228_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "438ee358c17be997776fd9b8042079d93b6e8d21f21f0026aa2d47317f34a347"
+    },
+    "imprint_228_au": {
+      "source": "GT6 MultiItemRandomTools:228",
+      "sha256": "0386d1fd19b1a4635aa60976c2f8a56a41d175b507a6f1d65d17f1cda0be0133"
+    },
+    "imprint_229_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "7da26fdcd00b7c9032935e4272271e3e4dcc97ed5f0dac3026a10ee2212a6b0a"
+    },
+    "imprint_229_anystone": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "41cbd79dcff8c268621007c320e801da27ba3996cacf20d273d28c7b10cd3861"
+    },
+    "imprint_229_glass": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "4b19689cf53c2f54afa9d1e088bcf034bb03e36d21cd96c56d9ab43e40644ea4"
+    },
+    "imprint_229_anywax": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "630115cdc13f0a9e35844d90221456c6de9e4cf0463194dcee2daadb6082a416"
+    },
+    "imprint_229_anyiron": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "0937b21332b7456ad045ef5b476a869878427c15047d7aed35f281702c7ef823"
+    },
+    "imprint_229_anycu": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "88405e11efa2d20f35e76fb1cb833afd538b0da9c0e3ced37029ad8d8dbb4a40"
+    },
+    "imprint_229_sn": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "0e99e144e7892dcf619c4e3042cb86231d7b3dc5f8287b466424cec90bb3d8e1"
+    },
+    "imprint_229_zn": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "3731ec3af67bb364c104c1dd632e5fbaf264f8f9cd68fb1289ea0c0d64de88ef"
+    },
+    "imprint_229_pb": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "d53133aa6f8fa02947b44239ab5a9bc74aa932a1cdd4c4733a363e8ef7f5ad55"
+    },
+    "imprint_229_bi": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "81f3332c1f9dcfc4d1ede428f1db3e3ed49abb458df44db5dd73f6aa10362ec1"
+    },
+    "imprint_229_brass": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "d474d2a195be7b19f1a6d8d79f63a27f63d354aa9cea4a575f10382b8beb0bd8"
+    },
+    "imprint_229_bronze": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "aab0435996325a338b19fb2fc4d0f2ba343e3833ccc1a65bab4000aff24c96d0"
+    },
+    "imprint_229_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "716ec6ed4b2bd67d34d0e943bcea7dddcee4703e104b7ff14f9ed82567c15298"
+    },
+    "imprint_229_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "d6709b9f7c0f43864a597a772c074de471c064bdd935a79247aad698a67350df"
+    },
+    "imprint_229_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "817263c2832bccd6d74f0b71d1d1f153f3a636e3cb3112dca1319c28bea033db"
+    },
+    "imprint_229_au": {
+      "source": "GT6 MultiItemRandomTools:229",
+      "sha256": "cf2fda882c09defaddf22237e6a1f86497341e44f7e85bd5ad703246f73aafad"
+    },
+    "imprint_230_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "2bbd865b90d185948e07d79a10c1dc21c06e34ac67015b862e305769ce94d814"
+    },
+    "imprint_230_anystone": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "8d2504c7db8d6d2096e23f19fd3bc90dc328d2f1ae7e5625a1224b29d1f17d8e"
+    },
+    "imprint_230_glass": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "451a97cf8cda5c45e4e74a53dd4707c9f0df0d61e7758b713e459db6faf45fa3"
+    },
+    "imprint_230_anywax": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "6f6b165f62530ce2c0f02db93f88ead13d55c8f8806fd95d32630b27daab0022"
+    },
+    "imprint_230_anyiron": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "56f1cc4e36dd18857179f72f588d17445fea3f1c83796cf4d6ee247c22ce34db"
+    },
+    "imprint_230_anycu": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "99c3476cf3da3c3f7a124e53244acdd06ab767bab73633e364f04b63ec78560f"
+    },
+    "imprint_230_sn": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "1143352e44910c407053a018b73f972afa074ff5ca0c0aed69b867db0c610c49"
+    },
+    "imprint_230_zn": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "9ff1bf64e65fd3eace2d1eb2cd4c0961cf87473e83404c1e57e4ca8b52df879d"
+    },
+    "imprint_230_pb": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "aa69d76b30ee7069c93701884f3476132913d906db9b3b8ade50d39e22376e84"
+    },
+    "imprint_230_bi": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "5c40bb6f3f5b098259e3f0ab7e836152d7a129885a5ff9dad2276358edd3840f"
+    },
+    "imprint_230_brass": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "1fa9103adee7afdf69d79cf305dab5b52501e56f805102a784984bb8824ba800"
+    },
+    "imprint_230_bronze": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "29ba628c38d6997809dbc86a69fdefcf528ca30afde131c4bd7c92d2940e3f8a"
+    },
+    "imprint_230_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "8e6a0ff38cb9f02e9a2a719707ddf8b079439e69c1c040d44c648918aaec192d"
+    },
+    "imprint_230_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "d04628cc0362fa798b9b3dc821771f4940b56493aa0fdbb55ebcfe2ac7876ba6"
+    },
+    "imprint_230_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "626d12131b3b1de014e2482015ac5863a701a01044f892f75dd4879fd22c98e8"
+    },
+    "imprint_230_au": {
+      "source": "GT6 MultiItemRandomTools:230",
+      "sha256": "c454117ae600e443df5175d446deb9fbfe1b1c9076059f190d89bae3ef8e3692"
+    },
+    "imprint_231_anywoodplastic": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "65888f7b6f5510ef364de4e0ae960a35d6b3700678b23f7602226ed0534fcb43"
+    },
+    "imprint_231_anystone": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "6a63f991a70ad276e38473aad23cd5221193820094316c213b92331ba97e3b3c"
+    },
+    "imprint_231_glass": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "4e5a83b97c8bf7394fa9ecddfb3dc0f6929dff7f192f06ad0589b305264d546a"
+    },
+    "imprint_231_anywax": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "550b503509c3709d64572401a0a821e21fa4600827025552984287f007356ba1"
+    },
+    "imprint_231_anyiron": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "517391f571114195c397546291cf8c9bbac40de1bb1f756e571b0860301f2119"
+    },
+    "imprint_231_anycu": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "9499710c23bc208097082ffda2800bab10944247a36d0fb46c997e66394e2630"
+    },
+    "imprint_231_sn": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "76ab95a0c23b39c2b87461f8fba7ec90b788c1d89619b62cd19df3590bd948dd"
+    },
+    "imprint_231_zn": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "87fe2ef04aa1c5888c8518b6b986359897ccdd2ce68f7c6544211ad7c83c1e9b"
+    },
+    "imprint_231_pb": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "23853176051c2c8748f543c68ce35e81c12ba00181fec2562fa465bb4e5db071"
+    },
+    "imprint_231_bi": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "2fd6b94203d617446db0d4e8ba7c01037204934d0e71e50f981a777379f1a8ef"
+    },
+    "imprint_231_brass": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "36919603ecce1defbb11a921c038969e792682a953a42933ebe29984c8557bd0"
+    },
+    "imprint_231_bronze": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "32c4a2a6c78d06de8773a49cf591ec71e515ea4d38ce45164db3d712d60af09a"
+    },
+    "imprint_231_arseniccopper": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "783452732b53a51e6bb13755406befcd06e3d485fa44e54c1b29ac3bd50046fa"
+    },
+    "imprint_231_arsenicbronze": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "19655b16049f63e4f584b7c36d8c42ef1a0986cc4a670b0c1c33cce1fb7b72ad"
+    },
+    "imprint_231_bismuthbronze": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "0faec8833224da40196a154a28cd0bd96af807afe414202e51cc20b7cd365379"
+    },
+    "imprint_231_au": {
+      "source": "GT6 MultiItemRandomTools:231",
+      "sha256": "9222841a84db3551594ee0eab8029ae80ba0489233ba3f4bb091da303612d9a0"
+    }
+  },
+  "limitations": [
+    "itemMudBrick has no current native item binding; external tag slot retained",
+    "Original ore dictionary registration callbacks are represented by native form tags"
+  ],
+  "table": {
+    "original_shapes": 549,
+    "full_original_table_equal": true,
+    "source_lines": "MultiTileEntityMold:628-921",
+    "billet_and_builder_wand_restored": true,
+    "previous_table_shapes": 583,
+    "added": 12,
+    "removed": 46,
+    "changed_prefix_for_retained_shape": 0,
+    "verified_against_current_compiled_core": true
+  },
+  "resource_validation": {
+    "crafting_rows": 422,
+    "shaped_blank": 1,
+    "shapeless_imprints": 390,
+    "raw_reclaim": 31,
+    "direct_gt_item_references_valid": true,
+    "resource_locations_valid": true
+  },
+  "shared_source_sha256": {
+    "core\\src\\main\\java\\com\\gregtech\\gregtech\\api\\machine\\crucible\\MoldShapes.java": "605408a3a6a92062223c035ebb0d098c5bb3ccac0b3a66be6cc581459c5f9f56",
+    "core\\src\\main\\java\\com\\gregtech\\gregtech\\content\\recipe\\ClayMoldCatalog.java": "6bafe2565b450336347a34a386185a9240f2627f8afa2c3e2ab02d032205af7f"
+  }
+}

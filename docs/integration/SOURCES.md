@@ -1,5 +1,9 @@
 # 来源与贡献记录
 
+## 2026-10-04 / 原版黏土模具与完整图案
+
+制作/回收取 Gregorius Techneticies / GregTech 6 team 的 MultiItemRandomTools:80–233，烧制图案取 MTE:352,391–420；完整形状构造来自 MultiTileEntityMold:628–921。蜡/石材/塑料原料族取 MT 工厂和 ANY 嵌套，当前材料别名图未扩大修改。沿用 LGPL 和 NOTICE，来源目录只读，未引入新纹理或依赖。旧形状抽取回执标记为历史证据，当前逐行来源与散列见 [本批来源](verification/clay-molds-source-20261004.json)。
+
 ## 2026-10-04 / 原版 Technology 嵌入配方
 
 物品配方取自 Gregorius Techneticies / GregTech 6 team 的 MultiItemRandomTools/MultiItemTechnological，扫描仪取 MTE 电池注册部分；高等级替代以 LoaderOreDictReRegistrations 为准，橡胶锤头和钻石组以 OP/MT/ANY 实际条件及工厂绑定为准。沿用仓库 LGPL 和 NOTICE，未导入纹理或外部依赖，没有修改原项目。逐项来源、作者、散列、边界见 [来源回执](verification/technology-source-20261004.json)。

@@ -1,0 +1,53 @@
+{
+  "source_commit": "87a526e5d56bcfd7f118a461e532c78c07eac732",
+  "scope": "shared material-form generation audit, not native registry enumeration or Minecraft execution",
+  "forms": 273,
+  "missing_prefixes": [],
+  "empty_generated_forms": [
+    "molds/forms/billet/anystone",
+    "molds/forms/billet/glass",
+    "molds/forms/chunkgt/anystone",
+    "molds/forms/chunkgt/glass",
+    "molds/forms/ingot/anystone",
+    "molds/forms/ingot/brick",
+    "molds/forms/ingot/glass",
+    "molds/forms/nugget/anystone",
+    "molds/forms/nugget/glass",
+    "molds/forms/plate/glass",
+    "molds/forms/plategem/anycu",
+    "molds/forms/plategem/anyiron",
+    "molds/forms/plategem/anywax",
+    "molds/forms/plategem/anywoodplastic",
+    "molds/forms/plategem/arsenicbronze",
+    "molds/forms/plategem/arseniccopper",
+    "molds/forms/plategem/au",
+    "molds/forms/plategem/bi",
+    "molds/forms/plategem/bismuthbronze",
+    "molds/forms/plategem/brass",
+    "molds/forms/plategem/bronze",
+    "molds/forms/plategem/pb",
+    "molds/forms/plategem/sn",
+    "molds/forms/plategem/zn",
+    "molds/forms/plategemtiny/anycu",
+    "molds/forms/plategemtiny/anyiron",
+    "molds/forms/plategemtiny/anywax",
+    "molds/forms/plategemtiny/anywoodplastic",
+    "molds/forms/plategemtiny/arsenicbronze",
+    "molds/forms/plategemtiny/arseniccopper",
+    "molds/forms/plategemtiny/au",
+    "molds/forms/plategemtiny/bi",
+    "molds/forms/plategemtiny/bismuthbronze",
+    "molds/forms/plategemtiny/brass",
+    "molds/forms/plategemtiny/bronze",
+    "molds/forms/plategemtiny/pb",
+    "molds/forms/plategemtiny/sn",
+    "molds/forms/plategemtiny/zn",
+    "molds/forms/platetiny/glass"
+  ],
+  "native_vanilla_additions": {
+    "molds/forms/ingot/brick": [
+      "minecraft:brick"
+    ]
+  },
+  "note": "Original source contains optional form/material combinations. Empty generated forms remain unavailable unless supplied through native tags; no invented replacement materials."
+}
