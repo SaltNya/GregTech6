@@ -73,11 +73,22 @@ def layer(sub, tinted):
 
 
 def main():
-    write(os.path.join(MODELS, "steam_boiler.json"), {
+    model = {
         "loader": "forge:composite",
         "display": DISPLAY,
         "children": {"layer0": layer("colored", True), "layer1": layer("overlay", False)},
-    })
+    }
+    write(os.path.join(MODELS, "steam_boiler.json"), model)
+    # Item models have no block entity renderer: include the source's zero-pressure gauge here.
+    inventory = json.loads(json.dumps(model))
+    for name, depth, texture in (("gauge", -0.08, "base"), ("needle", -0.096, "00")):
+        inventory["children"][name] = {
+            "parent": "minecraft:block/block", "render_type": "minecraft:cutout",
+            "textures": {"gauge": "gregtech:block/machines/barometer/" + texture},
+            "elements": [{"from": [1, 1, depth], "to": [15, 15, depth],
+                          "faces": {"north": {"texture": "#gauge", "uv": [0, 0, 16, 16]}}}],
+        }
+    write(os.path.join(MODELS, "steam_boiler_inventory.json"), inventory)
 
     lang_en, lang_zh = {}, {}
     count = 0
@@ -86,7 +97,7 @@ def main():
         for suffix, en, zh in MATS:
             device_id = prefix + suffix
             write(os.path.join(BLOCKSTATES, device_id + ".json"), {"variants": {"": {"model": MODEL_REF}}})
-            write(os.path.join(ITEM_MODELS, device_id + ".json"), {"parent": MODEL_REF})
+            write(os.path.join(ITEM_MODELS, device_id + ".json"), {"parent": MODEL_REF + "_inventory"})
             lang_en[f"block.gregtech.{device_id}"] = f"{en_name} ({en})"
             lang_zh[f"block.gregtech.{device_id}"] = f"{zh_name}({zh})"
             count += 1
