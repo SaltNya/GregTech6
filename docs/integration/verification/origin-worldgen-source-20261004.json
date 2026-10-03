@@ -1,0 +1,17 @@
+[
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenNexus.java",
+    "sha256": "b4f7841c84d193dda38b7caa940cde249465a739b04992e5052cb9ab79fe22f0",
+    "target": "C:\\Dev\\GregTech6\\core\\src\\main\\java\\com\\gregtech\\gregtech\\worldgen\\center\\SourceNexus.java"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenStreets.java",
+    "sha256": "988f8650904cdd280ccbe022e5bdebd9a8a96fbe9cd891aa137bfe3bf148f42f",
+    "target": "C:\\Dev\\GregTech6\\core\\src\\main\\java\\com\\gregtech\\gregtech\\worldgen\\center\\SourceStreets.java"
+  },
+  {
+    "source": "gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+    "source_sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+    "scope": "CS.BIOMES_INFINITE_WATER exact normalized names"
+  }
+]
