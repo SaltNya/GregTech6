@@ -285,6 +285,7 @@ def parse_strings_and_numbers(args: list[str]) -> dict:
         "symbol": strings[1] if len(strings) > 1 else None,
         "numbers": numbers,
         "texture": texture,
+        "magical": "MAGICAL" in args,
         "color": extract_color(args),
     }
 
@@ -358,6 +359,9 @@ JAVA_RESERVED = {
 
 
 def java_field_name(field: str) -> str:
+    # Flat catalogs need separate keys for qualified woods with root-level names.
+    if field in {"WOODS_Cinnamon", "WOODS_Lime", "WOODS_Ash"}:
+        field = field.removeprefix("WOODS_")
     name = field.replace("-", "_")
     if not name or not re.match(r"[A-Za-z_][A-Za-z0-9_]*$", name):
         name = "M_" + re.sub(r"[^A-Za-z0-9]", "", field)
@@ -635,7 +639,7 @@ def emit_material(
         return None
     if parsed["id"] < 0 or parsed["id"] >= 10000 or not parsed["name"]:
         return None
-    if field in SKIP_MATERIAL_FIELDS:
+    if field in SKIP_MATERIAL_FIELDS and not (field == "Magic" and factory == "woodnormal"):
         return None
     if parsed["id"] in SKIP_MATERIAL_IDS:
         return None
@@ -698,6 +702,13 @@ def emit_material(
     elif kind == "alloy":
         body = f'alloy({id_}, "{name}", {color})'
     elif kind == "wood":
+        if factory == "woodnormal":
+            # MT.woodnormal's final numbers are RGB, speed, durability, not heat/density.
+            # Its qualified WOODS.Magic field is unrelated to the Magic pseudo-element.
+            speed, durability = float(nums[-2]), int(float(nums[-1]))
+            props = ', MaterialProperty.MAGICAL' if parsed.get('magical') else ''
+            body = f'woodNormal({id_}, "{name}", "{local}", {color}, {speed:g}F, {durability}{props})'
+            return f"            {java_field_name(field)} = {body},"
         body = f'wood({id_}, "{name}", "{local}", {color})'
     elif kind == "stone":
         body = f'stone({id_}, "{name}", "{local}", {color})'
@@ -952,6 +963,8 @@ def collect_materials(source: str) -> tuple[list[str], dict[str, tuple[str, str,
         if parsed is None:
             continue
         field, factory, args = parsed
+        if factory == "woodnormal" and field in {"Cinnamon", "Lime", "Ash"}:
+            field = "WOODS_" + field
         full_line = line.strip().rstrip(",")
         if factory in methods and args == "":
             base_factory, base_args = methods[factory]

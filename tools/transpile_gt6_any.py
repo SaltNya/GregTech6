@@ -35,7 +35,7 @@ def load_material_paths(java_path: Path) -> dict[str, str]:
             bucket = class_match.group(1)
             continue
         field_match = re.search(
-            r"(\w+)\s*=\s*(?:elec|cent|clay|gem|dust|metal|element|alloy|ore|gas|wood|stone)\(",
+            r"(\w+)\s*=\s*(?:elec|cent|clay|gem|dust|metal|element|alloy|ore|gas|wood|woodNormal|stone)\(",
             line,
         )
         if bucket and field_match:
@@ -76,7 +76,7 @@ def resolve_mt_ref(ref: str, paths: dict[str, str]) -> str | None:
     if tail.startswith("WOODS."):
         field = tail.split(".", 1)[1]
         if field == "Magic":
-            return "MT.Ma"
+            return "GT6Materials.Woods.Magic"
         return paths.get(field)
     if tail.startswith("STONES."):
         field = tail.split(".", 1)[1]
