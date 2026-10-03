@@ -101,7 +101,7 @@ def tex_ref(folder, sub, name):
     return f"gregtech:block/machines/{path}"
 
 
-def faces_for(layout, folder, sub):
+def faces_for(layout, folder, sub, facing="down"):
     """face -> texture name, per layout; returns None for missing files."""
     def exists(name):
         parts = [TEX, folder.replace("/", os.sep)] + ([sub] if sub else []) + [name + ".png"]
@@ -112,6 +112,9 @@ def faces_for(layout, folder, sub):
     elif layout == "tbs":
         names = {"up": "top", "down": "bottom", "north": "side", "south": "side",
                  "west": "side", "east": "side"}
+        # MultiTileEntitySolarPanelElectric keeps its collector on top as its output rotates.
+        if facing != "up":
+            names[facing] += "_facing"
     elif layout == "bat":
         names = {"north": "front", "south": "side", "up": "side", "down": "side",
                  "west": "side", "east": "side"}
@@ -124,8 +127,8 @@ def faces_for(layout, folder, sub):
     return {face: name for face, name in names.items() if exists(name)}
 
 
-def layer(folder, sub, layout, tinted, device_box=None):
-    face_names = faces_for(layout, folder, sub)
+def layer(folder, sub, layout, tinted, device_box=None, facing="down"):
+    face_names = faces_for(layout, folder, sub, facing)
     if not face_names:
         return None
     textures = {face: tex_ref(folder, sub, name) for face, name in face_names.items()}
@@ -135,11 +138,9 @@ def layer(folder, sub, layout, tinted, device_box=None):
         if tinted:
             d["tintindex"] = 0
         faces[face] = d
-    # GT6 solar panels are thin 4px plates; battery boxes are inset appliances
+    # Solar panels inherit GT6's full-block bounds; only explicit device bounds are inset.
     if device_box is not None:
         box = device_box
-    elif layout == "tbs":
-        box = ([0, 0, 0], [16, 4, 16])
     else:
         box = ([0, 0, 0], [16, 16, 16])
     if box[1] != [16, 16, 16]:
@@ -155,15 +156,15 @@ def layer(folder, sub, layout, tinted, device_box=None):
     }
 
 
-def build_model(folder, layout, device_box=None, overlay="overlay"):
+def build_model(folder, layout, device_box=None, overlay="overlay", facing="down"):
     # placeable batteries: textures sit directly in the tier folder, untinted
     sub0 = "" if layout == "cell" else "colored"
-    layer0 = layer(folder, sub0, layout, layout != "cell", device_box)
+    layer0 = layer(folder, sub0, layout, layout != "cell", device_box, facing)
     if layer0 is None:
         return None
     children = {"layer0": layer0}
     if layout != "cell":
-        layer1 = layer(folder, overlay, layout, False, device_box)
+        layer1 = layer(folder, overlay, layout, False, device_box, facing)
         if layer1 is not None:
             children["layer1"] = layer1
     return {"loader": "forge:composite", "display": DISPLAY, "children": children}
@@ -198,6 +199,11 @@ def main(battery_only=False, storage_transformers_only=False):
         write(os.path.join(MODELS, device_id + ".json"), model)
         model_ref = f"gregtech:block/machine/energy/{device_id}"
         states=blockstate(model_ref, rotate)
+        if layout == "tbs":
+            for facing in ("north", "south", "west", "east"):
+                write(os.path.join(MODELS, device_id + "_" + facing + ".json"),
+                      build_model(folder, layout, facing=facing))
+                states["variants"]["facing=" + facing] = {"model": model_ref + "_" + facing}
         if is_battery_box(device_id) or device_id.startswith("transformer_"):
             state_property="charge_state" if is_battery_box(device_id) else "activity"
             variants={}
