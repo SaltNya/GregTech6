@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-03",
+  "source_root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "scope": "Original GT6 semantics used for manual tools, material handles, coke fuel, boiler pressure break and small steam/RU/EU converters. Platform ore loader ports the existing Forge implementation.",
+  "sources": [
+    {
+      "path": "src/main/java/gregtech/loaders/a/Loader_Tools.java",
+      "sha256": "e791f2cd6972bfa10767663f78557d2722cac2b7c80f29595815b4a520577b6e"
+    },
+    {
+      "path": "src/main/java/gregapi/recipes/AdvancedCraftingTool.java",
+      "sha256": "ecd7fc3950083344fa9ee66c19623aaab9dd508ea52c100b9ffc722d0628e105"
+    },
+    {
+      "path": "src/main/java/gregapi/data/MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "src/main/java/gregapi/data/ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71"
+    },
+    {
+      "path": "src/main/java/gregapi/data/CS.java",
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "path": "src/main/java/gregtech/tileentity/energy/converters/MultiTileEntityTurbineSteam.java",
+      "sha256": "04dd3fa44dea387bc8b293035b6c0e787a900b4e4c5f107d8f94c201fe1713cf"
+    },
+    {
+      "path": "src/main/java/gregapi/tileentity/energy/TileEntityBase10EnergyConverter.java",
+      "sha256": "52cb409c7d35a8731338527301e09c8b779548e1851d5fe7fe91242fd25b9c44"
+    },
+    {
+      "path": "src/main/java/gregapi/tileentity/energy/TileEntityBase11Motor.java",
+      "sha256": "debce53cfd8ccea8a4ff5da9bade918c0ba0f1be3bc88786d5b2dd530e78b6d8"
+    },
+    {
+      "path": "src/main/java/gregapi/tileentity/behavior/TE_Behavior_Energy_Converter.java",
+      "sha256": "db1e31ed18e62bc9d261e33edcf338ed9717fc1ee088eab8de2baff69c9e59d4"
+    },
+    {
+      "path": "src/main/java/gregtech/loaders/b/Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "src/main/java/gregtech/tileentity/energy/converters/MultiTileEntityBoilerTank.java",
+      "sha256": "3669a4447e3ef2fc2074470f3b272aa8796f3a0d785135bdcd151b07544553c3"
+    }
+  ],
+  "material_snapshot": {
+    "before": {
+      "definitions": "c9986fc24145c0a36be697f5d31859d5412f44f6792c03614ba64882b121b765",
+      "post_init": "0b94ea77d35f804c08adfad20835ad5a88f31081572bc45a25654f394eba8f47"
+    },
+    "after": {
+      "definitions": "0d64459f95043a7cad999dfcba86533daa6de81d8756dd48d2d1b87ed9cbce35",
+      "post_init": "c6eed84d0f296b0f9e23189477eba651266f25c82a2ba3d5d2329eb41d94dcdb"
+    },
+    "changes": [
+      "PetrifiedWood (1259): WOOD, STONE, GENERATE_STICKS",
+      "LigniteCoke: burn 1600; DarkAshes U/9",
+      "PetCoke: burn 6400; DarkAshes U/9"
+    ],
+    "fixed_source_fixtures": 8
+  }
+}

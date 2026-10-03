@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "platform": "neoforge",
+  "minecraft": "1.21.1",
+  "log": "C:\\Dev\\GregTech6\\work\\tools-power-neoforge-client-final2.log",
+  "exit_code": 0,
+  "visual_review_pending": false,
+  "gameplay_verified": false,
+  "png_structure_verified": true,
+  "image_decode_verified": true,
+  "errors": [],
+  "log_sha256": "6d3e94fa4c2064dbe84b4959e673e50278d242d43e52d185acb44480c5d52849",
+  "run_uuid": "6a5a097d-ac57-4240-aa38-00fb0539ebe4",
+  "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-6a5a097d-ac57-4240-aa38-00fb0539ebe4.png",
+  "started_elapsed_ms": 0,
+  "success_elapsed_ms": 65345,
+  "rendered_frames": 104,
+  "screen": "net.minecraft.client.gui.screens.TitleScreen",
+  "screenshot_sha256": "4f20c5eb367a84a8065e601a1cc54a49b45771c29f9c88709ab999333967fe19",
+  "screenshot_bytes": 765898,
+  "width": 1280,
+  "height": 720,
+  "image_decode_status": "pillow_verified",
+  "visual_review": "Agent inspected the recorded machine gallery screenshot: material colors visible and no missing-texture checkerboards. Layered wire/tool evidence is the model inspection in the log; those items are not visible in this machine gallery screenshot.",
+  "world_model_scan": {
+    "blocks": 15621,
+    "errors": [],
+    "materialBlocks": 12956,
+    "tintFamilies": {
+      "noTint:BlackSandBlock": 3,
+      "noTint:CrystalOreBlock": 12,
+      "noTint:ElectricWireBlock": 140,
+      "noTint:MaterialBlock": 5808,
+      "noTint:RockOreBlock": 9,
+      "noTint:SignalWireBlock": 3,
+      "noTint:VanillaOreBlock": 16
+    },
+    "quads": 168500,
+    "renderShapes": {
+      "ENTITYBLOCK_ANIMATED": 140,
+      "INVISIBLE": 9,
+      "MODEL": 15472
+    }
+  },
+  "scan_scope": "Default states. RGB validation applies to MODEL render shapes; ENTITYBLOCK_ANIMATED uses its existing renderer, not the unused placeholder mesh. NoTint records are informational and do not establish a missing RGB callback."
+}

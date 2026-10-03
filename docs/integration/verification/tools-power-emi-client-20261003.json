@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-03",
+  "passed": true,
+  "exit_code": 0,
+  "scope": "Actual EMI-only development client with integrated world, real recipe registry and lookup, normal saved shutdown. Not installed production JAR or full survival.",
+  "log": "C:\\Dev\\GregTech6\\work\\new-issues-emi-installed-client-passed.log",
+  "log_sha256": "88fc942a0dfc8ac79bb16d9cb2f331d5174e0ddd67a3881093ae3c8262843b02",
+  "command": ":neoforge:runClient -PemiSmoke=true -PemiOnlySmoke=true -PclientWorldSmoke=true -PclientWorldPhase=emi -PclientWorldName=client-world-github-issues-20261003-v4 -PclientWorldId=58db1a7f-03a7-4d3a-9c63-f4db4585ec9b -PclientSmokeHeap=6g -PclientSmokeTimeout=600 --offline -I work/emi-local.init.gradle -PdirectCoreResources=true -PdirectCoreClasspath=true",
+  "native_machine_recipes": 204863,
+  "ore_input_and_output_lookups": [
+    {
+      "machine": "crusher",
+      "recipe": "gregtech:/machine/gt.recipe.crusher/1"
+    },
+    {
+      "machine": "bath",
+      "recipe": "gregtech:/machine/gt.recipe.bath/1"
+    },
+    {
+      "machine": "centrifuge",
+      "recipe": "gregtech:/machine/gt.recipe.centrifuge/0"
+    },
+    {
+      "machine": "shredder",
+      "recipe": "gregtech:/machine/gt.recipe.shredder/7"
+    },
+    {
+      "machine": "sluice",
+      "recipe": "gregtech:/machine/gt.recipe.sluice/0"
+    },
+    {
+      "machine": "magneticseparator",
+      "recipe": "gregtech:/machine/gt.recipe.magneticseparator/0"
+    },
+    {
+      "machine": "sifter",
+      "recipe": "gregtech:/machine/gt.recipe.sifter/0"
+    }
+  ],
+  "reload_ms": 18964,
+  "post_reload_sort_ms": 11609,
+  "untranslated_tag_warnings": 92145,
+  "warnings_scope": "EMI dev-mode reports untranslated tags. Successful reload and lookups do not establish that all tag translations are complete.",
+  "world": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "timeoutSeconds": 600,
+    "elapsedMs": 120142,
+    "phase": "emi",
+    "worldName": "client-world-github-issues-20261003-v4",
+    "specimenId": "58db1a7f-03a7-4d3a-9c63-f4db4585ec9b",
+    "pid": 19396,
+    "stage": 14,
+    "normalIntegratedServerStop": true,
+    "savedWorldExists": true,
+    "proof": {
+      "jeiAbsent": true,
+      "nativeEmiOutputLookup": true,
+      "synchronizedWorldSpringModels": true
+    },
+    "captures": [
+      {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "timeoutSeconds": 600,
+        "elapsedMs": 118428,
+        "phase": "emi",
+        "worldName": "client-world-github-issues-20261003-v4",
+        "specimenId": "58db1a7f-03a7-4d3a-9c63-f4db4585ec9b",
+        "pid": 19396,
+        "stage": 20,
+        "role": "extruder-plate",
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-emi-extruder-plate-8a23f24e-b7e2-452a-b50a-c0447197f048.png",
+        "width": 1280,
+        "height": 720,
+        "sha256": "0fcd6bf5498cd4958b9642e9c0212d533caa7c67fff795d0e42258b8f0987998",
+        "visual_review_pending": false,
+        "visual_review": "Extruder plate recipe screen rendered with ingredients/output; second capture displays the machine gallery and fluid springs. No tools are visible in the second capture despite its historical role name; layered tool evidence is the separate model inspection."
+      },
+      {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "timeoutSeconds": 600,
+        "elapsedMs": 119845,
+        "phase": "emi",
+        "worldName": "client-world-github-issues-20261003-v4",
+        "specimenId": "58db1a7f-03a7-4d3a-9c63-f4db4585ec9b",
+        "pid": 19396,
+        "stage": 22,
+        "role": "tools-and-springs",
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-emi-tools-and-springs-1b88d6dd-2a90-4b4f-be35-9f43b336fb29.png",
+        "width": 1280,
+        "height": 720,
+        "sha256": "a9ff9f0dcb3dd7f088a110df7ab3a38fd65f18c232143e71f62e632d893982b2",
+        "visual_review_pending": false,
+        "visual_review": "Extruder plate recipe screen rendered with ingredients/output; second capture displays the machine gallery and fluid springs. No tools are visible in the second capture despite its historical role name; layered tool evidence is the separate model inspection."
+      }
+    ]
+  },
+  "layered_models": {
+    "material_items": 56037,
+    "fine_wire_inner_rings": 323,
+    "four_layer_electric_tools": 4,
+    "manual_tool_models": 74
+  }
+}

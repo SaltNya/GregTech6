@@ -1,0 +1,81 @@
+{
+  "date": "2026-10-03",
+  "status": "passed",
+  "log": "C:\\Dev\\GregTech6\\work\\tools-power-final-build-tests-passed-20261003.log",
+  "log_sha256": "ac7f6120998221985e929ce5709266806b00aff7d7d4f639644153804571af4a",
+  "commands": ":build :neoforge:build :runGameTestServer :neoforge:runGameTestServer -PgameTestNamespaces=gregtech_alignment -PgameTestHeap=3g --offline -I work/emi-local.init.gradle",
+  "scope": "Development source. Native placed blocks and manually stepped registered machines, real crafting RecipeManager and real output chests. No full survival or standalone world restart claim.",
+  "contracts": {
+    "Core": 1879,
+    "Machine spec": 34,
+    "Material": 6173,
+    "Thermal": 53
+  },
+  "total_assertions": 8139,
+  "platforms": {
+    "forge": {
+      "required_tests": 8,
+      "manual_patterns": 81,
+      "jei_material_rows": 9053
+    },
+    "neoforge": {
+      "required_tests": 8,
+      "manual_patterns": 81,
+      "jei_material_rows": 9053
+    }
+  },
+  "steam_job": {
+    "ticks": 2758,
+    "powered_ticks": 187,
+    "peakEU": 22,
+    "recipeEU": 16,
+    "duration": 256,
+    "output": "6 dust_lithiumperchlorate",
+    "heat": "externally supplied 80 HU/t",
+    "water": "externally supplied distilled water",
+    "steam": "entirely produced by registered bronze boiler; no direct turbine energy or electrolyzer injection",
+    "rotor": "not installed"
+  },
+  "ore_rows": [
+    [
+      "gt.recipe.crusher",
+      "6623"
+    ],
+    [
+      "gt.recipe.bath",
+      "1154"
+    ],
+    [
+      "gt.recipe.centrifuge",
+      "834"
+    ],
+    [
+      "gt.recipe.shredder",
+      "42744"
+    ],
+    [
+      "gt.recipe.crusher",
+      "6623"
+    ],
+    [
+      "gt.recipe.bath",
+      "1154"
+    ],
+    [
+      "gt.recipe.centrifuge",
+      "834"
+    ],
+    [
+      "gt.recipe.shredder",
+      "42744"
+    ]
+  ],
+  "coke": [
+    "CoalCoke",
+    "LigniteCoke",
+    "PetCoke"
+  ],
+  "coke_forms_per_platform": 12,
+  "build_and_tests_duration": "4m 18s",
+  "code_commit": "070d4077b5ca4c81bfe1815a382c4799a7577aa9"
+}
