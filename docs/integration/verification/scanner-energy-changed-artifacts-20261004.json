@@ -1,0 +1,148 @@
+{
+  "batch": "scanner-energy-20261004",
+  "source_commit": "fae26809bfa0265b8187c6bd4f9744e4d4538755",
+  "jars": [
+    {
+      "platform": "Forge",
+      "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+      "sha256": "7e4c402a139e117d707da47c4b14aa8430b88c043bddd245facddc4819713115",
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/item/ScannerItem.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/BehaviorCropnalyzer.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/BehaviorScanner$1.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/BehaviorScanner.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$1.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$Consumable.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$Entry.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$Ignitable.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$Outcome.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$SprayEffect.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTMultiItems$MultiItem.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTMultiItems.class",
+          "compiled_bytes_equal": false,
+          "evidence": "presence after Forge reobfuscation"
+        }
+      ],
+      "changed_resources": [
+        "core/src/main/resources/assets/gregtech/lang/en_us.json",
+        "core/src/main/resources/assets/gregtech/lang/zh_cn.json"
+      ]
+    },
+    {
+      "platform": "NeoForge",
+      "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "sha256": "8a9334bab51b23cf510e7a7794e99ed1fb652cf5822f1c4863d87291f58494a7",
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/item/ScannerItem.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/BehaviorCropnalyzer.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/BehaviorScanner$1.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/BehaviorScanner.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$Consumable.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$Entry.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$Ignitable.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$Outcome.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors$SprayEffect.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/behavior/ItemBehaviors.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTMultiItems.class",
+          "compiled_bytes_equal": true,
+          "evidence": "exact current compiled bytes"
+        }
+      ],
+      "changed_resources": [
+        "core/src/main/resources/assets/gregtech/lang/en_us.json",
+        "core/src/main/resources/assets/gregtech/lang/zh_cn.json"
+      ]
+    }
+  ]
+}

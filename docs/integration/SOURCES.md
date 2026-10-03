@@ -1,5 +1,9 @@
 # 来源与贡献记录
 
+## 2026-10-04 / 扫描仪 EnergyStat 与 IC2 作物接口
+
+来源为 Gregorius Techneticies / GregTech-6 Team 的 MultiItemRandomTools:516–518、Behavior_Scanner、Behavior_Cropnalyzer、EnergyStat/EnergyStatDebug、MultiItem 能量提示/堆叠和 WD.scan。保留原作者署名与 LGPL，来源目录只读；没有新增纹理、音效或外部依赖。原版方法面用可选反射接续，九项中性接口样例不能证明真实 IC2 兼容。源文件 SHA-256 与当前改动散列见 [来源回执](verification/scanner-energy-source-20261004.json)。
+
 ## 2026-10-04 / 原版黏土模具与完整图案
 
 制作/回收取 Gregorius Techneticies / GregTech 6 team 的 MultiItemRandomTools:80–233，烧制图案取 MTE:352,391–420；完整形状构造来自 MultiTileEntityMold:628–921。蜡/石材/塑料原料族取 MT 工厂和 ANY 嵌套，当前材料别名图未扩大修改。沿用 LGPL 和 NOTICE，来源目录只读，未引入新纹理或依赖。旧形状抽取回执标记为历史证据，当前逐行来源与散列见 [本批来源](verification/clay-molds-source-20261004.json)。

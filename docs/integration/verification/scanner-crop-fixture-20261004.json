@@ -1,0 +1,6 @@
+{
+  "fixture_checks": 9,
+  "native_ic2_environment": false,
+  "contract_fixture": "original ICropTile method surface; non-public implementations",
+  "source_commit": "fae26809bfa0265b8187c6bd4f9744e4d4538755"
+}

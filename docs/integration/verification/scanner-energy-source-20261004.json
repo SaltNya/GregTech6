@@ -1,0 +1,154 @@
+{
+  "batch": "scanner-energy-20261004",
+  "source_commit": "fae26809bfa0265b8187c6bd4f9744e4d4538755",
+  "sources": [
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregtech/items/MultiItemRandomTools.java",
+      "lines": "516-518",
+      "sha256": "f2eef98ddb1b10298a981ff78369bccb7e8317fb421f7bdd84086257819ad84d",
+      "purpose": "scanner/cropnalyzer/debug registrations and energy stats",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregtech/items/behaviors/Behavior_Scanner.java",
+      "lines": "50-90",
+      "sha256": "e56f3c51a3ee4c3fd85d5a5dc4800cebb2bf800b01eab0513da1c338481830bc",
+      "purpose": "payment, entity intercept and behavior tooltip",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregtech/items/behaviors/Behavior_Cropnalyzer.java",
+      "lines": "46-124",
+      "sha256": "850ae16295d6741da10d61b462d7b04bcb748db05d8693b1fb4a957886428884",
+      "purpose": "IC2 crop interface, promotion and scan costs",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/item/multiitem/energy/EnergyStat.java",
+      "lines": "64-169",
+      "sha256": "d4253ac1d573a36836df5227a13538096ad0b7d8d43327d9678a3e434a3b1df6",
+      "purpose": "charge-only tool, packets, partial use and energy storage",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/item/multiitem/energy/EnergyStatDebug.java",
+      "lines": "40-61",
+      "sha256": "c3c854fcb686c981c8ebf39ebbe224263fb7b1a79cc0f9b138ff84b2b67148a4",
+      "purpose": "infinite energy debug behavior",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/item/multiitem/MultiItem.java",
+      "lines": "247-274,392-399",
+      "sha256": "eff4a22e1d6e3277e93a3d34519111f514d61954c2a5b3bfaf90aca88660901d",
+      "purpose": "original energy tooltip and charged stack limit",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "root": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+      "path": "src/main/java/gregapi/util/WD.java",
+      "lines": "911-1055",
+      "sha256": "c8335988b7bd9dbf44df6790d867ac6cfe2e6414793abb0cdd14c32cd342f095",
+      "purpose": "section cost, clicked-side fluid tanks and report order",
+      "authors": "Gregorius Techneticies / GregTech-6 Team",
+      "license": "LGPL-3.0-or-later"
+    }
+  ],
+  "current_files": [
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/content/tool/ItemBehaviorCatalog.java",
+      "sha256": "9b233b46891c9a022e13066e4f503eee0ec85003bef2ce081fb10ee2b6e72402"
+    },
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/content/tool/OriginalCropScan.java",
+      "sha256": "e1bd4796e41185204a7e1b0f303fb346ed9e3d88cc7163991f8c2b67c018310b"
+    },
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/content/tool/ScannerEnergyRules.java",
+      "sha256": "3af88bc085118ce632d949123d504830f53636a2df56fb9083535aba3a7d7dcc"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/lang/en_us.json",
+      "sha256": "c8e728d46616bdde3aaeb399b9374b1ca8b668e52e0487cc9cb35317612ed957"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/lang/zh_cn.json",
+      "sha256": "b73f1960895263bc8d151363ff8a6818a5423329a72fc5978856d093ec1f5c7d"
+    },
+    {
+      "path": "core/src/test/java/com/gregtech/gregtech/core/CoreBehaviorContracts.java",
+      "sha256": "721c0a6b7a6deaf155616bfa7dc29580bb72f20f217a1bc1d88f3a9585c7cc57"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/item/ScannerItem.java",
+      "sha256": "94da8ff0ff2f774989fc50ea8412591a3c0974f677cd8264e2eac7c0a31d442d"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/item/behavior/BehaviorCropnalyzer.java",
+      "sha256": "010ca10b0a568c1551c72e127eadfecc3574219c700574f531e4720782ef54be"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/item/behavior/BehaviorScanner.java",
+      "sha256": "7cc444183319b0de1cd96ebdc4e5afbab10c12951d76aa1a36dc1796fdeee67d"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/item/behavior/ItemBehaviors.java",
+      "sha256": "c7f962dc399f1cc62b815fc42c54d63c09bff5a717dff486af6e9a61159d59a2"
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/registry/GTMultiItems.java",
+      "sha256": "d0340439236cc78dc0dcae2b453dd71ae62629cb6030422e19c208501d9fcb49"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/item/ScannerItem.java",
+      "sha256": "d20bb285ca844a2382b3a086c9fec5c1075a3b0a36913c401462edd3996db99b"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/item/behavior/BehaviorCropnalyzer.java",
+      "sha256": "010ca10b0a568c1551c72e127eadfecc3574219c700574f531e4720782ef54be"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/item/behavior/BehaviorScanner.java",
+      "sha256": "93a037de5f0e49af40f55b89405fb01ff42510bf82136e94974974b7525e0d0b"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/item/behavior/ItemBehaviors.java",
+      "sha256": "e38883015954173dd3b834d54ee8155eaeebec2f566665574982f56d8e760042"
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/registry/GTMultiItems.java",
+      "sha256": "871f4e5e1a20bd7d5f97075da40ff5ab7e90d6819d64e6726c37f83740eda460"
+    }
+  ],
+  "scope": {
+    "native_platforms": [
+      "Forge 1.20.1",
+      "NeoForge 1.21.1"
+    ],
+    "optional_crop_contract": "ic2.api.crops.ICropTile; exact method names from original source, no mandatory IC2 dependency",
+    "normal_energy_key": "gt.energy",
+    "normal_scanner_capacity_eu": 4096000,
+    "cropnalyzer_capacity_eu": 1024000,
+    "input_packet_cap": 64,
+    "first_crop_scan_eu": 32768,
+    "later_crop_scan_eu": 512
+  },
+  "boundaries": [
+    "No actual IC2/native game or installed-client evidence.",
+    "IC2 armor recharge, scanner sound assets, optional foreign scanner sections and scanning events remain separate gaps.",
+    "Modern client prediction consumes a supported click locally but cannot send scan chat or mutate energy/crop scan levels.",
+    "The final partial charge packet may exceed the nominal capacity, as EnergyStat stores it; display is capped."
+  ]
+}
