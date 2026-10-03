@@ -1,0 +1,59 @@
+{
+  "scope": "Five original EMPTY shafts/charged casings; all other material, prefix and alias rows unchanged",
+  "stages": {
+    "definitions": {
+      "old_sha256": "21173e86142600ef6097d3850af04d57989c2c1f4b6f2f7e748197e27b1d9ec8",
+      "new_sha256": "c9744976f092d8eae2f111d9fdde90e815a308fe40e08efd2b48c10c21f7a368",
+      "changed_rows": [
+        {
+          "before": "F|arrowGtPlastic|0:Empty|false|arrow_gt_plastic_empty|arrow_gt_plastics/empty",
+          "after": "F|arrowGtPlastic|0:Empty|true|arrow_gt_plastic_empty|arrow_gt_plastics/empty"
+        },
+        {
+          "before": "F|arrowGtWood|0:Empty|false|arrow_gt_wood_empty|arrow_gt_woods/empty",
+          "after": "F|arrowGtWood|0:Empty|true|arrow_gt_wood_empty|arrow_gt_woods/empty"
+        },
+        {
+          "before": "F|bulletGtLarge|0:Empty|false|bullet_gt_large_empty|bullet_gt_larges/empty",
+          "after": "F|bulletGtLarge|0:Empty|true|bullet_gt_large_empty|bullet_gt_larges/empty"
+        },
+        {
+          "before": "F|bulletGtMedium|0:Empty|false|bullet_gt_medium_empty|bullet_gt_mediums/empty",
+          "after": "F|bulletGtMedium|0:Empty|true|bullet_gt_medium_empty|bullet_gt_mediums/empty"
+        },
+        {
+          "before": "F|bulletGtSmall|0:Empty|false|bullet_gt_small_empty|bullet_gt_smalls/empty",
+          "after": "F|bulletGtSmall|0:Empty|true|bullet_gt_small_empty|bullet_gt_smalls/empty"
+        }
+      ],
+      "unchanged_row_count": 129227
+    },
+    "post": {
+      "old_sha256": "1472636103bb2605d777847455acb0cf83b80e6c76f56fafae28cac49b6ff2bd",
+      "new_sha256": "99a2334097c88fdc89fff7c6a03d75c5022120b2793cc46d8d268fc36b037122",
+      "changed_rows": [
+        {
+          "before": "F|arrowGtPlastic|0:Empty|false|arrow_gt_plastic_empty|arrow_gt_plastics/empty",
+          "after": "F|arrowGtPlastic|0:Empty|true|arrow_gt_plastic_empty|arrow_gt_plastics/empty"
+        },
+        {
+          "before": "F|arrowGtWood|0:Empty|false|arrow_gt_wood_empty|arrow_gt_woods/empty",
+          "after": "F|arrowGtWood|0:Empty|true|arrow_gt_wood_empty|arrow_gt_woods/empty"
+        },
+        {
+          "before": "F|bulletGtLarge|0:Empty|false|bullet_gt_large_empty|bullet_gt_larges/empty",
+          "after": "F|bulletGtLarge|0:Empty|true|bullet_gt_large_empty|bullet_gt_larges/empty"
+        },
+        {
+          "before": "F|bulletGtMedium|0:Empty|false|bullet_gt_medium_empty|bullet_gt_mediums/empty",
+          "after": "F|bulletGtMedium|0:Empty|true|bullet_gt_medium_empty|bullet_gt_mediums/empty"
+        },
+        {
+          "before": "F|bulletGtSmall|0:Empty|false|bullet_gt_small_empty|bullet_gt_smalls/empty",
+          "after": "F|bulletGtSmall|0:Empty|true|bullet_gt_small_empty|bullet_gt_smalls/empty"
+        }
+      ],
+      "unchanged_row_count": 129227
+    }
+  }
+}

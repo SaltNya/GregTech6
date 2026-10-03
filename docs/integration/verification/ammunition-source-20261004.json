@@ -1,0 +1,75 @@
+[
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\OP.java",
+    "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+    "scope": "arrow/bullet primary weights, byproducts and EMPTY conditions"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+    "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+    "scope": "material unit U=648648000"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Items.java",
+    "sha256": "1784f1aeccc3d8e70f214c9eb06de81f2f2f28f17b4f57b24acc05d049605c07",
+    "scope": "arrow/bullet projectile parameters"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\c\\Loader_Recipes_Handlers.java",
+    "sha256": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+    "scope": "consumed EMPTY components and Unboxinator recovery"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\c\\Loader_Recipes_Other.java",
+    "sha256": "60d8832d969461869f1b224a9cc28578515fcd60c591cd0992f4e26b8951a1a3",
+    "scope": "twelve charged casing press recipes with powder and brass"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\c\\Loader_Recipes_Vanilla.java",
+    "sha256": "00cf8865a0bef43be72c2f63cc8e7d290da967318536a266c441eae4bda037d5",
+    "scope": "source shaft patterns, vanilla-arrow replacement and recovery"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\item\\prefixitem\\PrefixItemProjectile.java",
+    "sha256": "5f75e338962c8519996193c1b0785e0880165de0a75b4f5ef51548c2b74105d7",
+    "scope": "non-EMPTY projectile selection, dispenser pickup and melee consumption"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\entities\\projectiles\\EntityArrow_Material.java",
+    "sha256": "9acb906960f26b26b1c6364ba2c27298808ddeafa027395311529a061f6c4834",
+    "scope": "quality damage, pickup identity and 3000-tick age"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\render\\GT_Renderer_Entity_Arrow.java",
+    "sha256": "bbb9fdfb3b34389d75c51a03a2fab073e9201e5eece3d701b1231bd866ac6160",
+    "scope": "vanilla arrow mesh with GT texture"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\lang\\LanguageHandler.java",
+    "sha256": "fed8d4bd2e3cb5f70f180d42876792843fa4dba7b8aab6be7581f3ae4130249b",
+    "scope": "original EMPTY part names"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictMaterial.java",
+    "sha256": "768707d5eeeb6b60f0c5d0a24b39ab50f6f173a29a40f0fa3365308cf0688371",
+    "scope": "EMPTY defaults to NONE texture set"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\entity\\arrow.png",
+    "sha256": "4bcfcc858774fd209f414a79df1c22922820954a35f8cac236144f14496d19bc",
+    "scope": "retained upstream arrow texture, CC0-1.0 default assets"
+  },
+  {
+    "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\LICENSE.assets",
+    "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299",
+    "scope": "upstream default asset license"
+  },
+  {
+    "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\entity\\arrow.png",
+    "sha256": "4bcfcc858774fd209f414a79df1c22922820954a35f8cac236144f14496d19bc",
+    "png_dimensions": [
+      32,
+      32
+    ]
+  }
+]

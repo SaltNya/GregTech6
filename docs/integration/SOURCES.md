@@ -1,5 +1,9 @@
 # 来源与贡献记录
 
+## 2026-10-04 / 原版弹药与箭材质
+
+箭杆/装药弹壳的注册、消耗/回收及工作台路线来自原 GT6 OP、Loader_Items、Loader_Recipes_Handlers/Other/Vanilla；原生弹射物参数以 EntityArrow_Material 和 PrefixItemProjectile 为准。保留原作者 Gregorius Techneticies 署名，以实际执行值 U9 而非旧注释 U4 表示箭主材料。箭 PNG 从 wolfram0108 的 GregTech 资源目录保留，按其 LICENSE.assets 的默认 CC0-1.0 分项声明处理；新增源文件散列和范围见 [来源回执](verification/ammunition-source-20261004.json)，NOTICE 及包内副本同步说明。
+
 ## 2026-10-03 / 灌木恢复与蜂巢身份扁平化
 
 只读原 GT6 `MultiTileEntityBush` 提供主体/枝条几何、支撑继承、采摘与 byte 生长溢出规则；`WorldgenBushes` 提供成熟核心和五方向生成枝条；`CS.BushesGT` 的默认 string 条目补齐棉花。原作者 Gregorius Techneticies，沿用本仓库 NOTICE 与许可。蜂巢变种复用工程中已有的 16 色模型和纹理，没有新增外部图片或库；现代睡莲直接继承平台 API，不复制其源码。来源文件 SHA-256 及未覆盖的兼容行为见 [本批来源与验证](verification/visual-plants-20261003.md)。没有修改来源目录。
