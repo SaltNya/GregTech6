@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/block",
   "textures": {
-    "all": "gregtech:block/iconsets/asphalt",
+    "all": "gregtech:block/iconsets/cfoam_hardened",
     "particle": "#all"
   },
   "elements": [
@@ -9,7 +9,7 @@
       "from": [
         0,
         0,
-        0
+        8
       ],
       "to": [
         16,
@@ -29,8 +29,7 @@
         },
         "north": {
           "texture": "#all",
-          "tintindex": 0,
-          "cullface": "north"
+          "tintindex": 0
         },
         "south": {
           "texture": "#all",
