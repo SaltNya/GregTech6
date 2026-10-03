@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-03",
+  "scope": "Six reported issues and NeoForge tool icons; no complete-port or installed-production-runtime claim",
+  "code_commit": "73c11a8523c359095477b53d4dfe667649b0a37a",
+  "issue_commits": [
+    {
+      "sha": "73c11a8523c359095477b53d4dfe667649b0a37a",
+      "title": "fix: add native EMI machine recipes (#4)"
+    },
+    {
+      "sha": "0c01aa63407e2da385c8029b97615c3b57cea17a",
+      "title": "fix: render fluid springs from stored fluid (#5)"
+    },
+    {
+      "sha": "c4fb0aafa989710055188b2b16ccec06993686ac",
+      "title": "fix: render complete tools and recipe catalysts (#3)"
+    },
+    {
+      "sha": "0cd1566651e5768fb89c9e347eda8df4a9cc44d8",
+      "title": "fix: ignite world oil and natural gas (#6)"
+    },
+    {
+      "sha": "5344e5287104dee0e0ec6fd89227942423af3c44",
+      "title": "fix: restore vanilla crafting replacements (#2)"
+    },
+    {
+      "sha": "fa04e698ded0282c50beec83f32af49622de3b46",
+      "title": "fix: restore upward axe harvesting (#1)"
+    }
+  ],
+  "shared_contract_assertions": 8107,
+  "gametest": {
+    "forge": 56,
+    "neoforge": 56,
+    "new_issue_tests_per_platform": 9,
+    "log_sha256": "2057e623a329bd21653a7aad5a1737a4354f338db66257dac214606907648ae7"
+  },
+  "jei_client": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "timeoutSeconds": 300,
+    "elapsedMs": 90224,
+    "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-1b38a570-aae5-41b2-91ba-c01a0a428724.png",
+    "width": 1280,
+    "height": 720,
+    "renderedFrames": 147,
+    "screen": "net.minecraft.client.gui.screens.TitleScreen"
+  },
+  "emi_only_client": {
+    "platform": "neoforge",
+    "minecraft": "1.21.1",
+    "timeoutSeconds": 600,
+    "elapsedMs": 122591,
+    "phase": "emi",
+    "worldName": "client-world-github-issues-20261003-v4",
+    "specimenId": "58db1a7f-03a7-4d3a-9c63-f4db4585ec9b",
+    "pid": 4536,
+    "stage": 14,
+    "normalIntegratedServerStop": true,
+    "savedWorldExists": true,
+    "proof": {
+      "jeiAbsent": true,
+      "nativeEmiOutputLookup": true,
+      "synchronizedWorldSpringModels": true
+    },
+    "captures": [
+      {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "timeoutSeconds": 600,
+        "elapsedMs": 121061,
+        "phase": "emi",
+        "worldName": "client-world-github-issues-20261003-v4",
+        "specimenId": "58db1a7f-03a7-4d3a-9c63-f4db4585ec9b",
+        "pid": 4536,
+        "stage": 20,
+        "role": "extruder-plate",
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-emi-extruder-plate-3389b1c8-2fe4-40f0-9bb2-53ae387d8bb0.png",
+        "width": 2560,
+        "height": 1369
+      },
+      {
+        "platform": "neoforge",
+        "minecraft": "1.21.1",
+        "timeoutSeconds": 600,
+        "elapsedMs": 121895,
+        "phase": "emi",
+        "worldName": "client-world-github-issues-20261003-v4",
+        "specimenId": "58db1a7f-03a7-4d3a-9c63-f4db4585ec9b",
+        "pid": 4536,
+        "stage": 22,
+        "role": "tools-and-springs",
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-emi-tools-and-springs-8e7037ce-1672-48f1-9fea-c37888b45ee5.png",
+        "width": 2560,
+        "height": 1369
+      }
+    ]
+  },
+  "machine_recipes": 187788,
+  "machine_categories": 73,
+  "emi_reload_ms": 25468,
+  "emi_sorted_bake_ms": 11914,
+  "client_log_sha256": {
+    "jei": "dc0b00693a7cd767ffef91c82c27cbb336e5d499c7ac16bd0e4bf36cabd59f50",
+    "emi": "80773a7f52b855c29184edba6f6d8761edb6913fb0fdac06712ac53d4c45d32f"
+  },
+  "screenshots": [
+    {
+      "role": "jei-tool-gallery",
+      "path": "C:\\Dev\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-1b38a570-aae5-41b2-91ba-c01a0a428724.png",
+      "sha256": "45423f35fee68b3a600d22a05585e0414182de2b933055c876f7ee8c1aa008a4",
+      "visually_inspected": true
+    },
+    {
+      "role": "extruder-plate",
+      "path": "C:\\Dev\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-emi-extruder-plate-3389b1c8-2fe4-40f0-9bb2-53ae387d8bb0.png",
+      "sha256": "374f1c1cec42dd86ad240232c621e6a19159d305c04460094baadd044deba6ef",
+      "visually_inspected": true
+    },
+    {
+      "role": "tools-and-springs",
+      "path": "C:\\Dev\\GregTech6\\neoforge\\build\\client-world-smoke-run\\screenshots\\gregtech-client-world-neoforge-1.21.1-emi-tools-and-springs-8e7037ce-1672-48f1-9fea-c37888b45ee5.png",
+      "sha256": "038eecbc3f54693a2ca2020f60e5312012f2fe89069c27fd6893358676992988",
+      "visually_inspected": true
+    }
+  ],
+  "production_jar_extra_checks": {
+    "forge": {
+      "optional_emi_classes_bundled": false,
+      "native_emi_plugin_present": false,
+      "issue_test_fixtures_bundled": false
+    },
+    "neoforge": {
+      "optional_emi_classes_bundled": false,
+      "native_emi_plugin_present": true,
+      "issue_test_fixtures_bundled": false
+    }
+  },
+  "production_build": {
+    "command": ":build :neoforge:build",
+    "duration": "7m38s",
+    "direct_core_shortcuts": false,
+    "log_sha256": "934e14c82c6a116406e142713732a810920c1991632ecc60e00aef9e3ee39c76"
+  }
+}

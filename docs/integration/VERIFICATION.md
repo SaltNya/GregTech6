@@ -1,5 +1,11 @@
 # 验证账本
 
+## 2026-10-03 / 六项 Issues 与工具、EMI、液体泉
+
+共享 8,107 条断言、Forge / NeoForge 各 56 项 GameTest 通过。NeoForge JEI 客户端实际检查 74 个真实/占位工具模型和泉库存模型；原生 JEI 分类工具槽合同通过。EMI-only 客户端在第二轮排序结束后查询 187,788 条机器配方及金属板产出、打开实际挤压机页面并检查同步的世界泉模型，正常保存退出；截图已查看。详见 [本批记录](verification/github-issues-20261003.md) 与 [运行回执](verification/github-issues-runtime-20261003.json)。成品验包和开发运行是分别记录的证据，不扩大为发布包安装启动或完整移植。
+
+正式双版本构建 7m38s 与 589 个当前共享 class 验包通过；额外确认成品未捆绑 EMI 或本批测试夹具。见 [成品验包回执](verification/github-issues-artifacts-20261003.json)。
+
 ## 2026-10-02 / 超温起火与双版成品
 
 共享 8,107 条断言通过，Forge / NeoForge 各 47 项游戏回归通过。正式双版构建 9m34s 成功；在当前 `C:\Dev\GregTech6` 下重新验包，587 个当前共享 class、元数据、许可、重复及测试条目检查通过，另确认两包都不含测试用保护标签。见 [验收记录](verification/fluid-pipe-overheat-20261002.md) 和 [验包回执](verification/fluid-pipe-overheat-artifacts-20261002.json)。不作为客户端、生存链路、独立世界重载或成品安装运行的证明。
