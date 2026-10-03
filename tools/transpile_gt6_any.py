@@ -204,6 +204,14 @@ def main() -> None:
     if decl_lines:
         decl_lines[-1] = decl_lines[-1].rstrip(",")
 
+    # MT:208 diamond(...) puts all eight factory-created diamonds into ANY.Diamond.
+    # The ANY.java-only parser cannot see these bindings; keep their source set explicit.
+    diamonds = ["Diamond", "DiamondBlue", "DiamondGreen", "DiamondPurple", "DiamondRed",
+                "DiamondYellow", "DiamondPink", "DiamondIndustrial"]
+    diamond_members = init_data.setdefault("Diamond", {"members": []})["members"]
+    for field in diamonds:
+        member = f"GT6Materials.Compounds.{field}"
+        if member not in diamond_members: diamond_members.append(member)
     init_lines = emit_init(init_data)
     needs_mt = any("MT.Ma" in line for line in init_lines)
 

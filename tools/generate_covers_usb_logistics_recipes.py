@@ -37,7 +37,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "src/main/resources/data/gregtech"
+DATA = ROOT / "core/src/main/resources/data/gregtech"
 
 SHAPED = "minecraft:crafting_shaped"
 SHAPELESS = "minecraft:crafting_shapeless"
@@ -60,11 +60,9 @@ def tag(t: str) -> dict:
     return {"tag": t}
 
 
-def circuits(tier: int) -> list:
-    """GT6 ``OD_CIRCUITS[tier]``: the cumulative chain of every circuit tier up to ``tier``."""
-    tiers = ["circuit_basic", "circuit_good", "circuit_advanced", "circuit_elite",
-             "circuit_master", "circuit_ultimate"]
-    return [item("gregtech:" + name) for name in tiers[:tier]]
+def circuits(tier: int) -> dict:
+    """GT6 high-to-low re-registration accepts tier N and every higher tier."""
+    return tag("gregtech:circuits_tier_" + str(tier) + "_plus")
 
 
 # ── covers (MultiItemTechnological:139-178, :419-422) ─────────────────────────────────────────────

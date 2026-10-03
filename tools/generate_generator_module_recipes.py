@@ -15,8 +15,7 @@ already registered (GTMultiItemsGen "randomtools"), but they had no recipe.
 Narrowings, both recorded here rather than silently dropped:
   * GT6's OD.craftingPiston covers the vanilla pistons plus modded ones; the port lists the two
     vanilla pistons.
-  * GT6's container1000lava / container1000water cover every 1000 mB vessel (bucket, GT cells,
-    capsules); the port lists the vanilla buckets, which are members of those ore dictionaries too.
+Finite container ingredients accept and drain 1000 mB from buckets, cells and capsules.
 
 Run: python tools/generate_generator_module_recipes.py
 """
@@ -30,16 +29,16 @@ ROOT = Path(__file__).resolve().parents[1]
 # recipe_keys/, not components/ or extruder_shapes/: ElectronicsTests counts the component crafting
 # recipes (84) and ManufacturingTests owns extruder_shapes/ for the 78 molds, so the generator modules
 # — which are recipe keys rather than components — get their own directory.
-OUT = ROOT / "src/main/resources/data/gregtech/recipes/recipe_keys"
+OUT = ROOT / "core/src/main/resources/data/gregtech/recipes/recipe_keys"
 
 # GT6 OD_CIRCUITS[4]: the cumulative gt:circuitN chain (LoaderOreDictReRegistrations:375-383).
-CIRCUITS = [{"item": "gregtech:" + name} for name in
-            ("circuit_basic", "circuit_good", "circuit_advanced", "circuit_elite")]
+CIRCUITS = {"tag": "gregtech:circuits_tier_4_plus"}
 
 
 def recipe(result: str, source: str, pattern: list, key: dict) -> dict:
     return {
-        "type": "minecraft:crafting_shaped",
+        "type": "gregtech:tool_shaped",
+        "allow_mirror": False,
         "_comment": f"GT6 {source}",
         "pattern": pattern,
         "key": key,
@@ -54,8 +53,8 @@ RECIPES = {
          "P": [{"item": "minecraft:piston"}, {"item": "minecraft:sticky_piston"}],
          "M": {"item": "gregtech:casing_machine_steelgalvanized"},
          "O": {"item": "gregtech:extruder_shape_block"},
-         "L": {"item": "minecraft:lava_bucket"},
-         "W": {"item": "minecraft:water_bucket"}}),
+         "L": {"type": "gregtech:finite_fluid_container_1000", "fluid": "Lava"},
+         "W": {"type": "gregtech:finite_fluid_container_1000", "fluid": "Water"}}),
     "basalt_generator_module": recipe(
         "basalt_generator_module", "MultiItemRandomTools:425", ["S", "M", "I"],
         {"S": {"item": "minecraft:soul_sand"},
