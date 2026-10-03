@@ -1,0 +1,42 @@
+{
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\colored\\back.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\colored\\back.png",
+    "sha256": "b94934858d010e0381fd5056dbc0ec00e964cad00c152944b2e6e0918991f977"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\colored\\front.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\colored\\front.png",
+    "sha256": "db9560d38648fee70a0c8618e793d5c262cb269a408af0fdba99518343e4372e"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\colored\\side.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\colored\\side.png",
+    "sha256": "db9560d38648fee70a0c8618e793d5c262cb269a408af0fdba99518343e4372e"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\overlay\\back.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\overlay\\back.png",
+    "sha256": "4da8c35319cd5b640d5d2363df857edcef1c58a26545a6f1a689f5d0b8d196cb"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\overlay\\front.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\overlay\\front.png",
+    "sha256": "4c84b16d32c12ab52a3173817d219d57499d6a381e7b0b391a776203a104c0dd"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\overlay\\side.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\overlay\\side.png",
+    "sha256": "6b797a3edb7c0503d7145cca61f5dedbd338cae4f4c0c2a67a6627f29a70f0e8"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\overlay_active\\back.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\overlay_active\\back.png",
+    "sha256": "4da8c35319cd5b640d5d2363df857edcef1c58a26545a6f1a689f5d0b8d196cb"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\overlay_active\\front.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\overlay_active\\front.png",
+    "sha256": "815a022f98a8c6dc3c955df5a1c90fdf93cc4d62aec52f400e1eed0fccc50ca3"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\overlay_active\\front.png.mcmeta": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\overlay_active\\front.png.mcmeta",
+    "sha256": "01a4ea56f3505704d42cfa5437d69d4dab7815a3ffbec1761cc4c66e270bfdf4"
+  },
+  "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\pump\\rotation\\overlay_active\\side.png": {
+    "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\pump\\rotation\\overlay_active\\side.png",
+    "sha256": "6b797a3edb7c0503d7145cca61f5dedbd338cae4f4c0c2a67a6627f29a70f0e8"
+  }
+}
