@@ -1,5 +1,9 @@
 # 来源与贡献记录
 
+## 2026-10-04 / 原版 Technology 嵌入配方
+
+物品配方取自 Gregorius Techneticies / GregTech 6 team 的 MultiItemRandomTools/MultiItemTechnological，扫描仪取 MTE 电池注册部分；高等级替代以 LoaderOreDictReRegistrations 为准，橡胶锤头和钻石组以 OP/MT/ANY 实际条件及工厂绑定为准。沿用仓库 LGPL 和 NOTICE，未导入纹理或外部依赖，没有修改原项目。逐项来源、作者、散列、边界见 [来源回执](verification/technology-source-20261004.json)。
+
 ## 2026-10-04 / 原版弹药与箭材质
 
 箭杆/装药弹壳的注册、消耗/回收及工作台路线来自原 GT6 OP、Loader_Items、Loader_Recipes_Handlers/Other/Vanilla；原生弹射物参数以 EntityArrow_Material 和 PrefixItemProjectile 为准。保留原作者 Gregorius Techneticies 署名，以实际执行值 U9 而非旧注释 U4 表示箭主材料。箭 PNG 从 wolfram0108 的 GregTech 资源目录保留，按其 LICENSE.assets 的默认 CC0-1.0 分项声明处理；新增源文件散列和范围见 [来源回执](verification/ammunition-source-20261004.json)，NOTICE 及包内副本同步说明。

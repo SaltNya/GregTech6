@@ -1,0 +1,576 @@
+{
+  "source_commit": "d35eac4e0db34d707c2f128048e805136eed1443",
+  "scope": "local original source, shared catalog/form resolution; no Minecraft execution",
+  "author": "Gregorius Techneticies / GregTech 6 team",
+  "license": "LGPL-3.0-or-later; repository NOTICE retained",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemRandomTools.java",
+      "sha256": "f2eef98ddb1b10298a981ff78369bccb7e8317fb421f7bdd84086257819ad84d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "sha256": "7367922c4938318dd50b1320e7fc7a7453c33cffa46f75a437325314d2536ddc"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\OP.java",
+      "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\CR.java",
+      "sha256": "952f94e0dfff66d27d2ac2b97ed47b6aa0c8250aa19babd5cc528c89616c0760"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\load\\LoaderOreDictReRegistrations.java",
+      "sha256": "d34719309a5ddf5bd7fc01c0462b57af52b4cf980a69fae4d4042c2ab78b07ef"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\tools\\MultiTileEntityAdvancedCraftingTable.java",
+      "sha256": "730747ed9b5c401c6128ec09a481c9b0bcbc68c186c46f231afb07b4bf8231d0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapAutocrafting.java",
+      "sha256": "76c79b611b286bfbe331f516fed22ce7877b366ceb656a56749a9d8aab9a04e9"
+    }
+  ],
+  "crafting_rows": [
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/fire_starter.json",
+      "source": "GT6 MultiItemRandomTools:395",
+      "sha256": "ec82b04233027bc53e180b19923b0ecc58b582af4c9ec499f718479e258bea3f",
+      "allow_mirror": true,
+      "result": {
+        "item": "gregtech:fire_starter",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/fire_starter_2.json",
+      "source": "GT6 MultiItemRandomTools:398",
+      "sha256": "6e164a6163a190541078f51829ae4c373d147ce0fd0c1d66bf5a3c68e4b27eda",
+      "allow_mirror": true,
+      "result": {
+        "item": "gregtech:fire_starter_2",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/match_352.json",
+      "source": "GT6 MultiItemRandomTools:352",
+      "sha256": "54b85ff7c59827f41e99f08282ad2c677377581a26df79d0857f1c1a5c87efa6",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:match",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/match_353.json",
+      "source": "GT6 MultiItemRandomTools:353",
+      "sha256": "5239090772b164bf648ff3e771d57345fee0da6255bf8f793341829c8a23bf21",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:match",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/match_354.json",
+      "source": "GT6 MultiItemRandomTools:354",
+      "sha256": "7694a5f1bb994d8cff2f0a864afd30df18932edf211e08d3175eddbed37ed014",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:match",
+        "count": 4
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/match_355.json",
+      "source": "GT6 MultiItemRandomTools:355",
+      "sha256": "4a43b5cc2c63c523c2ce138b8ce31cafc7934cdee18bcda993a07e8ad07ab407",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:match",
+        "count": 4
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/plastic_lighter_empty.json",
+      "source": "GT6 MultiItemRandomTools:388",
+      "sha256": "ed2b0b16cad41d848dd4db8a5e63ab1839c0d4dec33c6205315c909ba5f45dfc",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:plastic_lighter_empty",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/portable_cropnalyzer.json",
+      "source": "GT6 Loader_MultiTileEntities:1076",
+      "sha256": "b17a7b22a15154915b26e3329208340828d42e4289d98d332fddcdb72210d4a6",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:portable_cropnalyzer",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/portable_scanner.json",
+      "source": "GT6 Loader_MultiTileEntities:1075",
+      "sha256": "18a9b97e34f926afdf4cb0ba61732136a10f2256d2bee483ea598fbe4d219bb2",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:portable_scanner",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/remote_activator.json",
+      "source": "GT6 MultiItemRandomTools:522",
+      "sha256": "91666a37a8783201e0f9b1f3fb72ff1e5387b6ca539bd9404296005377a1d276",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:remote_activator",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_blade_tip.json",
+      "source": "GT6 MultiItemRandomTools:488",
+      "sha256": "e1b1960f50f831c80b999dec74da4d3c7f30b0e1fe72f8d14d4e947cb3d4e886",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_blade_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_chisel_tip.json",
+      "source": "GT6 MultiItemRandomTools:486",
+      "sha256": "9f194cc2cd7175002f658c8fc0bb3fd5b5a7a85169b4aa82a56a1ecff7d42cbe",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_chisel_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_cutter_tip.json",
+      "source": "GT6 MultiItemRandomTools:485",
+      "sha256": "1acf1cee14b76c1e3c12b59ff25022b118a3e055b831fc49c5d775ae63c5017b",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_cutter_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_drill_tip.json",
+      "source": "GT6 MultiItemRandomTools:489",
+      "sha256": "390312805bb5862c1bc107d44e88a6290d290f7487bba930c5062c2f551e3a98",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_drill_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_file_tip.json",
+      "source": "GT6 MultiItemRandomTools:490",
+      "sha256": "5951cd32f742064767ace79d52649720fb2fe37bf2d50df393ee4d78d081437e",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_file_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_hammer_tip.json",
+      "source": "GT6 MultiItemRandomTools:484",
+      "sha256": "c66ffeb91f46734c7c4f3250467c072b4e93306f071bd35a0fbe9aefd2494c31",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_hammer_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_rubber_hammer_tip.json",
+      "source": "GT6 MultiItemRandomTools:487",
+      "sha256": "8ad9b288b5e0471b341d21d015ed58a0e2b8b2a8727c698d43d040d05dbdfe65",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_rubber_hammer_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_saw_tip.json",
+      "source": "GT6 MultiItemRandomTools:483",
+      "sha256": "6f2760df0013bbc6ea9a1b4f9db54503308607434bbb27da25e0202ee4a36f6f",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_saw_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_screwdriver_tip.json",
+      "source": "GT6 MultiItemRandomTools:482",
+      "sha256": "2d614db1a5c761088527f12797383a801bee369bf59c67010e6aa66ce14a5826",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_screwdriver_tip",
+        "count": 1
+      }
+    },
+    {
+      "recipe": "core/src/main/resources/data/gregtech/recipes/technology/robot_arm_wrench_tip.json",
+      "source": "GT6 MultiItemRandomTools:481",
+      "sha256": "ead5ce5c291e83f006a3678f5f3fd8638af4c313689d285187612d681b433c58",
+      "allow_mirror": false,
+      "result": {
+        "item": "gregtech:robot_arm_wrench_tip",
+        "count": 1
+      }
+    }
+  ],
+  "circuits": {
+    "verified": [
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_components\\usb1_hdd.json",
+        "key": "C",
+        "tier": 3,
+        "source": "GT6 MultiItemTechnological:819"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_components\\usb1_stick.json",
+        "key": "C",
+        "tier": 3,
+        "source": "GT6 MultiItemTechnological:796"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_components\\usb2_hdd.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:820"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_components\\usb2_stick.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:797"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_components\\usb3_hdd.json",
+        "key": "C",
+        "tier": 5,
+        "source": "GT6 MultiItemTechnological:821"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_components\\usb3_stick.json",
+        "key": "C",
+        "tier": 5,
+        "source": "GT6 MultiItemTechnological:798"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_components\\usb4_hdd.json",
+        "key": "C",
+        "tier": 6,
+        "source": "GT6 MultiItemTechnological:822"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_components\\usb4_stick.json",
+        "key": "C",
+        "tier": 6,
+        "source": "GT6 MultiItemTechnological:799"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\hand_covers\\item_retriever_cover.json",
+        "key": "C",
+        "tier": 3,
+        "source": "GT6 MultiItemTechnological:170"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\filtered_logistics_export_bus_fluid.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:778"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\filtered_logistics_export_bus_item.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:781"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\filtered_logistics_import_bus_fluid.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:779"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\filtered_logistics_import_bus_item.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:782"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\filtered_logistics_storage_bus_fluid.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:780"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\filtered_logistics_storage_bus_item.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:783"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\generic_logistics_export_bus.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:784"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\generic_logistics_import_bus.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:785"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\generic_logistics_storage_bus.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:786"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\logistics_display_cpu_control.json",
+        "key": "C",
+        "tier": 2,
+        "source": "GT6 MultiItemTechnological:774"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\logistics_display_cpu_conversion.json",
+        "key": "C",
+        "tier": 2,
+        "source": "GT6 MultiItemTechnological:776"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\logistics_display_cpu_logic.json",
+        "key": "C",
+        "tier": 2,
+        "source": "GT6 MultiItemTechnological:773"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\logistics_display_cpu_storage.json",
+        "key": "C",
+        "tier": 2,
+        "source": "GT6 MultiItemTechnological:775"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\logistics\\logistics_dump_bus_item.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemTechnological:787"
+      },
+      {
+        "path": "core\\src\\main\\resources\\data\\gregtech\\recipes\\recipe_keys\\stone_generator_module.json",
+        "key": "C",
+        "tier": 4,
+        "source": "GT6 MultiItemRandomTools:424"
+      }
+    ],
+    "missing_comments": []
+  },
+  "shared_sink_rows": 1115,
+  "shared_sink_rows_by_map": {
+    "Boxinator": 11,
+    "Canner": 3,
+    "Unboxinator": 1,
+    "Assembler": 1100
+  },
+  "families": {
+    "any_plastic_curved_plate": [
+      "plate_curved_bakelite",
+      "plate_curved_hardplastic",
+      "plate_curved_plastic",
+      "plate_curved_pvc",
+      "plate_curved_teflon"
+    ],
+    "any_rubber_hammer_head": [
+      "tool_head_hammer_rubber"
+    ],
+    "any_steel_rod": [
+      "stick_knightmetal",
+      "stick_meteoricsteel",
+      "stick_steel"
+    ],
+    "any_diamond_dust": [
+      "dust_bluediamond",
+      "dust_diamond",
+      "dust_diamondindustrial",
+      "dust_greendiamond",
+      "dust_pinkdiamond",
+      "dust_purplediamond",
+      "dust_reddiamond",
+      "dust_yellowdiamond"
+    ],
+    "any_wood_bolt": [
+      "bolt_acacia",
+      "bolt_alder",
+      "bolt_applewood",
+      "bolt_ashwood",
+      "bolt_aspen",
+      "bolt_autumnwood",
+      "bolt_balsa",
+      "bolt_baobab",
+      "bolt_beech",
+      "bolt_birch",
+      "bolt_bluemahoe",
+      "bolt_bluespruce",
+      "bolt_boxwood",
+      "bolt_brazilwood",
+      "bolt_butternutwood",
+      "bolt_cedar",
+      "bolt_cherrywood",
+      "bolt_chestnutwood",
+      "bolt_cinnamonwood",
+      "bolt_citruswood",
+      "bolt_cocobolowood",
+      "bolt_coconutwood",
+      "bolt_crimsonwood",
+      "bolt_cypress",
+      "bolt_darkoak",
+      "bolt_darkwood",
+      "bolt_douglasfir",
+      "bolt_ebony",
+      "bolt_elderwood",
+      "bolt_elm",
+      "bolt_etherealwood",
+      "bolt_eucalyptus",
+      "bolt_figwood",
+      "bolt_fir",
+      "bolt_foxfirewood",
+      "bolt_giganteumwood",
+      "bolt_gingko",
+      "bolt_goldwood",
+      "bolt_greenheart",
+      "bolt_hawthorn",
+      "bolt_hazel",
+      "bolt_hellbark",
+      "bolt_hemlock",
+      "bolt_hickory",
+      "bolt_holly",
+      "bolt_hornbeam",
+      "bolt_ipe",
+      "bolt_iroko",
+      "bolt_jacaranda",
+      "bolt_japanesemaple",
+      "bolt_junglewood",
+      "bolt_kapok",
+      "bolt_larch",
+      "bolt_limewood",
+      "bolt_locust",
+      "bolt_logwood",
+      "bolt_maclura",
+      "bolt_magicwood",
+      "bolt_mahoe",
+      "bolt_mahogany",
+      "bolt_mangrove",
+      "bolt_maple",
+      "bolt_oak",
+      "bolt_ogrewood",
+      "bolt_olivewood",
+      "bolt_padauk",
+      "bolt_palm",
+      "bolt_papayawood",
+      "bolt_pearwood",
+      "bolt_pine",
+      "bolt_pinkivory",
+      "bolt_plumwood",
+      "bolt_poplar",
+      "bolt_purpleheart",
+      "bolt_rainboweucalyptus",
+      "bolt_rainbowood",
+      "bolt_redwood",
+      "bolt_rosewood",
+      "bolt_rowan",
+      "bolt_sacredoak",
+      "bolt_sakura",
+      "bolt_sequoia",
+      "bolt_silverpine",
+      "bolt_spruce",
+      "bolt_sweetgum",
+      "bolt_sycamore",
+      "bolt_syzgium",
+      "bolt_teak",
+      "bolt_thorntree",
+      "bolt_towerwood",
+      "bolt_walnutwood",
+      "bolt_warpedwood",
+      "bolt_wenge",
+      "bolt_whitebeam",
+      "bolt_whitecedar",
+      "bolt_whiteelm",
+      "bolt_willow",
+      "bolt_witchwood",
+      "bolt_woodbleached",
+      "bolt_woodcompressed",
+      "bolt_wooddead",
+      "bolt_woodfrozen",
+      "bolt_woodmossy",
+      "bolt_woodrotten",
+      "bolt_woodscorched",
+      "bolt_woodtainted",
+      "bolt_woodvarnished",
+      "bolt_wyvernwood",
+      "bolt_yew",
+      "bolt_zebrawood"
+    ],
+    "any_phosphorus_dust": [
+      "dust_bluephosphorus",
+      "dust_phosphorus",
+      "dust_redphosphorus",
+      "dust_whitephosphorus"
+    ],
+    "any_phosphorus_dust_small": [
+      "dust_small_bluephosphorus",
+      "dust_small_phosphorus",
+      "dust_small_redphosphorus",
+      "dust_small_whitephosphorus"
+    ]
+  },
+  "boundaries": [
+    "Sink emission/form resolution is not proof of native registration or machine execution.",
+    "Debug scanner has no survival recipe in original; portable scanner/cropnalyzer recipes are MTE:1075-1076.",
+    "Invar/platinum empty lighters have loot/drop acquisition in original; only plastic empty lighter is crafted here.",
+    "Diamantine is unregistered in current port, so optional ANY.Diamond membership is not added.",
+    "Full portable scanning energy behavior and dynamic machine autocrafting remain incomplete."
+  ],
+  "usb_tiers": {
+    "source": "MultiItemTechnological:791-806; LoaderOreDictReRegistrations:348-365",
+    "scanner_required": 3,
+    "cropnalyzer_required": 1,
+    "registered_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "policy": "higher tiers substitute lower; sticks and cables remain separate"
+  }
+}
