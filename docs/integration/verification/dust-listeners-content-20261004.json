@@ -1,0 +1,168 @@
+{
+  "status": "passed",
+  "scope": "Source and packaging only; no native washing, tagging, EMI reload, cauldron execution, client or save claim",
+  "source_commits": [
+    "aef65a78c32ce2f1a8ecc113165660ea0fdc3863",
+    "9e67a1684cfd95057908a9f8221b1b69e6bb2c70"
+  ],
+  "platforms": {
+    "forge": {
+      "native_class_count": 9,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/api/material/MaterialDisplayBinding.class",
+          "packaged_sha256": "93cbb7827a04e2a65d11a048b2908ccfa71a41598cfa0e21f4b77d9c11aa300a",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/MaterialTooltipHandler.class",
+          "packaged_sha256": "f468e1aa89ba7dda20a0518d9c419fc86b39d650ceb8cb5109a6ac77d33daff8",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "f23a628293ac3d3e97fc2dfdbaccf1095075b154f4e0f0af90a0eed85a236603",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes.class",
+          "packaged_sha256": "736a0377aa693f94cc8c87091c5c4b36d9f3ed51f5225b323c80107d6c945790",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$CookingData.class",
+          "packaged_sha256": "b9bb3563ea250afbaf62f00532bec67f600505050f4988e6f3502ce6aa3c5402",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$Entry.class",
+          "packaged_sha256": "bc1bcded74dd06597597c04f11dc8fcb734eec842457730211e9cabb2773ebc4",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$Row.class",
+          "packaged_sha256": "90459825db47663d53ae79c2b587610f76640c9e9c3aeb6e8e9f05327292e475",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/event/MaterialWashingHandler.class",
+          "packaged_sha256": "9448ab0445a749bf7bd5096f526a36c7e6c24f6163a246c4df0703b2ba19b778",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ExternalOreRecipeLifecycle.class",
+          "packaged_sha256": "0cef96e63489aff14daa4d0ebd5832f8f014a6daf7b9d9223ecd558dd583615e",
+          "verification": "present after reobfuscation"
+        }
+      ],
+      "resources": [
+        {
+          "entry": "assets/gregtech/lang/en_us.json",
+          "sha256": "f7ca14c2852dfe3dbc4e9b74fa4c26ca350e07d63e7aaf8756d2c533f97b8308",
+          "verification": "byte-equal to current source and valid JSON"
+        },
+        {
+          "entry": "assets/gregtech/lang/zh_cn.json",
+          "sha256": "9608537b9d6f8c693cefc5762e730420e35bd326ca5462161521c9f3d2c046d6",
+          "verification": "byte-equal to current source and valid JSON"
+        }
+      ]
+    },
+    "neoforge": {
+      "native_class_count": 11,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/api/material/MaterialDisplayBinding.class",
+          "packaged_sha256": "1c9a5dd9b40b07cd3c7e305b130a7dc0f98bd5b22ca0a9f85294f8273a535152",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/MaterialTooltipHandler.class",
+          "packaged_sha256": "bc342535da8aea951285db9c8e10fd23b407190d756136b2c4c80d96fa36a8c2",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "2f42e55f6a26c0c8b58b9b758052693644d5f86f9e0f5a1ea5e8b7d6cef98eb1",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes.class",
+          "packaged_sha256": "d3cae1cace3c6d5de91a76a106266ac52b30ea72c99ecff3959be7f327d71e09",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$CookingData.class",
+          "packaged_sha256": "f9050f4ed2a63d4c66fdcf539d088a883ef0f77a24db563c6189ea011dd3c923",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$Entry.class",
+          "packaged_sha256": "9ee0da8a66cf66cb5677acb563bfd6b30693e2423b092ce3191ba11e357db26d",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$Row.class",
+          "packaged_sha256": "a98c2ef64fd1bcc8344f66a7135584488d14d2853c30a13cb12a62c2fae47afd",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/emi/GregTechEMIPlugin.class",
+          "packaged_sha256": "c3f711c7cf33f9af2b7d6eb17287d715f3c616479c73b7782fdaeabaf865a8b8",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/emi/GregTechEMIPlugin$1.class",
+          "packaged_sha256": "88cc79ac9a31e0a06987f82a3bd6c45b0d95a4fd7bf7fb7c25aeb2416bbb57d9",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/event/MaterialWashingHandler.class",
+          "packaged_sha256": "fbfcab5f146a66ab4bc6f7a21d92b47c664fd9b555a843830ebbb09967022c05",
+          "verification": "byte-equal to current classes"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ExternalOreRecipeLifecycle.class",
+          "packaged_sha256": "7de91b966e7d81eb161c69c8873153e8682b77924417639a4aea00e8e7f25059",
+          "verification": "byte-equal to current classes"
+        }
+      ],
+      "resources": [
+        {
+          "entry": "assets/gregtech/lang/en_us.json",
+          "sha256": "f7ca14c2852dfe3dbc4e9b74fa4c26ca350e07d63e7aaf8756d2c533f97b8308",
+          "verification": "byte-equal to current source and valid JSON"
+        },
+        {
+          "entry": "assets/gregtech/lang/zh_cn.json",
+          "sha256": "9608537b9d6f8c693cefc5762e730420e35bd326ca5462161521c9f3d2c046d6",
+          "verification": "byte-equal to current source and valid JSON"
+        }
+      ]
+    }
+  },
+  "original_source_sha256": {
+    "gregapi/data/CS.java": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+    "gregapi/data/OP.java": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+    "gregapi/data/TD.java": "c77f9a0691e59b9c720627a49fe0088d31d8ffe3c79c4e59a6c61ced91b9c9ea",
+    "gregapi/data/MT.java": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2",
+    "gregtech/loaders/a/Loader_Items.java": "1784f1aeccc3d8e70f214c9eb06de81f2f2f28f17b4f57b24acc05d049605c07",
+    "gregtech/loaders/c/Loader_Recipes_Handlers.java": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefix.java": "de005fa316ae3d9ebddf69456c47a4e1e0ec38b9983d9fa9d1809e2bd9e58156",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefixShredding.java": "7258570a18592af7d8c6f8f3aced44464c57683497ac8eb4a6ff1badbbd902e6",
+    "gregtech/loaders/c/Loader_Recipes_Furnace.java": "69a45e400339a5bada9854d47402e23d73bf199f6cf8c658f9149f02696acf66",
+    "gregapi/oredict/listeners/OreDictListenerItem_Washing.java": "2647a7b2a721e4c9f7188b609d8b9c01f0723f761d9db0e0a74255a8ff5d03bb",
+    "gregapi/GT_API_Proxy.java": "e773eae6cd22825b3cd231cfb916040b52166af7653ccc8c9f994f5e53101819",
+    "gregapi/util/ST.java": "5ff16d9051e2744a66c711bd5f2581785ba8af7b2272fb1023a6d2f4ddb783a8",
+    "gregapi/util/UT.java": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709"
+  },
+  "emi_dependency": {
+    "archive": "work/emi-sources.jar",
+    "archive_sha256": "59c09da6f1898392fb2bec1a398ac2c84bfb1b8d376fed968aa73c1a9dcc2289"
+  },
+  "logs_sha256": {
+    "dust-listeners-compile-20261004.log": "7eaa4d520a54fcfe3f675e7bbad2bb8354257fd17b212a688f5692e83edc30e1",
+    "dust-listeners-build-20261004.log": "e53164740cb403f781593d5f6a67ccfa905b4924a31fba3d36103835d9969db2",
+    "dust-listeners-build-final-20261004.log": "9cb60d9decd77fad27b7735a2468d425da2c094a1516915b61974e1229f5338e"
+  }
+}
