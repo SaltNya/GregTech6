@@ -91,6 +91,37 @@
     "core/src/test/java/com/gregtech/gregtech/core/MaterialBehaviorContracts.java": "0c90c02f2a437230814361d9696afc728ac416184b2bf40a966794763ecc4fd0",
     "tools/integration/build_verified.ps1": "e59ee4a099482ead809c587679ece720a72d6fca75482504b003fef7bd67ea97"
   },
-  "new_remote_run_verified": false,
-  "runtime": "No new game run for this CI-only change; both mod JAR SHA256 values exactly match the previously verified and installed pair in origin-priority-20261004.md."
+  "new_remote_run_verified": true,
+  "runtime": "No new game run for this CI-only change; both mod JAR SHA256 values exactly match the previously verified and installed pair in origin-priority-20261004.md.",
+  "successful_remote_run": {
+    "id": 37196139294,
+    "number": 38,
+    "url": "https://github.com/SaltNya/GregTech6/actions/runs/37196139294",
+    "commit": "6080b5e14225f1370eef150d6662d02a7a0ba153",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 111418308548,
+        "name": "Build 1.20.1 forge",
+        "conclusion": "success",
+        "started_at": "2026-10-04T10:40:49Z",
+        "completed_at": "2026-10-04T10:43:33Z"
+      },
+      {
+        "id": 111418308652,
+        "name": "Build 1.21.1 neoforge",
+        "conclusion": "success",
+        "started_at": "2026-10-04T10:40:49Z",
+        "completed_at": "2026-10-04T10:43:11Z"
+      },
+      {
+        "id": 111418765561,
+        "name": "Both platform builds required",
+        "conclusion": "success",
+        "started_at": "2026-10-04T10:43:35Z",
+        "completed_at": "2026-10-04T10:43:39Z"
+      }
+    ]
+  },
+  "push": "User explicitly authorized only repair commit 6080b5e1; fast-forward push 71287487..6080b5e1 succeeded after retrying a connection reset with HTTP/1.1."
 }

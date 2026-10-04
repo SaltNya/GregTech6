@@ -1,0 +1,176 @@
+{
+  "origin": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "authors": "GregTech-6 Team; notices retained on adapted native tool behavior classes",
+  "license": "LGPL-3.0-or-later; source notices and existing project license/provenance apply",
+  "source_files": [
+    {
+      "path": "LICENSE",
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "src/main/java/gregapi/data/MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "src/main/java/gregapi/data/OP.java",
+      "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e"
+    },
+    {
+      "path": "src/main/java/gregapi/item/multiitem/MultiItemTool.java",
+      "sha256": "d9f1417dc1e13538b89470445fd83d1bccd6a61e19aaacb9b03d0ee48b4cb0ac"
+    },
+    {
+      "path": "src/main/java/gregapi/item/multiitem/behaviors/Behavior_Plug_Leak.java",
+      "sha256": "89b197ef8a9f74243a3e2911400d0db9e3c4d8419cea0217a4f5ec89792890d9"
+    },
+    {
+      "path": "src/main/java/gregapi/item/multiitem/tools/ToolStats.java",
+      "sha256": "09b82ff58981570845604d0889f21fe3fa8aca114d4218fe12907bb89f5b9c60"
+    },
+    {
+      "path": "src/main/java/gregapi/item/prefixitem/PrefixItemProjectile.java",
+      "sha256": "5f75e338962c8519996193c1b0785e0880165de0a75b4f5ef51548c2b74105d7"
+    },
+    {
+      "path": "src/main/java/gregtech/items/behaviors/Behavior_Gun.java",
+      "sha256": "28f5ec281b8f6cc1c34324228d9d54dba84504b51e060cf3e55c6d895fd4d2ab"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_BuzzSaw_LV.java",
+      "sha256": "c8fe8ab65a458c07b244279e6ddb08769cd9b674f3ed7d9bd12734477df55505"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Chainsaw_HV.java",
+      "sha256": "22a33a38e32ce6d8e523163dc06b18bbb510275c76299cb09787dcde0cd95c99"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Chainsaw_LV.java",
+      "sha256": "2db6705c5ec327c09657b0f50c3cf1af07ec0aff07ae759152de1f935baaaf61"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Chainsaw_MV.java",
+      "sha256": "0b98c3928632631186a254dfa05aca01c95c652614a140ec19d2b167c120d39b"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Drill_LV.java",
+      "sha256": "1d3dfebbb0c628496432021020ef61150e3ef36279c649731bcbddbb36521716"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_JackHammer_HV.java",
+      "sha256": "676134b6ab69d1f39099f524948d0f1c8258ee12ea6fde170eaeb3e100267200"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_JackHammer_HV_No_Ores.java",
+      "sha256": "0dfaf744224bf0e84850ef8a0c49fd66ae175be7b96b9232cf9e6608d1d30075"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_JackHammer_HV_Normal.java",
+      "sha256": "7a9743fbbd0af938b2347361ceefdcae00147f3761fd5233e91f0837d6574b52"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_MiningDrill_HV.java",
+      "sha256": "f47fb36bb9feed6620da1db6883a62f294849d82ee24d118d0c7d062cc09636d"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_MiningDrill_LV.java",
+      "sha256": "338d38cf2220314d11d70210f1cd4b0e5fc52cbed0a3e5263c3cacf92e702031"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_MiningDrill_MV.java",
+      "sha256": "bf997cfc7620c9ee2e3d1e25275f0daadc606df55acdd4420c5dda1c30a02b93"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Mixer_LV.java",
+      "sha256": "ee4353828b660d543b17b8500269983369a6bce860dc4181b52ae52c1ee31c29"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_MonkeyWrench_HV.java",
+      "sha256": "ce24cdd0d044355ceda48e04f1a09d5c6566a4fb934c45a6348e2bb37c5df0c8"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_MonkeyWrench_LV.java",
+      "sha256": "2f6d030c4f3ac344a4a09e734eb48c334769b0a083cf9f84aac86f2786de5353"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_MonkeyWrench_MV.java",
+      "sha256": "941965c18a9113260892bb354d120f00515028fb3a23e192e856fca4aebac11e"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Screwdriver_LV.java",
+      "sha256": "cebca016d8e4ac4ca6a93975e7ab8a7934be788ad7b9425a0ea8f0956d59a60e"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Trimmer_LV.java",
+      "sha256": "8fe692315de385e13d16630a062d1cf3fc4d22e7aae0b8a55bcc00ddba9b1e0d"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Wrench_HV.java",
+      "sha256": "b527829543e3d1667efbf8d81a0b613551af176707c365d1f6804ec3bc9199b4"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Wrench_LV.java",
+      "sha256": "40de07b24b293ba73b6e4b4b6456298ba8828dfbef3528608042bdad51f19f49"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/electric/GT_Tool_Wrench_MV.java",
+      "sha256": "417c0818bbc0bd9e8ce42a92dd9e529dbefd6920d7349f0b6fce38ce6d1bc729"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/guns/GT_Tool_Carbine.java",
+      "sha256": "3fd57daeaa8775ef82cdabf4dab174b4f36db00f282015827f79d7a5b43c82c7"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/guns/GT_Tool_Pistol.java",
+      "sha256": "9acc5f26d32594b379d5368f9e48e87c3dc0846b54420d3715fda13783b01ee3"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/guns/GT_Tool_Rifle.java",
+      "sha256": "6f4b1778ad2904275ffb854eb1df714505e546641acf883227b87db60dd2a9f0"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/pocket/GT_Tool_Pocket_Chisel.java",
+      "sha256": "4561d704ef5b4c53af1db7921a10d31af7840c6550a2ac738dae0b7a774f8d43"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/pocket/GT_Tool_Pocket_Cutter.java",
+      "sha256": "cfea614edf81e6e019c67ef60731dd9f55480d5856df75f18b447bae327c91df"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/pocket/GT_Tool_Pocket_File.java",
+      "sha256": "9da0767923203c1fe55461da52a5da7220e113a4b7ad17460a5e25962f10d476"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/pocket/GT_Tool_Pocket_Knife.java",
+      "sha256": "657c77551bde1475c50c42d42d7f3456a02d822455d45ced02c4d575c8fa4405"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/pocket/GT_Tool_Pocket_Multitool.java",
+      "sha256": "a5b57fd66c3dbc890253b8585a374639a1f152f5dc27f6c8671fac127a5859c6"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/pocket/GT_Tool_Pocket_Saw.java",
+      "sha256": "b55f5f657f3ebc7be5cfe788784809762f7f29174a42afa972f4c356bde6dcad"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/pocket/GT_Tool_Pocket_Scissors.java",
+      "sha256": "a0acc98d1338accf13660768d7f6af7dd28790bf8a8f4a941915a5d1b233aff7"
+    },
+    {
+      "path": "src/main/java/gregtech/items/tools/pocket/GT_Tool_Pocket_Screwdriver.java",
+      "sha256": "8a7cc43cfe0adf7193ec91fbed6f37e8cd19a8eeea8f3c46ade34e1225e9c757"
+    },
+    {
+      "path": "src/main/java/gregtech/loaders/a/Loader_Items.java",
+      "sha256": "1784f1aeccc3d8e70f214c9eb06de81f2f2f28f17b4f57b24acc05d049605c07"
+    },
+    {
+      "path": "src/main/java/gregtech/loaders/a/Loader_Tools.java",
+      "sha256": "e791f2cd6972bfa10767663f78557d2722cac2b7c80f29595815b4a520577b6e"
+    },
+    {
+      "path": "src/main/java/gregtech/worldgen/center/WorldgenTesting.java",
+      "sha256": "f498f70d0c2ac9c62e5a7f40a3d15ff6c56e5457f23ef4378877e77064034e50"
+    }
+  ],
+  "scope": "Original Nexus inventory expressions, 3 gun kinds, 8 pocket identities, 14 powered tool types, ammo/enchantment/cost/placement rules; native loader boundaries are local adaptations. Runtime evidence is recorded separately."
+}

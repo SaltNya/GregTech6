@@ -16,7 +16,7 @@ def flags(cls):
         if found:values[i]=found[1] in ('T','true')
     return values
 rows=[]
-for name,cls in re.findall(r'addTool\(ToolsGT\.(\w+)[^\n]*?new\s+(GT_Tool_\w+)\(',raw):
+for name,cls in re.findall(r'addTool\(ToolsGT\.(\w+)[^\n]*?new\s+(GT_Tool_\w+)\s*\(',raw):
     rows.append((name.replace('_',''),flags(cls)))
 defs=(root/'core/src/main/java/com/gregtech/gregtech/api/tool/ToolDefinition.java').read_text(encoding='utf-8')
 names=re.findall(r'^    ([A-Z_]+)\(\d+,',defs,re.M)

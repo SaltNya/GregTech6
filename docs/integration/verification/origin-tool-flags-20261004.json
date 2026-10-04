@@ -197,6 +197,10 @@
       "sha256": "9acc5f26d32594b379d5368f9e48e87c3dc0846b54420d3715fda13783b01ee3"
     },
     {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\guns\\GT_Tool_Rifle.java",
+      "sha256": "6f4b1778ad2904275ffb854eb1df714505e546641acf883227b87db60dd2a9f0"
+    },
+    {
       "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_Builderwand.java",
       "sha256": "cc87d1cadaf030a0137459c02d73fb13dcdde6af8b6a0c6857f8775f50f5cff7"
     },
@@ -277,7 +281,7 @@
       "sha256": "e791f2cd6972bfa10767663f78557d2722cac2b7c80f29595815b4a520577b6e"
     }
   ],
-  "original_tools": 65,
-  "manual_native_tools": 37,
+  "original_tools": 67,
+  "manual_native_tools": 48,
   "scope": "Source classification import; native enchantment verification recorded separately"
 }

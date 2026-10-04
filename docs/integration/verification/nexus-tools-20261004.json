@@ -1,0 +1,522 @@
+{
+  "status": "finite-world-checks-current-artifacts-and-production-title-passed",
+  "source_record": "nexus-tools-source-20261004.json",
+  "scope": "Both fresh ordinary development worlds and finite native tool/recipe/render checkpoints; current final distribution classes, full ZIP verification, and actual installed-loader title screens. Not a complete survival or old-save acceptance; no new user-instance installation.",
+  "forge": {
+    "receipt": {
+      "platform": "forge",
+      "id": "ed5fc5d9-105a-48c8-a22d-b4657357a350",
+      "world": "creation-smoke-ed5fc5d9-105a-48c8-a22d-b4657357a350",
+      "stage": 3,
+      "elapsedMs": 151346,
+      "legacyBatteryAliasesChecked": 5,
+      "chemicalBatteryStackRoundTrips": 10,
+      "sourceChemicalBatteriesChecked": 25,
+      "sourcePoweredAssemblyRowsChecked": 70,
+      "originCenterBiomesChecked": 9,
+      "originFacilityIdentitiesChecked": 26,
+      "originTestInventorySlots": 144,
+      "originTestInventoryPresent": 118,
+      "originTestInventoryOptionalEmpty": 26,
+      "originTestInventoryPendingTools": [],
+      "nexusGunUseChecks": 15,
+      "nexusGunAndPocketCraftingRows": 4,
+      "nexusPocketModesChecked": 8,
+      "nexusPoweredToolsChecked": 14,
+      "crankNativeSignalChecks": 30,
+      "flintKnifeFireAspect": 1,
+      "originalCrucibleReactionChecks": 4,
+      "originalCreativePages": 66,
+      "canonicalItemsChecked": 75892,
+      "recipes": 52194,
+      "serverTicks": 24,
+      "dimension": "minecraft:overworld",
+      "gearboxInventoryModelsChecked": 13,
+      "nexusToolInventoryModelsChecked": 61,
+      "ropeInventoryModelsChecked": 6,
+      "filterInventoryModelsChecked": 4,
+      "inventoryMaterialRgb": {
+        "rope": "604000",
+        "rope_silk": "ffffff",
+        "rope_grass": "ffff00",
+        "rope_vine": "00ff00",
+        "rope_plastic": "c8c8c8",
+        "rope_steel": "828282",
+        "filter_items": "faf0f0",
+        "filter_fluids": "faf0f0",
+        "filter_items_fluids": "faf0f0",
+        "filter_oredict": "faf0f0"
+      },
+      "asphaltItemRgb": "808080",
+      "crankItemRgb": "c8c8c8",
+      "renderedWorldFrames": 30,
+      "emiLoaded": false,
+      "renderedInventoryItems": [
+        "gearbox_wood",
+        "gearbox_bronze",
+        "gearbox_brass",
+        "gearbox_arsenic_copper",
+        "gearbox_arsenic_bronze",
+        "gearbox_steel",
+        "gearbox_titanium",
+        "gearbox_tungstensteel",
+        "gearbox_iridium",
+        "gearbox_iritanium",
+        "gearbox_trinitanium",
+        "gearbox_trinaquadalloy",
+        "gearbox_adamantium",
+        "rope",
+        "rope_silk",
+        "rope_grass",
+        "rope_vine",
+        "rope_plastic",
+        "rope_steel",
+        "filter_items",
+        "filter_fluids",
+        "filter_items_fluids",
+        "filter_oredict",
+        "crank",
+        "asphalt",
+        "tool_pocket_multitool",
+        "cable_01_signalum",
+        "wire_01_lumium",
+        "electric_mining_drill",
+        "electric_mixer",
+        "electric_buzzsaw",
+        "electric_trimmer",
+        "electric_wrench_mv",
+        "electric_mining_drill_mv",
+        "electric_chainsaw_mv",
+        "electric_wrench_hv",
+        "electric_mining_drill_hv",
+        "electric_chainsaw_hv",
+        "tool_pistol",
+        "tool_pistol",
+        "tool_pistol",
+        "tool_carbine",
+        "tool_carbine",
+        "tool_carbine",
+        "tool_rifle",
+        "tool_rifle",
+        "tool_rifle"
+      ],
+      "untranslatedInventorySamples": [],
+      "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-ed5fc5d9-105a-48c8-a22d-b4657357a350.png"
+    },
+    "receipt_sha256": "666fd2a1c28805cd9de10a0eb5177bcbe5fc015ad9ec682a66ed614e416c797c",
+    "log_sha256": "b640373c009cf8f2aed6ccf99845493226de08df9d55637a3e936488981c4109",
+    "screenshot_reviewed": true
+  },
+  "neoforge": {
+    "receipt": {
+      "platform": "neoforge",
+      "id": "68eef447-2e8a-4fec-bdce-6630be26583b",
+      "world": "creation-smoke-68eef447-2e8a-4fec-bdce-6630be26583b",
+      "stage": 3,
+      "elapsedMs": 139360,
+      "legacyBatteryAliasesChecked": 5,
+      "chemicalBatteryStackRoundTrips": 10,
+      "sourceChemicalBatteriesChecked": 25,
+      "sourcePoweredAssemblyRowsChecked": 70,
+      "originCenterBiomesChecked": 9,
+      "originFacilityIdentitiesChecked": 26,
+      "originTestInventorySlots": 144,
+      "originTestInventoryPresent": 118,
+      "originTestInventoryOptionalEmpty": 26,
+      "originTestInventoryPendingTools": [],
+      "nexusGunUseChecks": 15,
+      "nexusGunAndPocketCraftingRows": 4,
+      "nexusPocketModesChecked": 8,
+      "nexusPoweredToolsChecked": 14,
+      "crankNativeSignalChecks": 30,
+      "flintKnifeFireAspect": 1,
+      "originalCrucibleReactionChecks": 4,
+      "originalCreativePages": 66,
+      "canonicalItemsChecked": 75969,
+      "recipes": 52310,
+      "serverTicks": 60,
+      "dimension": "minecraft:overworld",
+      "gearboxInventoryModelsChecked": 13,
+      "nexusToolInventoryModelsChecked": 61,
+      "ropeInventoryModelsChecked": 6,
+      "filterInventoryModelsChecked": 4,
+      "inventoryMaterialRgb": {
+        "rope": "604000",
+        "rope_silk": "ffffff",
+        "rope_grass": "ffff00",
+        "rope_vine": "00ff00",
+        "rope_plastic": "c8c8c8",
+        "rope_steel": "828282",
+        "filter_items": "faf0f0",
+        "filter_fluids": "faf0f0",
+        "filter_items_fluids": "faf0f0",
+        "filter_oredict": "faf0f0"
+      },
+      "asphaltItemRgb": "808080",
+      "crankItemRgb": "c8c8c8",
+      "renderedWorldFrames": 5912,
+      "emiLoaded": true,
+      "renderedInventoryItems": [
+        "gearbox_wood",
+        "gearbox_bronze",
+        "gearbox_brass",
+        "gearbox_arsenic_copper",
+        "gearbox_arsenic_bronze",
+        "gearbox_steel",
+        "gearbox_titanium",
+        "gearbox_tungstensteel",
+        "gearbox_iridium",
+        "gearbox_iritanium",
+        "gearbox_trinitanium",
+        "gearbox_trinaquadalloy",
+        "gearbox_adamantium",
+        "rope",
+        "rope_silk",
+        "rope_grass",
+        "rope_vine",
+        "rope_plastic",
+        "rope_steel",
+        "filter_items",
+        "filter_fluids",
+        "filter_items_fluids",
+        "filter_oredict",
+        "crank",
+        "asphalt",
+        "tool_pocket_multitool",
+        "cable_01_signalum",
+        "wire_01_lumium",
+        "electric_mining_drill",
+        "electric_mixer",
+        "electric_buzzsaw",
+        "electric_trimmer",
+        "electric_wrench_mv",
+        "electric_mining_drill_mv",
+        "electric_chainsaw_mv",
+        "electric_wrench_hv",
+        "electric_mining_drill_hv",
+        "electric_chainsaw_hv",
+        "tool_pistol",
+        "tool_pistol",
+        "tool_pistol",
+        "tool_carbine",
+        "tool_carbine",
+        "tool_carbine",
+        "tool_rifle",
+        "tool_rifle",
+        "tool_rifle"
+      ],
+      "untranslatedInventorySamples": [],
+      "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-68eef447-2e8a-4fec-bdce-6630be26583b.png"
+    },
+    "receipt_sha256": "4c92fd33eb3cbf21e76cb399a65dc5e87891e0302d11dbdacc299be9f10de876",
+    "log_sha256": "7c13cfc8d64d1ad18b3946fcb692aa469dd8392f14cf400ab736b4e580c6ee6b",
+    "screenshot_reviewed": true
+  },
+  "shared_assertions": 10255,
+  "failed_attempts": [
+    {
+      "log": "work\\inventory-render-20261004\\first-delivery.log",
+      "sha256": "fe07feabc7261160b7a5dccf524b83a9cdec469edc238553e14f098785cba00a"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\first-neoforge-world.log",
+      "sha256": "9600d205302e97f0517a7fed9561e2ce190e3c251f32dd41b152dfa69ab8c1a2"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\nexus-first-delivery.log",
+      "sha256": "fe07feabc7261160b7a5dccf524b83a9cdec469edc238553e14f098785cba00a"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\nexus-neoforge-first.log",
+      "sha256": "3c90d37a587ea7bd8247e5899a04a9342f1def8c40f9fe4a9e94bee088a135f4"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\nexus-neoforge-second.log",
+      "sha256": "9b5788ea682eae2b5d90741410dd20b68d1e7cd358e6ce523de66e548c1e1499"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\nexus-second-delivery.log",
+      "sha256": "fe07feabc7261160b7a5dccf524b83a9cdec469edc238553e14f098785cba00a"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\tools-compile-1.log",
+      "sha256": "5add0bde4e0c2c6033e625b448c70bc21f94692a27ed4ef38cd51611609cb4c8"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\tools-compile-2.log",
+      "sha256": "440866afb1afbeabc265f056437854ab425e2df04027d5d851061849abbf5fa8"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\tools-compile-3.log",
+      "sha256": "83703ba05feacfcc47b24de7360a82c105c3d5f5df0a36e0567d33bf91a6a71a"
+    },
+    {
+      "log": "work\\inventory-render-20261004\\tools-compile-4.log",
+      "sha256": "719b0eb0d6510ac7d0001b8cae5f9f5b639823c748f5a51317ce589cbd7758ce"
+    }
+  ],
+  "not_verified": [
+    "Old-save migration/refill of already generated Nexus drawers",
+    "Complete survival chain and independent saved-world JVM restart",
+    "Every enchanted ammunition/entity/block interaction combination",
+    "Every pocket mode machine and foreign-mod interaction",
+    "Dedicated-server multiplayer behavior of this batch",
+    "The remaining Nexus tree/supporter-certificate details",
+    "Food/mob drops and JEI/EMI chest-loot/entity-loot pages remain separate backlog items"
+  ],
+  "tooltip_only_followup": {
+    "scope": "Only native GTToolTooltips now uses actual pocket mode statistics; functional world code/core/models unchanged from successful worlds",
+    "compile_log": "work/inventory-render-20261004/tooltip-compile.log",
+    "compile_seconds": 31,
+    "worlds_repeated": false
+  },
+  "artifact_verification": {
+    "report": "build\\preflight\\nexus-final\\artifacts.json",
+    "sha256": "526831001a9c51ae8b0abc6f6c7b44fed0f3ca264bf186922a43a98927d215ce",
+    "shared_classes": 667,
+    "test_only_entries_excluded": true,
+    "current_native_class_bytes_checked": true,
+    "forge": {
+      "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "sha256": "884362721e0eee5406f8a19f57fcb1a75e6127c082832ae58c362ce3e76bae86",
+      "bytes": 39378984,
+      "zip_entries": 81827,
+      "zip_crc_checked": true,
+      "metadata_path": "META-INF/mods.toml",
+      "mixin_verification": {
+        "refmap": "gregtech.refmap.json",
+        "mapped_classes": 11,
+        "sha256": "423f8c23242a4a12c05ad91f6e60f75591f2fee22f46fddbe7c6fdbecd5fad31"
+      },
+      "current_platform_classes_checked": 1658,
+      "current_platform_classes_sha256": "9e12562463a8f6a28b0e55492b47d3d908d3ef63b48ebdc627e8ded56c52fbdc"
+    },
+    "neoforge": {
+      "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "sha256": "e78162dc821273326aaeefb5c60d43c345f65d16a66d5b8c95ef681735b1331e",
+      "bytes": 37607729,
+      "zip_entries": 80802,
+      "zip_crc_checked": true,
+      "metadata_path": "META-INF/neoforge.mods.toml",
+      "mixin_verification": null,
+      "current_platform_classes_checked": 1472,
+      "current_platform_classes_sha256": "a60b40276acefa980f6264b19bbf39c1c976d917158d6b58d775b38b6583d2bd"
+    }
+  },
+  "production_title_checks": {
+    "forge": {
+      "receipt_path": "build\\preflight\\nexus-final\\forge-production.json",
+      "receipt_sha256": "0a2bf8607d5d341805c9ba69f36d90af8f667908b0ef1e37a8178ca4f596a530",
+      "receipt": {
+        "status": "passed",
+        "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+        "platform": "forge",
+        "version": "1.20.1-Forge_47.4.26",
+        "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+        "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+        "exit_code": 0,
+        "elapsed_seconds": 88.06,
+        "installed_files_modified": false,
+        "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+        "distribution": {
+          "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "884362721e0eee5406f8a19f57fcb1a75e6127c082832ae58c362ce3e76bae86"
+        },
+        "probe": {
+          "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "595a1e643e744d0ef5b7e3c3da4a7d9c84b226080a49dad71eaabe02eb29f887"
+        },
+        "mods": [
+          {
+            "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+            "sha256": "884362721e0eee5406f8a19f57fcb1a75e6127c082832ae58c362ce3e76bae86",
+            "bytes": 39378984
+          },
+          {
+            "name": "gregtech-delivery-probe-0.0.0.jar",
+            "sha256": "595a1e643e744d0ef5b7e3c3da4a7d9c84b226080a49dad71eaabe02eb29f887",
+            "bytes": 6064
+          },
+          {
+            "name": "Jade-1.20.1-Forge-11.13.3.jar",
+            "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+            "bytes": 553487
+          },
+          {
+            "name": "jei-1.20.1-forge-15.62.0.217.jar",
+            "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+            "bytes": 2232172
+          },
+          {
+            "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+            "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+            "bytes": 364842
+          }
+        ],
+        "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-33e06c85-668b-444b-bd0e-0b09f2f2f686\\launch.log",
+        "log_sha256": "0089bca67de4e3734887b2e08cb796dd0c941057d2d6a57806b093a396f87008",
+        "receipt": {
+          "platform": "forge",
+          "screen": "net.minecraft.client.gui.screens.TitleScreen",
+          "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-33e06c85-668b-444b-bd0e-0b09f2f2f686\\screenshots\\production-forge-5b231dbe-ed76-4acf-8a93-9fcd55f9ab62.png",
+          "width": 1280,
+          "height": 720,
+          "renderedFrames": 181,
+          "loaderWarnings": 0,
+          "elapsedMs": 77254
+        },
+        "screenshot_sha256": "9e8c2e1b7f6f118f1c4dbedce578f90aba943560510e25ac1166798282d81d39",
+        "visually_reviewed": true
+      }
+    },
+    "neoforge": {
+      "receipt_path": "build\\preflight\\nexus-final\\neoforge-production.json",
+      "receipt_sha256": "8b93c3ac94693420ed3276be6bfc34315ec69b4f692affcb6d398b7de0a6ec96",
+      "receipt": {
+        "status": "passed",
+        "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+        "platform": "neoforge",
+        "version": "1.21.1-NeoForge_21.1.252",
+        "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+        "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+        "exit_code": 0,
+        "elapsed_seconds": 61.59,
+        "installed_files_modified": false,
+        "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+        "distribution": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "e78162dc821273326aaeefb5c60d43c345f65d16a66d5b8c95ef681735b1331e"
+        },
+        "probe": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "e034dc95e35e88136f5e7410aa0a14a9e9e0f01151b788e2e72912f1cfeecc5f"
+        },
+        "mods": [
+          {
+            "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+            "sha256": "e78162dc821273326aaeefb5c60d43c345f65d16a66d5b8c95ef681735b1331e",
+            "bytes": 37607729
+          },
+          {
+            "name": "gregtech-delivery-probe-0.0.0.jar",
+            "sha256": "e034dc95e35e88136f5e7410aa0a14a9e9e0f01151b788e2e72912f1cfeecc5f",
+            "bytes": 4807
+          },
+          {
+            "name": "emi-1.1.24+1.21.1+neoforge.jar",
+            "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+            "bytes": 1111538
+          },
+          {
+            "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+            "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+            "bytes": 726853
+          }
+        ],
+        "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-728c1cd4-f389-4c2d-98a8-6d13038dc55d\\launch.log",
+        "log_sha256": "199128bcf9968a207a7cf9b9fc182d7d78683bfcf5a90113b15b2e24ad3319f6",
+        "receipt": {
+          "platform": "neoforge",
+          "screen": "net.minecraft.client.gui.screens.TitleScreen",
+          "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-728c1cd4-f389-4c2d-98a8-6d13038dc55d\\screenshots\\production-neoforge-9ec3ec9f-5e24-4cc7-b3c9-68d5955a0ce6.png",
+          "width": 1280,
+          "height": 720,
+          "renderedFrames": 181,
+          "elapsedMs": 52074
+        },
+        "screenshot_sha256": "4f34c0eb32b8607679645c59557c7ad69626fbf6f0b70464ff4e82d2833eed64",
+        "visually_reviewed": true
+      }
+    }
+  },
+  "publication": {
+    "status": "passed",
+    "scope": "Verified complete copies; runtime evidence is recorded separately",
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261004-125223Z-88436272",
+    "verification_report": "C:\\Dev\\GregTech6\\build\\preflight\\nexus-final\\artifacts.json",
+    "verification_report_sha256": "526831001a9c51ae8b0abc6f6c7b44fed0f3ca264bf186922a43a98927d215ce",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 39378984,
+        "sha256": "884362721e0eee5406f8a19f57fcb1a75e6127c082832ae58c362ce3e76bae86",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-125223Z-88436272\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 37607729,
+        "sha256": "e78162dc821273326aaeefb5c60d43c345f65d16a66d5b8c95ef681735b1331e",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-125223Z-88436272\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    }
+  },
+  "publication_receipt_sha256": "94925683ea1955eea1256b988fd8e6644e2ff96264ff53ce50548009543147eb",
+  "installed_user_instances_modified": false,
+  "freshness_rejection": {
+    "status": "expected-stale-artifact-rejection-observed",
+    "log": "build\\preflight\\nexus-final\\stale-artifact-rejection.log",
+    "log_sha256": "2dc7fe15d9ff20c7784ebfe3236a01f388613788c5e4167a002973e3765c87a4",
+    "rejected_class": "com/gregtech/gregtech/client/GTToolTooltips.class",
+    "cause": "The incrementally refreshed Forge intermediate jar did not replace the independent distributionJar output",
+    "fix": "Run :distributionJar; compare every final native class against current mapped/compiler bytes before publication"
+  },
+  "superseded_intermediate_pairs": [
+    {
+      "directory": "20261004-122752Z-9f69fbcf",
+      "original_manifest_sha256": "34f920f7eb8ab2d1a21f6ed9c3fc1238080998e45fbe29c1058002160e297886",
+      "marked_manifest_sha256": "1280862d404140d4cc3ce75f1f3d05bca93a0de957bf9ed0b649f23c37480170",
+      "forge_sha256": "9f69fbcfc99deaeb77d72e614afd0821e50b0e920ba8efcba1e978e623277fcd",
+      "neoforge_sha256": "f57ac00ecc2476a9cd88f5ad68f47c74d42151a198c719a211f32f53b93a91a5",
+      "reason": "Forge package predates the final pocket-mode tooltip correction; use the final current-byte verified pair"
+    },
+    {
+      "directory": "20261004-123956Z-9f69fbcf",
+      "original_manifest_sha256": "3c86343e073460ad04a65e9ac306bfe10d8a977362d6a53603051e124fbf8c70",
+      "marked_manifest_sha256": "d6db2c4c7e8dd391f02d42d85cf2410c05bb52cacce938dae34cf2eb984e1893",
+      "forge_sha256": "9f69fbcfc99deaeb77d72e614afd0821e50b0e920ba8efcba1e978e623277fcd",
+      "neoforge_sha256": "e78162dc821273326aaeefb5c60d43c345f65d16a66d5b8c95ef681735b1331e",
+      "reason": "Forge package predates the final pocket-mode tooltip correction; use the final current-byte verified pair"
+    }
+  ],
+  "delivery_logs": [
+    {
+      "path": "build/preflight/core-check.log",
+      "sha256": "489772413a6d606190924d47cef123f37c44274536cd07ecb88e9d02f880ca08"
+    },
+    {
+      "path": "build/preflight/dual-assemble.log",
+      "sha256": "70fde31217ba98429436af39f4c5647f8c100db85819ea21b906755183306b07"
+    },
+    {
+      "path": "work/inventory-render-20261004/tooltip-compile.log",
+      "sha256": "b9099155828f96d24dbc4da289267d2aec5e440e3302d6f3a4e91f79f056b69e"
+    },
+    {
+      "path": "build/preflight/nexus-tooltip-refresh.log",
+      "sha256": "1bc0450a785be34731aa65001a7856a14d451d8810b98717f418588600366563"
+    },
+    {
+      "path": "build/preflight/nexus-final/forge-distribution.log",
+      "sha256": "c60d9aea044526f134001dd5cf1b2f5cc40b7f506b5c06ce8d103636d2341817"
+    },
+    {
+      "path": "build/preflight/nexus-final-delivery.log",
+      "sha256": "9ef19d15624beca8f91c76d71941f832a0579b158614c22465627c91227be65c"
+    }
+  ],
+  "final_receipt_guard": {
+    "platforms": [
+      "forge",
+      "neoforge"
+    ],
+    "nexus_models": 61,
+    "rope_models": 6,
+    "filter_models": 4,
+    "inventory_samples": 47,
+    "untranslated_samples": 0,
+    "powershell_syntax_checked": true,
+    "successful_receipts_rechecked_without_relaunch": true
+  }
+}
