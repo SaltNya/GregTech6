@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "scope": "complete definitions/post-init graph; only five source external-prefix observations added",
+  "stages": {
+    "definitions": {
+      "before_sha256": "5a76a35f681c54cb18c213bcab90615a62f6bc2f5b70738753e997e358d77c6c",
+      "after_sha256": "92765dc102da5275bd5a7080c0ef0d15f5bef194df99fd4193288dd786035ba5",
+      "unchanged_rows": 133876,
+      "removed_rows": 0,
+      "added_prefix_rows": [
+        "P|cleanGravel|clean_gravel|Clean Gravels|cleangravel|false|0.0|648648000",
+        "P|clump|clump|Clumps|clump|false|0.0|648648000",
+        "P|cluster|cluster|Native Clusters|cluster|false|0.0|1945944000",
+        "P|crystalline|crystalline|Crystallised Metals|crystalline|false|0.0|648648000",
+        "P|reduced|reduced|Reduced Gravels|reduced|false|0.0|648648000"
+      ],
+      "added_material_form_rows": 5800
+    },
+    "post": {
+      "before_sha256": "85227d4dfc85c2f5e85d954e3cd538fe27c9ccdf9e14d9257e3cafdd829cbc74",
+      "after_sha256": "5e0a71529936d275af1b1c4f134e24cedf14070959c4f15f17e3ba97bc053b0a",
+      "unchanged_rows": 133876,
+      "removed_rows": 0,
+      "added_prefix_rows": [
+        "P|cleanGravel|clean_gravel|Clean Gravels|cleangravel|false|0.0|648648000",
+        "P|clump|clump|Clumps|clump|false|0.0|648648000",
+        "P|cluster|cluster|Native Clusters|cluster|false|0.0|1945944000",
+        "P|crystalline|crystalline|Crystallised Metals|crystalline|false|0.0|648648000",
+        "P|reduced|reduced|Reduced Gravels|reduced|false|0.0|648648000"
+      ],
+      "added_material_form_rows": 5800
+    }
+  }
+}
