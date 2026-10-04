@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "complete definitions/post-init graph; only two original external-prefix observations added",
+  "stages": {
+    "definitions": {
+      "before_sha256": "92765dc102da5275bd5a7080c0ef0d15f5bef194df99fd4193288dd786035ba5",
+      "after_sha256": "67d968260dd9f41fa893bb267e6a99a144a4338f1583f075709a8ce8690c93b9",
+      "unchanged_rows": 139681,
+      "removed_rows": 0,
+      "added_prefix_rows": [
+        "P|crystal|crystal|Crystals|crystal|false|0.0|648648000",
+        "P|dirtyGravel|dirty_gravel|Dirty Gravels|dirtygravel|false|0.0|648648000"
+      ],
+      "added_material_form_rows": 2320
+    },
+    "post": {
+      "before_sha256": "5e0a71529936d275af1b1c4f134e24cedf14070959c4f15f17e3ba97bc053b0a",
+      "after_sha256": "a8ed3aa61fb2cb27c5e6775181fa24e6971084ef01fddf46c2bafd4447948905",
+      "unchanged_rows": 139681,
+      "removed_rows": 0,
+      "added_prefix_rows": [
+        "P|crystal|crystal|Crystals|crystal|false|0.0|648648000",
+        "P|dirtyGravel|dirty_gravel|Dirty Gravels|dirtygravel|false|0.0|648648000"
+      ],
+      "added_material_form_rows": 2320
+    }
+  }
+}
