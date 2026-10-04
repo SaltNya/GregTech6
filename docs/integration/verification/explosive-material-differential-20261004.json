@@ -1,0 +1,46 @@
+{
+  "scope": "isolated full material graph differential; no game claim",
+  "baseline_commit": "3dbdbbc8",
+  "source": "gregapi/data/MT.java:1309-1310",
+  "stages": {
+    "definitions": {
+      "old_sha256": "0212a1004cbdf43a36f6698e3caa547c7daec3026002f402272667fc8ae3a838",
+      "new_sha256": "b9b3a70094c6c0c10c3ce04c05ddeda63db5f5ab5e57644dd1b569bd853463b3",
+      "changed_rows": [
+        {
+          "material": "8220:Gunpowder",
+          "field_index": 14,
+          "before": "[DUST, UNIT, GENERATE_DUST]",
+          "after": "[DUST, FLAMMABLE, EXPLOSIVE, UNIT, GENERATE_DUST]"
+        },
+        {
+          "material": "8249:Dynamite",
+          "field_index": 14,
+          "before": "[DUST, UNIT, GENERATE_DUST]",
+          "after": "[DUST, FLAMMABLE, EXPLOSIVE, UNIT, GENERATE_DUST]"
+        }
+      ],
+      "unchanged_rows": 129230
+    },
+    "post": {
+      "old_sha256": "48ddd51177b4873a353441070929c66a2416a3facabec53cedf37b86fe25def0",
+      "new_sha256": "f417a3ecf42ceefe2ae76712cdee4d8da3b7ecb087270d544fc7cc2683de1278",
+      "changed_rows": [
+        {
+          "material": "8220:Gunpowder",
+          "field_index": 14,
+          "before": "[DUST, UNIT, GENERATE_DUST]",
+          "after": "[DUST, FLAMMABLE, EXPLOSIVE, UNIT, GENERATE_DUST]"
+        },
+        {
+          "material": "8249:Dynamite",
+          "field_index": 14,
+          "before": "[DUST, UNIT, GENERATE_DUST]",
+          "after": "[DUST, FLAMMABLE, EXPLOSIVE, UNIT, GENERATE_DUST]"
+        }
+      ],
+      "unchanged_rows": 129230
+    }
+  },
+  "source_sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+}
