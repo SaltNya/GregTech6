@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "scope": "packaging/source only; no native grinding, tags, client or save execution claim",
+  "source_commit": "5152d70ff56855fe1408dbd3ae816d6f5c540b10",
+  "platforms": {
+    "forge": {
+      "native_class_count": 6,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes.class",
+          "packaged_sha256": "8fc743bbfe40480e70cb8d93aad8415cccb4749e1dddbde8fd81b5dca61c68ce",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes$Entry.class",
+          "packaged_sha256": "31a70d31d0cdf1e7144c03fb399bff72bd9f0b2df3906af0687458d8f3d6ae90",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes$Row.class",
+          "packaged_sha256": "3d5f7565bf7fbbc6b39d265ff0b3c3200ea357d84380f57ff8ff9f8c8d16885e",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "3e59b256d9189ffc6a723ec53bf304e79d185e8cd18c9f76571fc036caa40401",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/MortarGrindingRecipes.class",
+          "packaged_sha256": "ece1fcb100a70b9f643346d02789025328bc6eb48b8caf0dba3dd5f6f3ae4a13",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/MortarGrindingRecipes$Entry.class",
+          "packaged_sha256": "253d2d5244e15074b1cb2c09636228f529ec1e897fec44a4756946b0db95411a",
+          "verification": "present after reobfuscation"
+        }
+      ]
+    },
+    "neoforge": {
+      "native_class_count": 6,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes.class",
+          "packaged_sha256": "362a0b48a263ee456207567407783807b43e1fc50524c143fa4f139623a3810a",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes$Entry.class",
+          "packaged_sha256": "1119959b17bb379bf6608c22bd12f83f495c667207bde3ec8bd7d412ff7eb98f",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes$Row.class",
+          "packaged_sha256": "ea1296fe9783bbdfa72676be43c28f18ac10331de9d0a6b0ef9b9ad76710c588",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "5cb616b5b8aca8733851d1c419fb309888c6e2a00ea0018433fa7ebec30ee83e",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/MortarGrindingRecipes.class",
+          "packaged_sha256": "fbef2887d3bbe9b09f7b782318d4e634b1ff1f50afcc059470ab56e933ef70c5",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/MortarGrindingRecipes$Entry.class",
+          "packaged_sha256": "b946f4638450a2b36cd0fe32a72f63e857c6237d69bf10934bb709e583207f0d",
+          "verification": "byte-equal"
+        }
+      ]
+    }
+  },
+  "original_source_sha256": {
+    "gregapi/data/CS.java": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+    "gregapi/data/MT.java": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2",
+    "gregapi/data/OP.java": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+    "gregtech/loaders/c/Loader_Recipes_Handlers.java": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefix.java": "de005fa316ae3d9ebddf69456c47a4e1e0ec38b9983d9fa9d1809e2bd9e58156",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefixShredding.java": "7258570a18592af7d8c6f8f3aced44464c57683497ac8eb4a6ff1badbbd902e6",
+    "gregapi/util/OM.java": "3c2cc710d62373460d1854f60a7383ec0a5b7969877dbbcb3f5c9b5a0b4c5cbb",
+    "gregapi/util/UT.java": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709"
+  },
+  "logs_sha256": {
+    "external-rest-compile-20261004.log": "35c61fa23c1ca4d89b4d4fa285d9712fd952e24156910a50c85e0e3c681fa934",
+    "external-rest-build-20261004.log": "68bb84f4bfc35944e0df9df9ae69606b24e830f37ad96b4e67740008fbf2e3ef"
+  }
+}

@@ -1,5 +1,9 @@
 # 实现选择记录
 
+## 2026-10-04 / 指定粉末数量与粉碎余料
+
+五种外部来源形态仅增加元数据，四种重量1U、cluster为3U；全部九种外部形态的临时组成独立于机器路线建立，不再遗漏只用于研磨的输入。Shredder/Anvil 保留来源指定粉末数量和无副产物规则，Mortar 走 OM.pulverize 余料比例；不虚构 cluster 的 Mortar 行。原有两平台比例修正为 input×targetPerUnit/U，恒等分支直接返回，精确中间量避免先溢出；Long.MAX_VALUE 封顶为本地边界保护。全图指纹更新有五条前缀、5,800条形态新增的逐行证据，旧133,876条记录全部保留。详见 [来源与边界](verification/external-rest-20261004.md)。
+
 ## 2026-10-04 / 来源研磨目标与空位
 
 Shredder 的两个来源条件由共享 MORTAR 标记选倍率，Anvil 保留独立条件与 EMPTY 工作位；不能用普通 RecipeMap.make 丢掉这个空位。材料粉碎目标取 PrefixShredding 的 targetPulver 材料，指定粉末数量不按 target amount 二次缩放；修正已有铁砧行两种产物的旧输入材料绑定。处理时间在计入微量粉末和输入质量后才向上取整，pebbles 的 Anvil 行不擅自改为三份粉末或增加余料。详见 [来源与证据](verification/external-grinding-20261004.md)。

@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-04 / 五种外部形态与粉碎数量
+
+双平台接回 clump/reduced/crystalline/cleanGravel/cluster 的 Shredder 与 Anvil 行，以及前四种的 Mortar 行；保留来源重量、无微量粉末的指定结果、MORTAR 条件和铁砧空位，不增加 GT 自有物品。修正两平台原有粉碎数量反比与中间乘法溢出问题。共享9,983条断言、全图差异及正式双版2m06s构建通过；646个当前共享类、每平台六个变更原生类验包通过，见 [本批记录](verification/external-rest-20261004.md)。dirtyGravel/crystal、完整回调与实际运行仍待接续，整体 goal 保持 active。
+
 ## 2026-10-04 / 外部 Shredder 与铁砧研磨
 
 双平台接回 chunk/rubble/pebbles 的六条 Shredder 来源分支和三条 Anvil 行，保留微量粉末、MORTAR 快慢分支、输入质量、向上取整与铁砧空位；pebbles 的铁砧结果严格保留两份主粉末。修正已有铁砧研磨主/副产物的粉碎目标，WroughtIron 对齐 Iron。共享9,879条断言通过，完整材料图/113前缀不变；构建及未运行范围见 [本批记录](verification/external-grinding-20261004.md)。其余外部形态和完整回调仍待接续，整体 goal 保持 active。

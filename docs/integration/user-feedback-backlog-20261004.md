@@ -2,11 +2,17 @@
 
 整体移植 goal 保持 active。按用户要求减少测试，改动集中编译、共享检查和双平台打包；编译结果不视作客户端或真实存档验证。
 
+## 最新接续：五种外部形态与粉碎比例
+
+- clump/reduced/crystalline/cleanGravel/cluster 已有来源重量、临时组成和 Shredder/Anvil 路线；前四种接回 Mortar，没有新增 GT 自有物品或源码未给的微量粉末。
+- 既有 Mortar 粉碎目标数量比例已修正，并避免大数量中间乘法溢出。共享9,983条断言、全图差异及双版打包通过，见 [本批证据](verification/external-rest-20261004.md)。
+- dirtyGravel/crystal 两个来源形态、完整回调与更广处理链仍待接续；真实外部模组、原生重载/空位/研磨、显示/转移、客户端及存档证据未补齐。
+
 ## 最新接续：Shredder/Anvil 与粉碎目标
 
 - chunk/rubble/pebbles 的 Shredder 快慢分支和 Anvil 研磨已接入两平台，保留微量粉末、MORTAR、质量计时和 EMPTY 工作位；pebbles 铁砧产物保留原版两份主粉末。
 - 原有铁砧研磨的主/微量产物修正为来源粉碎目标，不再总输出输入材料。共享9,879条断言及完整材料图通过，见 [本批证据](verification/external-grinding-20261004.md)。
-- 其余 clump/reduced/crystalline/cleanGravel/cluster 形态、完整回调及实际模组/空位/重载/显示/机器/存档证据仍待补齐。
+- 其余五种形态已在上节接续；完整回调及实际模组/空位/重载/显示/机器/存档证据仍待补齐。
 
 ## 最新接续：外部矿物处理
 
