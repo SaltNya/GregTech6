@@ -1,0 +1,96 @@
+{
+  "failed_run": {
+    "number": 37,
+    "id": 37194919175,
+    "url": "https://github.com/SaltNya/GregTech6/actions/runs/37194919175",
+    "commit": "71287487ab705dc57c73cfe591f7ea461c5a2a3e",
+    "jobs": [
+      {
+        "name": "Build 1.21.1 neoforge",
+        "id": 111414680200,
+        "conclusion": "failure"
+      },
+      {
+        "name": "Build 1.20.1 forge",
+        "id": 111414680316,
+        "conclusion": "failure"
+      },
+      {
+        "name": "Both platform builds required",
+        "id": 111414823785,
+        "conclusion": "failure"
+      }
+    ]
+  },
+  "root_cause": ":core:materialBehaviorContracts expected 42 explicit/173 total reactions after the source correction supplied 46 explicit/91 declared-composition rows (137 total)",
+  "local_reproduction": {
+    "exit_code": 1,
+    "jvm": "Java 17.0.10",
+    "same_assertion": true,
+    "log_sha256": "17509f0a8102aaac4b926b0f9fbeafe187189d55c5bd4ae996d6f0847f93b67e"
+  },
+  "fixed_shared_check": {
+    "exit_code": 0,
+    "assertions": {
+      "core": 2429,
+      "machine_spec": 34,
+      "materials": 7676,
+      "thermal": 53
+    },
+    "total_assertions": 10192,
+    "log_sha256": "9252e5c76934e61a4e9c9d1153c83e66b71a5a7db165be5dbabecea726271a97"
+  },
+  "downloaded_failure_logs": {
+    "forge-build.txt": "2e8238e8ef222498c02d93bbf091533242ee1c71a960426eafbd9298ccf4680a",
+    "neoforge-build.txt": "775498248ef5b1c8e8fabe94617bd5474b388856335e85c7bdc9c4d2097dcc15"
+  },
+  "local_dual_build": {
+    "exit_code": 0,
+    "duration": "7m",
+    "tasks": [
+      ":core:check",
+      ":core:addonApiJar",
+      ":build",
+      ":neoforge:build"
+    ],
+    "launcher": "Oracle Java 17.0.10",
+    "toolchains": [
+      "Java 17",
+      "Java 21"
+    ],
+    "environment": "Windows 11; offline cached dependencies; work/emi-local.init.gradle",
+    "log_sha256": "59dface6d2566c92b0b34458677961f015fbaea51c8a269fe11b45fd64e028e1",
+    "gradle_summary": "34 actionable tasks: 22 executed, 12 up-to-date"
+  },
+  "packaging": {
+    "status": "passed",
+    "shared_classes": 665,
+    "report_sha256": "ac5569ad4ad589acfa7530723647da823d5caf309f7e668bd40c255abf55f962",
+    "artifacts": {
+      "forge": {
+        "sha256": "258017df9d2fcfc121dabb6874c5a790bdc7eeb28e5ff452ba8593cec285ce8a",
+        "bytes": 39317619
+      },
+      "neoforge": {
+        "sha256": "ece6a94fb6f8dcb1aebaa5a223f7fac835ee92aabcfb452fa015fa4844424a5f",
+        "bytes": 37542165
+      }
+    },
+    "identical_to_previously_verified_distribution": true,
+    "addon_api": {
+      "path": "C:\\Dev\\GregTech6\\core\\build\\libs\\gregtech6-addon-api-0.0.0.jar",
+      "bytes": 1573571,
+      "sha256": "87f4b002748edbe651681e37de96217819dfba827eb569f104bb4c52941dbf82",
+      "shared_classes": 665,
+      "java_class_version": 61,
+      "compile_only": true,
+      "external_addon_runtime_verified": false
+    }
+  },
+  "validated_files": {
+    "core/src/test/java/com/gregtech/gregtech/core/MaterialBehaviorContracts.java": "0c90c02f2a437230814361d9696afc728ac416184b2bf40a966794763ecc4fd0",
+    "tools/integration/build_verified.ps1": "e59ee4a099482ead809c587679ece720a72d6fca75482504b003fef7bd67ea97"
+  },
+  "new_remote_run_verified": false,
+  "runtime": "No new game run for this CI-only change; both mod JAR SHA256 values exactly match the previously verified and installed pair in origin-priority-20261004.md."
+}

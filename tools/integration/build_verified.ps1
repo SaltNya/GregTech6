@@ -15,6 +15,10 @@ try {
     $gradleArguments = @('--offline')
     $localInit = Join-Path $repoPath 'work/emi-local.init.gradle'
     if (Test-Path -LiteralPath $localInit) { $gradleArguments += @('-I', $localInit) }
+    $coreLog = Join-Path $logDirectory 'core-check.log'
+    Write-Host "Running the same shared-core checks required by CI. Log: $coreLog"
+    & $Gradle @gradleArguments ':core:check' *> $coreLog
+    if ($LASTEXITCODE -ne 0) { throw "Shared-core checks failed; see $coreLog" }
     foreach ($platform in @('neoforge', 'forge')) {
         $logPath = Join-Path $logDirectory ($platform + '-world-creation.log')
         $runTask = if ($platform -eq 'forge') { ':runClient' } else { ':neoforge:runClient' }
