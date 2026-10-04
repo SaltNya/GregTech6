@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "scope": "source/packaging only; no native furnace, grinding, tags, client or save execution claim",
+  "source_commit": "58f8cd5d9c52e8874617b94394fd4dbcc11bcbfa",
+  "platforms": {
+    "forge": {
+      "native_class_count": 10,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "ba1c4492df59fe63c903c8228b17d97593ba69980bd266052ba7f621da1fdad8",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes.class",
+          "packaged_sha256": "736a0377aa693f94cc8c87091c5c4b36d9f3ed51f5225b323c80107d6c945790",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$CookingData.class",
+          "packaged_sha256": "b9bb3563ea250afbaf62f00532bec67f600505050f4988e6f3502ce6aa3c5402",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$Entry.class",
+          "packaged_sha256": "bc1bcded74dd06597597c04f11dc8fcb734eec842457730211e9cabb2773ebc4",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$Row.class",
+          "packaged_sha256": "90459825db47663d53ae79c2b587610f76640c9e9c3aeb6e8e9f05327292e475",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/MortarGrindingRecipes.class",
+          "packaged_sha256": "6d4587ee6d48048d3a8001519aff6314851c9a104bf654a2598a39e786fec625",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/MortarGrindingRecipes$Entry.class",
+          "packaged_sha256": "253d2d5244e15074b1cb2c09636228f529ec1e897fec44a4756946b0db95411a",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/gametest/FurnaceSmeltingTests.class",
+          "packaged_sha256": "15ebd24f13ba0989f995d580de7586ad11ffaf8cd91c49e0394d110a9b3fa68a",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_OvenRecipes.class",
+          "packaged_sha256": "8d0a9ea272d0cc9e682012beac10590105d24d473e5045963b8b1ecd8e42b321",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/RuntimeRecipeLifecycle.class",
+          "packaged_sha256": "c6dce54fecf45da32b977b283268a4889cde18dc66c982049207b75c29a5346e",
+          "verification": "present after reobfuscation"
+        }
+      ]
+    },
+    "neoforge": {
+      "native_class_count": 8,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "433ec535c5039d60d805e4af8d87999c40e551e339a4e6281bbfdc9ca13801bd",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes.class",
+          "packaged_sha256": "d3cae1cace3c6d5de91a76a106266ac52b30ea72c99ecff3959be7f327d71e09",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$CookingData.class",
+          "packaged_sha256": "f9050f4ed2a63d4c66fdcf539d088a883ef0f77a24db563c6189ea011dd3c923",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$Entry.class",
+          "packaged_sha256": "9ee0da8a66cf66cb5677acb563bfd6b30693e2423b092ce3191ba11e357db26d",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/FurnaceSmeltingRecipes$Row.class",
+          "packaged_sha256": "a98c2ef64fd1bcc8344f66a7135584488d14d2853c30a13cb12a62c2fae47afd",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/MortarGrindingRecipes.class",
+          "packaged_sha256": "91d09daf5e285db2365c81233183604dac0da42dfc4455d20ac1a1a72e99393b",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/MortarGrindingRecipes$Entry.class",
+          "packaged_sha256": "b946f4638450a2b36cd0fe32a72f63e857c6237d69bf10934bb709e583207f0d",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_OvenRecipes.class",
+          "packaged_sha256": "a17d3348e15e6c61697070787f70f949d139f300d81b658fa2f8fae59e15e352",
+          "verification": "byte-equal"
+        }
+      ]
+    }
+  },
+  "original_source_sha256": {
+    "gregapi/data/CS.java": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+    "gregapi/data/MT.java": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2",
+    "gregapi/data/OP.java": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+    "gregtech/loaders/c/Loader_Recipes_Handlers.java": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+    "gregtech/loaders/c/Loader_Recipes_Furnace.java": "69a45e400339a5bada9854d47402e23d73bf199f6cf8c658f9149f02696acf66",
+    "gregapi/data/RM.java": "c7cb07faef0235ace4bb26656fddaabfa10da6aa4a2689a7f4cdcaef10d366e6",
+    "gregapi/recipes/maps/RecipeMapCrucible.java": "48e87b089b6460cb2d55d32bcbcf8485af3565722e466f86b8e417e5ee3de1ab",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefix.java": "de005fa316ae3d9ebddf69456c47a4e1e0ec38b9983d9fa9d1809e2bd9e58156",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefixShredding.java": "7258570a18592af7d8c6f8f3aced44464c57683497ac8eb4a6ff1badbbd902e6",
+    "gregapi/util/OM.java": "3c2cc710d62373460d1854f60a7383ec0a5b7969877dbbcb3f5c9b5a0b4c5cbb",
+    "gregapi/util/UT.java": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709"
+  },
+  "logs_sha256": {
+    "external-thermal-compile-20261004.log": "9a70b5dae3862ae9427ee161fd208a52a4efd3424acf7c5dd124d861954f0b1e",
+    "external-thermal-build-20261004.log": "855577f4286dcee53942eab93c1575e970034eb677337d7f75ec0eb9e7b5b2f0"
+  }
+}

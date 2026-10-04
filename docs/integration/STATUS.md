@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-04 / 外部热加工与原版熔炉桥接
+
+双平台补 dirtyGravel/crystal 的来源元数据和研钵行、九种外部熔炉入口及八种坩埚展示形态；crystal 使用宝石条件，不新增 GT 自有物品。修正材料监听器的冶炼比例平方、桥接多份产物变一份及经验丢失，接回来源材料的烟熏炉/高炉分支和同输入优先级，混合 ingredient 保留其他候选。Forge 重载按实际配方身份判断，清理镜像后再清理外部行以免复活旧标签输入。共享10,037条断言、全图差异及正式双版5m31s构建通过，648个当前共享类与Forge十个/NeoForge八个变更原生类验包通过；成品与运行边界见 [本批记录](verification/external-thermal-20261004.md)。完整回调和其他料理调用者仍待接续，整体 goal 保持 active。
+
 ## 2026-10-04 / 五种外部形态与粉碎数量
 
 双平台接回 clump/reduced/crystalline/cleanGravel/cluster 的 Shredder 与 Anvil 行，以及前四种的 Mortar 行；保留来源重量、无微量粉末的指定结果、MORTAR 条件和铁砧空位，不增加 GT 自有物品。修正两平台原有粉碎数量反比与中间乘法溢出问题。共享9,983条断言、全图差异及正式双版2m06s构建通过；646个当前共享类、每平台六个变更原生类验包通过，见 [本批记录](verification/external-rest-20261004.md)。dirtyGravel/crystal、完整回调与实际运行仍待接续，整体 goal 保持 active。

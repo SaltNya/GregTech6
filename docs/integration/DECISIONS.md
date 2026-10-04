@@ -1,5 +1,9 @@
 # 实现选择记录
 
+## 2026-10-04 / 熔炉来源比例、数量与优先级
+
+dirtyGravel 按 ORES、crystal 按 GEMS 引入外部元数据；不把它们注册为 GT 自有物品。来源 FURNACE 材料的目标固化比例为U，不再把冶炼比例平方；保留前缀/固定输入量和向上取整经验。原生桥接保存产物组数，按来源 FOOD 分支生成烟熏炉或高炉，并只移除混合 ingredient 中被源材料覆盖的候选。外部行清理前撤回自己的 Oven 镜像，防止旧行被暂存表重新添加；Forge 用实际 Recipe 身份集合判断重载。详见 [来源与未覆盖范围](verification/external-thermal-20261004.md)。
+
 ## 2026-10-04 / 指定粉末数量与粉碎余料
 
 五种外部来源形态仅增加元数据，四种重量1U、cluster为3U；全部九种外部形态的临时组成独立于机器路线建立，不再遗漏只用于研磨的输入。Shredder/Anvil 保留来源指定粉末数量和无副产物规则，Mortar 走 OM.pulverize 余料比例；不虚构 cluster 的 Mortar 行。原有两平台比例修正为 input×targetPerUnit/U，恒等分支直接返回，精确中间量避免先溢出；Long.MAX_VALUE 封顶为本地边界保护。全图指纹更新有五条前缀、5,800条形态新增的逐行证据，旧133,876条记录全部保留。详见 [来源与边界](verification/external-rest-20261004.md)。
