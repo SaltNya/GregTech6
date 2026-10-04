@@ -1,0 +1,22 @@
+{
+  "authors": "GregTech-6 Team; Gregorius Techneticies",
+  "license": "LGPL-3.0-or-later",
+  "source_tree_modified": false,
+  "project_base_commit": "ac0b00eb",
+  "loot_weights_and_drop_rules_unchanged": true,
+  "previous_loot_source_manifest": "docs/integration/verification/loot-viewers-source-20261004.json",
+  "glass_sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\BlockGlassGlow.java",
+      "sha256": "90d0ac2e44a097bca23a08a53043ae18933030fd6ac630c4ca898712e9101f11"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\BlockGlassClear.java",
+      "sha256": "5984cc5d77e9df531fb4c3510773c07e560a2a682a80b8755ae562ae8c744964"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\block\\metatype\\BlockMetaType.java",
+      "sha256": "af99a9e50607e5bd4675c1c7ae7b41510a5f2405bfdd781bc68bf06bfb56aa65"
+    }
+  ]
+}
