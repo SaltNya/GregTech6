@@ -181,6 +181,12 @@ def launch(args):
             or surface.get('machineModelsChecked') != 6
             or len(surface.get('machineItems', [])) != 6):
         raise ValueError('Production surface mesh/color receipt is incomplete')
+    sandwich = surface.get('sandwich', {})
+    if (sandwich.get('customInventoryModelsChecked') != 3
+            or sandwich.get('ingredientLayerCounts') != [10, 4, 6]
+            or sandwich.get('sourceLayerTexturesChecked', 0) < 16
+            or sandwich.get('sourceSauceColorsChecked') != 2):
+        raise ValueError('Production sandwich composition/render receipt is incomplete')
     dimensions = check_png(screenshot.read_bytes())
     if dimensions != (receipt['width'], receipt['height']):
         raise ValueError('Production screenshot dimensions differ from receipt')

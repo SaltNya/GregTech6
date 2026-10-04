@@ -56,6 +56,9 @@ try {
         if (@($receipt.flatBushVariantsChecked).Count -ne 9 -or @($receipt.flatSpringVariantsChecked).Count -ne 7 -or $receipt.flatGeneratedBranchesChecked -ne 45 -or $receipt.flatLegacyWorldConversionsChecked -ne 2 -or $receipt.flatSurfaceInventoryModelsChecked -ne 16 -or @($receipt.renderedFlatSurfaceItems).Count -ne 16 -or -not $receipt.supporterCertificateRemoved) {
             throw "$platform flat bushes/springs and certificate removal receipt is incomplete."
         }
+        if ($receipt.sandwichSourceIngredientsChecked -ne 95 -or $receipt.sandwichNativeInteractionChecks -ne 14 -or $receipt.sandwichNativeConsumptionChecks -ne 7 -or $receipt.sandwichInventoryModelsChecked -ne 3 -or $receipt.sandwichLayerTooltipOrderChecked -ne 4 -or $receipt.sandwichRenderedPreviews -ne 3 -or $receipt.sandwichSourceBottleFoods -ne 35 -or -not $receipt.sandwichDroppedIngredientCountsNormalized) {
+            throw "$platform sandwich interaction/food/render receipt is incomplete."
+        }
         # Source NI and absent external integrations remain explicit empty slots.
         if ($receipt.originTestInventoryPresent + $receipt.originTestInventoryOptionalEmpty + @($receipt.originTestInventoryPendingTools).Count -ne 144) {
             throw "$platform source test inventory accounting is incomplete."

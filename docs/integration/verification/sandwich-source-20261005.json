@@ -1,0 +1,656 @@
+{
+  "originalSource": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "authors": "Gregorius Techneticies; GregTech-6 Team",
+  "license": "LGPL-3.0-or-later; original sources unchanged, NOTICE and authors retained",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\food\\MultiTileEntitySandwich.java",
+      "bytes": 17616,
+      "sha256": "576e938dfe6c7aca1f388d5885e864e3136a9e65cbe638c67730b126bbc725e9"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\GT_Proxy.java",
+      "bytes": 25790,
+      "sha256": "c18681468cfff643c77fa0371fe142599c7063b42f57ae74db653a19b9fdda3c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemFood.java",
+      "bytes": 147661,
+      "sha256": "bc66d27a6428a3d62e3000b6bae4c8b0f1a775dad00d139bff507b201acd6598"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemBottles.java",
+      "bytes": 58587,
+      "sha256": "13431979eaef01d2a8b3b77d7affc821c22559e8835ed799b6fd3787b7d171d4"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Fluids.java",
+      "bytes": 190445,
+      "sha256": "fdc9a697adc7822159cb8ea82389cc83e6494fc9723551f2983607ed46505fcb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Others.java",
+      "bytes": 34908,
+      "sha256": "2a0ab7a65d9ec58256127daf0beb7fd2697dc32df4adf099c527cb12a59e486f"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\item\\multiitem\\food\\FoodStat.java",
+      "bytes": 8970,
+      "sha256": "13bf9e026acb33571344f0a17eb849b8acda18eec0ac75e65bc71383d268f8ad"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\item\\multiitem\\food\\FoodStatFluid.java",
+      "bytes": 5520,
+      "sha256": "e0ea27cef1137bd6810ea5397331fd5d30c96a6164b61fc72a55910aa9a74dcb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\item\\multiitem\\food\\FoodStatDrink.java",
+      "bytes": 6651,
+      "sha256": "adffe47d9472aa8f3ac7c785daea37fb2b0ef4277871296d83c5beddf373fde4"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\ST.java",
+      "bytes": 100719,
+      "sha256": "5ff16d9051e2744a66c711bd5f2581785ba8af7b2272fb1023a6d2f4ddb783a8"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\UT.java",
+      "bytes": 213872,
+      "sha256": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "bytes": 153449,
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\FL.java",
+      "bytes": 106275,
+      "sha256": "87ec6759b7c3b1ad7d7c6d574e24ec7d7371fa285e93ab67cfa26cd83f2b18b3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\load\\LoaderItemList.java",
+      "bytes": 257900,
+      "sha256": "d3bdea0d388c5ec510269e8ac3a6c234ad4df9e35fa39e8996f65cdd5bd410b0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemCans.java",
+      "bytes": 20185,
+      "sha256": "69d8a70c47b8fbd39b590d1499dd88bfc6f90fb85c92d3e8f3c195e66c2221ee"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\c\\Loader_Recipes_Food.java",
+      "bytes": 80221,
+      "sha256": "dc9162de4c889164383b30d4a665fabba052ad67dd7840a0241bf740665e6b82"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\c\\Loader_Recipes_Crops.java",
+      "bytes": 63390,
+      "sha256": "82500dd7440d00c8fbc22330fd7d1e2abc3a058827c13277dd0cf540299fabd1"
+    }
+  ],
+  "sourceIngredientRows": 95,
+  "sourceBottleFoodRows": 35,
+  "effectRows": 105,
+  "sourceQuirks": [
+    "UT.Entities.applyPotion:3057 rejects duration<=0; negative-duration pill tuples are preserved but cannot remove effects. Milk callbacks remain effective.",
+    "FoodStat calls the 1.7.10 four-argument PotionEffect constructor: the fourth argument is ambient, not modern particle visibility.",
+    "LoaderItemList:753 binds IL.Bottle_Empty to minecraft:glass_bottle; no separate native bottle_empty item is required.",
+    "No FoodStatDrink registered for Blood; its sandwich layer uses minimum one food and zero saturation."
+  ],
+  "optionalEffectRegistryPrimaryReferences": [
+    {
+      "version": "1.20.1",
+      "url": "https://github.com/BluSunrize/ImmersiveEngineering/blob/1.20.1/src/main/java/blusunrize/immersiveengineering/common/register/IEPotions.java"
+    },
+    {
+      "version": "1.21.1",
+      "url": "https://github.com/BluSunrize/ImmersiveEngineering/blob/1.21.1/src/main/java/blusunrize/immersiveengineering/common/register/IEPotions.java"
+    }
+  ],
+  "mappingPrimaryReferences": [
+    {
+      "purpose": "SRG field_76443_y maps to SATURATION; newer artifact preserves SRG identity.",
+      "url": "https://gist.github.com/matthewprenger/309a6b43bfd64a52106b446f39acc6d6"
+    },
+    {
+      "purpose": "Srg2Source maintainer mapping artifact: PotionEffect ambient field. Four-argument constructor semantics inferred from unchanged call and mappings.",
+      "url": "https://gist.github.com/agaricusb/4241420"
+    }
+  ],
+  "bottleExtraction": {
+    "rows": [
+      {
+        "item": "grape_vinegar",
+        "fluid": "vinegar",
+        "source_line": 559,
+        "stats": [
+          30,
+          0,
+          0,
+          20,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "cave_johnsons_grenade_juice",
+        "fluid": "potion.cavejohnsonsgrenadejuice",
+        "source_line": 614,
+        "stats": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "chili_sauce",
+        "fluid": "chillysauce",
+        "source_line": 565,
+        "stats": [
+          0,
+          0,
+          10,
+          10,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "hot_sauce",
+        "fluid": "potion.hotsauce",
+        "source_line": 566,
+        "stats": [
+          0,
+          0,
+          20,
+          10,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "diabolo_sauce",
+        "fluid": "potion.diabolosauce",
+        "source_line": 567,
+        "stats": [
+          0,
+          0,
+          30,
+          10,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "diablo_sauce",
+        "fluid": "potion.diablosauce",
+        "source_line": 568,
+        "stats": [
+          0,
+          0,
+          40,
+          10,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "there_is_no_cow_sauce",
+        "fluid": "potion.diablosauce.strong",
+        "source_line": 569,
+        "stats": [
+          0,
+          0,
+          99,
+          10,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "barbecue_sauce",
+        "fluid": "bbqsauce",
+        "source_line": 595,
+        "stats": [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "apple_cider_vinegar",
+        "fluid": "applevinegar",
+        "source_line": 560,
+        "stats": [
+          30,
+          0,
+          0,
+          15,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "olive_oil",
+        "fluid": "binnie.juiceolive",
+        "source_line": 582,
+        "stats": [
+          0,
+          0,
+          20,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "sunflower_oil",
+        "fluid": "sunfloweroil",
+        "source_line": 580,
+        "stats": [
+          0,
+          0,
+          20,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "nut_oil",
+        "fluid": "nutoil",
+        "source_line": 581,
+        "stats": [
+          0,
+          0,
+          20,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "seed_oil",
+        "fluid": "seedoil",
+        "source_line": 583,
+        "stats": [
+          0,
+          0,
+          20,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "hemp_oil",
+        "fluid": "hempoil",
+        "source_line": 585,
+        "stats": [
+          0,
+          0,
+          20,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "lin_oil",
+        "fluid": "linoil",
+        "source_line": 584,
+        "stats": [
+          0,
+          0,
+          20,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "fish_oil",
+        "fluid": "fishoil",
+        "source_line": 586,
+        "stats": [
+          0,
+          0,
+          20,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "whale_oil",
+        "fluid": "whaleoil",
+        "source_line": 587,
+        "stats": [
+          0,
+          0,
+          20,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "mayo",
+        "fluid": "mayo",
+        "source_line": 590,
+        "stats": [
+          0,
+          0,
+          10,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "dressing",
+        "fluid": "potion.dressing",
+        "source_line": 591,
+        "stats": [
+          10,
+          0,
+          0,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "heavy_cream",
+        "fluid": "grcmilk.cream",
+        "source_line": 592,
+        "stats": [
+          0,
+          0,
+          0,
+          20,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "honey",
+        "fluid": "for.honey",
+        "source_line": 574,
+        "stats": [
+          0,
+          0,
+          0,
+          40,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "royal_jelly",
+        "fluid": "royaljelly",
+        "source_line": 577,
+        "stats": [
+          0,
+          0,
+          0,
+          40,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "ambrosia",
+        "fluid": "potion.ambrosia",
+        "source_line": 576,
+        "stats": [
+          30,
+          0,
+          0,
+          40,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "rice_vinegar",
+        "fluid": "ricevinegar",
+        "source_line": 562,
+        "stats": [
+          30,
+          0,
+          0,
+          10,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "chocolate_cream",
+        "fluid": "chocolatecream",
+        "source_line": 596,
+        "stats": [
+          0,
+          0,
+          0,
+          30,
+          20,
+          0
+        ]
+      },
+      {
+        "item": "nutella",
+        "fluid": "nutella",
+        "source_line": 597,
+        "stats": [
+          0,
+          0,
+          0,
+          20,
+          30,
+          0
+        ]
+      },
+      {
+        "item": "green_slime_bottle",
+        "fluid": "slime",
+        "source_line": 633,
+        "stats": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "pink_slime_bottle",
+        "fluid": "pinkslime",
+        "source_line": 632,
+        "stats": [
+          0,
+          0,
+          0,
+          20,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "blue_slime_bottle",
+        "fluid": "slime.blue",
+        "source_line": 631,
+        "stats": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "tomato_ketchup",
+        "fluid": "ketchup",
+        "source_line": 594,
+        "stats": [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "maple_syrup",
+        "fluid": "maplesyrup",
+        "source_line": 599,
+        "stats": [
+          0,
+          0,
+          0,
+          40,
+          10,
+          0
+        ]
+      },
+      {
+        "item": "peanut_butter",
+        "fluid": "peanutbutter",
+        "source_line": 598,
+        "stats": [
+          0,
+          0,
+          0,
+          20,
+          30,
+          0
+        ]
+      },
+      {
+        "item": "rainbow_sap",
+        "fluid": "rainbowsap",
+        "source_line": 464,
+        "stats": [
+          0,
+          0,
+          0,
+          20,
+          0,
+          0
+        ]
+      },
+      {
+        "item": "coconut_cream",
+        "fluid": "coconutcream",
+        "source_line": 593,
+        "stats": [
+          0,
+          0,
+          0,
+          15,
+          15,
+          0
+        ]
+      },
+      {
+        "item": "bottle_of_poison",
+        "fluid": "poison",
+        "source_line": 629,
+        "stats": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "no_drink_callback": [
+      [
+        "bottle_oblood",
+        "Blood",
+        [
+          "blood"
+        ]
+      ]
+    ],
+    "unsupported_external_effects": [
+      [
+        "chili_sauce",
+        "PotionsGT.ID_DEHYDRATION",
+        400,
+        0,
+        100
+      ],
+      [
+        "hot_sauce",
+        "PotionsGT.ID_DEHYDRATION",
+        400,
+        1,
+        100
+      ],
+      [
+        "diabolo_sauce",
+        "PotionsGT.ID_DEHYDRATION",
+        400,
+        2,
+        100
+      ],
+      [
+        "diabolo_sauce",
+        "PotionsGT.ID_INSANITY",
+        600,
+        0,
+        100
+      ],
+      [
+        "diablo_sauce",
+        "PotionsGT.ID_DEHYDRATION",
+        400,
+        3,
+        100
+      ],
+      [
+        "diablo_sauce",
+        "PotionsGT.ID_INSANITY",
+        600,
+        1,
+        100
+      ],
+      [
+        "there_is_no_cow_sauce",
+        "PotionsGT.ID_DEHYDRATION",
+        400,
+        4,
+        100
+      ],
+      [
+        "there_is_no_cow_sauce",
+        "PotionsGT.ID_INSANITY",
+        600,
+        2,
+        100
+      ]
+    ],
+    "added_effects": 68
+  },
+  "scope": "95 explicit MultiItemFood and MultiItemBottles registrations. This is not the entire native and external ingredient map.",
+  "remaining_native_canned_ingredient_registrations": 24,
+  "remaining_external_ingredient_listeners": "Loader_Recipes_Food and Loader_Recipes_Crops ore-dictionary callbacks; fixed vanilla aliases retained, general modern tags not yet implemented."
+}
