@@ -1,5 +1,11 @@
 # 实现选择记录
 
+## 2026-10-04 / 源化学电池与完整生产映射
+
+占位电池采用原生alias而非新隐形物品，Forge另处理旧注册表快照MissingMappingsEvent；旧栈保存规范ID，保留合法电量和额外字段。迁移容量覆盖旧合法范围，旧IV降为来源EV钴酸锂，不虚构IV化学电池。工具生成仅五种来源LV电池，Neo加载旧组件后校正带电最大堆叠。详见 [迁移政策](verification/battery-cleanup-20261004.md)。
+
+Forge refmap汇总全部mixins，主编译禁止局部增量并将完整refmap声明为输出；生产验包比较当前生成内容和全部目标，不能靠开发环境启动代替生产映射检查。独立探针不能提供GT映射，实际正式包在只读加载器的隔离实例主菜单验收后，按验证哈希复制并再次全CRC检查，两版完成再一次rename到新交付目录。失败不发布；无生产环境配置时只声明开发运行/静态验包。详见 [交付流程与实际边界](verification/production-delivery-startup-20261004.md)。
+
 ## 2026-10-04 / 创建世界的空形态与生成中路牌
 
 普通产物没有材料形态是合法情况：仅有form时查询不可变preferred映射，其余继续既有MaterialUnification，不删除配方、材料统一或吞异常。proto-chunk中的路牌不能走发送Level更新的setText；保存原生实体数据，仅替换经SignText.DIRECT_CODEC编码的front_text，再用平台加载接口写回，保留其他字段。用户要求构建前自启动：交付入口串行实际创建隔离UUID普通世界，检查玩家/服务器/原生配方/物品规范化/30帧/截图和成功回执，再执行双版打包验包；单凭Gradle退出0不能证明自检成功。证据及开发环境/用户实例区别见 [记录](verification/world-creation-fixes-20261004.md)。

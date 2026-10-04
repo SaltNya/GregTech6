@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "scope": "Verified complete copies; runtime evidence is recorded separately",
+  "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261004-072803Z-3aded12d",
+  "verification_report": "C:\\Dev\\GregTech6\\docs\\integration\\verification\\battery-cleanup-artifacts-20261004.json",
+  "verification_report_sha256": "54942d3f0648b9a2d69230f3b625532cad096e51538dba4c7744fc300a0885bc",
+  "artifacts": {
+    "forge": {
+      "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+      "bytes": 39173074,
+      "sha256": "3aded12d431296c91cf79b5c557ed7bcc155f52eda96a17497596799d412a9b1",
+      "zip_crc_checked": true,
+      "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-072803Z-3aded12d\\gregtech6-1.20.1-forge-0.0.0.jar"
+    },
+    "neoforge": {
+      "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "bytes": 37400282,
+      "sha256": "d6521c5b78b7ce2231981d4cb8c7f396316d9cf0b6e211668ba10ed1d63db44f",
+      "zip_crc_checked": true,
+      "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-072803Z-3aded12d\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+    }
+  }
+}

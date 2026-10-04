@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+  "platform": "neoforge",
+  "version": "1.21.1-NeoForge_21.1.252",
+  "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+  "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+  "exit_code": 0,
+  "elapsed_seconds": 75.5,
+  "installed_files_modified": false,
+  "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+  "distribution": {
+    "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+    "sha256": "d6521c5b78b7ce2231981d4cb8c7f396316d9cf0b6e211668ba10ed1d63db44f"
+  },
+  "probe": {
+    "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+    "sha256": "e034dc95e35e88136f5e7410aa0a14a9e9e0f01151b788e2e72912f1cfeecc5f"
+  },
+  "mods": [
+    {
+      "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "sha256": "d6521c5b78b7ce2231981d4cb8c7f396316d9cf0b6e211668ba10ed1d63db44f",
+      "bytes": 37400282
+    },
+    {
+      "name": "gregtech-delivery-probe-0.0.0.jar",
+      "sha256": "e034dc95e35e88136f5e7410aa0a14a9e9e0f01151b788e2e72912f1cfeecc5f",
+      "bytes": 4807
+    },
+    {
+      "name": "emi-1.1.24+1.21.1+neoforge.jar",
+      "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+      "bytes": 1111538
+    },
+    {
+      "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+      "bytes": 726853
+    }
+  ],
+  "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-0c9917a8-6b99-4e61-ba9a-65be57340925\\launch.log",
+  "log_sha256": "2a0b127eeb7919030e29c5267c3bc0bd0a1a93d076dd0940bffc45542bda8245",
+  "receipt": {
+    "platform": "neoforge",
+    "screen": "net.minecraft.client.gui.screens.TitleScreen",
+    "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-0c9917a8-6b99-4e61-ba9a-65be57340925\\screenshots\\production-neoforge-1977292b-16b9-478e-bbef-e7b13ce3f50c.png",
+    "width": 1280,
+    "height": 720,
+    "renderedFrames": 181,
+    "elapsedMs": 60894
+  },
+  "screenshot_sha256": "051641ff8f6aa94d9ecaf4bb439d9370a02502e38a7f01da593814679aab00c8",
+  "visually_reviewed": true,
+  "verified_source_commit": "e70e7f95937b1999305b866660a11d2f6780cc43",
+  "build_commit": null,
+  "build_working_changes": true,
+  "gameplay_verified": false
+}

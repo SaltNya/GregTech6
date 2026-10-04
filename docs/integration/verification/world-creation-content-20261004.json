@@ -7,7 +7,7 @@
     "forge": {
       "development_loader": "47.4.20",
       "game_java": "17.0.10",
-      "formal_loader": "47.2.20",
+      "formal_loader": "47.4.20",
       "minecraft": "1.20.1",
       "runtime_receipt": {
         "platform": "forge",
@@ -216,5 +216,6 @@
       "sha256": "80a036859260c0cb07f31acf4db5e2346f9e252f15d299e1f93767d591d08d09",
       "bytes": 328964
     }
-  }
+  },
+  "formal_loader_correction": "The former 47.2.20 formal-loader label was the cache-source version, not the build version. Verified source commit aa6ca07e gradle.properties pins Forge47.4.20; development receipts already correctly recorded47.4.20."
 }

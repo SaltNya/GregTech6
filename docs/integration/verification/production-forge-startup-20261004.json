@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+  "platform": "forge",
+  "version": "1.20.1-Forge_47.4.26",
+  "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+  "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+  "exit_code": 0,
+  "elapsed_seconds": 86.62,
+  "installed_files_modified": false,
+  "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+  "distribution": {
+    "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+    "sha256": "3aded12d431296c91cf79b5c557ed7bcc155f52eda96a17497596799d412a9b1"
+  },
+  "probe": {
+    "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+    "sha256": "f867f243d62ada39638ddd2943610864d09b74d495dbe6e4e2d91ec1ca982eff"
+  },
+  "mods": [
+    {
+      "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+      "sha256": "3aded12d431296c91cf79b5c557ed7bcc155f52eda96a17497596799d412a9b1",
+      "bytes": 39173074
+    },
+    {
+      "name": "gregtech-delivery-probe-0.0.0.jar",
+      "sha256": "f867f243d62ada39638ddd2943610864d09b74d495dbe6e4e2d91ec1ca982eff",
+      "bytes": 6064
+    },
+    {
+      "name": "Jade-1.20.1-Forge-11.13.3.jar",
+      "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+      "bytes": 553487
+    },
+    {
+      "name": "jei-1.20.1-forge-15.62.0.217.jar",
+      "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+      "bytes": 2232172
+    },
+    {
+      "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+      "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+      "bytes": 364842
+    }
+  ],
+  "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-3ced86b8-9d93-43a6-b04e-347d57a111c7\\launch.log",
+  "log_sha256": "6f78195efdbb96602fa2812d3f67ba4c5f98cd88bbb3ae6d2193ba3f1c340179",
+  "receipt": {
+    "platform": "forge",
+    "screen": "net.minecraft.client.gui.screens.TitleScreen",
+    "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-3ced86b8-9d93-43a6-b04e-347d57a111c7\\screenshots\\production-forge-031f02ee-629b-4e27-a423-e243b81a3f66.png",
+    "width": 1280,
+    "height": 720,
+    "renderedFrames": 178,
+    "loaderWarnings": 0,
+    "elapsedMs": 78285
+  },
+  "screenshot_sha256": "abdf8d58b829f989e8b8813619b4b9c63176b95c99e7a3259b33ee12bc6f6f9e",
+  "visually_reviewed": true,
+  "verified_source_commit": "e70e7f95937b1999305b866660a11d2f6780cc43",
+  "build_commit": null,
+  "build_working_changes": true,
+  "gameplay_verified": false
+}

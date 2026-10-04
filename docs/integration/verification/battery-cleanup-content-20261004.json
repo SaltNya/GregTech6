@@ -1,0 +1,461 @@
+{
+  "status": "passed",
+  "scope": "Actual development fresh world, native old item decoding/canonical save, source tier tags and twenty steel recipe outputs; packaging. No user save migration or full gameplay claim.",
+  "build_commit": null,
+  "build_working_changes": true,
+  "verified_source_commit": "e70e7f95937b1999305b866660a11d2f6780cc43",
+  "prior_build_log": {
+    "path": "build/preflight/dual-assemble.log",
+    "sha256": "804bfd4babed55eb0dd021b1b90ea0325433cd53df79acb72adae41fefb3c6b8",
+    "bytes": 1475
+  },
+  "prior_build_accepted_for_delivery": false,
+  "prior_build_rejection": "Forge distribution lacked its Mixin refmap; Neo installed copy was an invalid ZIP. Final production packaging required full Forge compilation.",
+  "formal_build_duration": "4m 37s",
+  "formal_build_log": {
+    "path": "build/preflight/production-delivery-assemble-20261004.log",
+    "sha256": "190cc2b3d96c8bf99a7a6624a4d269be8fa4f461715d778c7bf668f36c875b8f",
+    "bytes": 28133
+  },
+  "platforms": {
+    "forge": {
+      "development_loader": "47.4.20",
+      "formal_loader": "47.4.20",
+      "game_java": "17.0.10",
+      "runtime_receipt": {
+        "platform": "forge",
+        "id": "9f72535e-51ed-4f34-90c6-f55d154f1cf5",
+        "world": "creation-smoke-9f72535e-51ed-4f34-90c6-f55d154f1cf5",
+        "stage": 3,
+        "elapsedMs": 176982,
+        "legacyBatteryAliasesChecked": 5,
+        "chemicalBatteryStackRoundTrips": 10,
+        "sourceChemicalBatteriesChecked": 25,
+        "sourceLvPoweredAssemblyRowsChecked": 20,
+        "canonicalItemsChecked": 75863,
+        "recipes": 42610,
+        "serverTicks": 26,
+        "dimension": "minecraft:overworld",
+        "renderedWorldFrames": 30,
+        "emiLoaded": false,
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-9f72535e-51ed-4f34-90c6-f55d154f1cf5.png"
+      },
+      "runtime_log": {
+        "path": "build/preflight/forge-world-creation.log",
+        "sha256": "7fbb9442a8ed9d408857de48febdf129d6f6b29520fe59e4db3dad057ed2466b",
+        "bytes": 317507
+      },
+      "receipt_file": {
+        "path": "build/world-creation-smoke-run/world-creation-9f72535e-51ed-4f34-90c6-f55d154f1cf5.json",
+        "sha256": "e19a8a50f1c9292a9e86b138aae0acc6c4dfcf6a8624cd7f969ee80381a4f836",
+        "bytes": 585
+      },
+      "screenshot": {
+        "path": "build/world-creation-smoke-run/screenshots/world-creation-forge-9f72535e-51ed-4f34-90c6-f55d154f1cf5.png",
+        "sha256": "22559867f69474eab823d9c82e5748105bbb7e3fd6a016ac2563f43c94a12dd8",
+        "bytes": 417297,
+        "dimensions": [
+          1280,
+          720
+        ],
+        "visually_reviewed": true
+      },
+      "fresh_level_dat": {
+        "path": "build/world-creation-smoke-run/saves/creation-smoke-9f72535e-51ed-4f34-90c6-f55d154f1cf5/level.dat",
+        "sha256": "4ec1dbed3d6f8683ec6647fdd88f673ba31452e497f8744a06edfea96768422e",
+        "bytes": 791736
+      },
+      "jar": {
+        "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "3aded12d431296c91cf79b5c557ed7bcc155f52eda96a17497596799d412a9b1",
+        "bytes": 39173074
+      },
+      "changed_native_class_count": 11,
+      "changed_native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/tool/ElectricToolAssembly.class",
+          "jar_sha256": "6ef8e0cec53b71faec8dc8f344536004a993dcd0c0a1f91c14f5464c40107700",
+          "compiled_sha256": "f72f833cd9292b458646fe510fe040c069feeb966a250946af868fcee71e1b80",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/tool/ElectricToolAssembly$1.class",
+          "jar_sha256": "2636b1e03d1b620837ddc58e01725abe96c6ce09319079085910310fac6b2eba",
+          "compiled_sha256": "9150610535bc94ae305b38a455f8376dc4daefdfed0d20aba1ea5728a84a2883",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/gametest/ChargingCraftingRepairTests.class",
+          "jar_sha256": "e2cee30445f5613bcd0ebbec3f78556743f42041758ec43a4ddaf6f964398b6a",
+          "compiled_sha256": "d777ec1f1d7d3aae76cdb41b3701208a76213e892710ba43d3a98b57db761332",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/gametest/ChargingCraftingRepairTests$1.class",
+          "jar_sha256": "5b20d96ccfc8b399acf672cf50a970dc8a1906120acf3f8621aaa982c98fa015",
+          "compiled_sha256": "44c87ab5f36988dfdc1d587b630e5fb1328c642d22b9e705d2509333f8b268f2",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/gametest/ElectricToolAssemblyTests.class",
+          "jar_sha256": "728b0367e317c33b6ef6b46639ff14443cfa51c353022aed2173bd87e3f27815",
+          "compiled_sha256": "23f51dca97eee18a668ddce1892cb3de8490a5e6b27a9d0669457205315d2e52",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/gametest/ElectricToolAssemblyTests$1.class",
+          "jar_sha256": "2b6f745a5612e77e22810d87a9b8f5befcf34f3fafca44d9252edd1feeb16c44",
+          "compiled_sha256": "ab491e3710c20cb7506e3f4c4cd2148d71df97262c56e340d1d3085434f72af6",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/gametest/LegacyBatteryVoltageTests.class",
+          "jar_sha256": "507b30e84bb8848597a0084a521e8d35ab6b85ce103bc2ea43aa9fc3b1af1623",
+          "compiled_sha256": "d646ee6b6e37fa05760580b48cd54f8cc8e887e41fd9ba9b072934e1f18177d8",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/BatteryItemAliases.class",
+          "jar_sha256": "9c6a2e817ce836d9da976e8fe96d36e6888e0de17d167c06b51aec831cbb6cb9",
+          "compiled_sha256": "6a07d5e2f17722c78a17b90e1b283234e94a1acfbbb5bb87f4f7bf496be8237a",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/BatteryItemAliases$Missing.class",
+          "jar_sha256": "b91d998fcf87e3d6bfe29c52abc1c1bc2d4a54456506581fe02941263f6a70a4",
+          "compiled_sha256": "4d0e668b5396a6843b137b210b246877d0bd1a1b07342c13c0a4a42c0733290e",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTChemicalBatteries.class",
+          "jar_sha256": "5fe204250cd5e9b604f689d8cfa075fa75028b2292c3022b2f43c68adb22f6df",
+          "compiled_sha256": "8b11a30966918a40ab7f079cc173a66b428a64dee0c38584f1f2e70ac4a7f9e5",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTElectricItems.class",
+          "jar_sha256": "70fe6dfba0d07aa16a2469e8aa7a0fd43ffa2cbf833ba07970c27d496876dd61",
+          "compiled_sha256": "b9f62dc5454219cf691b3a3c6f05cda27c2fe1199ccee4dd46e25d7e8c34104b",
+          "byte_equal": false
+        }
+      ],
+      "obsolete_entries_excluded": [
+        "com/gregtech/gregtech/item/BatteryItem.class",
+        "com/gregtech/gregtech/content/energy/LegacyBatteryDefinitions.class",
+        "com/gregtech/gregtech/content/energy/LegacyBatteryDefinitions$Spec.class",
+        "data/gregtech/tags/items/rechargeable_batteries/iv.json",
+        "assets/gregtech/models/item/battery_lv.json",
+        "assets/gregtech/models/item/battery_mv.json",
+        "assets/gregtech/models/item/battery_hv.json",
+        "assets/gregtech/models/item/battery_ev.json",
+        "assets/gregtech/models/item/battery_iv.json"
+      ],
+      "resources": [
+        {
+          "entry": "data/gregtech/tags/items/rechargeable_batteries/ulv.json",
+          "sha256": "f2f24b521a82bd6a70b04eaff9061f0457de9af1937257954d36edb3a9677ead"
+        },
+        {
+          "entry": "data/gregtech/tags/items/rechargeable_batteries/lv.json",
+          "sha256": "ef29569f2b4eddfe9e9a9a56113d820e900f1212c4b0af8723e8118f6d6930a1"
+        },
+        {
+          "entry": "data/gregtech/tags/items/rechargeable_batteries/mv.json",
+          "sha256": "780b0898b3aee25296ddfc00be9b4e9f5eeccb1e6365927a6ce58a3908ad1d0e"
+        },
+        {
+          "entry": "data/gregtech/tags/items/rechargeable_batteries/hv.json",
+          "sha256": "bdc3a585f740818195cb624f884d82200b82217eac874d3a6c99dcfa5e0a19d8"
+        },
+        {
+          "entry": "data/gregtech/tags/items/rechargeable_batteries/ev.json",
+          "sha256": "2b4b935638dfe151a99d2f25a97fec40d613a45d297e5f440b83ed35d889e43c"
+        },
+        {
+          "entry": "assets/gregtech/lang/en_us.json",
+          "sha256": "4f7d2cb859592b96e6cc4dbbabd85f70fc5fb9641250e1be27d79c83d9d5b02f"
+        },
+        {
+          "entry": "assets/gregtech/lang/zh_cn.json",
+          "sha256": "3e4802da0f62b05a7fe830601b5ad223e056a93da29de59457db58f3b2c45f35"
+        }
+      ],
+      "native_verification": "Reobfuscated entries present with hashes; exact pre-reobfuscation byte equality not asserted."
+    },
+    "neoforge": {
+      "development_loader": "21.1.243",
+      "formal_loader": "21.1.243",
+      "game_java": "21.0.7",
+      "runtime_receipt": {
+        "platform": "neoforge",
+        "id": "6324e526-7822-4d1a-8bbf-a2472f6359bd",
+        "world": "creation-smoke-6324e526-7822-4d1a-8bbf-a2472f6359bd",
+        "stage": 3,
+        "elapsedMs": 151730,
+        "legacyBatteryAliasesChecked": 5,
+        "chemicalBatteryStackRoundTrips": 10,
+        "sourceChemicalBatteriesChecked": 25,
+        "sourceLvPoweredAssemblyRowsChecked": 20,
+        "canonicalItemsChecked": 75940,
+        "recipes": 42726,
+        "serverTicks": 56,
+        "dimension": "minecraft:overworld",
+        "renderedWorldFrames": 3868,
+        "emiLoaded": true,
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-6324e526-7822-4d1a-8bbf-a2472f6359bd.png"
+      },
+      "runtime_log": {
+        "path": "build/preflight/neoforge-world-creation.log",
+        "sha256": "49729c3103baba3224b89270232711a5909fc43d407a6e508b7ef6223c3dda47",
+        "bytes": 8693708
+      },
+      "receipt_file": {
+        "path": "neoforge/build/world-creation-smoke-run/world-creation-6324e526-7822-4d1a-8bbf-a2472f6359bd.json",
+        "sha256": "9a1fe38dd3d8130bffd731c63c03c4ac1b46e40dc2764088bd71d9e0fa4bc3a8",
+        "bytes": 602
+      },
+      "screenshot": {
+        "path": "neoforge/build/world-creation-smoke-run/screenshots/world-creation-neoforge-6324e526-7822-4d1a-8bbf-a2472f6359bd.png",
+        "sha256": "4b3f839948a57f2bfe08a1f9831079234c2a7410d06acb7f39811126f4148565",
+        "bytes": 166033,
+        "dimensions": [
+          1280,
+          720
+        ],
+        "visually_reviewed": true
+      },
+      "fresh_level_dat": {
+        "path": "neoforge/build/world-creation-smoke-run/saves/creation-smoke-6324e526-7822-4d1a-8bbf-a2472f6359bd/level.dat",
+        "sha256": "683d1c656f981b7bbe8c9435648dc1f8f6e12b01ac9430c872a7eb06cddea6ec",
+        "bytes": 2638
+      },
+      "jar": {
+        "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "d6521c5b78b7ce2231981d4cb8c7f396316d9cf0b6e211668ba10ed1d63db44f",
+        "bytes": 37400282
+      },
+      "changed_native_class_count": 8,
+      "changed_native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/tool/ElectricToolAssembly.class",
+          "jar_sha256": "019fb2d072fdd51069746d239b798a19650f350708cf7f9c4f977773ec3d5b7e",
+          "compiled_sha256": "019fb2d072fdd51069746d239b798a19650f350708cf7f9c4f977773ec3d5b7e",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/data/ManualToolRecipePack.class",
+          "jar_sha256": "7badc8e8adf6d7a5497f25050c43e52d525e29758cb065fa5cc54675f0d7420b",
+          "compiled_sha256": "7badc8e8adf6d7a5497f25050c43e52d525e29758cb065fa5cc54675f0d7420b",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/data/ManualToolRecipePack$1.class",
+          "jar_sha256": "3c9bc55a36787a604e06d0cbaa489aec44e3a289568e524329b7b62e798d930e",
+          "compiled_sha256": "3c9bc55a36787a604e06d0cbaa489aec44e3a289568e524329b7b62e798d930e",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/item/ChemicalBatteryItem.class",
+          "jar_sha256": "ed7582a7c7406131e496c4e1a4190db16e0e1e47c28cccfa4f0f37532ca090c5",
+          "compiled_sha256": "ed7582a7c7406131e496c4e1a4190db16e0e1e47c28cccfa4f0f37532ca090c5",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/b/NeoCreativeContents.class",
+          "jar_sha256": "de51dd073607ea1a224f086ff209f8116f00d38fe1a3496badfcf56c55b787fd",
+          "compiled_sha256": "de51dd073607ea1a224f086ff209f8116f00d38fe1a3496badfcf56c55b787fd",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/platform/neoforge/GregTechNeoForge.class",
+          "jar_sha256": "3c86e17f4a0195c2370b0952740889589b24f2313919da0e0c07b56b975f55d8",
+          "compiled_sha256": "3c86e17f4a0195c2370b0952740889589b24f2313919da0e0c07b56b975f55d8",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTChemicalBatteries.class",
+          "jar_sha256": "cb2f46e54657e762b7f2b8856f7763eff1aae63c5393eb73f068f316a587b834",
+          "compiled_sha256": "cb2f46e54657e762b7f2b8856f7763eff1aae63c5393eb73f068f316a587b834",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTElectricItems.class",
+          "jar_sha256": "b332f623be089b712a456ada7f2d59fd2c93fc11cac39ff2c98eb12f44758c95",
+          "compiled_sha256": "b332f623be089b712a456ada7f2d59fd2c93fc11cac39ff2c98eb12f44758c95",
+          "byte_equal": true
+        }
+      ],
+      "obsolete_entries_excluded": [
+        "com/gregtech/gregtech/item/BatteryItem.class",
+        "com/gregtech/gregtech/content/energy/LegacyBatteryDefinitions.class",
+        "com/gregtech/gregtech/content/energy/LegacyBatteryDefinitions$Spec.class",
+        "data/gregtech/tags/item/rechargeable_batteries/iv.json",
+        "com/gregtech/gregtech/platform/neoforge/energy/LegacyBatteryRegistries.class",
+        "assets/gregtech/models/item/battery_lv.json",
+        "assets/gregtech/models/item/battery_mv.json",
+        "assets/gregtech/models/item/battery_hv.json",
+        "assets/gregtech/models/item/battery_ev.json",
+        "assets/gregtech/models/item/battery_iv.json"
+      ],
+      "resources": [
+        {
+          "entry": "data/gregtech/tags/item/rechargeable_batteries/ulv.json",
+          "sha256": "f2f24b521a82bd6a70b04eaff9061f0457de9af1937257954d36edb3a9677ead"
+        },
+        {
+          "entry": "data/gregtech/tags/item/rechargeable_batteries/lv.json",
+          "sha256": "ef29569f2b4eddfe9e9a9a56113d820e900f1212c4b0af8723e8118f6d6930a1"
+        },
+        {
+          "entry": "data/gregtech/tags/item/rechargeable_batteries/mv.json",
+          "sha256": "780b0898b3aee25296ddfc00be9b4e9f5eeccb1e6365927a6ce58a3908ad1d0e"
+        },
+        {
+          "entry": "data/gregtech/tags/item/rechargeable_batteries/hv.json",
+          "sha256": "bdc3a585f740818195cb624f884d82200b82217eac874d3a6c99dcfa5e0a19d8"
+        },
+        {
+          "entry": "data/gregtech/tags/item/rechargeable_batteries/ev.json",
+          "sha256": "2b4b935638dfe151a99d2f25a97fec40d613a45d297e5f440b83ed35d889e43c"
+        },
+        {
+          "entry": "assets/gregtech/lang/en_us.json",
+          "sha256": "4f7d2cb859592b96e6cc4dbbabd85f70fc5fb9641250e1be27d79c83d9d5b02f"
+        },
+        {
+          "entry": "assets/gregtech/lang/zh_cn.json",
+          "sha256": "3e4802da0f62b05a7fe830601b5ad223e056a93da29de59457db58f3b2c45f35"
+        }
+      ],
+      "native_verification": "Exact compiled bytes"
+    }
+  },
+  "source_files": [
+    {
+      "path": "core/src/main/java/com/gregtech/gregtech/content/energy/BatteryItemMigration.java",
+      "sha256": "79067adfffae8cd39f4824cdd12cc6b89726f2e09127c9cb5a54c1c9a77f3af7",
+      "bytes": 1312
+    },
+    {
+      "path": "neoforge/src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/ProductionClientSmoke.java",
+      "sha256": "236939f1eb40b0e31aa26ccd7920e5c5c52a3b979fc751bac3d03157f24ca2fb",
+      "bytes": 3464
+    },
+    {
+      "path": "neoforge/src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/WorldCreationSmoke.java",
+      "sha256": "721e2a6f6ae432d6f1b820ab85f227720c6c24c361782fa556697ebe26cebd5e",
+      "bytes": 15883
+    },
+    {
+      "path": "neoforge/src/bootstrapGameTest/java/com/gregtech/gregtech/integration/server/NeoPoweredToolCheckpoint.java",
+      "sha256": "ebc70c8b33afaef01506666e95edb5d0d967a2b2485e6b558676e5cd12ce61c8",
+      "bytes": 6554
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/content/tool/ElectricToolAssembly.java",
+      "sha256": "e3dbe862658424bfecd2221bf697492421d53d0cdf2183fa236c4f9221d6707a",
+      "bytes": 5668
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/data/ManualToolRecipePack.java",
+      "sha256": "fc180d73bfcd3e1cde3c606abd372068643305a7f4295f0de83c48f04eb05ae3",
+      "bytes": 11484
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/item/ChemicalBatteryItem.java",
+      "sha256": "771fc5f3f447ca33071dc5e904e84e12ff3fc48235b2d03a59f4205d856ec812",
+      "bytes": 4933
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/loaders/b/NeoCreativeContents.java",
+      "sha256": "b1993378f5acdf8800634c650fbc7263390502898ece59067e75995ed51cd4b0",
+      "bytes": 9217
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/platform/neoforge/GregTechNeoForge.java",
+      "sha256": "815c5eb6c13ee264a099df2ac1df723b4b659c2fec9a4286b056178fbc14d56f",
+      "bytes": 11886
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/registry/GTChemicalBatteries.java",
+      "sha256": "2bdaaa420433f62f744cfed3759335a3b0362918ee9e9f8c6227cd93d4d02a6e",
+      "bytes": 3617
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/registry/GTElectricItems.java",
+      "sha256": "94c33c2117fcda7843ce992e39ab904d23c59cb9ebe0b7979ec43e7efc534675",
+      "bytes": 1780
+    },
+    {
+      "path": "src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/ProductionClientSmoke.java",
+      "sha256": "0456a28ee57d471b6c8ba594fac57b63c54e6da18b2c4cb8fe00757064bd024f",
+      "bytes": 5519
+    },
+    {
+      "path": "src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/WorldCreationSmoke.java",
+      "sha256": "9481b8ca9bc62b7fcfbba3e5769d13780abc57e16b555e6edccbf98750f42b9a",
+      "bytes": 15500
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/content/tool/ElectricToolAssembly.java",
+      "sha256": "af2fd0ce12536a649b86ef416e47a731db38a0049056697020180f6774dc6d2b",
+      "bytes": 5490
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/gametest/ChargingCraftingRepairTests.java",
+      "sha256": "459156d90aa6eff990edb55b847e561184e9d79f755b6f835daebfd5b4a78aa9",
+      "bytes": 13568
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/gametest/ElectricToolAssemblyTests.java",
+      "sha256": "9037b0b15bd4ed19cbe075c9f252dfbe821eae59d1a4a781acce3c310b71a9e4",
+      "bytes": 7414
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/gametest/LegacyBatteryVoltageTests.java",
+      "sha256": "a2b5515cab904921b80e67a580c9a4794329616ed48cc044496ca0c15abfa19f",
+      "bytes": 4767
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/registry/BatteryItemAliases.java",
+      "sha256": "9e7da0d3c07d7dd37c91707e2ba60656e7f52abc020d3c176b494a353ba171ad",
+      "bytes": 1881
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/registry/GTChemicalBatteries.java",
+      "sha256": "6849b1dac5228279d2ebca1979ba610492cb12ab643d33f91f9901debc309b48",
+      "bytes": 2092
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/registry/GTElectricItems.java",
+      "sha256": "76af061ce09b8e5774e6fc85cb16625503b035fa914791a17545ca136e3f58be",
+      "bytes": 2824
+    },
+    {
+      "path": "tools/integration/build_verified.ps1",
+      "sha256": "8baa4b2290de85759233f46c9f8235fd08e24f4629aa5b8a82718cf097133c6e",
+      "bytes": 5331
+    }
+  ],
+  "wrapper_notes": "First attempt blocked on EMI reload/automatic-exit race. The second invocation captured both valid clients; its already parsed old condition also rejected absent Forge EMI. Corrected current platform-specific condition was applied to the same receipts before manually resuming assemble; successful clients were not repeated.",
+  "limitations": [
+    "Forge 47.4.20/Java17 and NeoForge21.1.243/Java21 development instances; user Forge47.4.26/Neo21.1.252/Java25 instances were not changed.",
+    "Native item NBT/component alias decoding was executed; actual old world Forge registry-snapshot MissingMappingsEvent and user save reload were not executed.",
+    "No full shared suite, machine chain, charging/battery-box network or inventory/recipe-viewer interactions were added.",
+    "Existing invalid resource paths, unused animation frames and untranslated EMI tags remain."
+  ],
+  "first_neo_attempt": {
+    "accepted": false,
+    "reason": "Success marker preceded EMI reload completion; automatic world unload triggered EMI client.level null and the wrapper blocked assemble.",
+    "log": {
+      "path": "work/battery-cleanup-neo-first-20261004.log",
+      "sha256": "9086d1ee49b7e1aa33edfde38707fb7450b562f2b64ec6cbe5bbf31f6c3530cd",
+      "bytes": 8695587
+    }
+  },
+  "wrapper_terminal_log": {
+    "path": "work/battery-cleanup-build-verified-20261004.log",
+    "sha256": "6e0134c106f011f0487e03c58cf991da1657e741b4bc959b55b8572649aaaced",
+    "bytes": 340
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "status": "passed",
+  "scope": "Original loader rows and static resource audit; no runtime claim",
+  "source_rows": [
+    {
+      "source_id": 14000,
+      "tier": 0,
+      "voltage": 8,
+      "capacity_multiplier": 2000,
+      "source_line_sha256": "b597b021f652ae7968d413b6cf42288b70fe98c010db34da934f0716fc252fa0"
+    },
+    {
+      "source_id": 14001,
+      "tier": 1,
+      "voltage": 32,
+      "capacity_multiplier": 2000,
+      "source_line_sha256": "07278484466612c06e395f322e7d24875fd802c1c5ada81213b286220199371c"
+    },
+    {
+      "source_id": 14002,
+      "tier": 2,
+      "voltage": 128,
+      "capacity_multiplier": 2000,
+      "source_line_sha256": "a36e1c1e293462bedd988ab3c72cbf10bc48186358af4043460ae7d565b1c035"
+    },
+    {
+      "source_id": 14003,
+      "tier": 3,
+      "voltage": 512,
+      "capacity_multiplier": 2000,
+      "source_line_sha256": "8bf9f2a7d8368d436387d083c1255f6301ffd5e42a9789bb7b6f7ef9d519965a"
+    },
+    {
+      "source_id": 14004,
+      "tier": 4,
+      "voltage": 2048,
+      "capacity_multiplier": 2000,
+      "source_line_sha256": "fe43efeff20ae77a1fc2d9aa04cc54d071cce7180d7002335c26873645942f91"
+    },
+    {
+      "source_id": 14010,
+      "tier": 0,
+      "voltage": 8,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "31c3568f367f5d274d0b2da62aa00a11d2eed3af4aaa72117055bc3c2b329dd4"
+    },
+    {
+      "source_id": 14011,
+      "tier": 1,
+      "voltage": 32,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "2ae2f85976f1493e891bbc66cd0b6de85eefa82bf917eae3c627f57f83d8eb13"
+    },
+    {
+      "source_id": 14012,
+      "tier": 2,
+      "voltage": 128,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "7d45d2cafd3e19937491d885f871ea30a1723fc671e7aba78c9e3e0992cfc6a9"
+    },
+    {
+      "source_id": 14013,
+      "tier": 3,
+      "voltage": 512,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "33f27f7303fe5ca86cdc98884a7a79c61d2d75b984df8c0df530bdcd5cd1c6e9"
+    },
+    {
+      "source_id": 14014,
+      "tier": 4,
+      "voltage": 2048,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "3fb0b4900da8dbc9404edb06d90db4ab9819c35cd56aebc73dc024945b20caf3"
+    },
+    {
+      "source_id": 14020,
+      "tier": 0,
+      "voltage": 8,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "2aeb0c24643db3b12b1d77f8460d1d981fdc23303b145dffcc147f5489738d29"
+    },
+    {
+      "source_id": 14021,
+      "tier": 1,
+      "voltage": 32,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "f13e4ac686adf6145fe6e5b4303ab5f4dccc0536b25f9c289257a1291b1d14df"
+    },
+    {
+      "source_id": 14022,
+      "tier": 2,
+      "voltage": 128,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "0de1677fd096cd019254a14bb8acc15825d2fce4f3afbb6004fd9689f5d0dd94"
+    },
+    {
+      "source_id": 14023,
+      "tier": 3,
+      "voltage": 512,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "fabb42c73073ed9cf1631b2a612600fa91b97377930c98a543ceac8d292b99d4"
+    },
+    {
+      "source_id": 14024,
+      "tier": 4,
+      "voltage": 2048,
+      "capacity_multiplier": 4000,
+      "source_line_sha256": "5e6ccc282d8a6c961591e3899ba67072ccffc1a86345982a3f002921a3705a31"
+    },
+    {
+      "source_id": 14030,
+      "tier": 0,
+      "voltage": 8,
+      "capacity_multiplier": 64000,
+      "source_line_sha256": "6615459b772aee2e4d5cc284025c06427cf0fd113aa7110bc838d49888a95f2a"
+    },
+    {
+      "source_id": 14031,
+      "tier": 1,
+      "voltage": 32,
+      "capacity_multiplier": 64000,
+      "source_line_sha256": "1b6fe4c6611829bd20dccd596736a8139535fa2a7a7570f8671efd8b714b02cc"
+    },
+    {
+      "source_id": 14032,
+      "tier": 2,
+      "voltage": 128,
+      "capacity_multiplier": 64000,
+      "source_line_sha256": "fd00a16b90cb9383f374c2b7039e7d40f3703c38836206931c0cd6de7c2bcf46"
+    },
+    {
+      "source_id": 14033,
+      "tier": 3,
+      "voltage": 512,
+      "capacity_multiplier": 64000,
+      "source_line_sha256": "f68f7ff564ec83b93232313f9a577d4b99efeeb5a69975d7086788efb128746d"
+    },
+    {
+      "source_id": 14034,
+      "tier": 4,
+      "voltage": 2048,
+      "capacity_multiplier": 64000,
+      "source_line_sha256": "5e7444c12221e05e9951eaf2eaead3a4c6daec8eaa9f88cc21342089db567a19"
+    },
+    {
+      "source_id": 14040,
+      "tier": 0,
+      "voltage": 8,
+      "capacity_multiplier": 128000,
+      "source_line_sha256": "5a77e1c675475f127a11ee11a7a5ae30aaf0fc23a91a070c37ec039438ae80a0"
+    },
+    {
+      "source_id": 14041,
+      "tier": 1,
+      "voltage": 32,
+      "capacity_multiplier": 128000,
+      "source_line_sha256": "2fbb228cff6185bbf18227a90c1b3e1d777e84e8f8597a7bc7b3a5651f7d75cb"
+    },
+    {
+      "source_id": 14042,
+      "tier": 2,
+      "voltage": 128,
+      "capacity_multiplier": 128000,
+      "source_line_sha256": "39e9aae75b49198545958043b0cacb6284913db175c4f0f33240e2a9b8e78c5a"
+    },
+    {
+      "source_id": 14043,
+      "tier": 3,
+      "voltage": 512,
+      "capacity_multiplier": 128000,
+      "source_line_sha256": "27b49e78575f3327eebbda76b41d4d00e9facf7a77335df5ca07d0996279d5f6"
+    },
+    {
+      "source_id": 14044,
+      "tier": 4,
+      "voltage": 2048,
+      "capacity_multiplier": 128000,
+      "source_line_sha256": "051e648a493b9f65a55c306e0c7bb679360be1704e13a16291627598ca6bf473"
+    }
+  ],
+  "tags": [
+    {
+      "path": "src/main/resources/data/gregtech/tags/items/rechargeable_batteries/ulv.json",
+      "sha256": "f2f24b521a82bd6a70b04eaff9061f0457de9af1937257954d36edb3a9677ead",
+      "entries": [
+        "gregtech:battery_lead_acid_ulv",
+        "gregtech:battery_alkaline_ulv",
+        "gregtech:battery_nickel_cadmium_ulv",
+        "gregtech:battery_lithium_cobalt_ulv",
+        "gregtech:battery_lithium_manganese_ulv",
+        "gregtech:battery_eu_8"
+      ]
+    },
+    {
+      "path": "src/main/resources/data/gregtech/tags/items/rechargeable_batteries/lv.json",
+      "sha256": "ef29569f2b4eddfe9e9a9a56113d820e900f1212c4b0af8723e8118f6d6930a1",
+      "entries": [
+        "gregtech:battery_lead_acid_lv",
+        "gregtech:battery_alkaline_lv",
+        "gregtech:battery_nickel_cadmium_lv",
+        "gregtech:battery_lithium_cobalt_lv",
+        "gregtech:battery_lithium_manganese_lv",
+        "gregtech:battery_eu_32"
+      ]
+    },
+    {
+      "path": "src/main/resources/data/gregtech/tags/items/rechargeable_batteries/mv.json",
+      "sha256": "780b0898b3aee25296ddfc00be9b4e9f5eeccb1e6365927a6ce58a3908ad1d0e",
+      "entries": [
+        "gregtech:battery_lead_acid_mv",
+        "gregtech:battery_alkaline_mv",
+        "gregtech:battery_nickel_cadmium_mv",
+        "gregtech:battery_lithium_cobalt_mv",
+        "gregtech:battery_lithium_manganese_mv",
+        "gregtech:battery_eu_128"
+      ]
+    },
+    {
+      "path": "src/main/resources/data/gregtech/tags/items/rechargeable_batteries/hv.json",
+      "sha256": "bdc3a585f740818195cb624f884d82200b82217eac874d3a6c99dcfa5e0a19d8",
+      "entries": [
+        "gregtech:battery_lead_acid_hv",
+        "gregtech:battery_alkaline_hv",
+        "gregtech:battery_nickel_cadmium_hv",
+        "gregtech:battery_lithium_cobalt_hv",
+        "gregtech:battery_lithium_manganese_hv",
+        "gregtech:battery_eu_512"
+      ]
+    },
+    {
+      "path": "src/main/resources/data/gregtech/tags/items/rechargeable_batteries/ev.json",
+      "sha256": "2b4b935638dfe151a99d2f25a97fec40d613a45d297e5f440b83ed35d889e43c",
+      "entries": [
+        "gregtech:battery_lead_acid_ev",
+        "gregtech:battery_alkaline_ev",
+        "gregtech:battery_nickel_cadmium_ev",
+        "gregtech:battery_lithium_cobalt_ev",
+        "gregtech:battery_lithium_manganese_ev",
+        "gregtech:battery_eu_2048"
+      ]
+    },
+    {
+      "path": "neoforge/src/main/resources/data/gregtech/tags/item/rechargeable_batteries/ulv.json",
+      "sha256": "f2f24b521a82bd6a70b04eaff9061f0457de9af1937257954d36edb3a9677ead",
+      "entries": [
+        "gregtech:battery_lead_acid_ulv",
+        "gregtech:battery_alkaline_ulv",
+        "gregtech:battery_nickel_cadmium_ulv",
+        "gregtech:battery_lithium_cobalt_ulv",
+        "gregtech:battery_lithium_manganese_ulv",
+        "gregtech:battery_eu_8"
+      ]
+    },
+    {
+      "path": "neoforge/src/main/resources/data/gregtech/tags/item/rechargeable_batteries/lv.json",
+      "sha256": "ef29569f2b4eddfe9e9a9a56113d820e900f1212c4b0af8723e8118f6d6930a1",
+      "entries": [
+        "gregtech:battery_lead_acid_lv",
+        "gregtech:battery_alkaline_lv",
+        "gregtech:battery_nickel_cadmium_lv",
+        "gregtech:battery_lithium_cobalt_lv",
+        "gregtech:battery_lithium_manganese_lv",
+        "gregtech:battery_eu_32"
+      ]
+    },
+    {
+      "path": "neoforge/src/main/resources/data/gregtech/tags/item/rechargeable_batteries/mv.json",
+      "sha256": "780b0898b3aee25296ddfc00be9b4e9f5eeccb1e6365927a6ce58a3908ad1d0e",
+      "entries": [
+        "gregtech:battery_lead_acid_mv",
+        "gregtech:battery_alkaline_mv",
+        "gregtech:battery_nickel_cadmium_mv",
+        "gregtech:battery_lithium_cobalt_mv",
+        "gregtech:battery_lithium_manganese_mv",
+        "gregtech:battery_eu_128"
+      ]
+    },
+    {
+      "path": "neoforge/src/main/resources/data/gregtech/tags/item/rechargeable_batteries/hv.json",
+      "sha256": "bdc3a585f740818195cb624f884d82200b82217eac874d3a6c99dcfa5e0a19d8",
+      "entries": [
+        "gregtech:battery_lead_acid_hv",
+        "gregtech:battery_alkaline_hv",
+        "gregtech:battery_nickel_cadmium_hv",
+        "gregtech:battery_lithium_cobalt_hv",
+        "gregtech:battery_lithium_manganese_hv",
+        "gregtech:battery_eu_512"
+      ]
+    },
+    {
+      "path": "neoforge/src/main/resources/data/gregtech/tags/item/rechargeable_batteries/ev.json",
+      "sha256": "2b4b935638dfe151a99d2f25a97fec40d613a45d297e5f440b83ed35d889e43c",
+      "entries": [
+        "gregtech:battery_lead_acid_ev",
+        "gregtech:battery_alkaline_ev",
+        "gregtech:battery_nickel_cadmium_ev",
+        "gregtech:battery_lithium_cobalt_ev",
+        "gregtech:battery_lithium_manganese_ev",
+        "gregtech:battery_eu_2048"
+      ]
+    }
+  ],
+  "removed_models": 10,
+  "removed_translations": 10,
+  "all_other_language_values_unchanged": true,
+  "original_sources": {
+    "gregtech/loaders/b/Loader_MultiTileEntities.java": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393",
+    "gregtech/loaders/a/Loader_Tools.java": "e791f2cd6972bfa10767663f78557d2722cac2b7c80f29595815b4a520577b6e",
+    "gregapi/tileentity/energy/TileEntityBase08Battery.java": "4db1df818cd2ef2dbf0ae167af3ed15f9993741380ea67ebc4db9bdc1d170d33"
+  },
+  "dependency_sources": [
+    {
+      "archive": "C:\\Users\\90499\\.gradle\\caches\\forge_gradle\\minecraft_user_repo\\net\\minecraftforge\\forge\\1.20.1-47.2.20_mapped_official_1.20.1\\forge-1.20.1-47.2.20_mapped_official_1.20.1-sources.jar",
+      "source": "net/minecraftforge/registries/ForgeRegistry.java",
+      "sha256": "dc20982c74d2f75a6a6318df1054a7d4e930a7ca09574c4a45a536b640013186"
+    },
+    {
+      "archive": "C:\\Users\\90499\\.gradle\\caches\\forge_gradle\\minecraft_user_repo\\net\\minecraftforge\\forge\\1.20.1-47.2.20_mapped_official_1.20.1\\forge-1.20.1-47.2.20_mapped_official_1.20.1-sources.jar",
+      "source": "net/minecraftforge/registries/MissingMappingsEvent.java",
+      "sha256": "c28158e0fd079f8009a3c42a968c55e0d28f842f6a08b1a32ed3681ff4bfd1d4"
+    },
+    {
+      "archive": "C:\\Users\\90499\\.gradle\\caches\\modules-2\\files-2.1\\net.neoforged\\neoforge\\21.1.243\\7c3c8a58e626916d133b20bc249e1a7e5f1a306b\\neoforge-21.1.243-sources.jar",
+      "source": "net/neoforged/neoforge/registries/DeferredRegister.java",
+      "sha256": "725f5b09cd0b356c8371358a78d0ed2457cb2f14a0586d7179bf42ab02dd6163"
+    },
+    {
+      "archive": "C:\\Users\\90499\\.gradle\\caches\\modules-2\\files-2.1\\net.neoforged\\neoforge\\21.1.243\\7c3c8a58e626916d133b20bc249e1a7e5f1a306b\\neoforge-21.1.243-sources.jar",
+      "source": "net/neoforged/neoforge/registries/BaseMappedRegistry.java",
+      "sha256": "a97ff84a872dc8a205170716658d9104149463647c4bd732b7a0c10a5cd5cb1d"
+    },
+    {
+      "archive": "work\\emi-sources.jar",
+      "source": "dev/emi/emi/runtime/EmiReloadManager.java",
+      "sha256": "50da19ec9acca0c9085519f3a5b7affa90e1f77b3feed4ff42de7f1e7941dd15"
+    },
+    {
+      "archive": "C:\\Users\\90499\\.gradle\\caches\\forge_gradle\\maven_downloader\\net\\minecraftforge\\forge\\1.20.1-47.4.20\\forge-1.20.1-47.4.20-sources.jar",
+      "source": "net/minecraftforge/registries/ForgeRegistry.java",
+      "sha256": "166d4d874bb6f3a7e3f0e6317d5ee627edaf9e0bc62ea0aebb32d852e9ba30c8"
+    },
+    {
+      "archive": "C:\\Users\\90499\\.gradle\\caches\\forge_gradle\\maven_downloader\\net\\minecraftforge\\forge\\1.20.1-47.4.20\\forge-1.20.1-47.4.20-sources.jar",
+      "source": "net/minecraftforge/registries/MissingMappingsEvent.java",
+      "sha256": "5f97b1976cd583aa4cda59f9abf3abfb7ebeb806b215717c6ce8e0ea38ab65cb"
+    }
+  ],
+  "verified_source_commit": "e70e7f95937b1999305b866660a11d2f6780cc43"
+}

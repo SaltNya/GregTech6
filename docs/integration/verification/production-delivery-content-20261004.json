@@ -1,0 +1,173 @@
+{
+  "status": "passed",
+  "scope": "Diagnosed original installed failures; fixed production packaging, actual isolated distribution clients and stable publication. Original user instance untouched.",
+  "verified_source_commit": "e70e7f95937b1999305b866660a11d2f6780cc43",
+  "initial_installed_files": [
+    {
+      "platform": "neoforge",
+      "installed_path": "C:\\Minecraft整合包\\test\\.minecraft\\versions\\1.21.1-NeoForge_21.1.252\\mods\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "installed_bytes": 4032573,
+      "installed_sha256": "e92796c2639d946afb5e2c71012a2e65a545f6d87ddfeb8ad6ac0dbce5799ac9",
+      "installed_modified": "2026-10-04T14:51:05.711099+08:00",
+      "output_bytes": 37400282,
+      "output_sha256": "d6521c5b78b7ce2231981d4cb8c7f396316d9cf0b6e211668ba10ed1d63db44f",
+      "output_modified": "2026-10-04T14:51:45.733376+08:00",
+      "installed_matches_output_prefix": false,
+      "installed_error": "File is not a zip file",
+      "output_entries": 80670,
+      "output_refmap": [],
+      "output_crc_failure": null
+    },
+    {
+      "platform": "forge",
+      "installed_path": "C:\\Minecraft整合包\\test\\.minecraft\\versions\\1.20.1-Forge_47.4.26\\mods\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "installed_bytes": 39172121,
+      "installed_sha256": "245f0600f0488883410e692720849a23ebcda5072b0e7d0a271755fdb66de95a",
+      "installed_modified": "2026-10-04T14:50:57.712230+08:00",
+      "output_bytes": 39172121,
+      "output_sha256": "245f0600f0488883410e692720849a23ebcda5072b0e7d0a271755fdb66de95a",
+      "output_modified": "2026-10-04T14:50:57.712230+08:00",
+      "installed_matches_output_prefix": true,
+      "installed_entries": 81697,
+      "installed_refmap": [],
+      "installed_crc_failure": null,
+      "output_entries": 81697,
+      "output_refmap": [],
+      "output_crc_failure": null
+    }
+  ],
+  "library_scan": {
+    "jar_count": 333,
+    "bad_zip_directories": 0,
+    "scope": "ZIP directory only; not every library CRC or semantics"
+  },
+  "negative_packaging_checks": [
+    {
+      "platform": "forge",
+      "rejected": true,
+      "exit_code": 1,
+      "reason": "Packaging failed: C:\\Minecraft整合包\\test\\.minecraft\\versions\\1.20.1-Forge_47.4.26\\mods\\gregtech6-1.20.1-forge-0.0.0.jar: missing Mixin refmap gregtech.refmap.json"
+    },
+    {
+      "platform": "neoforge",
+      "rejected": true,
+      "exit_code": 1,
+      "reason": "Packaging failed: File is not a zip file"
+    }
+  ],
+  "final_artifact_report": {
+    "path": "docs/integration/verification/battery-cleanup-artifacts-20261004.json",
+    "sha256": "54942d3f0648b9a2d69230f3b625532cad096e51538dba4c7744fc300a0885bc",
+    "bytes": 276287
+  },
+  "final_build_log": {
+    "path": "build/preflight/production-delivery-assemble-20261004.log",
+    "sha256": "190cc2b3d96c8bf99a7a6624a4d269be8fa4f461715d778c7bf668f36c875b8f",
+    "bytes": 28133
+  },
+  "probe_final_build_log": {
+    "path": "build/preflight/production-probe-final-20261004.log",
+    "sha256": "b0a01667e8ee801d284bb950faa07b21edd8cb8ff348095839425436b8adb49b",
+    "bytes": 1530
+  },
+  "failed_helper_attempts": [
+    {
+      "accepted": false,
+      "reason": "Launcher UTF-8 argument-file encoding, before game loading",
+      "log": {
+        "path": "build/production-smoke/forge-dc53dce9-d1e4-4ea6-a061-0ddf29a5b9f8/launch.log",
+        "sha256": "82a1023baa70fd689b3c789ca5d6bb50330e27056e537ccf1617c8f6c546d1e5",
+        "bytes": 391
+      }
+    },
+    {
+      "accepted": false,
+      "reason": "Probe resource metadata warning page; manually stopped without success receipt",
+      "log": {
+        "path": "build/production-smoke/forge-29653032-7175-4590-a0e1-57402382e5b2/launch.log",
+        "sha256": "c49008241286f11ac21dd5fc12fb7a7e1182b13b42174962e213c690788d10ce",
+        "bytes": 38961
+      }
+    },
+    {
+      "accepted": false,
+      "reason": "Diagnostic probe confirmed LoadingErrorScreen; manually stopped without success receipt",
+      "log": {
+        "path": "build/production-smoke/forge-5efc92bc-7653-4771-a0bb-bd9500333186/launch.log",
+        "sha256": "764730fcc67550731f56d6523d1657df403e81f22707fdc05e3a63af4d1dc9dd",
+        "bytes": 39225
+      }
+    },
+    {
+      "accepted": false,
+      "reason": "Launcher repeated Gson library from installed version JSON, before game loading",
+      "log": {
+        "path": "build/production-smoke/neoforge-3cd43d69-d3e6-40fe-a88d-c258d38d090b/launch.log",
+        "sha256": "484b2e0c7ab973814a9ddf2079824a4b700b39034001b1517d3757c8f3da9a7c",
+        "bytes": 4148
+      }
+    }
+  ],
+  "runtime_reports": {
+    "forge": {
+      "path": "docs/integration/verification/production-forge-startup-20261004.json",
+      "sha256": "ade36e217562ff3a256998ec911a3ea82b87d4fddf8c340abd7dfa61e06a14ae",
+      "bytes": 2813
+    },
+    "neoforge": {
+      "path": "docs/integration/verification/production-neoforge-startup-20261004.json",
+      "sha256": "a204b4e1a675701bced5bfc536b2de485b3a2e109dc39efde713ee38be6be974",
+      "bytes": 2656
+    }
+  },
+  "installed_files_modified": false,
+  "wrapper_end_to_end_repeated": false,
+  "post_runtime_launcher_guards": "Final source/copy hash equality checked on both actual successful receipts; Windows OS-version-rule formatter changed without changing these tested profiles (neither declares os.version rules).",
+  "publication_report": {
+    "path": "docs/integration/verification/production-delivery-publication-20261004.json",
+    "sha256": "d61649f6cc9275b5797a6fd76c0b9c0f93bf82f485fdd8302eb982d416ac4535",
+    "bytes": 1110
+  },
+  "delivery_sources": [
+    {
+      "path": "build.gradle",
+      "sha256": "0b8faf02a860b35a90e2c11335cdd9d9c03fc690ddf18d1f27ba1511cbc9e1e5",
+      "bytes": 21030
+    },
+    {
+      "path": "neoforge/build.gradle",
+      "sha256": "174e175a83810381675a88f455b914457628d14f7a203a30d3edba2574d2a4d1",
+      "bytes": 9780
+    },
+    {
+      "path": "tools/integration/build_verified.ps1",
+      "sha256": "8baa4b2290de85759233f46c9f8235fd08e24f4629aa5b8a82718cf097133c6e",
+      "bytes": 5331
+    },
+    {
+      "path": "tools/integration/verify_artifacts.py",
+      "sha256": "a5cc8985f5de4f782aaae71b0cb35f33eb3bc9deae1fad6fa8a53ceef741db24",
+      "bytes": 15141
+    },
+    {
+      "path": "tools/integration/launch_production_smoke.py",
+      "sha256": "d622194cbc66448bdc25eae98edd9f16e29cab7136ba2b98633aa570273a5a02",
+      "bytes": 10996
+    },
+    {
+      "path": "tools/integration/publish_verified_artifacts.py",
+      "sha256": "a9ca9ca1cb4cfc9cdb64dbd8c7a3b0fdbeb1bb21ae4126c51cd4031703723a43",
+      "bytes": 3235
+    },
+    {
+      "path": "src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/ProductionClientSmoke.java",
+      "sha256": "0456a28ee57d471b6c8ba594fac57b63c54e6da18b2c4cb8fe00757064bd024f",
+      "bytes": 5519
+    },
+    {
+      "path": "neoforge/src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/ProductionClientSmoke.java",
+      "sha256": "236939f1eb40b0e31aa26ccd7920e5c5c52a3b979fc751bac3d03157f24ca2fb",
+      "bytes": 3464
+    }
+  ]
+}
