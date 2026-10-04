@@ -1,0 +1,162 @@
+{
+  "platforms": {
+    "forge": {
+      "native_class_count": 5,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/client/MaterialClientModels.class",
+          "jar_sha256": "ed7a49612a9026f97c8a6a335a5960f34abdcc007435573a8d0532f64d3615ff",
+          "compiled_sha256": "fb65cfeee330d1fc4088fa61efe2dd5bae3f17499755c582377104771020c728",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/MoldItemBakedModel$1.class",
+          "jar_sha256": "ab894c43ebf7e732838f6a1c2bebf435b32f616418efe2985a69c13b3e7d8eb6",
+          "compiled_sha256": "f4e1ecd5346d3638857333b91a80dbf06c918f26453b5c507e7d4702759927cb",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/MoldItemBakedModel$2.class",
+          "jar_sha256": "dc15d6883f37ec2d1934cf4cf76241e9f0cbb9dfc154469d35ddd8492af08573",
+          "compiled_sha256": "2d2731f1a23036ab59017c1bbf71a661297318301f5f911f982a6ac14739d9ad",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/MoldItemBakedModel.class",
+          "jar_sha256": "519c8d65e663198112f9def41a5ed026287224e0218e5a0813ea45d9ea99ea70",
+          "compiled_sha256": "e89323665cf40d6bbaadbcbf2f49fa73f0d26f06d1f890b97714e09bf2ca2ce4",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/SmelteryClientModels.class",
+          "jar_sha256": "2bddbbdad774828e5e258b219e4f00b018964610a08c9f6523431503aa45a1be",
+          "compiled_sha256": "6a45350e856d28890fa79ca4cb525631c7975251aebf30ebe438acf587c02754",
+          "byte_equal": false
+        }
+      ],
+      "mold_has_no_global_minecraft_reference": true
+    },
+    "neoforge": {
+      "native_class_count": 7,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/client/MaterialClientModels.class",
+          "jar_sha256": "36a9cb4a12c6770844fad65b31a3e281463fd63d5a0338fba1184b827f1ca2b4",
+          "compiled_sha256": "36a9cb4a12c6770844fad65b31a3e281463fd63d5a0338fba1184b827f1ca2b4",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/MoldItemBakedModel$1.class",
+          "jar_sha256": "67737e4eea1de37c3d13be17d2b36bd97d3c3c886dbe86d2716c4f38b39def7a",
+          "compiled_sha256": "67737e4eea1de37c3d13be17d2b36bd97d3c3c886dbe86d2716c4f38b39def7a",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/MoldItemBakedModel$2.class",
+          "jar_sha256": "ab7d509b7f900e210cbe3a3f1fdaefb123d90b5bdae18ae44c6732d27fc352a9",
+          "compiled_sha256": "ab7d509b7f900e210cbe3a3f1fdaefb123d90b5bdae18ae44c6732d27fc352a9",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/MoldItemBakedModel.class",
+          "jar_sha256": "eab500d63b3dbb8fb266e99c4c358888ff429bad7c0dab618fe5f2013228de43",
+          "compiled_sha256": "eab500d63b3dbb8fb266e99c4c358888ff429bad7c0dab618fe5f2013228de43",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/client/SmelteryClientModels.class",
+          "jar_sha256": "0395e10c4e16c92d8ce2a29550d08e0247fa6a1cfe2eb64a9f82d46f8b4ec0ad",
+          "compiled_sha256": "0395e10c4e16c92d8ce2a29550d08e0247fa6a1cfe2eb64a9f82d46f8b4ec0ad",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/NeoMachineRecipeLoader.class",
+          "jar_sha256": "6c20e6e66c9050f18e580c638db2fd7940dfcd4da43b2801818c535e64a980b3",
+          "compiled_sha256": "6c20e6e66c9050f18e580c638db2fd7940dfcd4da43b2801818c535e64a980b3",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/platform/neoforge/GregTechNeoForge.class",
+          "jar_sha256": "9fe2a8faea9fd98c2ea6f9ff87c06c960895823e09724cd80f9dc949f020d4dd",
+          "compiled_sha256": "9fe2a8faea9fd98c2ea6f9ff87c06c960895823e09724cd80f9dc949f020d4dd",
+          "byte_equal": true
+        }
+      ],
+      "mold_has_no_global_minecraft_reference": true
+    }
+  },
+  "runtime_evidence": {
+    "type": "Single NeoForge development client startup; no world or GameTest",
+    "neoforge": "21.1.243",
+    "java": "21.0.7",
+    "receipt": {
+      "platform": "neoforge",
+      "minecraft": "1.21.1",
+      "timeoutSeconds": 180,
+      "elapsedMs": 105693,
+      "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\client-smoke-run\\screenshots\\gregtech-client-smoke-neoforge-1.21.1-1c5fc3b2-5c84-4fc2-a6c2-8409b659deb3.png",
+      "width": 1280,
+      "height": 720,
+      "renderedFrames": 151,
+      "screen": "net.minecraft.client.gui.screens.TitleScreen"
+    },
+    "screenshot_sha256": "e0900766567b0a598b61c66fd16b563bf2e7682a47c304f160ce10ba2bb3d9f8",
+    "log_sha256": "a41fa489a20640c8e7dbc87789917bb0da6ad388b0d258c87f94873cb9651e0d",
+    "mold_alias_line": [
+      "[12:51:21] [Worker-Main-7/INFO] [co.gr.gr.cl.SmelteryClientModels/]: [gregtech] Smeltery hull aliasing: 39 basins, 39 molds, 39 crossings, 39 faucets"
+    ],
+    "original_failure_absent": true
+  },
+  "logs": [
+    {
+      "path": "work\\startup-fixes-build-20261004.log",
+      "sha256": "a1c955146570f575d1716502e0768c984be0a732e95d8c01d4ce41693ea4aad8"
+    },
+    {
+      "path": "work\\startup-model-bindings-final-20261004.log",
+      "sha256": "005e9601744efde79752941d140f6a312a0656438829f1014dbc7f51f4d98f0f"
+    },
+    {
+      "path": "work\\user-neo-startup-excerpt-20261004.txt",
+      "sha256": "35bb2315c291c4bb669f526eaf066e6fde0adc97bb6612ab1888e6813a9ca0b9"
+    }
+  ],
+  "sources": [
+    {
+      "path": "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\MaterialClientModels.java",
+      "sha256": "cd43867556be7810006ae3f4c961ec21ed33f1220039b3d03c72668d24bb161b"
+    },
+    {
+      "path": "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\MoldItemBakedModel.java",
+      "sha256": "3a0ba7153d8f02e2873a7eba0a85e720e9e57f9dc288354914f6b6748e1a433b"
+    },
+    {
+      "path": "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\client\\SmelteryClientModels.java",
+      "sha256": "f5445c7d927eb9fa11afe6b85d01a15266a4b92715bad830fdbf47d0e94f4d64"
+    },
+    {
+      "path": "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\content\\recipe\\NeoMachineRecipeLoader.java",
+      "sha256": "6b9187e564dcc029a8870df04c15b88e400997809cf8c514a68b89bab828a84d"
+    },
+    {
+      "path": "neoforge\\src\\main\\java\\com\\gregtech\\gregtech\\platform\\neoforge\\GregTechNeoForge.java",
+      "sha256": "95e3a6f6de7dd96fb90725244a26e5808716aee1e433ffcb93b5a1142069f732"
+    },
+    {
+      "path": "src\\main\\java\\com\\gregtech\\gregtech\\client\\MaterialClientModels.java",
+      "sha256": "bd58d9e5015627d385268c169b15757e837292aee13d4263aeab2ead7ccf5b83"
+    },
+    {
+      "path": "src\\main\\java\\com\\gregtech\\gregtech\\client\\MoldItemBakedModel.java",
+      "sha256": "09f47a329351c57bbc24d1864291d7add6dacaba9505cd2048a5b99f88f7b46b"
+    },
+    {
+      "path": "src\\main\\java\\com\\gregtech\\gregtech\\client\\SmelteryClientModels.java",
+      "sha256": "755b1ababed36eb766814056de3a6d880d6f512a525143758faf6e5a4227f03e"
+    },
+    {
+      "path": "core\\src\\main\\java\\com\\gregtech\\gregtech\\api\\mod\\SetupOnce.java",
+      "sha256": "f586cbeec27d44679ed218e82ff586cb7f363056ed83e3a494cb098bf733dbae"
+    }
+  ]
+}
