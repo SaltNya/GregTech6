@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "scope": "complete definitions/post-init graph; only four source external-prefix observations added",
+  "stages": {
+    "definitions": {
+      "before_sha256": "b9b3a70094c6c0c10c3ce04c05ddeda63db5f5ab5e57644dd1b569bd853463b3",
+      "after_sha256": "5a76a35f681c54cb18c213bcab90615a62f6bc2f5b70738753e997e358d77c6c",
+      "unchanged_rows": 129232,
+      "removed_rows": 0,
+      "added_prefix_rows": [
+        "P|chunk|chunk|Chunks|chunk|false|0.0|1297296000",
+        "P|pebbles|pebbles|Pebbles|pebbles|false|0.0|1945944000",
+        "P|rawOreChunk|raw_ore_chunk|Raw Ore Chunks|raworechunk|false|0.0|243243000",
+        "P|rubble|rubble|Rubble|rubble|false|0.0|1297296000"
+      ],
+      "added_material_form_rows": 4640
+    },
+    "post": {
+      "before_sha256": "f417a3ecf42ceefe2ae76712cdee4d8da3b7ecb087270d544fc7cc2683de1278",
+      "after_sha256": "85227d4dfc85c2f5e85d954e3cd538fe27c9ccdf9e14d9257e3cafdd829cbc74",
+      "unchanged_rows": 129232,
+      "removed_rows": 0,
+      "added_prefix_rows": [
+        "P|chunk|chunk|Chunks|chunk|false|0.0|1297296000",
+        "P|pebbles|pebbles|Pebbles|pebbles|false|0.0|1945944000",
+        "P|rawOreChunk|raw_ore_chunk|Raw Ore Chunks|raworechunk|false|0.0|243243000",
+        "P|rubble|rubble|Rubble|rubble|false|0.0|1297296000"
+      ],
+      "added_material_form_rows": 4640
+    }
+  }
+}
