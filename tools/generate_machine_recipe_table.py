@@ -3,8 +3,8 @@
 
 Input : tools/gt6_basic_machine_recipes.json  (extracted from
         gregtech6-master/.../Loader_MultiTileEntities.java, tab "Basic Machines")
-        src/main/java/.../content/machine/BasicMachineDefinitions.java (tier counts)
-Output: src/main/java/com/gregtech/gregtech/data/BasicMachineCraftingRecipes.java
+        core/src/main/java/.../content/machine/BasicMachineCatalog.java (tier counts)
+Output: core/src/main/java/com/gregtech/gregtech/data/BasicMachineCraftingRecipes.java
 
 The generated table carries the ORIGINAL GT6 pattern rows and key symbols for every
 port machine variant. Ingredient resolution (material forms, tier components,
@@ -18,7 +18,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-JAVA = ROOT / "src/main/java/com/gregtech/gregtech"
+JAVA = ROOT / "core/src/main/java/com/gregtech/gregtech"
 SOURCE_JSON = Path(__file__).with_name("gt6_basic_machine_recipes.json")
 OUT = JAVA / "data/BasicMachineCraftingRecipes.java"
 
@@ -329,6 +329,9 @@ def translate(expr: str) -> str:
         if prefix.startswith("wireGt") or prefix.startswith("cableGt"):
             size = int(re.sub(r"\D", "", prefix))
             kind = "cable" if prefix.startswith("cableGt") else "wire"
+            family = {"ANY.Iron": "any_iron_or_steel", "ANY.Cu": "any_copper"}.get(mat_expr)
+            if family:
+                return "tag:gregtech:%s_%02d/%s" % (kind, size, family)
             return "%s:%d@%s" % (kind, size, material)
         return "mat:%s@%s" % (prefix, material)
 
@@ -361,7 +364,7 @@ def translate(expr: str) -> str:
 
 
 def port_tier_counts() -> dict[str, int]:
-    src = (JAVA / "content/machine/BasicMachineDefinitions.java").read_text(encoding="utf-8")
+    src = (JAVA / "content/machine/BasicMachineCatalog.java").read_text(encoding="utf-8")
     known = {
         "HU_TIERS": 4,
         "RU_KU_TIERS": 4,
@@ -380,6 +383,8 @@ def port_tier_counts() -> dict[str, int]:
             counts[name] = tier_expr.count("Materials.")
         else:
             raise SystemExit("cannot determine tier count for %s (%r)" % (name, tier_expr))
+    if not counts:
+        raise SystemExit("No shared MachineDef rows found; refusing to generate empty machine tables")
     return counts
 
 
@@ -397,6 +402,10 @@ def main() -> int:
 
     def emit(port_name: str, tier: int, entry: dict) -> None:
         keys = {k: translate(v) for k, v in entry["keys"].items()}
+        if port_name == "melter":
+            # aMat is ANY.Iron here, including the source's steel pipe/casing forms.
+            keys["M"] = "tag:gregtech:casing_machine/any_iron_or_steel"
+            keys["P"] = "tag:gregtech:pipe_medium/any_iron_or_steel"
         # Tool characters are implicit in GT6's shaped recipes; make them explicit here.
         for symbol in set("".join(entry["pattern"])) - {" "}:
             if symbol in keys:

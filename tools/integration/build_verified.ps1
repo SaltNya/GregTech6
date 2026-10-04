@@ -44,6 +44,9 @@ try {
         if ($receipt.nativeMobDropEventChecks -ne 17 -or $receipt.newFeedbackCraftingRowsChecked -ne 3 -or $receipt.lootCrateReturnAndStackLimitChecks -ne 2 -or $receipt.lootViewer -ne 'emi' -or $receipt.lootViewerTables -ne 18 -or $receipt.lootViewerRows -lt 1000 -or $receipt.mobViewerRows -lt 80 -or $receipt.emiStructureRows -lt 80 -or $receipt.emi_ore_veins -lt 30 -or $receipt.emi_stone_layers_info -lt 50 -or $receipt.emi_small_ores_info -lt 80 -or $receipt.emi_bedrock_ores -lt 20) {
             throw "$platform actual loot/structure/geology viewer receipt is incomplete."
         }
+        if (@($receipt.machineFeedbackCrafting).Count -ne 36 -or @($receipt.lightningProcessorsChecked).Count -ne 5 -or $receipt.sourceEnergyCreativeGroupsChecked -ne 36 -or $receipt.longDistanceCreativeGroupsChecked -ne 16 -or $receipt.sourceMelterOperatingFlagChecks -ne 3 -or $receipt.sourceMachineInventoryModelsChecked -ne 6) {
+            throw "$platform actual machine/transport crafting and rendering receipt is incomplete."
+        }
         foreach ($capture in @('mobViewerScreenshot', 'lootViewerScreenshot', 'emiStructureScreenshot', 'emiVeinsScreenshot', 'emiLayersScreenshot')) {
             if (-not $receipt.$capture -or -not (Test-Path -LiteralPath $receipt.$capture)) {
                 throw "$platform viewer screenshot $capture is missing."

@@ -11,7 +11,7 @@ fusion reactor — 8192 TU/t nominal — was clamped to 1..16 TU/t and could nev
 
 Inputs : tools/gt6_basic_machine_recipes.json    (tab "Basic Machines")
          tools/gt6_multiblock_recipes.json       (tab "Multiblock Machines")
-Output : src/main/java/com/gregtech/gregtech/data/BasicMachineOriginalParams.java
+Output : core/src/main/java/com/gregtech/gregtech/data/BasicMachineOriginalParams.java
 """
 
 from __future__ import annotations

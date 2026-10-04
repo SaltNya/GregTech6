@@ -1,0 +1,70 @@
+{
+  "originalSource": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "authors": "Gregorius Techneticies; GregTech-6 Team",
+  "license": "LGPL-3.0-or-later; original source trees unchanged, existing notices retained",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Blocks.java",
+      "bytes": 20614,
+      "sha256": "4215d81610616b406af400c98ddaee3b0d266cb187c9335d2d6a5dd851284abb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "bytes": 791265,
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\machines\\MultiTileEntityBasicMachine.java",
+      "bytes": 53507,
+      "sha256": "1798706545c33c801735ac5fb56b0ae37a8b6e3b7819f40f41183a2057b0c860"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "bytes": 17964,
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "bytes": 693183,
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "bytes": 153449,
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\load\\LoaderOreDictReRegistrations.java",
+      "bytes": 147540,
+      "sha256": "d34719309a5ddf5bd7fc01c0462b57af52b4cf980a69fae4d4042c2ab78b07ef"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "bytes": 133807,
+      "sha256": "7367922c4938318dd50b1320e7fc7a7453c33cffa46f75a437325314d2536ddc"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\RM.java",
+      "bytes": 93922,
+      "sha256": "c7cb07faef0235ace4bb26656fddaabfa10da6aa4a2689a7f4cdcaef10d366e6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapAssembler.java",
+      "bytes": 3022,
+      "sha256": "bcc79d20d72a4ba7bb4cc73b4c752c5d5d4be27bdc0dc4799b301d7c4ac94722"
+    }
+  ],
+  "adoption": {
+    "longDistance": "15 original-pattern recipes for existing native block IDs; original sixteen wire/five pipe material variants remain pending",
+    "lightning": "source 20501-20505, five registered LV-IV basic machines, grade parameters, original crafting and iron/steel electrodes",
+    "melter": "source 22010, iron casing, shared iron/steel pipe and casing ingredients, cheap overclocking; legacy ID preserved",
+    "parallel": "source BasicMachine 730/743/766-773; power-scaled parallel vs duration-scaled parallel, separate TU handling",
+    "battery": "source 10080-10096 fourteen craftable rows audited; native original items only provide circuit T1-T6, external T7-T9 and missing source transformer10049 unresolved",
+    "assembler": "original RM compatibility recipe map has no Loader_MultiTileEntities machine registration and NEIAllowed=false; no invented machine added"
+  }
+}

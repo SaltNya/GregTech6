@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-JAVA = ROOT / "src/main/java/com/gregtech/gregtech"
+JAVA = ROOT / "core/src/main/java/com/gregtech/gregtech"
 
 # port machine name -> original GT6 machine name (Basic Machines tab), same tier
 SAME_NAME = {
@@ -135,8 +135,8 @@ def norm(expr: str) -> str:
 
 
 def port_tier_counts() -> dict[str, int]:
-    """Tier count per port machine type, parsed from BasicMachineDefinitions.java."""
-    src = (JAVA / "content/machine/BasicMachineDefinitions.java").read_text(encoding="utf-8")
+    """Tier count per port machine type, parsed from shared BasicMachineCatalog.java."""
+    src = (JAVA / "content/machine/BasicMachineCatalog.java").read_text(encoding="utf-8")
     known = {"HU_TIERS": 4, "RU_KU_TIERS": 4, "EU_MU_LU_CU_TIERS": 5, "SS": 1}
     counts: dict[str, int] = {}
     for m in re.finditer(r'new MachineDef\("([a-z_0-9]+)",\s*"(\w+)",\s*([^,]+?),\s*m ->', src):
@@ -147,6 +147,8 @@ def port_tier_counts() -> dict[str, int]:
             counts[name] = tier_expr.count("Materials.")
         else:
             raise SystemExit("cannot determine tier count for %s (%r)" % (name, tier_expr))
+    if not counts:
+        raise SystemExit("No shared MachineDef rows found; refusing to generate empty machine tables")
     return counts
 
 
