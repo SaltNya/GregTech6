@@ -1,0 +1,220 @@
+{
+  "scope": "Actual fresh normal-world development client runs before dual production assemble; no user instance or old save run.",
+  "build_commit": null,
+  "build_working_changes": true,
+  "verified_source_commit": "aa6ca07e2f2c52fa7c7309e82ac47afc1cfee784",
+  "platforms": {
+    "forge": {
+      "development_loader": "47.4.20",
+      "game_java": "17.0.10",
+      "formal_loader": "47.2.20",
+      "minecraft": "1.20.1",
+      "runtime_receipt": {
+        "platform": "forge",
+        "id": "8e6194a4-26f5-430c-b0f8-5e2e9fa955bf",
+        "world": "creation-smoke-8e6194a4-26f5-430c-b0f8-5e2e9fa955bf",
+        "stage": 3,
+        "elapsedMs": 184720,
+        "canonicalItemsChecked": 75868,
+        "recipes": 43366,
+        "serverTicks": 20,
+        "dimension": "minecraft:overworld",
+        "renderedWorldFrames": 30,
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-8e6194a4-26f5-430c-b0f8-5e2e9fa955bf.png"
+      },
+      "runtime_log": {
+        "path": "work/world-creation-forge-final-20261004.log",
+        "sha256": "7618012f31bc51032c8adbf4e31d8aec2f373c398aa8a741102cd9fdff13c526",
+        "bytes": 291422
+      },
+      "fresh_level_dat": {
+        "path": "build/world-creation-smoke-run/saves/creation-smoke-8e6194a4-26f5-430c-b0f8-5e2e9fa955bf/level.dat",
+        "sha256": "d560d1b3efe25cc4938b548aa38a8b11aa6d2d85e098baa6409c5fcd6f513a6c",
+        "bytes": 791756
+      },
+      "receipt_file": {
+        "path": "build/world-creation-smoke-run/world-creation-8e6194a4-26f5-430c-b0f8-5e2e9fa955bf.json",
+        "sha256": "077a1a1d68813596bd4fb223d2854c9b6825ec32540db82befa41bdcdb338698",
+        "bytes": 423
+      },
+      "screenshot": {
+        "path": "build/world-creation-smoke-run/screenshots/world-creation-forge-8e6194a4-26f5-430c-b0f8-5e2e9fa955bf.png",
+        "sha256": "53187c3da372134607f6312ec9c4294f6efac91c25e771f77e1f480a3eb46a03",
+        "bytes": 471252,
+        "dimensions": [
+          1280,
+          720
+        ],
+        "visually_reviewed": true
+      },
+      "jar": {
+        "path": "build/libs/gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "fb96e63b594a9d48bd5b5ca71f474aa748ac19999cdc1816ae4fe0de4ed94f47",
+        "bytes": 39173455
+      },
+      "changed_native_class_count": 2,
+      "changed_native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/recipe/CraftingMaterialForms.class",
+          "jar_sha256": "02bbf7a4e4e3168714dac37569f8929042a87cdeaf2083662e009831acc55a62",
+          "compiled_sha256": "31718af5f60c85dc3df847445b610be1fd3ebb7a276c36a7ddbe07ed09fa6273",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/worldgen/center/NativeOriginWorld.class",
+          "jar_sha256": "4495ee86944dd4a9e159abe4768a89a96ea5818461312ff23bb73f496bbdbc60",
+          "compiled_sha256": "3062fa58df8474a811a133f48d0e677a00fd535a093fcd3dbcd217663d0d4922",
+          "byte_equal": false
+        }
+      ],
+      "native_verification": "Reobfuscated entries present with hashes; compiled byte equality not asserted.",
+      "bootstrap_fixture_excluded": true
+    },
+    "neoforge": {
+      "development_loader": "21.1.243",
+      "game_java": "21.0.7",
+      "formal_loader": "21.1.243",
+      "minecraft": "1.21.1",
+      "runtime_receipt": {
+        "platform": "neoforge",
+        "id": "aff7d571-0143-4932-b9da-34b124e373db",
+        "world": "creation-smoke-aff7d571-0143-4932-b9da-34b124e373db",
+        "stage": 3,
+        "elapsedMs": 131850,
+        "canonicalItemsChecked": 75945,
+        "recipes": 43482,
+        "serverTicks": 43,
+        "dimension": "minecraft:overworld",
+        "renderedWorldFrames": 30,
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-aff7d571-0143-4932-b9da-34b124e373db.png"
+      },
+      "runtime_log": {
+        "path": "work/world-creation-neoforge-20261004.log",
+        "sha256": "5eed3b1f441afffad38f1f8e9a85630ebfa209ad8e2cad5eff1e3c8c5451e397",
+        "bytes": 8690675
+      },
+      "fresh_level_dat": {
+        "path": "neoforge/build/world-creation-smoke-run/saves/creation-smoke-aff7d571-0143-4932-b9da-34b124e373db/level.dat",
+        "sha256": "b6427500a8e3dd28ea4768728a57ef4242ac1f5a98ea63eac15d06416b0d4c31",
+        "bytes": 2643
+      },
+      "receipt_file": {
+        "path": "neoforge/build/world-creation-smoke-run/world-creation-aff7d571-0143-4932-b9da-34b124e373db.json",
+        "sha256": "db1f3527db7ead39ffac6c08ac2736760ee842dc5b1d9488f4111dc4fcf2e077",
+        "bytes": 439
+      },
+      "screenshot": {
+        "path": "neoforge/build/world-creation-smoke-run/screenshots/world-creation-neoforge-aff7d571-0143-4932-b9da-34b124e373db.png",
+        "sha256": "9074824e0223724add2ee22333b53c66d2055327b24e23672092661810a98808",
+        "bytes": 1045981,
+        "dimensions": [
+          1280,
+          720
+        ],
+        "visually_reviewed": true
+      },
+      "jar": {
+        "path": "neoforge/build/libs/gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "63562655b7d6e1ae6652e1a1a1753bf8dc6e0d94a3e7603b520471bba23e7667",
+        "bytes": 37406692
+      },
+      "changed_native_class_count": 2,
+      "changed_native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/recipe/CraftingMaterialForms.class",
+          "jar_sha256": "af8aee61ae23e17020431f8be340ec35dd0a1c35bf933ddc375913a94d036a58",
+          "compiled_sha256": "af8aee61ae23e17020431f8be340ec35dd0a1c35bf933ddc375913a94d036a58",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/worldgen/center/NativeOriginWorld.class",
+          "jar_sha256": "374719e9022265185de2b29232808fb1bd9c02b61c5714730d6cd3797a528375",
+          "compiled_sha256": "374719e9022265185de2b29232808fb1bd9c02b61c5714730d6cd3797a528375",
+          "byte_equal": true
+        }
+      ],
+      "native_verification": "Exact compiled bytes matched.",
+      "bootstrap_fixture_excluded": true
+    }
+  },
+  "logs": {
+    "dual_assemble": {
+      "path": "work/world-creation-build-20261004.log",
+      "sha256": "ef9baa5ef66d88e827cb7332206f2ff20a2ad4617ffd995eb86798e6ab34d545",
+      "bytes": 1490
+    },
+    "sanitized_user_neo": {
+      "path": "work/world-creation-user-neo-excerpt-20261004.txt",
+      "sha256": "83677a7928eed665b301303354a5edbd0eb41b6db5143c3872d87d65c739246b",
+      "bytes": 2111
+    },
+    "sanitized_user_forge": {
+      "path": "work/world-creation-user-forge-excerpt-20261004.txt",
+      "sha256": "527439891d3635597ae130d252ab6cff37dc0f95ac3a8dafc8215277bc8c7eb0",
+      "bytes": 8229
+    }
+  },
+  "source_files": [
+    {
+      "path": "src/main/java/com/gregtech/gregtech/recipe/CraftingMaterialForms.java",
+      "sha256": "02fbc593cd9ae81c2325dc467feff7460f4714249d69be0afe44429c3c59004f",
+      "bytes": 11681
+    },
+    {
+      "path": "src/main/java/com/gregtech/gregtech/worldgen/center/NativeOriginWorld.java",
+      "sha256": "58575311bb0a599e739aafa8ec299a3d81fd1526cb1e2d0d521ec4406b712246",
+      "bytes": 9320
+    },
+    {
+      "path": "src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/WorldCreationSmoke.java",
+      "sha256": "ca2abc6412aea8c386ff1c0ee01c85781beb6c6ceaf0ee5b69035670b5bdf698",
+      "bytes": 10081
+    },
+    {
+      "path": "build.gradle",
+      "sha256": "94a9400d2e8415aae57d106736e9d6f54d361a047cf12323f5731d09dbda7478",
+      "bytes": 20009
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/recipe/CraftingMaterialForms.java",
+      "sha256": "0895622c2cd7bc6f21abb5c1dc5d3d2303cb2fac6afb813e5b8dab64dfed738c",
+      "bytes": 11763
+    },
+    {
+      "path": "neoforge/src/main/java/com/gregtech/gregtech/worldgen/center/NativeOriginWorld.java",
+      "sha256": "7938a97f1335e498fe527cad7b1c9cab097bcd77b90e11d10523b65d588308ab",
+      "bytes": 9347
+    },
+    {
+      "path": "neoforge/src/bootstrapGameTest/java/com/gregtech/gregtech/integration/client/WorldCreationSmoke.java",
+      "sha256": "1c922d0ef29f479f7a0a2e695684274eca34f7047bc09c566a85f3128aef7790",
+      "bytes": 10038
+    },
+    {
+      "path": "neoforge/build.gradle",
+      "sha256": "62bb5667feda9fb2e4caec17afd456e14d15ef3acc68cac237d34c39256874ee",
+      "bytes": 9087
+    },
+    {
+      "path": "tools/integration/build_verified.ps1",
+      "sha256": "cca95b05cb28a23a9f118659b76604e77e56548fd95ce1cabe9221f305cbcb70",
+      "bytes": 3397
+    }
+  ],
+  "limitations": [
+    "Development loader versions differ from the user instance and formal Forge target.",
+    "Neo final fixture also disables pauseOnLostFocus; production code was unchanged after its successful run. The final fixture was compiled without repeating the successful Neo client.",
+    "Local wrapper syntax passed; this batch manually ran its same opt-in entrypoints, checked receipts, then assembled. The wrapper was not rerun end to end.",
+    "Existing nonfatal resource-path and EMI translation errors remain; world creation success is not full gameplay, recipe-chain, Nexus/roads or installed artifact runtime acceptance."
+  ],
+  "formal_build_duration": "9m 15s",
+  "first_forge_attempt": {
+    "accepted": false,
+    "reason": "Isolated client lost focus and entered PauseScreen; watchdog FAILED despite Gradle exit 0.",
+    "log": {
+      "path": "work/world-creation-forge-20261004.log",
+      "sha256": "80a036859260c0cb07f31acf4db5e2346f9e252f15d299e1f93767d591d08d09",
+      "bytes": 328964
+    }
+  }
+}
