@@ -1,0 +1,359 @@
+{
+  "runtime_evidence": "No new client, GameTest, world or save run for solar behavior.",
+  "platforms": {
+    "forge": {
+      "model_count": 20,
+      "blockstate_variant_count": 24,
+      "resources_checked": 24,
+      "native_class_count": 14,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/block/energy/EnergyNodeBlock$1.class",
+          "jar_sha256": "e5c7ee364f673f32ae32f6dbaf5eed18384381a6d62b5afeee39c12c0dffe9d0",
+          "compiled_sha256": "3ae4a04ee1a9405750b02226ccf6c4790d8a96402a68b93495909b0a4aaa0c33",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/energy/EnergyNodeBlock.class",
+          "jar_sha256": "80f807677c97e8416f31f125be3fe1f789396e99ceffa95782ddfba78f6e98dc",
+          "compiled_sha256": "4767365d8067f2c4f5238cd3835d8c932ad2b2718ad48989feb6aa784f560ca1",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/energy/SolarPanelBlock.class",
+          "jar_sha256": "a2f49903667fccbbf0ef58db04fec8a484aea719d9451c7508bd8c742e205050",
+          "compiled_sha256": "08f42cfd52045ceb70a8679ccc82add2ba853d8bea58a0e133a930088a859eaa",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$1.class",
+          "jar_sha256": "329dc6c10a827a4b4e22a4b33b8f77632d7328b07f3f9a3f9e01b5f614494546",
+          "compiled_sha256": "8f9b68adfbad969f22901dcb4ea0f9b570988469991b80db5816d0372b8c16a0",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$2.class",
+          "jar_sha256": "702c0856a2441daa70771ed88217d3befcb2bf6b4274dff52960933dd4dfd5dc",
+          "compiled_sha256": "f2dfb58ad94dc37009f15dc8839c2edc04edbb9c07bfd74bdbaccc15186fbace",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$3.class",
+          "jar_sha256": "742f6beee7e7820cabd75ea1bcc04eedba71288b3152486c13d92cd55faf7cb1",
+          "compiled_sha256": "99946a3079d853e99c49178c942dbdf9be67b73bfe87895808a8a83f5e980806",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$4.class",
+          "jar_sha256": "0d0c5f974b2e090ae0d69fe8049b3cd04054f98c0989fbafa6f41cb79c45b175",
+          "compiled_sha256": "92d2592657feaafc21f31e9f76e2baa6d7d7e459db13472c7d79099493014628",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$5.class",
+          "jar_sha256": "aec61be33df153df634d55e4e8185afa50b7e145c22427eb4c617cc7ed794779",
+          "compiled_sha256": "b1a6ccacf7bc9baf79fd044fd737037707ea7072e008222f295e9bb4d62f8a92",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$6.class",
+          "jar_sha256": "3cf7bf36340097046b4421ba7c08d794ed7fc654361aedc86a565e0ce3e02b64",
+          "compiled_sha256": "749563421c6476ad05cfc4e0e8c5089fabfbfb5d08cfa5a87c00e147e39000a7",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$7.class",
+          "jar_sha256": "1d9d5006f8a7c9899b07846184972196d1d106a895a69acb618db9ad5a418c58",
+          "compiled_sha256": "b0cdf4c670560819d8f0dc6cc21be26e3b787b1ae878d117da82c1b9705253aa",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$8.class",
+          "jar_sha256": "a18a7ac095a90c7c62cc6616a5f62e4d06c29355a590b1ccca963f998e83b0a7",
+          "compiled_sha256": "a60ca7608a61eccaf14883e6113d23b148708259d6c50994814bafd92b3a4f95",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$9.class",
+          "jar_sha256": "3131e05401efb0bd3731cd662f26f001ad0e7bb2bda0d8a6def282cf2ace441a",
+          "compiled_sha256": "6e4e370332fb4c8078b2bde5a835178cbaf551653c84f4fd9cca774eeabe931d",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity.class",
+          "jar_sha256": "43774329462812519b7a1ba4e1661fda050612743dae6bd321bf462c23262848",
+          "compiled_sha256": "dd249cad08c815fdd7b7a758b18f2b96ec390934764289551a699ed6dfd96d8f",
+          "byte_equal": false
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTEnergyNodes.class",
+          "jar_sha256": "4730c1e92b8b267a374cd3190d387967316457d499394e24a00212773ebac00a",
+          "compiled_sha256": "ff2dde7ae62f56e1a64c8289cc2df8cecdd978e1f352814de211f4e277cb691c",
+          "byte_equal": false
+        }
+      ],
+      "native_sources": [
+        {
+          "path": "src/main/java/com/gregtech/gregtech/block/energy/EnergyNodeBlock.java",
+          "sha256": "a659d421f812bda0792b94816f390c21afb0bbdc446eac64ca7c4bddac992d56"
+        },
+        {
+          "path": "src/main/java/com/gregtech/gregtech/block/energy/SolarPanelBlock.java",
+          "sha256": "c5e0f8f4d1e298a672cfd9eb3b163a65e8f7b9cc3478200c533a2aa20c6568d4"
+        },
+        {
+          "path": "src/main/java/com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity.java",
+          "sha256": "4b1b907a25a8cf96f4c8883a3dd266440eaf3b2a3afa922aa80a88543d6c9782"
+        },
+        {
+          "path": "src/main/java/com/gregtech/gregtech/registry/GTEnergyNodes.java",
+          "sha256": "049b6ac0bb36b1adf470113d27d826fc262adce249eb53bffeed6b4590778818"
+        }
+      ]
+    },
+    "neoforge": {
+      "model_count": 20,
+      "blockstate_variant_count": 24,
+      "resources_checked": 24,
+      "native_class_count": 14,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/block/energy/EnergyNodeBlock$1.class",
+          "jar_sha256": "7ab1442532dfc47fadb39cba4f645c0b4bf9863202376b8ee1a7cdc8726c6bc9",
+          "compiled_sha256": "7ab1442532dfc47fadb39cba4f645c0b4bf9863202376b8ee1a7cdc8726c6bc9",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/energy/EnergyNodeBlock.class",
+          "jar_sha256": "073f8a0d4211fb89879b6beafc2d559dda581e223ffd09b16c155b4c8b44d65b",
+          "compiled_sha256": "073f8a0d4211fb89879b6beafc2d559dda581e223ffd09b16c155b4c8b44d65b",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/energy/SolarPanelBlock.class",
+          "jar_sha256": "fda2cf6b2d0fa50a0bac2cc71a93004f4cad97c594874ae7320618236d9a911a",
+          "compiled_sha256": "fda2cf6b2d0fa50a0bac2cc71a93004f4cad97c594874ae7320618236d9a911a",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$1.class",
+          "jar_sha256": "a9c206d03e7c62705d1f9baa7828a60d467ca9c7f1c7ef766dd604e3b88f63ad",
+          "compiled_sha256": "a9c206d03e7c62705d1f9baa7828a60d467ca9c7f1c7ef766dd604e3b88f63ad",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$2.class",
+          "jar_sha256": "40be6326f1522b343d149bcc6526b3b799034278c97d03c730689ce8c94f050d",
+          "compiled_sha256": "40be6326f1522b343d149bcc6526b3b799034278c97d03c730689ce8c94f050d",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$3.class",
+          "jar_sha256": "5c3b9011655a971de78ea74f692454f58b3357da6d22aa0537bbe10aaf18b97f",
+          "compiled_sha256": "5c3b9011655a971de78ea74f692454f58b3357da6d22aa0537bbe10aaf18b97f",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$4.class",
+          "jar_sha256": "cd59203df707004146ceb8343e4d3e72ec00e89c08cf0d6ae0aef707f857baca",
+          "compiled_sha256": "cd59203df707004146ceb8343e4d3e72ec00e89c08cf0d6ae0aef707f857baca",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$5.class",
+          "jar_sha256": "dee93b6f8356d13fc81fac6c4e44418993760fb24341c865db609e97715195c9",
+          "compiled_sha256": "dee93b6f8356d13fc81fac6c4e44418993760fb24341c865db609e97715195c9",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$6.class",
+          "jar_sha256": "c5e8e59c72d2ec4f366ff3a95a35d609fb9a4da08417657edcbc3b452d500a21",
+          "compiled_sha256": "c5e8e59c72d2ec4f366ff3a95a35d609fb9a4da08417657edcbc3b452d500a21",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$7.class",
+          "jar_sha256": "391e10b573d637533e87a3e5dd2d94ee74b458f6c6eece46cf153e43bc46fbc0",
+          "compiled_sha256": "391e10b573d637533e87a3e5dd2d94ee74b458f6c6eece46cf153e43bc46fbc0",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$8.class",
+          "jar_sha256": "8e234e259cd9346ab97c99d29ca1de205a76944d1acf4d7d9b48ffeaa627298e",
+          "compiled_sha256": "8e234e259cd9346ab97c99d29ca1de205a76944d1acf4d7d9b48ffeaa627298e",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity$9.class",
+          "jar_sha256": "9cf54d118ed4b68cfc8b4bc1f225b0ab3ded6666935a8d4efe26eb44212d013e",
+          "compiled_sha256": "9cf54d118ed4b68cfc8b4bc1f225b0ab3ded6666935a8d4efe26eb44212d013e",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity.class",
+          "jar_sha256": "5ce59ddd787a32a43196416f77c0c56c5479bb4dae6fcf565e9070f0aecb2a33",
+          "compiled_sha256": "5ce59ddd787a32a43196416f77c0c56c5479bb4dae6fcf565e9070f0aecb2a33",
+          "byte_equal": true
+        },
+        {
+          "entry": "com/gregtech/gregtech/registry/GTEnergyNodes.class",
+          "jar_sha256": "956298c81764faff9057b2e2896583cac39320199e3edde7d1a2bf6a3908d5b5",
+          "compiled_sha256": "956298c81764faff9057b2e2896583cac39320199e3edde7d1a2bf6a3908d5b5",
+          "byte_equal": true
+        }
+      ],
+      "native_sources": [
+        {
+          "path": "neoforge/src/main/java/com/gregtech/gregtech/block/energy/EnergyNodeBlock.java",
+          "sha256": "0da41309ce5278aa5bfff2baa738a7c71e3b6af83b9ec07de80f495f30fa2b32"
+        },
+        {
+          "path": "neoforge/src/main/java/com/gregtech/gregtech/block/energy/SolarPanelBlock.java",
+          "sha256": "c5e0f8f4d1e298a672cfd9eb3b163a65e8f7b9cc3478200c533a2aa20c6568d4"
+        },
+        {
+          "path": "neoforge/src/main/java/com/gregtech/gregtech/blockentity/energy/EnergyNodeBlockEntity.java",
+          "sha256": "8edef47d632972392388c6ff5b15235fbb9bb9cb9c9755371300ea21dd4b4b45"
+        },
+        {
+          "path": "neoforge/src/main/java/com/gregtech/gregtech/registry/GTEnergyNodes.java",
+          "sha256": "5e7296684fc6b699a3b96b1cc48507c6889c77d2d7f590bf16a94c74cf60c024"
+        }
+      ]
+    }
+  },
+  "distinct_textures": [
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/colored/bottom.png",
+      "sha256": "db9560d38648fee70a0c8618e793d5c262cb269a408af0fdba99518343e4372e"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/colored/bottom_facing.png",
+      "sha256": "db9560d38648fee70a0c8618e793d5c262cb269a408af0fdba99518343e4372e"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/colored/side.png",
+      "sha256": "db9560d38648fee70a0c8618e793d5c262cb269a408af0fdba99518343e4372e"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/colored/side_facing.png",
+      "sha256": "db9560d38648fee70a0c8618e793d5c262cb269a408af0fdba99518343e4372e"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/colored/top.png",
+      "sha256": "db9560d38648fee70a0c8618e793d5c262cb269a408af0fdba99518343e4372e"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay/bottom.png",
+      "sha256": "58afd29807c3c3edaf78a09cb9ab151208babdc738b199dbbe0d10c05fa35e95"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay/bottom_facing.png",
+      "sha256": "d6eda0dda3878355b762c6b60356a5b1eb6746079822a282963c1285921e71a3"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay/side.png",
+      "sha256": "05c5ecdb6bbd3cc1ff1c748d009f71f75a93eebeca1cbca521ab259572e3ca8e"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay/side_facing.png",
+      "sha256": "fc0b24904b4ecf65dc79895ec796ff336400a6d90da39c4dfdfb7bc6add49a4d"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay/top.png",
+      "sha256": "6c2d5fb38bbf909bd9bebc26f282100caec41517e1937569508b99acd129d1d2"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay_active/bottom.png",
+      "sha256": "58afd29807c3c3edaf78a09cb9ab151208babdc738b199dbbe0d10c05fa35e95"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay_active/bottom_facing.png",
+      "sha256": "eb0b3a8c6bae86e319d153af758c8094695dd63ed2d2991ca72920dab1d76428"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay_active/side.png",
+      "sha256": "97649968d50d49707ebb6f316a947906247d6354a3686d76a5999817a8ba7188"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay_active/side_facing.png",
+      "sha256": "e9043e8f0b80515bc47418c6c4fe6a3a82f95e2cdf576601e81c41e8c16e7577"
+    },
+    {
+      "path": "core/src/main/resources/assets/gregtech/textures/block/machines/solarpanels/solarpanel_electric_8eu/overlay_active/top.png",
+      "sha256": "54f6347ef7dced09a5c670adbea951ac9d7693e860cb57615779c15c44d1e706"
+    }
+  ],
+  "source_references": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\energy\\generators\\MultiTileEntitySolarPanelElectric.java",
+      "sha256": "d7846445443eb27ab50a211cf1d7fec1dee069c2fb0ae1826b9e046c9b7871d5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\base\\TileEntityBase01Root.java",
+      "sha256": "6fb532deff9cf3a423e0606771852e63eb2beb72f5c976782aa8060cd77a8b95"
+    }
+  ],
+  "core_sources": [
+    {
+      "path": "core\\src\\main\\java\\com\\gregtech\\gregtech\\content\\energy\\SolarPanelEnergy.java",
+      "sha256": "bde65324844437f34c127004c6bded327b49a98972497fced3929e81d88bab59"
+    },
+    {
+      "path": "core\\src\\main\\java\\com\\gregtech\\gregtech\\content\\energy\\EnergyNodeDefinitions.java",
+      "sha256": "626549541b32a6a679fb2d904a4d2f233471f1e1f3b78a45015fb0a8d977a086"
+    },
+    {
+      "path": "core\\src\\test\\java\\com\\gregtech\\gregtech\\core\\SolarPanelEnergyContracts.java",
+      "sha256": "5090471a5159139a1a1f24b6dc7d4fb71d47c002ea9198dd49c0ddcb9fd7df9e"
+    }
+  ],
+  "twilight_forest_primary_sources": [
+    {
+      "branch": "1.20.x",
+      "url": "https://github.com/TeamTwilight/twilightforest/blob/1.20.x/src/main/java/twilightforest/init/TFDimension.java",
+      "blob_sha": "0cf25dc010b46d2b42395930fd4383f155567942",
+      "dimension_lines": [
+        "\tpublic static final ResourceLocation DIMENSION = TwilightForestMod.prefix(\"twilight_forest\");",
+        "\t// Referenced by our DimensionType 'twilight_forest_type'."
+      ]
+    },
+    {
+      "branch": "1.20.x",
+      "url": "https://github.com/TeamTwilight/twilightforest/blob/1.20.x/src/generated/resources/data/twilightforest/dimension_type/twilight_forest_type.json",
+      "blob_sha": "24502ad7134ece431fb271a30ae0fb6b128e5394",
+      "dimension_lines": "  \"has_skylight\": true,"
+    },
+    {
+      "branch": "1.21.x",
+      "url": "https://github.com/TeamTwilight/twilightforest/blob/1.21.x/src/main/java/twilightforest/init/TFDimension.java",
+      "blob_sha": "0cf25dc010b46d2b42395930fd4383f155567942",
+      "dimension_lines": [
+        "\tpublic static final ResourceLocation DIMENSION = TwilightForestMod.prefix(\"twilight_forest\");",
+        "\t// Referenced by our DimensionType 'twilight_forest_type'."
+      ]
+    },
+    {
+      "branch": "1.21.x",
+      "url": "https://github.com/TeamTwilight/twilightforest/blob/1.21.x/src/generated/resources/data/twilightforest/dimension_type/twilight_forest_type.json",
+      "blob_sha": "6e1ae6e2ef20671de2da7624e6fad4d4cb3a331b",
+      "dimension_lines": "  \"has_skylight\": true,"
+    }
+  ],
+  "verified_source_commit": "0c03444a442a038702c02714cabd4f4ecfbc6001",
+  "build_state": "Built from these working-tree changes before their source commit; current compiled classes and resource bytes were verified against both jars.",
+  "logs": [
+    {
+      "path": "work\\solar-output-build-20261004.log",
+      "sha256": "676977ab8dec5869199590f1b5af2dca524a98ae5d8ed732a853ece3cea0b88c"
+    },
+    {
+      "path": "work\\solar-output-contracts-20261004.log",
+      "sha256": "9e778307361801a31c4ceef02df41cf8921606f44c0b763981667eab0f886040"
+    }
+  ]
+}
