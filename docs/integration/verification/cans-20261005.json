@@ -1,0 +1,4445 @@
+{
+  "status": "passed",
+  "scope": "Source canned-food parity on Forge 1.20.1 and NeoForge 1.21.1; finite native world and production title probes",
+  "source": {
+    "path": "C:\\Dev\\GregTech6\\docs\\integration\\verification\\cans-source-20261005.json",
+    "sha256": "f4ed76506921a154703a33a7be6fa0b0a30edb4ed6d0310e56b530caf520730f"
+  },
+  "worlds": {
+    "forge": {
+      "platform": "forge",
+      "id": "a1ffc52a-f78c-4972-b47d-918b67c3fed3",
+      "world": "creation-smoke-a1ffc52a-f78c-4972-b47d-918b67c3fed3",
+      "stage": 3,
+      "elapsedMs": 229033,
+      "legacyBatteryAliasesChecked": 5,
+      "chemicalBatteryStackRoundTrips": 10,
+      "sourceChemicalBatteriesChecked": 25,
+      "sourcePoweredAssemblyRowsChecked": 70,
+      "originCenterBiomesChecked": 9,
+      "originFacilityIdentitiesChecked": 25,
+      "originTestInventorySlots": 144,
+      "originTestInventoryPresent": 118,
+      "originTestInventoryOptionalEmpty": 26,
+      "originTestInventoryPendingTools": [],
+      "nexusGunUseChecks": 15,
+      "nexusGunAndPocketCraftingRows": 4,
+      "nexusPocketModesChecked": 8,
+      "nexusPoweredToolsChecked": 14,
+      "crankNativeSignalChecks": 30,
+      "flintKnifeFireAspect": 1,
+      "originalCrucibleReactionChecks": 4,
+      "originalCreativePages": 66,
+      "newFeedbackCraftingRowsChecked": 3,
+      "lootCrateReturnAndStackLimitChecks": 2,
+      "nativeMobDropEventChecks": 17,
+      "lootResolvedViewerRows": 1322,
+      "mobResolvedViewerRows": 89,
+      "machineFeedbackCrafting": [
+        {
+          "recipe": "long_distance/long_dist_wire",
+          "output": "long_dist_wire",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_tin"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_ev",
+          "output": "long_dist_wire_ev",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_tin"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_iv",
+          "output": "long_dist_wire_iv",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_annealed_copper",
+              "gregtech:wire_16_copper"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_luv",
+          "output": "long_dist_wire_luv",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_silver"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_zpm",
+          "output": "long_dist_wire_zpm",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_steel"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_uv",
+          "output": "long_dist_wire_uv",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_graphene"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_pipe_item",
+          "output": "long_dist_pipe_item",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_electrum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_electrum"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:item_pipe_medium_electrum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_electrum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_pipe_fluid",
+          "output": "long_dist_pipe_fluid",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_stainless_steel"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_stainless_steel"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:pipe_medium_stainless_steel"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_stainless_steel"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_endpoint_item",
+          "output": "long_dist_endpoint_item",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_platinum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_platinum"
+            ],
+            [
+              "gregtech:casing_machine_platinum"
+            ],
+            [
+              "gregtech:item_pipe_medium_platinum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_platinum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_endpoint_fluid",
+          "output": "long_dist_endpoint_fluid",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_tungsten"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_tungsten"
+            ],
+            [
+              "gregtech:casing_machine_tungsten"
+            ],
+            [
+              "gregtech:pipe_medium_tungsten"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_tungsten"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_ulv",
+          "output": "long_dist_transformer_ulv",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_lv",
+          "output": "long_dist_transformer_lv",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_mv",
+          "output": "long_dist_transformer_mv",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_zpm",
+          "output": "long_dist_transformer_zpm",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_zpm_uv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_zpm_uv"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_zpm_uv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_zpm_uv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_uv",
+          "output": "long_dist_transformer_uv",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_uv_xv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_uv_xv"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_uv_xv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_uv_xv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_ulv",
+          "output": "battery_box_ulv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_lead"
+            ],
+            [
+              "gregtech:cable_01_lead"
+            ],
+            [
+              "gregtech:wire_01_lead"
+            ],
+            [
+              "gregtech:wire_01_lead"
+            ],
+            [
+              "gregtech:cable_01_lead"
+            ],
+            [
+              "gregtech:wire_01_lead"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_tinalloy"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_ulv",
+          "output": "energy_storage_ulv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_lead"
+            ],
+            [
+              "gregtech:cable_04_lead"
+            ],
+            [
+              "gregtech:wire_04_lead"
+            ],
+            [
+              "gregtech:wire_04_lead"
+            ],
+            [
+              "gregtech:cable_04_lead"
+            ],
+            [
+              "gregtech:wire_04_lead"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_ulv_lv"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_lv",
+          "output": "battery_box_lv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_tin"
+            ],
+            [
+              "gregtech:cable_01_tin"
+            ],
+            [
+              "gregtech:wire_01_tin"
+            ],
+            [
+              "gregtech:wire_01_tin"
+            ],
+            [
+              "gregtech:cable_01_tin"
+            ],
+            [
+              "gregtech:wire_01_tin"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_steelgalvanized"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_lv",
+          "output": "energy_storage_lv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:cable_04_tin"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:cable_04_tin"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_lv_mv"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_mv",
+          "output": "battery_box_mv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_annealed_copper",
+              "gregtech:wire_01_copper"
+            ],
+            [
+              "gregtech:cable_01_annealed_copper",
+              "gregtech:cable_01_copper"
+            ],
+            [
+              "gregtech:wire_01_annealed_copper",
+              "gregtech:wire_01_copper"
+            ],
+            [
+              "gregtech:wire_01_annealed_copper",
+              "gregtech:wire_01_copper"
+            ],
+            [
+              "gregtech:cable_01_annealed_copper",
+              "gregtech:cable_01_copper"
+            ],
+            [
+              "gregtech:wire_01_annealed_copper",
+              "gregtech:wire_01_copper"
+            ],
+            [
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_aluminium"
+            ],
+            [
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_mv",
+          "output": "energy_storage_mv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_annealed_copper",
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper",
+              "gregtech:cable_04_copper"
+            ],
+            [
+              "gregtech:wire_04_annealed_copper",
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:wire_04_annealed_copper",
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper",
+              "gregtech:cable_04_copper"
+            ],
+            [
+              "gregtech:wire_04_annealed_copper",
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_mv_hv"
+            ],
+            [
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_hv",
+          "output": "battery_box_hv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_gold"
+            ],
+            [
+              "gregtech:cable_01_gold"
+            ],
+            [
+              "gregtech:wire_01_gold"
+            ],
+            [
+              "gregtech:wire_01_gold"
+            ],
+            [
+              "gregtech:cable_01_gold"
+            ],
+            [
+              "gregtech:wire_01_gold"
+            ],
+            [
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_stainlesssteel"
+            ],
+            [
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_hv",
+          "output": "energy_storage_hv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:cable_04_gold"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:cable_04_gold"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_hv_ev"
+            ],
+            [
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_ev",
+          "output": "battery_box_ev",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_aluminium"
+            ],
+            [
+              "gregtech:cable_01_aluminium"
+            ],
+            [
+              "gregtech:wire_01_aluminium"
+            ],
+            [
+              "gregtech:wire_01_aluminium"
+            ],
+            [
+              "gregtech:cable_01_aluminium"
+            ],
+            [
+              "gregtech:wire_01_aluminium"
+            ],
+            [
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_chromium"
+            ],
+            [
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_ev",
+          "output": "energy_storage_ev",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:cable_04_aluminium"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:cable_04_aluminium"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_iv",
+          "output": "battery_box_iv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_platinum"
+            ],
+            [
+              "gregtech:cable_01_platinum"
+            ],
+            [
+              "gregtech:wire_01_platinum"
+            ],
+            [
+              "gregtech:wire_01_platinum"
+            ],
+            [
+              "gregtech:cable_01_platinum"
+            ],
+            [
+              "gregtech:wire_01_platinum"
+            ],
+            [
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_titanium"
+            ],
+            [
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_iv",
+          "output": "energy_storage_iv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:cable_04_platinum"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:cable_04_platinum"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_luv",
+          "output": "battery_box_luv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_iridium"
+            ],
+            [
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_luv",
+          "output": "energy_storage_luv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_galvanized_steel",
+          "output": "lightning_galvanized_steel",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_01_steel"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:wire_01_steel"
+            ],
+            [
+              "gregtech:casing_machine_steelgalvanized"
+            ],
+            [
+              "gregtech:wire_01_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_aluminium",
+          "output": "lightning_aluminium",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_02_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_02_steel"
+            ],
+            [
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:wire_02_steel"
+            ],
+            [
+              "gregtech:casing_machine_aluminium"
+            ],
+            [
+              "gregtech:wire_02_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_stainless_steel",
+          "output": "lightning_stainless_steel",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_04_steel"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:wire_04_steel"
+            ],
+            [
+              "gregtech:casing_machine_stainlesssteel"
+            ],
+            [
+              "gregtech:wire_04_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_chromium",
+          "output": "lightning_chromium",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_08_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_08_steel"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:wire_08_steel"
+            ],
+            [
+              "gregtech:casing_machine_chromium"
+            ],
+            [
+              "gregtech:wire_08_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_titanium",
+          "output": "lightning_titanium",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_16_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_16_steel"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:wire_16_steel"
+            ],
+            [
+              "gregtech:casing_machine_titanium"
+            ],
+            [
+              "gregtech:wire_16_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/melter_stainless_steel",
+          "output": "melter_stainless_steel",
+          "resolvedIngredients": [
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:smelting_crucible_ceramic"
+            ],
+            [
+              "gregtech:tool_hammer",
+              "gregtech:robot_arm_hammer_tip",
+              "gregtech:single_use_hammer"
+            ],
+            [
+              "gregtech:pipe_medium_steel"
+            ],
+            [
+              "gregtech:casing_machine_castiron",
+              "gregtech:casing_machine_iron",
+              "gregtech:casing_machine_ironcompressed",
+              "gregtech:casing_machine_knightmetal",
+              "gregtech:casing_machine_meteoriciron",
+              "gregtech:casing_machine_meteoricsteel",
+              "gregtech:casing_machine_meteorite",
+              "gregtech:casing_machine_pigiron",
+              "gregtech:casing_machine_steel",
+              "gregtech:casing_machine_wroughtiron"
+            ],
+            [
+              "gregtech:pipe_medium_steel"
+            ],
+            [
+              "minecraft:bricks"
+            ],
+            [
+              "gregtech:plate_double_copper"
+            ],
+            [
+              "minecraft:bricks"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/multiblock/coke_oven_main",
+          "output": "coke_oven_main",
+          "resolvedIngredients": [
+            [
+              "gregtech:tool_hammer",
+              "gregtech:robot_arm_hammer_tip",
+              "gregtech:single_use_hammer"
+            ],
+            [
+              "gregtech:stick_iron"
+            ],
+            [
+              "gregtech:screw_iron"
+            ],
+            [
+              "gregtech:plate_iron"
+            ],
+            [
+              "gregtech:coke_oven_wall"
+            ],
+            [
+              "gregtech:stick_iron"
+            ],
+            [
+              "gregtech:tool_screwdriver",
+              "gregtech:robot_arm_screwdriver_tip",
+              "gregtech:single_use_screwdriver",
+              "gregtech:tool_pocket_screwdriver",
+              "gregtech:electric_screwdriver"
+            ],
+            [
+              "gregtech:stick_iron"
+            ],
+            [
+              "gregtech:screw_iron"
+            ]
+          ]
+        }
+      ],
+      "lightningProcessorsChecked": [
+        "lightning_galvanized_steel",
+        "lightning_aluminium",
+        "lightning_stainless_steel",
+        "lightning_chromium",
+        "lightning_titanium"
+      ],
+      "sourceEnergyCreativeGroupsChecked": 36,
+      "longDistanceCreativeGroupsChecked": 16,
+      "sourceMelterOperatingFlagChecks": 3,
+      "flatBushVariantsChecked": [
+        "gregtech:bush_cotton",
+        "gregtech:bush_blueberry",
+        "gregtech:bush_candleberry",
+        "gregtech:bush_cranberry",
+        "gregtech:bush_black_currants",
+        "gregtech:bush_white_currants",
+        "gregtech:bush_red_currants",
+        "gregtech:bush_blackberry",
+        "gregtech:bush_raspberry"
+      ],
+      "flatSpringVariantsChecked": [
+        "gregtech:fluid_spring_liquid_extra_heavy_oil",
+        "gregtech:fluid_spring_liquid_heavy_oil",
+        "gregtech:fluid_spring_liquid_medium_oil",
+        "gregtech:fluid_spring_liquid_light_oil",
+        "gregtech:fluid_spring_gas_natural_gas",
+        "gregtech:fluid_spring_watergeothermal",
+        "gregtech:fluid_spring_lava"
+      ],
+      "flatGeneratedBranchesChecked": 45,
+      "flatLegacyWorldConversionsChecked": 2,
+      "supporterCertificateRemoved": true,
+      "sandwichSourceIngredientsChecked": 95,
+      "sandwichNativeInteractionChecks": 14,
+      "sandwichNativeConsumptionChecks": 7,
+      "sandwichDroppedIngredientCountsNormalized": true,
+      "sandwichSourceBottleFoods": 35,
+      "sandwichWorldBatchCount": 16,
+      "cannedFoodsConsumed": [
+        {
+          "item": "tiny_food_can_unknown",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_unknown",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_unknown",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_unknown",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_unknown",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_unknown",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_rotten",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_rotten",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_rotten",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_rotten",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_rotten",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_rotten",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_vegetables",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_vegetables",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_vegetables",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_vegetables",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_vegetables",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_vegetables",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_fruits",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_fruits",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_fruits",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_fruits",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_fruits",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_fruits",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_bread",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_bread",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_bread",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_bread",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_bread",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_bread",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_meat",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_meat",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_meat",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_meat",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_meat",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_meat",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_fish",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_fish",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_fish",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_fish",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_fish",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_fish",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_chum",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_chum",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_chum",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_chum",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_chum",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_chum",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_cookies",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_cookies",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_cookies",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_cookies",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_cookies",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_cookies",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "canned_space_air",
+          "food": 0,
+          "saturation": 0.0,
+          "air": 600,
+          "container": 1
+        },
+        {
+          "item": "canned_hot_air",
+          "food": 0,
+          "saturation": 0.0,
+          "air": 600,
+          "container": 1
+        },
+        {
+          "item": "canned_air",
+          "food": 0,
+          "saturation": 0.0,
+          "air": 600,
+          "container": 1
+        }
+      ],
+      "cannedFoodConsumptionChecks": 57,
+      "cannedSandwichIngredientsChecked": 24,
+      "cannedRottenConversionsChecked": 42,
+      "cannedAirRoundTripRoutesChecked": 6,
+      "cannedTameAnimalFeedChecks": 3,
+      "cannedContainerModeChecks": 3,
+      "emptyFoodCanCraftingChecked": true,
+      "canonicalItemsChecked": 75913,
+      "recipes": 52218,
+      "serverTicks": 24,
+      "dimension": "minecraft:overworld",
+      "emi_ore_veins": 36,
+      "emi_stone_layers_info": 55,
+      "emi_small_ores_info": 86,
+      "emi_bedrock_ores": 28,
+      "emiStructureRows": 90,
+      "lootViewer": "emi",
+      "lootViewerRows": 1322,
+      "mobViewerRows": 89,
+      "lootViewerTables": 18,
+      "mobViewerScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-mobs-5509099e-2bda-4cc3-82aa-22c0adc47401.png",
+      "lootViewerScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-tables-52293079-8f05-4b6f-b893-5f85633d5cab.png",
+      "emiStructureScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-structure-2612c492-d6e9-4a84-9f77-9790970e5f37.png",
+      "emiVeinsScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-veins-1027aa07-4ae3-4229-bede-b1a5aec1c6ac.png",
+      "emiLayersScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-layers-47ca4553-ad12-4be0-9b0e-dd6b0f8a5c1e.png",
+      "sourceMachineInventoryModelsChecked": 6,
+      "flatSurfaceInventoryModelsChecked": 16,
+      "flatBushInventoryColors": {
+        "bush_cotton": "eeeeee",
+        "bush_blueberry": "ff",
+        "bush_candleberry": "ccffcc",
+        "bush_cranberry": "ff0000",
+        "bush_black_currants": "111111",
+        "bush_white_currants": "eeeedd",
+        "bush_red_currants": "ee0000",
+        "bush_blackberry": "331111",
+        "bush_raspberry": "ffaaaa"
+      },
+      "sandwichInventoryModelsChecked": 3,
+      "sandwichLayerTooltipOrderChecked": 4,
+      "cannedInventoryModelsChecked": 57,
+      "cannedCreativeVisible": 45,
+      "gearboxInventoryModelsChecked": 13,
+      "nexusToolInventoryModelsChecked": 61,
+      "automaticAndDataSwitchColorsChecked": 12,
+      "ropeInventoryModelsChecked": 6,
+      "filterInventoryModelsChecked": 4,
+      "inventoryMaterialRgb": {
+        "rope": "604000",
+        "rope_silk": "ffffff",
+        "rope_grass": "ffff00",
+        "rope_vine": "00ff00",
+        "rope_plastic": "c8c8c8",
+        "rope_steel": "828282",
+        "filter_items": "faf0f0",
+        "filter_fluids": "faf0f0",
+        "filter_items_fluids": "faf0f0",
+        "filter_oredict": "faf0f0",
+        "auto_igniter_steel": "c8c8c8",
+        "auto_igniter_aluminium": "faf0f0",
+        "auto_igniter_stainless": "80c8f0",
+        "auto_igniter_titanium": "c8c8dc",
+        "auto_igniter_tungsten": "ffe6e6",
+        "auto_igniter_ultimet": "dca0f0",
+        "auto_hammer_steel": "d2823c",
+        "auto_hammer_aluminium": "828282",
+        "auto_hammer_titanium": "dca0f0",
+        "auto_hammer_tungsten": "6464a0",
+        "usb_switch": "faf0f0",
+        "hdd_switch": "faf0f0"
+      },
+      "asphaltItemRgb": "808080",
+      "crankItemRgb": "c8c8c8",
+      "renderedWorldFrames": 1766,
+      "emiLoaded": true,
+      "renderedInventoryItems": [
+        "gearbox_wood",
+        "gearbox_bronze",
+        "gearbox_brass",
+        "gearbox_arsenic_copper",
+        "gearbox_arsenic_bronze",
+        "gearbox_steel",
+        "gearbox_titanium",
+        "gearbox_tungstensteel",
+        "gearbox_iridium",
+        "gearbox_iritanium",
+        "gearbox_trinitanium",
+        "gearbox_trinaquadalloy",
+        "gearbox_adamantium",
+        "rope",
+        "rope_silk",
+        "rope_grass",
+        "rope_vine",
+        "rope_plastic",
+        "rope_steel",
+        "filter_items",
+        "filter_fluids",
+        "filter_items_fluids",
+        "filter_oredict",
+        "crank",
+        "asphalt",
+        "tool_pocket_multitool",
+        "cable_01_signalum",
+        "wire_01_lumium",
+        "electric_mining_drill",
+        "electric_mixer",
+        "electric_buzzsaw",
+        "electric_trimmer",
+        "electric_wrench_mv",
+        "electric_mining_drill_mv",
+        "electric_chainsaw_mv",
+        "electric_wrench_hv",
+        "electric_mining_drill_hv",
+        "electric_chainsaw_hv",
+        "tool_pistol",
+        "tool_pistol",
+        "tool_pistol",
+        "tool_carbine",
+        "tool_carbine",
+        "tool_carbine",
+        "tool_rifle",
+        "tool_rifle",
+        "tool_rifle",
+        "auto_igniter_steel",
+        "auto_igniter_aluminium",
+        "auto_igniter_stainless",
+        "auto_igniter_titanium",
+        "auto_igniter_tungsten",
+        "auto_igniter_ultimet",
+        "auto_hammer_steel",
+        "auto_hammer_aluminium",
+        "auto_hammer_titanium",
+        "auto_hammer_tungsten",
+        "usb_switch",
+        "hdd_switch",
+        "loot_crate",
+        "crate"
+      ],
+      "untranslatedInventorySamples": [],
+      "renderedFlatSurfaceItems": [
+        "gregtech:bush_cotton",
+        "gregtech:bush_blueberry",
+        "gregtech:bush_candleberry",
+        "gregtech:bush_cranberry",
+        "gregtech:bush_black_currants",
+        "gregtech:bush_white_currants",
+        "gregtech:bush_red_currants",
+        "gregtech:bush_blackberry",
+        "gregtech:bush_raspberry",
+        "gregtech:fluid_spring_liquid_extra_heavy_oil",
+        "gregtech:fluid_spring_liquid_heavy_oil",
+        "gregtech:fluid_spring_liquid_medium_oil",
+        "gregtech:fluid_spring_liquid_light_oil",
+        "gregtech:fluid_spring_gas_natural_gas",
+        "gregtech:fluid_spring_watergeothermal",
+        "gregtech:fluid_spring_lava"
+      ],
+      "sandwichRenderedPreviews": 3,
+      "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-a1ffc52a-f78c-4972-b47d-918b67c3fed3.png"
+    },
+    "neoforge": {
+      "platform": "neoforge",
+      "id": "6982d6c7-7580-45e0-8433-5a55f5c795be",
+      "world": "creation-smoke-6982d6c7-7580-45e0-8433-5a55f5c795be",
+      "stage": 3,
+      "elapsedMs": 188413,
+      "legacyBatteryAliasesChecked": 5,
+      "chemicalBatteryStackRoundTrips": 10,
+      "sourceChemicalBatteriesChecked": 25,
+      "sourcePoweredAssemblyRowsChecked": 70,
+      "originCenterBiomesChecked": 9,
+      "originFacilityIdentitiesChecked": 25,
+      "originTestInventorySlots": 144,
+      "originTestInventoryPresent": 118,
+      "originTestInventoryOptionalEmpty": 26,
+      "originTestInventoryPendingTools": [],
+      "nexusGunUseChecks": 15,
+      "nexusGunAndPocketCraftingRows": 4,
+      "nexusPocketModesChecked": 8,
+      "nexusPoweredToolsChecked": 14,
+      "crankNativeSignalChecks": 30,
+      "flintKnifeFireAspect": 1,
+      "originalCrucibleReactionChecks": 4,
+      "originalCreativePages": 66,
+      "newFeedbackCraftingRowsChecked": 3,
+      "lootCrateReturnAndStackLimitChecks": 2,
+      "nativeMobDropEventChecks": 17,
+      "lootResolvedViewerRows": 1322,
+      "mobResolvedViewerRows": 89,
+      "machineFeedbackCrafting": [
+        {
+          "recipe": "long_distance/long_dist_wire",
+          "output": "long_dist_wire",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_tin"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_ev",
+          "output": "long_dist_wire_ev",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_tin"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_iv",
+          "output": "long_dist_wire_iv",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_annealed_copper",
+              "gregtech:wire_16_copper"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_luv",
+          "output": "long_dist_wire_luv",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_silver"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_zpm",
+          "output": "long_dist_wire_zpm",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_steel"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_wire_uv",
+          "output": "long_dist_wire_uv",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:wire_16_graphene"
+            ],
+            [
+              "gregtech:plate_curved_copper",
+              "gregtech:plate_curved_annealedcopper"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ],
+            [
+              "gregtech:plate_curved_aluminium"
+            ],
+            [
+              "gregtech:plate_rubber"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_pipe_item",
+          "output": "long_dist_pipe_item",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_electrum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_electrum"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:item_pipe_medium_electrum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_electrum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_pipe_fluid",
+          "output": "long_dist_pipe_fluid",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_stainless_steel"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_stainless_steel"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:pipe_medium_stainless_steel"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_stainless_steel"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_endpoint_item",
+          "output": "long_dist_endpoint_item",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_platinum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_platinum"
+            ],
+            [
+              "gregtech:casing_machine_platinum"
+            ],
+            [
+              "gregtech:item_pipe_medium_platinum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:item_pipe_medium_platinum"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_endpoint_fluid",
+          "output": "long_dist_endpoint_fluid",
+          "resolvedIngredients": [
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_tungsten"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_tungsten"
+            ],
+            [
+              "gregtech:casing_machine_tungsten"
+            ],
+            [
+              "gregtech:pipe_medium_tungsten"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ],
+            [
+              "gregtech:pipe_medium_tungsten"
+            ],
+            [
+              "gregtech:plate_plastic",
+              "gregtech:plate_pvc",
+              "gregtech:plate_teflon",
+              "gregtech:plate_bakelite"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_ulv",
+          "output": "long_dist_transformer_ulv",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_lv",
+          "output": "long_dist_transformer_lv",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_mv",
+          "output": "long_dist_transformer_mv",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_zpm",
+          "output": "long_dist_transformer_zpm",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_zpm_uv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_zpm_uv"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_zpm_uv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_zpm_uv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "long_distance/long_dist_transformer_uv",
+          "output": "long_dist_transformer_uv",
+          "resolvedIngredients": [
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_uv_xv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_uv_xv"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:transformer_uv_xv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ],
+            [
+              "gregtech:transformer_uv_xv"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_ulv",
+          "output": "battery_box_ulv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_lead"
+            ],
+            [
+              "gregtech:cable_01_lead"
+            ],
+            [
+              "gregtech:wire_01_lead"
+            ],
+            [
+              "gregtech:wire_01_lead"
+            ],
+            [
+              "gregtech:cable_01_lead"
+            ],
+            [
+              "gregtech:wire_01_lead"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_tinalloy"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_ulv",
+          "output": "energy_storage_ulv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_lead"
+            ],
+            [
+              "gregtech:cable_04_lead"
+            ],
+            [
+              "gregtech:wire_04_lead"
+            ],
+            [
+              "gregtech:wire_04_lead"
+            ],
+            [
+              "gregtech:cable_04_lead"
+            ],
+            [
+              "gregtech:wire_04_lead"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_ulv_lv"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_lv",
+          "output": "battery_box_lv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_tin"
+            ],
+            [
+              "gregtech:cable_01_tin"
+            ],
+            [
+              "gregtech:wire_01_tin"
+            ],
+            [
+              "gregtech:wire_01_tin"
+            ],
+            [
+              "gregtech:cable_01_tin"
+            ],
+            [
+              "gregtech:wire_01_tin"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_steelgalvanized"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_lv",
+          "output": "energy_storage_lv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:cable_04_tin"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:cable_04_tin"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_lv_mv"
+            ],
+            [
+              "gregtech:circuit_basic",
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_mv",
+          "output": "battery_box_mv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_annealed_copper",
+              "gregtech:wire_01_copper"
+            ],
+            [
+              "gregtech:cable_01_annealed_copper",
+              "gregtech:cable_01_copper"
+            ],
+            [
+              "gregtech:wire_01_annealed_copper",
+              "gregtech:wire_01_copper"
+            ],
+            [
+              "gregtech:wire_01_annealed_copper",
+              "gregtech:wire_01_copper"
+            ],
+            [
+              "gregtech:cable_01_annealed_copper",
+              "gregtech:cable_01_copper"
+            ],
+            [
+              "gregtech:wire_01_annealed_copper",
+              "gregtech:wire_01_copper"
+            ],
+            [
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_aluminium"
+            ],
+            [
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_mv",
+          "output": "energy_storage_mv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_annealed_copper",
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper",
+              "gregtech:cable_04_copper"
+            ],
+            [
+              "gregtech:wire_04_annealed_copper",
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:wire_04_annealed_copper",
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:cable_04_annealed_copper",
+              "gregtech:cable_04_copper"
+            ],
+            [
+              "gregtech:wire_04_annealed_copper",
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_mv_hv"
+            ],
+            [
+              "gregtech:circuit_good",
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_hv",
+          "output": "battery_box_hv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_gold"
+            ],
+            [
+              "gregtech:cable_01_gold"
+            ],
+            [
+              "gregtech:wire_01_gold"
+            ],
+            [
+              "gregtech:wire_01_gold"
+            ],
+            [
+              "gregtech:cable_01_gold"
+            ],
+            [
+              "gregtech:wire_01_gold"
+            ],
+            [
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_stainlesssteel"
+            ],
+            [
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_hv",
+          "output": "energy_storage_hv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:cable_04_gold"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:cable_04_gold"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_hv_ev"
+            ],
+            [
+              "gregtech:circuit_advanced",
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_ev",
+          "output": "battery_box_ev",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_aluminium"
+            ],
+            [
+              "gregtech:cable_01_aluminium"
+            ],
+            [
+              "gregtech:wire_01_aluminium"
+            ],
+            [
+              "gregtech:wire_01_aluminium"
+            ],
+            [
+              "gregtech:cable_01_aluminium"
+            ],
+            [
+              "gregtech:wire_01_aluminium"
+            ],
+            [
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_chromium"
+            ],
+            [
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_ev",
+          "output": "energy_storage_ev",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:cable_04_aluminium"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:cable_04_aluminium"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_ev_iv"
+            ],
+            [
+              "gregtech:circuit_elite",
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_iv",
+          "output": "battery_box_iv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_platinum"
+            ],
+            [
+              "gregtech:cable_01_platinum"
+            ],
+            [
+              "gregtech:wire_01_platinum"
+            ],
+            [
+              "gregtech:wire_01_platinum"
+            ],
+            [
+              "gregtech:cable_01_platinum"
+            ],
+            [
+              "gregtech:wire_01_platinum"
+            ],
+            [
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_titanium"
+            ],
+            [
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_iv",
+          "output": "energy_storage_iv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:cable_04_platinum"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:cable_04_platinum"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_iv_luv"
+            ],
+            [
+              "gregtech:circuit_master",
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/battery_box_luv",
+          "output": "battery_box_luv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:wire_01_graphene"
+            ],
+            [
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:casing_machine_iridium"
+            ],
+            [
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "energy_nodes/energy_storage_luv",
+          "output": "energy_storage_luv",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:wire_04_graphene"
+            ],
+            [
+              "gregtech:circuit_ultimate"
+            ],
+            [
+              "gregtech:transformer_luv_zpm"
+            ],
+            [
+              "gregtech:circuit_ultimate"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_galvanized_steel",
+          "output": "lightning_galvanized_steel",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_01_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_01_steel"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_tin"
+            ],
+            [
+              "gregtech:wire_01_steel"
+            ],
+            [
+              "gregtech:casing_machine_steelgalvanized"
+            ],
+            [
+              "gregtech:wire_01_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_aluminium",
+          "output": "lightning_aluminium",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_02_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_02_steel"
+            ],
+            [
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_copper"
+            ],
+            [
+              "gregtech:wire_02_steel"
+            ],
+            [
+              "gregtech:casing_machine_aluminium"
+            ],
+            [
+              "gregtech:wire_02_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_stainless_steel",
+          "output": "lightning_stainless_steel",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_04_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_04_steel"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_gold"
+            ],
+            [
+              "gregtech:wire_04_steel"
+            ],
+            [
+              "gregtech:casing_machine_stainlesssteel"
+            ],
+            [
+              "gregtech:wire_04_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_chromium",
+          "output": "lightning_chromium",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_08_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_08_steel"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_aluminium"
+            ],
+            [
+              "gregtech:wire_08_steel"
+            ],
+            [
+              "gregtech:casing_machine_chromium"
+            ],
+            [
+              "gregtech:wire_08_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/lightning_titanium",
+          "output": "lightning_titanium",
+          "resolvedIngredients": [
+            [
+              "gregtech:wire_16_steel"
+            ],
+            [
+              "gregtech:tool_wire_cutter",
+              "gregtech:robot_arm_cutter_tip",
+              "gregtech:single_use_cutter",
+              "gregtech:tool_pocket_wire_cutter"
+            ],
+            [
+              "gregtech:wire_16_steel"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:wire_04_platinum"
+            ],
+            [
+              "gregtech:wire_16_steel"
+            ],
+            [
+              "gregtech:casing_machine_titanium"
+            ],
+            [
+              "gregtech:wire_16_steel"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/basic/melter_stainless_steel",
+          "output": "melter_stainless_steel",
+          "resolvedIngredients": [
+            [
+              "gregtech:tool_wrench",
+              "gregtech:robot_arm_wrench_tip",
+              "gregtech:single_use_wrench",
+              "gregtech:electric_wrench",
+              "gregtech:electric_wrench_mv",
+              "gregtech:electric_wrench_hv"
+            ],
+            [
+              "gregtech:smelting_crucible_ceramic"
+            ],
+            [
+              "gregtech:tool_hammer",
+              "gregtech:robot_arm_hammer_tip",
+              "gregtech:single_use_hammer"
+            ],
+            [
+              "gregtech:pipe_medium_steel"
+            ],
+            [
+              "gregtech:casing_machine_castiron",
+              "gregtech:casing_machine_iron",
+              "gregtech:casing_machine_ironcompressed",
+              "gregtech:casing_machine_knightmetal",
+              "gregtech:casing_machine_meteoriciron",
+              "gregtech:casing_machine_meteoricsteel",
+              "gregtech:casing_machine_meteorite",
+              "gregtech:casing_machine_pigiron",
+              "gregtech:casing_machine_steel",
+              "gregtech:casing_machine_wroughtiron"
+            ],
+            [
+              "gregtech:pipe_medium_steel"
+            ],
+            [
+              "minecraft:bricks"
+            ],
+            [
+              "gregtech:plate_double_copper"
+            ],
+            [
+              "minecraft:bricks"
+            ]
+          ]
+        },
+        {
+          "recipe": "machines/multiblock/coke_oven_main",
+          "output": "coke_oven_main",
+          "resolvedIngredients": [
+            [
+              "gregtech:tool_hammer",
+              "gregtech:robot_arm_hammer_tip",
+              "gregtech:single_use_hammer"
+            ],
+            [
+              "gregtech:stick_iron"
+            ],
+            [
+              "gregtech:screw_iron"
+            ],
+            [
+              "gregtech:plate_iron"
+            ],
+            [
+              "gregtech:coke_oven_wall"
+            ],
+            [
+              "gregtech:stick_iron"
+            ],
+            [
+              "gregtech:tool_screwdriver",
+              "gregtech:robot_arm_screwdriver_tip",
+              "gregtech:single_use_screwdriver",
+              "gregtech:tool_pocket_screwdriver",
+              "gregtech:electric_screwdriver"
+            ],
+            [
+              "gregtech:stick_iron"
+            ],
+            [
+              "gregtech:screw_iron"
+            ]
+          ]
+        }
+      ],
+      "lightningProcessorsChecked": [
+        "lightning_galvanized_steel",
+        "lightning_aluminium",
+        "lightning_stainless_steel",
+        "lightning_chromium",
+        "lightning_titanium"
+      ],
+      "sourceEnergyCreativeGroupsChecked": 36,
+      "longDistanceCreativeGroupsChecked": 16,
+      "sourceMelterOperatingFlagChecks": 3,
+      "flatBushVariantsChecked": [
+        "gregtech:bush_cotton",
+        "gregtech:bush_blueberry",
+        "gregtech:bush_candleberry",
+        "gregtech:bush_cranberry",
+        "gregtech:bush_black_currants",
+        "gregtech:bush_white_currants",
+        "gregtech:bush_red_currants",
+        "gregtech:bush_blackberry",
+        "gregtech:bush_raspberry"
+      ],
+      "flatSpringVariantsChecked": [
+        "gregtech:fluid_spring_liquid_extra_heavy_oil",
+        "gregtech:fluid_spring_liquid_heavy_oil",
+        "gregtech:fluid_spring_liquid_medium_oil",
+        "gregtech:fluid_spring_liquid_light_oil",
+        "gregtech:fluid_spring_gas_natural_gas",
+        "gregtech:fluid_spring_watergeothermal",
+        "gregtech:fluid_spring_lava"
+      ],
+      "flatGeneratedBranchesChecked": 45,
+      "flatLegacyWorldConversionsChecked": 2,
+      "supporterCertificateRemoved": true,
+      "sandwichSourceIngredientsChecked": 95,
+      "sandwichNativeInteractionChecks": 14,
+      "sandwichNativeConsumptionChecks": 7,
+      "sandwichDroppedIngredientCountsNormalized": true,
+      "sandwichSourceBottleFoods": 35,
+      "sandwichWorldBatchCount": 16,
+      "cannedFoodsConsumed": [
+        {
+          "item": "tiny_food_can_unknown",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_unknown",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_unknown",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_unknown",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_unknown",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_unknown",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_rotten",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_rotten",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_rotten",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_rotten",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_rotten",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_rotten",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_vegetables",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_vegetables",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_vegetables",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_vegetables",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_vegetables",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_vegetables",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_fruits",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_fruits",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_fruits",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_fruits",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_fruits",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_fruits",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_bread",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_bread",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_bread",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_bread",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_bread",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_bread",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_meat",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_meat",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_meat",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_meat",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_meat",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_meat",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_fish",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_fish",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_fish",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_fish",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_fish",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_fish",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_chum",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_chum",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_chum",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_chum",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_chum",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_chum",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tiny_food_can_cookies",
+          "food": 2,
+          "saturation": 0.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "small_food_can_cookies",
+          "food": 4,
+          "saturation": 1.6,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "tall_food_can_cookies",
+          "food": 6,
+          "saturation": 3.6000001,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "wide_food_can_cookies",
+          "food": 8,
+          "saturation": 6.4,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "large_food_can_cookies",
+          "food": 10,
+          "saturation": 10.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "huge_food_can_cookies",
+          "food": 12,
+          "saturation": 12.0,
+          "air": 200,
+          "container": 1
+        },
+        {
+          "item": "canned_space_air",
+          "food": 0,
+          "saturation": 0.0,
+          "air": 600,
+          "container": 1
+        },
+        {
+          "item": "canned_hot_air",
+          "food": 0,
+          "saturation": 0.0,
+          "air": 600,
+          "container": 1
+        },
+        {
+          "item": "canned_air",
+          "food": 0,
+          "saturation": 0.0,
+          "air": 600,
+          "container": 1
+        }
+      ],
+      "cannedFoodConsumptionChecks": 57,
+      "cannedSandwichIngredientsChecked": 24,
+      "cannedRottenConversionsChecked": 42,
+      "cannedAirRoundTripRoutesChecked": 6,
+      "cannedTameAnimalFeedChecks": 3,
+      "cannedContainerModeChecks": 3,
+      "emptyFoodCanCraftingChecked": true,
+      "canonicalItemsChecked": 75990,
+      "recipes": 52334,
+      "serverTicks": 58,
+      "dimension": "minecraft:overworld",
+      "emi_small_ores_info": 86,
+      "emi_bedrock_ores": 28,
+      "emi_ore_veins": 36,
+      "emi_stone_layers_info": 55,
+      "emiStructureRows": 90,
+      "lootViewer": "emi",
+      "lootViewerRows": 1322,
+      "mobViewerRows": 89,
+      "lootViewerTables": 18,
+      "mobViewerScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-mobs-2d892ad2-1d5a-4ad6-805c-92a1e23ce1d5.png",
+      "lootViewerScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-tables-e8e82f9b-1a92-4e73-b503-4b2ed0a56cf7.png",
+      "emiStructureScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-structure-57239691-dfce-48e9-b883-f2141832b41a.png",
+      "emiVeinsScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-veins-9224688f-10d2-486a-b547-c7fc6b33a9a6.png",
+      "emiLayersScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-layers-087b85af-02de-4ad3-b108-5accc4e5ae3f.png",
+      "sourceMachineInventoryModelsChecked": 6,
+      "flatSurfaceInventoryModelsChecked": 16,
+      "flatBushInventoryColors": {
+        "bush_cotton": "ffeeeeee",
+        "bush_blueberry": "ff0000ff",
+        "bush_candleberry": "ffccffcc",
+        "bush_cranberry": "ffff0000",
+        "bush_black_currants": "ff111111",
+        "bush_white_currants": "ffeeeedd",
+        "bush_red_currants": "ffee0000",
+        "bush_blackberry": "ff331111",
+        "bush_raspberry": "ffffaaaa"
+      },
+      "sandwichInventoryModelsChecked": 3,
+      "sandwichLayerTooltipOrderChecked": 4,
+      "cannedInventoryModelsChecked": 57,
+      "cannedCreativeVisible": 45,
+      "gearboxInventoryModelsChecked": 13,
+      "nexusToolInventoryModelsChecked": 61,
+      "automaticAndDataSwitchColorsChecked": 12,
+      "ropeInventoryModelsChecked": 6,
+      "filterInventoryModelsChecked": 4,
+      "inventoryMaterialRgb": {
+        "rope": "604000",
+        "rope_silk": "ffffff",
+        "rope_grass": "ffff00",
+        "rope_vine": "00ff00",
+        "rope_plastic": "c8c8c8",
+        "rope_steel": "828282",
+        "filter_items": "faf0f0",
+        "filter_fluids": "faf0f0",
+        "filter_items_fluids": "faf0f0",
+        "filter_oredict": "faf0f0",
+        "auto_igniter_steel": "c8c8c8",
+        "auto_igniter_aluminium": "faf0f0",
+        "auto_igniter_stainless": "80c8f0",
+        "auto_igniter_titanium": "c8c8dc",
+        "auto_igniter_tungsten": "ffe6e6",
+        "auto_igniter_ultimet": "dca0f0",
+        "auto_hammer_steel": "d2823c",
+        "auto_hammer_aluminium": "828282",
+        "auto_hammer_titanium": "dca0f0",
+        "auto_hammer_tungsten": "6464a0",
+        "usb_switch": "faf0f0",
+        "hdd_switch": "faf0f0"
+      },
+      "asphaltItemRgb": "808080",
+      "crankItemRgb": "c8c8c8",
+      "renderedWorldFrames": 6598,
+      "emiLoaded": true,
+      "renderedInventoryItems": [
+        "gearbox_wood",
+        "gearbox_bronze",
+        "gearbox_brass",
+        "gearbox_arsenic_copper",
+        "gearbox_arsenic_bronze",
+        "gearbox_steel",
+        "gearbox_titanium",
+        "gearbox_tungstensteel",
+        "gearbox_iridium",
+        "gearbox_iritanium",
+        "gearbox_trinitanium",
+        "gearbox_trinaquadalloy",
+        "gearbox_adamantium",
+        "rope",
+        "rope_silk",
+        "rope_grass",
+        "rope_vine",
+        "rope_plastic",
+        "rope_steel",
+        "filter_items",
+        "filter_fluids",
+        "filter_items_fluids",
+        "filter_oredict",
+        "crank",
+        "asphalt",
+        "tool_pocket_multitool",
+        "cable_01_signalum",
+        "wire_01_lumium",
+        "electric_mining_drill",
+        "electric_mixer",
+        "electric_buzzsaw",
+        "electric_trimmer",
+        "electric_wrench_mv",
+        "electric_mining_drill_mv",
+        "electric_chainsaw_mv",
+        "electric_wrench_hv",
+        "electric_mining_drill_hv",
+        "electric_chainsaw_hv",
+        "tool_pistol",
+        "tool_pistol",
+        "tool_pistol",
+        "tool_carbine",
+        "tool_carbine",
+        "tool_carbine",
+        "tool_rifle",
+        "tool_rifle",
+        "tool_rifle",
+        "auto_igniter_steel",
+        "auto_igniter_aluminium",
+        "auto_igniter_stainless",
+        "auto_igniter_titanium",
+        "auto_igniter_tungsten",
+        "auto_igniter_ultimet",
+        "auto_hammer_steel",
+        "auto_hammer_aluminium",
+        "auto_hammer_titanium",
+        "auto_hammer_tungsten",
+        "usb_switch",
+        "hdd_switch",
+        "loot_crate",
+        "crate"
+      ],
+      "untranslatedInventorySamples": [],
+      "renderedFlatSurfaceItems": [
+        "gregtech:bush_cotton",
+        "gregtech:bush_blueberry",
+        "gregtech:bush_candleberry",
+        "gregtech:bush_cranberry",
+        "gregtech:bush_black_currants",
+        "gregtech:bush_white_currants",
+        "gregtech:bush_red_currants",
+        "gregtech:bush_blackberry",
+        "gregtech:bush_raspberry",
+        "gregtech:fluid_spring_liquid_extra_heavy_oil",
+        "gregtech:fluid_spring_liquid_heavy_oil",
+        "gregtech:fluid_spring_liquid_medium_oil",
+        "gregtech:fluid_spring_liquid_light_oil",
+        "gregtech:fluid_spring_gas_natural_gas",
+        "gregtech:fluid_spring_watergeothermal",
+        "gregtech:fluid_spring_lava"
+      ],
+      "sandwichRenderedPreviews": 3,
+      "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-6982d6c7-7580-45e0-8433-5a55f5c795be.png"
+    }
+  },
+  "production": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 76.0,
+      "installed_files_modified": false,
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "e0dd2e8dc3062fc41b5b9c24f342b4479f17e6a9b16c46067cf07a89f20405ad"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "c854ee2a0b66a229cd32bf5f89883baa133a28281ad7dc266145a3dd42316066"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "e0dd2e8dc3062fc41b5b9c24f342b4479f17e6a9b16c46067cf07a89f20405ad",
+          "bytes": 39513035
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "c854ee2a0b66a229cd32bf5f89883baa133a28281ad7dc266145a3dd42316066",
+          "bytes": 19077
+        },
+        {
+          "name": "Jade-1.20.1-Forge-11.13.3.jar",
+          "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+          "bytes": 553487
+        },
+        {
+          "name": "jei-1.20.1-forge-15.62.0.217.jar",
+          "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+          "bytes": 2232172
+        },
+        {
+          "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+          "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+          "bytes": 364842
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-aab174bb-def2-4133-8d28-ee5a043a1c36\\launch.log",
+      "log_sha256": "adeb6e53d00b4e93b45fa755dbe5bb19b296e10254a26615402408f7d28fe756",
+      "receipt": {
+        "surfaceChecks": {
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          }
+        },
+        "platform": "forge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-aab174bb-def2-4133-8d28-ee5a043a1c36\\screenshots\\production-forge-016bf82b-0ba6-4dfe-a844-e659788d4e71.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 182,
+        "loaderWarnings": 0,
+        "elapsedMs": 67971
+      },
+      "screenshot_sha256": "a91632bc20274b6a7802fb583f35ca7b86a2d85f36323d0850e674c539fcc657",
+      "visually_reviewed": false
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 66.53,
+      "installed_files_modified": false,
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "c3b032fd06141d7e4b964eee405ccdeffc0d7574039948047bc9eff85fc1108c"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "4683a84fba39e9979b1592a6fb668ffc1608132ba2834718a6ebbe078c046c17"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "c3b032fd06141d7e4b964eee405ccdeffc0d7574039948047bc9eff85fc1108c",
+          "bytes": 37729158
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "4683a84fba39e9979b1592a6fb668ffc1608132ba2834718a6ebbe078c046c17",
+          "bytes": 17852
+        },
+        {
+          "name": "emi-1.1.24+1.21.1+neoforge.jar",
+          "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+          "bytes": 1111538
+        },
+        {
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+          "bytes": 726853
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-70fc1266-8f4f-4aff-845c-ab0632ea588f\\launch.log",
+      "log_sha256": "fe53887e3a4c1ba6838ccf6954966e8b02a4e1091a149f0de79e8f24d0ba47cf",
+      "receipt": {
+        "surfaceChecks": {
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          }
+        },
+        "platform": "neoforge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-70fc1266-8f4f-4aff-845c-ab0632ea588f\\screenshots\\production-neoforge-3c374ae2-40b2-4c98-bf6f-e3a7f3dd4066.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 181,
+        "elapsedMs": 56187
+      },
+      "screenshot_sha256": "cce9d2692b3a42513489ca1914e7a043ca6bf815fec03a04a7be92da5f4bebd7",
+      "visually_reviewed": false
+    }
+  },
+  "artifact_verification": {
+    "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\artifacts.json",
+    "sha256": "97dfc49bd68d5850e11425cfe47b36283d9c08764b36c8533c0488722f2a903d"
+  },
+  "delivery": {
+    "status": "passed",
+    "scope": "Verified complete copies; runtime evidence is recorded separately",
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261004-205653Z-e0dd2e8d",
+    "verification_report": "C:\\Dev\\GregTech6\\work\\cans-20261005\\artifacts.json",
+    "verification_report_sha256": "97dfc49bd68d5850e11425cfe47b36283d9c08764b36c8533c0488722f2a903d",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 39513035,
+        "sha256": "e0dd2e8dc3062fc41b5b9c24f342b4479f17e6a9b16c46067cf07a89f20405ad",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-205653Z-e0dd2e8d\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 37729158,
+        "sha256": "c3b032fd06141d7e4b964eee405ccdeffc0d7574039948047bc9eff85fc1108c",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-205653Z-e0dd2e8d\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    }
+  },
+  "logs": {
+    "dual-assemble.log": {
+      "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\dual-assemble.log",
+      "sha256": "af6491787cbd204a792f0fde47e9b50f03e82a631134cd8ddce83640041105d5"
+    },
+    "compile-fixed.log": {
+      "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\compile-fixed.log",
+      "sha256": "9a7e285f4d249fd4a32458a907e11a33aae89061e1305df2a45d9dabeab47dd5"
+    },
+    "check-compile.log": {
+      "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\check-compile.log",
+      "sha256": "b4299a1cf13a7307d4f47c53345133f4ad555aa5f392fcbd55729e821639d4f3"
+    },
+    "neoforge-world-accepted.log": {
+      "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\neoforge-world-accepted.log",
+      "sha256": "0d8814d693156f8daad2773cc3d391cdeeff8cbe06ece2fc0bc859849eef4bcf"
+    },
+    "forge-world-accepted.log": {
+      "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\forge-world-accepted.log",
+      "sha256": "2e6ef76b32706fa818fb26d3c80961a73cfb30f0f6c7b68023116c6a25195b17"
+    },
+    "probe-layout.log": {
+      "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\probe-layout.log",
+      "sha256": "192b9407ee998a9b9c957bcfc8c4e71258bd1dc261bba4fc06dcba6fa27df6c1"
+    }
+  },
+  "failed_attempts": [
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\neoforge-world.log",
+        "sha256": "dc46c93830aedb45c587355458ab7f75e7613eaf64350255901d62f9f5a3d299"
+      },
+      "reason": "Neo source JSON allow-list omitted empty-can crafting; initial server fixture failed; excluded"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\cans-20261005\\forge-world.log",
+        "sha256": "b5c3411ea3a5ed17815772375b77cf0456675a392c912938ab0cd3a8349de903"
+      },
+      "reason": "Creative fixture looked for a nonexistent cans page; source grouping uses equipment; excluded"
+    },
+    {
+      "reason": "First production atlas laid out can samples below screen; title/model checks passed but clipped can visual evidence excluded; probe layout adjusted"
+    }
+  ],
+  "limits": [
+    "Source generic external-food/crop tag canning pending",
+    "Untamed source ocelot AI/taming mapping pending; actual tamed cat and wolf event paths checked",
+    "EnviroMine hydration/temperature adapter pending",
+    "No timed spoiling invented: source getRotten conversion only",
+    "Production atlas has some overlap with sandwich samples; 57 meshes independently checked and food/air/rotten examples visible",
+    "No old-save, independent restart, dedicated-server or complete survival acceptance",
+    "No user instance modification or remote push"
+  ]
+}

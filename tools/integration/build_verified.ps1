@@ -59,6 +59,9 @@ try {
         if ($receipt.sandwichSourceIngredientsChecked -ne 95 -or $receipt.sandwichNativeInteractionChecks -ne 14 -or $receipt.sandwichNativeConsumptionChecks -ne 7 -or $receipt.sandwichInventoryModelsChecked -ne 3 -or $receipt.sandwichLayerTooltipOrderChecked -ne 4 -or $receipt.sandwichRenderedPreviews -ne 3 -or $receipt.sandwichSourceBottleFoods -ne 35 -or -not $receipt.sandwichDroppedIngredientCountsNormalized) {
             throw "$platform sandwich interaction/food/render receipt is incomplete."
         }
+        if ($receipt.cannedFoodConsumptionChecks -ne 57 -or $receipt.cannedSandwichIngredientsChecked -ne 24 -or $receipt.cannedRottenConversionsChecked -ne 42 -or $receipt.cannedAirRoundTripRoutesChecked -ne 6 -or $receipt.cannedTameAnimalFeedChecks -ne 3 -or $receipt.cannedContainerModeChecks -ne 3 -or $receipt.cannedInventoryModelsChecked -ne 57 -or $receipt.cannedCreativeVisible -ne 45 -or -not $receipt.emptyFoodCanCraftingChecked) {
+            throw "$platform original canned-food receipt is incomplete."
+        }
         # Source NI and absent external integrations remain explicit empty slots.
         if ($receipt.originTestInventoryPresent + $receipt.originTestInventoryOptionalEmpty + @($receipt.originTestInventoryPendingTools).Count -ne 144) {
             throw "$platform source test inventory accounting is incomplete."
