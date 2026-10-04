@@ -657,8 +657,8 @@
   },
   "forge": {
     "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
-    "sha256": "67a7b3db35223041bc3443f31f0868f4eb7c2ecfc95d4b87b2df76d0a8af21df",
-    "bytes": 39146699,
+    "sha256": "34919c57ebd9c816870b66ef8d413bf25229799b035b9efa2552c31a0b6686f5",
+    "bytes": 39146884,
     "zip_entries": 81683,
     "metadata_path": "META-INF/mods.toml",
     "metadata": {
@@ -1326,8 +1326,8 @@
   },
   "neoforge": {
     "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
-    "sha256": "50b7f42e59f557ac0d24dc472ac079876195c08ff877c4833b054be7cb82eafe",
-    "bytes": 37378630,
+    "sha256": "8d84eb07494c79a0cf96238d8ade9e16881c51bdc84f41865b5d67d9818b3fa8",
+    "bytes": 37378805,
     "zip_entries": 80658,
     "metadata_path": "META-INF/neoforge.mods.toml",
     "metadata": {

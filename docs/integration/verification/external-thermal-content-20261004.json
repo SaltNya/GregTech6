@@ -1,7 +1,11 @@
 {
   "status": "passed",
   "scope": "source/packaging only; no native furnace, grinding, tags, client or save execution claim",
-  "source_commit": "58f8cd5d9c52e8874617b94394fd4dbcc11bcbfa",
+  "source_commit": "ba7f8c9da456d70fe45ba515d1ae4660d76a73f1",
+  "source_commits": [
+    "58f8cd5d9c52e8874617b94394fd4dbcc11bcbfa",
+    "ba7f8c9da456d70fe45ba515d1ae4660d76a73f1"
+  ],
   "platforms": {
     "forge": {
       "native_class_count": 10,
@@ -48,7 +52,7 @@
         },
         {
           "entry": "com/gregtech/gregtech/loaders/Loader_OvenRecipes.class",
-          "packaged_sha256": "8d0a9ea272d0cc9e682012beac10590105d24d473e5045963b8b1ecd8e42b321",
+          "packaged_sha256": "f1419935b4e40509d067a71e76570d4c6f80658b5505b20fbbcee31ef10662ea",
           "verification": "present after reobfuscation"
         },
         {
@@ -98,7 +102,7 @@
         },
         {
           "entry": "com/gregtech/gregtech/loaders/Loader_OvenRecipes.class",
-          "packaged_sha256": "a17d3348e15e6c61697070787f70f949d139f300d81b658fa2f8fae59e15e352",
+          "packaged_sha256": "0091d6b19445e66193282810511c6b68d920a9f08681abcfa51fb70afb8cd8a9",
           "verification": "byte-equal"
         }
       ]
@@ -119,6 +123,17 @@
   },
   "logs_sha256": {
     "external-thermal-compile-20261004.log": "9a70b5dae3862ae9427ee161fd208a52a4efd3424acf7c5dd124d861954f0b1e",
-    "external-thermal-build-20261004.log": "855577f4286dcee53942eab93c1575e970034eb677337d7f75ec0eb9e7b5b2f0"
+    "external-thermal-build-20261004.log": "855577f4286dcee53942eab93c1575e970034eb677337d7f75ec0eb9e7b5b2f0",
+    "external-thermal-ingredients-build-20261004.log": "c1cb5c5b63ce4fe679f3547c1299b1d4ac1cc13d93db2083681ec05cb4799fe7"
+  },
+  "ingredient_dependency_source_sha256": {
+    "forge": {
+      "entry": "net/minecraftforge/common/crafting/DifferenceIngredient.java",
+      "sha256": "d4ca8f1f94a24aa95a0b7cdabae91f10aab3894e9f43e00d030058dec1659a7f"
+    },
+    "neoforge": {
+      "entry": "net/neoforged/neoforge/common/crafting/DifferenceIngredient.java",
+      "sha256": "18981f9b644d79b935d24293f45c1d24d1ee527d7c630e14e06ef5b1b6b33d9d"
+    }
   }
 }
