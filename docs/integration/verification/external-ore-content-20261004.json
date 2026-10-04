@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "scope": "packaging/source only; no native tag event, client or machine execution claim",
+  "source_commit": "fd78049ab4b5064ab1d68d26ada8df5b7a594c39",
+  "platforms": {
+    "forge": {
+      "native_class_count": 7,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/api/material/ItemMaterialRegistry.class",
+          "packaged_sha256": "73f9631742a7866accb566f8db5914a7cd2e49f41f20453fdbff32ac4ac7633d",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/material/MaterialEquivalence.class",
+          "packaged_sha256": "76be4cd05aaaef4bf0dc7bd8f460c3b66f5bbc46b534860299c8b4a21a22f6d9",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/material/MaterialEquivalence$Form.class",
+          "packaged_sha256": "79e628a4a4f796ada261260dd9ae51fdb26ba09fa9da2029453669a8eb6c6660",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/CrusherFamilyRecipes.class",
+          "packaged_sha256": "83cd403ca030aaec255ec7a123b08b12fa74daf9ce1b30741e0186f47c50c7cc",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/CrusherFamilyRecipes$Entry.class",
+          "packaged_sha256": "bc18e40883e9c1cebcf9d5fec41889222fe4b99c4e5ebe0decac1a76cdfeb3cb",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "67f064689b7edc3b1ffe851d33491a398ad9df12f9cc5214ac95695ed6b0ad17",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ExternalOreRecipeLifecycle.class",
+          "packaged_sha256": "3622c1a2de39a1bbaef9f47de6a900ef60f011c3457f873f0407308b3401341f",
+          "verification": "present after reobfuscation"
+        }
+      ]
+    },
+    "neoforge": {
+      "native_class_count": 7,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/api/material/ItemMaterialRegistry.class",
+          "packaged_sha256": "d8d152a36f0fde0e92eb865ca02ecc7d5c77ae780efcae608744b03a80187e6c",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/material/MaterialEquivalence.class",
+          "packaged_sha256": "9238128f7b0815165e5feca0883e9421f7bb07fb0d23e5891153ca83e9039e04",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/api/material/MaterialEquivalence$Form.class",
+          "packaged_sha256": "bb6ef072f7601eb12d792e34ba0dbe7f1021414289248fd334071aa588c4cac3",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/CrusherFamilyRecipes.class",
+          "packaged_sha256": "f8a34db16ccc4f37ac7a28d385e009633bce4d09606cbd8e34671c3dc503ff18",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/CrusherFamilyRecipes$Entry.class",
+          "packaged_sha256": "486d337092717dbe02ea608680902f6ac2136672925b7d9c43e901e0631a8acf",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "feb9c2c490411f83ac4e69d34a82c0a4d652623fe9c64e4a301c40f8ed8423b1",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ExternalOreRecipeLifecycle.class",
+          "packaged_sha256": "e72f3b59d2c64900179f3d70d769a69248147bc64c5e70b5ef2fb7057d2d0076",
+          "verification": "byte-equal"
+        }
+      ]
+    }
+  },
+  "original_source_sha256": {
+    "gregapi/data/CS.java": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+    "gregapi/data/OP.java": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+    "gregtech/loaders/a/Loader_Items.java": "1784f1aeccc3d8e70f214c9eb06de81f2f2f28f17b4f57b24acc05d049605c07",
+    "gregtech/loaders/c/Loader_Recipes_Handlers.java": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefix.java": "de005fa316ae3d9ebddf69456c47a4e1e0ec38b9983d9fa9d1809e2bd9e58156"
+  },
+  "logs_sha256": {
+    "external-ore-compile-20261004.log": "67dcc429dfbb6d218a7f8c18616d13da60124a1fdc2e1268bcde2771aa4aa899",
+    "external-ore-build-20261004.log": "1030734a0dcc0759125fc7fe354d0e206fea899a228541b3a5758fd3e4acd165"
+  }
+}

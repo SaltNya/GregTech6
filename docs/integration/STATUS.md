@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-04 / 外部粗矿碎块与筛选处理链
+
+双平台补原版 rawOreChunk→3 crushedTiny、chunk→rubble、rubble→pebbles、pebbles→3 dust 四条机器路线。新增来源前缀元数据及临时组成，实际物品由加载后的明确标签提供；没有新增 GT 自有物品。TagsUpdatedEvent 同步服务器/远程客户端数据，重载只清理自己的机器行。共享9,848条断言与全图差异检查通过；构建成品及边界见 [本批记录](verification/external-ore-20261004.md)。其他外部前缀处理、完整回调和实际运行仍待接续，整体 goal 保持 active。
+
 ## 2026-10-04 / 小型部件别名与外部粗矿碎块
 
 统一 `casingSmall` 与已注册的 `itemCasing` 材料身份，修正旧配方替换/自动合成判断；四条5/9小板路线此前已有生成，旧诊断误报缺失。`rawOreChunk` 按原版 Harder Ores 外部前缀处理，仅在实际物品标签存在时接入1→3及3→1转换。NeoForge 在标签加载后重建本加载器的转换行，接纳新标签候选；不增加 GT 自有碎块物品。共享9,827条断言、正式双版1m50s通过；最终增量打包及验包见 [本批记录](verification/prefix-aliases-20261004.md)。外部粗矿碎块的 Crusher 路线、实际模组/客户端/重载仍待接续，整体 goal 保持 active。
