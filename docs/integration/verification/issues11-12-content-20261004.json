@@ -1,0 +1,194 @@
+{
+  "status": "passed",
+  "scope": "packaging/source only; no EMI/game execution claim",
+  "source_commit": "a67d2b41805873dad8896072c38cf6757d47b457",
+  "platforms": {
+    "forge": {
+      "native_class_count": 13,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/block/MaterialBlock.class",
+          "packaged_sha256": "f393b11b76d4f5d57aa3fb42ff4fa68907de6209b7096ed2e9d86be77bf5256f",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/MaterialBlock$FallingMaterialBlock.class",
+          "packaged_sha256": "b85f7ccf232cb3de30964567955f52888cce124fdbc376124a79429e42f94e2a",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/food/GTDrinks.class",
+          "packaged_sha256": "1e8d94d93a2da092d51697959d490345dd5b59b12d9232d86faa4051685728ca",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/food/GTDrinks$Row.class",
+          "packaged_sha256": "c1fbdab3a7ce6d85002e3a1fa93c6a74f49a3dc3fec7fe298e14043c8acf69d0",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/hazard/MaterialBlockIgnition.class",
+          "packaged_sha256": "f9c385a3c0a87a479aa357561165582c85b93f91de339f4019ef7a4abcf1b73c",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/hazard/MaterialBlockIgnition$Blast.class",
+          "packaged_sha256": "e1ea6ed0791b2fbd3ab553950df8856257e0f30f81447b67971d408be3943e47",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes.class",
+          "packaged_sha256": "04d9a30194402ba071b119479050fd04c2c01b84fc354c141d72f1a4d63f459e",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$1.class",
+          "packaged_sha256": "b3160befe28d05d88e8f3280ff0425758e30c92495f099cc578f59e32cacb13f",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$Cache.class",
+          "packaged_sha256": "54138211a625d6aa88a7d149677fceb89ec6c105fc1c6e9f2365939f23605fb6",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes.class",
+          "packaged_sha256": "b9d509dbf8d526c1ad6e6122476cc94cb18113e12febf8f3c0a1d14cc239c19c",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/CraftingMaterialForms.class",
+          "packaged_sha256": "69ea618d38939ee9d0fd89c8dac773b39dc02c0f8aabd7bdece3cf8de2c9fb7a",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ToolShapelessRecipe.class",
+          "packaged_sha256": "f7dbe9e7f6554ffa2447cefc3f894e4e98dbd02e61d56c269fed68d347d01258",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ToolShapelessRecipe$1.class",
+          "packaged_sha256": "ee355a16d140c84182cafda1b36e3d5e35427dd62a5adfe3291d38db9b5bb8a4",
+          "verification": "present after reobfuscation"
+        }
+      ],
+      "deleted_permissions_absent": true
+    },
+    "neoforge": {
+      "native_class_count": 20,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/block/MaterialBlock.class",
+          "packaged_sha256": "6d1eec203f2cf98af6bf6e72b660e7f81d14a9454731c5b016e4d97d28e5c591",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/block/MaterialBlock$FallingMaterialBlock.class",
+          "packaged_sha256": "15275ccb647fd6e0ed8431009bc06ad56e70e8b4f8809be2cac96055f7127cd2",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/food/GTDrinks.class",
+          "packaged_sha256": "28bc90733f8f9f66f3688a9c70d05b5f7ee387f9c91ed7aa4a9a9c743e9bfc9b",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/food/GTDrinks$Row.class",
+          "packaged_sha256": "4359631970863c92a629d7dd308d8c5716a539214051e474a65805d11df28fc9",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/hazard/MaterialBlockIgnition.class",
+          "packaged_sha256": "ce805a421b206916c89e558db79f1369253ec61b5d4644f4e41578d637e6bd62",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/hazard/MaterialBlockIgnition$Blast.class",
+          "packaged_sha256": "8ae562d83528398e8c3636f7b5f4fa8edee11947f05d3cd3d692c232911f46e1",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes.class",
+          "packaged_sha256": "1de36e022f735469db9ec8e82a312c2cdc3100eb0e37dd5dc25f4317df251d7f",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$1.class",
+          "packaged_sha256": "acba06cc54ea4ad3ce570f545f65313d72d928405dabee9254ea390c008a8330",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$Cache.class",
+          "packaged_sha256": "344ffdf498a33e1e6513f6f9c2bfa863b583c7470c41aa41729df1a4d23e192e",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/data/OriginalCraftingJson.class",
+          "packaged_sha256": "dc1e1b254eef6111584b60197fefdd66bd8dadac4c719adde401ebe26c13a219",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/emi/GregTechEMIPlugin.class",
+          "packaged_sha256": "5b10131d809d0b6c612434c3359733abc3f562310c55edab177ba475a3a8d8e6",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/emi/GregTechEMIPlugin$1.class",
+          "packaged_sha256": "f59fde1e1dbfb156f496709d28e3317251492d2bf8e2a62c0ec3dc8959c17435",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/emi/MachineEmiIngredient.class",
+          "packaged_sha256": "004c45a9ccdcd08e296ebc008730d01c9c47dbc9ec01522b2a9915678e80ea3f",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/emi/MachineEmiIngredients.class",
+          "packaged_sha256": "25e7b026c6a5114e69c6b17a058cc9ae5d0cce4995004c1db6a9a85b814bd2ae",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/emi/MachineEmiRecipe.class",
+          "packaged_sha256": "5a5c7c010ca4b8bac35afe32e257b649986a4e3555ba561a422edf6f3f75e0b2",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes.class",
+          "packaged_sha256": "afe1da6477b4544cabc4897ddc5952498de2f3cbc4b5de44da52af2d6fa8f956",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/CraftingMaterialForms.class",
+          "packaged_sha256": "a49d3253fe231d0161a4306abead31cbb7eed9405760c764972f1b3f0af7ee5f",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/OvenRecipeLifecycle.class",
+          "packaged_sha256": "fc8204e1dd29e7a492aa7948940eeeb3f57f35bd2464f18a1efbecd6c9dcd429",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ToolShapelessRecipe.class",
+          "packaged_sha256": "1587d1d65c7e3dc1dd003b8ed6ac1495661aae4e15f8a7546c858b7e8be32ed0",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ToolShapelessRecipe$1.class",
+          "packaged_sha256": "fe3646b191f1a06f94b4093f9de09f4fc8f1575db8d6cc3d70659cecfd9abf59",
+          "verification": "byte-equal"
+        }
+      ],
+      "deleted_permissions_absent": true
+    }
+  },
+  "source_files_sha256": {
+    "gregapi/recipes/AdvancedCrafting1ToY.java": "68a7214943a807922d57e84416d9225cba95f713aebed026c166f17aeba8f3ec",
+    "gregapi/recipes/AdvancedCraftingXToY.java": "b9ab5927eba96d1b00855e781d918c18dfd87af4542bc4587d7d316e48d13ec0",
+    "gregapi/data/OP.java": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+    "gregapi/data/MT.java": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2",
+    "gregapi/block/prefixblock/PrefixBlock.java": "63c92e4350feb69c5fe88770cada530e8aef3412bfd0b3aad501b7a1a2ac6d09",
+    "gregtech/loaders/c/Loader_Recipes_Handlers.java": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+    "gregtech/tileentity/tools/MultiTileEntityDynamite.java": "27b9b80c569d6f1090f9d70c13d8e5b25e939b02ac495ad084d32197b1e09dce"
+  },
+  "emi_sources_sha256": "59c09da6f1898392fb2bec1a398ac2c84bfb1b8d376fed968aa73c1a9dcc2289"
+}

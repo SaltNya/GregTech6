@@ -1,0 +1,27 @@
+{
+  "read_only": true,
+  "endpoint": "https://api.github.com/repos/SaltNya/GregTech6/issues?state=all&per_page=30&sort=created&direction=desc",
+  "raw_sha256": "8dd3017f66cc6c19dabf8d07c7bdea8af0199dc640ef401e70dda9a96150aee7",
+  "issues": [
+    {
+      "number": 12,
+      "title": "锯末炸药爆炸效果太弱了。而且锯末炸药粉板条箱不炸",
+      "state": "open",
+      "created_at": "2026-10-03T23:48:52Z",
+      "html_url": "https://github.com/SaltNya/GregTech6/issues/12",
+      "body": "锯末炸药现在只能炸开一点泥土"
+    },
+    {
+      "number": 11,
+      "title": "EMI加载问题",
+      "state": "open",
+      "created_at": "2026-10-03T23:44:41Z",
+      "html_url": "https://github.com/SaltNya/GregTech6/issues/11",
+      "body": "## 环境\n\n- Minecraft 1.21.1\n- NeoForge 21.1.250\n- GregTech 6 Community Edition 0.0.0（`9a58c81b`）\n- EMI 1.1.24+1.21.1+neoforge\n- 同目录还有 Reliable EMI 4.7.7\n\n没有崩溃日志。游戏进程还在，EMI 一直不可用。\n\n## 发生了什么\n\n7:02 进入整合包。\n\n- 7:03:18 GregTech 的延迟任务用了 23.68 秒，把配方注册进 `RecipeMap`。\n- 7:03:55 原版配方管理器载入 37298 条。\n- 7:04:15 和 7:04:17 EMI 打出 `Recipes synchronized, waiting for tags to reload EMI...`。\n- 7:04:48 EMI 开始重载。\n\n到 7:43 的 `debug.log` 里始终没有这句：\n\n```text\n[gregtech] EMI registered N machine recipes in M categories\n```\n\n这句在 `GregTechEMIPlugin.register` 的循环结束之后才打，所以插件还卡在把机器配方逐条交给 EMI。\n\n## 配方规模\n\n原版 NEI 里挤压机展开后有三十多万条，全部机器配方大约七十万。那些是前缀处理器按材料现算的。\n\n这次移植版先把矩阵拆成实体配方，再整表交给 EMI。日志里的挤压机是 57456 条（输入只有锭、板、宝石、粉），全部机器配方大约十七万条。大头是：\n\n- 挤出模具 57456\n- 粉碎回收 38109\n- 材料形态转换 22645\n- 砧 8729，石材/工具 8706，弹药冲压 8565\n\n物品 56159 个。`neoforge/.../emi/GregTechEMIPlugin.java` 遍历 `RecipeMap.RECIPE_MAP_LIST` 里每条启用且未隐藏的配方，各调用一次 `registry.addRecipe`。按原版三十多万条挤压机的规模用同样方式塞进去只会更慢。\n\n## 同一次进世界的另一个错误\n\n7:04:18 客户端配方书分组时抛了：\n\n```text\nIllegalStateException: Missing bottle fluid Lava\n```\n\n位置是 `FiniteBottleFillingRecipe$ContainerIngredient.example`。配方同步任务失败。EMI 那句注册完成的日志在这之后也一直没出现，所以慢的是机器配方索引，不是这一条熔岩瓶。\n\n## 复现\n\n装上述 JAR 和 EMI，进存档，等 EMI。\n\n预期是进世界后 EMI 能在可接受的时间内用，并且日志打出注册条数。"
+    }
+  ],
+  "comments": {
+    "11": [],
+    "12": []
+  }
+}
