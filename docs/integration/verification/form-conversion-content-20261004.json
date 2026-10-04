@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "scope": "packaging and source bindings only; no game, network, or Mixin execution claim",
+  "platforms": {
+    "forge": {
+      "native_class_count": 7,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes.class",
+          "verification": "present after Forge reobfuscation",
+          "packaged_sha256": "4c1713ed82f1a3ac15f66f15393455ab689aaccc0eb859e897c9f07697caeb95"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$1.class",
+          "verification": "present after Forge reobfuscation",
+          "packaged_sha256": "b3160befe28d05d88e8f3280ff0425758e30c92495f099cc578f59e32cacb13f"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$Cache.class",
+          "verification": "present after Forge reobfuscation",
+          "packaged_sha256": "54138211a625d6aa88a7d149677fceb89ec6c105fc1c6e9f2365939f23605fb6"
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes.class",
+          "verification": "present after Forge reobfuscation",
+          "packaged_sha256": "e071cb434ad86d8d3113ff122f44b6338c47c926797ee0c82b9b4982b3383d82"
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes$Conversion.class",
+          "verification": "present after Forge reobfuscation",
+          "packaged_sha256": "17f176e33b5d4bf1258908ace0e70d28a77c41513247223e8814a63a174a454a"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ToolShapelessRecipe.class",
+          "verification": "present after Forge reobfuscation",
+          "packaged_sha256": "c638664bc233a0fec9f665cb83f04ec7a071f29ef8cb97f938bb7f3373561696"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ToolShapelessRecipe$1.class",
+          "verification": "present after Forge reobfuscation",
+          "packaged_sha256": "f04e8ec7fe3135f0d0129ef0404818e696f66318eebe48b83d497a4d625acb71"
+        }
+      ],
+      "changed_resource_count": 456,
+      "changed_resources_equal": true
+    },
+    "neoforge": {
+      "native_class_count": 10,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "1c90552b9811b9e4c0ea0f96a3c70a615816b4bcaac5ade2064070e10a2a4821"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$1.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "acba06cc54ea4ad3ce570f545f65313d72d928405dabee9254ea390c008a8330"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AutocraftingRecipes$Cache.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "344ffdf498a33e1e6513f6f9c2bfa863b583c7470c41aa41729df1a4d23e192e"
+        },
+        {
+          "entry": "com/gregtech/gregtech/data/OriginalCraftingJson.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "b77e3682875e035a359f385c8465663f2cff0bbf4221a3fbd305b058fb9b82ee"
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "2abf72a99671d782a65d0fa15db3849203cf0b28604aeb0f528934624c30dadc"
+        },
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes$Conversion.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "1b139a9c9bcd95c27795eaae0b397676e9fb7880255787004dcb7e8b89060feb"
+        },
+        {
+          "entry": "com/gregtech/gregtech/mixin/CraftingFormPositionMixin.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "431bd864eebb90e108af270bd7ee0269da46710c8122a819cfb55b1eb5c4a4f9"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/CraftingFormPosition.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "9657273985e02eba2246a5c6f9f8ddd3f9845ab88041b5fdb83ae11cecde91f6"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ToolShapelessRecipe.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "d93ae21515e76dd55e78760c492494e7287f39a19f819c0a771f21ec640dc1c0"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/ToolShapelessRecipe$1.class",
+          "verification": "byte-equal to current compiler output",
+          "packaged_sha256": "b9e8dea8502e2136365b80979ee3366a4a19ff4df0b9c4ab4ae3cf08e0fff974"
+        }
+      ],
+      "changed_resource_count": 456,
+      "changed_resources_equal": true
+    }
+  },
+  "source_files_sha256": {
+    "gregapi/recipes/AdvancedCrafting1ToY.java": "68a7214943a807922d57e84416d9225cba95f713aebed026c166f17aeba8f3ec",
+    "gregapi/recipes/AdvancedCraftingXToY.java": "b9ab5927eba96d1b00855e781d918c18dfd87af4542bc4587d7d316e48d13ec0",
+    "gregtech/loaders/c/Loader_Recipes_Handlers.java": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b"
+  },
+  "source_commit": "dcf5eea8f191c63bafa980345bc73aa0f87a82cb"
+}
