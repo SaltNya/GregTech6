@@ -1,5 +1,9 @@
 # 来源与贡献记录
 
+## 2026-10-04 / AdvancedCrafting 转换与 NO_AUTO
+
+采用 Gregorius Techneticies / GregTech-6 Team 的 Loader_Recipes_Handlers:552–625、AdvancedCrafting1ToY/XToY 权限与普通配方接管、RecipeMapAutocrafting ALLOWED 过滤、CR.NO_AUTO/DEF_NAC，以及 MultiTileEntityPipeFluid 的允许拆分行。两份外部兼容源文件中的八条 NO_AUTO 只审计，未导入其物品。原目录只读，沿用 LGPL-3.0-or-later 和 NOTICE，无新增依赖/资产。八个原文件及本批代码/数据/工具散列见 [来源回执](verification/autocrafting-permissions-source-20261004.json)，具体 1,272 条静态源行绑定见 [绑定记录](verification/autocrafting-permissions-bindings-20261004.json)。
+
 ## 2026-10-04 / 自动合成机、原版蓝图结构与复制
 
 使用 Gregorius Techneticies / GregTech-6 Team 的 RecipeMapAutocrafting、Recipe 优化、UT.NBT 蓝图格式、BasicMachine/Container 程序槽、MultiItemRandomTools 蓝图与机械臂、Loader_Fluids 四种蓝染液、ScannerVisuals/Printer 数据分支和 GT6_Main 展示行。保留 LGPL-3.0-or-later 及原作者署名，原目录只读，没有增加依赖或资产。18 个源文件散列（含最新基岩矿提问的 WorldgenOresBedrock/WD 复核）及当前文件回执见 [本批来源](verification/autocrafting-source-20261004.json)。原版 NO_AUTO 全局元数据抽取仍待完成。

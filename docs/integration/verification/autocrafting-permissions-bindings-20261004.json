@@ -1,0 +1,6997 @@
+{
+  "source_root": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java",
+  "conversion_file_sha256": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+  "conversion_constructor_sites": [
+    {
+      "line": 552,
+      "input": "oreRaw",
+      "input_count": "1",
+      "output": "gem",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(oreRaw, gem, 1, F)"
+    },
+    {
+      "line": 553,
+      "input": "oreRaw",
+      "input_count": "1",
+      "output": "rawOreChunk",
+      "output_count": "3",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(oreRaw, rawOreChunk, 3, F)"
+    },
+    {
+      "line": 554,
+      "input": "crushed",
+      "input_count": "1",
+      "output": "crushedTiny",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(crushed, crushedTiny, 9, F)"
+    },
+    {
+      "line": 555,
+      "input": "crushed",
+      "input_count": "1",
+      "output": "gemFlawed",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(crushed, gemFlawed, 1, F)"
+    },
+    {
+      "line": 556,
+      "input": "crushedPurified",
+      "input_count": "1",
+      "output": "crushedPurifiedTiny",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(crushedPurified, crushedPurifiedTiny, 9, F)"
+    },
+    {
+      "line": 557,
+      "input": "crushedPurified",
+      "input_count": "1",
+      "output": "gemFlawed",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(crushedPurified, gemFlawed, 1, F)"
+    },
+    {
+      "line": 558,
+      "input": "crushedCentrifuged",
+      "input_count": "1",
+      "output": "crushedCentrifugedTiny",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(crushedCentrifuged, crushedCentrifugedTiny, 9, F)"
+    },
+    {
+      "line": 559,
+      "input": "crushedCentrifuged",
+      "input_count": "1",
+      "output": "gemFlawed",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(crushedCentrifuged, gemFlawed, 1, F)"
+    },
+    {
+      "line": 560,
+      "input": "ingot",
+      "input_count": "1",
+      "output": "nugget",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(ingot, nugget, 9, F)"
+    },
+    {
+      "line": 561,
+      "input": "ingot",
+      "input_count": "1",
+      "output": "chunkGt",
+      "output_count": "4",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(ingot, chunkGt, 4, F)"
+    },
+    {
+      "line": 562,
+      "input": "billet",
+      "input_count": "1",
+      "output": "nugget",
+      "output_count": "6",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(billet, nugget, 6, F)"
+    },
+    {
+      "line": 563,
+      "input": "dust",
+      "input_count": "1",
+      "output": "dustTiny",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(dust, dustTiny, 9, F)"
+    },
+    {
+      "line": 564,
+      "input": "dust",
+      "input_count": "1",
+      "output": "dustSmall",
+      "output_count": "4",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(dust, dustSmall, 4, F)"
+    },
+    {
+      "line": 565,
+      "input": "dustTiny",
+      "input_count": "1",
+      "output": "dustDiv72",
+      "output_count": "8",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(dustTiny, dustDiv72, 8, F)"
+    },
+    {
+      "line": 566,
+      "input": "dustSmall",
+      "input_count": "1",
+      "output": "dustDiv72",
+      "output_count": "18",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(dustSmall, dustDiv72, 18, F)"
+    },
+    {
+      "line": 567,
+      "input": "blockRaw",
+      "input_count": "1",
+      "output": "oreRaw",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(blockRaw, oreRaw, 9, F)"
+    },
+    {
+      "line": 568,
+      "input": "blockDust",
+      "input_count": "1",
+      "output": "dust",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(blockDust, dust, 9, F)"
+    },
+    {
+      "line": 569,
+      "input": "blockDust",
+      "input_count": "1",
+      "output": "dustSmall",
+      "output_count": "36",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(blockDust, dustSmall, 36, F)"
+    },
+    {
+      "line": 570,
+      "input": "blockIngot",
+      "input_count": "1",
+      "output": "ingot",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(blockIngot, ingot, 9, F)"
+    },
+    {
+      "line": 571,
+      "input": "blockIngot",
+      "input_count": "1",
+      "output": "chunkGt",
+      "output_count": "36",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(blockIngot, chunkGt, 36, F)"
+    },
+    {
+      "line": 572,
+      "input": "blockGem",
+      "input_count": "1",
+      "output": "gem",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(blockGem, gem, 9, F)"
+    },
+    {
+      "line": 573,
+      "input": "blockPlate",
+      "input_count": "1",
+      "output": "plate",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(blockPlate, plate, 9, F)"
+    },
+    {
+      "line": 574,
+      "input": "blockPlateGem",
+      "input_count": "1",
+      "output": "plateGem",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(blockPlateGem, plateGem, 9, F)"
+    },
+    {
+      "line": 576,
+      "input": "rawOreChunk",
+      "input_count": "3",
+      "output": "oreRaw",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(rawOreChunk, 3, oreRaw, 1, F)"
+    },
+    {
+      "line": 577,
+      "input": "crushedTiny",
+      "input_count": "9",
+      "output": "crushed",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(crushedTiny, 9, crushed, 1, F)"
+    },
+    {
+      "line": 578,
+      "input": "crushedPurifiedTiny",
+      "input_count": "9",
+      "output": "crushedPurified",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(crushedPurifiedTiny, 9, crushedPurified, 1, F)"
+    },
+    {
+      "line": 579,
+      "input": "crushedCentrifugedTiny",
+      "input_count": "9",
+      "output": "crushedCentrifuged",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(crushedCentrifugedTiny, 9, crushedCentrifuged, 1, F)"
+    },
+    {
+      "line": 580,
+      "input": "ingot",
+      "input_count": "2",
+      "output": "billet",
+      "output_count": "3",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(ingot, 2, billet, 3, F)"
+    },
+    {
+      "line": 581,
+      "input": "ingot",
+      "input_count": "3",
+      "output": "nugget",
+      "output_count": "27",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(ingot, 3, nugget, 27, F)"
+    },
+    {
+      "line": 582,
+      "input": "ingot",
+      "input_count": "4",
+      "output": "billet",
+      "output_count": "6",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(ingot, 4, billet, 6, F)"
+    },
+    {
+      "line": 583,
+      "input": "ingot",
+      "input_count": "5",
+      "output": "nugget",
+      "output_count": "45",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(ingot, 5, nugget, 45, F)"
+    },
+    {
+      "line": 584,
+      "input": "ingot",
+      "input_count": "6",
+      "output": "billet",
+      "output_count": "9",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(ingot, 6, billet, 9, F)"
+    },
+    {
+      "line": 585,
+      "input": "ingot",
+      "input_count": "7",
+      "output": "nugget",
+      "output_count": "63",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(ingot, 7, nugget, 63, F)"
+    },
+    {
+      "line": 586,
+      "input": "ingot",
+      "input_count": "8",
+      "output": "billet",
+      "output_count": "12",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(ingot, 8, billet, 12, F)"
+    },
+    {
+      "line": 587,
+      "input": "ingot",
+      "input_count": "9",
+      "output": "blockIngot",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(ingot, 9, blockIngot, 1, F)"
+    },
+    {
+      "line": 588,
+      "input": "billet",
+      "input_count": "2",
+      "output": "nugget",
+      "output_count": "12",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(billet, 2, nugget, 12, F)"
+    },
+    {
+      "line": 589,
+      "input": "billet",
+      "input_count": "3",
+      "output": "ingot",
+      "output_count": "2",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(billet, 3, ingot, 2, F)"
+    },
+    {
+      "line": 590,
+      "input": "billet",
+      "input_count": "4",
+      "output": "nugget",
+      "output_count": "24",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(billet, 4, nugget, 24, F)"
+    },
+    {
+      "line": 591,
+      "input": "billet",
+      "input_count": "5",
+      "output": "nugget",
+      "output_count": "30",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(billet, 5, nugget, 30, F)"
+    },
+    {
+      "line": 592,
+      "input": "billet",
+      "input_count": "6",
+      "output": "ingot",
+      "output_count": "4",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(billet, 6, ingot, 4, F)"
+    },
+    {
+      "line": 593,
+      "input": "billet",
+      "input_count": "7",
+      "output": "nugget",
+      "output_count": "42",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(billet, 7, nugget, 42, F)"
+    },
+    {
+      "line": 594,
+      "input": "billet",
+      "input_count": "8",
+      "output": "nugget",
+      "output_count": "48",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(billet, 8, nugget, 48, F)"
+    },
+    {
+      "line": 595,
+      "input": "billet",
+      "input_count": "9",
+      "output": "ingot",
+      "output_count": "6",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(billet, 9, ingot, 6, F)"
+    },
+    {
+      "line": 596,
+      "input": "chunkGt",
+      "input_count": "4",
+      "output": "ingot",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(chunkGt, 4, ingot, 1, F)"
+    },
+    {
+      "line": 597,
+      "input": "chunkGt",
+      "input_count": "8",
+      "output": "billet",
+      "output_count": "3",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(chunkGt, 8, billet, 3, F)"
+    },
+    {
+      "line": 598,
+      "input": "nugget",
+      "input_count": "6",
+      "output": "billet",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(nugget, 6, billet, 1, F)"
+    },
+    {
+      "line": 599,
+      "input": "nugget",
+      "input_count": "9",
+      "output": "ingot",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(nugget, 9, ingot, 1, F)"
+    },
+    {
+      "line": 600,
+      "input": "dustDiv72",
+      "input_count": "8",
+      "output": "dustTiny",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(dustDiv72, 8, dustTiny, 1, F)"
+    },
+    {
+      "line": 601,
+      "input": "dustTiny",
+      "input_count": "9",
+      "output": "dust",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(dustTiny, 9, dust, 1, F)"
+    },
+    {
+      "line": 602,
+      "input": "dustSmall",
+      "input_count": "4",
+      "output": "dust",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(dustSmall, 4, dust, 1, F)"
+    },
+    {
+      "line": 603,
+      "input": "dustSmall",
+      "input_count": "8",
+      "output": "dust",
+      "output_count": "2",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(dustSmall, 8, dust, 2, F)"
+    },
+    {
+      "line": 604,
+      "input": "oreRaw",
+      "input_count": "9",
+      "output": "blockRaw",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(oreRaw, 9, blockRaw, 1, F)"
+    },
+    {
+      "line": 605,
+      "input": "dust",
+      "input_count": "9",
+      "output": "blockDust",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(dust, 9, blockDust, 1, F)"
+    },
+    {
+      "line": 606,
+      "input": "gem",
+      "input_count": "9",
+      "output": "blockGem",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(gem, 9, blockGem, 1, F)"
+    },
+    {
+      "line": 607,
+      "input": "plate",
+      "input_count": "9",
+      "output": "blockPlate",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(plate, 9, blockPlate, 1, F)"
+    },
+    {
+      "line": 608,
+      "input": "plateGem",
+      "input_count": "9",
+      "output": "blockPlateGem",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(plateGem, 9, blockPlateGem, 1, F)"
+    },
+    {
+      "line": 609,
+      "input": "plateTiny",
+      "input_count": "5",
+      "output": "casingSmall",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(plateTiny, 5, casingSmall, 1, F)"
+    },
+    {
+      "line": 610,
+      "input": "plateTiny",
+      "input_count": "9",
+      "output": "casingSmall",
+      "output_count": "2",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(plateTiny, 9, casingSmall, 2, F)"
+    },
+    {
+      "line": 611,
+      "input": "plateGemTiny",
+      "input_count": "5",
+      "output": "casingSmall",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(plateGemTiny, 5, casingSmall, 1, F)"
+    },
+    {
+      "line": 612,
+      "input": "plateGemTiny",
+      "input_count": "9",
+      "output": "casingSmall",
+      "output_count": "2",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(plateGemTiny, 9, casingSmall, 2, F)"
+    },
+    {
+      "line": 615,
+      "input": "tPrefix",
+      "input_count": "1",
+      "output": "oreRaw",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(tPrefix, oreRaw, 1, F)"
+    },
+    {
+      "line": 616,
+      "input": "tPrefix",
+      "input_count": "1",
+      "output": "oreRaw",
+      "output_count": "2",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(tPrefix, oreRaw, 2, F)"
+    },
+    {
+      "line": 624,
+      "input": "wireGt[tSmall-1]",
+      "input_count": "tAmount",
+      "output": "wireGt[tBig-1]",
+      "output_count": "1",
+      "autocraftable": false,
+      "expression": "new AdvancedCraftingXToY(wireGt[tSmall-1], tAmount, wireGt[tBig-1], 1, F)"
+    },
+    {
+      "line": 625,
+      "input": "wireGt[tBig-1]",
+      "input_count": "1",
+      "output": "wireGt[tSmall-1]",
+      "output_count": "tAmount",
+      "autocraftable": false,
+      "expression": "new AdvancedCrafting1ToY(wireGt[tBig-1], wireGt[tSmall-1], tAmount, F)"
+    }
+  ],
+  "static_bindings": [
+    {
+      "recipe": "axial/block_plate_graphene.json",
+      "source_line": 607,
+      "autocraftable": false
+    },
+    {
+      "recipe": "axial/block_plate_magnalium.json",
+      "source_line": 607,
+      "autocraftable": false
+    },
+    {
+      "recipe": "axial/block_plate_trinitanium.json",
+      "source_line": 607,
+      "autocraftable": false
+    },
+    {
+      "recipe": "axial/block_plate_vibramantium.json",
+      "source_line": 607,
+      "autocraftable": false
+    },
+    {
+      "recipe": "axial/unpack_graphene_plates.json",
+      "source_line": 573,
+      "autocraftable": false
+    },
+    {
+      "recipe": "axial/unpack_magnalium_plates.json",
+      "source_line": 573,
+      "autocraftable": false
+    },
+    {
+      "recipe": "axial/unpack_trinitanium_plates.json",
+      "source_line": 573,
+      "autocraftable": false
+    },
+    {
+      "recipe": "axial/unpack_vibramantium_plates.json",
+      "source_line": 573,
+      "autocraftable": false
+    },
+    {
+      "recipe": "polymer_forming/pack_plastic.json",
+      "source_line": 599,
+      "autocraftable": false
+    },
+    {
+      "recipe": "polymer_forming/pack_rubber.json",
+      "source_line": 599,
+      "autocraftable": false
+    },
+    {
+      "recipe": "polymer_forming/unpack_plastic.json",
+      "source_line": 560,
+      "autocraftable": false
+    },
+    {
+      "recipe": "polymer_forming/unpack_rubber.json",
+      "source_line": 560,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_02_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_03_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_04_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_05_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_06_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_07_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_08_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_09_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_10_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_11_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_12_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_13_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_14_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_15_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_aluminium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_annealed_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_blue_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_constantan.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_copper.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_efrine.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_electrotine_alloy.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_electrum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_gold.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_graphene.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_hsla.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_iridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_kanthal.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_lead.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_naquadah.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_netherite.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_nichrome.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_niobium_titanium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_osmiridium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_osmium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_platinum.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_silicon_carbide.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_silver.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_superconductor.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_tin.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_tungsten.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_tungsten_steel.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_vanadium_gallium.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/unpack_16_yttrium_barium_cuprate.json",
+      "source_line": 625,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_02_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_03_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_04_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_05_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_06_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_07_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_08_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_01_09_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_04_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_06_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_08_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_10_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_12_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_14_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_02_16_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_06_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_09_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_12_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_03_15_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_08_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_12_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_04_16_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_10_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_05_15_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_06_12_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_07_14_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_aluminium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_annealed_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_blue_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_constantan.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_copper.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_efrine.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_electrotine_alloy.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_electrum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_gold.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_graphene.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_hsla.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_iridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_kanthal.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_lead.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_naquadah.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_netherite.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_nichrome.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_niobium_titanium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_osmiridium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_osmium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_platinum.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_silicon_carbide.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_silver.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_superconductor.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_tin.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_tungsten.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_tungsten_steel.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_vanadium_gallium.json",
+      "source_line": 624,
+      "autocraftable": false
+    },
+    {
+      "recipe": "wire_working/weave_08_16_yttrium_barium_cuprate.json",
+      "source_line": 624,
+      "autocraftable": false
+    }
+  ],
+  "external_no_auto_sites": [
+    {
+      "path": "gregtech/compat/Compat_Recipes_IndustrialCraft.java",
+      "line": 429,
+      "expression": "CR.shaped(ST.mkic(\"electronicCircuit\", 1), CR.DEF_NAC_NCC, \"  \", \" C\", 'C', IL.Circuit_Basic   );",
+      "status": "external content not ported"
+    },
+    {
+      "path": "gregtech/compat/Compat_Recipes_IndustrialCraft.java",
+      "line": 430,
+      "expression": "CR.shaped(ST.mkic(\"electronicCircuit\", 1), CR.DEF_NAC_NCC, \"  \", \" C\", 'C', IL.Circuit_Good    );",
+      "status": "external content not ported"
+    },
+    {
+      "path": "gregtech/compat/Compat_Recipes_IndustrialCraft.java",
+      "line": 431,
+      "expression": "CR.shaped(ST.mkic(\"advancedCircuit\"  , 1), CR.DEF_NAC_NCC, \"  \", \" C\", 'C', IL.Circuit_Advanced);",
+      "status": "external content not ported"
+    },
+    {
+      "path": "gregtech/compat/Compat_Recipes_IndustrialCraft.java",
+      "line": 432,
+      "expression": "CR.shaped(ST.mkic(\"advancedCircuit\"  , 1), CR.DEF_NAC_NCC, \"  \", \" C\", 'C', IL.Circuit_Elite   );",
+      "status": "external content not ported"
+    },
+    {
+      "path": "gregtech/compat/Compat_Recipes_IndustrialCraft.java",
+      "line": 433,
+      "expression": "CR.shaped(ST.mkic(\"advancedCircuit\"  , 1), CR.DEF_NAC_NCC, \"  \", \" C\", 'C', IL.Circuit_Master  );",
+      "status": "external content not ported"
+    },
+    {
+      "path": "gregtech/compat/Compat_Recipes_IndustrialCraft.java",
+      "line": 434,
+      "expression": "CR.shaped(ST.mkic(\"advancedCircuit\"  , 1), CR.DEF_NAC_NCC, \"  \", \" C\", 'C', IL.Circuit_Ultimate);",
+      "status": "external content not ported"
+    },
+    {
+      "path": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "line": 46,
+      "expression": "CR.shaped(ST.make(MD.SC2, \"ItemResource\", 1, 2), CR.DEF_NAC, \"  \", \" X\", 'X', ST.make(MD.FZ , \"acid\"        , 1, 0));",
+      "status": "external content not ported"
+    },
+    {
+      "path": "gregtech/compat/Compat_Recipes_Steamcraft2.java",
+      "line": 47,
+      "expression": "CR.shaped(ST.make(MD.FZ , \"acid\"        , 1, 0), CR.DEF_NAC, \"  \", \" X\", 'X', ST.make(MD.SC2, \"ItemResource\", 1, 2));",
+      "status": "external content not ported"
+    }
+  ],
+  "pending_changes": 0,
+  "evidence_boundary": "Exact source quantity/material bindings; excludes custom GT recipes and unported content. Not a Minecraft runtime test.",
+  "source_commit": "78198f05a0c0309d6c54bce84b8f6f2bc8098188"
+}

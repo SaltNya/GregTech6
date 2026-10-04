@@ -1,5 +1,11 @@
 # 验证账本
 
+## 2026-10-04 / 源转换权限与材料别名
+
+快速双版 compileJava 29s；一次正式共享检查/双版 assemble 1m08s，9,778 条断言。十五项源边界样例覆盖统一别名、不同材料、占用格数、允许管道与禁止导线、不可变快照及同名不同身份。脚本按源数量/前缀/材料绑定 1,272 条静态数据，重新检查 0 pending；ALLOWED 初始化收尾仅双版 assemble 50s，未重复共享测试。
+
+最终 640 个共享 class、每包 1,272 条改变资源、Forge 九个与 NeoForge 十个改变原生 class 及 metadata/NOTICE 验包通过；NeoForge 字节相同，Forge 仅声明重混淆后存在。没有客户端、网络往返、机器生存操作或存档证据。[详情与剩余转换缺口](verification/autocrafting-permissions-20261004.md)。
+
 ## 2026-10-04 / 自动合成与蓝图程序
 
 局部参数重名导致首轮快速编译失败，修复后两版编译 22s 成功。一次正式共享检查与双版 assemble 5m 成功，共享 9,763 条断言；蓝图取得/扫描/打印原生收尾仅增量 assemble 55s，无重复共享测试。最终 637 个共享 class、Forge/NeoForge 各 38 个变更原生 class、两份语言资源及 metadata/NOTICE 验包通过；NeoForge 逐字节匹配，Forge 原生类仅声明重混淆后的存在。[记录与边界](verification/autocrafting-20261004.md)包含失败日志、来源和全局 NO_AUTO 缺口。没有实际原生配方注册、客户端、生存加工或存档运行证据。
