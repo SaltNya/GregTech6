@@ -1,0 +1,74 @@
+{
+  "originalSource": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "authors": "Gregorius Techneticies; GregTech-6 Team",
+  "license": "LGPL-3.0-or-later; original source trees unchanged, notices retained",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\plants\\MultiTileEntityBush.java",
+      "bytes": 17720,
+      "sha256": "b56bed74378f647c66d98e4b241da47c838114165088ac020a952bf258bf890a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\misc\\MultiTileEntityFluidSpring.java",
+      "bytes": 6459,
+      "sha256": "af5ab6571c4fe236fa1c9896247af5c2f0056e768374fa3a3d4c2997e64e871b"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\WorldgenBushes.java",
+      "bytes": 5498,
+      "sha256": "e1a1f5f3262f9a00c900485ca44b8b3843b9a5def54ba8fa4b8d39c934e60a7d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\WorldgenFluidSpring.java",
+      "bytes": 4559,
+      "sha256": "5720adf268be3ed5626212485ed6a179e2875918862d40efc417627e6b77befe"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenTesting.java",
+      "bytes": 23346,
+      "sha256": "f498f70d0c2ac9c62e5a7f40a3d15ff6c56e5457f23ef4378877e77064034e50"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemFood.java",
+      "bytes": 147661,
+      "sha256": "bc66d27a6428a3d62e3000b6bae4c8b0f1a775dad00d139bff507b201acd6598"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_Worldgen.java",
+      "bytes": 113698,
+      "sha256": "ebd09b9af84bf8e275ffbe856a706d0206a51fd8869a6b3a39ceddbb321c550a"
+    }
+  ],
+  "adoption": {
+    "identity": "User-requested flattening into 9 typed bushes and 7 typed springs; original behavior adapted to modern registered block identities. Empty bush retained; old empty spring hidden for migration.",
+    "bush": "Original stage/support geometry, byte growth cycle, cotton default, eight original food berries, 1-2 output, specimen not consumed. Material-prefix berries/external species remain pending; unmapped legacy outputs retain old adapter, no generic fallback species invented.",
+    "spring": "Fixed source fluids and amount/rate; existing emission mechanism retained. Does not claim full finite-fluid or activation parity.",
+    "certificate": "Removed at user request, including registration, BE, Nexus generation, models, translations and creative lookup. This intentionally departs from original test-building content."
+  },
+  "sdkReferences": [
+    {
+      "path": "C:\\Users\\90499\\.gradle\\caches\\forge_gradle\\maven_downloader\\net\\minecraftforge\\forge\\1.20.1-47.4.20\\forge-1.20.1-47.4.20-sources.jar",
+      "bytes": 1621486,
+      "sha256": "de56d18d759d17d780416e47fb01b72c38633bdd2e2d071cdedfe486eab35d7b",
+      "members": [
+        "net/minecraftforge/client/model/CompositeModel.java",
+        "net/minecraftforge/client/extensions/IForgeBakedModel.java"
+      ],
+      "use": "Official fixed SDK API contract: item render passes return children; render types queried per pass. No SDK source/bytecode copied into the mod."
+    },
+    {
+      "path": "C:\\Users\\90499\\.gradle\\caches\\modules-2\\files-2.1\\net.minecraftforge.gradle\\ForgeGradle\\6.0.54\\abfc5f1f905524349236e01ee686f7359a5dbd4e\\ForgeGradle-6.0.54.jar",
+      "bytes": 508115,
+      "sha256": "1d54a97a225ed5180300e8070a1c818597d98ec45a11fedecb425254b7982da2",
+      "members": [
+        "net/minecraftforge/gradle/userdev/tasks/RenameJarInPlace.class"
+      ],
+      "use": "Read fixed local ForgeGradle getLibraries API with javap to supply main class hierarchy for reobfuscating the separate test probe. No dependency source/bytecode copied."
+    }
+  ]
+}

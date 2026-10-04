@@ -173,6 +173,14 @@ def launch(args):
     if (receipt['platform'] != args.platform or receipt['screen'] != 'net.minecraft.client.gui.screens.TitleScreen'
             or receipt['renderedFrames'] < 5 or screenshot.resolve().parent != (run / 'screenshots').resolve()):
         raise ValueError('Production title-screen receipt is incomplete')
+    surface = receipt.get('surfaceChecks', {})
+    if (surface.get('surfaceItemModelsChecked') != 16
+            or surface.get('surfaceSpringSpritesChecked') != 7
+            or surface.get('surfaceBerryStageColorsChecked') != 36
+            or len(surface.get('surfaceItems', [])) != 16
+            or surface.get('machineModelsChecked') != 6
+            or len(surface.get('machineItems', [])) != 6):
+        raise ValueError('Production surface mesh/color receipt is incomplete')
     dimensions = check_png(screenshot.read_bytes())
     if dimensions != (receipt['width'], receipt['height']):
         raise ValueError('Production screenshot dimensions differ from receipt')

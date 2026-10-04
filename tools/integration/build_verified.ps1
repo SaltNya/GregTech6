@@ -35,7 +35,7 @@ try {
         if ($receipt.platform -ne $platform -or $receipt.renderedWorldFrames -lt 30 -or $receipt.recipes -lt 1000 -or $receipt.canonicalItemsChecked -lt 1000 -or ($platform -eq 'neoforge' -and $receipt.emiLoaded -ne $true) -or $receipt.legacyBatteryAliasesChecked -ne 5 -or $receipt.chemicalBatteryStackRoundTrips -ne 10 -or $receipt.sourceChemicalBatteriesChecked -ne 25 -or $receipt.sourcePoweredAssemblyRowsChecked -ne 70) {
             throw "$platform preflight receipt is incomplete."
         }
-        if ($receipt.originCenterBiomesChecked -ne 9 -or $receipt.originFacilityIdentitiesChecked -ne 26 -or $receipt.originTestInventorySlots -ne 144 -or $receipt.crankNativeSignalChecks -ne 30 -or $receipt.flintKnifeFireAspect -ne 1 -or $receipt.originalCrucibleReactionChecks -ne 4 -or $receipt.originalCreativePages -ne 66 -or $receipt.gearboxInventoryModelsChecked -ne 13 -or $receipt.asphaltItemRgb -ne '808080' -or $receipt.crankItemRgb -ne 'c8c8c8' -or $receipt.originFeedbackFailures) {
+        if ($receipt.originCenterBiomesChecked -ne 9 -or $receipt.originFacilityIdentitiesChecked -ne 25 -or $receipt.originTestInventorySlots -ne 144 -or $receipt.crankNativeSignalChecks -ne 30 -or $receipt.flintKnifeFireAspect -ne 1 -or $receipt.originalCrucibleReactionChecks -ne 4 -or $receipt.originalCreativePages -ne 66 -or $receipt.gearboxInventoryModelsChecked -ne 13 -or $receipt.asphaltItemRgb -ne '808080' -or $receipt.crankItemRgb -ne 'c8c8c8' -or $receipt.originFeedbackFailures) {
             throw "$platform original-content feedback receipt is incomplete."
         }
         if ($receipt.nexusToolInventoryModelsChecked -ne 61 -or $receipt.ropeInventoryModelsChecked -ne 6 -or $receipt.filterInventoryModelsChecked -ne 4 -or $receipt.automaticAndDataSwitchColorsChecked -ne 12 -or @($receipt.renderedInventoryItems).Count -ne 61 -or @($receipt.untranslatedInventorySamples).Count -ne 0) {
@@ -53,6 +53,9 @@ try {
             }
         }
         if($receipt.originTestInventoryPresent -ne 118 -or $receipt.originTestInventoryOptionalEmpty -ne 26 -or @($receipt.originTestInventoryPendingTools).Count -ne 0 -or $receipt.nexusGunUseChecks -ne 15 -or $receipt.nexusGunAndPocketCraftingRows -ne 4 -or $receipt.nexusPocketModesChecked -ne 8 -or $receipt.nexusPoweredToolsChecked -ne 14){throw "$platform native Nexus tools are incomplete."}
+        if (@($receipt.flatBushVariantsChecked).Count -ne 9 -or @($receipt.flatSpringVariantsChecked).Count -ne 7 -or $receipt.flatGeneratedBranchesChecked -ne 45 -or $receipt.flatLegacyWorldConversionsChecked -ne 2 -or $receipt.flatSurfaceInventoryModelsChecked -ne 16 -or @($receipt.renderedFlatSurfaceItems).Count -ne 16 -or -not $receipt.supporterCertificateRemoved) {
+            throw "$platform flat bushes/springs and certificate removal receipt is incomplete."
+        }
         # Source NI and absent external integrations remain explicit empty slots.
         if ($receipt.originTestInventoryPresent + $receipt.originTestInventoryOptionalEmpty + @($receipt.originTestInventoryPendingTools).Count -ne 144) {
             throw "$platform source test inventory accounting is incomplete."
