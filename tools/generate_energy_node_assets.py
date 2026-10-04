@@ -204,6 +204,16 @@ def main(battery_only=False, storage_transformers_only=False):
                 write(os.path.join(MODELS, device_id + "_" + facing + ".json"),
                       build_model(folder, layout, facing=facing))
                 states["variants"]["facing=" + facing] = {"model": model_ref + "_" + facing}
+        if layout == "tbs":
+            variants = {}
+            for facing in ("down", "north", "south", "west", "east", "up"):
+                suffix = "" if facing in ("down", "up") else "_" + facing
+                write(os.path.join(MODELS, device_id + suffix + "_active.json"),
+                      build_model(folder, layout, overlay="overlay_active", facing="down" if facing == "up" else facing))
+                for active in ("false", "true"):
+                    variants["facing=" + facing + ",solar_active=" + active] = {
+                        "model": model_ref + suffix + ("_active" if active == "true" else "")}
+            states = {"variants": variants}
         if is_battery_box(device_id) or device_id.startswith("transformer_"):
             state_property="charge_state" if is_battery_box(device_id) else "activity"
             variants={}
