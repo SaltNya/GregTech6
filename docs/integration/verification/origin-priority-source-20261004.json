@@ -1,0 +1,90 @@
+{
+  "scope": "Source evidence; runtime and completion recorded separately",
+  "authors": "Gregorius Techneticies / GregTech-6 Team; original notices retained",
+  "code_license": "LGPL-3.0-or-later",
+  "certificate_texture_license": "CC0-1.0 (LICENSE.assets; no per-file exception)",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenCenterBiomes.java",
+      "sha256": "948e24ca9b41b189d11b9c4ac0a20881443d68184d12cb56e4a74c8e01b2d8d6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenTesting.java",
+      "sha256": "f498f70d0c2ac9c62e5a7f40a3d15ff6c56e5457f23ef4378877e77064034e50"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenNexus.java",
+      "sha256": "b4f7841c84d193dda38b7caa940cde249465a739b04992e5052cb9ab79fe22f0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenStreets.java",
+      "sha256": "988f8650904cdd280ccbe022e5bdebd9a8a96fbe9cd891aa137bfe3bf148f42f"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenBeacon.java",
+      "sha256": "d3af7c68c3f0a428005b0461ffc544c0538dd16d225d7f278fe4c937043b9e4f"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\tools\\MultiTileEntityCrank.java",
+      "sha256": "03d4c7a3be5709c5ae49726db44dabf715f8e2fa1f144ad025a6b1553b8a679a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\misc\\MultiTileEntityCertificate.java",
+      "sha256": "64c2cc242b21513ce6a8073abce8fa24ec255fc78125dd3301ac732146b7b61b"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\LICENSE.assets",
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\certificate\\BACK.png",
+      "sha256": "9a374c8a50fe6bdb535f9f5275bd215434f66466523dab985f8564d0ff1b656a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\certificate\\SILVER.png",
+      "sha256": "501d90892247a5b1c7d79557caaaddc08e0f9a3e71a6167f1f22c83a9d91cac3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\certificate\\GOLD.png",
+      "sha256": "2028f6cb6a65dea6fe3a53b3206e94e777ff26f21a59c7290eb9e9e41469ed95"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\placeables\\MultiTileEntityStick.java",
+      "sha256": "5c1ab697b907de91617d7c6fce216f87223882f2cd87196e0d903be484ba2ab0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\placeables\\MultiTileEntityRock.java",
+      "sha256": "34db5a8ef1711292b14b99595aa515b51448923508b56473dda13615a4e94368"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\multiblocks\\MultiTileEntityCrucible.java",
+      "sha256": "2b04eaab46ae4e48dbd4a7500ed1b5fac533933649cc8a0dbf4baab1b99fa96c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\item\\multiitem\\MultiItemTool.java",
+      "sha256": "d9f1417dc1e13538b89470445fd83d1bccd6a61e19aaacb9b03d0ee48b4cb0ac"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_ButcheryKnife.java",
+      "sha256": "28ac4ea6b80f17f8445ea918da0f91c58052191672073845dca6f5086a04d13c"
+    }
+  ],
+  "certificate_copies": [
+    {
+      "path": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\certificate\\back.png",
+      "sha256": "9a374c8a50fe6bdb535f9f5275bd215434f66466523dab985f8564d0ff1b656a"
+    },
+    {
+      "path": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\certificate\\silver.png",
+      "sha256": "501d90892247a5b1c7d79557caaaddc08e0f9a3e71a6167f1f22c83a9d91cac3"
+    },
+    {
+      "path": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\certificate\\gold.png",
+      "sha256": "2028f6cb6a65dea6fe3a53b3206e94e777ff26f21a59c7290eb9e9e41469ed95"
+    }
+  ]
+}

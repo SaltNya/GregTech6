@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "scope": "Backed up known old GT jars and atomically installed the verified pair; user worlds were not opened",
+  "records": [
+    {
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "target": "C:\\Minecraft整合包\\test\\.minecraft\\versions\\1.20.1-Forge_47.4.26\\mods\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "backup": "C:\\Minecraft整合包\\test\\.minecraft\\versions\\1.20.1-Forge_47.4.26\\codex-backups\\gregtech\\20261004-100550Z\\gregtech6-1.20.1-forge-0.0.0.jar",
+      "old_sha256": "245f0600f0488883410e692720849a23ebcda5072b0e7d0a271755fdb66de95a",
+      "new_sha256": "258017df9d2fcfc121dabb6874c5a790bdc7eeb28e5ff452ba8593cec285ce8a",
+      "atomic_replace": true,
+      "saves_modified": false
+    },
+    {
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "target": "C:\\Minecraft整合包\\test\\.minecraft\\versions\\1.21.1-NeoForge_21.1.252\\mods\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "backup": "C:\\Minecraft整合包\\test\\.minecraft\\versions\\1.21.1-NeoForge_21.1.252\\codex-backups\\gregtech\\20261004-100550Z\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+      "old_sha256": "d6521c5b78b7ce2231981d4cb8c7f396316d9cf0b6e211668ba10ed1d63db44f",
+      "new_sha256": "ece6a94fb6f8dcb1aebaa5a223f7fac835ee92aabcfb452fa015fa4844424a5f",
+      "atomic_replace": true,
+      "saves_modified": false
+    }
+  ]
+}

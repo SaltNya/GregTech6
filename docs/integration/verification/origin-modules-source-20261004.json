@@ -1,0 +1,14 @@
+{
+  "scope": "Read-only original inputs to shared origin planners; native adapter validation recorded separately",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenCenterBiomes.java",
+      "sha256": "948e24ca9b41b189d11b9c4ac0a20881443d68184d12cb56e4a74c8e01b2d8d6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\center\\WorldgenTesting.java",
+      "sha256": "f498f70d0c2ac9c62e5a7f40a3d15ff6c56e5457f23ef4378877e77064034e50"
+    }
+  ],
+  "test_inventory_slots": 144
+}

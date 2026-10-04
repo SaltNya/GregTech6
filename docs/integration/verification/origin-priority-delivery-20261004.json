@@ -1,0 +1,147 @@
+{
+  "status": "passed",
+  "scope": "Actual installed-loader title clients plus verified local artifact copies; separate development-world receipts; not full Nexus completion",
+  "production_clients": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 57.88,
+      "installed_files_modified": false,
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "258017df9d2fcfc121dabb6874c5a790bdc7eeb28e5ff452ba8593cec285ce8a"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "add4fb5806e9f34fad0acbbea30bab45ba3301c000a168de09f3ac52f86cb037"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "258017df9d2fcfc121dabb6874c5a790bdc7eeb28e5ff452ba8593cec285ce8a",
+          "bytes": 39317619
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "add4fb5806e9f34fad0acbbea30bab45ba3301c000a168de09f3ac52f86cb037",
+          "bytes": 6064
+        },
+        {
+          "name": "Jade-1.20.1-Forge-11.13.3.jar",
+          "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+          "bytes": 553487
+        },
+        {
+          "name": "jei-1.20.1-forge-15.62.0.217.jar",
+          "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+          "bytes": 2232172
+        },
+        {
+          "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+          "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+          "bytes": 364842
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-6b38b485-1433-47b6-aef3-7b532cfec785\\launch.log",
+      "log_sha256": "aa3ca44ee74c407c5f5cd311f7089b642c48f185d5f5c841e218536886cd128e",
+      "receipt": {
+        "platform": "forge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-6b38b485-1433-47b6-aef3-7b532cfec785\\screenshots\\production-forge-3dc0e9a0-2b14-4a01-8237-036844685fe8.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 181,
+        "loaderWarnings": 0,
+        "elapsedMs": 49250
+      },
+      "screenshot_sha256": "2aed80d9c1f8ca506d0acfc145b72faa6cff4589c4a81bd887947e8a7767aa9a",
+      "visually_reviewed": true
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 48.78,
+      "installed_files_modified": false,
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "ece6a94fb6f8dcb1aebaa5a223f7fac835ee92aabcfb452fa015fa4844424a5f"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "e034dc95e35e88136f5e7410aa0a14a9e9e0f01151b788e2e72912f1cfeecc5f"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "ece6a94fb6f8dcb1aebaa5a223f7fac835ee92aabcfb452fa015fa4844424a5f",
+          "bytes": 37542165
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "e034dc95e35e88136f5e7410aa0a14a9e9e0f01151b788e2e72912f1cfeecc5f",
+          "bytes": 4807
+        },
+        {
+          "name": "emi-1.1.24+1.21.1+neoforge.jar",
+          "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+          "bytes": 1111538
+        },
+        {
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+          "bytes": 726853
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-370c966a-f753-4124-8005-30118b84990d\\launch.log",
+      "log_sha256": "18a30cd08bcfe56224715002aded00bf8a683eee948781b7badbd218f3ddd210",
+      "receipt": {
+        "platform": "neoforge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-370c966a-f753-4124-8005-30118b84990d\\screenshots\\production-neoforge-58ae303a-d331-4d1c-bc90-bcc9665551e6.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 179,
+        "elapsedMs": 40888
+      },
+      "screenshot_sha256": "7c267d38ccfed6bd3d98893e75c6772ea8d7442b31281bcc3d8da76f9b416353",
+      "visually_reviewed": true
+    }
+  },
+  "publication": {
+    "status": "passed",
+    "scope": "Verified complete copies; runtime evidence is recorded separately",
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261004-100007Z-258017df",
+    "verification_report": "C:\\Dev\\GregTech6\\build\\preflight\\artifacts.json",
+    "verification_report_sha256": "ac5569ad4ad589acfa7530723647da823d5caf309f7e668bd40c255abf55f962",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 39317619,
+        "sha256": "258017df9d2fcfc121dabb6874c5a790bdc7eeb28e5ff452ba8593cec285ce8a",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-100007Z-258017df\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 37542165,
+        "sha256": "ece6a94fb6f8dcb1aebaa5a223f7fac835ee92aabcfb452fa015fa4844424a5f",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-100007Z-258017df\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    }
+  },
+  "shared_classes_checked": 665,
+  "artifact_report_sha256": "ac5569ad4ad589acfa7530723647da823d5caf309f7e668bd40c255abf55f962"
+}

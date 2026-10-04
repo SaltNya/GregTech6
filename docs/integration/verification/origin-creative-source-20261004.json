@@ -1,0 +1,216 @@
+{
+  "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+  "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393",
+  "source_groups": {
+    "chests": {
+      "name": "Chests",
+      "legacy_tab": 32745
+    },
+    "safes": {
+      "name": "Safes",
+      "legacy_tab": 2010
+    },
+    "crafting_tables": {
+      "name": "Crafting Tables",
+      "legacy_tab": 5010
+    },
+    "storage": {
+      "name": "Storage",
+      "legacy_tab": 32751
+    },
+    "logistics": {
+      "name": "Logistics",
+      "legacy_tab": 17997
+    },
+    "hoppers": {
+      "name": "Hoppers",
+      "legacy_tab": 8010
+    },
+    "scaffolds": {
+      "name": "Scaffolds",
+      "legacy_tab": 8410
+    },
+    "smelting_crucibles": {
+      "name": "Smelting Crucibles",
+      "legacy_tab": 1022
+    },
+    "crucibles_faucets": {
+      "name": "Crucibles Faucets",
+      "legacy_tab": 1722
+    },
+    "molds": {
+      "name": "Molds",
+      "legacy_tab": 1072
+    },
+    "burning_boxes": {
+      "name": "Burning Boxes",
+      "legacy_tab": 1104
+    },
+    "steam_boilers": {
+      "name": "Steam Boilers",
+      "legacy_tab": 1204
+    },
+    "engines": {
+      "name": "Engines",
+      "legacy_tab": 1304
+    },
+    "heat_exchangers": {
+      "name": "Heat Exchangers",
+      "legacy_tab": 9103
+    },
+    "reactors": {
+      "name": "Reactors",
+      "legacy_tab": 9200
+    },
+    "turbines": {
+      "name": "Turbines",
+      "legacy_tab": 1538
+    },
+    "heaters": {
+      "name": "Heaters",
+      "legacy_tab": 10001
+    },
+    "motors": {
+      "name": "Motors",
+      "legacy_tab": 10021
+    },
+    "magnets": {
+      "name": "Magnets",
+      "legacy_tab": 10031
+    },
+    "transformers": {
+      "name": "Transformers",
+      "legacy_tab": 10041
+    },
+    "battery_boxes": {
+      "name": "Battery Boxes",
+      "legacy_tab": 10081
+    },
+    "solar_panels": {
+      "name": "Solar Panels",
+      "legacy_tab": 10050
+    },
+    "long_distance_transport": {
+      "name": "Long Distance Transport",
+      "legacy_tab": 10060
+    },
+    "lasers": {
+      "name": "Lasers",
+      "legacy_tab": 10071
+    },
+    "dynamos": {
+      "name": "Dynamos",
+      "legacy_tab": 10111
+    },
+    "quantum_energizers": {
+      "name": "Quantum Energizers",
+      "legacy_tab": 10121
+    },
+    "crystal_chargers": {
+      "name": "Crystal Chargers",
+      "legacy_tab": 10131
+    },
+    "laser_absorbers": {
+      "name": "Laser Absorbers",
+      "legacy_tab": 10151
+    },
+    "coolers": {
+      "name": "Coolers",
+      "legacy_tab": 10161
+    },
+    "zpm": {
+      "name": "ZPM",
+      "legacy_tab": 14999
+    },
+    "magical_energy_production": {
+      "name": "Magical Energy Production",
+      "legacy_tab": 10180
+    },
+    "batteries": {
+      "name": "Batteries",
+      "legacy_tab": 14013
+    },
+    "portable_power_cells": {
+      "name": "Portable Power Cells",
+      "legacy_tab": 14700
+    },
+    "automatic_tools": {
+      "name": "Automatic Tools",
+      "legacy_tab": 15002
+    },
+    "pumps": {
+      "name": "Pumps",
+      "legacy_tab": 16002
+    },
+    "computing": {
+      "name": "Computing",
+      "legacy_tab": 19000
+    },
+    "multiblocks": {
+      "name": "Multiblock Machines",
+      "legacy_tab": 17101
+    },
+    "basic_machines": {
+      "name": "Basic Machines",
+      "legacy_tab": 20001
+    },
+    "axles": {
+      "name": "Axles and Gearboxes",
+      "legacy_tab": 24819
+    },
+    "fluid_containers": {
+      "name": "Fluid Containers",
+      "legacy_tab": 32719
+    },
+    "laser_wires": {
+      "name": "Laser Wires",
+      "legacy_tab": 24900
+    },
+    "redstone_wires": {
+      "name": "Redstone Wires",
+      "legacy_tab": 27050
+    },
+    "extenders": {
+      "name": "Extenders",
+      "legacy_tab": 30000
+    },
+    "sorting": {
+      "name": "Sorting",
+      "legacy_tab": 30256
+    },
+    "sensors": {
+      "name": "Sensors",
+      "legacy_tab": 31015
+    },
+    "portals": {
+      "name": "Portals",
+      "legacy_tab": 32766
+    },
+    "foam": {
+      "name": "C-Foam",
+      "legacy_tab": 32765
+    },
+    "untyped": {
+      "name": "Untyped",
+      "legacy_tab": 32764
+    },
+    "panels": {
+      "name": "Panels",
+      "legacy_tab": 32500
+    },
+    "ropes": {
+      "name": "Ropes",
+      "legacy_tab": 32011
+    },
+    "tool_blocks": {
+      "name": "Misc Tool Blocks",
+      "legacy_tab": 32720
+    },
+    "coins": {
+      "name": "Coins",
+      "legacy_tab": 32700
+    }
+  },
+  "native_name_bindings": 2517,
+  "scope": "Source import, not runtime verification"
+}

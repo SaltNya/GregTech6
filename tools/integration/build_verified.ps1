@@ -31,6 +31,13 @@ try {
         if ($receipt.platform -ne $platform -or $receipt.renderedWorldFrames -lt 30 -or $receipt.recipes -lt 1000 -or $receipt.canonicalItemsChecked -lt 1000 -or ($platform -eq 'neoforge' -and $receipt.emiLoaded -ne $true) -or $receipt.legacyBatteryAliasesChecked -ne 5 -or $receipt.chemicalBatteryStackRoundTrips -ne 10 -or $receipt.sourceChemicalBatteriesChecked -ne 25 -or $receipt.sourceLvPoweredAssemblyRowsChecked -ne 20) {
             throw "$platform preflight receipt is incomplete."
         }
+        if ($receipt.originCenterBiomesChecked -ne 9 -or $receipt.originFacilityIdentitiesChecked -ne 26 -or $receipt.originTestInventorySlots -ne 144 -or $receipt.crankNativeSignalChecks -ne 30 -or $receipt.flintKnifeFireAspect -ne 1 -or $receipt.originalCrucibleReactionChecks -ne 4 -or $receipt.originalCreativePages -ne 66 -or $receipt.gearboxInventoryModelsChecked -ne 13 -or $receipt.asphaltItemRgb -ne '808080' -or $receipt.crankItemRgb -ne 'c8c8c8' -or $receipt.originFeedbackFailures) {
+            throw "$platform original-content feedback receipt is incomplete."
+        }
+        # Missing source tools stay explicit; these receipts do not certify a complete Nexus port.
+        if ($receipt.originTestInventoryPresent + $receipt.originTestInventoryOptionalEmpty + @($receipt.originTestInventoryPendingTools).Count -ne 144) {
+            throw "$platform source test inventory accounting is incomplete."
+        }
         $screen = Test-Path -LiteralPath $receipt.screenshot
         if (-not $screen) { throw "$platform preflight screenshot is missing." }
         $receipts[0].Groups[1].Value | Set-Content -LiteralPath (Join-Path $logDirectory ($platform + '-world-creation.json')) -Encoding utf8
