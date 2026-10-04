@@ -48,6 +48,7 @@ def source_rows(source: Path) -> tuple[list[dict], dict[tuple, dict]]:
                 raise ValueError(f'Unresolved source permission at {path}:{number}: {permission}')
             row = dict(line=number, input=input_prefix, input_count=input_count,
                        output=output_prefix, output_count=output_count,
+                       kind=match.group(1),
                        autocraftable=permission == 'T', expression=match.group(0) + ', '.join(args) + ')')
             rows.append(row)
             if re.fullmatch(r'\w+', input_prefix) and input_prefix != 'tPrefix' and input_count.isdigit() and output_count.isdigit():
@@ -55,6 +56,16 @@ def source_rows(source: Path) -> tuple[list[dict], dict[tuple, dict]]:
                 if key in fixed and fixed[key]['autocraftable'] != row['autocraftable']:
                     raise ValueError(f'Conflicting source permissions: {key}')
                 fixed[key] = row
+    # Every single-input source constructor reserves an offset, including absent material outputs.
+    groups = {}
+    for row in rows:
+        if row['kind'] == '1ToY' and row['input'] != 'tPrefix' and not row['input'].startswith('wireGt['):
+            group = groups.setdefault(row['input'], [])
+            row['selector_offset'] = len(group)
+            group.append(row)
+    for group in groups.values():
+        for row in group:
+            row['selector_variants'] = len(group)
     return rows, fixed
 
 
@@ -85,7 +96,8 @@ def form(ingredient: dict, prefixes: set[str]) -> tuple | None:
 
 
 def cells(data: dict) -> list[dict]:
-    if data.get('type') == 'minecraft:crafting_shapeless':
+    if data.get('type') == 'minecraft:crafting_shapeless' or (
+            data.get('type') == 'gregtech:tool_shapeless' and MARKER in data):
         return data.get('ingredients', [])
     if data.get('type') == 'minecraft:crafting_shaped':
         key = data.get('key', {})
@@ -111,7 +123,11 @@ def bind(data: dict, rows: list[dict], fixed: dict, prefixes: set[str]) -> dict 
         if required[1] == small and len(occupied) == ratio and count == 1 and ratio < 10:
             return next(row for row in rows if row['input'].startswith('wireGt[tSmall'))
         if required[1] == big and len(occupied) == 1 and count == ratio:
-            return next(row for row in rows if row['input'].startswith('wireGt[tBig'))
+            row = dict(next(row for row in rows if row['input'].startswith('wireGt[tBig')))
+            divisors = [size for size in range(1, big) if big % size == 0]
+            row['selector_offset'] = divisors.index(small)
+            row['selector_variants'] = len(divisors)
+            return row
         return None
     if len(required) == len(product) == 2 and required[1] == product[1]:
         return fixed.get((required[0], len(occupied), product[0], count))
@@ -129,14 +145,23 @@ def run(source: Path, check: bool, report_path: Path | None) -> int:
         if row is None:
             continue
         marker = f"GT6 Loader_Recipes_Handlers:{row['line']} ({'allowed' if row['autocraftable'] else 'disabled'})"
-        if data.get('gregtech_autocraftable') is not row['autocraftable'] or data.get(MARKER) != marker:
+        selector = {}
+        if row['kind'] == '1ToY':
+            if data['type'] not in ('minecraft:crafting_shapeless', 'gregtech:tool_shapeless'):
+                raise ValueError(f'Single-input source conversion needs a native selector: {path}')
+            selector = {'type': 'gregtech:tool_shapeless',
+                        'gregtech_form_variants': row['selector_variants'],
+                        'gregtech_form_offset': row['selector_offset']}
+        if (data.get('gregtech_autocraftable') is not row['autocraftable'] or data.get(MARKER) != marker
+                or any(data.get(key) != value for key, value in selector.items())):
             pending += 1
             if not check:
                 data['gregtech_autocraftable'] = row['autocraftable']
                 data[MARKER] = marker
+                data.update(selector)
                 path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         bindings.append(dict(recipe=path.relative_to(RECIPES).as_posix(), source_line=row['line'],
-                             autocraftable=row['autocraftable']))
+                             autocraftable=row['autocraftable'], selector=selector))
     external = []
     for path in sorted(source.rglob('*.java')):
         if '/compat/' not in path.as_posix():
@@ -151,7 +176,7 @@ def run(source: Path, check: bool, report_path: Path | None) -> int:
         report = dict(source_root=str(source), conversion_file_sha256=hashlib.sha256(source_file.read_bytes()).hexdigest(),
                       conversion_constructor_sites=rows, static_bindings=bindings,
                       external_no_auto_sites=external, pending_changes=pending,
-                      evidence_boundary='Exact source quantity/material bindings; excludes custom GT recipes and unported content. Not a Minecraft runtime test.')
+                      evidence_boundary='Exact source quantity/material bindings and single-input offsets; custom GT recipes excluded except previously source-bound rows. Not a Minecraft runtime test.')
         report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'{len(rows)} source conversion sites; {len(bindings)} exact static bindings; {len(external)} unported external NO_AUTO sites; {pending} {"pending" if check else "updated"}')
     return 1 if check and pending else 0
