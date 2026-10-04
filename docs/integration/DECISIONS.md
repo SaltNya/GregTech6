@@ -1,5 +1,9 @@
 # 实现选择记录
 
+## 2026-10-04 / 来源研磨目标与空位
+
+Shredder 的两个来源条件由共享 MORTAR 标记选倍率，Anvil 保留独立条件与 EMPTY 工作位；不能用普通 RecipeMap.make 丢掉这个空位。材料粉碎目标取 PrefixShredding 的 targetPulver 材料，指定粉末数量不按 target amount 二次缩放；修正已有铁砧行两种产物的旧输入材料绑定。处理时间在计入微量粉末和输入质量后才向上取整，pebbles 的 Anvil 行不擅自改为三份粉末或增加余料。详见 [来源与证据](verification/external-grinding-20261004.md)。
+
 ## 2026-10-04 / 标签绑定外部机器行与临时组成
 
 把来源 rawOreChunk/chunk/rubble/pebbles 注册为类型化前缀元数据，保留 GT 自有物品的显式定义流。机器参数取 Handler:62/65–67 与 getCosts 的较大输入/输出重量，关闭优化；只对实际存在的物品生成。标签事件按 shouldUpdateStaticData 跳过整合服务器重复更新，以 Recipe 身份清理自身行与索引，不覆盖外部配方。组成查询采用显式定义优先、临时标签表后备的方式，重载前清空旧表再索引，防止旧身份覆盖新标签；不将整个表复制进每次 EMI 查询。全图指纹更新有4条前缀/4,640条形态新增的逐行差异依据，所有129,232条旧记录均保留。详见 [证据和范围](verification/external-ore-20261004.md)。

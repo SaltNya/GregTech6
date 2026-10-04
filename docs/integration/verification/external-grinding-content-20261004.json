@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "scope": "packaging/source only; no native grinding, tags, client or save execution claim",
+  "source_commit": "7eb66493c92df0ad81e0c15a80b927fdf6c9d642",
+  "platforms": {
+    "forge": {
+      "native_class_count": 4,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes.class",
+          "packaged_sha256": "3ba1852a208e5dbb822563882b09e95506fa84c65b19588b346c4ef41f343bfa",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes$Entry.class",
+          "packaged_sha256": "1078460c9f0dae01cb53be43c31a5c44da76a7dc5d6ba10b5decffa03aa21fc2",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes$Row.class",
+          "packaged_sha256": "04a237f6b4884e4910702f798d2a618f1d76cc21fc415b4f0097f7c63e234720",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "212a41f28a513510376fa4e0d12d5828ee9bc0cf3b4f7ca65dd550f511e62f52",
+          "verification": "present after reobfuscation"
+        }
+      ]
+    },
+    "neoforge": {
+      "native_class_count": 4,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes.class",
+          "packaged_sha256": "c874a6b37a81e89ba05f4e559d4653a6a815b7dbb431f435cc97dee6cb279ab6",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes$Entry.class",
+          "packaged_sha256": "cb0efab14ee15be9d725e9f5e32a9fe4a58883784e4097700e48a8e809080000",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/AnvilShreddingRecipes$Row.class",
+          "packaged_sha256": "213c0375412b6e2bf1a5d2101123fab8aae02f610b456dc2b6b51672c367c0e5",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/content/recipe/ExternalOreProcessing.class",
+          "packaged_sha256": "3d2f64f7e7b4db9f608ae9ab93654ab446c1a56887a8d7e1f1dc22b5c2b93643",
+          "verification": "byte-equal"
+        }
+      ]
+    }
+  },
+  "original_source_sha256": {
+    "gregapi/data/MT.java": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2",
+    "gregapi/data/OP.java": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+    "gregtech/loaders/c/Loader_Recipes_Handlers.java": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefix.java": "de005fa316ae3d9ebddf69456c47a4e1e0ec38b9983d9fa9d1809e2bd9e58156",
+    "gregapi/recipes/handlers/RecipeMapHandlerPrefixShredding.java": "7258570a18592af7d8c6f8f3aced44464c57683497ac8eb4a6ff1badbbd902e6"
+  },
+  "anvil_empty_workpiece_source_sha256": {
+    "src/main/java/com/gregtech/gregtech/content/tool/AnvilWorkInputs.java": "35c47d4a1f0dc40491cf8f395e72d3c05d01f23d03e5c6c8800fc93185b3ad43",
+    "neoforge/src/main/java/com/gregtech/gregtech/content/tool/AnvilWorkInputs.java": "35c47d4a1f0dc40491cf8f395e72d3c05d01f23d03e5c6c8800fc93185b3ad43"
+  },
+  "logs_sha256": {
+    "external-grinding-compile-20261004.log": "1485eb3f7600d52679f59b26a39156b091e0fcc306b0c1a9e44b848cc92c4b61",
+    "external-grinding-build-20261004.log": "622d2ff82c47a30da60ee13d31dcfda7a1a4dc71c1cb15600ca9c45ea11f646b"
+  }
+}

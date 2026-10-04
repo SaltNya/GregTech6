@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-04 / 外部 Shredder 与铁砧研磨
+
+双平台接回 chunk/rubble/pebbles 的六条 Shredder 来源分支和三条 Anvil 行，保留微量粉末、MORTAR 快慢分支、输入质量、向上取整与铁砧空位；pebbles 的铁砧结果严格保留两份主粉末。修正已有铁砧研磨主/副产物的粉碎目标，WroughtIron 对齐 Iron。共享9,879条断言通过，完整材料图/113前缀不变；构建及未运行范围见 [本批记录](verification/external-grinding-20261004.md)。其余外部形态和完整回调仍待接续，整体 goal 保持 active。
+
 ## 2026-10-04 / 外部粗矿碎块与筛选处理链
 
 双平台补原版 rawOreChunk→3 crushedTiny、chunk→rubble、rubble→pebbles、pebbles→3 dust 四条机器路线。新增来源前缀元数据及临时组成，实际物品由加载后的明确标签提供；没有新增 GT 自有物品。TagsUpdatedEvent 同步服务器/远程客户端数据，重载只清理自己的机器行。共享9,848条断言与全图差异检查通过；构建成品及边界见 [本批记录](verification/external-ore-20261004.md)。其他外部前缀处理、完整回调和实际运行仍待接续，整体 goal 保持 active。

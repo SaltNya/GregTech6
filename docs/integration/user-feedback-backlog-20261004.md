@@ -2,11 +2,17 @@
 
 整体移植 goal 保持 active。按用户要求减少测试，改动集中编译、共享检查和双平台打包；编译结果不视作客户端或真实存档验证。
 
+## 最新接续：Shredder/Anvil 与粉碎目标
+
+- chunk/rubble/pebbles 的 Shredder 快慢分支和 Anvil 研磨已接入两平台，保留微量粉末、MORTAR、质量计时和 EMPTY 工作位；pebbles 铁砧产物保留原版两份主粉末。
+- 原有铁砧研磨的主/微量产物修正为来源粉碎目标，不再总输出输入材料。共享9,879条断言及完整材料图通过，见 [本批证据](verification/external-grinding-20261004.md)。
+- 其余 clump/reduced/crystalline/cleanGravel/cluster 形态、完整回调及实际模组/空位/重载/显示/机器/存档证据仍待补齐。
+
 ## 最新接续：外部矿物处理
 
 - 已补 rawOreChunk→3 crushedTiny、chunk→rubble、rubble→pebbles 与 pebbles→3 dust 的原版 Crusher/Sifting 路线，保留16 EU/t、质量倍率和较大的输入/输出材料重量。
 - 四种前缀现有类型化元数据和临时组成，仍没有 GT 自有物品；标签更新接入两平台服务器及远程客户端，只清理适配器自身机器行。共享9,848条断言和全图差异通过，见 [本批证据](verification/external-ore-20261004.md)。
-- 其他外部前缀、chunk/rubble/pebbles 的专用 Shredder/Anvil 处理及完整回调仍待实现；实际外部模组、标签重载/候选显示、机器/坩埚与存档证据未补齐。
+- chunk/rubble/pebbles 的专用 Shredder/Anvil 处理已在上节接续；其余外部前缀及完整回调仍待实现，实际外部模组、标签重载/候选显示、机器/坩埚与存档证据未补齐。
 
 ## 最新接续：前缀别名与外部形态
 
