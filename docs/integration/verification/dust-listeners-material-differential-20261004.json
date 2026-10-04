@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "scope": "Full material graph: one source impure-dust weight corrected; two external dust-prefix metadata forms added",
+  "stages": {
+    "definitions": {
+      "before_sha256": "67d968260dd9f41fa893bb267e6a99a144a4338f1583f075709a8ce8690c93b9",
+      "after_sha256": "842079f4654e2eb389117406b4eeef2a564460b4142705dd62adf4d06d1daa74",
+      "unchanged_rows": 142002,
+      "changed_weight_before": "P|dustImpure|dust_impure|Impure Dust|dust|false|0.0|648648000",
+      "changed_weight_after": "P|dustImpure|dust_impure|Impure Dust|dust|false|0.0|720720000",
+      "added_prefix_rows": [
+        "P|dustPure|dust_pure|Purified Dust|dust|false|0.0|792792000",
+        "P|dustRefined|dust_refined|Refined Dust|dust|false|0.0|864864000"
+      ],
+      "added_material_form_rows": 2320,
+      "removed_other_rows": 0
+    },
+    "post": {
+      "before_sha256": "a8ed3aa61fb2cb27c5e6775181fa24e6971084ef01fddf46c2bafd4447948905",
+      "after_sha256": "0a3828a8b07715e8ef8c432572756033c0101eec00ea70657d0f750bcd603b6e",
+      "unchanged_rows": 142002,
+      "changed_weight_before": "P|dustImpure|dust_impure|Impure Dust|dust|false|0.0|648648000",
+      "changed_weight_after": "P|dustImpure|dust_impure|Impure Dust|dust|false|0.0|720720000",
+      "added_prefix_rows": [
+        "P|dustPure|dust_pure|Purified Dust|dust|false|0.0|792792000",
+        "P|dustRefined|dust_refined|Refined Dust|dust|false|0.0|864864000"
+      ],
+      "added_material_form_rows": 2320,
+      "removed_other_rows": 0
+    }
+  }
+}
