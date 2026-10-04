@@ -1,5 +1,11 @@
 # 实现选择记录
 
+## 2026-10-04 / 原版别名与可选外部前缀
+
+`casingSmall` 是 `itemCasing` 的同一形态，统一来源拼写但不增加前缀或注册重复物品。`rawOreChunk` 在源 OP 明示 Harder Ores，Loader_Items 没有自有注册，故通过实际外部物品的明确形态/材料标签接入，不制造 GT 碎块或推测存储块身份。原版数量、格位偏移和 NO_AUTO 保留。
+
+NeoForge JSON pack 生成发生在本轮标签绑定前，不能在该阶段读取外部标签。服务器标签完成后既补缺失行，也重建本加载器拥有的 `gregtech:form_conversion/` ToolShapelessRecipe 行，使已有行获取本次标签候选；保留稳定配方 ID，导线/管道行与其他加载器配方保持原有流程。Forge 在实际加载标签后构建索引。详见 [记录](verification/prefix-aliases-20261004.md)。
+
 ## 2026-10-04 / 大配方 EMI 索引与爆炸存储物
 
 EMI保留所有启用机器行及全部候选键；直接实现公开EmiIngredient接口，不依赖EMI内部ListEmiIngredient类，不在每条配方上做全标签猜测。每次重载拥有自己的物品模板/候选缓存，带组件的物品保持独立，数量/概率复制；新增分类耗时日志区分注册和后续bake。熔岩与水按共享流体元数据绑定原版原生流体，而不是制造重复GT流体。

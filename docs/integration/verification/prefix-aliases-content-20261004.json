@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "scope": "packaging/source only; no native tag reload or gameplay execution claim",
+  "source_commit": "063d47d994449356e8fc8a662fed4f3c0fb55145",
+  "platforms": {
+    "forge": {
+      "native_class_count": 2,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes.class",
+          "packaged_sha256": "8cd7d002617cddf96db7762c4a6f7f2d1e21eb8c6752fb940d7389c572116c48",
+          "verification": "present after reobfuscation"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/CraftingMaterialForms.class",
+          "packaged_sha256": "87b607fdaf9c4e707fb59792c12173790e2a2b4b8245d8b4e4c76fe65b05660f",
+          "verification": "present after reobfuscation"
+        }
+      ]
+    },
+    "neoforge": {
+      "native_class_count": 2,
+      "native_classes": [
+        {
+          "entry": "com/gregtech/gregtech/loaders/Loader_FormConversionCraftingRecipes.class",
+          "packaged_sha256": "a9c9d8838ebd49f973ac24200b8b3f866a754ae03f2f4e3e231e90fdd898760b",
+          "verification": "byte-equal"
+        },
+        {
+          "entry": "com/gregtech/gregtech/recipe/CraftingMaterialForms.class",
+          "packaged_sha256": "2ce0b66654298ec01e20bb7b2cf4a81c07114bfdb4ccc0ecdd89129848497c8e",
+          "verification": "byte-equal"
+        }
+      ]
+    }
+  },
+  "source_files_sha256": {
+    "gregapi/data/OP.java": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+    "gregtech/loaders/a/Loader_Items.java": "1784f1aeccc3d8e70f214c9eb06de81f2f2f28f17b4f57b24acc05d049605c07",
+    "gregtech/loaders/c/Loader_Recipes_Handlers.java": "b6e4973cd8fe16038868f6fafd28528234b8299c6da8f448aad18414055c382b",
+    "gregapi/recipes/AdvancedCrafting1ToY.java": "68a7214943a807922d57e84416d9225cba95f713aebed026c166f17aeba8f3ec",
+    "gregapi/recipes/AdvancedCraftingXToY.java": "b9ab5927eba96d1b00855e781d918c18dfd87af4542bc4587d7d316e48d13ec0"
+  },
+  "logs_sha256": {
+    "prefix-aliases-compile-20261004.log": "887a0012af9fb91f78ef35d943c0db222bc8e83c611726527ba0d02f8415b689",
+    "prefix-aliases-build-20261004.log": "2fe51b3684833dfd5ed4ce16fb6ad14d8f08fe1616346c485a345fd997119ea9",
+    "prefix-aliases-native-final-20261004.log": "23ba5070a0f035d652bb57f28077354b2ae6d08f66092bf747fd41af3b391e6c"
+  }
+}
