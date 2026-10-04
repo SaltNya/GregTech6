@@ -1,0 +1,111 @@
+{
+  "original_source": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "authors": "GregTech-6 Team; 2025 LGPL notices retained in adapted drop classes",
+  "license": "LGPL-3.0-or-later",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "size": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\entities\\Override_Drops.java",
+      "size": 37500,
+      "sha256": "16ba0864619780495285aeb8a9eb692ed335d7272c5dbfbbc60daa2dbdc350fe"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\GT_Proxy.java",
+      "size": 25790,
+      "sha256": "c18681468cfff643c77fa0371fe142599c7063b42f57ae74db653a19b9fdda3c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "size": 153449,
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "size": 693183,
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\ST.java",
+      "size": 100719,
+      "sha256": "5ff16d9051e2744a66c711bd5f2581785ba8af7b2272fb1023a6d2f4ddb783a8"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemFood.java",
+      "size": 147661,
+      "sha256": "bc66d27a6428a3d62e3000b6bae4c8b0f1a775dad00d139bff507b201acd6598"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "size": 791265,
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\misc\\MultiTileEntityLootCrate.java",
+      "size": 2762,
+      "sha256": "915a6491fb0fed745c1312f1e8b6d1d516912219efadea1cf5439b4f831e38fb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Woods.java",
+      "size": 9117,
+      "sha256": "77ffe887982b4a013f4d798a90c056e10b7e5e7704213043278ddaf836b6f8b1"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\notick\\TileEntityBase04Covers.java",
+      "size": 28200,
+      "sha256": "d074b16c5dae1c76083b7cf9de43ac35dd821e868d65c883cdeac634745a2790"
+    }
+  ],
+  "adopted": [
+    "Original default-enabled vanilla mob drops, inclusive part probabilities, source RNG order, metadata retention",
+    "Automatic hammer/igniter and data-switch casing materials",
+    "Full-surface cover texture composition; platform depth epsilon avoids z-fighting",
+    "Original bathing pot and loot-crate crafting patterns with usable returned tools",
+    "Loader_Woods empty crate identity and wood/plank/screw recipe; one loot stack and crowbar cost 500"
+  ],
+  "pending": [
+    "Foreign-mod entity branches and beheading integration",
+    "Food effect parity and additional modern-specific policies",
+    "Independent saved-world reload and dedicated-server checks for this batch"
+  ],
+  "optional_dependencies": [
+    {
+      "path": "C:\\Dev\\GregTech6\\work\\emi-maven\\dev\\emi\\emi-forge\\1.1.24+1.20.1\\emi-forge-1.1.24+1.20.1-api.jar",
+      "size": 116875,
+      "sha256": "774c245ee7a98e3dfed002f06929097684947b6468789ff41eee27a24928baa7",
+      "zip_crc": "passed"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\work\\emi-maven\\dev\\emi\\emi-forge\\1.1.24+1.20.1\\emi-forge-1.1.24+1.20.1-sources.jar",
+      "size": 519355,
+      "sha256": "aa243d75c2880cb18b2d7addfb01e8a81137f9585674dbaf37be4113a580a199",
+      "zip_crc": "passed"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\work\\emi-maven\\dev\\emi\\emi-forge\\1.1.24+1.20.1\\emi-forge-1.1.24+1.20.1.jar",
+      "size": 1121750,
+      "sha256": "92784dcf5222d72983a420c90f2e9240468ee0fece96f757c82d7884b6cbdb72",
+      "zip_crc": "passed"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\work\\emi-maven\\dev\\emi\\emi-neoforge\\1.1.24+1.21.1\\emi-neoforge-1.1.24+1.21.1-api.jar",
+      "size": 118436,
+      "sha256": "b3a8e23c5e59813f184423b94e37bb635867ddc9be2b68b3502fad7b9134779b",
+      "zip_crc": "passed"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\work\\emi-maven\\dev\\emi\\emi-neoforge\\1.1.24+1.21.1\\emi-neoforge-1.1.24+1.21.1.jar",
+      "size": 1111538,
+      "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+      "zip_crc": "passed"
+    }
+  ],
+  "emi_primary_sources": [
+    "https://github.com/emilyploszaj/emi",
+    "https://github.com/emilyploszaj/emi/blob/1.21/LICENSE"
+  ],
+  "emi_license": "MIT, copyright (c) 2022 Emi; optional dependency remains separate, not bundled in the mod JAR"
+}

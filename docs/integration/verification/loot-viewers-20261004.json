@@ -1,0 +1,1057 @@
+{
+  "completed_at": "2026-10-05T00:11:06.821759+08:00",
+  "scope": "Current browser/drop/render/crafting batch; remaining machine/flattening/food requests stay pending",
+  "original_source_record": "loot-viewers-source-20261004.json",
+  "development_worlds": [
+    {
+      "name": "forge-emi-world-3",
+      "status": "passed",
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\forge-emi-world-3.log",
+        "bytes": 8073952,
+        "sha256": "b1a5a445335b81cc7fa7a50efbb2144e9603ed825757a97049e7f7141c8453c1"
+      },
+      "receipt": {
+        "platform": "forge",
+        "id": "f2e1978a-4b93-4492-8b66-68c90b7940f9",
+        "world": "creation-smoke-f2e1978a-4b93-4492-8b66-68c90b7940f9",
+        "stage": 3,
+        "elapsedMs": 200968,
+        "legacyBatteryAliasesChecked": 5,
+        "chemicalBatteryStackRoundTrips": 10,
+        "sourceChemicalBatteriesChecked": 25,
+        "sourcePoweredAssemblyRowsChecked": 70,
+        "originCenterBiomesChecked": 9,
+        "originFacilityIdentitiesChecked": 26,
+        "originTestInventorySlots": 144,
+        "originTestInventoryPresent": 118,
+        "originTestInventoryOptionalEmpty": 26,
+        "originTestInventoryPendingTools": [],
+        "nexusGunUseChecks": 15,
+        "nexusGunAndPocketCraftingRows": 4,
+        "nexusPocketModesChecked": 8,
+        "nexusPoweredToolsChecked": 14,
+        "crankNativeSignalChecks": 30,
+        "flintKnifeFireAspect": 1,
+        "originalCrucibleReactionChecks": 4,
+        "originalCreativePages": 66,
+        "nativeMobDropEventChecks": 17,
+        "lootResolvedViewerRows": 1322,
+        "mobResolvedViewerRows": 89,
+        "canonicalItemsChecked": 75892,
+        "recipes": 52194,
+        "serverTicks": 9,
+        "dimension": "minecraft:overworld",
+        "emi_bedrock_ores": 28,
+        "emi_small_ores_info": 86,
+        "emi_stone_layers_info": 55,
+        "emi_ore_veins": 36,
+        "emiStructureRows": 90,
+        "lootViewer": "emi",
+        "lootViewerRows": 1322,
+        "mobViewerRows": 89,
+        "lootViewerTables": 18,
+        "mobViewerScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-mobs-604f3e72-2d44-440a-ba18-55f5d1792574.png",
+        "lootViewerScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-tables-c3d19649-f3bf-42bb-87f5-5a2849d65102.png",
+        "emiStructureScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-structure-295f1a22-58ae-4f9c-a38d-50b4aa6048e3.png",
+        "emiVeinsScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-veins-d294114a-88a5-445d-b5ad-60ab9e06d75f.png",
+        "emiLayersScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-layers-85dba8dd-f0da-4cdf-be5f-50d5585edeea.png",
+        "gearboxInventoryModelsChecked": 13,
+        "nexusToolInventoryModelsChecked": 61,
+        "automaticAndDataSwitchColorsChecked": 12,
+        "ropeInventoryModelsChecked": 6,
+        "filterInventoryModelsChecked": 4,
+        "inventoryMaterialRgb": {
+          "rope": "604000",
+          "rope_silk": "ffffff",
+          "rope_grass": "ffff00",
+          "rope_vine": "00ff00",
+          "rope_plastic": "c8c8c8",
+          "rope_steel": "828282",
+          "filter_items": "faf0f0",
+          "filter_fluids": "faf0f0",
+          "filter_items_fluids": "faf0f0",
+          "filter_oredict": "faf0f0",
+          "auto_igniter_steel": "c8c8c8",
+          "auto_igniter_aluminium": "faf0f0",
+          "auto_igniter_stainless": "80c8f0",
+          "auto_igniter_titanium": "c8c8dc",
+          "auto_igniter_tungsten": "ffe6e6",
+          "auto_igniter_ultimet": "dca0f0",
+          "auto_hammer_steel": "d2823c",
+          "auto_hammer_aluminium": "828282",
+          "auto_hammer_titanium": "dca0f0",
+          "auto_hammer_tungsten": "6464a0",
+          "usb_switch": "faf0f0",
+          "hdd_switch": "faf0f0"
+        },
+        "asphaltItemRgb": "808080",
+        "crankItemRgb": "c8c8c8",
+        "renderedWorldFrames": 1766,
+        "emiLoaded": true,
+        "renderedInventoryItems": [
+          "gearbox_wood",
+          "gearbox_bronze",
+          "gearbox_brass",
+          "gearbox_arsenic_copper",
+          "gearbox_arsenic_bronze",
+          "gearbox_steel",
+          "gearbox_titanium",
+          "gearbox_tungstensteel",
+          "gearbox_iridium",
+          "gearbox_iritanium",
+          "gearbox_trinitanium",
+          "gearbox_trinaquadalloy",
+          "gearbox_adamantium",
+          "rope",
+          "rope_silk",
+          "rope_grass",
+          "rope_vine",
+          "rope_plastic",
+          "rope_steel",
+          "filter_items",
+          "filter_fluids",
+          "filter_items_fluids",
+          "filter_oredict",
+          "crank",
+          "asphalt",
+          "tool_pocket_multitool",
+          "cable_01_signalum",
+          "wire_01_lumium",
+          "electric_mining_drill",
+          "electric_mixer",
+          "electric_buzzsaw",
+          "electric_trimmer",
+          "electric_wrench_mv",
+          "electric_mining_drill_mv",
+          "electric_chainsaw_mv",
+          "electric_wrench_hv",
+          "electric_mining_drill_hv",
+          "electric_chainsaw_hv",
+          "tool_pistol",
+          "tool_pistol",
+          "tool_pistol",
+          "tool_carbine",
+          "tool_carbine",
+          "tool_carbine",
+          "tool_rifle",
+          "tool_rifle",
+          "tool_rifle",
+          "auto_igniter_steel",
+          "auto_igniter_aluminium",
+          "auto_igniter_stainless",
+          "auto_igniter_titanium",
+          "auto_igniter_tungsten",
+          "auto_igniter_ultimet",
+          "auto_hammer_steel",
+          "auto_hammer_aluminium",
+          "auto_hammer_titanium",
+          "auto_hammer_tungsten",
+          "usb_switch",
+          "hdd_switch"
+        ],
+        "untranslatedInventorySamples": [],
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-f2e1978a-4b93-4492-8b66-68c90b7940f9.png"
+      },
+      "captures": {
+        "mobViewerScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\loot-emi-mobs-604f3e72-2d44-440a-ba18-55f5d1792574.png",
+          "bytes": 341971,
+          "sha256": "9d9ff5e5b8c069be19281a725aab594c541f7558f18c7f3e44e9d30b23e222e5",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "lootViewerScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\loot-emi-tables-c3d19649-f3bf-42bb-87f5-5a2849d65102.png",
+          "bytes": 344431,
+          "sha256": "2df8675c7ceea129f4e76225f40669770261e08a9a34a818be355a25956f8517",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "emiStructureScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\loot-emi-structure-295f1a22-58ae-4f9c-a38d-50b4aa6048e3.png",
+          "bytes": 381026,
+          "sha256": "166e2b6d36e8549c92a1ec3549e0742210d1ee101d6fb7d30d50ad2b27f7cd00",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "emiVeinsScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\loot-emi-veins-d294114a-88a5-445d-b5ad-60ab9e06d75f.png",
+          "bytes": 347663,
+          "sha256": "81800acca44b2980b57f769d901d48eb688833ba4dbf86142c114bb822b5233a",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "emiLayersScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\loot-emi-layers-85dba8dd-f0da-4cdf-be5f-50d5585edeea.png",
+          "bytes": 344993,
+          "sha256": "86adada0014c40cb96bc4997d9976c20d189737e4d96da1887161ce6a68966e9",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "screenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\world-creation-forge-f2e1978a-4b93-4492-8b66-68c90b7940f9.png",
+          "bytes": 209966,
+          "sha256": "631863ebfea5bd5e6ca347b5afef78d78902766bc5339e13dc6d0079d98aa349",
+          "dimensions": [
+            1280,
+            720
+          ]
+        }
+      },
+      "visually_reviewed": true,
+      "emi_diagnostic_counts": {
+        "untranslated_tag": 81532,
+        "synthetic_brewing_id": 160
+      },
+      "scope": "Earlier Forge EMI page/color validation; before new crate recipes/61-item atlas"
+    },
+    {
+      "name": "neo-emi-world-6",
+      "status": "passed",
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\neo-emi-world-6.log",
+        "bytes": 8698638,
+        "sha256": "dee7a5fac4e1a4118929c704ae32b3a739272a08aadfa5de16bf4cb0cfb9174b"
+      },
+      "receipt": {
+        "platform": "neoforge",
+        "id": "5d7ba4dd-900a-4d06-ad50-74518a6a4b99",
+        "world": "creation-smoke-5d7ba4dd-900a-4d06-ad50-74518a6a4b99",
+        "stage": 3,
+        "elapsedMs": 172482,
+        "legacyBatteryAliasesChecked": 5,
+        "chemicalBatteryStackRoundTrips": 10,
+        "sourceChemicalBatteriesChecked": 25,
+        "sourcePoweredAssemblyRowsChecked": 70,
+        "originCenterBiomesChecked": 9,
+        "originFacilityIdentitiesChecked": 26,
+        "originTestInventorySlots": 144,
+        "originTestInventoryPresent": 118,
+        "originTestInventoryOptionalEmpty": 26,
+        "originTestInventoryPendingTools": [],
+        "nexusGunUseChecks": 15,
+        "nexusGunAndPocketCraftingRows": 4,
+        "nexusPocketModesChecked": 8,
+        "nexusPoweredToolsChecked": 14,
+        "crankNativeSignalChecks": 30,
+        "flintKnifeFireAspect": 1,
+        "originalCrucibleReactionChecks": 4,
+        "originalCreativePages": 66,
+        "newFeedbackCraftingRowsChecked": 3,
+        "lootCrateReturnAndStackLimitChecks": 2,
+        "nativeMobDropEventChecks": 17,
+        "lootResolvedViewerRows": 1322,
+        "mobResolvedViewerRows": 89,
+        "canonicalItemsChecked": 75970,
+        "recipes": 52313,
+        "serverTicks": 57,
+        "dimension": "minecraft:overworld",
+        "emi_stone_layers_info": 55,
+        "emi_ore_veins": 36,
+        "emi_bedrock_ores": 28,
+        "emi_small_ores_info": 86,
+        "emiStructureRows": 90,
+        "lootViewer": "emi",
+        "lootViewerRows": 1322,
+        "mobViewerRows": 89,
+        "lootViewerTables": 18,
+        "mobViewerScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-mobs-18a13626-99d0-44b0-b13f-2be34746551f.png",
+        "lootViewerScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-tables-6ccfc58e-5d83-4349-a892-48ca614f759d.png",
+        "emiStructureScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-structure-3701e5f6-4459-4eb7-bdbd-fe63164cefb7.png",
+        "emiVeinsScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-veins-cea56297-dda7-4fdc-b712-bc220b03c423.png",
+        "emiLayersScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-emi-layers-fb81a347-ba7b-4351-aa3f-3560adebf3e0.png",
+        "gearboxInventoryModelsChecked": 13,
+        "nexusToolInventoryModelsChecked": 61,
+        "automaticAndDataSwitchColorsChecked": 12,
+        "ropeInventoryModelsChecked": 6,
+        "filterInventoryModelsChecked": 4,
+        "inventoryMaterialRgb": {
+          "rope": "604000",
+          "rope_silk": "ffffff",
+          "rope_grass": "ffff00",
+          "rope_vine": "00ff00",
+          "rope_plastic": "c8c8c8",
+          "rope_steel": "828282",
+          "filter_items": "faf0f0",
+          "filter_fluids": "faf0f0",
+          "filter_items_fluids": "faf0f0",
+          "filter_oredict": "faf0f0",
+          "auto_igniter_steel": "c8c8c8",
+          "auto_igniter_aluminium": "faf0f0",
+          "auto_igniter_stainless": "80c8f0",
+          "auto_igniter_titanium": "c8c8dc",
+          "auto_igniter_tungsten": "ffe6e6",
+          "auto_igniter_ultimet": "dca0f0",
+          "auto_hammer_steel": "d2823c",
+          "auto_hammer_aluminium": "828282",
+          "auto_hammer_titanium": "dca0f0",
+          "auto_hammer_tungsten": "6464a0",
+          "usb_switch": "faf0f0",
+          "hdd_switch": "faf0f0"
+        },
+        "asphaltItemRgb": "808080",
+        "crankItemRgb": "c8c8c8",
+        "renderedWorldFrames": 5310,
+        "emiLoaded": true,
+        "renderedInventoryItems": [
+          "gearbox_wood",
+          "gearbox_bronze",
+          "gearbox_brass",
+          "gearbox_arsenic_copper",
+          "gearbox_arsenic_bronze",
+          "gearbox_steel",
+          "gearbox_titanium",
+          "gearbox_tungstensteel",
+          "gearbox_iridium",
+          "gearbox_iritanium",
+          "gearbox_trinitanium",
+          "gearbox_trinaquadalloy",
+          "gearbox_adamantium",
+          "rope",
+          "rope_silk",
+          "rope_grass",
+          "rope_vine",
+          "rope_plastic",
+          "rope_steel",
+          "filter_items",
+          "filter_fluids",
+          "filter_items_fluids",
+          "filter_oredict",
+          "crank",
+          "asphalt",
+          "tool_pocket_multitool",
+          "cable_01_signalum",
+          "wire_01_lumium",
+          "electric_mining_drill",
+          "electric_mixer",
+          "electric_buzzsaw",
+          "electric_trimmer",
+          "electric_wrench_mv",
+          "electric_mining_drill_mv",
+          "electric_chainsaw_mv",
+          "electric_wrench_hv",
+          "electric_mining_drill_hv",
+          "electric_chainsaw_hv",
+          "tool_pistol",
+          "tool_pistol",
+          "tool_pistol",
+          "tool_carbine",
+          "tool_carbine",
+          "tool_carbine",
+          "tool_rifle",
+          "tool_rifle",
+          "tool_rifle",
+          "auto_igniter_steel",
+          "auto_igniter_aluminium",
+          "auto_igniter_stainless",
+          "auto_igniter_titanium",
+          "auto_igniter_tungsten",
+          "auto_igniter_ultimet",
+          "auto_hammer_steel",
+          "auto_hammer_aluminium",
+          "auto_hammer_titanium",
+          "auto_hammer_tungsten",
+          "usb_switch",
+          "hdd_switch",
+          "loot_crate",
+          "crate"
+        ],
+        "untranslatedInventorySamples": [],
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-5d7ba4dd-900a-4d06-ad50-74518a6a4b99.png"
+      },
+      "captures": {
+        "mobViewerScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\loot-emi-mobs-18a13626-99d0-44b0-b13f-2be34746551f.png",
+          "bytes": 357441,
+          "sha256": "b72c52018d5e847cb1aeb5a232e3517393cd396d716b8c16dca11754c92b635e",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "lootViewerScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\loot-emi-tables-6ccfc58e-5d83-4349-a892-48ca614f759d.png",
+          "bytes": 362376,
+          "sha256": "e331c29695bc0de60c71526c9a4338059bd4252a8a1b13369c11cd41c3678fa9",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "emiStructureScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\loot-emi-structure-3701e5f6-4459-4eb7-bdbd-fe63164cefb7.png",
+          "bytes": 395751,
+          "sha256": "53c0089fedf1a42b40f4eca68e761f09e5b48c4e59e56da37e641c96303927f2",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "emiVeinsScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\loot-emi-veins-cea56297-dda7-4fdc-b712-bc220b03c423.png",
+          "bytes": 363365,
+          "sha256": "9c8b0f665e577ffba4d79763ba44be63f5d5a67a2dd39c82ffb18f62166262c1",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "emiLayersScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\loot-emi-layers-fb81a347-ba7b-4351-aa3f-3560adebf3e0.png",
+          "bytes": 360056,
+          "sha256": "45e5b5ea379bd2067a0e7adad8e4f2661e4a27e755361a8226a22874745d33e7",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "screenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\world-creation-neoforge-5d7ba4dd-900a-4d06-ad50-74518a6a4b99.png",
+          "bytes": 217369,
+          "sha256": "75b2823d60614e9771c39c1a7c6c330e04fbb5fa4020f8cb4e5d43cbfedf5978",
+          "dimensions": [
+            1280,
+            720
+          ]
+        }
+      },
+      "visually_reviewed": true,
+      "emi_diagnostic_counts": {
+        "untranslated_tag": 92420,
+        "synthetic_brewing_id": 0
+      },
+      "scope": "Current finite development world, native crafting/drop events and actual recipe browser"
+    },
+    {
+      "name": "forge-jei-world-1",
+      "status": "passed",
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\forge-jei-world-1.log",
+        "bytes": 308712,
+        "sha256": "d359b88272700f69e714bbd4b34b4837c764f8ce65992daa2dfb0c822adf5546"
+      },
+      "receipt": {
+        "platform": "forge",
+        "id": "7973f2c8-6ced-4c86-8fc5-5c9de22143cd",
+        "world": "creation-smoke-7973f2c8-6ced-4c86-8fc5-5c9de22143cd",
+        "stage": 3,
+        "elapsedMs": 221378,
+        "legacyBatteryAliasesChecked": 5,
+        "chemicalBatteryStackRoundTrips": 10,
+        "sourceChemicalBatteriesChecked": 25,
+        "sourcePoweredAssemblyRowsChecked": 70,
+        "originCenterBiomesChecked": 9,
+        "originFacilityIdentitiesChecked": 26,
+        "originTestInventorySlots": 144,
+        "originTestInventoryPresent": 118,
+        "originTestInventoryOptionalEmpty": 26,
+        "originTestInventoryPendingTools": [],
+        "nexusGunUseChecks": 15,
+        "nexusGunAndPocketCraftingRows": 4,
+        "nexusPocketModesChecked": 8,
+        "nexusPoweredToolsChecked": 14,
+        "crankNativeSignalChecks": 30,
+        "flintKnifeFireAspect": 1,
+        "originalCrucibleReactionChecks": 4,
+        "originalCreativePages": 66,
+        "newFeedbackCraftingRowsChecked": 3,
+        "lootCrateReturnAndStackLimitChecks": 2,
+        "nativeMobDropEventChecks": 17,
+        "lootResolvedViewerRows": 1322,
+        "mobResolvedViewerRows": 89,
+        "canonicalItemsChecked": 75893,
+        "recipes": 52197,
+        "serverTicks": 11,
+        "dimension": "minecraft:overworld",
+        "lootViewer": "jei",
+        "lootViewerRows": 1322,
+        "mobViewerRows": 89,
+        "lootViewerTables": 18,
+        "mobViewerScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-jei-mobs-e38af490-2c71-4ccb-8dfd-f481b2590768.png",
+        "lootViewerScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\loot-jei-tables-f8cb26fb-bf06-4cc8-9ce2-e33a95a04ee5.png",
+        "gearboxInventoryModelsChecked": 13,
+        "nexusToolInventoryModelsChecked": 61,
+        "automaticAndDataSwitchColorsChecked": 12,
+        "ropeInventoryModelsChecked": 6,
+        "filterInventoryModelsChecked": 4,
+        "inventoryMaterialRgb": {
+          "rope": "604000",
+          "rope_silk": "ffffff",
+          "rope_grass": "ffff00",
+          "rope_vine": "00ff00",
+          "rope_plastic": "c8c8c8",
+          "rope_steel": "828282",
+          "filter_items": "faf0f0",
+          "filter_fluids": "faf0f0",
+          "filter_items_fluids": "faf0f0",
+          "filter_oredict": "faf0f0",
+          "auto_igniter_steel": "c8c8c8",
+          "auto_igniter_aluminium": "faf0f0",
+          "auto_igniter_stainless": "80c8f0",
+          "auto_igniter_titanium": "c8c8dc",
+          "auto_igniter_tungsten": "ffe6e6",
+          "auto_igniter_ultimet": "dca0f0",
+          "auto_hammer_steel": "d2823c",
+          "auto_hammer_aluminium": "828282",
+          "auto_hammer_titanium": "dca0f0",
+          "auto_hammer_tungsten": "6464a0",
+          "usb_switch": "faf0f0",
+          "hdd_switch": "faf0f0"
+        },
+        "asphaltItemRgb": "808080",
+        "crankItemRgb": "c8c8c8",
+        "renderedWorldFrames": 61,
+        "emiLoaded": false,
+        "renderedInventoryItems": [
+          "gearbox_wood",
+          "gearbox_bronze",
+          "gearbox_brass",
+          "gearbox_arsenic_copper",
+          "gearbox_arsenic_bronze",
+          "gearbox_steel",
+          "gearbox_titanium",
+          "gearbox_tungstensteel",
+          "gearbox_iridium",
+          "gearbox_iritanium",
+          "gearbox_trinitanium",
+          "gearbox_trinaquadalloy",
+          "gearbox_adamantium",
+          "rope",
+          "rope_silk",
+          "rope_grass",
+          "rope_vine",
+          "rope_plastic",
+          "rope_steel",
+          "filter_items",
+          "filter_fluids",
+          "filter_items_fluids",
+          "filter_oredict",
+          "crank",
+          "asphalt",
+          "tool_pocket_multitool",
+          "cable_01_signalum",
+          "wire_01_lumium",
+          "electric_mining_drill",
+          "electric_mixer",
+          "electric_buzzsaw",
+          "electric_trimmer",
+          "electric_wrench_mv",
+          "electric_mining_drill_mv",
+          "electric_chainsaw_mv",
+          "electric_wrench_hv",
+          "electric_mining_drill_hv",
+          "electric_chainsaw_hv",
+          "tool_pistol",
+          "tool_pistol",
+          "tool_pistol",
+          "tool_carbine",
+          "tool_carbine",
+          "tool_carbine",
+          "tool_rifle",
+          "tool_rifle",
+          "tool_rifle",
+          "auto_igniter_steel",
+          "auto_igniter_aluminium",
+          "auto_igniter_stainless",
+          "auto_igniter_titanium",
+          "auto_igniter_tungsten",
+          "auto_igniter_ultimet",
+          "auto_hammer_steel",
+          "auto_hammer_aluminium",
+          "auto_hammer_titanium",
+          "auto_hammer_tungsten",
+          "usb_switch",
+          "hdd_switch",
+          "loot_crate",
+          "crate"
+        ],
+        "untranslatedInventorySamples": [],
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-7973f2c8-6ced-4c86-8fc5-5c9de22143cd.png"
+      },
+      "captures": {
+        "mobViewerScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\loot-jei-mobs-e38af490-2c71-4ccb-8dfd-f481b2590768.png",
+          "bytes": 438494,
+          "sha256": "6e94a6b5413937835f3abdada807638917e8d135fdb0c4bd4b09605ba4b569c5",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "lootViewerScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\loot-jei-tables-f8cb26fb-bf06-4cc8-9ce2-e33a95a04ee5.png",
+          "bytes": 457803,
+          "sha256": "08f12f92a768dcfc5d3d90f97831fdf3423ac8ccf7a54bfe39a61de63f6a418f",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "screenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\world-creation-forge-7973f2c8-6ced-4c86-8fc5-5c9de22143cd.png",
+          "bytes": 291729,
+          "sha256": "849620803803cf829f9157cac4bf2bd91a81f19f06d40bcf678a71887f468186",
+          "dimensions": [
+            1280,
+            720
+          ]
+        }
+      },
+      "visually_reviewed": true,
+      "emi_diagnostic_counts": {
+        "untranslated_tag": 0,
+        "synthetic_brewing_id": 0
+      },
+      "scope": "Current finite development world, native crafting/drop events and actual recipe browser"
+    },
+    {
+      "name": "neo-jei-world-1",
+      "status": "passed",
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\neo-jei-world-1.log",
+        "bytes": 69489,
+        "sha256": "2ed89ea5116f1771eb97c6152d30b13fc62c45d05b51a54621e4970520daa22d"
+      },
+      "receipt": {
+        "platform": "neoforge",
+        "id": "d4c537c3-1ba7-4eba-9b8d-7a14d16ffccb",
+        "world": "creation-smoke-d4c537c3-1ba7-4eba-9b8d-7a14d16ffccb",
+        "stage": 3,
+        "elapsedMs": 151777,
+        "legacyBatteryAliasesChecked": 5,
+        "chemicalBatteryStackRoundTrips": 10,
+        "sourceChemicalBatteriesChecked": 25,
+        "sourcePoweredAssemblyRowsChecked": 70,
+        "originCenterBiomesChecked": 9,
+        "originFacilityIdentitiesChecked": 26,
+        "originTestInventorySlots": 144,
+        "originTestInventoryPresent": 118,
+        "originTestInventoryOptionalEmpty": 26,
+        "originTestInventoryPendingTools": [],
+        "nexusGunUseChecks": 15,
+        "nexusGunAndPocketCraftingRows": 4,
+        "nexusPocketModesChecked": 8,
+        "nexusPoweredToolsChecked": 14,
+        "crankNativeSignalChecks": 30,
+        "flintKnifeFireAspect": 1,
+        "originalCrucibleReactionChecks": 4,
+        "originalCreativePages": 66,
+        "newFeedbackCraftingRowsChecked": 3,
+        "lootCrateReturnAndStackLimitChecks": 2,
+        "nativeMobDropEventChecks": 17,
+        "lootResolvedViewerRows": 1322,
+        "mobResolvedViewerRows": 89,
+        "canonicalItemsChecked": 75970,
+        "recipes": 52313,
+        "serverTicks": 283,
+        "dimension": "minecraft:overworld",
+        "lootViewer": "jei",
+        "lootViewerRows": 1322,
+        "mobViewerRows": 89,
+        "lootViewerTables": 18,
+        "mobViewerScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-jei-mobs-2da4a4d5-17a7-4009-9e1d-2fea2f3f0358.png",
+        "lootViewerScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\loot-jei-tables-6c9c1772-33c1-4f1e-8370-bf2d1ce07c1a.png",
+        "gearboxInventoryModelsChecked": 13,
+        "nexusToolInventoryModelsChecked": 61,
+        "automaticAndDataSwitchColorsChecked": 12,
+        "ropeInventoryModelsChecked": 6,
+        "filterInventoryModelsChecked": 4,
+        "inventoryMaterialRgb": {
+          "rope": "604000",
+          "rope_silk": "ffffff",
+          "rope_grass": "ffff00",
+          "rope_vine": "00ff00",
+          "rope_plastic": "c8c8c8",
+          "rope_steel": "828282",
+          "filter_items": "faf0f0",
+          "filter_fluids": "faf0f0",
+          "filter_items_fluids": "faf0f0",
+          "filter_oredict": "faf0f0",
+          "auto_igniter_steel": "c8c8c8",
+          "auto_igniter_aluminium": "faf0f0",
+          "auto_igniter_stainless": "80c8f0",
+          "auto_igniter_titanium": "c8c8dc",
+          "auto_igniter_tungsten": "ffe6e6",
+          "auto_igniter_ultimet": "dca0f0",
+          "auto_hammer_steel": "d2823c",
+          "auto_hammer_aluminium": "828282",
+          "auto_hammer_titanium": "dca0f0",
+          "auto_hammer_tungsten": "6464a0",
+          "usb_switch": "faf0f0",
+          "hdd_switch": "faf0f0"
+        },
+        "asphaltItemRgb": "808080",
+        "crankItemRgb": "c8c8c8",
+        "renderedWorldFrames": 35,
+        "emiLoaded": false,
+        "renderedInventoryItems": [
+          "gearbox_wood",
+          "gearbox_bronze",
+          "gearbox_brass",
+          "gearbox_arsenic_copper",
+          "gearbox_arsenic_bronze",
+          "gearbox_steel",
+          "gearbox_titanium",
+          "gearbox_tungstensteel",
+          "gearbox_iridium",
+          "gearbox_iritanium",
+          "gearbox_trinitanium",
+          "gearbox_trinaquadalloy",
+          "gearbox_adamantium",
+          "rope",
+          "rope_silk",
+          "rope_grass",
+          "rope_vine",
+          "rope_plastic",
+          "rope_steel",
+          "filter_items",
+          "filter_fluids",
+          "filter_items_fluids",
+          "filter_oredict",
+          "crank",
+          "asphalt",
+          "tool_pocket_multitool",
+          "cable_01_signalum",
+          "wire_01_lumium",
+          "electric_mining_drill",
+          "electric_mixer",
+          "electric_buzzsaw",
+          "electric_trimmer",
+          "electric_wrench_mv",
+          "electric_mining_drill_mv",
+          "electric_chainsaw_mv",
+          "electric_wrench_hv",
+          "electric_mining_drill_hv",
+          "electric_chainsaw_hv",
+          "tool_pistol",
+          "tool_pistol",
+          "tool_pistol",
+          "tool_carbine",
+          "tool_carbine",
+          "tool_carbine",
+          "tool_rifle",
+          "tool_rifle",
+          "tool_rifle",
+          "auto_igniter_steel",
+          "auto_igniter_aluminium",
+          "auto_igniter_stainless",
+          "auto_igniter_titanium",
+          "auto_igniter_tungsten",
+          "auto_igniter_ultimet",
+          "auto_hammer_steel",
+          "auto_hammer_aluminium",
+          "auto_hammer_titanium",
+          "auto_hammer_tungsten",
+          "usb_switch",
+          "hdd_switch",
+          "loot_crate",
+          "crate"
+        ],
+        "untranslatedInventorySamples": [],
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-d4c537c3-1ba7-4eba-9b8d-7a14d16ffccb.png"
+      },
+      "captures": {
+        "mobViewerScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\loot-jei-mobs-2da4a4d5-17a7-4009-9e1d-2fea2f3f0358.png",
+          "bytes": 289517,
+          "sha256": "f5614233211873c520ae11cb69dae079c2528278d7102d72e10025cc730b6c6a",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "lootViewerScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\loot-jei-tables-6c9c1772-33c1-4f1e-8370-bf2d1ce07c1a.png",
+          "bytes": 291333,
+          "sha256": "6af523fa539eb7a0ca4c475b8e8911e0918e5513f673f7d6a0c87f258338fcff",
+          "dimensions": [
+            1280,
+            720
+          ]
+        },
+        "screenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\world-creation-neoforge-d4c537c3-1ba7-4eba-9b8d-7a14d16ffccb.png",
+          "bytes": 275187,
+          "sha256": "924298403b66beb53a9c0562753d83596af6a0d10deb5c227bd5246471437783",
+          "dimensions": [
+            1280,
+            720
+          ]
+        }
+      },
+      "visually_reviewed": true,
+      "emi_diagnostic_counts": {
+        "untranslated_tag": 0,
+        "synthetic_brewing_id": 0
+      },
+      "scope": "Current finite development world, native crafting/drop events and actual recipe browser"
+    }
+  ],
+  "failed_attempts_retained": [
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\forge-emi-world-1.log",
+        "bytes": 29825,
+        "sha256": "933b0048db5fdcc6c3263571e22ec4f2ffa1d537124e358319b4a52d93897c1f"
+      },
+      "causes": []
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\forge-emi-world-2.log",
+        "bytes": 8076940,
+        "sha256": "f67b094677b86e9236b86ad9c10e5f7a2d66c6ab620382b0a350ef49c529e085"
+      },
+      "causes": []
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\neo-emi-world-1.log",
+        "bytes": 8698007,
+        "sha256": "dbc6d8963d511c7deb1d72fc7d25f3e858a021e693e1f532eaa6e8ac9c89529c"
+      },
+      "causes": [
+        "Caused by: java.lang.IllegalStateException: Cow source iron->lead/count failed"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\neo-emi-world-2.log",
+        "bytes": 8704037,
+        "sha256": "6fc05e7e607b0c12eb82b70e082d81821dcc2f94faf16aed984ec0a442966047"
+      },
+      "causes": [
+        "Caused by: java.lang.IllegalStateException: Cow source iron->lead/count failed"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\neo-emi-world-4.log",
+        "bytes": 8717049,
+        "sha256": "60f17303f49f89c7c812d7dfaf195a30c7ac79ff9cc63af595edf45884b2f98c"
+      },
+      "causes": [
+        "Caused by: java.lang.IllegalStateException: Missing source crafting: gregtech:tools/bathing_pot"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\neo-emi-world-5.log",
+        "bytes": 8698109,
+        "sha256": "bf73bcd87da641ecc86e0d729318d4529c2fbcf88ef7f205c969962ab3876d4b"
+      },
+      "causes": [
+        "Caused by: java.lang.IllegalStateException: Native source ingredients do not match: gregtech:tools/bathing_pot"
+      ]
+    }
+  ],
+  "core_check": {
+    "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\core-check.log",
+    "bytes": 1542,
+    "sha256": "c87831285bff55e7531b43daff764b63a3b788aa8367358015d661c4fb11abd1"
+  },
+  "final_compile": {
+    "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\compile-final.log",
+    "bytes": 32325,
+    "sha256": "02d83cc018b781bed39bc9add18cbb2b5886710452f7f4cdbba5f31357b45708"
+  },
+  "assembly": {
+    "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\dual-assemble.log",
+    "bytes": 1815,
+    "sha256": "f9610a2d0ad39c7832153cd65a7ebe5792f907526c7ffc61cbb8394e2fa9fb0c"
+  },
+  "packaging": {
+    "status": "passed",
+    "report": {
+      "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\artifacts.json",
+      "bytes": 285254,
+      "sha256": "3a60db3158e85bfbb049e9d80388e96711449df99979c456e4cb57964d2762d9"
+    }
+  },
+  "local_artifacts": {
+    "status": "passed",
+    "scope": "Verified complete copies; runtime evidence is recorded separately",
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261004-160808Z-430ac07e",
+    "verification_report": "C:\\Dev\\GregTech6\\work\\loot-20261004\\artifacts.json",
+    "verification_report_sha256": "3a60db3158e85bfbb049e9d80388e96711449df99979c456e4cb57964d2762d9",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 39452084,
+        "sha256": "430ac07ef974c4ccfa7d4bf96e5f04730df8eaeee9c56a95384f47768e119749",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-160808Z-430ac07e\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 37668790,
+        "sha256": "eb91734b89838eff71b1a378706088111f286e3e9425ff402b154b97941591fa",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261004-160808Z-430ac07e\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    }
+  },
+  "installed_loader_title_checks": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 68.52,
+      "installed_files_modified": false,
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "430ac07ef974c4ccfa7d4bf96e5f04730df8eaeee9c56a95384f47768e119749"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "c806ef83b37cad5d688285cae4f0484ba599827f3f7db4690a6822e29cc7dc4f"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "430ac07ef974c4ccfa7d4bf96e5f04730df8eaeee9c56a95384f47768e119749",
+          "bytes": 39452084
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "c806ef83b37cad5d688285cae4f0484ba599827f3f7db4690a6822e29cc7dc4f",
+          "bytes": 6064
+        },
+        {
+          "name": "Jade-1.20.1-Forge-11.13.3.jar",
+          "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+          "bytes": 553487
+        },
+        {
+          "name": "jei-1.20.1-forge-15.62.0.217.jar",
+          "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+          "bytes": 2232172
+        },
+        {
+          "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+          "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+          "bytes": 364842
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-bfa0125e-ea03-418d-a7b2-dd963307f83b\\launch.log",
+      "log_sha256": "2acbaa27d92f5498ca076eb965d751f6f8ac5e08e834f5485e7c1378bb011e49",
+      "receipt": {
+        "platform": "forge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-bfa0125e-ea03-418d-a7b2-dd963307f83b\\screenshots\\production-forge-39a99ff2-b233-4cf3-a4ef-a7b01df2d81a.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 181,
+        "loaderWarnings": 0,
+        "elapsedMs": 60244
+      },
+      "screenshot_sha256": "4ff14a4e1072ea9c15de87fdbcb46255f006cfcfa30a2927e5a04e61fcb32dcb",
+      "visually_reviewed": true
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 51.61,
+      "installed_files_modified": false,
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "eb91734b89838eff71b1a378706088111f286e3e9425ff402b154b97941591fa"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "e034dc95e35e88136f5e7410aa0a14a9e9e0f01151b788e2e72912f1cfeecc5f"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "eb91734b89838eff71b1a378706088111f286e3e9425ff402b154b97941591fa",
+          "bytes": 37668790
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "e034dc95e35e88136f5e7410aa0a14a9e9e0f01151b788e2e72912f1cfeecc5f",
+          "bytes": 4807
+        },
+        {
+          "name": "emi-1.1.24+1.21.1+neoforge.jar",
+          "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+          "bytes": 1111538
+        },
+        {
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+          "bytes": 726853
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-0bcf2b64-5128-41e8-9157-48551d69e7fb\\launch.log",
+      "log_sha256": "cb9d45fbe3c35855bfd86f23c6f3c1661f0a69c52b8bc551e37996de9da257d3",
+      "receipt": {
+        "platform": "neoforge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-0bcf2b64-5128-41e8-9157-48551d69e7fb\\screenshots\\production-neoforge-97ef362d-7c2d-45c7-bfd2-7c061564955a.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 181,
+        "elapsedMs": 42989
+      },
+      "screenshot_sha256": "8bae82c1b102dce310cf848a1273b0c1acb9221268323dd6478a9aec532319fb",
+      "visually_reviewed": true
+    }
+  },
+  "last_caption_refinement": {
+    "scope": "Only en_us/zh_cn undead-horse Looting explanation; no repeat of world/behavior checks",
+    "before": {
+      "path": "C:\\Dev\\GregTech6\\work\\loot-20261004\\artifacts-before-caption.json",
+      "bytes": 285254,
+      "sha256": "8456c641d963a7ad2f0f2153358cdee9646903fb5dd8cc326d75f4e91b290306"
+    },
+    "core_and_native_class_hashes_unchanged": true,
+    "resource_check": {
+      "status": "passed",
+      "source": {
+        "en_us": "Looting: +5 percentage points per level; undead horses: +2.5",
+        "zh_cn": "每级抢夺使每次判定增加 5 个百分点；亡灵马为 2.5 个百分点"
+      },
+      "artifacts": {
+        "forge": {
+          "en_us": "Looting: +5 percentage points per level; undead horses: +2.5",
+          "zh_cn": "每级抢夺使每次判定增加 5 个百分点；亡灵马为 2.5 个百分点"
+        },
+        "neoforge": {
+          "en_us": "Looting: +5 percentage points per level; undead horses: +2.5",
+          "zh_cn": "每级抢夺使每次判定增加 5 个百分点；亡灵马为 2.5 个百分点"
+        }
+      }
+    }
+  },
+  "limits": [
+    "Source cover geometry reviewed and compiled; no actual world cover visual capture this batch",
+    "World/UI captures precede final two-line undead-horse probability clarification; class hashes remain identical",
+    "No complete survival chain, independent save reload, or dedicated-server launch this batch",
+    "Loot crate uses one stack from current vanilla chest candidates; not identical 1.7.10 ChestGenHooks weighting",
+    "Untranslated common item tags and EMI built-in brewing synthetic-ID diagnostics remain explicit",
+    "Foreign-mod mobs, food effects, missing machines and remaining crafting are not completed by viewer registration"
+  ]
+}

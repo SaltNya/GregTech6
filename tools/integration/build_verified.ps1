@@ -38,8 +38,16 @@ try {
         if ($receipt.originCenterBiomesChecked -ne 9 -or $receipt.originFacilityIdentitiesChecked -ne 26 -or $receipt.originTestInventorySlots -ne 144 -or $receipt.crankNativeSignalChecks -ne 30 -or $receipt.flintKnifeFireAspect -ne 1 -or $receipt.originalCrucibleReactionChecks -ne 4 -or $receipt.originalCreativePages -ne 66 -or $receipt.gearboxInventoryModelsChecked -ne 13 -or $receipt.asphaltItemRgb -ne '808080' -or $receipt.crankItemRgb -ne 'c8c8c8' -or $receipt.originFeedbackFailures) {
             throw "$platform original-content feedback receipt is incomplete."
         }
-        if ($receipt.nexusToolInventoryModelsChecked -ne 61 -or $receipt.ropeInventoryModelsChecked -ne 6 -or $receipt.filterInventoryModelsChecked -ne 4 -or @($receipt.renderedInventoryItems).Count -ne 47 -or @($receipt.untranslatedInventorySamples).Count -ne 0) {
+        if ($receipt.nexusToolInventoryModelsChecked -ne 61 -or $receipt.ropeInventoryModelsChecked -ne 6 -or $receipt.filterInventoryModelsChecked -ne 4 -or $receipt.automaticAndDataSwitchColorsChecked -ne 12 -or @($receipt.renderedInventoryItems).Count -ne 61 -or @($receipt.untranslatedInventorySamples).Count -ne 0) {
             throw "$platform actual item-rendering feedback receipt is incomplete."
+        }
+        if ($receipt.nativeMobDropEventChecks -ne 17 -or $receipt.newFeedbackCraftingRowsChecked -ne 3 -or $receipt.lootCrateReturnAndStackLimitChecks -ne 2 -or $receipt.lootViewer -ne 'emi' -or $receipt.lootViewerTables -ne 18 -or $receipt.lootViewerRows -lt 1000 -or $receipt.mobViewerRows -lt 80 -or $receipt.emiStructureRows -lt 80 -or $receipt.emi_ore_veins -lt 30 -or $receipt.emi_stone_layers_info -lt 50 -or $receipt.emi_small_ores_info -lt 80 -or $receipt.emi_bedrock_ores -lt 20) {
+            throw "$platform actual loot/structure/geology viewer receipt is incomplete."
+        }
+        foreach ($capture in @('mobViewerScreenshot', 'lootViewerScreenshot', 'emiStructureScreenshot', 'emiVeinsScreenshot', 'emiLayersScreenshot')) {
+            if (-not $receipt.$capture -or -not (Test-Path -LiteralPath $receipt.$capture)) {
+                throw "$platform viewer screenshot $capture is missing."
+            }
         }
         if($receipt.originTestInventoryPresent -ne 118 -or $receipt.originTestInventoryOptionalEmpty -ne 26 -or @($receipt.originTestInventoryPendingTools).Count -ne 0 -or $receipt.nexusGunUseChecks -ne 15 -or $receipt.nexusGunAndPocketCraftingRows -ne 4 -or $receipt.nexusPocketModesChecked -ne 8 -or $receipt.nexusPoweredToolsChecked -ne 14){throw "$platform native Nexus tools are incomplete."}
         # Source NI and absent external integrations remain explicit empty slots.
