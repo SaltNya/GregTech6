@@ -1,0 +1,283 @@
+{
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\item\\multiitem\\tools\\ToolStats.java",
+      "sha256": "09b82ff58981570845604d0889f21fe3fa8aca114d4218fe12907bb89f5b9c60"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\crafting\\GT_Tool_BendingCylinder.java",
+      "sha256": "1728d69f7d41d4991a70f0f8f3ed17a291a3c25ca203cf631cee9720f52b4e44"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\crafting\\GT_Tool_BendingCylinderSmall.java",
+      "sha256": "f869be0b1f0ad36875422c8f75738820d1b13270a9620793869bcb89e807060b"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\crafting\\GT_Tool_File.java",
+      "sha256": "385f825959cbf5629ac9be4c375e8a1b46124572b61de10ce125f96352959b8c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\crafting\\GT_Tool_RollingPin.java",
+      "sha256": "4450e690283a1a2e0b3882c3e2473069500fdec63f18cb07760a86d2736f5b51"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Axe.java",
+      "sha256": "b5d7c35f085334c87db7f215c5b1b9550f571ca743d19981266d87c1e1404c28"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_AxeDouble.java",
+      "sha256": "41ecbb7c210ebe5ad655f5f401e3fc416c95c256f16b4492ae1d013ce733ecb1"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_BranchCutter.java",
+      "sha256": "db7bba5b45f65a8aa36d9ad4f437f4e7b61833b6acde988ed177e2caaffd01f2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_ButcheryKnife.java",
+      "sha256": "28ac4ea6b80f17f8445ea918da0f91c58052191672073845dca6f5086a04d13c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Chisel.java",
+      "sha256": "2f3f9ab85e0ec113fdf621b5429a2c14fb0a349780af3ebc25993f71422dd6ae"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Club.java",
+      "sha256": "dc0b9cb4ed38c057315fe095e8cc85652abffe2cfb0726e2dab4edf91c5077fd"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_HandDrill.java",
+      "sha256": "4590ea61d52cd0732ac3ea60efa81fdc5f06170cb66cf907ba4782d941bb2ad3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_HardHammer.java",
+      "sha256": "ff2d994d5cca3b0a74d7e98e3ed66676b03161444c487112d0fb14152ee9d0cf"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Hoe.java",
+      "sha256": "a78e8eaaf511e12c4ebb856744a3b9f5ba223a90f70272892584ba4c85a3c3ee"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Knife.java",
+      "sha256": "3b20609f161f0f303f975ebdde04acc12251e996615d07bdcfc07d48fe5c4ea3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Pickaxe.java",
+      "sha256": "2a7d9d3031a3e58101ac8cddc388d7fe6e0ab121c7370e0d8adfe2ebf22badac"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_PickaxeConstruction.java",
+      "sha256": "9365ce31f669c8ef91d4db115a3a559eedbb5a616c7bd9346a4a4a4d5870d08b"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_PickaxeGem.java",
+      "sha256": "732affdb9a05c0df21cfc757c9295d94e308683fd486b856e57b1e9caad88584"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Plow.java",
+      "sha256": "88f06b1d5e7f7bedc3e605ae92245555d0510b6eb9d9588790a750817514e39a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Saw.java",
+      "sha256": "aa8576b99e9d5d7e63f6a0d53516f6e8546af342f5f039a70e1db1cd41fd1df8"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Scissors.java",
+      "sha256": "1d203e60871c7781f125db5178b4e4d7b2a41d538bcf8456ab764ef9644823c0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Scoop.java",
+      "sha256": "f9c2ead5c4414a5dce99cdc9ba658270be153c750617c3458cbceff7b2d9960c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Sense.java",
+      "sha256": "ee99e7640a189daf0a7b453bdec00ef9f88cf4ac4c2f0ef92abc2d8969cadb73"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Shovel.java",
+      "sha256": "4bb048d1256f57b5483e507d12535f14102d8a85a9fe01f8be706aa9cf4c4120"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Spade.java",
+      "sha256": "4c57d6fe0abe9146528a29682c1fab1a792fb8c034f21df28c8478aafd71d07d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_Sword.java",
+      "sha256": "322e13f4ab0c8e9eef35afd2d8f78ca77a596b0efd67121ac7bb61cedbaa1ca4"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\early\\GT_Tool_UniversalSpade.java",
+      "sha256": "affec467170ea8123290e98f150fc0ffe18d4cd6ca5834cbfafa5416e3956fe0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_BuzzSaw_LV.java",
+      "sha256": "c8fe8ab65a458c07b244279e6ddb08769cd9b674f3ed7d9bd12734477df55505"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Chainsaw_HV.java",
+      "sha256": "22a33a38e32ce6d8e523163dc06b18bbb510275c76299cb09787dcde0cd95c99"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Chainsaw_LV.java",
+      "sha256": "2db6705c5ec327c09657b0f50c3cf1af07ec0aff07ae759152de1f935baaaf61"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Chainsaw_MV.java",
+      "sha256": "0b98c3928632631186a254dfa05aca01c95c652614a140ec19d2b167c120d39b"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Drill_LV.java",
+      "sha256": "1d3dfebbb0c628496432021020ef61150e3ef36279c649731bcbddbb36521716"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_JackHammer_HV.java",
+      "sha256": "676134b6ab69d1f39099f524948d0f1c8258ee12ea6fde170eaeb3e100267200"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_JackHammer_HV_No_Ores.java",
+      "sha256": "0dfaf744224bf0e84850ef8a0c49fd66ae175be7b96b9232cf9e6608d1d30075"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_JackHammer_HV_Normal.java",
+      "sha256": "7a9743fbbd0af938b2347361ceefdcae00147f3761fd5233e91f0837d6574b52"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_MiningDrill_HV.java",
+      "sha256": "f47fb36bb9feed6620da1db6883a62f294849d82ee24d118d0c7d062cc09636d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_MiningDrill_LV.java",
+      "sha256": "338d38cf2220314d11d70210f1cd4b0e5fc52cbed0a3e5263c3cacf92e702031"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_MiningDrill_MV.java",
+      "sha256": "bf997cfc7620c9ee2e3d1e25275f0daadc606df55acdd4420c5dda1c30a02b93"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Mixer_LV.java",
+      "sha256": "ee4353828b660d543b17b8500269983369a6bce860dc4181b52ae52c1ee31c29"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_MonkeyWrench_HV.java",
+      "sha256": "ce24cdd0d044355ceda48e04f1a09d5c6566a4fb934c45a6348e2bb37c5df0c8"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_MonkeyWrench_LV.java",
+      "sha256": "2f6d030c4f3ac344a4a09e734eb48c334769b0a083cf9f84aac86f2786de5353"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_MonkeyWrench_MV.java",
+      "sha256": "941965c18a9113260892bb354d120f00515028fb3a23e192e856fca4aebac11e"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Screwdriver_LV.java",
+      "sha256": "cebca016d8e4ac4ca6a93975e7ab8a7934be788ad7b9425a0ea8f0956d59a60e"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Trimmer_LV.java",
+      "sha256": "8fe692315de385e13d16630a062d1cf3fc4d22e7aae0b8a55bcc00ddba9b1e0d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Wrench_HV.java",
+      "sha256": "b527829543e3d1667efbf8d81a0b613551af176707c365d1f6804ec3bc9199b4"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Wrench_LV.java",
+      "sha256": "40de07b24b293ba73b6e4b4b6456298ba8828dfbef3528608042bdad51f19f49"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\electric\\GT_Tool_Wrench_MV.java",
+      "sha256": "417c0818bbc0bd9e8ce42a92dd9e529dbefd6920d7349f0b6fce38ce6d1bc729"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\guns\\GT_Tool_Carbine.java",
+      "sha256": "3fd57daeaa8775ef82cdabf4dab174b4f36db00f282015827f79d7a5b43c82c7"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\guns\\GT_Tool_Pistol.java",
+      "sha256": "9acc5f26d32594b379d5368f9e48e87c3dc0846b54420d3715fda13783b01ee3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_Builderwand.java",
+      "sha256": "cc87d1cadaf030a0137459c02d73fb13dcdde6af8b6a0c6857f8775f50f5cff7"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_Crowbar.java",
+      "sha256": "e97f3bcb17c09fa2e0f2c31d89c55873bc8ec44c3625269cbe5eece7e8c12c1e"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_FlintAndTinder.java",
+      "sha256": "14e271b833ffcc160d0a0db9d5fde9a33b2ddc29de4847de1fcec62a24250d70"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_MagnifyingGlass.java",
+      "sha256": "df3e7812331b86f9076dfe42afbc8135b73f6091fd53d47d25c3dd95ec89e00f"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_MonkeyWrench.java",
+      "sha256": "10e3a5f002704457d364c47a2905d39d2953d745f428870717129eeb24872702"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_Pincers.java",
+      "sha256": "198bf74be93d87b10b610c413610624c39e4d29bbdffb0c82b538e80e38e02a3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_Plunger.java",
+      "sha256": "a4fda81070ee9989abaf26da67712efff022e558966828abc3e0e99d14f902e1"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_Screwdriver.java",
+      "sha256": "0cb7f909f6f9d4272ee6eb63ab9aafdc4b5889f093b2133f1531fbe703bcd56f"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_SoftHammer.java",
+      "sha256": "48ce603efcb295072b9d742a555100710aceae8557a69b6f717e7b6152f35f6c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_WireCutter.java",
+      "sha256": "2140613e3c6af93fe2165608784081b30f1c7f4ee7cc61f65eaacb6ed9784ce7"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\machine\\GT_Tool_Wrench.java",
+      "sha256": "cb7b2f4408121951891f658d76598ca51d14af2d5222991377c67154fcd74515"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\pocket\\GT_Tool_Pocket_Chisel.java",
+      "sha256": "4561d704ef5b4c53af1db7921a10d31af7840c6550a2ac738dae0b7a774f8d43"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\pocket\\GT_Tool_Pocket_Cutter.java",
+      "sha256": "cfea614edf81e6e019c67ef60731dd9f55480d5856df75f18b447bae327c91df"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\pocket\\GT_Tool_Pocket_File.java",
+      "sha256": "9da0767923203c1fe55461da52a5da7220e113a4b7ad17460a5e25962f10d476"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\pocket\\GT_Tool_Pocket_Knife.java",
+      "sha256": "657c77551bde1475c50c42d42d7f3456a02d822455d45ced02c4d575c8fa4405"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\pocket\\GT_Tool_Pocket_Multitool.java",
+      "sha256": "a5b57fd66c3dbc890253b8585a374639a1f152f5dc27f6c8671fac127a5859c6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\pocket\\GT_Tool_Pocket_Saw.java",
+      "sha256": "b55f5f657f3ebc7be5cfe788784809762f7f29174a42afa972f4c356bde6dcad"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\pocket\\GT_Tool_Pocket_Scissors.java",
+      "sha256": "a0acc98d1338accf13660768d7f6af7dd28790bf8a8f4a941915a5d1b233aff7"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\tools\\pocket\\GT_Tool_Pocket_Screwdriver.java",
+      "sha256": "8a7cc43cfe0adf7193ec91fbed6f37e8cd19a8eeea8f3c46ade34e1225e9c757"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Tools.java",
+      "sha256": "e791f2cd6972bfa10767663f78557d2722cac2b7c80f29595815b4a520577b6e"
+    }
+  ],
+  "original_tools": 65,
+  "manual_native_tools": 37,
+  "scope": "Source classification import; native enchantment verification recorded separately"
+}
