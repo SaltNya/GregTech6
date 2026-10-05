@@ -650,5 +650,19 @@
   "coke_source": {
     "path": "C:\\Dev\\GregTech6\\docs\\integration\\verification\\coke-oven-source-20261005.json",
     "sha256": "9bb9bb16f53c200dfe4769059754dc6fb73da7705917cb1dbab9b52e9e994044"
+  },
+  "legacy_assertion_alignment": {
+    "implementation_commit": "b1fd8c16",
+    "scope": "Three existing vanilla-identity assertions now accept original GT cover identities; test-only changes, no gameplay source changed",
+    "compile_log": {
+      "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\legacy-assertion-compile.log",
+      "sha256": "0c2bea13838bb60aacf5e18ece891d624b2060d22038908e23cead89dc4dfbaa"
+    },
+    "compile_result": "BUILD SUCCESSFUL in 13s; no GameTests executed",
+    "packaging_after_compile": {
+      "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\artifacts-after-legacy.json",
+      "sha256": "84f7b992c7cef19a4714ebb955310f7223b305ca50b6f0e4d90c1d5fa81d9ffb"
+    },
+    "production_bytecode_unchanged": true
   }
 }
