@@ -1,0 +1,708 @@
+{
+  "originalSource": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "authors": "Gregorius Techneticies; GregTech-6 Team",
+  "license": "LGPL-3.0-or-later; original source references unchanged; no new assets copied",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\RM.java",
+      "bytes": 93922,
+      "sha256": "c7cb07faef0235ace4bb26656fddaabfa10da6aa4a2689a7f4cdcaef10d366e6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\FM.java",
+      "bytes": 4536,
+      "sha256": "374772472db8a786a8a0af2408ad71ae2500481e258ee1c6815fcd87f7cbec64"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\Recipe.java",
+      "bytes": 105155,
+      "sha256": "8bb9a0bd00aa839a48a2c082281a988e9a796a540137d1cf50249d2250ad1c7e"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapAssembler.java",
+      "bytes": 3022,
+      "sha256": "bcc79d20d72a4ba7bb4cc73b4c752c5d5d4be27bdc0dc4799b301d7c4ac94722"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\NEI_GT_API_Config.java",
+      "bytes": 2955,
+      "sha256": "d41ea9f20241ea21a85d13a0db411555562b333958b5199ca0696f138a09aa53"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\NEI_RecipeMap.java",
+      "bytes": 52762,
+      "sha256": "fb171fb1f0b7184564a20593fa450ca84a95675a74d780d23bad46a22639c605"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "bytes": 791265,
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    }
+  ],
+  "presentationFlags": {
+    "mc.recipe.furnace": {
+      "source": "RM",
+      "field": "Furnace",
+      "class": "RecipeMapFurnace",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.microwave": {
+      "source": "RM",
+      "field": "Microwave",
+      "class": "RecipeMapMicrowave",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.roaster": {
+      "source": "RM",
+      "field": "Roasting",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.distillery": {
+      "source": "RM",
+      "field": "Distillery",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.extruder": {
+      "source": "RM",
+      "field": "Extruder",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.smelter": {
+      "source": "RM",
+      "field": "Smelter",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.crystallisationcrucible": {
+      "source": "RM",
+      "field": "CrystallisationCrucible",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.drying": {
+      "source": "RM",
+      "field": "Drying",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.laminator": {
+      "source": "RM",
+      "field": "Laminator",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.catalyticcracking": {
+      "source": "RM",
+      "field": "CatalyticCracking",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.steamcracking": {
+      "source": "RM",
+      "field": "SteamCracking",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.distillationtower": {
+      "source": "RM",
+      "field": "DistillationTower",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.cryodistillationtower": {
+      "source": "RM",
+      "field": "CryoDistillationTower",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.shredder": {
+      "source": "RM",
+      "field": "Shredder",
+      "class": "RecipeMapShredder",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.lathe": {
+      "source": "RM",
+      "field": "Lathe",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.cutter": {
+      "source": "RM",
+      "field": "Cutter",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.centrifuge": {
+      "source": "RM",
+      "field": "Centrifuge",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.rollingmill": {
+      "source": "RM",
+      "field": "RollingMill",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.rollbender": {
+      "source": "RM",
+      "field": "RollBender",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.rollformer": {
+      "source": "RM",
+      "field": "RollFormer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.clustermill": {
+      "source": "RM",
+      "field": "ClusterMill",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.wiremill": {
+      "source": "RM",
+      "field": "Wiremill",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.mixer": {
+      "source": "RM",
+      "field": "Mixer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.loom": {
+      "source": "RM",
+      "field": "Loom",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.sluice": {
+      "source": "RM",
+      "field": "Sluice",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.sharpener": {
+      "source": "RM",
+      "field": "Sharpening",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.burnmixer": {
+      "source": "RM",
+      "field": "BurnMixer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.pressurewasher": {
+      "source": "RM",
+      "field": "PressureWasher",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.crusher": {
+      "source": "RM",
+      "field": "Crusher",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.sifter": {
+      "source": "RM",
+      "field": "Sifting",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.squeezer": {
+      "source": "RM",
+      "field": "Squeezer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.compressor": {
+      "source": "RM",
+      "field": "Compressor",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.press": {
+      "source": "RM",
+      "field": "Press",
+      "class": "RecipeMapFormingPress",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.electrolyzer": {
+      "source": "RM",
+      "field": "Electrolyzer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.canner": {
+      "source": "RM",
+      "field": "Canner",
+      "class": "RecipeMapFluidCanner",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.injector": {
+      "source": "RM",
+      "field": "Injector",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.printer": {
+      "source": "RM",
+      "field": "Printer",
+      "class": "RecipeMapPrinter",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.scannervisuals": {
+      "source": "RM",
+      "field": "ScannerVisuals",
+      "class": "RecipeMapScannerVisuals",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.autocrafting": {
+      "source": "RM",
+      "field": "Autocrafter",
+      "class": "RecipeMapAutocrafting",
+      "viewerAllowed": false,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.slicer": {
+      "source": "RM",
+      "field": "Slicer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.nanofab": {
+      "source": "RM",
+      "field": "Nanofab",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.plantalyzer": {
+      "source": "RM",
+      "field": "Plantalyzer",
+      "class": "RecipeMapPlantalyzer",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.bumblelyzer": {
+      "source": "RM",
+      "field": "Bumblelyzer",
+      "class": "RecipeMapBumblelyzer",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.boxinator": {
+      "source": "RM",
+      "field": "Boxinator",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.unboxinator": {
+      "source": "RM",
+      "field": "Unboxinator",
+      "class": "RecipeMapUnboxinator",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.polarizer": {
+      "source": "RM",
+      "field": "Polarizer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.magneticseparator": {
+      "source": "RM",
+      "field": "MagneticSeparator",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.laserengraver": {
+      "source": "RM",
+      "field": "LaserEngraver",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.welder": {
+      "source": "RM",
+      "field": "Welder",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.freezer": {
+      "source": "RM",
+      "field": "Freezer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.cryomixer": {
+      "source": "RM",
+      "field": "CryoMixer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.massfab": {
+      "source": "RM",
+      "field": "Massfab",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.scannermolecular": {
+      "source": "RM",
+      "field": "ScannerMolecular",
+      "class": "RecipeMapScannerMolecular",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.replicator": {
+      "source": "RM",
+      "field": "Replicator",
+      "class": "RecipeMapReplicator",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.autoclave": {
+      "source": "RM",
+      "field": "Autoclave",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.bath": {
+      "source": "RM",
+      "field": "Bath",
+      "class": "RecipeMapBath",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.generifier": {
+      "source": "RM",
+      "field": "Generifier",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.coagulator": {
+      "source": "RM",
+      "field": "Coagulator",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fermenter": {
+      "source": "RM",
+      "field": "Fermenter",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.melter": {
+      "source": "RM",
+      "field": "Melter",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.cokeoven": {
+      "source": "RM",
+      "field": "CokeOven",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.lightning": {
+      "source": "RM",
+      "field": "Lightning",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.implosioncompressor": {
+      "source": "RM",
+      "field": "ImplosionCompressor",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fusionreactor": {
+      "source": "RM",
+      "field": "Fusion",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.mortar": {
+      "source": "RM",
+      "field": "Mortar",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.other": {
+      "source": "RM",
+      "field": "DidYouKnow",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": false
+    },
+    "gt.recipe.toolhead": {
+      "source": "RM",
+      "field": "ToolHeads",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": false
+    },
+    "gt.recipe.cooker": {
+      "source": "RM",
+      "field": "Cooking",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.blastfurnace": {
+      "source": "RM",
+      "field": "BlastFurnace",
+      "class": "RecipeMap",
+      "viewerAllowed": false,
+      "showVoltageAmperage": false
+    },
+    "gt.recipe.vacuumfreezer": {
+      "source": "RM",
+      "field": "VacuumFreezer",
+      "class": "RecipeMap",
+      "viewerAllowed": false,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.assembler": {
+      "source": "RM",
+      "field": "Assembler",
+      "class": "RecipeMapAssembler",
+      "viewerAllowed": false,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.cncmachine": {
+      "source": "RM",
+      "field": "CNC",
+      "class": "RecipeMap",
+      "viewerAllowed": false,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.cruciblealloying": {
+      "source": "RM",
+      "field": "CrucibleAlloying",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.cruciblesmelting": {
+      "source": "RM",
+      "field": "CrucibleSmelting",
+      "class": "RecipeMapCrucible",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.bedrockorelist": {
+      "source": "RM",
+      "field": "BedrockOreList",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.byproductlist": {
+      "source": "RM",
+      "field": "ByProductList",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.hammer": {
+      "source": "RM",
+      "field": "Hammer",
+      "class": "RecipeMapHammer",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.chisel": {
+      "source": "RM",
+      "field": "Chisel",
+      "class": "RecipeMapChisel",
+      "viewerAllowed": false,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.calciner": {
+      "source": "RM",
+      "field": "Calciner",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.juicer": {
+      "source": "RM",
+      "field": "Juicer",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.anvil": {
+      "source": "RM",
+      "field": "Anvil",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.anvil.bend.small": {
+      "source": "RM",
+      "field": "AnvilBendSmall",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.anvil.bend.big": {
+      "source": "RM",
+      "field": "AnvilBendBig",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.bumblequeen": {
+      "source": "RM",
+      "field": "BumbleQueens",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": false
+    },
+    "gt.recipe.trees": {
+      "source": "RM",
+      "field": "Trees",
+      "class": "RecipeMap",
+      "viewerAllowed": true,
+      "showVoltageAmperage": false
+    },
+    "gt.recipe.fuels.fluidbed": {
+      "source": "FM",
+      "field": "FluidBed",
+      "class": "RecipeMapFuel",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fuels.burn": {
+      "source": "FM",
+      "field": "Burn",
+      "class": "RecipeMapFuel",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fuels.gas": {
+      "source": "FM",
+      "field": "Gas",
+      "class": "RecipeMapFuel",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fuels.hot": {
+      "source": "FM",
+      "field": "Hot",
+      "class": "RecipeMapFuel",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fuels.plasma": {
+      "source": "FM",
+      "field": "Plasma",
+      "class": "RecipeMapFuel",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fuels.engine": {
+      "source": "FM",
+      "field": "Engine",
+      "class": "RecipeMapFuel",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fuels.turbine": {
+      "source": "FM",
+      "field": "Turbine",
+      "class": "RecipeMapFuel",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    },
+    "gt.recipe.fuels.magic": {
+      "source": "FM",
+      "field": "Magic",
+      "class": "RecipeMapFuel",
+      "viewerAllowed": true,
+      "showVoltageAmperage": true
+    }
+  },
+  "sourceFixtureSha256": "1797662bbf32b6e5cad08e3acd758346599f0defbfe344a4f43380420890c231",
+  "adoption": {
+    "eligibility": "Original NEI_GT_API_Config only registers maps with mNEIAllowed. Restore all 85 native machine/eight fuel flags; hidden compatibility/auxiliary pools remain registered and retain recipes and lookup. No standalone Assembler invented.",
+    "captions": "Original NEI_RecipeMap.drawExtras controls unspecified tier/tier/power via mShowVoltageAmperageInNEI, and omits usage for absolute unit power when voltage is hidden. Total cost/gain still shown; existing native time and crucible/Fusion specialization retained.",
+    "bridging": "Modern adapter: when EMI is loaded, its native machine rows are the sole machine browser provider. JEI machine categories remain registered but no machine rows are sent to its EMI bridge; separate manual tool assembly remains registered. This extends the existing loot/structure/geology bridge suppression.",
+    "viewport": "Modern EMI can clamp the requested recipe height. Fit original 176x146 content uniformly to the actual public WidgetHolder viewport, preserving native SlotWidget identity, hitboxes, tooltips and recipe context. The recipe schema and relative slot coordinates are retained. EMI API behavior inspected in the preserved official work/emi-sources.jar; no EMI implementation source copied.",
+    "boundaries": "This batch changes presentation metadata, viewer registration and EMI viewport fitting. Existing recipe slot schemas, needsOutputs, power dividers, recipe tables, gameplay lookup, compatibility/NBT assembler behavior and item IDs are not claimed fully source-aligned."
+  }
+}
