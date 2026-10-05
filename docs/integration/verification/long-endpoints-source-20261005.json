@@ -1,0 +1,210 @@
+{
+  "authors": "GregTech-6 Team; Gregorius Techneticies and contributors",
+  "code_license": "LGPL-3.0-or-later; source headers retained on source-derived rules and endpoints",
+  "asset_license": "CC0-1.0; read LICENSE.assets in both preserved source trees",
+  "source_files": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\inventories\\MultiTileEntityLongDistancePipelineItem.java",
+      "sha256": "befd9158a68c0a581e8e3e44f7f632b7287b349ce6f56ba580c2c0911b69a218"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\tanks\\MultiTileEntityLongDistancePipelineFluid.java",
+      "sha256": "e54bb7180e6bc534d0ddf0cb8b004b99e79580f76e25c0bffb8e74f2d63654d2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\energy\\transformers\\MultiTileEntityLongDistanceTransformer.java",
+      "sha256": "68bff798f2d06d109cd5f5902671fea99617319555ed874d2971f49a14f8d6e2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\base\\TileEntityBase09FacingSingle.java",
+      "sha256": "b172aadf76d09c37ee4c7793cb784dcc97a19d999ad1737bafc60cc064bece7f"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\base\\TileEntityBase01Root.java",
+      "sha256": "6fb532deff9cf3a423e0606771852e63eb2beb72f5c976782aa8060cd77a8b95"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\UT.java",
+      "sha256": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\COPYING.LESSER",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE.assets",
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\COPYING.assets",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    }
+  ],
+  "preserved_asset_licenses": [
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\LICENSE",
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\COPYING.LESSER",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\LICENSE.assets",
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\COPYING.assets",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    }
+  ],
+  "adopted_assets": [
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_active\\back.png",
+        "sha256": "d0e525ef0eb6f59143dabe754433f9a0b0a97423d978aa2b4717a8b4c5bf87a1"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_active\\back.png",
+      "destination_sha256": "d0e525ef0eb6f59143dabe754433f9a0b0a97423d978aa2b4717a8b4c5bf87a1",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_active\\front.png",
+        "sha256": "375ebaca9f18d34e3edd037d0dd484c4602674a404edbef3b083921ef2e8e6cd"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_active\\front.png",
+      "destination_sha256": "375ebaca9f18d34e3edd037d0dd484c4602674a404edbef3b083921ef2e8e6cd",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_active\\side.png",
+        "sha256": "bd4153add32cf0c39beefdec2ad098922d6584aa5cb0ff0bcf417555936467d7"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_active\\side.png",
+      "destination_sha256": "bd4153add32cf0c39beefdec2ad098922d6584aa5cb0ff0bcf417555936467d7",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\back.png",
+        "sha256": "c259c3ed7db386fe4b9dd78be146829ad1d5a0a416b2955e91ae554aacf1407b"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\back.png",
+      "destination_sha256": "c259c3ed7db386fe4b9dd78be146829ad1d5a0a416b2955e91ae554aacf1407b",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\back.png.mcmeta",
+        "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\back.png.mcmeta",
+      "destination_sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\front.png",
+        "sha256": "49f73ced7eabcf15faf702db59670b585345fd895adac45a84892646d2d46464"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\front.png",
+      "destination_sha256": "49f73ced7eabcf15faf702db59670b585345fd895adac45a84892646d2d46464",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\front.png.mcmeta",
+        "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\front.png.mcmeta",
+      "destination_sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\side.png",
+        "sha256": "0ce6a29af09bc7e242f4225822fc9ee5481b3d92bdf4ad167e1d7eea82677173"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\side.png",
+      "destination_sha256": "0ce6a29af09bc7e242f4225822fc9ee5481b3d92bdf4ad167e1d7eea82677173",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\side.png.mcmeta",
+        "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_blinking\\side.png.mcmeta",
+      "destination_sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_unloaded\\back.png",
+        "sha256": "fe9baea3d29d6174e8470300492699faf0a03293ff03d791d74e9f13a21a7e78"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_unloaded\\back.png",
+      "destination_sha256": "fe9baea3d29d6174e8470300492699faf0a03293ff03d791d74e9f13a21a7e78",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_unloaded\\front.png",
+        "sha256": "b675c8f8b2f44590b847a93063896940a8b847dbe39c8890fc4d8393d5a1f035"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_unloaded\\front.png",
+      "destination_sha256": "b675c8f8b2f44590b847a93063896940a8b847dbe39c8890fc4d8393d5a1f035",
+      "byte_identical": true
+    },
+    {
+      "source": {
+        "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\transformers\\longdistancetransformer_electric\\overlay_unloaded\\side.png",
+        "sha256": "84a1192dd485a28ca95e7e61f65f38b2ea74fcd2ff3919d88d3ec5ee17517dd3"
+      },
+      "destination": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\transformers\\longdistancetransformer_electric\\overlay_unloaded\\side.png",
+      "destination_sha256": "84a1192dd485a28ca95e7e61f65f38b2ea74fcd2ff3919d88d3ec5ee17517dd3",
+      "byte_identical": true
+    }
+  ],
+  "asset_boundary": "The original Java snapshot declares these state icon paths but omits their PNG files. The retained _w snapshot supplies 9 PNGs and 3 animation metadata files without modifications. Existing colored/idle textures are reused.",
+  "behavior": {
+    "all_facing_default": "UP; 6 allowed directions; pitch threshold inclusive at +/-65 degrees",
+    "tools": "WRENCH rotates through the existing 3x3 selected-face interaction; SOFT_HAMMER rescans without toggling stopped; MAGNIFYING_GLASS reports receiver/sender/target coordinates",
+    "tool_click_returns": {
+      "wrench": 10000,
+      "soft_hammer": 10000,
+      "magnifying_glass": 1
+    },
+    "stack_limit": 16,
+    "materials": {
+      "item_endpoint": "Platinum",
+      "fluid_endpoint": "Tungsten",
+      "EV": "Chromium",
+      "IV": "Titanium",
+      "LuV": "Iridium",
+      "ZPM": "OsmiumElemental",
+      "UV": "Trinitanium"
+    },
+    "receiver_selection": "Breadth-first same block/meta identity, first front attached receiver; branches permitted. One receiver is owned by one live sender; a competing sender cannot skip it to steal another receiver.",
+    "chunk_policy": "Initial scan reads/generates its path chunks; cached routing remembers target coordinates and does not reload path chunks. A missing target is unavailable.",
+    "energy_loss": "Signed packets retain sign, each loses max(64, distance/8) EU; receiver output uses its back face",
+    "injection_order": "TileEntityBase01Root checks accepting/target before calling doInject. An unconnected endpoint rejects even an oversized packet without overcharging; a connected endpoint consumes undersized packets per the root minimum-size gate.",
+    "activity_history": "The recent 64-tick history is retained while stopped or waiting for an unavailable remembered target.",
+    "state_boundary": "0 idle/stopped, 1 continuous, 2 intermittent, 3 remembered unavailable target. State 3 uses the intended remembered unavailable condition instead of the original compound check which also inspects target ownership."
+  },
+  "retained_mapping_boundary": "Stable legacy transformer suffixes ulv/lv/mv represent the actual original EV/IV/LuV voltages, respectively; IDs are not renamed."
+}
