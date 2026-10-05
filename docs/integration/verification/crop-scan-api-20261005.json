@@ -1,0 +1,10 @@
+{
+  "issue": 13,
+  "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\behaviors\\Behavior_Cropnalyzer.java",
+  "sha256": "850ae16295d6741da10d61b462d7b04bcb748db05d8693b1fb4a957886428884",
+  "author": "Gregorius Techneticies",
+  "license": "LGPL-3.0-or-later, source header retained by reference",
+  "implemented": "IC2-free CropScanSource API; shared formatter and scan-level promotion; reflection fallback retained",
+  "verification": "coreBehaviorContracts: 2465 assertions / 30 groups passed; new addon provider scan, empty crop, scan promotion and cost included",
+  "limits": "No installed external IC2 addon launch in this batch"
+}
