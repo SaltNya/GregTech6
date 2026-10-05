@@ -47,7 +47,7 @@ try {
         if ($receipt.lootViewerPages -ne 18 -or $receipt.mobViewerPages -ne 19 -or $receipt.groupedOutputsIndexed -ne ($receipt.lootViewerRows + $receipt.mobViewerRows) -or -not $receipt.emiLootGridScrolled -or $receipt.emiNativePreviewInputChecks -ne 5 -or $receipt.glassSlabTranslucentModelsChecked -ne 6 -or $receipt.glassSlabTouchingFaceChecks -ne 6) {
             throw "$platform grouped loot / preview / glass receipt is incomplete."
         }
-        if (@($receipt.machineFeedbackCrafting).Count -ne 36 -or @($receipt.lightningProcessorsChecked).Count -ne 5 -or $receipt.sourceEnergyCreativeGroupsChecked -ne 36 -or $receipt.longDistanceCreativeGroupsChecked -ne 16 -or $receipt.sourceMelterOperatingFlagChecks -ne 3 -or $receipt.sourceMachineInventoryModelsChecked -ne 6) {
+        if (@($receipt.machineFeedbackCrafting).Count -ne 50 -or @($receipt.lightningProcessorsChecked).Count -ne 5 -or $receipt.sourceEnergyCreativeGroupsChecked -ne 36 -or $receipt.longDistanceCreativeGroupsChecked -ne 30 -or $receipt.sourceMelterOperatingFlagChecks -ne 3 -or $receipt.sourceMachineInventoryModelsChecked -ne 6) {
             throw "$platform actual machine/transport crafting and rendering receipt is incomplete."
         }
         foreach ($capture in @('mobViewerScreenshot', 'lootViewerScreenshot', 'emiStructureScreenshot', 'emiVeinsScreenshot', 'emiLayersScreenshot', 'glassSlabWorldScreenshot')) {

@@ -1,0 +1,235 @@
+{
+  "authors": "GregTech-6 Team; Gregorius Techneticies and contributors",
+  "code_license": "LGPL-3.0-or-later",
+  "assets": "No bitmap changes; reuse the already retained 5 voltage and 2 pipeline textures. Original metadata uses the same tier covers without material RGB tint.",
+  "sources": [
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Blocks.java",
+      "sha256": "4215d81610616b406af400c98ddaee3b0d266cb187c9335d2d6a5dd851284abb"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\tool\\BlockLongDistWire.java",
+      "sha256": "6582cf7e867482c9b162c16a1527b21f542b6ed1254168bc65e193e8d7e5b854"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\tool\\BlockLongDistPipe.java",
+      "sha256": "c2c20883e798025e670b75b1946190c9520f9de7eed9a47dc679f3a508952135"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\tanks\\MultiTileEntityLongDistancePipelineFluid.java",
+      "sha256": "e54bb7180e6bc534d0ddf0cb8b004b99e79580f76e25c0bffb8e74f2d63654d2"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\inventories\\MultiTileEntityLongDistancePipelineItem.java",
+      "sha256": "befd9158a68c0a581e8e3e44f7f632b7287b349ce6f56ba580c2c0911b69a218"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\energy\\transformers\\MultiTileEntityLongDistanceTransformer.java",
+      "sha256": "68bff798f2d06d109cd5f5902671fea99617319555ed874d2971f49a14f8d6e2"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\old\\Textures.java",
+      "sha256": "2c89ed8e110dffe1c33c86c1e5707fa1f2b70ea3490d5d2d67a5305c8eca9d0c"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\COPYING.LESSER",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE.assets",
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\COPYING.assets",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    }
+  ],
+  "flattened_lines": [
+    {
+      "id": "long_dist_wire_ev",
+      "kind": "wire",
+      "original_meta": 0,
+      "material": "Tin",
+      "tier": 4,
+      "maximum_voltage": 4096
+    },
+    {
+      "id": "long_dist_wire_lead",
+      "kind": "wire",
+      "original_meta": 1,
+      "material": "Lead",
+      "tier": 4,
+      "maximum_voltage": 4096
+    },
+    {
+      "id": "long_dist_wire_iv",
+      "kind": "wire",
+      "original_meta": 2,
+      "material": "Copper",
+      "tier": 5,
+      "maximum_voltage": 16384
+    },
+    {
+      "id": "long_dist_wire_luv",
+      "kind": "wire",
+      "original_meta": 3,
+      "material": "Silver",
+      "tier": 6,
+      "maximum_voltage": 65536
+    },
+    {
+      "id": "long_dist_wire_gold",
+      "kind": "wire",
+      "original_meta": 4,
+      "material": "Gold",
+      "tier": 6,
+      "maximum_voltage": 65536
+    },
+    {
+      "id": "long_dist_wire_electrum",
+      "kind": "wire",
+      "original_meta": 5,
+      "material": "Electrum",
+      "tier": 6,
+      "maximum_voltage": 65536
+    },
+    {
+      "id": "long_dist_wire_blue_alloy",
+      "kind": "wire",
+      "original_meta": 6,
+      "material": "BlueAlloy",
+      "tier": 6,
+      "maximum_voltage": 65536
+    },
+    {
+      "id": "long_dist_wire_electrotine_alloy",
+      "kind": "wire",
+      "original_meta": 7,
+      "material": "ElectrotineAlloy",
+      "tier": 6,
+      "maximum_voltage": 65536
+    },
+    {
+      "id": "long_dist_wire_zpm",
+      "kind": "wire",
+      "original_meta": 8,
+      "material": "Steel",
+      "tier": 7,
+      "maximum_voltage": 262144
+    },
+    {
+      "id": "long_dist_wire_aluminium",
+      "kind": "wire",
+      "original_meta": 9,
+      "material": "Aluminium",
+      "tier": 7,
+      "maximum_voltage": 262144
+    },
+    {
+      "id": "long_dist_wire_tungsten",
+      "kind": "wire",
+      "original_meta": 10,
+      "material": "Tungsten",
+      "tier": 7,
+      "maximum_voltage": 262144
+    },
+    {
+      "id": "long_dist_wire_tungsten_steel",
+      "kind": "wire",
+      "original_meta": 11,
+      "material": "TungstenSteel",
+      "tier": 7,
+      "maximum_voltage": 262144
+    },
+    {
+      "id": "long_dist_wire_uv",
+      "kind": "wire",
+      "original_meta": 12,
+      "material": "Osmium",
+      "tier": 8,
+      "maximum_voltage": 1048576
+    },
+    {
+      "id": "long_dist_wire_platinum",
+      "kind": "wire",
+      "original_meta": 13,
+      "material": "Platinum",
+      "tier": 8,
+      "maximum_voltage": 1048576
+    },
+    {
+      "id": "long_dist_wire_naquadah",
+      "kind": "wire",
+      "original_meta": 14,
+      "material": "Naquadah",
+      "tier": 8,
+      "maximum_voltage": 1048576
+    },
+    {
+      "id": "long_dist_wire_graphene",
+      "kind": "wire",
+      "original_meta": 15,
+      "material": "Graphene",
+      "tier": 8,
+      "maximum_voltage": 1048576
+    },
+    {
+      "id": "long_dist_pipe_item",
+      "kind": "item_pipe",
+      "original_meta": 0,
+      "material": "Electrum",
+      "maximum_kelvin": -1
+    },
+    {
+      "id": "long_dist_pipe_fluid",
+      "kind": "fluid_pipe",
+      "original_meta": 1,
+      "material": "StainlessSteel",
+      "maximum_kelvin": 1943
+    },
+    {
+      "id": "long_dist_pipe_tungsten",
+      "kind": "fluid_pipe",
+      "original_meta": 2,
+      "material": "Tungsten",
+      "maximum_kelvin": 3695
+    },
+    {
+      "id": "long_dist_pipe_adamantium",
+      "kind": "fluid_pipe",
+      "original_meta": 3,
+      "material": "Adamantium",
+      "maximum_kelvin": 5225
+    },
+    {
+      "id": "long_dist_pipe_draconium",
+      "kind": "fluid_pipe",
+      "original_meta": 4,
+      "material": "Draconium",
+      "maximum_kelvin": 4500
+    }
+  ],
+  "stable_identity_policy": "Existing voltage IDs identify original metas 0,2,3,8,12; add 11 wire and 3 fluid pipe IDs. Preserve old generic pipe/wire IDs. Generic wire shares tin identity; generic pipe stays a separate compatibility network.",
+  "thermal_policy": "Original fluid fill accepts temperature <= mTemperature, rejects higher fluids without destroying the pipe, and exposes no drain. Four values derive from the retained original material graph: StainlessSteel1943,W3695,Ad5225,Draconium4500.",
+  "routing_policy": "Match original block + metadata through flattened native network identities. Ignore adjacent unrelated material branches. Retain existing loaded-only scan, unique endpoint and 4096-node safety policies; these are documented port limits, not exact source search/unloaded-chunk behavior."
+}
