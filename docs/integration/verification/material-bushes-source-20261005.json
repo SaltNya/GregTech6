@@ -1,0 +1,57 @@
+{
+  "originalSource": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "authors": "Gregorius Techneticies; GregTech-6 Team",
+  "license": "LGPL-3.0-or-later; source notice retained on MaterialBerryBushCatalog; original references unchanged",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\plants\\MultiTileEntityBush.java",
+      "bytes": 17720,
+      "sha256": "b56bed74378f647c66d98e4b241da47c838114165088ac020a952bf258bf890a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\worldgen\\WorldgenBushes.java",
+      "bytes": 5498,
+      "sha256": "e1a1f5f3262f9a00c900485ca44b8b3843b9a5def54ba8fa4b8d39c934e60a7d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\OP.java",
+      "bytes": 162128,
+      "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\TD.java",
+      "bytes": 53981,
+      "sha256": "c77f9a0691e59b9c720627a49fe0088d31d8ffe3c79c4e59a6c61ced91b9c9ea"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "bytes": 693183,
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Items.java",
+      "bytes": 19570,
+      "sha256": "1784f1aeccc3d8e70f214c9eb06de81f2f2f28f17b4f57b24acc05d049605c07"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "bytes": 791265,
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    }
+  ],
+  "adoption": {
+    "materialBushes": "1034 already registered plantGtBerry material items each receive an independent bush block and block item. No additional material item generation or PLANTS flags changed. MaterialItemDefinitions is queried after platform material bootstrap.",
+    "colors": "Source material branch fixed 009000/ff9090/80ff80 and ripe/inventory material solid RGB; food/cotton inventory uses the source immature color instead of ripe color.",
+    "namesAndTooltips": "Modern flattened material block names compose a translated Bush template with the existing berry hover name. The cyan source tooltip shows its output; an empty bush instructs right-clicking with a berry.",
+    "storage": "Each new block stores berry identity in its registered block ID; existing stage/support block state and growth BE counter remain. Existing legacy berry adapter can map registered material berry IDs; unknown external old data remains untouched.",
+    "resources": "Shared 28 state/support bindings point to the existing native Forge/NeoForge geometry adapters and six shared original textures, through the low-priority inventory pack. No new bitmaps or duplicated per-variant JSON; resource packs may override identities.",
+    "worldgen": "Original nine food/cotton types remain unchanged. Material berry bushes are plantable specimens, not additions to natural worldgen.",
+    "pending": "External mod berry providers and their static variants, old user saves, independent reload, full survival acquisition and dedicated server remain outside this batch.",
+    "creative": "All new flattened material identities retain the original untyped bush category and the inherited source bush ordering. No material plant items made visible or new creative category invented."
+  }
+}

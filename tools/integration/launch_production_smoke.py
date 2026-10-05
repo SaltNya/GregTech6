@@ -190,6 +190,8 @@ def launch(args):
     cans = sandwich.get('cans', {})
     if cans.get('inventoryModelsChecked') != 57 or len(cans.get('renderedCanSamples', [])) != 12:
         raise ValueError('Production canned-food rendering receipt is incomplete')
+    if surface.get('materialBushInventoryModelsColorsNamesChecked') != 1034:
+        raise ValueError('Production material berry bush model/color/name coverage is incomplete')
     dimensions = check_png(screenshot.read_bytes())
     if dimensions != (receipt['width'], receipt['height']):
         raise ValueError('Production screenshot dimensions differ from receipt')
