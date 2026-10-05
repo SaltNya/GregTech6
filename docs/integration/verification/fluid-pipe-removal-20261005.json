@@ -1,0 +1,191 @@
+{
+  "status": "passed",
+  "date": "2026-10-05",
+  "scope": "Fluid-pipe removal continuation after issue 18; complete migration goal remains active",
+  "workspace": "C:\\Dev\\GregTech6",
+  "source_build_commit": "6cb3e1667e06be3cf501ca40a87490a9b2da97d4",
+  "remote_actions": {
+    "pushed": false,
+    "issues_closed": false,
+    "comments_sent": false
+  },
+  "source_record": {
+    "path": "C:\\Dev\\GregTech6\\docs\\integration\\verification\\fluid-pipe-removal-source-20261005.json",
+    "sha256": "ec50ad8ceab6b00760aaa8dfc9539d4658ee9985bff167e4f40513249fb00592"
+  },
+  "native_development_runtime": {
+    "forge": {
+      "minecraft": "1.20.1",
+      "loader": "47.4.20",
+      "java": "17"
+    },
+    "neoforge": {
+      "minecraft": "1.21.1",
+      "loader": "21.1.243",
+      "java": "21"
+    },
+    "namespace": "gregtech_fluid_removal",
+    "required_tests_per_platform": 3,
+    "scenarios": [
+      "six source/receiver connection and cover gates",
+      "partial acceptance preserves previous output count",
+      "incompatible channels credited to garbage rather than output"
+    ],
+    "normal_save_and_exit": true,
+    "gradle_exit_code": 0,
+    "elapsed": "3m57s",
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\fluid-removal-20261005-final-tests.log",
+      "sha256": "686586031e909c737385a16fb3aa0c6379e238671be6771ebcc387bf0663f78c"
+    },
+    "saved_data": {
+      "forge": {
+        "path": "C:\\Dev\\GregTech6\\build\\fluid-removal-final-20261005\\world\\data\\gregtech_garbage.dat",
+        "sha256": "5cdbeec22db8edc35b91fb31adbac8d1d61cc506072cc98d2cfe2d7eeb7449de",
+        "fluid_amounts_mb": {
+          "minecraft:water": 3250,
+          "minecraft:lava": 200
+        },
+        "scope": "Actual native SavedData file read after normal shutdown; not an independent game restart"
+      },
+      "neoforge": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\fluid-removal-final-20261005\\world\\data\\gregtech_garbage.dat",
+        "sha256": "1a1a8095b68be290f3844157014b5df5b4e0190fb4fcb640ccde18fcf1ec9bd8",
+        "fluid_amounts_mb": {
+          "minecraft:water": 3250,
+          "minecraft:lava": 200
+        },
+        "scope": "Actual native SavedData file read after normal shutdown; not an independent game restart"
+      }
+    }
+  },
+  "failed_attempts": [
+    {
+      "cause": "New namespace had no empty structure template; Forge crashed before running any test, NeoForge task did not start",
+      "exit_code": 1,
+      "elapsed": "2m16s",
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\fluid-removal-20261005-tests.log",
+        "sha256": "4df0d9454eaf9c4d9939eea80c64a35aaf995eaff06d3e9d6044ba5298a3520f"
+      },
+      "repair": "Copied existing native bootstrap empty templates to the new test-only namespace"
+    }
+  ],
+  "ordinary_build": {
+    "tasks": [
+      ":assemble",
+      ":neoforge:assemble",
+      ":productionSmokeJar",
+      ":neoforge:productionSmokeJar"
+    ],
+    "direct_core_flags": false,
+    "exit_code": 0,
+    "elapsed": "1m15s",
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\fluid-removal-20261005-build.log",
+      "sha256": "83f6bbbaf1b8e1311bc60e6aa957c68f50e633fa799c7de53f550a7673287e41"
+    }
+  },
+  "packaging": {
+    "shared_classes_checked": 703,
+    "current_platform_classes_checked": {
+      "forge": 1727,
+      "neoforge": 1533
+    },
+    "zip_crc_checked": true,
+    "metadata_license_notice_refmap_checked": true,
+    "no_duplicate_or_test_only_entries": true,
+    "verification_report": {
+      "path": "C:\\Dev\\GregTech6\\work\\fluid-removal-artifact-verification-20261005.json",
+      "sha256": "110769c19c9284e81da36d74965eab7d04bf4a4d7923a713ed66027b5a4b81a6"
+    },
+    "delivery_manifest": {
+      "path": "C:\\Dev\\GregTech6\\work\\fluid-removal-verified-artifacts-20261005.json",
+      "sha256": "427fb375931c6dff7f8dae55d8337c87a1e65eb537ff86bb2865604436c46f59"
+    },
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261005-065817Z-6bb63436",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 41057314,
+        "sha256": "6bb634363e7d186eee40caae6c6b2267d64f43acc1ddec99a10fe2b3b55c1f64",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261005-065817Z-6bb63436\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 39273451,
+        "sha256": "6dd395dd3d881112d933cacb228483fed6f82d8cc07ceaee4b4412cb23aacbec",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261005-065817Z-6bb63436\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    }
+  },
+  "translation": {
+    "changed": false,
+    "packaged_resource_comparison": {
+      "forge": {
+        "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "zh_cn_resource": "assets/gregtech/lang/zh_cn.json",
+        "sha256": "ce9b61d0e85e5f8f4fccea88f40a630a21c003b5072b2de1e51bd38c20b71d45",
+        "previous_verified_jar": "C:\\Dev\\GregTech6\\build\\verified\\20261005-062509Z-a822fd1d\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "identical_to_prior_original_patch_binding": true,
+        "keys": 138456
+      },
+      "neoforge": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "zh_cn_resource": "assets/gregtech/lang/zh_cn.json",
+        "sha256": "ce9b61d0e85e5f8f4fccea88f40a630a21c003b5072b2de1e51bd38c20b71d45",
+        "previous_verified_jar": "C:\\Dev\\GregTech6\\build\\verified\\20261005-062509Z-a822fd1d\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "identical_to_prior_original_patch_binding": true,
+        "keys": 138456
+      }
+    }
+  },
+  "installed_production_clients": {
+    "forge": {
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "exit_code": 0,
+      "elapsed_seconds": 56.47,
+      "rendered_frames": 181,
+      "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-cf1c9fb1-171e-4eab-a309-810983329d80\\screenshots\\production-forge-5d7b2f9b-bb88-49a3-badb-e6deec3aca13.png",
+      "screenshot_sha256": "0c9fe815d8f76b3ade9b8b62bd93ec2430fde86d2e6eb4bd338f773ad1b718bc",
+      "visually_reviewed": true,
+      "installed_files_modified": false,
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-cf1c9fb1-171e-4eab-a309-810983329d80\\launch.log",
+      "log_sha256": "1254802763cd2f8a087344d84ecbb9d3e1dbb561eddba53919c0fe4441635ada",
+      "receipt": {
+        "path": "C:\\Dev\\GregTech6\\work\\fluid-removal-production-forge-20261005.json",
+        "sha256": "5cfc49029a453813e3654ee7d411c1cab067a9dde0cd4fb243be14fab4323e82"
+      }
+    },
+    "neoforge": {
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "exit_code": 0,
+      "elapsed_seconds": 47.95,
+      "rendered_frames": 181,
+      "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-2574094b-bf16-4689-81ff-7fc13939f4e0\\screenshots\\production-neoforge-a15df1c7-c699-4f4b-96e1-a3e4fcc4ee54.png",
+      "screenshot_sha256": "d48057add1d93ac6ca548622cb8d7d28746d90df860f484131ee7b67ac629f3a",
+      "visually_reviewed": true,
+      "installed_files_modified": false,
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-2574094b-bf16-4689-81ff-7fc13939f4e0\\launch.log",
+      "log_sha256": "ba2298858bdecfafde1266efcbfa5759e1654f763180b6a2fa709edf1c41d963",
+      "receipt": {
+        "path": "C:\\Dev\\GregTech6\\work\\fluid-removal-production-neo-20261005.json",
+        "sha256": "d2a8fb73a200718d1b4cb73fcd01591a0516907082f6917cee0f042a79dc52ea"
+      }
+    }
+  },
+  "limitations": [
+    "Development runtime checks actual registered block removal, not natural survival acquisition or real client mining timing",
+    "Production client proof is title-screen loading and existing inventory fixture; no production-world pipe network behavior claimed",
+    "SavedData files were read after native shutdown, not loaded by a second game process",
+    "All third-party receivers, large networks, old user worlds and complete migration remain unverified",
+    "Existing garbage policy retains 256 classes and saturates fluid piles at Integer.MAX_VALUE; original unbounded long pool not restored",
+    "No unrelated complete core contract suite or full GameTest suite rerun"
+  ]
+}
