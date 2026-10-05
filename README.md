@@ -131,7 +131,7 @@ Upstream GT6 default assets remain CC0-1.0 unless otherwise stated; GregTech log
 - **Gregorius Techneticies and the GregTech 6 team** — original GregTech 6.
 - **saltnya** — gregtech6reborn and the initial content baseline.
 - **brokestar233** — gregtech6-main and its porting work.
-- **Lorbineitte Masson** — cruciblecraft and its porting work.
+- **lombinaxmasson** — cruciblecraft and its porting work.
 - Original contributors, translators, artists, and third-party authors identified in retained source notices.
 
 Detailed provenance and available history records are maintained in [SOURCES.md](docs/integration/SOURCES.md) and `core/provenance/`.
