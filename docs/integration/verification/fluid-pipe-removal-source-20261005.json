@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-05",
+  "scope": "Native Forge and NeoForge fluid-pipe removal behavior, continuation after issue 18",
+  "author": "GregTech-6 Team / Gregorius Techneticies",
+  "license": "LGPL-3.0-or-later; existing project LICENSE and NOTICE retained",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\connectors\\MultiTileEntityPipeFluid.java",
+      "sha256": "3a6850055375e7975145b03abab44c5922746a6f4053dd8d3163de989f37b110",
+      "adopted_behavior": "breakBlock, lines 432-444: faces before tanks, connection and drain-cover interception, actual transfer count, trash remaining contents"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\FL.java",
+      "sha256": "87ec6759b7c3b1ad7d7c6d574e24ec7d7371fa285e93ab67cfa26cd83f2b18b3",
+      "adopted_behavior": "move_(IFluidTank, DelegatorTileEntity, long), line 846: simulate drain, int-sized offer, drain accepted amount"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverPump.java",
+      "sha256": "d7425ae66212cbf5ffb8ab2ffb51e3b257a0e491166d7a25533017db2d1a7bf6",
+      "adopted_behavior": "fluid fill/drain interception and pipe-only input direction"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+      "adopted_behavior": "GarbageGT.trash(IFluidTank[]) and trash(FluidStack,long), lines 1419-1442: transfer rejected contents to shared garbage pool"
+    }
+  ],
+  "resources_changed": false,
+  "translation_changed": false,
+  "shared_rules": "Uses current core ComponentCoverRules through native ComponentCoverRuntime; no new loader-independent rule duplicated",
+  "platforms": [
+    "Forge 1.20.1",
+    "NeoForge 1.21.1"
+  ],
+  "garbage_storage_policy": "Uses existing native GarbageData: 256 distinct entries, fluid piles saturate at Integer.MAX_VALUE; original unbounded long garbage storage not restored in this batch"
+}
