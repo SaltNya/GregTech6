@@ -1,0 +1,113 @@
+{
+  "issue": 18,
+  "code_source": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverPump.java",
+      "sha256": "d7425ae66212cbf5ffb8ab2ffb51e3b257a0e491166d7a25533017db2d1a7bf6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverConveyor.java",
+      "sha256": "8b182ba4124f66e48b31b4f9863c00bfe6cf57f51fa7a5ef4b62dbe3a12bb8c4"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverRobotArm.java",
+      "sha256": "e275a5c8d62660085040e53d68390462e1f22e3c7964ea003a3e8626bd9616fc"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\base\\TileEntityBase06Covers.java",
+      "sha256": "c592d3905904adf81b14dd29e3b3e28310229314deefb232bef371cc950c0bb9"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "sha256": "7367922c4938318dd50b1320e7fc7a7453c33cffa46f75a437325314d2536ddc"
+    }
+  ],
+  "author": "GregTech-6 Team / Gregorius Techneticies",
+  "code_license": "LGPL-3.0-or-later; original copyright/license header retained in new adapted cover classes",
+  "assets_license": "CC0 1.0; _w LICENSE.assets",
+  "assets": [
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\conveyor\\in.png",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\conveyor\\in.png",
+      "sha256": "1a98c8952bc685f3a7c4b93bb3b26ad8440b340063d77cd658c072dfe3dfdc8a"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\conveyor\\in.png.mcmeta",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\conveyor\\in.png.mcmeta",
+      "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\conveyor\\out.png",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\conveyor\\out.png",
+      "sha256": "c7da006b0724127581662e5a853654ef69f92bd909582e74d94d4cb6a0fc11d7"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\conveyor\\out.png.mcmeta",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\conveyor\\out.png.mcmeta",
+      "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\pump\\in.png",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\pump\\in.png",
+      "sha256": "747247fb9612206a896dad20182634c686f0d6ac71020419cb22911fea174e3f"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\pump\\in.png.mcmeta",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\pump\\in.png.mcmeta",
+      "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\pump\\out.png",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\pump\\out.png",
+      "sha256": "b5761893e65dbca350f3f768af52af59624448abbe2ed449da26974a92a82066"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\pump\\out.png.mcmeta",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\pump\\out.png.mcmeta",
+      "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\robotarm\\in.png",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\robotarm\\in.png",
+      "sha256": "9e41ccc13c149f3f82ca52d3b41bcfcfcb831fdbb5665601ccab837e4b61566e"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\robotarm\\in.png.mcmeta",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\robotarm\\in.png.mcmeta",
+      "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\robotarm\\out.png",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\robotarm\\out.png",
+      "sha256": "b4f0125e39d28a71e5f9d2b16c2abf9fe257c9a4cbf91b5737c0a91ddf91a648"
+    },
+    {
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\robotarm\\out.png.mcmeta",
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\robotarm\\out.png.mcmeta",
+      "sha256": "920176fe0c003f6f293aab5fc344418356377d273c414a8f5378755e25674891"
+    }
+  ],
+  "behavior": {
+    "direction": "0 pushes to neighbor, 1 pulls from neighbor; pipes force input",
+    "pump": "250 << (2*tier) mB per 20 ticks at phase 5, sharing budget across channels",
+    "items": "one group per max(1,512 >> tier) ticks",
+    "robot_arm": "signed short slot: negative -1-slot selects source, nonnegative selects target",
+    "tools": "pump/conveyor screwdriver toggle; arm monkey wrench toggle, screw slot increment/decrement, magnifier inspect, crowbar detach, other tools consumed on cover face",
+    "boundaries": "side views intercept input/output; controller pause refreshed before gate; internal pipe fills retain receiving-face mask",
+    "hosts": "BasicMachine, FluidPipe, ItemPipe, tank, metal chest, energy node/battery box and USB switch inventories"
+  },
+  "verification": {
+    "forge": "fresh-world transfer/direction/cadence/intercept/pause/save fixture passed; final tool/material naming verification pending",
+    "neoforge": "same native fixture plus five original tool interactions passed"
+  },
+  "limits": [
+    "No arbitrary foreign block cover host added",
+    "No independently restarted saved world or installed external-addon handler verified",
+    "Unsupported native hosts without cover storage remain separate migration work"
+  ],
+  "asset_license_source": {
+    "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\LICENSE.assets",
+    "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+  },
+  "native_boundary": "Native existing cover hosts plus lazy fallback slots on every qualified ticking GT block entity; sided capabilities, save/load/remove, cover-only chunk sync and world face rendering. Vanilla hosts are rejected. Cover NBT is removed from fallback block-item copies because covers drop separately."
+}

@@ -4,6 +4,6 @@ The user supplied `C:/Dev/GregTech_zh_cn.lang`. All 125676 original keys are ret
 
 Native registered creative pages are bound to their original prefix or MultiTileEntity/MultiItem page keys. Seven remaining unmapped prefix titles belong to the original hidden hot-ingot/scrap/plant pages and are not registered visible pages. Other missing or ambiguous port-only strings remain English; no new Chinese text is written. The importer records these gaps.
 
-Both clients were switched to actual `zh_cn` and checked 864 stone inventory names, language key availability and six component-cover atlas sprites. The final Forge naming boundary passed enumeration of every patched registered material-form item and block (see final runtime receipt). Neither external translation packs nor an external addon installation were tested.
+Both clients were switched to actual `zh_cn` and checked 864 stone inventory names, language key availability and six component-cover atlas sprites. Both native naming boundaries passed enumeration of 52789 patched registered material-form items and blocks. The isolated probe reloads the actual client language manager from native resources without baking the full model set again. Neither external translation packs nor an external addon installation were tested.
 
 Hash, bindings, ambiguous keys, fallback keys, author/license evidence and source declarations: [source record](original-zh-cn-source-20261005.json).
