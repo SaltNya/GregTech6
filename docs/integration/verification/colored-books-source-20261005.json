@@ -1,0 +1,532 @@
+{
+  "authors": "GregTech-6 Team; Gregorius Techneticies; original retained texture authors",
+  "asset_license": "CC0-1.0 via preserved LICENSE.assets",
+  "copied_assets": [
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\0.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_black.png",
+      "sha256": "92302115a3574f81026a3c0d3f10ae09f63240563509584c5a0d7d63af1c833a"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_white.png",
+      "sha256": "cab2f8823c80a83618579f55838d86bce449f65d1d5051e16a295f4432f57429"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\2.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_red.png",
+      "sha256": "9759457e49bf44e83839626f9ed312d428a82e0d6146d235f70be23c1b23da22"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\3.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_green.png",
+      "sha256": "63216ca181ae800c4cb3b89665775b411ff5b93e0b6063282a164264895403da"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\4.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_blue.png",
+      "sha256": "707bda9c123a1c6e2d3bd37ad08c528261000c7c3d25a05670f1d2d813eef378"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\5.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_cyan.png",
+      "sha256": "e65047c75f7ff284e44fd4d4c50c2f02a8499c00d969dc4f94ab1c587dbecd31"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\6.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_magenta.png",
+      "sha256": "865efc82325466f0355b16878793b639ea007db8caf5df028e95060ee2ac7132"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\7.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_yellow.png",
+      "sha256": "e51be72ccf1f9736cf47421a65c24b786bd447854405b49335458a389ad67287"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\8.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_brown.png",
+      "sha256": "5a8fb81343b054d27dbb68f2e7e42982c4c1efefdcae3c4e9d375f8dab7cbd12"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\9.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_orange.png",
+      "sha256": "02f058bdcf75c6c8fd3a3f88952bec94e6623890073f59722ae54d99e0228bb9"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\10.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_purple.png",
+      "sha256": "3a11817e47ca6c497ae705705fdf27ec2a54de85effd8dcf19e7315afc676fd0"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1000.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_black.png",
+      "sha256": "e833edefa2fc0f1b4deebc76b5680525640265b3e53a718a8ea231965076e212"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1001.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_white.png",
+      "sha256": "b129ef3bd5fa0aa94d10945a63b244107e5e93af1869ab9388e6bb7011c0d03b"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1002.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_red.png",
+      "sha256": "d260ffde7e182e07578d14cdef47cd5862fe8ac151d41f53b2cdd5d093add7b4"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1003.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_green.png",
+      "sha256": "1b111782621ab8d77daff958e4efbdcdd348c3940ff94f726f708fee6fd35e22"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1004.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_blue.png",
+      "sha256": "f566e7db87856723528215392c17eb75f68c7fa8f7615fca1a2f15bb39ff7e85"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1005.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_cyan.png",
+      "sha256": "29496d3512a381220f91e913ad262a33f0e9da91f55b6b1d2eb0107ed5efe169"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1006.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_magenta.png",
+      "sha256": "1cc42307786c6350774f9e293c12ef06aa707c59925f4b649553f3ff8ff20e5d"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1007.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_yellow.png",
+      "sha256": "8192fac7a91626cae883a586870f4adc258e1dba02916f0e3593b8afd2b8f0d2"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1008.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_brown.png",
+      "sha256": "d237dcd26da18e964e91acad8c719cdc71d11cb2d49abc63d535b5503e04ebf4"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1009.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_orange.png",
+      "sha256": "94df6440dff5cbe474fb115ad2f41ff47b80de77bb44e04ea4c7c7487e1fcb98"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\1010.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_purple.png",
+      "sha256": "8112108d1ffeef5c8f205317b97df631ec4310f4db872331ec6190dd782dff16"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\32000.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_bronze.png",
+      "sha256": "68147762d321b457f3b05784ec115d3857e202a0ebdde0fb82c566f471ce29bc"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\32001.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_bronze.png",
+      "sha256": "1ad643d9283d6959386595953276540f5518ff3a1791a2ee86c36f2bd4f14beb"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\32002.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_dictionary.png",
+      "sha256": "4b4346d8cb4e020aafcb8aefdaaf0757c1e77735e7978e5842dd5b9dd4128e5a"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\32003.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_dictionary.png",
+      "sha256": "3f4d41d8ee57db2bd94dad24ed2869df8a15841e2349f56833fef27d258f1aeb"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\32004.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\book_radiation.png",
+      "sha256": "62fcc4ff423df9ac744e95626ec7cb53e1f946bcba2bc98b5bade6b46da403be"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.books\\32005.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\books\\large_book_radiation.png",
+      "sha256": "04153c8d87e3215138a45a08ac510a724af4871fbcb20f4c6c8330f849295cfe"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\books\\BOOK_COLORED_SIDE.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\books\\book_colored_side.png",
+      "sha256": "539ed37448ebad135bf9828b9fa728f3fc94c538a3390403e11b0fc374dfebea"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\books\\BOOK_COLORED_BACK.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\books\\book_colored_back.png",
+      "sha256": "b3acc7f088c015bd02c743d6f73f9656fa49ccf92bfd460746e4ed5db2f696cf"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\books\\BOOK_GT_SIDE.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\books\\book_gt_side.png",
+      "sha256": "f620785e5ffb91a83768fc0ae3b9056f89e9fd5bcef3661e7f1bb18a1b29688e"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\books\\BOOK_GT_BACK.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\books\\book_gt_back.png",
+      "sha256": "356e24c3898f869ed8726c42a5ad09fed193e2bb8d5c07e6dc83cf0d2fffbcf5"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\books\\BOOK_CRAFTING_SIDE.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\books\\book_crafting_side.png",
+      "sha256": "77d6d8f829bfb581576aacc3087019893efa2e866d65934de767366bb12bbcea"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\books\\BOOK_CRAFTING_BACK.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\books\\book_crafting_back.png",
+      "sha256": "363a5c50bc36024407bddcf5ee1e591f27bcb0f83f2523d9c92be85de29aca4d"
+    }
+  ],
+  "variants": [
+    {
+      "path": "book_black",
+      "originalId": 0,
+      "large": false,
+      "color": "black",
+      "tint": 2105376,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_white",
+      "originalId": 1,
+      "large": false,
+      "color": "white",
+      "tint": 16777215,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_red",
+      "originalId": 2,
+      "large": false,
+      "color": "red",
+      "tint": 16711680,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_green",
+      "originalId": 3,
+      "large": false,
+      "color": "green",
+      "tint": 65280,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_blue",
+      "originalId": 4,
+      "large": false,
+      "color": "blue",
+      "tint": 255,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_cyan",
+      "originalId": 5,
+      "large": false,
+      "color": "cyan",
+      "tint": 65535,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_magenta",
+      "originalId": 6,
+      "large": false,
+      "color": "magenta",
+      "tint": 16711935,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_yellow",
+      "originalId": 7,
+      "large": false,
+      "color": "yellow",
+      "tint": 16776960,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_brown",
+      "originalId": 8,
+      "large": false,
+      "color": "brown",
+      "tint": 6307840,
+      "shelfTexture": "book_vanilla",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_orange",
+      "originalId": 9,
+      "large": false,
+      "color": "orange",
+      "tint": 16744448,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_purple",
+      "originalId": 10,
+      "large": false,
+      "color": "purple",
+      "tint": 8388736,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_black",
+      "originalId": 1000,
+      "large": true,
+      "color": "black",
+      "tint": 2105376,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_white",
+      "originalId": 1001,
+      "large": true,
+      "color": "white",
+      "tint": 16777215,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_red",
+      "originalId": 1002,
+      "large": true,
+      "color": "red",
+      "tint": 16711680,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_green",
+      "originalId": 1003,
+      "large": true,
+      "color": "green",
+      "tint": 65280,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_blue",
+      "originalId": 1004,
+      "large": true,
+      "color": "blue",
+      "tint": 255,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_cyan",
+      "originalId": 1005,
+      "large": true,
+      "color": "cyan",
+      "tint": 65535,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_magenta",
+      "originalId": 1006,
+      "large": true,
+      "color": "magenta",
+      "tint": 16711935,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_yellow",
+      "originalId": 1007,
+      "large": true,
+      "color": "yellow",
+      "tint": 16776960,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_brown",
+      "originalId": 1008,
+      "large": true,
+      "color": "brown",
+      "tint": 6307840,
+      "shelfTexture": "book_vanilla",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_orange",
+      "originalId": 1009,
+      "large": true,
+      "color": "orange",
+      "tint": 16744448,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "large_book_purple",
+      "originalId": 1010,
+      "large": true,
+      "color": "purple",
+      "tint": 8388736,
+      "shelfTexture": "book_colored",
+      "hidden": false,
+      "emblem": ""
+    },
+    {
+      "path": "book_bronze",
+      "originalId": 32000,
+      "large": false,
+      "color": "",
+      "tint": 16777215,
+      "shelfTexture": "book_gt",
+      "hidden": true,
+      "emblem": "bronze"
+    },
+    {
+      "path": "large_book_bronze",
+      "originalId": 32001,
+      "large": true,
+      "color": "",
+      "tint": 16777215,
+      "shelfTexture": "book_gt",
+      "hidden": true,
+      "emblem": "bronze"
+    },
+    {
+      "path": "book_dictionary",
+      "originalId": 32002,
+      "large": false,
+      "color": "",
+      "tint": 16777215,
+      "shelfTexture": "book_matdict",
+      "hidden": true,
+      "emblem": "dictionary"
+    },
+    {
+      "path": "large_book_dictionary",
+      "originalId": 32003,
+      "large": true,
+      "color": "",
+      "tint": 16777215,
+      "shelfTexture": "book_matdict",
+      "hidden": true,
+      "emblem": "dictionary"
+    },
+    {
+      "path": "book_radiation",
+      "originalId": 32004,
+      "large": false,
+      "color": "",
+      "tint": 16777215,
+      "shelfTexture": "book_crafting",
+      "hidden": true,
+      "emblem": "radiation"
+    },
+    {
+      "path": "large_book_radiation",
+      "originalId": 32005,
+      "large": true,
+      "color": "",
+      "tint": 16777215,
+      "shelfTexture": "book_crafting",
+      "hidden": true,
+      "emblem": "radiation"
+    }
+  ],
+  "code_license": "LGPL-3.0-or-later",
+  "source_tree_modified": false,
+  "base_commit": "2ee263e5",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemBooks.java",
+      "sha256": "beb02a2bf256b9fa6c568c7ad411b622ba892a1fd2f9c6cf4733117911aafcc0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_Books.java",
+      "sha256": "a4a79476ee1a757d478ad2ed100c862e8501b056dc87fae4b75413a7df622d79"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Others.java",
+      "sha256": "2a0ab7a65d9ec58256127daf0beb7fd2697dc32df4adf099c527cb12a59e486f"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\RM.java",
+      "sha256": "c7cb07faef0235ace4bb26656fddaabfa10da6aa4a2689a7f4cdcaef10d366e6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\UT.java",
+      "sha256": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709"
+    }
+  ],
+  "license_evidence": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE.assets",
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\LICENSE.assets",
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    }
+  ],
+  "scope": {
+    "color_covers": 22,
+    "hidden_manual_dictionary_covers": 6,
+    "visible_colors": [
+      "black",
+      "white",
+      "red",
+      "green",
+      "blue",
+      "cyan",
+      "magenta",
+      "yellow",
+      "brown",
+      "orange",
+      "purple"
+    ],
+    "binding_rows": 66,
+    "cloning_rows": 224,
+    "native_item_tags": 17,
+    "shared_assets_copied": 34,
+    "preserve_content": "Native Forge NBT / NeoForge written-book and custom component patches",
+    "book_titles": "Vanilla serialized title maximum 32; dictionary full title retained as custom data/name",
+    "generifier": "Source 0 EU / 1 tick directed conversion to a blank vanilla written book",
+    "source_small_radiation_burn_ticks": 400
+  },
+  "not_in_scope": [
+    "Optional Thaumcraft Aspectonomicon integration",
+    "Reworking prior material-printer direct-bound dictionary policy",
+    "Old world conversion/restart",
+    "Complete survival acquisition"
+  ]
+}

@@ -1,0 +1,654 @@
+{
+  "status": "passed",
+  "scope": "Source-colored books and provided-device source-timed coke oven, two independent native new worlds",
+  "worlds": {
+    "neoforge": {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\neoforge-world-native-reader.log",
+        "sha256": "937a7ed098e17f534a3f3220a1115862000a0dbddb6e52ea2934f6639c1591c9"
+      },
+      "receipt": {
+        "platform": "neoforge",
+        "id": "fede2c7d-f1a6-4e9f-b410-7e75a9b3e5af",
+        "world": "creation-smoke-fede2c7d-f1a6-4e9f-b410-7e75a9b3e5af",
+        "stage": 3,
+        "elapsedMs": 301251,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": true,
+        "canonicalItemsChecked": 76018,
+        "recipes": 52624,
+        "serverTicks": 256,
+        "dimension": "minecraft:overworld",
+        "cokeLegacyDataMigrationChecks": 1,
+        "coloredBookNativeCovers": 28,
+        "coloredBookBindingRows": 66,
+        "coloredBookCloneRows": 224,
+        "coloredBookManualCovers": 20,
+        "coloredBookLecternChecks": 4,
+        "coloredBookRecipesLoaded": 290,
+        "cokeSourceStructureFacings": 4,
+        "cokeSourceFireBricks": 25,
+        "cokeRecipeRows": 72,
+        "cokeIgnitionAndBackpressureChecks": 6,
+        "cokeNativeWorldTicks": 3810,
+        "cokeActualParallelOutputs": 16,
+        "cokeUnderFloorCreosote": 4000,
+        "cokeNativeCompletedJobs": 4,
+        "cokeContinuousNextJob": true,
+        "cokeGuiScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\coke-oven-gui-e349e241-6a13-4068-8121-f8780ebf32b4.png",
+        "coloredBookInventoryModels": 28,
+        "coloredBookCreativeCovers": 22,
+        "cokeInventoryPreview": true,
+        "coloredBookReaderScreenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\colored-book-reader-a87e7e65-c60c-427b-8287-19ac4863fc32.png",
+        "coloredBookReaderPages": 10,
+        "renderedWorldFrames": 22709,
+        "emiLoaded": false,
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-fede2c7d-f1a6-4e9f-b410-7e75a9b3e5af.png"
+      },
+      "captures": {
+        "cokeGuiScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\coke-oven-gui-e349e241-6a13-4068-8121-f8780ebf32b4.png",
+          "sha256": "2a6372c1f8acee024bd5dd86dade1dbdaeb00e6a4c1419834068bca169ad860f"
+        },
+        "coloredBookReaderScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\colored-book-reader-a87e7e65-c60c-427b-8287-19ac4863fc32.png",
+          "sha256": "16bf946c615e68c51cff6efa3e51571850b7576018bc4d3f7ea8cfe8bb4c7d2e"
+        },
+        "screenshot": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\world-creation-neoforge-fede2c7d-f1a6-4e9f-b410-7e75a9b3e5af.png",
+          "sha256": "a8148ca45bba41de25ff0f2f699e1510177536177a6a360c17e14a9ee57fa50d"
+        }
+      },
+      "visually_reviewed": true
+    },
+    "forge": {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\forge-world-lectern-boundary.log",
+        "sha256": "f65dfe22b62f37a25adc6d341069339e142172f2c7657781cee3c2e05a3f1520"
+      },
+      "receipt": {
+        "platform": "forge",
+        "id": "af8616ce-592f-463a-9f08-cfbc80f4227a",
+        "world": "creation-smoke-af8616ce-592f-463a-9f08-cfbc80f4227a",
+        "stage": 3,
+        "elapsedMs": 377973,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": true,
+        "canonicalItemsChecked": 75941,
+        "recipes": 52508,
+        "serverTicks": 13,
+        "dimension": "minecraft:overworld",
+        "cokeLegacyDataMigrationChecks": 1,
+        "coloredBookNativeCovers": 28,
+        "coloredBookBindingRows": 66,
+        "coloredBookCloneRows": 224,
+        "coloredBookManualCovers": 20,
+        "coloredBookLecternChecks": 4,
+        "coloredBookRecipesLoaded": 290,
+        "cokeSourceStructureFacings": 4,
+        "cokeSourceFireBricks": 25,
+        "cokeRecipeRows": 72,
+        "cokeIgnitionAndBackpressureChecks": 6,
+        "cokeNativeWorldTicks": 3810,
+        "cokeActualParallelOutputs": 16,
+        "cokeUnderFloorCreosote": 4000,
+        "cokeNativeCompletedJobs": 4,
+        "cokeContinuousNextJob": true,
+        "cokeGuiScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\coke-oven-gui-c6464715-8829-4f14-a26b-e98b4b0dcd90.png",
+        "coloredBookInventoryModels": 28,
+        "coloredBookCreativeCovers": 22,
+        "cokeInventoryPreview": true,
+        "coloredBookReaderScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\colored-book-reader-41cc58e8-c188-4127-8280-c62a01271b2e.png",
+        "coloredBookReaderPages": 10,
+        "renderedWorldFrames": 22558,
+        "emiLoaded": false,
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-af8616ce-592f-463a-9f08-cfbc80f4227a.png"
+      },
+      "captures": {
+        "cokeGuiScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\coke-oven-gui-c6464715-8829-4f14-a26b-e98b4b0dcd90.png",
+          "sha256": "629b3f06a44b3ae673179610777ddccd016ea39127377b5fa061237926d0987e"
+        }
+      },
+      "visually_reviewed": true,
+      "accepted_scope": "Coke timed production and GUI only; book first-paragraph and glint captures rejected",
+      "rejected_book_captures": {
+        "coloredBookReaderScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\colored-book-reader-41cc58e8-c188-4127-8280-c62a01271b2e.png",
+          "sha256": "d60e9d550a6d08caf1ec963d59e2623f92c99e93faf070f523e226f696bc4267"
+        },
+        "screenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\world-creation-forge-af8616ce-592f-463a-9f08-cfbc80f4227a.png",
+          "sha256": "a09ee3b97b169cc9be93041dcf968c707ddbb8bb0d46d0a85d6833f9bd6587fd"
+        }
+      }
+    },
+    "forge_books": {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\forge-world-full-text.log",
+        "sha256": "58022ddd58939ec35e266ff504d0ad299339c8ccc49d30b32d25e38fd691f47b"
+      },
+      "receipt": {
+        "platform": "forge",
+        "id": "ce2d6127-9d77-4668-b933-f7bdcb032538",
+        "world": "creation-smoke-ce2d6127-9d77-4668-b933-f7bdcb032538",
+        "stage": 3,
+        "elapsedMs": 203392,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": true,
+        "booksRuntimeOnly": true,
+        "coloredBookNativeCovers": 28,
+        "coloredBookBindingRows": 66,
+        "coloredBookCloneRows": 224,
+        "coloredBookManualCovers": 20,
+        "coloredBookLecternChecks": 4,
+        "coloredBookRecipesLoaded": 290,
+        "coloredBookTextPagesVerified": 874,
+        "coloredBookEmptyUseChecks": 28,
+        "canonicalItemsChecked": 75941,
+        "recipes": 52508,
+        "serverTicks": 18,
+        "dimension": "minecraft:overworld",
+        "coloredBookInventoryModels": 28,
+        "coloredBookCreativeCovers": 22,
+        "cokeInventoryPreview": true,
+        "coloredBookFirstPageTextVerified": true,
+        "coloredBookReaderScreenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\colored-book-reader-476fd9d4-f903-4cd1-83aa-9df3ccad6abf.png",
+        "coloredBookReaderPages": 10,
+        "renderedWorldFrames": 58,
+        "emiLoaded": false,
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-ce2d6127-9d77-4668-b933-f7bdcb032538.png"
+      },
+      "captures": {
+        "coloredBookReaderScreenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\colored-book-reader-476fd9d4-f903-4cd1-83aa-9df3ccad6abf.png",
+          "sha256": "04fa4292f24a3038b5135bc6e9a754bca4242a0475f536ac3b56fd4ab17b3ac3"
+        },
+        "screenshot": {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\world-creation-forge-ce2d6127-9d77-4668-b933-f7bdcb032538.png",
+          "sha256": "0a170f435d565afa83fa5b2457be065ba1df974dcf978293f28721e437cf733a"
+        }
+      },
+      "visually_reviewed": true
+    }
+  },
+  "rejected_attempts": [
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\coke-20261005\\neoforge-world-diagnostic-fixed.log",
+        "sha256": "a872c8b486dd4d820357ab48234d3063954ba160f8dbe55894fc5c5ef87d772a"
+      },
+      "accepted": false,
+      "errors": [
+        "WORLD_CREATION_SMOKE_FAILED {\"platform\":\"neoforge\",\"id\":\"7e785431-ba3f-4654-9380-00bbe3ba3a35\",\"world\":\"creation-smoke-7e785431-ba3f-4654-9380-00bbe3ba3a35\",\"stage\":3,\"elapsedMs\":154020}",
+        "Caused by: java.lang.IllegalStateException: 16 parallel input limit differs: input=17 minecraft:oak_log, progress=0/0, structure=true, energy=0, recipe=power=0, ticks=3600, outputs=[1 minecraft:charcoal], fluids=[250 gregtech:creosote]"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\coke-20261005\\neoforge-world-diagnostic-more.log",
+        "sha256": "96194bc7532b685814d9d91cc49694eade820b352896bb9aeb1a56e8c68fb7e3"
+      },
+      "accepted": false,
+      "errors": [
+        "WORLD_CREATION_SMOKE_FAILED {\"platform\":\"neoforge\",\"id\":\"b7b2d28f-93a2-4418-b580-f236ae70257c\",\"world\":\"creation-smoke-b7b2d28f-93a2-4418-b580-f236ae70257c\",\"stage\":3,\"elapsedMs\":136765}",
+        "Caused by: java.lang.IllegalStateException: parallel=16, ignition=0, running=true, cost=Cost[minimumPower=1, totalWork=3600], input=17 minecraft:oak_log, progress=0/0, structure=true, energy=0, recipe=power=0, ticks=3600, outputs=[1 minecraft:charcoal], fluids=[250 gregtech:creosote]"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\coke-20261005\\neoforge-world-diagnostic.log",
+        "sha256": "d4d2a762d5d541fe327ca35115274a89bd2188fb2e724444c400046c920c97a0"
+      },
+      "accepted": false,
+      "errors": [
+        "error: cannot find symbol",
+        "BUILD FAILED in 7s"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\coke-20261005\\neoforge-world-fixed.log",
+        "sha256": "fc1f219b3ac47876cfac53e570f9427e31f75bc7f86448e71e8a58f7fba85717"
+      },
+      "accepted": false,
+      "errors": [
+        "WORLD_CREATION_SMOKE_FAILED {\"platform\":\"neoforge\",\"id\":\"4336d34f-16ce-4775-9c42-2641aa2b449e\",\"world\":\"creation-smoke-4336d34f-16ce-4775-9c42-2641aa2b449e\",\"stage\":3,\"elapsedMs\":121286}",
+        "Caused by: java.lang.IllegalStateException: 16 parallel input limit differs"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\coke-20261005\\neoforge-world-ignition-diagnostic.log",
+        "sha256": "a0c3cc977537fab587b5a764767be0e316b3c9c76bd07104582f577c8608545c"
+      },
+      "accepted": false,
+      "errors": [
+        "WORLD_CREATION_SMOKE_FAILED {\"platform\":\"neoforge\",\"id\":\"d3dec79d-2c28-4c53-9333-d661816e476a\",\"world\":\"creation-smoke-d3dec79d-2c28-4c53-9333-d661816e476a\",\"stage\":3,\"elapsedMs\":110473}",
+        "Caused by: java.lang.IllegalStateException: Ignition state not set 1"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\coke-20261005\\neoforge-world-native-ignition.log",
+        "sha256": "ec327c9f953e5c0db9a287647bde7177ebc6dbed446b7880b0a15302af69bc80"
+      },
+      "accepted": false,
+      "errors": [
+        "> Process 'command 'C:\\Program Files\\Java\\jdk-21\\bin\\java.exe'' finished with non-zero exit value -1",
+        "BUILD FAILED in 9m 35s"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\coke-20261005\\neoforge-world.log",
+        "sha256": "11ca325c7f800c08e54f19317bdc06c6628c46da3f3f2a4064ca1ddc866f13bf"
+      },
+      "accepted": false,
+      "errors": [
+        "Caused by: java.lang.IllegalArgumentException: Missing native original structural part 18000",
+        "Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalArgumentException: Missing native original structural part 18000 [in thread \"Render thread\"]",
+        "WORLD_CREATION_SMOKE_FAILED {\"platform\":\"neoforge\",\"id\":\"d0c8adb3-2985-4390-b472-71859117ece6\",\"world\":\"creation-smoke-d0c8adb3-2985-4390-b472-71859117ece6\",\"stage\":3,\"elapsedMs\":145295}",
+        "Caused by: java.lang.IllegalArgumentException: Missing native original structural part 18000",
+        "Caused by: java.lang.IllegalArgumentException: Missing native original structural part 18000"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\forge-world-native-reader.log",
+        "sha256": "8c386af7859fd035b346afb4b25bd7411bc66529e22e00edde6dff42ae072a10"
+      },
+      "accepted": false,
+      "errors": [
+        "error: Injector in interface is unsupported",
+        "error: Injector in interface is unsupported",
+        "BUILD FAILED in 5s"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\forge-world.log",
+        "sha256": "b8fd5a33d88d73f716614fc98e24138fc85854a3d433f45314ba59fc88fd9de7"
+      },
+      "accepted": false,
+      "errors": [
+        "Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: @Mixin target type mismatch: net.minecraft.client.gui.screens.inventory.BookViewScreen$BookAccess is an interface in org.spongepowered.asm.mixin.transformer.MixinInfo$SubType$Standard@78fe204a",
+        "Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [gregtech.mixins.json:ColoredBookAccessMixin] from phase [DEFAULT] in config [gregtech.mixins.json] FAILED during PREPARE",
+        "Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: @Mixin target type mismatch: net.minecraft.client.gui.screens.inventory.BookViewScreen$BookAccess is an interface in org.spongepowered.asm.mixin.transformer.MixinInfo$SubType$Standard@78fe204a",
+        "> Process 'command 'C:\\Program Files\\Java\\jdk-17\\bin\\java.exe'' finished with non-zero exit value 1",
+        "BUILD FAILED in 20s"
+      ]
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\neoforge-world.log",
+        "sha256": "c8de0821b3f9d3f64d8da884a08e37bddd13438656f912f23b2c3d23d91242c8"
+      },
+      "accepted": false,
+      "errors": [
+        "Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: Critical injection failure: Redirector gregtech$writtenCover(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item;)Z in gregtech-neoforge.mixins.json:ColoredBookOpenPacketMixin from mod gregtech6 failed injection check, (0/1) succeeded. Scanned 0 target(s). No refMap loaded.",
+        "Caused by: org.spongepowered.asm.mixin.injection.throwables.InjectionError: Critical injection failure: Redirector gregtech$writtenCover(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/Item;)Z in gregtech-neoforge.mixins.json:ColoredBookOpenPacketMixin from mod gregtech6 failed injection check, (0/1) succeeded. Scanned 0 target(s). No refMap loaded.",
+        "> Process 'command 'C:\\Program Files\\Java\\jdk-21\\bin\\java.exe'' finished with non-zero exit value -1",
+        "BUILD FAILED in 2m 25s"
+      ]
+    }
+  ],
+  "build": {
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\dual-assemble-final.log",
+      "sha256": "74385e1c62a9d02c4ea535bc7239cb89c27dde4cd89b57ec63fdd3d8980ec0eb"
+    },
+    "result": "BUILD SUCCESSFUL in 3m 12s",
+    "tests": "Finite affected native worlds; no full GameTests/core suite rerun"
+  },
+  "production": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 54.91,
+      "installed_files_modified": false,
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "ae84eb66c3bd5f16473bd8a991a89e77b09ddd903aab443771880939dc8b17a3"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "188835c022327c86dd542ee63b4c06dca7c93f373a4ccd70e90f96b35842c2ed"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "ae84eb66c3bd5f16473bd8a991a89e77b09ddd903aab443771880939dc8b17a3",
+          "bytes": 39707159
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "188835c022327c86dd542ee63b4c06dca7c93f373a4ccd70e90f96b35842c2ed",
+          "bytes": 19077
+        },
+        {
+          "name": "Jade-1.20.1-Forge-11.13.3.jar",
+          "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+          "bytes": 553487
+        },
+        {
+          "name": "jei-1.20.1-forge-15.62.0.217.jar",
+          "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+          "bytes": 2232172
+        },
+        {
+          "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+          "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+          "bytes": 364842
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-3a29ec06-7943-4fde-a824-19ff9923d272\\launch.log",
+      "log_sha256": "eb0f8f65dcaa886c864498961bff10e4a1b0b931db986f9dc6bd8d2128199130",
+      "receipt": {
+        "surfaceChecks": {
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          }
+        },
+        "platform": "forge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-3a29ec06-7943-4fde-a824-19ff9923d272\\screenshots\\production-forge-80a1acb5-8903-47e3-9757-5a66a0ef3514.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 182,
+        "loaderWarnings": 0,
+        "elapsedMs": 47666
+      },
+      "screenshot_sha256": "a91632bc20274b6a7802fb583f35ca7b86a2d85f36323d0850e674c539fcc657",
+      "visually_reviewed": true,
+      "visual_scope": "Title-screen and inherited generic surface atlas only; book/coke gameplay and book visual checks use the native-world captures"
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 52.61,
+      "installed_files_modified": false,
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "b7adc76d5a26be50cc8768bb80d7ec36fe9454e9abe55190fb1381be78f54273"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "4683a84fba39e9979b1592a6fb668ffc1608132ba2834718a6ebbe078c046c17"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "b7adc76d5a26be50cc8768bb80d7ec36fe9454e9abe55190fb1381be78f54273",
+          "bytes": 37929641
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "4683a84fba39e9979b1592a6fb668ffc1608132ba2834718a6ebbe078c046c17",
+          "bytes": 17852
+        },
+        {
+          "name": "emi-1.1.24+1.21.1+neoforge.jar",
+          "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+          "bytes": 1111538
+        },
+        {
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+          "bytes": 726853
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-49218c56-f987-4c44-9c84-3a55e3da72b2\\launch.log",
+      "log_sha256": "186acedc8d2fbf0f2fe66f155e240f15e05377965b566468bf26b9fe2d8aa2d3",
+      "receipt": {
+        "surfaceChecks": {
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          }
+        },
+        "platform": "neoforge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-49218c56-f987-4c44-9c84-3a55e3da72b2\\screenshots\\production-neoforge-dab36234-cf3a-4252-8a2a-e4e14b80585d.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 182,
+        "elapsedMs": 43500
+      },
+      "screenshot_sha256": "aaebd600b748cfe629092d5167e9521e73d66924b406f874120b38c5794eb233",
+      "visually_reviewed": true,
+      "visual_scope": "Title-screen and inherited generic surface atlas only; book/coke gameplay and book visual checks use the native-world captures"
+    }
+  },
+  "verified_artifacts": {
+    "status": "passed",
+    "scope": "Verified complete copies; runtime evidence is recorded separately",
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261005-000919Z-ae84eb66",
+    "verification_report": "C:\\Dev\\GregTech6\\work\\books-20261005\\artifacts.json",
+    "verification_report_sha256": "84f7b992c7cef19a4714ebb955310f7223b305ca50b6f0e4d90c1d5fa81d9ffb",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 39707159,
+        "sha256": "ae84eb66c3bd5f16473bd8a991a89e77b09ddd903aab443771880939dc8b17a3",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261005-000919Z-ae84eb66\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 37929641,
+        "sha256": "b7adc76d5a26be50cc8768bb80d7ec36fe9454e9abe55190fb1381be78f54273",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261005-000919Z-ae84eb66\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    }
+  },
+  "old_world_restart_verified": false,
+  "complete_survival_verified": false,
+  "dedicated_server_verified_this_batch": false,
+  "source_metadata_round_trip": "One synthetic old coke NBT fixture per platform; not an old saved world or restart",
+  "native_lectern_scope": "Actual placement, resolution, first-page signal and entity-level retrieval; lectern GUI page-turn/take buttons not exercised",
+  "optional_integrations": "Thaumcraft Aspectonomicon and prior material-printer direct-bound dictionary policy not changed",
+  "goal": "active",
+  "pushed": false,
+  "packaging": {
+    "certificate": {
+      "path": "C:\\Dev\\GregTech6\\work\\books-20261005\\artifacts.json",
+      "sha256": "84f7b992c7cef19a4714ebb955310f7223b305ca50b6f0e4d90c1d5fa81d9ffb"
+    },
+    "shared_classes": 690,
+    "book_resources": {
+      "status": "passed",
+      "neo_production_matches_final_jar": true,
+      "current_book_resources_checked": {
+        "forge": 429,
+        "neoforge": 429
+      }
+    },
+    "platforms": {
+      "forge": {
+        "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "ae84eb66c3bd5f16473bd8a991a89e77b09ddd903aab443771880939dc8b17a3",
+        "bytes": 39707159,
+        "zip_entries": 82357,
+        "metadata_path": "META-INF/mods.toml",
+        "metadata": {
+          "mod_id": "gregtech6",
+          "mod_version": "0.0.0",
+          "minecraft": "1.20.1",
+          "loader": "forge",
+          "loader_version_range": "[47,)",
+          "dependency_ranges": {
+            "minecraft": "[1.20.1]",
+            "forge": "[47,)"
+          },
+          "license": "LGPL-3.0-or-later"
+        },
+        "zip_crc_checked": true,
+        "mixin_verification": {
+          "refmap": "gregtech.refmap.json",
+          "mapped_classes": 15,
+          "sha256": "c64aa662fc1a71cb98096418f83903d268fe8a5240ea45aa0104a613c524ba3d"
+        },
+        "current_platform_classes_checked": 1699,
+        "current_platform_classes_sha256": "293466ba5539b4014d8c16b7d365e539b77fabfde481e623bdcbe30a3ffbdf4d"
+      },
+      "neoforge": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\libs\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "b7adc76d5a26be50cc8768bb80d7ec36fe9454e9abe55190fb1381be78f54273",
+        "bytes": 37929641,
+        "zip_entries": 81328,
+        "metadata_path": "META-INF/neoforge.mods.toml",
+        "metadata": {
+          "mod_id": "gregtech6",
+          "mod_version": "0.0.0",
+          "minecraft": "1.21.1",
+          "loader": "neoforge",
+          "loader_version_range": "[1,)",
+          "dependency_ranges": {
+            "minecraft": "[1.21.1]",
+            "neoforge": "[21.1.243,)"
+          },
+          "license": "LGPL-3.0-or-later"
+        },
+        "zip_crc_checked": true,
+        "mixin_verification": null,
+        "current_platform_classes_checked": 1508,
+        "current_platform_classes_sha256": "d2a9ed76c67ea30cca350c401dbbe6113a265d63ab65f69b5a10b7258b0f401f"
+      }
+    }
+  },
+  "rejected_first_forge_build": {
+    "path": "C:\\Dev\\GregTech6\\build\\libs\\gregtech6-1.20.1-forge-0.0.0.jar",
+    "sha256": "b7a44a5aae7640c7e84a741415e8a492e60de3eb57f6725e51f8c08163aaffda",
+    "accepted": false,
+    "reason": "Forge first-paragraph truncation and vanilla written-book glint discovered during screenshot review; will rebuild after source fixes"
+  },
+  "book_source": {
+    "path": "C:\\Dev\\GregTech6\\docs\\integration\\verification\\colored-books-source-20261005.json",
+    "sha256": "0008a36135d7f0813a853385761940186d4a5e688883a5fa525e5ef8dca4c18c"
+  },
+  "coke_source": {
+    "path": "C:\\Dev\\GregTech6\\docs\\integration\\verification\\coke-oven-source-20261005.json",
+    "sha256": "9bb9bb16f53c200dfe4769059754dc6fb73da7705917cb1dbab9b52e9e994044"
+  }
+}

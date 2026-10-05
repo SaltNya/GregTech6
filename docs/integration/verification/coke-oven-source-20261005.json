@@ -1,0 +1,43 @@
+{
+  "authors": "GregTech-6 Team; Gregorius Techneticies",
+  "license": "LGPL-3.0-or-later",
+  "source_tree_modified": false,
+  "project_base_commit": "2ee263e5",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\multiblocks\\MultiTileEntityCokeOven.java",
+      "sha256": "26ba343b5b4d6a2b7e2c7dd2c6dfbc1b48b5b03345adcb3420e798f091d16066"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\machines\\MultiTileEntityBasicMachine.java",
+      "sha256": "1798706545c33c801735ac5fb56b0ae37a8b6e3b7819f40f41183a2057b0c860"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\c\\Loader_Recipes_Other.java",
+      "sha256": "60d8832d969461869f1b224a9cc28578515fcd60c591cd0992f4e26b8951a1a3"
+    }
+  ],
+  "source_contract": {
+    "controller_id": 17000,
+    "part_id": 18000,
+    "material": "Ceramic",
+    "energy": "TU",
+    "parallel": 16,
+    "input_nominal": 1,
+    "input_minimum": 1,
+    "input_maximum": 16,
+    "ignition_ticks": 40,
+    "wall_cells": 25,
+    "air_cells": 1,
+    "fluid_output_targets": "3x3 plane one block beneath bottom walls; top face; cached until unavailable",
+    "item_input_mask": 2,
+    "item_output_mask": 1,
+    "fluid_output_mask": 61
+  },
+  "legacy_port_data": "Preserve old 2-slot contents and registered fluid; retire obsolete HU buffer without creating results",
+  "obsolete_test": "Removed instant-HU CokeOvenFluidRepairTests; finite native world fixture replaces its contradictory expectation"
+}
