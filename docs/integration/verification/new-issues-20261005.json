@@ -1,0 +1,649 @@
+{
+  "status": "passed",
+  "date": "2026-10-05",
+  "scope": "Issues 13–18 and original Chinese patch; the complete migration goal remains active",
+  "remote_actions": {
+    "pushed": false,
+    "issues_closed": false,
+    "comments_sent": false
+  },
+  "source_build_commit": "d878f06f",
+  "fix_commits": {
+    "13": "81b663a1",
+    "14": "12869ad6",
+    "15": "ed350c19",
+    "16": "991411b1",
+    "17": "ed350c19",
+    "18": "a84c1abc"
+  },
+  "smoke_harness_commit": "d878f06f",
+  "translation": {
+    "source": "C:\\Dev\\GregTech_zh_cn.lang",
+    "sha256": "0e5b3906712020b71c9c5718319bbf3fd90b002d79d25614f1bfcaf3c8e887c0",
+    "source_keys": 125676,
+    "source_values_preserved_verbatim": true,
+    "chinese_values_outside_patch": 0,
+    "native_aliases": 6520,
+    "native_total_keys": 138456,
+    "port_only_or_ambiguous_values": "English fallback; missing original bindings recorded in source manifest",
+    "source_record": {
+      "path": "C:\\Dev\\GregTech6\\docs\\integration\\verification\\original-zh-cn-source-20261005.json",
+      "sha256": "dd85fc3129acb779cfad207e4478ac292b06361e91012c432357e9add3757141"
+    }
+  },
+  "core_contracts": {
+    "assertions": 2465,
+    "groups": 30,
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\new-issues-20261005-build.log",
+      "sha256": "33c743fb22698b3c64edd1818fef7864a68367d8ab0170590fedd17f2ed5451b"
+    }
+  },
+  "world_checks": {
+    "forge": {
+      "scope": "Finite actual fresh-world checks; normal native save/exit; not a saved-world restart",
+      "receipt": {
+        "platform": "forge",
+        "id": "4a14427f-a31b-41c2-97ef-2927ddfb0176",
+        "world": "creation-smoke-4a14427f-a31b-41c2-97ef-2927ddfb0176",
+        "stage": 3,
+        "elapsedMs": 176261,
+        "materialBushRuntimeOnly": false,
+        "recipePresentationRuntimeOnly": false,
+        "longDistanceRuntimeOnly": false,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": false,
+        "newIssuesRuntimeOnly": true,
+        "collectedRockPlacements": 2,
+        "pumpNativeChecks": 9,
+        "conveyorArmNativeChecks": 8,
+        "componentToolInteractions": 5,
+        "componentHostFixtures": 6,
+        "fallbackNativeHostClasses": [
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.BurningBoxBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.SmeltingCrucibleBlockEntity",
+            "acceptedFaces": 5
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.HopperBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.QueueHopperBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.KineticSteamEngineBlockEntity",
+            "acceptedFaces": 5
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.KineticDieselEngineBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.energy.ReactorCoreBlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.energy.ReactorCore2x2BlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.BoilerTankBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.energy.PumpBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.MultiblockTankControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.OriginalLargeBoilerControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeTurbineControllerBlockEntity",
+            "acceptedFaces": 1
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeGasTurbineControllerBlockEntity",
+            "acceptedFaces": 1
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeCrucibleControllerBlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.BedrockDrillControllerBlockEntity",
+            "acceptedFaces": 8
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeBoilerControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.CryoDistillationControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeHeatExchangerControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.inventory.EnderGarbageBlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.tool.DustFunnelBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.tool.ProcessingToolBlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.tool.BumbliaryBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.SapBagBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.inventory.BookShelfBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.energy.ZpmDischargerBlockEntity",
+            "acceptedFaces": 12
+          }
+        ],
+        "fallbackAcceptedFaces": 242,
+        "fallbackLifecycleChecks": 9,
+        "nativeRecipeIngredientsInspected": 278653,
+        "emptyNativeRecipeIngredients": [],
+        "booksRuntimeOnly": false,
+        "canonicalItemsChecked": 76989,
+        "recipes": 52522,
+        "serverTicks": 12,
+        "dimension": "minecraft:overworld",
+        "sourceMaterialFormNamesChecked": 52789,
+        "typedStoneNamesChecked": 864,
+        "translatedTabKeysChecked": 219,
+        "actualClientLanguage": "zh_cn",
+        "componentCoverAtlasSprites": 6,
+        "fallbackClientSync": true,
+        "renderedWorldFrames": 129,
+        "emiLoaded": false,
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-4a14427f-a31b-41c2-97ef-2927ddfb0176.png"
+      },
+      "receipt_file": {
+        "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\world-creation-4a14427f-a31b-41c2-97ef-2927ddfb0176.json",
+        "sha256": "5d9728270c1f63d75f5b37b910d408d9ec58f2e421178be72c46e5b58ea435b0"
+      },
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\new-issues-20261005-forge-final4.log",
+        "sha256": "007f88df0c854c3dba45456cdc5a53fbe7c96f06a7981cd613a35d912736290a"
+      },
+      "screenshot_sha256": "8d35a9c30ff07740b5345ae78d33004c95cafe4c84fa8625b6bbba9dfac79bc2",
+      "visually_reviewed": true
+    },
+    "neoforge": {
+      "scope": "Finite actual fresh-world checks; normal native save/exit; not a saved-world restart",
+      "receipt": {
+        "platform": "neoforge",
+        "id": "c95fe98e-7b9d-4c59-b1d3-2d5d796dc5ae",
+        "world": "creation-smoke-c95fe98e-7b9d-4c59-b1d3-2d5d796dc5ae",
+        "stage": 3,
+        "elapsedMs": 126828,
+        "materialBushRuntimeOnly": false,
+        "recipePresentationRuntimeOnly": false,
+        "longDistanceRuntimeOnly": false,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": false,
+        "newIssuesRuntimeOnly": true,
+        "collectedRockPlacements": 2,
+        "pumpNativeChecks": 9,
+        "conveyorArmNativeChecks": 8,
+        "componentToolInteractions": 5,
+        "componentHostFixtures": 6,
+        "fallbackNativeHostClasses": [
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.MultiblockTankControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.OriginalLargeBoilerControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeTurbineControllerBlockEntity",
+            "acceptedFaces": 1
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeGasTurbineControllerBlockEntity",
+            "acceptedFaces": 1
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeCrucibleControllerBlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.BedrockDrillControllerBlockEntity",
+            "acceptedFaces": 8
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.CryoDistillationControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeHeatExchangerControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.LargeBoilerControllerBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.tool.BumbliaryBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.inventory.BookShelfBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.inventory.EnderGarbageBlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.tool.DustFunnelBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.SapBagBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.tool.ProcessingToolBlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.energy.ZpmDischargerBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.KineticSteamEngineBlockEntity",
+            "acceptedFaces": 5
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.KineticDieselEngineBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.BoilerTankBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.energy.PumpBlockEntity",
+            "acceptedFaces": 6
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.energy.ReactorCoreBlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.energy.ReactorCore2x2BlockEntity",
+            "acceptedFaces": 18
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.HopperBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.QueueHopperBlockEntity",
+            "acceptedFaces": 12
+          },
+          {
+            "class": "com.gregtech.gregtech.platform.neoforge.smeltery.SmeltingCrucibleEntity",
+            "acceptedFaces": 5
+          },
+          {
+            "class": "com.gregtech.gregtech.blockentity.machine.BurningBoxBlockEntity",
+            "acceptedFaces": 6
+          }
+        ],
+        "fallbackAcceptedFaces": 242,
+        "fallbackLifecycleChecks": 9,
+        "nativeRecipeIngredientsInspected": 278653,
+        "emptyNativeRecipeIngredients": [],
+        "canonicalItemsChecked": 77066,
+        "recipes": 52638,
+        "serverTicks": 246,
+        "dimension": "minecraft:overworld",
+        "sourceMaterialFormNamesChecked": 52789,
+        "typedStoneNamesChecked": 864,
+        "translatedTabKeysChecked": 219,
+        "actualClientLanguage": "zh_cn",
+        "componentCoverAtlasSprites": 6,
+        "generationHoldersWaitingBeforeExit": 0,
+        "fallbackClientSync": true,
+        "renderedWorldFrames": 177,
+        "emiLoaded": false,
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-c95fe98e-7b9d-4c59-b1d3-2d5d796dc5ae.png"
+      },
+      "receipt_file": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\world-creation-c95fe98e-7b9d-4c59-b1d3-2d5d796dc5ae.json",
+        "sha256": "ad57550a1bc3e0dcba8a7d98fb819e45d2d47c3591e459635318284e287a6802"
+      },
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\new-issues-20261005-neo-final3.log",
+        "sha256": "181a890fde2b97c0d0337f2e4faa9829068b7ad02568965072825f0d596d44dd"
+      },
+      "screenshot_sha256": "7d8b045f51b96b25e2206d4e79c5b4c3a214eb70538e1b9feded9eeb762867a6",
+      "visually_reviewed": true
+    }
+  },
+  "production_title_checks": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 64.42,
+      "installed_files_modified": false,
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261005-062509Z-a822fd1d\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "a822fd1d281a2d8a07f151f2e0f93cfa404dfd7f1708935b1081dd675efa1eb8"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "26896596c9fc71c1e53342d7b80c9285fbea8de49938f00659fd34a9c2f589c4"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "a822fd1d281a2d8a07f151f2e0f93cfa404dfd7f1708935b1081dd675efa1eb8",
+          "bytes": 41057267
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "26896596c9fc71c1e53342d7b80c9285fbea8de49938f00659fd34a9c2f589c4",
+          "bytes": 19596
+        },
+        {
+          "name": "Jade-1.20.1-Forge-11.13.3.jar",
+          "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+          "bytes": 553487
+        },
+        {
+          "name": "jei-1.20.1-forge-15.62.0.217.jar",
+          "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+          "bytes": 2232172
+        },
+        {
+          "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+          "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+          "bytes": 364842
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-e3bc665e-c380-4b78-932c-d1c93583741f\\launch.log",
+      "log_sha256": "dc67e24ef1deec19777acc2e57c1a53450821c104ec9dac792f92c1647edb21d",
+      "receipt": {
+        "surfaceChecks": {
+          "materialBushInventoryModelsColorsNamesChecked": 1034,
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          }
+        },
+        "platform": "forge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-e3bc665e-c380-4b78-932c-d1c93583741f\\screenshots\\production-forge-427acb8e-4fba-46f2-b115-dbe85d37ac0d.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 181,
+        "loaderWarnings": 0,
+        "elapsedMs": 56269
+      },
+      "screenshot_sha256": "1d317d777bdbb888778a18b18dbbd1913890f0f1bc7960c59bff7d90e15417a1",
+      "visually_reviewed": true
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 53.17,
+      "installed_files_modified": false,
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261005-062509Z-a822fd1d\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "8e63907474e53e0003805dfdd88132785f6f13acdc26610667a3808e3a067d54"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "5e8b0577de542a1557e293039256106accc1df0a90ffb0b14a47fb3ae6931c55"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "8e63907474e53e0003805dfdd88132785f6f13acdc26610667a3808e3a067d54",
+          "bytes": 39273365
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "5e8b0577de542a1557e293039256106accc1df0a90ffb0b14a47fb3ae6931c55",
+          "bytes": 18360
+        },
+        {
+          "name": "emi-1.1.24+1.21.1+neoforge.jar",
+          "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+          "bytes": 1111538
+        },
+        {
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+          "bytes": 726853
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-2889cfee-ddf0-4dfb-8db3-cd6298051505\\launch.log",
+      "log_sha256": "b7424c71cdd3c40ffb2358c1dbf2e6dfa40282e33fd4b9a7a34c33d129e216d7",
+      "receipt": {
+        "surfaceChecks": {
+          "materialBushInventoryModelsColorsNamesChecked": 1034,
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          }
+        },
+        "platform": "neoforge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-2889cfee-ddf0-4dfb-8db3-cd6298051505\\screenshots\\production-neoforge-be9a1344-b05c-4f4b-b9ad-a6e8c0afba98.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 179,
+        "elapsedMs": 44712
+      },
+      "screenshot_sha256": "fc47439df3b6cebd3ba8595fa739ce50c55a593b08740b6b6fbe8c00dddb5493",
+      "visually_reviewed": true
+    }
+  },
+  "packaging": {
+    "shared_classes": 703,
+    "current_native_classes": {
+      "forge": 1727,
+      "neoforge": 1533
+    },
+    "mixin_verification": {
+      "refmap": "gregtech.refmap.json",
+      "mapped_classes": 17,
+      "sha256": "fe1d97fb9213c87740803151b4db67a825fda482c909c2e905f3381ee0924a3f",
+      "unmapped_forge_api_mixins": [
+        "ComponentCoverCapabilitiesMixin",
+        "WaterContainerMixin"
+      ]
+    },
+    "report": {
+      "path": "C:\\Dev\\GregTech6\\work\\new-issues-artifact-verification.json",
+      "sha256": "b928d958fa9f87c14bcc8578a19db7a29e01d19af00784b12a625ece89fcb55b"
+    }
+  },
+  "artifacts": {
+    "status": "passed",
+    "scope": "Verified complete copies; runtime evidence is recorded separately",
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261005-062509Z-a822fd1d",
+    "verification_report": "C:\\Dev\\GregTech6\\work\\new-issues-artifact-verification.json",
+    "verification_report_sha256": "b928d958fa9f87c14bcc8578a19db7a29e01d19af00784b12a625ece89fcb55b",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 41057267,
+        "sha256": "a822fd1d281a2d8a07f151f2e0f93cfa404dfd7f1708935b1081dd675efa1eb8",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261005-062509Z-a822fd1d\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 39273365,
+        "sha256": "8e63907474e53e0003805dfdd88132785f6f13acdc26610667a3808e3a067d54",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261005-062509Z-a822fd1d\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    }
+  },
+  "addon_api": {
+    "path": "C:\\Dev\\GregTech6\\core\\build\\libs\\gregtech6-addon-api-0.0.0.jar",
+    "sha256": "edd0258125a49bca0037a078538d53d25956a3f478e1de85dd77164b35af6b60",
+    "bytes": 1642678,
+    "crop_contract_classes_checked": true,
+    "zip_crc_checked": true
+  },
+  "limitations": {
+    "third_party_crop_addon_installation": false,
+    "dedicated_server": false,
+    "complete_survival_chain": false,
+    "saved_world_restart": false,
+    "old_user_world_compatibility": false
+  }
+}

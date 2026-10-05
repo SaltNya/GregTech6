@@ -287,3 +287,8 @@ Forge 18:46:52 / NeoForge 18:42:11 客户端正常截图退出；两版 tooltip 
 ## 2026-10-05 / 原版配方池显示与共装去重
 
 85机器池/8燃料池恢复原版浏览器允许及电压/功率提示标志，六兼容池默认隐藏且保留实际数据；Assembler没有来源独立机器。两端共享显示分支，JEI+EMI同装由原生EMI单次收录机器行，手动工具装配保留。10493共享断言、两版编译、Forge独立JEI及Neo共装实际新世界/截图、698class普通验包和正式成品主菜单通过，62继承彩色书籍资源字节匹配。完整边界见[本批记录](verification/recipe-presentation-20261005.md)及[回执](verification/recipe-presentation-20261005.json)。Assembler外部/NBT、完整配方契约、存档/生存及其他反馈继续保留，整体goal active，未推送。
+
+
+## 2026-10-05 / 新 issues 与原版汉化
+
+#13–18 已本地修复；125676补丁键值原样保留，6520现代绑定，缺来源项保留英文。两版实际新世界、32类盖板宿主代表、242通用面、52789名称、278653原料位置、正常保存退出及正式成品主菜单通过；703共享class普通验包，产物固定在 `build/verified/20261005-062509Z-a822fd1d`。详情和独立证据边界见[本批说明](verification/new-issues-20261005.md)及[回执](verification/new-issues-20261005.json)。未推送，整个goal active。
