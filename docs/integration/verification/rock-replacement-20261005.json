@@ -1,0 +1,20 @@
+{
+  "issue": 14,
+  "source_files": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\GT_Proxy.java",
+      "sha256": "c18681468cfff643c77fa0371fe142599c7063b42f57ae74db653a19b9fdda3c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\placeables\\MultiTileEntityRockPlaced.java",
+      "sha256": "6c2a19a5c4c5573ca4569ea51ad1b6362ca16cba330a5eea7a00d7e72f34cfca"
+    }
+  ],
+  "author": "Gregorius Techneticies",
+  "license": "LGPL-3.0-or-later",
+  "behavior": "Sneak-place one OP.rockGt or OP.oreRaw item; preserve collected identity and one-item drop, no regenerated ore indication bonus",
+  "verification": {
+    "forge": "Actual isolated fresh world: GT granite pebble and vanilla raw copper, each consumes one and drops the same one item; non-sneak passes through",
+    "neoforge": "Same actual fresh-world rock/raw copper placement, cost and exact-item drop checks passed"
+  }
+}
