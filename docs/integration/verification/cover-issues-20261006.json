@@ -1,0 +1,237 @@
+{
+  "status": "native_passed_production_pending",
+  "date": "2026-10-06",
+  "scope": "Representative native cover/logistics corrections for issues 19-24; overall migration goal active",
+  "workspace": "C:\\Dev\\GregTech6",
+  "source_record": {
+    "path": "C:\\Dev\\GregTech6\\docs\\integration\\verification\\cover-issues-source-20261006.json",
+    "sha256": "0c78edeed1504c98743ce96b619920c014b342c96e08dd9c77b8a9d8499d3950"
+  },
+  "main_sync": {
+    "verified_sha": "dff3293beb44e38cb31f3ca11358dd2efa11a92e",
+    "official_api_commit_date": "2026-10-05T07:11:02Z",
+    "official_api_receipt": {
+      "path": "C:\\Dev\\GregTech6\\work\\main-latest-20261006.json",
+      "sha256": "4be352814798001129a3336834f52688957b768d21d547728ed1e9b6c1947655"
+    },
+    "initial_git_fetch": "successful; HEAD and fetched main matched before local repair commits",
+    "later_transport_checks": "connection reset and SSL timeout; official API independently confirmed unchanged main",
+    "pr25": "open, not merged; not incorporated"
+  },
+  "remote_actions": {
+    "pushed": false,
+    "issues_closed": false,
+    "comments_sent": false
+  },
+  "native_development_runtime": {
+    "namespace": "gregtech_cover_issues",
+    "required_tests_per_platform": 8,
+    "forge": {
+      "minecraft": "1.20.1",
+      "loader": "47.4.20",
+      "java": "17"
+    },
+    "neoforge": {
+      "minecraft": "1.21.1",
+      "loader": "21.1.243",
+      "java": "21"
+    },
+    "world_scope": "Reused isolated test directories; 16x8x16 empty fixture template. Native entity/harvest fixtures are inside the test region. Other deterministic machine fixtures explicitly replace their old blocks. Not user saves or independent saved-world restart evidence.",
+    "player_scope": "Forge FakePlayer; Neo native ServerPlayer with no-op connection and no login. Native held-tool interaction, menu validity after eight world ticks and survival game-mode harvest/place exercised; real network login not exercised.",
+    "scenarios": [
+      "27 CPU standby charge every tick and actual-face weak/strong display output",
+      "logistics storage persistence, exclusive faces and covered-wire reconnect rejection",
+      "held native screwdriver/cutter tool wear and native detector output",
+      "USB selectors, native signals, controller latch and remove/reset",
+      "held-item crafting menu validity and survival harvest/replacement retains configured cover",
+      "insulated-wire torch/repeater and closed/open fluid shutter capability gates",
+      "item damage filter wildcard and original warning/stone design cycles and native thin-pipe collision",
+      "16000mB world water, XP conversion at20mB/point, native squid step-on and pipe-filter boundary"
+    ],
+    "result": "passed",
+    "normal_save_and_exit": true,
+    "gradle_exit_code": 0,
+    "elapsed": "4m 39s",
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-tests-final.log",
+      "sha256": "9a52405d0fa4730df15e9b8d39e6ee630f9f2a5e608596a5bddae8041a920509"
+    },
+    "neo_extra_tool_boundary": {
+      "result": "passed",
+      "platform": "neoforge",
+      "required_tests": 1,
+      "namespace": "gregtech_cover_tools",
+      "scope": "Actual logistics property identity, active-face mask and feasibility for local/opposite CPU cover; eight shared scenarios were already green and were not rerun for this metadata-only boundary repair",
+      "normal_save_and_exit": true,
+      "gradle_exit_code": 0,
+      "elapsed": "1m 24s",
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-neo-tool-boundary.log",
+        "sha256": "07cc4db27aaf7bc9f43178d258a10945302436acaf6055eabf0a14335311694d"
+      }
+    }
+  },
+  "failed_attempts": [
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-compile-2.log",
+        "sha256": "28d91eb524abfe6105e430f9cc0079ecd0eefa70b33847e422bdf4e1878c467e"
+      },
+      "result": "failed",
+      "failures": [],
+      "build_elapsed": [
+        "41s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-compile-3.log",
+        "sha256": "2f6fde78a81f9bb81fbc8447517a45ed4aa1deddc8106ebb72844c5c0d139e9a"
+      },
+      "result": "failed",
+      "failures": [],
+      "build_elapsed": [
+        "32s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-compile-4.log",
+        "sha256": "3a09eda956d002b884cc7f2f1cf3af69aa3467a08c3ae1c5ed01766606d41b38"
+      },
+      "result": "failed",
+      "failures": [],
+      "build_elapsed": [
+        "59s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-compile.log",
+        "sha256": "1d7ab5f8f5ab1a8b0fe35515d00e8081e7cabdcfd7327889573d996e542771d3"
+      },
+      "result": "failed",
+      "failures": [],
+      "build_elapsed": [
+        "49s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-tests-1.log",
+        "sha256": "5a262ab03362f39b3b6e509095c37bd370e6c9a355043e1e8761989752ffb7a1"
+      },
+      "result": "failed",
+      "failures": [
+        "drainbulkexperiencewalkandfilterconnectionboundary failed! Cannot invoke \"net.minecraftforge.registries.RegistryObject.get()\" because the return value of \"com.gregtech.gregtech.registry.GTFluids.still(String)\" is null",
+        "itemfiltersignorecomponentsanddecorationsuseheldchisel failed! inventory host accepts filter",
+        "helditemworkbenchstaysopenandharvestretainscover failed! No value present"
+      ],
+      "build_elapsed": [
+        "5m 2s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-tests-2.log",
+        "sha256": "eea66e80049d3ed6b11beb914dac8608853f76d9ab2dbea11f5f557b46a9a8bd"
+      },
+      "result": "failed",
+      "failures": [
+        "drainbulkexperiencewalkandfilterconnectionboundary failed! XP orb becomes original twenty mB per point",
+        "itemfiltersignorecomponentsanddecorationsuseheldchisel failed! original two-pixel cover collision extends above host"
+      ],
+      "build_elapsed": [
+        "4m 49s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-tests-3.log",
+        "sha256": "9a97ca0061e16f70d337fca7079590b6d0950defd54c2d23cf9b63adaa94b1cf"
+      },
+      "result": "failed",
+      "failures": [
+        "drainbulkexperiencewalkandfilterconnectionboundary failed! XP orb becomes original twenty mB per point",
+        "logisticsstorageandcoveredwirestaydisconnected failed at -6765732, -60, 11850801! Cannot set property BooleanProperty{name=west, clazz=class java.lang.Boolean, values=[true, false]} as it does not exist in Block{gregtech:logistics_wire}",
+        "helditemworkbenchstaysopenandharvestretainscover failed at -6765726, -60, 11850801! native workbench opens",
+        "drainbulkexperiencewalkandfilterconnectionboundary failed at -6765714, -60, 11850801! XP orb becomes original twenty mB per point"
+      ],
+      "build_elapsed": [
+        "3m 58s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-tests-4.log",
+        "sha256": "7da0236bea78fc012aab460f24ba8f44a3e12d3ad8786d2b24313f566122fd35"
+      },
+      "result": "failed",
+      "failures": [
+        "drainbulkexperiencewalkandfilterconnectionboundary failed! XP orb becomes original twenty mB per point: entities=2, accepts=0, collected=false, removed=false, value=5, count=1, fluid=net.minecraftforge.fluids.FluidStack@3c910aec",
+        "helditemworkbenchstaysopenandharvestretainscover failed! retained cover does not also drop separately",
+        "itemfiltersignorecomponentsanddecorationsuseheldchisel failed at 10948144, -60, -7159895! Payload jade:server_ping_v1 may not be sent to the client!",
+        "heldtoolsconfigurenativedetectorandremovalresets failed at 10948150, -60, -7159895! Payload jade:server_ping_v1 may not be sent to the client!",
+        "logisticsstorageandcoveredwirestaydisconnected failed at 10948156, -60, -7159895! Payload jade:server_ping_v1 may not be sent to the client!",
+        "helditemworkbenchstaysopenandharvestretainscover failed at 10948162, -60, -7159895! Payload jade:server_ping_v1 may not be sent to the client!",
+        "drainbulkexperiencewalkandfilterconnectionboundary failed at 10948174, -60, -7159895! XP orb becomes original twenty mB per point: entities=1, accepts=0, collected=false, removed=false, value=5, count=1, fluid=0 minecraft:empty"
+      ],
+      "build_elapsed": [
+        "3m 37s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-tests-5.log",
+        "sha256": "d3b8ef42bcbe92b0c92cc92f05371a4e41b1613389dc8b23f0a3dec7f0dabe55"
+      },
+      "result": "failed",
+      "failures": [
+        "drainbulkexperiencewalkandfilterconnectionboundary failed! Cannot invoke \"com.gregtech.gregtech.blockentity.machine.ItemPipeBlockEntity.getBlockPos()\" because \"pipe\" is null",
+        "drainbulkexperiencewalkandfilterconnectionboundary failed at 1076258, -60, 4326378! XP orb becomes original twenty mB per point: entities=1, accepts=0, collected=false, removed=false, value=5, count=1, fluid=0 minecraft:empty"
+      ],
+      "build_elapsed": [
+        "4m 3s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    },
+    {
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-tests-6.log",
+        "sha256": "edde129e604f88c7fed86a611bc90b7fec1b883eda40d0f361c9ddb4a7ccf082"
+      },
+      "result": "failed",
+      "failures": [
+        "itemfiltersignorecomponentsanddecorationsuseheldchisel failed! two-pixel plate occupies original in-block bounds",
+        "itemfiltersignorecomponentsanddecorationsuseheldchisel failed at 7138254, -60, -6221108! two-pixel plate occupies original in-block bounds"
+      ],
+      "build_elapsed": [
+        "5m 22s"
+      ],
+      "scope": "Intermediate attempts; never substituted for the final receipt"
+    }
+  ],
+  "unchanged_original_patch_resource": {
+    "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\lang\\zh_cn.json",
+    "sha256": "ce9b61d0e85e5f8f4fccea88f40a630a21c003b5072b2de1e51bd38c20b71d45"
+  },
+  "not_claimed": [
+    "Exhaustive GT host/side/control combinations",
+    "Full natural survival energy/production chain",
+    "Dedicated multiplayer login/network behavior",
+    "User old saves and independently restarted saved worlds",
+    "OpenBlocks player XP extraction and other-mod special blue/pink slimes",
+    "Canvas/scanner block printing (issue explicitly allows deferral)",
+    "Exhaustive external fluid-container mappings",
+    "Automatic recognition of all third-party space biomes (void tag rejection entry exists)",
+    "Visual/world interaction screenshots of each installed cover face"
+  ]
+}
