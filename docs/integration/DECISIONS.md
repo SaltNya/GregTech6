@@ -438,3 +438,8 @@ Java25正式安装加载器Forge47.4.26/Neo21.1.252隔离主菜单自启动分�
 436原生运输物品加入既有安全粉碎入口及坩埚输入，共490共享合成描述。组合/拆分/限制管与网络序列化保持存储数据保护，禁止吞带BlockEntity存储内容的物品。继承的泛 Wood 桶和物流储罐配方材料仍待单独审核（不把1U估计算完成），源首选 pipe unification targets/GTItems绑定和所有分子展示行未以此次元数据恢复而冒称完成。14只读源文件、作者/LGPL、规则及未覆盖范围见 [transport-material-source-20261006.json](verification/transport-material-source-20261006.json)。完整域差异保留全部144325旧行，仅新增10元数据前缀及11600个false形态行，见 [transport-material-differential-20261006.json](verification/transport-material-differential-20261006.json)。语言文件未改。
 
 限定原生三类场景两版各3项通过，正常保存退出0，6m7s；490实际合成/工具损耗/同步、436精确回收、坩埚输入及存储保护有证据。首轮夹具泛型编译失败，第二轮Forge两例通过、合成例末尾把两种拆分误计为一种导致数量断言失败并终止，没有跑Neo；修正为80后最终双版全过。4共享核心入口通过，132前缀检查仍保留完整域指纹。最后将钢/钨桶两个表数据入口改用源 ANY.Steel/W，复用已被限制管及木桶验证的组转换器；这两项组输入在成品探针另做实际谓词断言，未重复全限定服务器。普通构建、验包、成品自启动待终态回执，完整生存、自然机器操作、独立存档重启和旧档兼容未验收。整个goal active；PR暂不处理，只有明确获批的3fbbc442已推送，运输移植本地继续。
+
+
+终态回执：运输源码 `041bcb73`，普通双版构建1m9s；720共享、Forge1756/Neo1563当前class及CRC/元数据/Mixin/夹具排除验包通过。稳定成对目录 `C:\Dev\GregTech6\build\verified\20261006-144003Z-1ff77589`，启动后SHA/CRC一致；14只读源文件及2语言值未改。Java25正式加载器隔离自启动68.59s/44.73s、179/182帧、退出0，两版436材料/回收登记、490合成解析及10个钢/钨组形式输入检查通过；用户整合包文件未改。已查看截图是48建材+30木板主菜单预览，运输检查是实际运行断言，玩家UI、完整生存、独立重启及旧档边界保留。见 [运输终态](verification/transport-material-20261006.md)。
+
+用户明确仅批准的CI提交 `3fbbc442` 已推送，GitHub [37479176810](https://github.com/SaltNya/GregTech6/actions/runs/37479176810) Forge、NeoForge及汇总3项已全部成功；实际Java17四组共享检查通过，CI差异只有578材料UUM新增，无LIQUID变化。运输源码和本回执留在本地，PR暂不处理，整个goal继续active。见 [CI终态](verification/ci-material-differential-20261006.json)。

@@ -2,7 +2,7 @@
   "status": "passed",
   "failing_run": "https://github.com/SaltNya/GregTech6/actions/runs/37476658478",
   "baseline_commit": "c6a352d44f6e6ecdf32895a6dddb7d812880e88e",
-  "scope": "Full old fingerprint versus current committed material domain; only source UUM and Mercury LIQUID flags may differ",
+  "scope": "Full old fingerprint versus committed c6a352d4 material domain: only 578 source UUM additions; no LIQUID delta",
   "stages": {
     "definitions": {
       "before_sha256": "842079f4654e2eb389117406b4eeef2a564460b4142705dd62adf4d06d1daa74",
@@ -1187,7 +1187,46 @@
     "after": "CoreBehaviorContracts 2472; source wood 1212; MaterialBehaviorContracts 7947; ThermalBehaviorContracts 53; MachineSpecBehaviorContracts 34; exit 0",
     "log": "work/transport-ci-snapshot/head-contracts-final.log",
     "failed_local_attempt": "Initial standalone classpath omitted core test TSV resources: NPE in recipe map presentation; fixed classpath retains all assertions",
-    "remote_rerun": "not triggered; local commit only",
-    "original_evidence": "docs/integration/verification/material-data-source-20261006.json; original MT/OP facts and hashes preserved"
+    "remote_rerun": "All three jobs completed successfully for the explicitly approved CI commit",
+    "original_evidence": "docs/integration/verification/material-data-source-20261006.json; original MT/OP facts and hashes preserved",
+    "java17": {
+      "runtime": "Oracle JDK 17.0.10+11-LTS-240; all four core contracts and source wood fixture passed",
+      "log": "work/transport-ci-snapshot/head-contracts-jdk17.log",
+      "sha256": "12b76ca93dab067fa8d110cc15a8277ea463777c534b0fde46562a652ba98293"
+    }
+  },
+  "remote_delivery": {
+    "commit": "3fbbc442df263656b6a9b2720a69499fdff09bc3",
+    "approval": "Human explicitly approved pushing only CI fix 3fbbc442; transport source and receipts remain local",
+    "push": "3fbbc442:refs/heads/main; c6a352d4 -> 3fbbc442",
+    "run": "https://github.com/SaltNya/GregTech6/actions/runs/37479176810",
+    "jobs": [
+      {
+        "name": "Build 1.20.1 forge",
+        "id": 112322492805,
+        "status": "completed",
+        "conclusion": "success",
+        "completed_at": "2026-10-06T14:30:27Z",
+        "url": "https://github.com/SaltNya/GregTech6/actions/runs/37479176810/job/112322492805"
+      },
+      {
+        "name": "Build 1.21.1 neoforge",
+        "id": 112322493619,
+        "status": "completed",
+        "conclusion": "success",
+        "completed_at": "2026-10-06T14:30:19Z",
+        "url": "https://github.com/SaltNya/GregTech6/actions/runs/37479176810/job/112322493619"
+      },
+      {
+        "name": "Both platform builds required",
+        "id": 112323720450,
+        "status": "completed",
+        "conclusion": "success",
+        "completed_at": "2026-10-06T14:30:35Z",
+        "url": "https://github.com/SaltNya/GregTech6/actions/runs/37479176810/job/112323720450"
+      }
+    ],
+    "jobs_evidence": "work/github-ci-retry-jobs-20261006.json",
+    "jobs_evidence_sha256": "db299136db6e1ad87949927039ba0621a5cd66ef2ee3cf8774ab8d979f802ca3"
   }
 }
