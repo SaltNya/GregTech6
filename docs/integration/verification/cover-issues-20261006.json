@@ -233,5 +233,34 @@
     "Exhaustive external fluid-container mappings",
     "Automatic recognition of all third-party space biomes (void tag rejection entry exists)",
     "Visual/world interaction screenshots of each installed cover face"
-  ]
+  ],
+  "intermediate_builds": [
+    {
+      "source_commit": "40a33094",
+      "status": "passed",
+      "elapsed": "4m 12s",
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-production-build.log",
+        "sha256": "a96e80dd3fd128059ed2bdbce31d48e300599369fb1ff302f54866e655ec395a"
+      },
+      "scope": "Before the mixed ordinary/logistics attachment stop correction; these jars are not the final delivered pair"
+    }
+  ],
+  "mixed_cover_stop_boundary": {
+    "result": "passed",
+    "required_tests_per_platform": 1,
+    "platforms": [
+      "forge",
+      "neoforge"
+    ],
+    "namespace": "gregtech_cover_mixed",
+    "normal_save_and_exit": true,
+    "gradle_exit_code": 0,
+    "elapsed": "3m 42s",
+    "scope": "Mixed ordinary/logistics cover presence, stopped latch after controller removal, native tag save/load, final logistics cover removal clears the latch. This is native data serialization, not independently restarted world evidence.",
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\issues-20261006-mixed-stop.log",
+      "sha256": "47a3539ef7d5c3cecd0e727879a66332ad1a039128aeb4b39414ad79f76bdce3"
+    }
+  }
 }
