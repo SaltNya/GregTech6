@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-06",
+  "goal": "active",
+  "scope": {
+    "panel_identities": 83,
+    "canonical_panels": 78,
+    "construction_items": 6,
+    "native_plank_inputs": 19
+  },
+  "native": {
+    "result": "passed",
+    "scenarios_per_platform": 2,
+    "platforms": [
+      "forge-1.20.1",
+      "neoforge-1.21.1"
+    ],
+    "elapsed": "7m7s",
+    "log": "work/panel-material-20261006-native-final.log",
+    "normal_world_save": true,
+    "coverage": [
+      "Per-output source material split and primary ordering",
+      "Six known construction compositions and actual registered native plank inputs",
+      "Precise components read by actual CrucibleItemInput entry",
+      "83 registered source shredder recipes and RecipeInputs consumption",
+      "Dust outputs conserve each material; smallest representable fraction floors",
+      "Stored block-entity contents rejected by both recovery paths",
+      "Existing explicit material data survives repeat binding",
+      "ANY.Iron concrete output, merging before division and unknown input omission"
+    ],
+    "not_claimed": [
+      "Real player operation of powered machines",
+      "Complete survival acquisition/energy chain",
+      "Installed world recipe execution",
+      "Independent save-content restart",
+      "Old-save migration",
+      "All reversible crafting outputs"
+    ]
+  },
+  "intermediate_attempts": [
+    {
+      "log": "work/panel-material-20261006-native.log",
+      "result": "failed before scenarios",
+      "gradle_exit": 0,
+      "elapsed": "2m50s",
+      "reason": "Lowercase construction material lookup returned NULL; not a test pass."
+    },
+    {
+      "log": "work/panel-material-20261006-native-fixed.log",
+      "result": "failed before scenarios",
+      "gradle_exit": 0,
+      "elapsed": "2m48s",
+      "reason": "Correcting foam reference alone did not repair lowercase Concrete/Asphalt lookup."
+    },
+    {
+      "log": "work/panel-material-20261006-core-preflight.log",
+      "result": "failed",
+      "reason": "Standalone probe lacked explicit platform ModData presence binding."
+    },
+    {
+      "log": "work/panel-material-20261006-core-preflight-fixed.log",
+      "result": "passed",
+      "materials": 3,
+      "native_planks": 19,
+      "scope": "Shared core lookup only, external mods marked absent."
+    }
+  ],
+  "source_files_rechecked": 17,
+  "unchanged_localization": {
+    "en_us.json": "05707ad42644116055ff716d8dd3fc99c1ffb11b7c5d4528a49658bf569da820",
+    "zh_cn.json": "fda9c7540872bde68f5c392f5505d69a8e4e8fab481dd8af24aa1b1a3bffcca0"
+  },
+  "ordinary_artifacts": "pending",
+  "installed_production": "pending"
+}

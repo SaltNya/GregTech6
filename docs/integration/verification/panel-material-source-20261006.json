@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-06",
+  "baseline": "e73a967107e02ccb75e12820b29c8a02fd6f597a",
+  "files": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\CR.java",
+      "sha256": "952f94e0dfff66d27d2ac2b97ed47b6aa0c8250aa19babd5cc528c89616c0760",
+      "bytes": 39113,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\OM.java",
+      "sha256": "3c2cc710d62373460d1854f60a7383ec0a5b7969877dbbcb3f5c9b5a0b4c5cbb",
+      "bytes": 34107,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictManager.java",
+      "sha256": "41376372c077030142a6e95385a74f9dde79c3b15d9a4de95cff99f371b44801",
+      "bytes": 45600,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictItemData.java",
+      "sha256": "d44471d8e7d2d732891e79a0f234045a693290e29f3d463dbc79633283d8517f",
+      "bytes": 8695,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2024 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71",
+      "bytes": 17964,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\OP.java",
+      "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+      "bytes": 162128,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2",
+      "bytes": 693183,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\block\\metatype\\BlockColored.java",
+      "sha256": "1445d711ec079bcd32f93b87045b2d81963a4b99d02c504af231a2ab9a80db6e",
+      "bytes": 4217,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\wooddict\\PlankEntry.java",
+      "sha256": "3bd5fbe235cafacd39717d62eeb8fc1604d6984f4a153e71c17a923531983d23",
+      "bytes": 8180,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2022 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\load\\LoaderWoodDictionary.java",
+      "sha256": "55a53e74c6fcddc4894a2e61acb8ea914496a53cc4f9f64e7f78d78eebd8d0e3",
+      "bytes": 127501,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapShredder.java",
+      "sha256": "b963307f82df8cb595f4d0927d969b603f57a792596ec642bb31f6aaee01d1f4",
+      "bytes": 4063,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2024 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\BlockConcrete.java",
+      "sha256": "58649b4da03c17a9d73beb421fca61d11bac057f3e2c3e101e4e0f5a2a3676e6",
+      "bytes": 4282,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2021 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\BlockConcreteReinforced.java",
+      "sha256": "4305ecd760301a9763f309287c965e7c552588cb1e011ba0ec99a95cebeedf82",
+      "bytes": 2900,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2021 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\BlockCFoam.java",
+      "sha256": "6a143ace64dd065d50a7851c8507c493e327f4cfef6e870a665bf1c7b0a7bd03",
+      "bytes": 3339,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2021 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\BlockCFoamFresh.java",
+      "sha256": "d4d1dcf2bef2da7ebee60725bde4e0fd06149745c67356ec3119387f28595c4a",
+      "bytes": 4668,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\blocks\\BlockAsphalt.java",
+      "sha256": "317fdf3650b729b496b0114be6e7c694ef6e5c6484d6833835c36f7a66d477e2",
+      "bytes": 3580,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2021 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393",
+      "bytes": 791265,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team"
+    }
+  ],
+  "adopted_rules": {
+    "CR_REV": "Known ingredient data only; no tools; automatic ore dictionary data for OP.screw.dat(ANY.Iron); sum before integer division by result stack size; keep previous item data.",
+    "components": "Sort merged known amounts descending before per-output flooring. ANY.Iron native identity uses its existing concrete Iron output, never picks one arbitrary matching screw.",
+    "construction": "BlockConcrete/BlockAsphalt 1U full / U/2 slab; BlockColored supplies CFoam/Fresh 1U and CFoam slab U/2. Reinforced Concrete adds OP.stick (U/2) iron.",
+    "panels": "Six screws at U/9 each plus one known input, output six, giving U/9 Iron + U/6 construction/plank per panel.",
+    "scope": "83 panel identities including legacy aliases, six present construction items, missing native GT plank bindings. Existing vanilla plank compositions preserved; their generic modern/original-species identity audit remains separate. No guessing of absent slabs or external plank items.",
+    "recovery": "Reuse existing native RecipeMapShredder bindings and material recovery consumption safeguards. Finite native and ordinary installed verification still pending.",
+    "brittle_recovery_work": "Use the existing original BRITTLE/FOOD tables for RecipeMapShredder work, including foam at 2*(quality+1), not 256*(quality+1). No claim of full remaining STRETCHY/BOUNCY/MEAT/ROTTEN classifier audit."
+  },
+  "language": "No localization resources modified; existing original patch values preserved."
+}
