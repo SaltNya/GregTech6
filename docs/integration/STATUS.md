@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-06 / Applied Energistics 冲压与石英玻璃
+
+第一波接着做 AE2。装了 AE2 和 GuideME 时合成包 4 个文件，机器行 163、解析失败 0；没装时合成包 0、整组跳过。两端 `gregtech_compat` 各 3 项 GameTest（IE、Mekanism、AE2）在有/无 AE2 时通过，带模组的运行里 `/reload` 后仍是 4 个文件、163 行。没有跑专服、客户端或验包。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [验证](VERIFICATION.md)、[账本](compat/ae2.md)。
+
 ## 2026-10-06 / Mekanism 盐块配方
 
 第一波先做 Mekanism。染色目标在 10.4 / 10.7 没有注册名，不生成。装了 Mekanism 时合成包 1 个文件，关掉 `mekanism:storage_blocks/salt`，机器行 0、解析失败 0；没装时合成包 0、整组跳过。两端 `gregtech_compat` 各 2 项 GameTest（IE 样板加这条）在有/无 Mekanism 时通过，带模组的运行里 `/reload` 后盐块配方仍不存在、HDPE 杆配方还在。旧存档、完整生存、专服和客户端没有测。还在本地分支 `compat/mekanism`，没有推送。IE 样板已在 [PR 25](https://github.com/SaltNya/GregTech6/pull/25)。见 [验证](VERIFICATION.md)、[账本](compat/mekanism.md)。

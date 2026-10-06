@@ -1,5 +1,9 @@
 # 验证账本
 
+## 2026-10-06 / Applied Energistics 冲压与石英玻璃
+
+共享契约通过：2718 条断言、31 组，含 AE2 模块的结构检查。Forge 无 AE2：`gregtech_compat` 3 项通过（`BUILD SUCCESSFUL in 9m 47s`），合成包 0 个文件。Forge 带 `-PcompatRuntime=ae`（AE2 `15.4.11`，GuideME `20.1.15`）：3 项通过（`BUILD SUCCESSFUL in 4m 31s`），合成包 4 个文件，机器行 163、未解析 0；测试内 `/reload` 后仍是 4 个文件、163 行，计算压板能印出印刷电路，铁锭切成 3 个线缆锚，赛特斯石英块锤成 4 个宝石，`ae2:decorative/quartz_glass` 不在而 `gregtech:compat/ae2/quartz_glass` 在。NeoForge 无 AE2：3 项通过（`BUILD SUCCESSFUL in 2m 1s`），合成包 0、整组跳过。NeoForge 带 `-PcompatRuntime=ae`（AE2 `19.2.18`，GuideME `21.1.19`）：3 项通过（`BUILD SUCCESSFUL in 2m 18s`），同样 4 个文件、163 行、0 未解析，reload 后仍通过。第一次带 AE2 的 Forge 运行因为缺 GuideME 在加载期失败，补上依赖后才进入上面的通过运行。没有跑专服、客户端或验包。旧存档、完整生存和独立进程重启没有测。没有推送。
+
 ## 2026-10-06 / Mekanism 盐块配方
 
 共享契约通过：2650 条断言、31 组，含 Mekanism 模块的结构检查。Forge 无 Mekanism：`gregtech_compat` 2 项通过（`BUILD SUCCESSFUL in 5m 7s`），合成包 0 个文件，日志写明未加载目标模组。Forge 带 `-PcompatRuntime=mek`（`10.4.16.80`）：2 项通过（`BUILD SUCCESSFUL in 5m 2s`），合成包 1 个文件，机器行 0、未解析 0；测试内 `/reload` 后仍是 1 个文件、0 行，盐块配方不存在且 `mekanism:hdpe_rod` 仍在。NeoForge 无 Mekanism：2 项通过（`BUILD SUCCESSFUL in 2m 7s`），合成包 0、整组跳过。NeoForge 带 `-PcompatRuntime=mek`（`10.7.19.85`）：2 项通过（`BUILD SUCCESSFUL in 3m 1s`），同样 1 个文件、0 行、0 未解析，reload 后仍通过。没有跑专服、客户端或验包。旧存档、完整生存和独立进程重启没有测。没有推送。

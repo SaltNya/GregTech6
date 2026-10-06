@@ -1,5 +1,9 @@
 # 实现选择记录
 
+## 2026-10-06 / Applied Energistics 保留还在的冲压和石英玻璃
+
+`Compat_Recipes_AppliedEnergistics` 对着 Forge `15.4.11` 和 NeoForge `19.2.18` 只留下 jar 里还在的注册名。冲压增加三输入操作；有序合成按原版图案写进合成包，Forge 和 NeoForge 的结果字段继续分开。水晶种子已经不存在，所以没有给机器行加第二种流体。压板复制会在优化时把同一件压板从输入和输出里抵消掉，现有配方表会丢掉这种模具行，因此不生成。下界石英压缩和现有压缩机配方冲突，也不另加。石英玻璃的粉用下界石英粉标签，玻璃只用无色玻璃，都比 AE 原配方窄。硅没有宝石板。天际石整套石头加工、磨粉机桥、假配方和不消耗的激光镜头都不恢复。`-PcompatRuntime=ae` 同时带上 GuideME（Forge `20.1.15`，NeoForge `21.1.19`），因为 AE 强制依赖它。IE 不在场时不再要求全局机器行为 0，别的模组可以有自己的行。见 [账本](compat/ae2.md)。
+
 ## 2026-10-06 / Mekanism 只保留盐块配方删除
 
 `Compat_Recipes_Mekanism` 的八个染色目标（气球、塑料栅栏、发光板、四种塑料方块）在 Forge `10.4.16.80` 和 NeoForge `10.7.19.85` 里都没有对应物品，这些行不生成。还在的是 2×2 `dusts/salt` → `mekanism:block_salt`，配方 id 两边都是 `mekanism:storage_blocks/salt`，用已有的精确 id 删除。不把 Mekanism 的粉、锭、矿做成 GT 的规范形态，也不接 `MekanismAPI`。`-PcompatRuntime=mek` 与 `ie` 分开，一次一个。见 [账本](compat/mekanism.md)。
