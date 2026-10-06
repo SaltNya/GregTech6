@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-06 / Ender IO 引用账本
+
+第一波把 Ender IO 记成推后。56 处 `MD.EIO` / `IL.EIO` 都是归属、规范形态、扳手或材料数据，没有可生成的配方行。没有加运行依赖，没有跑 GameTest。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [账本](compat/enderio.md)。
+
 ## 2026-10-06 / Project Red 硅片和红铁化合物
 
 第一波接着做 Project Red。装了 `projectred_core` 时合成包 4 个文件，机器行 6、解析失败 0；没装时合成包 0、整组跳过。两端 `gregtech_compat` 各 4 项 GameTest（IE、Mekanism、AE2、Project Red）在有/无模组时通过。Forge 带模组时，初次加载和 `/reload` 后各摘掉 1 条仍由后加载数据包提供的红铁配方。NeoForge 带模组时禁用文件已经生效。没有跑专服、客户端或验包。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [验证](VERIFICATION.md)、[账本](compat/projectred.md)。

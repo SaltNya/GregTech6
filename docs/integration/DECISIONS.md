@@ -1,5 +1,9 @@
 # 实现选择记录
 
+## 2026-10-06 / Ender IO 只记引用账本
+
+没有 `Compat_Recipes_EnderIO`。原版引用是合金归属、规范形态、Yeta 扳手，以及储罐和暗铁栏杆的材料数据。这些都不是现有机器行能表达的配方，规范形态这批也不改。不加 `-PcompatRuntime`，不跑 GameTest。见 [账本](compat/enderio.md)。
+
 ## 2026-10-06 / Project Red 保留硅片和红铁化合物
 
 `Compat_Recipes_ProjectRed` 对着 Forge `4.20.0` 和 NeoForge `4.23.0` 留下晶坯锯切、硅片、注红石硅和红铁化合物。`maven.modrinth:project-red-core:4.21.0` 解析出来的是 NeoForge 1.20.4 的 jar，所以 Forge 固定 `4.20.0` 并 `fg.deobf`。开发期还带上两边各自的 CodeChickenLib 和 CB Multipart。红铁化合物的禁用文件放在 TOP，但后注册的模组数据包仍会盖掉它，所以配方管理器应用完之后再按删除名单摘掉仍在的 id。硅片和注红石硅的原配方 id 不删，GT 加的是另一条合成。大理石、玄武岩和 Exploration 不在这批，也不把红石合金、蓝石合金和矿石做成规范形态。见 [账本](compat/projectred.md)。

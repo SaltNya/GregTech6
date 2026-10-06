@@ -1,5 +1,9 @@
 # 验证账本
 
+## 2026-10-06 / Ender IO 引用账本
+
+对着原版源码核对了 `MD.EIO` / `IL.EIO`。没有配方类，也没有一条能用现有机器行表达、且仍然要生成的配方。没有加运行依赖，没有跑 GameTest。旧存档没有测。没有推送。
+
 ## 2026-10-06 / Project Red 硅片和红铁化合物
 
 共享契约通过：2723 条断言、31 组，含 Project Red 模块的结构检查（`BUILD SUCCESSFUL in 4s`）。Forge 无 Project Red：`gregtech_compat` 4 项通过（`BUILD SUCCESSFUL in 3m 57s`），合成包 0 个文件，日志写明未加载目标模组。Forge 带 `-PcompatRuntime=pr`（核心 `4.20.0`，CodeChickenLib `4.4.0.528`，CB Multipart `3.3.0.159`）：游戏日志 `All 4 required tests passed`，进程 13m 13s 退出码 0。合成包 4 个文件，机器行 6、未解析 0；晶坯加水冷剂切成 16 个硅片，`projectred_core:red_iron_comp` 不在而 `gregtech:compat/projectred/red_iron_comp` 和 `gregtech:compat/projectred/silicon` 在。初次加载和测试内 `/reload` 后各摘掉 1 条仍由后加载数据包提供的配方，行数仍是 6。这次 Gradle 摘要被注册表调试日志截断，以上计数来自游戏日志。NeoForge 无 Project Red：4 项通过（`BUILD SUCCESSFUL in 1m 58s`），合成包 0、整组跳过。NeoForge 带 `-PcompatRuntime=pr` 的第一次运行因离线缓存里没有 `4.23.0`、CodeChickenLib `4.6.1.529` 和 CB Multipart `3.5.0.155` 而失败；在线重跑后 4 项通过（`BUILD SUCCESSFUL in 2m 41s`），同样 4 个文件、6 行、0 未解析，reload 后仍通过，禁用文件已经生效所以没有再摘。没有跑专服、客户端或验包。旧存档、完整生存和独立进程重启没有测。没有推送。
