@@ -139,7 +139,7 @@ def port_tier_counts() -> dict[str, int]:
     src = (JAVA / "content/machine/BasicMachineCatalog.java").read_text(encoding="utf-8")
     known = {"HU_TIERS": 4, "RU_KU_TIERS": 4, "EU_MU_LU_CU_TIERS": 5, "SS": 1}
     counts: dict[str, int] = {}
-    for m in re.finditer(r'new MachineDef\("([a-z_0-9]+)",\s*"(\w+)",\s*([^,]+?),\s*m ->', src):
+    for m in re.finditer(r'new MachineDef\("([a-z_0-9]+)",\s*"(\w+)",\s*(\w+|new GTMaterial\[\]\{[^}]+\})(?:,\s*\d+)?\)', src):
         name, tier_expr = m.group(1), m.group(3).strip()
         if tier_expr in known:
             counts[name] = known[tier_expr]
