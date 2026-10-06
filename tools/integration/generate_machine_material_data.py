@@ -322,6 +322,9 @@ def main():
     bindings.update({10050: 'solar_panel_silicon', 10051: 'solar_panel_germanium',
                      1512: 'steam_turbine_bronze', 1515: 'steam_turbine_brass', 1518: 'steam_turbine_invar',
                      1522: 'steam_turbine_steel', 1525: 'steam_turbine_chromium'})
+    bindings.update({1527: 'steam_turbine_ironwood', 1528: 'steam_turbine_steeleaf', 1529: 'steam_turbine_thaumium',
+                     1530: 'steam_turbine_titanium', 1531: 'steam_turbine_fiery_steel', 1535: 'steam_turbine_aluminium',
+                     1538: 'steam_turbine_magnalium', 1540: 'steam_turbine_void_metal', 1545: 'steam_turbine_trinitanium', 1548: 'steam_turbine_graphene'})
     bindings.update({32735: 'mortar_block', 32094: 'mortar_netherite', 32075: 'mortar_sapphire',
                      32076: 'mortar_diamond', 32089: 'mortar_amethyst', 32703: 'grindstone_block',
                      32702: 'sifting_table', 32706: 'mixing_bowl', 32705: 'mixing_bowl_table',
