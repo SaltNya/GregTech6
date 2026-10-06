@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-06 / PneumaticCraft 引用账本
+
+第一波把 PneumaticCraft 记成推后。4 处 `MD.PnC` 都是压缩铁的归属或规范形态，没有可生成的配方行。没有加运行依赖，没有跑 GameTest。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [账本](compat/pneumaticcraft.md)。
+
 ## 2026-10-06 / Ender IO 引用账本
 
 第一波把 Ender IO 记成推后。56 处 `MD.EIO` / `IL.EIO` 都是归属、规范形态、扳手或材料数据，没有可生成的配方行。没有加运行依赖，没有跑 GameTest。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [账本](compat/enderio.md)。

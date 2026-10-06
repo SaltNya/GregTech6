@@ -1,5 +1,9 @@
 # 实现选择记录
 
+## 2026-10-06 / PneumaticCraft 只记引用账本
+
+没有 `Compat_Recipes_PneumaticCraft`。`MD.PnC` 只有压缩铁的材料归属，以及锭、块、齿轮三处规范形态。源码里没有对应的书本登记或爆炸抗性赋值。这些都不是现有机器行，规范形态这批也不改。不加 `-PcompatRuntime`，不跑 GameTest。见 [账本](compat/pneumaticcraft.md)。
+
 ## 2026-10-06 / Ender IO 只记引用账本
 
 没有 `Compat_Recipes_EnderIO`。原版引用是合金归属、规范形态、Yeta 扳手，以及储罐和暗铁栏杆的材料数据。这些都不是现有机器行能表达的配方，规范形态这批也不改。不加 `-PcompatRuntime`，不跑 GameTest。见 [账本](compat/enderio.md)。
