@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "baseline_commit": "3fbbc442",
+  "scope": "Ten source pipe prefixes are metadata only; all prior material/name/form observations retained",
+  "stages": {
+    "definitions": {
+      "before_sha256": "e519e84e813110ee84ffdef0c867fd116b51beb697239fbe4b0f71967fb3fe77",
+      "after_sha256": "9c743d9d39c4e41d11279f99d32b173208b40456ee4884a00a12853dd4468146",
+      "unchanged_rows": 144325,
+      "added_prefix_rows": [
+        "P|pipeHuge|pipe_huge|Huge Pipe|pipehuge|true|0.0|7783776000",
+        "P|pipeLarge|pipe_large|Large Pipe|pipelarge|true|0.0|3891888000",
+        "P|pipeMedium|pipe_medium|Pipe|pipemedium|true|0.0|1945944000",
+        "P|pipeNonuple|pipe_nonuple|Nonuple Pipe|pipenonuple|true|0.0|5837832000",
+        "P|pipeQuadruple|pipe_quadruple|Quadruple Pipe|pipequadruple|true|0.0|7783776000",
+        "P|pipeRestrictiveHuge|pipe_restrictive_huge|Restrictive Huge Pipe|piperestrictivehuge|true|0.0|7783776000",
+        "P|pipeRestrictiveLarge|pipe_restrictive_large|Restrictive Large Pipe|piperestrictivelarge|true|0.0|3891888000",
+        "P|pipeRestrictiveMedium|pipe_restrictive_medium|Restrictive Pipe|piperestrictivemedium|true|0.0|1945944000",
+        "P|pipeSmall|pipe_small|Small Pipe|pipesmall|true|0.0|648648000",
+        "P|pipeTiny|pipe_tiny|Tiny Pipe|pipetiny|true|0.0|324324000"
+      ],
+      "added_nongenerating_form_rows": 11600,
+      "removed_rows": 0
+    },
+    "post": {
+      "before_sha256": "edc49979538c7dddd7309a59d27109744a697e1c9aaa85295b875a864240e409",
+      "after_sha256": "149d06616708c6871e2b0622fad173acb56f801406875b03a277eb611a0f1efe",
+      "unchanged_rows": 144325,
+      "added_prefix_rows": [
+        "P|pipeHuge|pipe_huge|Huge Pipe|pipehuge|true|0.0|7783776000",
+        "P|pipeLarge|pipe_large|Large Pipe|pipelarge|true|0.0|3891888000",
+        "P|pipeMedium|pipe_medium|Pipe|pipemedium|true|0.0|1945944000",
+        "P|pipeNonuple|pipe_nonuple|Nonuple Pipe|pipenonuple|true|0.0|5837832000",
+        "P|pipeQuadruple|pipe_quadruple|Quadruple Pipe|pipequadruple|true|0.0|7783776000",
+        "P|pipeRestrictiveHuge|pipe_restrictive_huge|Restrictive Huge Pipe|piperestrictivehuge|true|0.0|7783776000",
+        "P|pipeRestrictiveLarge|pipe_restrictive_large|Restrictive Large Pipe|piperestrictivelarge|true|0.0|3891888000",
+        "P|pipeRestrictiveMedium|pipe_restrictive_medium|Restrictive Pipe|piperestrictivemedium|true|0.0|1945944000",
+        "P|pipeSmall|pipe_small|Small Pipe|pipesmall|true|0.0|648648000",
+        "P|pipeTiny|pipe_tiny|Tiny Pipe|pipetiny|true|0.0|324324000"
+      ],
+      "added_nongenerating_form_rows": 11600,
+      "removed_rows": 0
+    }
+  }
+}

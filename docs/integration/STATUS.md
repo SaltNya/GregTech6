@@ -564,3 +564,14 @@ Java25正式安装加载器Forge47.4.26/Neo21.1.252隔离主菜单自启动分�
 用户报告的 [Actions 37476658478](https://github.com/SaltNya/GregTech6/actions/runs/37476658478) 两个平台都在共享 MaterialBehaviorContracts 的完整定义指纹失败；聚合失败为后续结果。公开 jobs/check annotations 已读，无远程写入。按原分子材料批次恢复的 UUM 标记没有同步既有 golden。对比旧原完整快照与已提交 c6a352d4 的完整 core，定义及 postInit 每阶段仅578条材料记录新增UUM，143747观察值保持不变；所有其余字段、别名及前缀形态行相同。本次没有 LIQUID 差异，不能把汞作为这个 CI 故障的原因。保留全量快照、数量及行为断言，更新两个指纹。
 
 精确 HEAD core 源单独编译（JDK21、release17）运行四核心入口：2472/7947/53/34断言及1212木材断言通过；首轮单独夹具漏 test TSV 资源导致NPE，补 classpath 后正常。它们不证明 GitHub runner 已重跑，也不替代双版成品启动；管道新修改仍在工作区继续，未混入此独立 CI 提交。完整差异见 [ci-material-differential-20261006.json](verification/ci-material-differential-20261006.json)。未推送，PR按用户要求暂不处理，整体 goal active。
+
+
+## 2026-10-06 / 管道、普通储罐材料与原版合成入口
+
+两版共用 TransportMaterialRules/TransportCraftingCatalog，恢复280流体管与126物品管的原 OP 前缀和精准物质量（流体七规格0.5/1/3/6/12/12/9U，物品及限制管3/6/12U）；元数据不生成额外前缀物品。源 setTarget_ 最终覆盖无前缀 REV 数据，因此限制管回收不额外给钢圈，实际合成仍消耗3/4/5个 ANY.Steel 钢圈。
+
+补回80束管组合与80拆分、修正微型金属管手工产量为1（焊接仍2），限制管改为同材质同尺寸普通物品管。保留已有五种 Wood 手工资源，按源 aRecipe=false 撤去 WoodTreated/Plastic/Rubber/Carbon 的错误通用手工行；不借此声称这些材料全部已有完整机器生产链。8原木桶和21金属桶有手工入口，30审过普通储罐的材料登记为木桶4U木材+2U铁、金属桶6U、塑料罐原显式3U。ANY.MagicIron 原回收输出铁，与 ANY.Iron一致。原 Skyroot 的现有等价木板形式可合成，但真实外部 plankSkyroot 提供方尚未验收。
+
+436原生运输物品加入既有安全粉碎入口及坩埚输入，共490共享合成描述。组合/拆分/限制管与网络序列化保持存储数据保护，禁止吞带BlockEntity存储内容的物品。继承的泛 Wood 桶和物流储罐配方材料仍待单独审核（不把1U估计算完成），源首选 pipe unification targets/GTItems绑定和所有分子展示行未以此次元数据恢复而冒称完成。14只读源文件、作者/LGPL、规则及未覆盖范围见 [transport-material-source-20261006.json](verification/transport-material-source-20261006.json)。完整域差异保留全部144325旧行，仅新增10元数据前缀及11600个false形态行，见 [transport-material-differential-20261006.json](verification/transport-material-differential-20261006.json)。语言文件未改。
+
+限定原生三类场景两版各3项通过，正常保存退出0，6m7s；490实际合成/工具损耗/同步、436精确回收、坩埚输入及存储保护有证据。首轮夹具泛型编译失败，第二轮Forge两例通过、合成例末尾把两种拆分误计为一种导致数量断言失败并终止，没有跑Neo；修正为80后最终双版全过。4共享核心入口通过，132前缀检查仍保留完整域指纹。最后将钢/钨桶两个表数据入口改用源 ANY.Steel/W，复用已被限制管及木桶验证的组转换器；这两项组输入在成品探针另做实际谓词断言，未重复全限定服务器。普通构建、验包、成品自启动待终态回执，完整生存、自然机器操作、独立存档重启和旧档兼容未验收。整个goal active；PR暂不处理，只有明确获批的3fbbc442已推送，运输移植本地继续。

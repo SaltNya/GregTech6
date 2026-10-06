@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-06",
+  "scope": "finite native composition,490 craft rows,436 shredding inputs; regular artifact and installed launch pending",
+  "status": "native-passed",
+  "attempts": [
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\transport-material-20261006-native.log",
+      "sha256": "614d810c91cf6afc030c50dff8f0723ca0c04e167acc8599317134b74cd83f14",
+      "required_tests_passed": [],
+      "finish": [
+        "BUILD FAILED in 46s"
+      ],
+      "first_failure": "C:\\Dev\\GregTech6\\src\\bootstrapGameTest\\java\\com\\gregtech\\gregtech\\gametest\\TransportMaterialPortTests.java:39: error: incompatible types: CraftingContainer cannot be converted to CAP#1"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\transport-material-20261006-native-fixed.log",
+      "sha256": "8146c8ce862d8a6ad25a32a0bed095b7680296bd9191a785a790353a50289260",
+      "required_tests_passed": [],
+      "finish": [
+        "BUILD FAILED in 2m 33s"
+      ],
+      "first_failure": "[22:24:05] [Server thread/ERROR] [minecraft/LogTestReporter]: nativetransportcraftingusessourcecountstoolsandpayloadguards failed! all 21 restrictive families and 40 unpack families"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\transport-material-20261006-native-final.log",
+      "sha256": "e5e329052978142bfa3901c220f9d3d4a053cf94e1e79b9e740b8e7c6d1a1ce0",
+      "required_tests_passed": [
+        "3",
+        "3"
+      ],
+      "finish": [
+        "BUILD SUCCESSFUL in 6m 7s"
+      ],
+      "first_failure": "[22:27:25] [main/DEBUG] [ne.mi.re.ForgeRegistry/REGISTRIES]: Registry minecraft:fluid: Fixed minecraft:fluid id mismatch gregtech:error: 1645 (init) -> 23 (map)."
+    }
+  ],
+  "remaining": [
+    "original generic Wood/logistics hull data",
+    "pipe preferred-target binding and complete scanner display rows",
+    "plastic/treated-wood/rubber/carbon full production survival chains",
+    "real optional mod providers",
+    "independent saved-world restart",
+    "old-save migration"
+  ]
+}
