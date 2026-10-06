@@ -690,17 +690,19 @@
       }
     ],
     "static_import_attempt": "Initial script assumed24 literal selectors/layer0 names; current twelve wildcards cover waterlogged states and existing colored/overlay children. Corrected before language/order writes.",
-    "ordinary_dual_build_this_batch": false,
-    "runtime_probe": false,
-    "runtime_world_fixtures": false,
-    "saved_world_restart": false
+    "ordinary_dual_build_this_batch": true,
+    "runtime_probe": true,
+    "runtime_world_fixtures": true,
+    "saved_world_restart": false,
+    "ordinary_packages_and_installed_client": "passed pooled delivery; see converter-pooled-delivery-20261007.json",
+    "native_world": "Each platform two corresponding fixtures passed within six-test pool; see converter-pooled-runtime-20261007.json",
+    "source_and_asset_references_rechecked_after_startup": 262
   },
   "pending": [
-    "Pooled ordinary JAR / CRC / current-class checks / actual installed Loader startup and240 magnet baked states.",
-    "Two prepared finite native tests/platform: real MU receivers / FE / legacy method loads; ten recipes / synchronization / recovery.",
     "Historical world compatibility and independent restart, full survival, dedicated server, physical tooltip hover.",
     "Source blinking reminder, generic harvest/fire/ownership/cover tooltip lines, configuration and saved rated-stat overrides, structural checks.",
-    "Other blocks / material records and source-complete turbine families; actual Steam200L-per-water and motor/turbine controls not yet ported."
+    "Other engine/turbine families and remaining blocks/material records. Fifteen small steam turbines and local200L-per-water rule subsequently ported in e97e9b86; see its source ledger."
   ],
-  "publication": "Local commit only; no push or PR. Overall goal remains active."
+  "publication": "Local commit only; no push or PR. Overall goal remains active.",
+  "delivery_ledger": "converter-pooled-delivery-20261007.json"
 }

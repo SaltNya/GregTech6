@@ -25,3 +25,5 @@
 按用户要求，普通双JAR、当前class/CRC验包、正式Loader自启动与限定游戏场景继续多轮合并。最后已验收包仍 `build/verified/20261006-211017Z-dc39ad68`，不包含热能或本轮磁铁修改。没有安装用户实例或交付新成品。
 
 全方块其余专属提示/材料、原闪烁/采集/火焰/所有者/覆盖通用行、原配置和保存额定参数、默认结构检查、蒸汽轮机完整原变种与200L蒸汽凝水、完整生存/专服/物理悬停/独立重启/历史档仍待续。
+
+Pooled ordinary-JAR and installed-loader acceptance passed at code12010bfa. Both native fixture pairs passed in the six-test pool; ordinary distribution methods/factories/tooltips/baked states verified separately. See [pooled delivery](converter-pooled-delivery-20261007.json) for package hashes, finite scopes, all runtime attempts and remaining boundaries. Goal active; local only.

@@ -976,16 +976,18 @@
       }
     ],
     "native_patch_attempt": "Forge native files completed; Neo load API takes HolderLookup argument. Adapted the patch before writing Neo files.",
-    "ordinary_dual_build_this_batch": false,
-    "runtime_probe": false,
-    "runtime_world_fixtures": false,
-    "saved_world_restart": false
+    "ordinary_dual_build_this_batch": true,
+    "runtime_probe": true,
+    "runtime_world_fixtures": true,
+    "saved_world_restart": false,
+    "ordinary_packages_and_installed_client": "passed pooled delivery; see converter-pooled-delivery-20261007.json",
+    "native_world": "Each platform two corresponding fixtures passed within six-test pool; see converter-pooled-runtime-20261007.json",
+    "source_and_asset_references_rechecked_after_startup": 262
   },
   "pending": [
-    "Pooled ordinary dual JAR/CRC/current classes and actual installed loader starts; thermal/magnet/turbine baked models and tooltip methods.",
-    "Prepared world fixtures: actual steam-to-dynamo-to-complete battery; sided condensate, cached rotation, stopped pending/reverse/plunger; all fifteen native crafting rows, synchronization and recovery.",
     "Full survival, independent world restart, historical saves, dedicated server and actual player hover.",
     "Other engine/turbine families, universal block tooltip/material gaps and source configuration/rated-save overrides."
   ],
-  "publication": "Local commit only; no push or PR; overall goal active."
+  "publication": "Local commit only; no push or PR; overall goal active.",
+  "delivery_ledger": "converter-pooled-delivery-20261007.json"
 }

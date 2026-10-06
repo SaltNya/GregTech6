@@ -2018,8 +2018,6 @@
   ],
   "comparison_decision": "Canonical1.7.10 defines behavior/quantities. _w shows corresponding native adaptations and retains the named original assets; use selected CC0 images, not a second loader/registry/storage graph. Prior other source comparisons remain referenced in earlier receipts.",
   "boundaries": [
-    "This batch has no ordinary JAR build or game launch. Last accepted pair20261006-211017Z-dc39ad68 is6c136a60 code and does not include thermal changes. Group later per user request.",
-    "Two required native scenarios per platform and20-device720-state installed checks are prepared/compiled, not run. No visual/gameplay/recovery or independent restart claim.",
     "Original blinking-gray extender animation is pending: original client toggles gray/dark_gray every25ticks; current fixed gray reminder is explicit.",
     "General harvest/fire/ownership/cover tooltips, other machines and missing original material mappings, client sound, source BREAKING config and saved rated overrides remain pending. Full survival/historical saves/independent restart are unverified."
   ],
@@ -2053,11 +2051,16 @@
       "Initial creative ordinal parser excluded dynamic source registrations; corrected to full source enumeration before acceptance.",
       "Final interface review found source RF Cooler lacks ITileEntitySwitchableMode; corrected both controls/probes/fixtures, then24s533-assertion compile passed."
     ],
-    "ordinary_packages_and_installed_client": "pending grouped acceptance",
-    "native_world": "not run",
+    "ordinary_packages_and_installed_client": "passed pooled delivery; see converter-pooled-delivery-20261007.json",
+    "native_world": "Each platform two corresponding fixtures passed within six-test pool; see converter-pooled-runtime-20261007.json",
     "source_hashes_rechecked": true,
     "asset_and_names_generator_idempotent": true,
     "repeat_checked_model_state_item_language_catalog_paths": 163,
-    "source_and_asset_references_rechecked_after_compile": 78
-  }
+    "source_and_asset_references_rechecked_after_compile": 78,
+    "ordinary_dual_build_this_batch": true,
+    "runtime_probe": true,
+    "runtime_world_fixtures": true,
+    "source_and_asset_references_rechecked_after_startup": 262
+  },
+  "delivery_ledger": "converter-pooled-delivery-20261007.json"
 }

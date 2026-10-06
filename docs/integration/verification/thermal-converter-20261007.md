@@ -26,3 +26,5 @@
 按用户要求，普通双版打包、验包、成品自启动与新有限场景留待后续批次合并。最后已验收对为 `C:/Dev/GregTech6/build/verified/20261006-211017Z-dc39ad68`，源码6c136a60，不含本批热能修改。
 
 原延长器提示在客户端每25 tick切换灰/暗灰；本批文本与固定灰色接入，闪烁仍待续。通用采集/火焰/所有者/覆盖状态、其余机器专属提示与缺失材料、声音、source BREAKING 配置及保存额定覆盖继续推进。完整自然调度生存链、玩家悬停截图、成品真实回收、独立世界重启及历史存档兼容仍未验收。
+
+Pooled ordinary-JAR and installed-loader acceptance passed at code12010bfa. Both native fixture pairs passed in the six-test pool; ordinary distribution methods/factories/tooltips/baked states verified separately. See [pooled delivery](converter-pooled-delivery-20261007.json) for package hashes, finite scopes, all runtime attempts and remaining boundaries. Goal active; local only.
