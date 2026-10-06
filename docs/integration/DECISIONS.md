@@ -1,5 +1,9 @@
 # 实现选择记录
 
+## 2026-10-06 / Project Red 保留硅片和红铁化合物
+
+`Compat_Recipes_ProjectRed` 对着 Forge `4.20.0` 和 NeoForge `4.23.0` 留下晶坯锯切、硅片、注红石硅和红铁化合物。`maven.modrinth:project-red-core:4.21.0` 解析出来的是 NeoForge 1.20.4 的 jar，所以 Forge 固定 `4.20.0` 并 `fg.deobf`。开发期还带上两边各自的 CodeChickenLib 和 CB Multipart。红铁化合物的禁用文件放在 TOP，但后注册的模组数据包仍会盖掉它，所以配方管理器应用完之后再按删除名单摘掉仍在的 id。硅片和注红石硅的原配方 id 不删，GT 加的是另一条合成。大理石、玄武岩和 Exploration 不在这批，也不把红石合金、蓝石合金和矿石做成规范形态。见 [账本](compat/projectred.md)。
+
 ## 2026-10-06 / Applied Energistics 保留还在的冲压和石英玻璃
 
 `Compat_Recipes_AppliedEnergistics` 对着 Forge `15.4.11` 和 NeoForge `19.2.18` 只留下 jar 里还在的注册名。冲压增加三输入操作；有序合成按原版图案写进合成包，Forge 和 NeoForge 的结果字段继续分开。水晶种子已经不存在，所以没有给机器行加第二种流体。压板复制会在优化时把同一件压板从输入和输出里抵消掉，现有配方表会丢掉这种模具行，因此不生成。下界石英压缩和现有压缩机配方冲突，也不另加。石英玻璃的粉用下界石英粉标签，玻璃只用无色玻璃，都比 AE 原配方窄。硅没有宝石板。天际石整套石头加工、磨粉机桥、假配方和不消耗的激光镜头都不恢复。`-PcompatRuntime=ae` 同时带上 GuideME（Forge `20.1.15`，NeoForge `21.1.19`），因为 AE 强制依赖它。IE 不在场时不再要求全局机器行为 0，别的模组可以有自己的行。见 [账本](compat/ae2.md)。

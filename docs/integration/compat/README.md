@@ -2,9 +2,9 @@
 
 共享规格在 `core` 的 `content/compat`。平台只解析注册名、标签和 GT 形态，不引用第三方模组的类。目标模组没装时整组跳过，打一行日志，配方数量不变。装了模组但某个登记过的注册名找不到时，这一行不生成，按来源行号计数，不生成空气产物。
 
-机器行在 `TagsUpdatedEvent`（`shouldUpdateStaticData()`）先清掉本批加过的对象再重建，`ServerStoppedEvent` 时清空。合成表新增和按配方 id 删除走内存数据包，位置在 TOP。Forge 用 `forge:false`，NeoForge 用 `neoforge:false`。不改 `GregTech.java` / `GregTechNeoForge.java`。检测用现代 mod id 问 `ModList`，不用 `ModReferences`。
+机器行在 `TagsUpdatedEvent`（`shouldUpdateStaticData()`）先清掉本批加过的对象再重建，`ServerStoppedEvent` 时清空。合成表新增和按配方 id 删除走内存数据包，位置在 TOP。Forge 用 `forge:false`，NeoForge 用 `neoforge:false`。后注册的模组数据包仍可能盖掉这份删除文件，所以配方管理器应用完之后，`AddReloadListenerEvent` 再按删除名单摘掉仍在的配方 id。不改 `GregTech.java` / `GregTechNeoForge.java`。检测用现代 mod id 问 `ModList`，不用 `ModReferences`。
 
-开发期运行依赖用 `-PcompatRuntime=<id>`，默认关闭，不打进成品。一次只能开一个：`ie`、`mek` 或 `ae`。
+开发期运行依赖用 `-PcompatRuntime=<id>`，默认关闭，不打进成品。一次只能开一个：`ie`、`mek`、`ae` 或 `pr`。
 
 每条原版引用的分类、来源文件 SHA-256、版权和现代目标在对应 JSON 里。人工说明放同目录的 markdown。
 
@@ -20,13 +20,17 @@
 
 见 [ae2.md](ae2.md)。冲压、切割、压缩、砸块和两张石英玻璃有序合成还在。磨粉机桥、假配方、水晶种子、天际石加工和压板复制不生成。开发期还要带上 AE 强制依赖的 GuideME。
 
+## Project Red
+
+见 [projectred.md](projectred.md)。硅晶坯锯切、硅片和注红石硅的有序合成，以及红铁化合物的替换还在。大理石和玄武岩的石头加工推后，Exploration 不加运行依赖。Forge 固定 `4.20.0` 并 `fg.deobf`，因为 `4.21.0` 会解析成另一边的 jar。
+
 ## 之后
 
 全量账本还没有。上面的 150 处是手工对着原版源码分类的，不是参数化扫描。扫描工具要覆盖 59 个 `Compat_Recipes_*` 和散落引用，单独做。
 
 数据侧按同一模板分批。Immersive Engineering 那次没有做下面这些；Mekanism 只做了盐块配方删除：
 
-- 第一波双版：Mekanism 只做了盐块配方删除；AE2 做了还在的冲压、切割、压缩、砸块和石英玻璃。Project Red、Ender IO、PneumaticCraft、Storage Drawers 还没做。
+- 第一波双版：Mekanism 只做了盐块配方删除；AE2 做了还在的冲压、切割、压缩、砸块和石英玻璃；Project Red 做了硅片锯切和三张有序合成。Ender IO、PneumaticCraft、Storage Drawers 还没做。
 - 第二波大内容：HarvestCraft 2、Biomes O' Plenty、暮色森林、Aether、Tropicraft、Railcraft Reborn。
 - 单平台批次另开，不挡住另一边。
 - 深层附属各自独立 jar：Forestry CE、CC:Tweaked、BuildCraft CE。

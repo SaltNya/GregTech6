@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-06 / Project Red 硅片和红铁化合物
+
+第一波接着做 Project Red。装了 `projectred_core` 时合成包 4 个文件，机器行 6、解析失败 0；没装时合成包 0、整组跳过。两端 `gregtech_compat` 各 4 项 GameTest（IE、Mekanism、AE2、Project Red）在有/无模组时通过。Forge 带模组时，初次加载和 `/reload` 后各摘掉 1 条仍由后加载数据包提供的红铁配方。NeoForge 带模组时禁用文件已经生效。没有跑专服、客户端或验包。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [验证](VERIFICATION.md)、[账本](compat/projectred.md)。
+
 ## 2026-10-06 / Applied Energistics 冲压与石英玻璃
 
 第一波接着做 AE2。装了 AE2 和 GuideME 时合成包 4 个文件，机器行 163、解析失败 0；没装时合成包 0、整组跳过。两端 `gregtech_compat` 各 3 项 GameTest（IE、Mekanism、AE2）在有/无 AE2 时通过，带模组的运行里 `/reload` 后仍是 4 个文件、163 行。没有跑专服、客户端或验包。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [验证](VERIFICATION.md)、[账本](compat/ae2.md)。
