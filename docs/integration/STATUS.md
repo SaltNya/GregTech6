@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-06 / Storage Drawers 引用账本
+
+第一波把 Storage Drawers 记成推后。17 处 `MD.SD` 都是书本登记或木头材质，没有可生成的配方行。JABBA 的木桶锯切没有算进来。没有加运行依赖，没有跑 GameTest。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [账本](compat/storagedrawers.md)。
+
 ## 2026-10-06 / PneumaticCraft 引用账本
 
 第一波把 PneumaticCraft 记成推后。4 处 `MD.PnC` 都是压缩铁的归属或规范形态，没有可生成的配方行。没有加运行依赖，没有跑 GameTest。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [账本](compat/pneumaticcraft.md)。

@@ -32,13 +32,17 @@
 
 见 [pneumaticcraft.md](pneumaticcraft.md)。没有配方类。压缩铁的归属和锭、块、齿轮规范形态都推后。不加运行依赖。
 
+## Storage Drawers
+
+见 [storagedrawers.md](storagedrawers.md)。没有配方类。书本登记和木头材质都推后。JABBA 的木桶锯切不算进这里。不加运行依赖。
+
 ## 之后
 
 全量账本还没有。上面的 150 处是手工对着原版源码分类的，不是参数化扫描。扫描工具要覆盖 59 个 `Compat_Recipes_*` 和散落引用，单独做。
 
 数据侧按同一模板分批。Immersive Engineering 那次没有做下面这些；Mekanism 只做了盐块配方删除：
 
-- 第一波双版：Mekanism 只做了盐块配方删除；AE2 做了还在的冲压、切割、压缩、砸块和石英玻璃；Project Red 做了硅片锯切和三张有序合成。Ender IO 和 PneumaticCraft 只写了账本。Storage Drawers 还没做。
+- 第一波双版：Mekanism 只做了盐块配方删除；AE2 做了还在的冲压、切割、压缩、砸块和石英玻璃；Project Red 做了硅片锯切和三张有序合成。Ender IO、PneumaticCraft、Storage Drawers 只写了账本，没有运行依赖。
 - 第二波大内容：HarvestCraft 2、Biomes O' Plenty、暮色森林、Aether、Tropicraft、Railcraft Reborn。
 - 单平台批次另开，不挡住另一边。
 - 深层附属各自独立 jar：Forestry CE、CC:Tweaked、BuildCraft CE。
