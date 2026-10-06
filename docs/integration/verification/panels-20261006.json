@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-06",
+  "goal": "active",
+  "static": {
+    "models": 83,
+    "recipes": 78,
+    "same_color_rows": 48,
+    "wood_rows": 30,
+    "image_files": 19,
+    "patch_bindings": 83,
+    "result": "passed"
+  },
+  "native": {
+    "platforms": [
+      "forge-1.20.1",
+      "neoforge-1.21.1"
+    ],
+    "scenarios_per_platform": 3,
+    "result": "passed",
+    "elapsed": "7m31s",
+    "log": "C:\\Dev\\GregTech6\\work\\panels-20261006-native-cache-fixed.log",
+    "log_sha256": "ad32801491e2ade04860c8e6c55babf0164cb82cb9ec7e118ec6492b08b0ee91",
+    "recipe_rows_per_platform": 78,
+    "source_color_rows": 48,
+    "wood_rows": 30,
+    "cover_identities_per_platform": 83,
+    "iron_tag_native_positive_members": 4,
+    "copper_negative": true,
+    "network_recipe_color_roundtrip": true,
+    "source_preview_ingredient_colors": true,
+    "normal_world_save_exit": true,
+    "cover_saved_data_tag_roundtrip": true,
+    "independent_world_content_restart": false,
+    "scope": "Provided inputs and native matching/assemble/remains, held fake survival player attachment/crowbar, source walk-entry invocation; not full survival/player UI"
+  },
+  "intermediate_attempts": [
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\panels-20261006-native.log",
+      "sha256": "8fd3bc9f191b237c24f99175261ec031b282ea27445b6d1fe684afa4e5ce0bc5",
+      "result": "failed",
+      "note": "Forge 2 pass; recipe failed"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\panels-20261006-native-diagnostic.log",
+      "sha256": "c29dfc24531c0a79ab12875d3b9d0b055b446ba87ae452c29abe2174a34e2fb9",
+      "result": "failed",
+      "note": "Screw slots failed; actual black color correct"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\panels-20261006-native-fixed.log",
+      "sha256": "e458318e2555043b0cce2c5a74a895ae0060e21a291acafd43e046922a554ebc",
+      "result": "interrupted",
+      "note": "Fixture registry spelling corrected; confirmed owned process exited"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\panels-20261006-native-final.log",
+      "sha256": "64fd96eb3c7f168724a390ce0a61d75f1a593a77d3ea86f6707ba509631472b6",
+      "result": "failed",
+      "note": "Four direct tag members passed; recipe cached tag still empty; removed unneeded tag mutation"
+    }
+  ],
+  "unverified": [
+    "source CR.REV automatic composition bookkeeping",
+    "complete survival",
+    "independent process world content restart",
+    "old-save migration",
+    "player JEI/EMI UI",
+    "installed world-face rendering",
+    "real external Enori provider"
+  ]
+}
