@@ -1,0 +1,49 @@
+{
+  "status": "partial_batch_verified_development",
+  "goalStatus": "active",
+  "scope": "16-color canvas and visual block scan/print; not full migration acceptance",
+  "nativeFinal": {
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\canvas-20261006-tests-2.log",
+      "bytes": 775957,
+      "sha256": "125979c8484090e5cee4e42c2fb27d553708ae4297a08344089fb9a6e61ea9b9"
+    },
+    "forgeRequiredPassed": 3,
+    "neoRequiredPassed": 3,
+    "duration": "3m40s",
+    "exitCode": 0,
+    "coreAssertions": 2472,
+    "newCoreAssertions": 7
+  },
+  "initialAttempt": {
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\canvas-20261006-tests-1.log",
+      "bytes": 216047,
+      "sha256": "e1c83f08501347b0525808857ed9e8a058054e9999537cfc26f0929dda232c6c"
+    },
+    "forgeRequiredPassed": 3,
+    "neo": "compile fixture references Forge registries; corrected",
+    "exitCode": 1
+  },
+  "initialCompile": {
+    "log": {
+      "path": "C:\\Dev\\GregTech6\\work\\canvas-20261006-compile.log",
+      "bytes": 32960,
+      "sha256": "93617ebb71c416702f3999ffa0489ee2cbd377268cee3941613a3f3dc58907cc"
+    },
+    "exitCode": 0
+  },
+  "sourceLedger": "docs/integration/verification/canvas-source-20261006.json",
+  "production": "pending",
+  "notVerified": [
+    "full survival chain",
+    "natural elapsed-tick machine powering",
+    "client login / multiplayer actions",
+    "independent saved-world restart",
+    "user old save",
+    "all custom block models and property variants",
+    "actual JEI/EMI page interactions",
+    "external IC2 Obscurator compatibility",
+    "complete book/map/schematic scan/print"
+  ]
+}

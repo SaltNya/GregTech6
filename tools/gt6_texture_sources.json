@@ -7426,5 +7426,73 @@
   "textures/block/machines/covers/warning/19.png": {
     "source": "src/main/resources/assets/gregtech/textures/blocks/machines/covers/warning/19.png",
     "sha256": "f37580f3f1f5846e46b0fdfa528fb8dfe1c6d0f75ba314127b1bf70781256a10"
+  },
+  "textures/item/canvas/black.png": {
+    "sha256": "2b007193dda5618efd6d7223113da83e34cd9ec610796272cf948c77cb3d7381",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7030.png"
+  },
+  "textures/item/canvas/red.png": {
+    "sha256": "7a037da9a1e0a35cf814a648e547ea0cafbc4ae4b8de85b586bfc65a7a62a80d",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7031.png"
+  },
+  "textures/item/canvas/green.png": {
+    "sha256": "a0256103a1106241ab6ff402c8865d2db9953a31baff9dd8daedc4b11c4ddfcb",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7032.png"
+  },
+  "textures/item/canvas/brown.png": {
+    "sha256": "a90f9654217c4db6e4c23755c1150228a5a01b2e4e6e4b00d0a732f3878244b8",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7033.png"
+  },
+  "textures/item/canvas/blue.png": {
+    "sha256": "0be1970811b4f44601f0f160fc7f71c8e648c295afdc9bfd85ba95cbb8633f79",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7034.png"
+  },
+  "textures/item/canvas/purple.png": {
+    "sha256": "51007b23e767600525102cbe75bb6c4b25504116235016ffc6d1ec05b5617a7e",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7035.png"
+  },
+  "textures/item/canvas/cyan.png": {
+    "sha256": "a0fd6c6788e29b6861f57c4dfa451ab4282085e6e508152c98a7a3ebd1117a53",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7036.png"
+  },
+  "textures/item/canvas/light_gray.png": {
+    "sha256": "f91925980a704af1f6d0c441893173d6b603b31d515742c363c31f77ad011449",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7037.png"
+  },
+  "textures/item/canvas/gray.png": {
+    "sha256": "38c449c0a90202aefa575e90c63a2c5e145cb48b17341a51c6281a6b9101efd6",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7038.png"
+  },
+  "textures/item/canvas/pink.png": {
+    "sha256": "980eedfa1b548346c474251a5deff78cd308b35f05aefc1f3b901fa8b882edc5",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7039.png"
+  },
+  "textures/item/canvas/lime.png": {
+    "sha256": "9e0ae84797d472fb0eb4b33d94691065ba83b0f3676d9a3cda1910697a1006fb",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7040.png"
+  },
+  "textures/item/canvas/yellow.png": {
+    "sha256": "e8d569ffe8beb74d2263a6df67493a646fc313e222852fd6ded3b2e47946e8a4",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7041.png"
+  },
+  "textures/item/canvas/light_blue.png": {
+    "sha256": "00fa254afaf330824ee6be6901f531ffe78b553f684d67ccf85c05de1420b314",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7042.png"
+  },
+  "textures/item/canvas/magenta.png": {
+    "sha256": "92a3a86ce33cf4ca34a38658b02ab2b84e6b3694f8eabbd21aaeddc43aa75d8e",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7043.png"
+  },
+  "textures/item/canvas/orange.png": {
+    "sha256": "fc00176eacc72d8474ce9c131d7cb12c2dfdecf2a751aeb4f4f8f335231d5abe",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7044.png"
+  },
+  "textures/item/canvas/white.png": {
+    "sha256": "c1f919f4d97942e46368dd38e7e8cc534294f69413b5ea449c19448d1d25c230",
+    "source": "src/main/resources/assets/gregtech/textures/items/gt.multiitem.randomtools/7045.png"
+  },
+  "textures/block/machines/covers/canvas.png": {
+    "sha256": "e88b94385e26aa95737338cc4e2f3dcc36f193a8dbd6567b195494eed28684b3",
+    "source": "src/main/resources/assets/gregtech/textures/blocks/machines/covers/canvas.png"
   }
 }
