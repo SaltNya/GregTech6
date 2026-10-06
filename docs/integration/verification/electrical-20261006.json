@@ -1,0 +1,48 @@
+{
+  "status": "native_passed_pending_artifacts",
+  "goal": "active",
+  "sourceAudit": "electrical-source-20261006.json",
+  "native": {
+    "requiredTestsEachPlatform": 3,
+    "passedEachPlatform": 3,
+    "normalSaveAndStopBoth": true,
+    "forge": {
+      "log": "work/electrical-20261006-native.log",
+      "allRequiredPassed": true,
+      "outerGradleExit": 1,
+      "outerFailure": "Neo missing shared import after Forge passed"
+    },
+    "neoforge": {
+      "log": "work/electrical-20261006-native-neo.log",
+      "allRequiredPassed": true,
+      "outerGradleExit": 0,
+      "elapsed": "1m52s"
+    },
+    "scope": "Native tag loading, one-way grades 0..9 with fixture-only external providers, 19 actual box crafts plus 9 transformer routes, 16 source wire tiers and 5 crafted high boxes placed with 4/16 slots and zero empty capacity"
+  },
+  "static": {
+    "tests": 3,
+    "status": "passed",
+    "scope": "Original electrical source facts, 28 recipe matrices and transformer dependencies, 10 cumulative tags and idempotent generator"
+  },
+  "intermediateFailures": [
+    {
+      "stage": "Neo main compilation missing shared rule import",
+      "log": "work/electrical-20261006-native.log"
+    },
+    {
+      "stage": "Obsolete static check paths/source-encoding assumptions failed before retargeting checks to affected dependency behavior; no new textures or language strings in this batch"
+    }
+  ],
+  "notVerified": [
+    "Actual external circuit addon providers; native tests use excluded fixture tags",
+    "Full survival and actual installed world crafting or GUIs",
+    "Independent saved contents restart and old-world migration",
+    "Large tier 9 source transformer 10049 does not exist; no substitute invented"
+  ],
+  "externalActions": {
+    "push": false,
+    "pr": false,
+    "issueCloseOrComment": false
+  }
+}
