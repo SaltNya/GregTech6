@@ -172,6 +172,12 @@
       "sha256": "0e5b3906712020b71c9c5718319bbf3fd90b002d79d25614f1bfcaf3c8e887c0",
       "bytes": 7375784,
       "license": "User-provided Chinese localization, copied verbatim"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\GT_API_Proxy_Client.java",
+      "sha256": "4ea2be4bb978e989127552dfb057e6f15415b84fe997382828123ba62c1576c8",
+      "bytes": 36465,
+      "license": "LGPL-3.0-or-later"
     }
   ],
   "comparison_files": [
@@ -738,7 +744,22 @@
   "verification": {
     "core_fixed_source_contracts": 107,
     "native_build": "passed4m18s; both ordinary builds and separate startup probes",
-    "installed_runtime": "pending grouped launch",
+    "installed_runtime": {
+      "status": "passed",
+      "forge_seconds": 51.78,
+      "neoforge_seconds": 45.78,
+      "normal_exit_both": true,
+      "block_identities_each": 559,
+      "basic_machine_class_objects": {
+        "forge": 250,
+        "neoforge": 251
+      },
+      "manual_each": 14,
+      "boiler_default_and_saved_efficiency_each": 26,
+      "fluid_pipes_each": 280,
+      "stored_tanks_each": 35,
+      "scope": "Ordinary installed item tooltip APIs and material event at title screen; no recycling gameplay/player hover/survival/saved-world restart claim."
+    },
     "chinese_keys": 36,
     "chinese_exact_patch_matches": 36,
     "chinese_changed_values": 0,
@@ -771,6 +792,24 @@
           "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-195055Z-1fceed96\\gregtech6-neoforge-1.21.1-0.0.0.jar"
         }
       }
-    }
+    },
+    "first_installed_probe_failures": [
+      {
+        "platform": "forge",
+        "log": "build/production-smoke/forge-9d20d63c-94d0-42ee-925f-cc81ca158321/launch.log",
+        "reason": "Probe startsWith(name+space) counted Clay Brick as Clay; actual registered quantities and tooltip rows are correct."
+      },
+      {
+        "platform": "forge",
+        "log": "build/production-smoke/forge-c59c39eb-654e-43a3-a191-6d628d62e800/launch.log",
+        "reason": "Diagnostic run confirmed only3 name-prefix collisions in coke oven wall/controller; kept strict zero mismatches condition."
+      },
+      {
+        "platform": "forge",
+        "log": "build/production-smoke/forge-093923fb-506b-4928-9af3-f4bbccb0572e/launch.log",
+        "reason": "Probe incorrectly expected406 fluid pipes; catalog has280 fluid and126 item pipes. All individual pipe tooltips passed before erroneous aggregate count."
+      }
+    ],
+    "probe_repairs": "Strict full material-name boundary eliminates Clay/Clay Brick ambiguity; assert280 fluid independently of126 item. Diagnostic13s, delimiter13s and count13s rebuilds affect separate probe only; production artifacts unchanged."
   }
 }
