@@ -19,6 +19,7 @@ def main():
     ap.add_argument('--audit', type=Path, required=True)
     ap.add_argument('--keys', nargs='*', default=[], help='Additional shared rule keys, validated against original source.')
     ap.add_argument('--extra-java', type=Path, action='append', default=[], help='Additional port Java files containing tooltip keys.')
+    ap.add_argument('--extra-source', type=Path, action='append', default=[], help='Original source files containing literal LH.add keys.')
     ap.add_argument('--alias', nargs=2, action='append', default=[], metavar=('PORT_KEY', 'SOURCE_KEY'),
                     help='Existing port language key mapped to an original LH/CS key, without translating it.')
     ns = ap.parse_args()
@@ -39,6 +40,13 @@ def main():
         name = json.loads(m[1]).lower()
         english['gt.td.short.' + name] = json.loads(m[2])
         english['gt.td.long.' + name] = json.loads(m[3])
+    for file in ns.extra_source:
+        file.resolve().relative_to(ns.source.resolve())
+        contents = file.read_text(encoding='utf-8')
+        contents = re.sub(r'"(?:\\.|[^"\\])*"|//[^\n]*|/\*[\s\S]*?\*/',
+                          lambda m: m[0] if m[0].startswith('"') else re.sub(r'[^\n]', ' ', m[0]), contents)
+        for m in re.finditer(r'LH\.add\(\s*' + literal + r'\s*,\s*' + literal, contents):
+            english[json.loads(m[1])] = json.loads(m[2])
     chinese = {}
     for line in ns.zh_patch.read_text(encoding='utf-8').splitlines():
         row = line.lstrip()
@@ -64,7 +72,7 @@ def main():
             if data.get(key) != imported[source_key]: changes[locale][key] = {'before': data.get(key), 'after': imported[source_key]}
             data[key] = imported[source_key]
         file.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    paths = [root/'LH.java', root/'CS.java', root/'RM.java', root/'TD.java', root/'../code/TagData.java', ns.zh_patch]
+    paths = [root/'LH.java', root/'CS.java', root/'RM.java', root/'TD.java', root/'../code/TagData.java', *ns.extra_source, ns.zh_patch]
     ns.audit.parent.mkdir(parents=True, exist_ok=True)
     ns.audit.write_text(json.dumps({'keys': keys, 'aliases': aliases, 'changes': changes, 'missing_chinese': missing,
         'source_files': [{'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in paths],
