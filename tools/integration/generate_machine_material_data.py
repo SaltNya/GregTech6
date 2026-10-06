@@ -305,6 +305,8 @@ def main():
         bindings[10110 + index] = 'electric_dynamo_' + tier
         bindings[10000 + index] = 'electric_heater_' + tier
         bindings[10160 + index] = 'electric_cooler_' + tier
+        bindings[11000 + index] = 'flux_heater_' + tier
+        bindings[11160 + index] = 'flux_cooler_' + tier
         if index <= 2:
             bindings[11020 + index] = 'flux_motor_' + tier
             bindings[11110 + index] = 'flux_dynamo_' + tier
