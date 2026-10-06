@@ -1,0 +1,135 @@
+{
+  "authors": [
+    "Gregorius Techneticies",
+    "GregTech-6 Team"
+  ],
+  "codeLicense": "LGPL-3.0-or-later",
+  "references": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE.assets",
+      "bytes": 500,
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerVisuals.java",
+      "bytes": 13277,
+      "sha256": "eb79301ab2ffd0c7320d94f414699aeadfead0972156ce02cdfff030a707a135"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapPrinter.java",
+      "bytes": 13064,
+      "sha256": "84a1536f4865fa03c9670c529078fdbfaf273a531be331d1919e8f856d67508c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\UT.java",
+      "bytes": 213872,
+      "sha256": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\item\\multiitem\\behaviors\\Behavior_PrintedPages.java",
+      "bytes": 1559,
+      "sha256": "53c2d788d695986b77ef09ec052ff4513daf8d80b6302c6f6d827527b92771f6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemBooks.java",
+      "bytes": 19880,
+      "sha256": "beb02a2bf256b9fa6c568c7ad411b622ba892a1fd2f9c6cf4733117911aafcc0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemRandomTools.java",
+      "bytes": 96019,
+      "sha256": "f2eef98ddb1b10298a981ff78369bccb7e8317fb421f7bdd84086257819ad84d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\GT6_Main.java",
+      "bytes": 53192,
+      "sha256": "a7dca874bef8dd25c9f98d64ddd372f081faf17899d5053156d4f78f4b3499ed"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapPrinter.java",
+      "bytes": 13581,
+      "sha256": "ede3014b67a83b2918647f12dd9a7465debb42e4ea1a2d44bb45faf6b37ff078"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerVisuals.java",
+      "bytes": 13351,
+      "sha256": "bb9113451585d4b9dbbcf79fe9deca3743d0196c45474e174dd33aaeadacaacb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\item\\multiitem\\behaviors\\Behavior_PrintedPages.java",
+      "bytes": 1756,
+      "sha256": "c127ea51907610946bff7429f97049bf51a5caedcf4c4d86d5eefe7334b62df5"
+    }
+  ],
+  "sourceComparison": [
+    {
+      "source": "C:\\Dev\\cruciblecraft-master\\cruciblecraft-master",
+      "javaFilesInspectedByFilename": 1701,
+      "matchingBoundaryFiles": [],
+      "decision": "No equivalent document recipe-map class in this snapshot; retain existing material/crafting foundation, adopt original rules and native adapters."
+    },
+    {
+      "source": "C:\\Dev\\gregtech6yizhi-main\\gregtech6-main",
+      "javaFilesInspectedByFilename": 49,
+      "matchingBoundaryFiles": [],
+      "decision": "No equivalent document recipe-map class in this snapshot; retain existing material/crafting foundation, adopt original rules and native adapters."
+    }
+  ],
+  "newAssets": [],
+  "existingPageAssets": [
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\randomtools\\printed_pages.png",
+      "bytes": 340,
+      "sha256": "7cafdb9b15dad91d96c9e25f0ad26506186bf81081c8aafe83021baeaec780e9"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\randomtools\\many_printed_pages.png",
+      "bytes": 336,
+      "sha256": "d3afc0e4d0b688627266942591080f75c45eb62e549f2afa1af70d5ea6698bdb"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\models\\item\\printed_pages.json",
+      "bytes": 120,
+      "sha256": "b5065f8bfe51e1925737bd1c77912d993dfd414a47259c68470dbeb3c4177957"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\models\\item\\many_printed_pages.json",
+      "bytes": 125,
+      "sha256": "420e847ce00a661cd56c00967d30cff9f569e4985f27b730bf4434fc042b0f72"
+    }
+  ],
+  "translationPatch": {
+    "path": "C:\\Dev\\GregTech_zh_cn.lang",
+    "bytes": 7375784,
+    "sha256": "0e5b3906712020b71c9c5718319bbf3fd90b002d79d25614f1bfcaf3c8e887c0"
+  },
+  "chineseResource": {
+    "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\lang\\zh_cn.json",
+    "bytes": 8448130,
+    "sha256": "f9bbed7fae0b42813aa1a4936ac87d13b3d0cb92aa5e78c418be3225e9852fad"
+  },
+  "chineseResourceGitContentIdenticalToBase": "41ada29f (checkout CRLF/LF normalized)",
+  "scope": [
+    "Original title/author/pages/filtered pages/generation/resolved/book mappings on USB tier 1",
+    "Book scan 512 ticks, printing 512/1024 ticks at 16 GU/t; 3/6 paper, 72/144 mB black dye",
+    "Printed pages retain original registered identities and existing leather/dye binding recipes",
+    "Map copies share native saved-data identity, 64 ticks and CMYK each 16 mB",
+    "Modern map IDs use int rather than obsolete short range"
+  ],
+  "notClaimed": [
+    "Twilight Forest, Galacticraft, IE schematics",
+    "All third-party native components copied or cross-version save migration",
+    "Independent saved-world restart or full survival chain",
+    "JEI/EMI GUI inspection for this batch"
+  ]
+}
