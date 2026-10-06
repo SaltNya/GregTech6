@@ -1,0 +1,129 @@
+{
+  "authors": [
+    "Gregorius Techneticies",
+    "GregTech-6 Team"
+  ],
+  "codeLicense": "LGPL-3.0-or-later",
+  "references": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerMolecular.java",
+      "bytes": 4248,
+      "sha256": "1530afad7f0701d7bbb2b0061b97d3516a4ae995a44e30f92102e9b9a316c42a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapReplicator.java",
+      "bytes": 6905,
+      "sha256": "27842d2b10e83052f10a0985b5a289600185df5092a8fe4bafa2c18eee8d6bd3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictMaterial.java",
+      "bytes": 88912,
+      "sha256": "768707d5eeeb6b60f0c5d0a24b39ab50f6f173a29a40f0fa3365308cf0688371"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "bytes": 693183,
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\OP.java",
+      "bytes": 162128,
+      "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "bytes": 153449,
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\UT.java",
+      "bytes": 213872,
+      "sha256": "fd91c2354dfb655f386f65b71c46add1caa067b85958dd3cd61a469b63bc7709"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Fluids.java",
+      "bytes": 190445,
+      "sha256": "fdc9a697adc7822159cb8ea82389cc83e6494fc9723551f2983607ed46505fcb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerMolecular.java",
+      "bytes": 4402,
+      "sha256": "70758dfe73da69de1ca0cf56a9ea1848bf21f896fde50ce160e0f014618848e4"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapReplicator.java",
+      "bytes": 7177,
+      "sha256": "c3c86b15b0b0292218bde69ba0b5ca4268507334db527ea8210a52e148f4fdfd"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\oredict\\OreDictMaterial.java",
+      "bytes": 91716,
+      "sha256": "e3f8e07e4a3f3c3ddbfe7d35b2f6813c1bee14064bd365c47dafa04a750b3b10"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\data\\MT.java",
+      "bytes": 703280,
+      "sha256": "22591e92616d6f503191ba58548d68cd6b113fc615f118e987a1353b1db84858"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\data\\OP.java",
+      "bytes": 162394,
+      "sha256": "d51273c614c5845c42a53c92f86c9a9b3f31a4d3256001198f4fee50e23c70cf"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\data\\CS.java",
+      "bytes": 172344,
+      "sha256": "e6e330961c416e104ea5a58dd8282d286d1e27292a9f6d9955c9569c39af87c9"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\util\\UT.java",
+      "bytes": 243859,
+      "sha256": "464429017d2a7f5332eb283a698cd4a28ee4bbbf4ba2f23228d401e3b46a7774"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Fluids.java",
+      "bytes": 191572,
+      "sha256": "0eed6f6a0f03b5da800e57f8171205d46f5c5122df829cbfbcdf48e52412cd53"
+    },
+    {
+      "path": "C:\\Dev\\GregTech_zh_cn.lang",
+      "bytes": 7375784,
+      "sha256": "0e5b3906712020b71c9c5718319bbf3fd90b002d79d25614f1bfcaf3c8e887c0"
+    }
+  ],
+  "adopted": {
+    "original": "1.7.10 MT/OP identity, UUM propagation, SCANNABLE, priority prefix initialization, recipe power/duration/output/catalysts, data tooltip rules",
+    "wSnapshot": "Read-only cross-check of ScannerMolecular/Replicator; same UUM gate, source durations and output order"
+  },
+  "facts": {
+    "materialDefinitions": 1349,
+    "uumDefinitions": 584,
+    "scannablePrefixes": 96,
+    "file": "material-data-facts-20261006.json"
+  },
+  "translations": {
+    "existingChineseValuesUnchanged": true,
+    "newAntimatterLabels": "Original English literal labels; no matching Chinese patch keys, no invented translations",
+    "matchedAliases": [
+      {
+        "target": "fluid_type.gregtech.mercury",
+        "source": "S:fluid.mercury",
+        "value": "汞"
+      }
+    ],
+    "newChineseKeys": 0,
+    "newEnglishFluidName": true
+  },
+  "punchCards": "Original GT6_Main fake recipe is commented; original manual says unimplemented, no placeholder feature added",
+  "rawRecipeVsTooltip": "Source recipe: 256 ticks/nucleon, power 1; UT tooltip independently prints 65536 QU/nucleon. Native machines retain existing source overclock accounting. These are not equated."
+}

@@ -1,0 +1,34 @@
+{
+  "status": "native_passed_delivery_pending",
+  "goal": "active",
+  "sourceAudit": "material-data-source-20261006.json",
+  "native": {
+    "requiredTestsEachPlatform": 3,
+    "normalSaveAndStopBoth": true,
+    "outerGradleExit": 0,
+    "elapsed": "3m50s",
+    "log": "work/material-data-20261006-native-3.log",
+    "scope": "Native source gates, prefix/phase outputs, exact matter/media consumption and registered T1 QU machine via selected HDD file; injected power/manual 2000 ticks"
+  },
+  "intermediateFailures": [
+    {
+      "log": "work/material-data-20261006-native.log",
+      "stage": "fixture compile: wrong RecipeMap signature"
+    },
+    {
+      "log": "work/material-data-20261006-native-2.log",
+      "stage": "Forge 2/3 passed; Mercury incorrectly 144mB molten; Neo not reached"
+    }
+  ],
+  "notVerified": [
+    "Full survival and natural energy network/tick behavior",
+    "Independent saved contents restart and user old-world migration",
+    "This batch player/JEI/EMI screens",
+    "All external material/USB addon providers"
+  ],
+  "externalActions": {
+    "push": false,
+    "pr": false,
+    "issueCloseOrComment": false
+  }
+}
