@@ -180,10 +180,12 @@ def main():
             continue
         prior = list(re.finditer(r'aMat\s*=\s*([^;]+);', mte[:offset]))
         casing = norm(prior[-1][1]) if prior else ''
+        quality_material = casing
         declared = re.search(r'NBT_MATERIAL\s*,\s*([^,)]+)', a[nbt])
         if declared and norm(declared[1]) != 'aMat': casing = norm(declared[1])
         row = {'machine': machine_key(a[0]), 'tab': a[1].strip('"'), 'id': int(a[2]),
-               'casing': casing, 'pattern': patterns, 'keys': keys, 'line': mte.count('\n', 0, offset) + 1}
+               'casing': casing, 'pattern': patterns, 'keys': keys, 'line': mte.count('\n', 0, offset) + 1,
+               'quality_material': quality_material, 'harvest_expression': norm(a[5]), 'block_group': norm(a[7])}
         registrations.append(row)
         recipe_keys = keys.copy()
         if any('aRegistry.getItem()' in norm(v) for v in recipe_keys.values()):
@@ -428,6 +430,7 @@ public final class OriginalMachineMaterialData {
     audit = {'source_root': str(ns.source), 'license': 'LGPL-3.0-or-later', 'authors': ['GregTech-6 Team', 'Gregorius Techneticies'],
              'source_files': [{'path': str(root / name), 'sha256': hashlib.sha256((root / name).read_bytes()).hexdigest()} for name in relative],
              'rows': output, 'block_rows': block_rows, 'source_without_known_data': empty_rows,
+             'source_registration_parameters': [{key: row[key] for key in ('id', 'line', 'casing', 'quality_material', 'harvest_expression', 'block_group')} for row in registrations],
              'source_invalid_recipes': invalid_rows,
              'used_component_recipes': sorted(used), 'unknown_automatic_data': dict(sorted(unknown.items())),
              'unresolved_source_item_references': dict(sorted(unresolved_items.items())),
