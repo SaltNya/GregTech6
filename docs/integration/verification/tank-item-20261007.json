@@ -1,7 +1,7 @@
 {
   "date": "2026-10-07",
   "baseline": "7f3fa3ce",
-  "status": "native scenarios passed; ordinary delivery pending",
+  "status": "passed",
   "scope": "Existing barrel/canister/drum sparse harvested item data, actual native survival harvest/place/recovery and retained configured/filter state; not full survival or independent restart",
   "attempts": [
     {
@@ -161,7 +161,8 @@
     "Custom external attachments/providers with data components",
     "Original generic Wood/logistics material hull accounting",
     "Full survival powered recovery chain",
-    "Ambient nondefault body temperature intentionally remains protected item data; this batch does not remove that port field"
+    "Ambient nondefault body temperature intentionally remains protected item data; this batch does not remove that port field",
+    "Existing startup missing model aliases/foliage/shader warnings are outside this batch; passing title checks do not mean zero WARN logs"
   ],
   "goal": "active",
   "publication": "local only; no push authorized for this batch; PR deferred",
@@ -175,6 +176,161 @@
       "log_sha256": "5b688ef677a46fd0330471f3bca8a0b2f6f60094ea00a7dd7b9676b312f47517",
       "failure": "PRODUCTION_SMOKE_FAILED: NoClassDefFoundError TankItemDeliveryChecks; both probe jars explicit inclusion lists omitted the new helper",
       "next_step": "Added only TankItemDeliveryChecks*.class to both probe lists; rebuild probes only; native scenarios and ordinary distribution code unchanged"
+    },
+    {
+      "status": "passed",
+      "platform": "forge",
+      "source_report": {
+        "path": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-forge-production.json",
+        "sha256": "7c903df746b8a3ab370427efce698ce555aae1d3bbfecdec032604e8ef8a4c9b"
+      },
+      "elapsed_seconds": 59.02,
+      "exit_code": 0
+    },
+    {
+      "status": "passed",
+      "platform": "neoforge",
+      "source_report": {
+        "path": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-neoforge-production.json",
+        "sha256": "2476437d81d8169e874ee1aa00a7bb8af11f5949957a6b5b815483f21dc50407"
+      },
+      "elapsed_seconds": 49.11,
+      "exit_code": 0
     }
-  ]
+  ],
+  "probe_source_commit": "c257b5bf35fac5db9ec187e7c887be25fd6afb4e",
+  "ordinary_artifacts": {
+    "status": "passed",
+    "source_commit": "2640f84b3ae902960986ed7fec75b343fb0601b8",
+    "build": {
+      "path": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-build.log",
+      "sha256": "283858bf9d020695b4f46e92aa5f84355de25cc0d685c3b682db2dd3fcf7eea9"
+    },
+    "elapsed": "1m40s",
+    "shared_core_classes": 720,
+    "platform_current_classes": {
+      "forge": 1758,
+      "neoforge": 1565
+    },
+    "verification_report": {
+      "path": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-artifacts.json",
+      "sha256": "b817eca53b328c0b2c9df5da83a9fab55fdf3f49ab79d5baee9d6a04c4236484"
+    },
+    "published_report": {
+      "path": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-published.json",
+      "sha256": "847c3417137bf26a69c036e141c2291e1019a11d9eb5e0b32e786d401379aadf"
+    },
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261006-172206Z-fd2fb22c",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 41286013,
+        "sha256": "fd2fb22c8103ccdac94bd24d478d779101164f9dd208d5be8f83fbe1d803efc8",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-172206Z-fd2fb22c\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 39505684,
+        "sha256": "a732cbd69db1996403b9fb530670e7496f971786c5fe9d899f7d066956e6db67",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-172206Z-fd2fb22c\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    },
+    "probes_excluded_from_distribution": true,
+    "final_sha_crc_rechecked_after_startup": true,
+    "shared_checks": {
+      "core": 2472,
+      "machine": 34,
+      "material": 7947,
+      "thermal": 53,
+      "wood_source": 1212,
+      "build_gradle_jvm": "JDK21",
+      "runtime_jvm_not_inferred_from_banner": true
+    },
+    "probe_only_rebuild": {
+      "elapsed": "16s",
+      "log": {
+        "path": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-probe-build.log",
+        "sha256": "f5a920640707e833eb66df5480e6de7521f601a2f618f93bec808771faa63391"
+      }
+    }
+  },
+  "production": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "source_report": {
+        "path": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-forge-production.json",
+        "sha256": "7c903df746b8a3ab370427efce698ce555aae1d3bbfecdec032604e8ef8a4c9b"
+      },
+      "version": "1.20.1-Forge_47.4.26",
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 59.02,
+      "rendered_frames": 181,
+      "installed_files_modified": false,
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-172206Z-fd2fb22c\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "fd2fb22c8103ccdac94bd24d478d779101164f9dd208d5be8f83fbe1d803efc8"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "41a5ebd8da2a8d9c32d7b4c697cdac090ad77968bac19c6bbf4ffb6c57342b2c"
+      },
+      "tank_item_data": {
+        "cleanItemData": 32,
+        "storedItemDataProtected": 32,
+        "completeWorldSaveRetained": true,
+        "observedEmptyLoaderWrappers": 0,
+        "scope": "installed methods at title screen; actual harvest tested separately in native server worlds"
+      },
+      "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-56d560af-ad8e-4a20-80a6-7f492b924c90\\screenshots\\production-forge-8cd8909b-3634-4d22-b17e-8e9ff7539837.png",
+      "screenshot_sha256": "b908ed5ab8c4c0acbff9fc920705222cfdc0395228bcb6858823b100e033bde8",
+      "screenshot_reviewed_in_this_turn": true,
+      "screenshot_scope": "Existing 48-color/30-wood panel title preview, not a tank gameplay image",
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-56d560af-ad8e-4a20-80a6-7f492b924c90\\launch.log",
+      "log_sha256": "baeeaa50d490d252b0e7efbeb741c74f8b5728b72ef48339745959fba0a7df92"
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "source_report": {
+        "path": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-neoforge-production.json",
+        "sha256": "2476437d81d8169e874ee1aa00a7bb8af11f5949957a6b5b815483f21dc50407"
+      },
+      "version": "1.21.1-NeoForge_21.1.252",
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 49.11,
+      "rendered_frames": 181,
+      "installed_files_modified": false,
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-172206Z-fd2fb22c\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "a732cbd69db1996403b9fb530670e7496f971786c5fe9d899f7d066956e6db67"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "f428a9e398aefad02a33b096fd1cb37d8b9410693d805bb19aee0acff95a6df2"
+      },
+      "tank_item_data": {
+        "cleanItemData": 32,
+        "storedItemDataProtected": 32,
+        "completeWorldSaveRetained": true,
+        "observedEmptyLoaderWrappers": 0,
+        "scope": "installed methods at title screen; actual harvest tested separately in native server worlds"
+      },
+      "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-75bc924d-71c0-4f22-99a1-34d13907cb77\\screenshots\\production-neoforge-e508f3a2-0c53-4a12-9385-32a44f94ad9f.png",
+      "screenshot_sha256": "2334f97619084865ff81360832d6c061a68546126589b36b829ca8c0db0974f6",
+      "screenshot_reviewed_in_this_turn": true,
+      "screenshot_scope": "Existing 48-color/30-wood panel title preview, not a tank gameplay image",
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-75bc924d-71c0-4f22-99a1-34d13907cb77\\launch.log",
+      "log_sha256": "c1a40e74801ca664384cfde28ab64d1283a3875815f113b29e3e9d32075a5210"
+    }
+  },
+  "source_and_localization_rechecked_after_startup": true
 }
