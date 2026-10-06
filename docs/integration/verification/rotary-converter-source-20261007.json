@@ -1040,9 +1040,10 @@
         "bytes": 282309
       }
     ],
-    "ordinary_packages_and_installed_client": "pending combined three-batch acceptance",
+    "ordinary_packages_and_installed_client": "Passed combined d7b7c3d3/3735a567/6c136a60 acceptance; see rotary-converter-delivery-20261007.json",
     "source_hashes_rechecked": true,
     "language_chinese_exact18": true,
-    "model_generator_repeat_audit_identical": true
+    "model_generator_repeat_audit_identical": true,
+    "source_and_asset_references_rechecked_after_startup": 111
   }
 }
