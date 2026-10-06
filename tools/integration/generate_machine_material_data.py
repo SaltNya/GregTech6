@@ -247,6 +247,8 @@ def main():
         options = indexed.get(original, {})
         row = options.get(tier) or (next(iter(options.values())) if len(options) == 1 else None)
         if row is None: raise ValueError(f'Missing active source registration: {name}/{tier}/{original}')
+        missing = sorted(missing_registry_refs(f'aRegistry.getItem({row["id"]})'))
+        if missing: raise ValueError(f'Original CR.shaped rejects null item input: {name}/{tier}/{missing}')
         parts = resolve(f'aRegistry.getItem({row["id"]})')
         if not parts: raise ValueError(f'Machine has no known source material: {name}/{tier}')
         output.append({'machine': name, 'tier': tier, 'source_id': row['id'], 'source_line': row['line'],
@@ -271,6 +273,8 @@ def main():
         if index <= 2:
             bindings[11020 + index] = 'flux_motor_' + tier
             bindings[11110 + index] = 'flux_dynamo_' + tier
+    for index, suffix in enumerate(['bronze', 'steel', 'titanium', 'tungstensteel'], 1):
+        bindings[16000 + index] = 'rotational_pump_' + suffix
     for index, step in enumerate(['ulv_lv', 'lv_mv', 'mv_hv', 'hv_ev', 'ev_iv', 'iv_luv', 'luv_zpm', 'zpm_uv', 'uv_xv']):
         bindings[10040 + index] = 'transformer_' + step
     for index, tier in enumerate(['ulv', *tiers, 'luv', 'zpm', 'uv', 'xv']):
@@ -294,29 +298,36 @@ def main():
                        'Burning Box (Gas,': 'gas', 'Dense Burning Box (Gas,': 'gas_dense',
                        'Fluidized Bed Burning Box': 'fluidbed', 'Dense Fluidized Bed Burning Box': 'fluidbed_dense'}
     suffixes = {'Pb': 'lead', 'Bi': 'bismuth', 'Bronze': 'bronze', 'ArsenicCopper': 'arsenic_copper',
-                'ArsenicBronze': 'arsenic_bronze', 'Invar': 'invar', 'Steel': 'steel', 'Cr': 'chromium',
+                'ArsenicBronze': 'arsenic_bronze', 'Invar': 'invar', 'Steel': 'steel', 'Cr': 'chromium', 'Ultimet': 'ultimet',
                 'Ti': 'titanium', 'Netherite': 'netherite', 'W': 'tungsten', 'TungstenSteel': 'tungsten_steel', 'Ta4HfC5': 'ta4hfc5'}
     engine_suffixes = {**suffixes, 'SteelGalvanized': 'galvanized_steel', 'Al': 'aluminium', 'StainlessSteel': 'stainless_steel',
                        'Electrum': 'electrum', 'EnderiumBase': 'enderium_base', 'Enderium': 'enderium',
                        'TinAlloy': 'tin_alloy', 'Brass': 'brass', 'IronWood': 'ironwood', 'FierySteel': 'fiery_steel', 'Ir': 'iridium'}
     engine_families = {'Electric Engine': 'electric', 'Flux Engine': 'flux', 'Steam Engine': 'steam',
                        'Strong Steam Engine': 'steam_strong', 'Diesel Engine': 'diesel'}
+    boiler_families = {'Steam Boiler Tank': 'steam_boiler', 'Strong Steam Boiler Tank': 'strong_steam_boiler'}
     for row in registrations:
         if row['machine'] in burning_families:
             bindings[row['id']] = 'burning_box_' + burning_families[row['machine']] + '_' + suffixes[material(row['casing'])]
         elif row['machine'] == 'Brick Burning Box (Solid)': bindings[row['id']] = 'burning_box_solid_brick'
         elif row['tab'] == 'Engines' and row['machine'] in engine_families:
             bindings[row['id']] = 'engine_' + engine_families[row['machine']] + '_' + engine_suffixes[material(row['casing'])]
+        elif row['tab'] == 'Steam Boilers' and row['machine'] in boiler_families:
+            bindings[row['id']] = boiler_families[row['machine']] + '_' + suffixes[material(row['casing'])]
     by_id = {row['id']: row for row in registrations}
-    block_rows, empty_rows = [], []
+    block_rows, empty_rows, invalid_rows = [], [], []
     for source_id, path in bindings.items():
         row = by_id[source_id]
         parts = resolve(f'aRegistry.getItem({source_id})')
         bound = {'path': path, 'source_id': source_id, 'source_line': row['line'], 'components': dict(parts),
                  'pattern': row['pattern'], 'keys': row['keys']}
         missing = sorted(missing_registry_refs(f'aRegistry.getItem({source_id})'))
-        if missing: bound['unresolved_source_item_references'] = missing
-        (block_rows if parts else empty_rows).append(bound)
+        if missing:
+            bound['unresolved_source_item_references'] = missing
+            bound['source_recipe_rejection'] = 'CR.shaped returns false on a null item input before reversible OM.data registration.'
+            bound['known_parts_before_rejection'] = bound.pop('components')
+            invalid_rows.append(bound)
+        else: (block_rows if parts else empty_rows).append(bound)
 
     header = '''/* GregTech-6 Team / Gregorius Techneticies; LGPL-3.0-or-later.
  * Adapted from CR.shaped, OreDictItemData, OP and Loader_MultiTileEntities.
@@ -369,6 +380,7 @@ public final class OriginalMachineMaterialData {
     audit = {'source_root': str(ns.source), 'license': 'LGPL-3.0-or-later', 'authors': ['GregTech-6 Team', 'Gregorius Techneticies'],
              'source_files': [{'path': str(root / name), 'sha256': hashlib.sha256((root / name).read_bytes()).hexdigest()} for name in relative],
              'rows': output, 'block_rows': block_rows, 'source_without_known_data': empty_rows,
+             'source_invalid_recipes': invalid_rows,
              'used_component_recipes': sorted(used), 'unknown_automatic_data': dict(sorted(unknown.items())),
              'unresolved_source_item_references': dict(sorted(unresolved_items.items())),
              'scope': 'Known original CR.REV components. No arbitrary tag member substitution; native crafted ingredients and runtime UI acceptance are separate checks.'}
@@ -376,6 +388,7 @@ public final class OriginalMachineMaterialData {
     ns.audit.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps({'machines': len(output), 'blocks': len(block_rows), 'source_without_known_data': [r['path'] for r in empty_rows],
                       'component_recipes': len(used), 'unknown_inputs': dict(unknown),
+                      'source_invalid_recipes': [r['path'] for r in invalid_rows],
                       'unresolved_source_item_references': dict(unresolved_items)}, ensure_ascii=False))
 
 

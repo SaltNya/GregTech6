@@ -17,6 +17,9 @@ def main():
     ap.add_argument('--java', type=Path, required=True)
     ap.add_argument('--repo', type=Path, default=Path(__file__).resolve().parents[2])
     ap.add_argument('--audit', type=Path, required=True)
+    ap.add_argument('--keys', nargs='*', default=[], help='Additional shared rule keys, validated against original LH/CS.')
+    ap.add_argument('--alias', nargs=2, action='append', default=[], metavar=('PORT_KEY', 'SOURCE_KEY'),
+                    help='Existing port language key mapped to an original LH/CS key, without translating it.')
     ns = ap.parse_args()
     root = ns.source / 'src/main/java/gregapi/data'
     lh = (root / 'LH.java').read_text(encoding='utf-8')
@@ -33,23 +36,25 @@ def main():
         if row.startswith('S:') and '=' in row:
             key, value = row[2:].split('=', 1)
             chinese[key] = value
-    keys = sorted(set(re.findall(r'Component.translatable\("(gt\.lang\.[^"]+)"\)', ns.java.read_text(encoding='utf-8'))))
+    aliases = dict(ns.alias)
+    keys = sorted(set(re.findall(r'Component.translatable\("(gt\.lang\.[^"]+)"\)', ns.java.read_text(encoding='utf-8'))) | set(ns.keys) | set(aliases))
     changes, missing = {}, []
     for locale, imported in [('en_us', english), ('zh_cn', chinese)]:
         file = ns.repo / f'core/src/main/resources/assets/gregtech/lang/{locale}.json'
         data = json.loads(file.read_text(encoding='utf-8'))
         changes[locale] = {}
         for key in keys:
-            if key not in imported:
-                if locale == 'en_us': raise ValueError('Original English key missing: ' + key)
+            source_key = aliases.get(key, key)
+            if source_key not in imported:
+                if locale == 'en_us': raise ValueError('Original English key missing: ' + source_key)
                 missing.append(key)
                 continue
-            if data.get(key) != imported[key]: changes[locale][key] = {'before': data.get(key), 'after': imported[key]}
-            data[key] = imported[key]
+            if data.get(key) != imported[source_key]: changes[locale][key] = {'before': data.get(key), 'after': imported[source_key]}
+            data[key] = imported[source_key]
         file.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     paths = [root/'LH.java', root/'CS.java', ns.zh_patch]
     ns.audit.parent.mkdir(parents=True, exist_ok=True)
-    ns.audit.write_text(json.dumps({'keys': keys, 'changes': changes, 'missing_chinese': missing,
+    ns.audit.write_text(json.dumps({'keys': keys, 'aliases': aliases, 'changes': changes, 'missing_chinese': missing,
         'source_files': [{'path': str(p), 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in paths],
         'license': 'Original LH/CS: LGPL-3.0-or-later; Chinese strings copied verbatim from the user-provided patch.'}, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     print(json.dumps({'keys': len(keys), 'changed': {k: len(v) for k,v in changes.items()}, 'missing_chinese': missing}, ensure_ascii=False))
