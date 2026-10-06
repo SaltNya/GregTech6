@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-07",
+  "baseline": "7f3fa3ce",
+  "status": "native scenarios passed; ordinary delivery pending",
+  "scope": "Existing barrel/canister/drum sparse harvested item data, actual native survival harvest/place/recovery and retained configured/filter state; not full survival or independent restart",
+  "attempts": [
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native.log",
+      "sha256": "35552b2df76418c5f4a28508d4862374fa6ffe1247e38218037eaf67dead4b75",
+      "finish": [
+        "BUILD FAILED in 34s"
+      ],
+      "failed_evidence": [
+        "C:\\Dev\\GregTech6\\src\\bootstrapGameTest\\java\\com\\gregtech\\gregtech\\gametest\\TankItemLifecycleTests.java:51: error: cannot find symbol",
+        "C:\\Dev\\GregTech6\\src\\bootstrapGameTest\\java\\com\\gregtech\\gregtech\\gametest\\TankItemLifecycleTests.java:51: error: incompatible types: unexpected return value"
+      ],
+      "required_tests_passed": [],
+      "markers": [],
+      "world_save_complete": 0
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native-fixed.log",
+      "sha256": "e87fd4a615438282df414a4a9052dc03c970598c99d9944719b4eb5f5d87a8e0",
+      "finish": [
+        "BUILD FAILED in 2m 31s"
+      ],
+      "failed_evidence": [
+        "java.lang.RuntimeException: Could not find structure file gameteststructures\\test_empty.snbt, and the structure is not available in the world structures either.",
+        "java.lang.RuntimeException: Could not find structure file gameteststructures\\test_empty.snbt, and the structure is not available in the world structures either."
+      ],
+      "required_tests_passed": [],
+      "markers": [],
+      "world_save_complete": 0
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native-final.log",
+      "sha256": "d35360649d1ea81fed7712790ef8743158453bc08aaac7903603bc7c608a6317",
+      "finish": [
+        "BUILD FAILED in 3m"
+      ],
+      "failed_evidence": [
+        "[00:55:20] [Server thread/ERROR] [minecraft/LogTestReporter]: emptytankharvestreusesandrecoversoriginalshell failed! correct survival harvest tool",
+        "[00:55:20] [Server thread/ERROR] [minecraft/LogTestReporter]: storedtanksettingscoversandlogisticsfiltersurviveharvest failed! configured cover retained once"
+      ],
+      "required_tests_passed": [],
+      "markers": [],
+      "world_save_complete": 1
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native-tools.log",
+      "sha256": "7ea7066755355677cf5b435679ced72fd59fb903ad577c5c79649e015c38a6c7",
+      "finish": [
+        "BUILD FAILED in 2m 35s"
+      ],
+      "failed_evidence": [
+        "[00:58:54] [Server thread/ERROR] [minecraft/LogTestReporter]: emptytankharvestreusesandrecoversoriginalshell failed! fresh empty tank has no storage metadata"
+      ],
+      "required_tests_passed": [],
+      "markers": [
+        "TANK_ITEM_LIFECYCLE_STORED fluid=4321 progress=120 duration=600 covers=1 logisticsFilter=water arbitraryEmptyTag=protected"
+      ],
+      "world_save_complete": 1
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native-caps.log",
+      "sha256": "2044ce775d2c9c614e8fb77dc29e4358885efa3df8127ef30bfd493d9c94e081",
+      "finish": [
+        "BUILD FAILED in 2m 31s"
+      ],
+      "failed_evidence": [
+        "[01:04:09] [Server thread/ERROR] [minecraft/LogTestReporter]: emptytankharvestreusesandrecoversoriginalshell failed! fresh empty tank has no storage metadata gregtech:wood_barrel data={gt.painted:0b}"
+      ],
+      "required_tests_passed": [],
+      "markers": [
+        "TANK_ITEM_LIFECYCLE_STORED fluid=4321 progress=120 duration=600 covers=1 logisticsFilter=water arbitraryEmptyTag=protected"
+      ],
+      "world_save_complete": 1
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native-paint.log",
+      "sha256": "f2d7b0ac2eb591071ffc39da986229f2214460aeea7c570b76980db296a8258b",
+      "finish": [
+        "BUILD FAILED in 2m 32s"
+      ],
+      "failed_evidence": [
+        "[01:08:12] [Server thread/ERROR] [minecraft/LogTestReporter]: emptytankharvestreusesandrecoversoriginalshell failed! No value present"
+      ],
+      "required_tests_passed": [],
+      "markers": [
+        "TANK_ITEM_LIFECYCLE_STORED fluid=4321 progress=120 duration=600 covers=1 paint=123456 logisticsFilter=water arbitraryEmptyTag=protected"
+      ],
+      "world_save_complete": 1
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native-audited.log",
+      "sha256": "787d451e8208a6201b5afe3aef0bc19846abe360fc5e3137b327882a6ce5c7ed",
+      "finish": [
+        "BUILD FAILED in 9s"
+      ],
+      "failed_evidence": [
+        "C:\\Dev\\GregTech6\\src\\bootstrapGameTest\\java\\com\\gregtech\\gregtech\\gametest\\TankItemLifecycleTests.java:106: error: cannot find symbol"
+      ],
+      "required_tests_passed": [],
+      "markers": [],
+      "world_save_complete": 0
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native-audited-fixed.log",
+      "sha256": "b70e4e996c9ee8170a196fe1f70804e6e7bdcab59d646328e9a7361f932420a9",
+      "finish": [
+        "BUILD SUCCESSFUL in 3m 57s"
+      ],
+      "failed_evidence": [],
+      "required_tests_passed": [
+        "2",
+        "2"
+      ],
+      "markers": [
+        "TANK_ITEM_LIFECYCLE_EMPTY tanks=32 recovery=30 drained=31 legacy=1",
+        "TANK_ITEM_LIFECYCLE_STORED fluid=4321 progress=120 duration=600 covers=1 paint=123456 logisticsFilter=water arbitraryEmptyTag=protected",
+        "TANK_ITEM_LIFECYCLE_STORED fluid=4321 progress=120 duration=600 covers=1 paint=123456 logisticsFilter=water arbitraryEmptyTag=protected",
+        "TANK_ITEM_LIFECYCLE_EMPTY tanks=32 recovery=30 drained=31 legacy=1"
+      ],
+      "world_save_complete": 2
+    }
+  ],
+  "native": {
+    "scenarios_per_platform": 2,
+    "tank_identities": 32,
+    "recoverable_hulls": 30,
+    "ordinary_drained_tanks": 31,
+    "legacy_generated_default_shape": 1,
+    "fluid_amount": 4321,
+    "sealed_progress": 120,
+    "duration": 600,
+    "configured_cover_count": 1,
+    "paint_rgb": "123456",
+    "logistics_empty_filter": "water",
+    "arbitrary_empty_storage_tag_still_protected": true,
+    "nonempty_forge_data_preserved": true,
+    "normal_world_save": true,
+    "log": "C:\\Dev\\GregTech6\\work\\tank-item-20261007-native-audited-fixed.log",
+    "elapsed": "BUILD SUCCESSFUL in 3m 57s"
+  },
+  "sources_rechecked": 11,
+  "localization": {
+    "core/src/main/resources/assets/gregtech/lang/en_us.json": "05707ad42644116055ff716d8dd3fc99c1ffb11b7c5d4528a49658bf569da820",
+    "core/src/main/resources/assets/gregtech/lang/zh_cn.json": "fda9c7540872bde68f5c392f5505d69a8e4e8fab481dd8af24aa1b1a3bffcca0"
+  },
+  "unchanged": [
+    "shared core",
+    "registries",
+    "recipe definitions",
+    "world save/load format",
+    "translations",
+    "generic stored-content guard",
+    "cover harvest snapshot lifecycle"
+  ],
+  "remaining": [
+    "Independent actual world restart and old-save migration",
+    "Custom external attachments/providers with data components",
+    "Original generic Wood/logistics material hull accounting",
+    "Full survival powered recovery chain",
+    "Ambient nondefault body temperature intentionally remains protected item data; this batch does not remove that port field"
+  ],
+  "goal": "active",
+  "publication": "local only; no push authorized for this batch; PR deferred"
+}
