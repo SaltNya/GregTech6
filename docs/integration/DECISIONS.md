@@ -420,3 +420,10 @@ Forge在材料注册完成后、Neo在vanilla/native绑定完成后接入，早�
 Java25正式安装加载器Forge47.4.26/Neo21.1.252隔离主菜单自启动分别53.2s/45.03s、180/179帧，均退出0。成品83件的原每件材料量、高级tooltip材料行、83粉碎配方及脆性泡沫耗时断言通过，48彩色+30木板预览截图已查看。材料提示与配方为实际客户端运行断言；图像是主菜单物品预览，不是玩家F3+H、JEI/EMI或世界机器操作截图。用户整合包文件未改。
 
 仅限定原生入口证明精准粉碎消费/产物及坩埚输入，完整生存、真实能源机器运行、独立存档内容重启、旧档迁移、其他REV合成物与vanilla木板物种分类仍待续。完整中间失败及边界见[终态记录](verification/panel-material-20261006.json)。整体goal active，未推送或操作PR。
+
+
+## 2026-10-06 / GitHub 双版材料快照失败修复
+
+用户报告的 [Actions 37476658478](https://github.com/SaltNya/GregTech6/actions/runs/37476658478) 两个平台都在共享 MaterialBehaviorContracts 的完整定义指纹失败；聚合失败为后续结果。公开 jobs/check annotations 已读，无远程写入。按原分子材料批次恢复的 UUM 标记没有同步既有 golden。对比旧原完整快照与已提交 c6a352d4 的完整 core，定义及 postInit 每阶段仅578条材料记录新增UUM，143747观察值保持不变；所有其余字段、别名及前缀形态行相同。本次没有 LIQUID 差异，不能把汞作为这个 CI 故障的原因。保留全量快照、数量及行为断言，更新两个指纹。
+
+精确 HEAD core 源单独编译（JDK21、release17）运行四核心入口：2472/7947/53/34断言及1212木材断言通过；首轮单独夹具漏 test TSV 资源导致NPE，补 classpath 后正常。它们不证明 GitHub runner 已重跑，也不替代双版成品启动；管道新修改仍在工作区继续，未混入此独立 CI 提交。完整差异见 [ci-material-differential-20261006.json](verification/ci-material-differential-20261006.json)。未推送，PR按用户要求暂不处理，整体 goal active。
