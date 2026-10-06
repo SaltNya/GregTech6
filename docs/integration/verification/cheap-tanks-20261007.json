@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-07",
+  "status": "native-passed; ordinary build and installed starts pending",
+  "baseline": "359acfc0",
+  "source": "cheap-tanks-source-20261007.json",
+  "attempts": [
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\cheap-tanks-20261007-native.log",
+      "sha256": "8c6bd3b461ff8a30bf0a66f727d9bac0eacd33cc8d7ba8efdffe47384e56094e",
+      "finish": [
+        "BUILD FAILED in 21s"
+      ],
+      "passed_markers": [],
+      "failures": [
+        "C:\\Dev\\GregTech6\\src\\bootstrapGameTest\\java\\com\\gregtech\\gregtech\\gametest\\CheapTankSourceTests.java:26: error: cannot find symbol"
+      ],
+      "all_dimensions_saved": 0
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\cheap-tanks-20261007-native-fixed.log",
+      "sha256": "e78d10648917a276116da9c5a4d4e88ff60f8d7c064e9f1e042046fd5027c826",
+      "finish": [
+        "BUILD SUCCESSFUL in 6m 40s"
+      ],
+      "passed_markers": [
+        "[02:00:40] [Server thread/INFO] [minecraft/GameTestServer]: All 2 required tests passed :)",
+        "[02:02:13] [Server thread/INFO] [minecraft/GameTestServer]: All 2 required tests passed :)"
+      ],
+      "failures": [],
+      "all_dimensions_saved": 2
+    }
+  ],
+  "native_scenarios_per_platform": 2,
+  "native_scope": [
+    "Four source cheap barrel identities: actual oak/spruce crafting, tools, sync, fill8000/harvest/re-place/drain/recovery",
+    "Logistics source seven-component REV data, actual craft result/tools/sync, filled tungsten drum rejection then actual drain/craft acceptance",
+    "Generated former full16k capacity/12k amount payload placed, harvested and replaced; not a historical-save sample"
+  ],
+  "native_directories": {
+    "forge": "build/cheap-tanks-20261007-forge",
+    "neoforge": "neoforge/build/bootstrap-gametest-run (existing project default; neoGameTestDirectory is not a recognized property)"
+  },
+  "language": "Only four English keys and three new Chinese keys changed; all four Chinese values equal original patch, existing Chinese wood_barrel already identical",
+  "remaining": [
+    "Complete powered survival chain",
+    "Independent saved-world restart and historical-save migration",
+    "Real external wood tag/attachment providers",
+    "Other source wood-barrel species",
+    "Existing model/tag/shader warnings"
+  ],
+  "goal": "active",
+  "published_externally": false
+}

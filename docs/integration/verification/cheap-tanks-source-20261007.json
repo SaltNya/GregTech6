@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-07",
+  "baseline": "359acfc093e0c2feebf984d57041341d6d349bd6",
+  "files": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\OP.java",
+      "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+      "bytes": 162128,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2025 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71",
+      "bytes": 17964,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2025 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2",
+      "bytes": 693183,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2026 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\CR.java",
+      "sha256": "952f94e0dfff66d27d2ac2b97ed47b6aa0c8250aa19babd5cc528c89616c0760",
+      "bytes": 39113,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2023 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\OM.java",
+      "sha256": "3c2cc710d62373460d1854f60a7383ec0a5b7969877dbbcb3f5c9b5a0b4c5cbb",
+      "bytes": 34107,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2023 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictItemData.java",
+      "sha256": "d44471d8e7d2d732891e79a0f234045a693290e29f3d463dbc79633283d8517f",
+      "bytes": 8695,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2024 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2024 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictManager.java",
+      "sha256": "41376372c077030142a6e95385a74f9dde79c3b15d9a4de95cff99f371b44801",
+      "bytes": 45600,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2025 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\block\\multitileentity\\MultiTileEntityRegistry.java",
+      "sha256": "70fb3ce00e7036e343e253e0f9fd8401b05c3f4f4e16b88f1b3fb94c3b111e83",
+      "bytes": 18347,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2023 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\load\\LoaderOreDictReRegistrations.java",
+      "sha256": "d34719309a5ddf5bd7fc01c0462b57af52b4cf980a69fae4d4042c2ab78b07ef",
+      "bytes": 147540,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2026 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapShredder.java",
+      "sha256": "b963307f82df8cb595f4d0927d969b603f57a792596ec642bb31f6aaee01d1f4",
+      "bytes": 4063,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2024 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2024 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393",
+      "bytes": 791265,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2026 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "sha256": "7367922c4938318dd50b1320e7fc7a7453c33cffa46f75a437325314d2536ddc",
+      "bytes": 133807,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team",
+      "notice": "/**\n * Copyright (c) 2025 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */\n\n"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\tank\\TileEntityBase08Barrel.java",
+      "sha256": "4723bed8e3871eee500b2ac988f60c899897629e9b4f5aefc028df6c7958fc45",
+      "bytes": 13190,
+      "role": "Original sparse barrel item state; zero-number omission; retained covers and logistics fluid filter",
+      "authors": [
+        "@author Gregorius Techneticies"
+      ],
+      "copyright": [
+        "Copyright (c) 2025 GregTech-6 Team"
+      ],
+      "license_evidence": "/**\n * Copyright (c) 2025 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n */",
+      "license": "LGPL-3.0-or-later"
+    }
+  ],
+  "comparisons": [
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\tileentity\\tank\\TileEntityBase08Barrel.java",
+      "sha256": "1bc62691ac5c0a531b769be70fb12e7bbcd959c99fa194a1695512960f292fef",
+      "bytes": 14018,
+      "role": "Read-only comparison; no new code copied",
+      "authors": [
+        "@author Gregorius Techneticies"
+      ],
+      "copyright": [
+        "Copyright (c) 2025 GregTech-6 Team"
+      ],
+      "license_evidence": "/**\n * Copyright (c) 2025 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n *\n * Modified in 2026 for the GregTech 6 NeoForge port\n * (https://github.com/wolfram0108/gregtech6_w): ported from Minecraft 1.7.10 / Forge\n * to Minecraft 26.1.2 / NeoForge.\n */",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\fluid\\FluidTankGT.java",
+      "sha256": "14e1e8940e0ecda9bf1bb78ff3be552880411ff0b9d36c44999151523f1ac7f9",
+      "bytes": 20977,
+      "role": "Read-only comparison; no new code copied",
+      "authors": [],
+      "copyright": [
+        "Copyright (c) 2025 GregTech-6 Team"
+      ],
+      "license_evidence": "/**\n * Copyright (c) 2025 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n *\n * Modified in 2026 for the GregTech 6 NeoForge port\n * (https://github.com/wolfram0108/gregtech6_w): ported from Minecraft 1.7.10 / Forge\n * to Minecraft 26.1.2 / NeoForge.\n */",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6yizhi-main\\gregtech6-main\\mdk\\src\\main\\java\\gregtech6\\tileentity\\tank\\TileEntityBase08Barrel.java",
+      "sha256": "431de5600b86876cedbe0de24d66ac89feca413377431c6f976c590063f13e48",
+      "bytes": 24023,
+      "role": "Read-only comparison; no new code copied",
+      "authors": [],
+      "copyright": [],
+      "license_evidence": "",
+      "license": "comparison only; no code adopted"
+    },
+    {
+      "path": "C:\\Dev\\cruciblecraft-master\\cruciblecraft-master\\src\\main\\java\\com\\masson\\cruciblecraft\\content\\block\\TankBlock.java",
+      "sha256": "c6449f092add4f7a074743599b7bc919998010889b08fef0c7ace77f0e765fae",
+      "bytes": 2474,
+      "role": "Read-only comparison; no new code copied",
+      "authors": [],
+      "copyright": [],
+      "license_evidence": "",
+      "license": "comparison only; no code adopted"
+    },
+    {
+      "path": "C:\\Dev\\cruciblecraft-master\\cruciblecraft-master\\src\\main\\java\\com\\masson\\cruciblecraft\\content\\blockentity\\TankBlockEntity.java",
+      "sha256": "f3728881beb977c8211fa5af5ab02b8c8e4597ed440740ce7f80cbe5c10a8219",
+      "bytes": 18579,
+      "role": "Read-only comparison; no new code copied",
+      "authors": [],
+      "copyright": [],
+      "license_evidence": "",
+      "license": "comparison only; no code adopted"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "4d87cacde8defa33df30359d345046daa8e901ab0419dca2766d2140d8af1562",
+      "bytes": 791308,
+      "authors": "GregTech-6 Team / Gregorius Techneticies; _w port notice retained",
+      "license": "LGPL-3.0-or-later",
+      "notice": "/**\n * Copyright (c) 2026 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n *\n * Modified in 2026 for the GregTech 6 NeoForge port\n * (https://github.com/wolfram0108/gregtech6_w): ported from Minecraft 1.7.10 / Forge\n * to Minecraft 26.1.2 / NeoForge.\n */\n\n",
+      "role": "read-only source-rule comparison; both four cheap barrels and recursive known REV inputs agree"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "sha256": "0db7cdb85fa9601043c44b79d413df023e1d19e350f3d9e107fa8c3cc0aad374",
+      "bytes": 134120,
+      "authors": "GregTech-6 Team / Gregorius Techneticies; _w port notice retained",
+      "license": "LGPL-3.0-or-later",
+      "notice": "/**\n * Copyright (c) 2025 GregTech-6 Team\n *\n * This file is part of GregTech.\n *\n * GregTech is free software: you can redistribute it and/or modify\n * it under the terms of the GNU Lesser General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * GregTech is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU Lesser General Public License for more details.\n *\n * You should have received a copy of the GNU Lesser General Public License\n * along with GregTech. If not, see <http://www.gnu.org/licenses/>.\n *\n * Modified in 2026 for the GregTech 6 NeoForge port\n * (https://github.com/wolfram0108/gregtech6_w): ported from Minecraft 1.7.10 / Forge\n * to Minecraft 26.1.2 / NeoForge.\n */\n\n",
+      "role": "read-only source-rule comparison; both four cheap barrels and recursive known REV inputs agree"
+    }
+  ],
+  "language_patch": {
+    "path": "C:\\Dev\\GregTech_zh_cn.lang",
+    "sha256": "0e5b3906712020b71c9c5718319bbf3fd90b002d79d25614f1bfcaf3c8e887c0",
+    "exact_values": {
+      "32733": "木制储罐",
+      "32752": "木制储罐",
+      "32753": "木制储罐",
+      "32754": "木制储罐"
+    }
+  },
+  "rules": {
+    "cheap": "Source 32733/32752/32753/32754: ANY.Wood 8000L, 340K, hardness1 resistance5; four plankAnyWood at 1U each, two long rods at1U each, lead/bismuth/bronze/brass; rGs/PSP/PSP with glue, soft hammer and saw.",
+    "logistics": "32072 = tungsten drum32718 (6U W), 4W screws(U/9 each), ULV field emitter, generic storage bus; native original recipe retained and empty-storage guard added.",
+    "known_components": "Blank cover=Al(U+U/9); emerald processor=Pt U + Emerald U; ULV emitter=TinAlloy4U + Os4U/8 + EnderPearl U; storage bus=blank cover + emerald processor + Os2U/8. CR skips tools and automatic unknown circuit/glue data; no circuit data is invented.",
+    "stacking": "Source registration stack16 for ordinary containers; TileEntityBase08Barrel filled item stacks1. Native actual fluid amount controls filled limit independently of paint/modes.",
+    "registry": "Keep wood_barrel for the lead cheap variant; three new variant block/item IDs. Exact original same display names retained; variants differ by recipe and material composition.",
+    "legacy": "Explicit saved Capacity/Amount retained by existing storage restore and sparse item writer. Bare old wood_barrel stacks have no capacity identity and now inherit8000; no promise of historical-save migration.",
+    "comparison": "Original1.7.10 is authority. _w confirms source definitions. Previous brokestar/masson comparisons retain storage; no independent duplicate item/registry architecture adopted."
+  },
+  "remaining": [
+    "Historical saves and independent saved-world restart remain unverified",
+    "Complete powered survival processing remains unverified",
+    "Natural third-party wood tag providers and real external attachments not exercised",
+    "Other source wood species including Rainbowood barrels remain separate gaps"
+  ],
+  "goal": "active",
+  "language_delta": {
+    "en_us": [
+      "block.gregtech.wood_barrel_bronze",
+      "block.gregtech.wood_barrel_brass",
+      "block.gregtech.wood_barrel",
+      "block.gregtech.wood_barrel_bismuth"
+    ],
+    "zh_cn": [
+      "block.gregtech.wood_barrel_bismuth",
+      "block.gregtech.wood_barrel_bronze",
+      "block.gregtech.wood_barrel_brass"
+    ]
+  }
+}
