@@ -139,5 +139,38 @@
     "Ordinary dual packages and installed-loader client acceptance still pending in this receipt; recorded separately after completion."
   ],
   "publication": "local commits only; no push or PR operation",
-  "goal": "active"
+  "goal": "active",
+  "installed_attempts": [
+    {
+      "result": "Ordinary build4m8s and CRC/current classes passed; actual Forge reached title but probe rejected RF heater internal display Flux Heater(Pb) vs original language Flux Heater(Lead). Pair53899d2d not accepted for delivery.",
+      "records": [
+        {
+          "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictMaterial.java",
+          "sha256": "768707d5eeeb6b60f0c5d0a24b39ab50f6f173a29a40f0fa3365308cf0688371",
+          "bytes": 88912
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-c550b1cc-1e93-4c0d-9664-f84c1dcddeaf\\launch.log",
+          "sha256": "4a7e89f0970891fac5791df9de51f0f49e45633f54aca89fcd6963d0093b758b",
+          "bytes": 155818
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\work\\converter-pooled-dual-build-20261007.log",
+          "sha256": "adc2d33e9c8acd39437a570f2aa27482d3b4392f33068a7760346259870a07ee",
+          "bytes": 33592
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\work\\converter-pooled-artifacts-20261007.json",
+          "sha256": "bf1298488d3f60bf86cadd27e84c112b9afdb2ac07a5dc011b39115dcc16ba32",
+          "bytes": 313365
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\work\\converter-pooled-verified-20261007.json",
+          "sha256": "b6bfe30327119d38f806ab806362adfeb3582cf43ac6235b8d92f8e233d54c53",
+          "bytes": 1084
+        }
+      ]
+    }
+  ],
+  "name_fix": "Original getLocal uses translated display name; imported Lead.localName is Pb while display fallback is Lead. Thermal spec now uses English display fallback; Chinese names and all quantities/behavior unchanged. Added20 independent original name assertions. Native6/platform behavior results remain valid; final ordinary build/start pending."
 }
