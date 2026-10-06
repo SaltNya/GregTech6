@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-06",
+  "goal": "active",
+  "status": "native-passed; ordinary delivery pending",
+  "scope": "406 preferred native pipe forms; grouped scanner/printer/replicator viewer rows; exact runtime material and media rules",
+  "attempts": [
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\data-viewer-20261006-native.log",
+      "sha256": "313c5be27fb8f1f787e1e323a6376da4b7a86e42087d6d85321041517227f8b4",
+      "gradle_exit": 1,
+      "forge_required_tests_passed": 1,
+      "forge_required_tests_failed": 1,
+      "failure": "nativepreferredpipeformsandgroupedscannerinputs failed! original pipe scan gate 1 pipe_small_wood",
+      "actual_gap": "Native block item returns invalid material sentinel, but scanner only tested Java null before consulting registered composition",
+      "secondary_failure": "Java heap space during world save after scenarios; default1536m",
+      "neoforge": "not run: earlier Forge task failed"
+    }
+  ],
+  "remaining": [
+    "Actual player JEI/EMI page rendering and focus interaction",
+    "Complete survival acquisition and powered-machine chain",
+    "Independent saved-world data restart",
+    "Old-save migration",
+    "Real optional mod providers and broader ore unification preferences"
+  ],
+  "native": {
+    "log": "C:\\Dev\\GregTech6\\work\\data-viewer-20261006-native-fixed.log",
+    "sha256": "c3fb8dca6ae351a3513050ed4d0e9e4b569c40304449c0f3194bfa48ab175e5a",
+    "gradle_exit": 0,
+    "elapsed": "4m14s",
+    "heap": "3g for this finite run only",
+    "scenarios_per_platform": 2,
+    "normal_world_save": true,
+    "preferred_native_pipe_forms": 406,
+    "scannable_native_pipes": 303,
+    "excluded_tiny_and_restrictive_pipes": 103,
+    "coverage": [
+      "Original native pipe target and amount",
+      "Grouped input alternatives and defensive copies",
+      "Actual dynamic scanner object/USB consumption and correct material file",
+      "All native domain printer/replicator display coverage",
+      "Fake pages excluded from machine lookup",
+      "Actual native material-specific printer and replicator lookup",
+      "Registration is idempotent"
+    ]
+  }
+}
