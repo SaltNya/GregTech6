@@ -164,5 +164,17 @@
     "Ambient nondefault body temperature intentionally remains protected item data; this batch does not remove that port field"
   ],
   "goal": "active",
-  "publication": "local only; no push authorized for this batch; PR deferred"
+  "publication": "local only; no push authorized for this batch; PR deferred",
+  "source_commit": "2640f84b3ae902960986ed7fec75b343fb0601b8",
+  "production_attempts": [
+    {
+      "status": "failed",
+      "platform": "forge",
+      "scope": "Reached installed-loader title screen; missing helper in independent probe",
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-04b15707-5195-49e7-a863-c8381c00f659\\launch.log",
+      "log_sha256": "5b688ef677a46fd0330471f3bca8a0b2f6f60094ea00a7dd7b9676b312f47517",
+      "failure": "PRODUCTION_SMOKE_FAILED: NoClassDefFoundError TankItemDeliveryChecks; both probe jars explicit inclusion lists omitted the new helper",
+      "next_step": "Added only TankItemDeliveryChecks*.class to both probe lists; rebuild probes only; native scenarios and ordinary distribution code unchanged"
+    }
+  ]
 }
