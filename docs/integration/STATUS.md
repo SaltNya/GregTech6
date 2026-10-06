@@ -1,5 +1,9 @@
 # 整合状态
 
+## 2026-10-06 / Mekanism 盐块配方
+
+第一波先做 Mekanism。染色目标在 10.4 / 10.7 没有注册名，不生成。装了 Mekanism 时合成包 1 个文件，关掉 `mekanism:storage_blocks/salt`，机器行 0、解析失败 0；没装时合成包 0、整组跳过。两端 `gregtech_compat` 各 2 项 GameTest（IE 样板加这条）在有/无 Mekanism 时通过，带模组的运行里 `/reload` 后盐块配方仍不存在、HDPE 杆配方还在。旧存档、完整生存、专服和客户端没有测。还在本地分支 `compat/mekanism`，没有推送。IE 样板已在 [PR 25](https://github.com/SaltNya/GregTech6/pull/25)。见 [验证](VERIFICATION.md)、[账本](compat/mekanism.md)。
+
 ## 2026-10-06 / Immersive Engineering 联动样板
 
 双版联动框架和 IE 样板已接上。IE 在场时各登记 166 条机器行、0 条解析失败、13 个合成包文件（2 条互转加 11 个锤子压板覆盖）；IE 不在场时机器行为 0、合成包为 0。两端 `gregtech_compat` GameTest（含 `/reload`）、带 IE 的专服启动、JEI/EMI 压缩机焦炭页截图，以及 714 个当前共享类验包通过。旧存档、完整生存和独立重启没有测。未推送。见 [验证](VERIFICATION.md)、[账本](compat/immersiveengineering.md)。

@@ -1,5 +1,9 @@
 # 实现选择记录
 
+## 2026-10-06 / Mekanism 只保留盐块配方删除
+
+`Compat_Recipes_Mekanism` 的八个染色目标（气球、塑料栅栏、发光板、四种塑料方块）在 Forge `10.4.16.80` 和 NeoForge `10.7.19.85` 里都没有对应物品，这些行不生成。还在的是 2×2 `dusts/salt` → `mekanism:block_salt`，配方 id 两边都是 `mekanism:storage_blocks/salt`，用已有的精确 id 删除。不把 Mekanism 的粉、锭、矿做成 GT 的规范形态，也不接 `MekanismAPI`。`-PcompatRuntime=mek` 与 `ie` 分开，一次一个。见 [账本](compat/mekanism.md)。
+
 ## 2026-10-06 / 联动框架与 Immersive Engineering 样板
 
 联动不改 `GregTech.java` / `GregTechNeoForge.java`。机器行自己订 `TagsUpdatedEvent`（`shouldUpdateStaticData()`），按对象身份先清后建，`ServerStoppedEvent` 清空。合成新增和按精确配方 id 删除走内存数据包，位置 TOP；Forge 用 `forge:false`，NeoForge 用 `neoforge:false`。现代 mod id 只存字符串并问 `ModList`，不新建 `ModData("immersiveengineering")`，也不用旧的 `ModData("ImmersiveEngineering")`。不加编译依赖。`-PcompatRuntime=ie` 才加入开发期 `runtimeOnly`，默认关闭，不打进成品，也不写进 `mods.toml`。外部机器镜像不恢复。目标模组没装就整组跳过；登记过的注册名找不到则该行不生成并计数，不产出空气。木板油浴继续产出 `gregtech:planks_treated`，再与 IE 横板互转。锤子只覆盖 11 个压板 id，不扫所有含锤子的配方。旧存档没有测。见 [账本](compat/immersiveengineering.md)。

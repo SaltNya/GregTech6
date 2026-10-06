@@ -1,5 +1,9 @@
 # 验证账本
 
+## 2026-10-06 / Mekanism 盐块配方
+
+共享契约通过：2650 条断言、31 组，含 Mekanism 模块的结构检查。Forge 无 Mekanism：`gregtech_compat` 2 项通过（`BUILD SUCCESSFUL in 5m 7s`），合成包 0 个文件，日志写明未加载目标模组。Forge 带 `-PcompatRuntime=mek`（`10.4.16.80`）：2 项通过（`BUILD SUCCESSFUL in 5m 2s`），合成包 1 个文件，机器行 0、未解析 0；测试内 `/reload` 后仍是 1 个文件、0 行，盐块配方不存在且 `mekanism:hdpe_rod` 仍在。NeoForge 无 Mekanism：2 项通过（`BUILD SUCCESSFUL in 2m 7s`），合成包 0、整组跳过。NeoForge 带 `-PcompatRuntime=mek`（`10.7.19.85`）：2 项通过（`BUILD SUCCESSFUL in 3m 1s`），同样 1 个文件、0 行、0 未解析，reload 后仍通过。没有跑专服、客户端或验包。旧存档、完整生存和独立进程重启没有测。没有推送。
+
 ## 2026-10-06 / Immersive Engineering 联动样板
 
 共享契约此前通过：2644 条断言、31 组，含 `CompatSpecs.check()`。Forge 无 IE 的第一次 GameTest 在默认堆上准备出生区时 `OutOfMemoryError`，第二次缺 `gregtech_compat` 的 `test_empty` 结构；补上结构并用 4g 堆、视距 4 后，`gregtech_compat` 1 项通过（3m 37s），日志写明未加载目标模组、合成包 0 个文件。Forge 带 `-PcompatRuntime=ie` 同样 1 项通过（约 4m 18s）：166 条机器行、0 条未解析、合成包 13 个文件，测试内 `/reload` 后行数不变且铁板锤配方仍不存在。NeoForge 无 IE 2m 38s 通过（合成包 0、整组跳过）；带 IE 2m 53s 通过，同样 166 行、0 未解析、13 个文件，reload 后仍通过。Forge 专服带 IE：`Done (27.314s)`，166 行、13 个文件。NeoForge 专服带 IE：`Done (7.862s)`，同样计数。随后都已停掉。Forge 客户端第一次停在无障碍引导屏，600s 看门狗失败；写入 `onboardAccessibility:false` 后，Forge JEI、Forge EMI、NeoForge JEI、NeoForge EMI 四次世界烟测都成功退出，压缩机页是 8 个焦炭板压成 IE 焦炭块，64 EU/t、64 ticks。截图：[Forge JEI](verification/compat-ie/forge-jei-coke-compressor.png)、[Forge EMI](verification/compat-ie/forge-emi-coke-compressor.png)、[NeoForge JEI](verification/compat-ie/neoforge-jei-coke-compressor.png)、[NeoForge EMI](verification/compat-ie/neoforge-emi-coke-compressor.png)。正式 `:distributionJar :neoforge:jar` 2m 21s 通过。`verify_artifacts.py` 核对 714 个当前共享类，双版元数据、无重复项、无测试专用条目通过，回执 [compat-ie-artifacts-20261006.json](verification/compat-ie-artifacts-20261006.json)。旧存档、完整生存和独立进程重启没有测。未推送。
