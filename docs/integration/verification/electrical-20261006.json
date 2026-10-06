@@ -1,5 +1,5 @@
 {
-  "status": "native_passed_pending_artifacts",
+  "status": "passed_bounded_electrical_batch",
   "goal": "active",
   "sourceAudit": "electrical-source-20261006.json",
   "native": {
@@ -44,5 +44,396 @@
     "push": false,
     "pr": false,
     "issueCloseOrComment": false
-  }
+  },
+  "buildSourceCommit": "f08c233a8e978282f00c2686f685dc5b2b4e0c58",
+  "sourceImplementationCommit": "f08c233a",
+  "packaging": {
+    "status": "passed",
+    "ordinaryBuild": "1m15s",
+    "sharedClasses": 712,
+    "currentNativeClasses": {
+      "forge": 1750,
+      "neoforge": 1557
+    },
+    "scope": "Current compiled classes, ZIP CRC, metadata and Mixins; excluded native fixtures/probes"
+  },
+  "artifacts": {
+    "status": "passed",
+    "scope": "Verified complete copies; runtime evidence is recorded separately",
+    "directory": "C:\\Dev\\GregTech6\\build\\verified\\20261006-115321Z-1554bb26",
+    "verification_report": "C:\\Dev\\GregTech6\\work\\electrical-20261006-artifacts.json",
+    "verification_report_sha256": "99308b50378effb51ab9da93dc4f757a83092e2333da6c175dc62ef73bc12e3f",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 41171183,
+        "sha256": "1554bb260809ef1a028c326f51f72aee1e455e8cc7f97d7fab5ec35e898945c3",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-115321Z-1554bb26\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 39390655,
+        "sha256": "39a0f1679e0fcd355dd96eb24dae2fa5c0fbce4e390abb877c4f09332bea0687",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-115321Z-1554bb26\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    }
+  },
+  "sharedResources": {
+    "forge": {
+      "exactSharedResourceBytes": {
+        "data/gregtech/recipes/energy_nodes/battery_box_ev.json": "d61547550274d8838e711c33eebc51536288796b5cf532c285daea7a7ea18c36",
+        "data/gregtech/recipes/energy_nodes/battery_box_hv.json": "1edf39e6e6c013a36160813541c0ab0d4905c734e028793895fc83594896f8d5",
+        "data/gregtech/recipes/energy_nodes/battery_box_iv.json": "0e14eb7482bfad982e59b3c4042bdaa96f60a0305032603ff975786b5661e17d",
+        "data/gregtech/recipes/energy_nodes/battery_box_luv.json": "6e0d03d284549fcec363e2a210cd455afa43000f6c0acba67b14d510703e3ba6",
+        "data/gregtech/recipes/energy_nodes/battery_box_lv.json": "46d92f3cee123a70c1a1efac14da5a2caf9d3fe7776d842f55674259e47553b9",
+        "data/gregtech/recipes/energy_nodes/battery_box_mv.json": "a0ea21f45fadd28c271a4d33ca2ec5688ecba2d7819bf172cdc901eb217b6b3b",
+        "data/gregtech/recipes/energy_nodes/battery_box_ulv.json": "8567952ab8585a6e06a3dce7a5bba913802762e0aec0d3d09fecef45772c2a1d",
+        "data/gregtech/recipes/energy_nodes/battery_box_uv.json": "73b2cf923a0e15e390dee212b5489cc09453511de03714ac89a444ce2bb8d5bb",
+        "data/gregtech/recipes/energy_nodes/battery_box_xv.json": "ac53716ac22d5b84aa5d81a7a3578412f2f90accaf46d9daa321b0ac4e2f6baf",
+        "data/gregtech/recipes/energy_nodes/battery_box_zpm.json": "9ee42a0d1a1f02aa0153df0cba99eda892f9bfd97dd57c3c87ffe4468b3b76c9",
+        "data/gregtech/recipes/energy_nodes/energy_storage_ev.json": "8af8f0195708140602ad52405c0c3f22db33471014765a001097171531ccb522",
+        "data/gregtech/recipes/energy_nodes/energy_storage_hv.json": "7b38531b8746ab616bf75b48063700bd884b680b1d57b551b03e35ff351d30e8",
+        "data/gregtech/recipes/energy_nodes/energy_storage_iv.json": "814da2dfe07dedd4ccc3697ae155766bae57c60998c8b8a5ddc4bd0e8b477748",
+        "data/gregtech/recipes/energy_nodes/energy_storage_luv.json": "d3597c32a58995f15c8bdb64238f5e538190a5f76b96394b939b2517c4ee3874",
+        "data/gregtech/recipes/energy_nodes/energy_storage_lv.json": "e246104ddd0a51973584dbbd3cb77cd68376acf69e277ad628a9824a0175113c",
+        "data/gregtech/recipes/energy_nodes/energy_storage_mv.json": "b082f62c251f7222636d97a0b09676540b3f8d88bfdcad15c744578c6cd1fbc3",
+        "data/gregtech/recipes/energy_nodes/energy_storage_ulv.json": "e1a7aa6baa5645f8db2de7ad42a67d19e7ab89a9b1ea7580906ea42a00d1bcf2",
+        "data/gregtech/recipes/energy_nodes/energy_storage_uv.json": "40cd998867d99c65b6ff2cb8401bf70a0b095aa3d520b3db28ef90eb6a602f91",
+        "data/gregtech/recipes/energy_nodes/energy_storage_zpm.json": "1702a7ab93586096e2bc11bd8922996847b6878571711ae9b624a9efbbdd4ec9",
+        "data/gregtech/recipes/energy_nodes/transformer_ev_iv.json": "d4b79e6af4115fae2de5cc1a5f59db97ebf9049f91db309fc67cd81e7638b06f",
+        "data/gregtech/recipes/energy_nodes/transformer_hv_ev.json": "1259108a16a9ea1402717581c4481b72631f12826ee286444bb68552d2c44aab",
+        "data/gregtech/recipes/energy_nodes/transformer_iv_luv.json": "0d885c8f3bcbab74d69b1fc9a3804aeeadd19e795ffb3ceeaf50577fa4700270",
+        "data/gregtech/recipes/energy_nodes/transformer_luv_zpm.json": "c0c7e830b379c27a5713bc1f62832e9a05199330d4fec2f76b4da66caea1df34",
+        "data/gregtech/recipes/energy_nodes/transformer_lv_mv.json": "3ffee6c60f1f65b7159df8dc5a7ca5c519517c65281fc69fd10adeca14d4d486",
+        "data/gregtech/recipes/energy_nodes/transformer_mv_hv.json": "86e10db6356055c8fa2a4fe947a01c5565dae3499b3135e70b96f43d2f6c78e1",
+        "data/gregtech/recipes/energy_nodes/transformer_ulv_lv.json": "dd07ecbf03d7a13c0d5af1e01bff3502e53172612d938c7b68ec7c29f7a566e1",
+        "data/gregtech/recipes/energy_nodes/transformer_uv_xv.json": "ac1fb081e8c79ca0ffd36bb283a3e4a63ccf8f207d1cb222b48d25b32c20db62",
+        "data/gregtech/recipes/energy_nodes/transformer_zpm_uv.json": "5fcf942cea2a3f7544ad74f2e5ce88df8187e2403427953e8de011c719d5bbf6",
+        "data/gregtech/tags/items/circuits_tier_0_plus.json": "5ae34d1127fb9e0526cae3a31456def087795a36f3d52bb890cd67f2cafef95b",
+        "data/gregtech/tags/items/circuits_tier_1_plus.json": "14360789ec4f482cf50204393b2100c7e7f8eecfdc3edf55e0e331d00169575b",
+        "data/gregtech/tags/items/circuits_tier_2_plus.json": "cf1e6ee43e42db1af12ea2ac51b8803c3c4a822f629b219d0ee3e80d001775c3",
+        "data/gregtech/tags/items/circuits_tier_3_plus.json": "b7182ea65c5be033798ad306a0fc76dae12250d34e35b6c12b8e45cbf4897d2d",
+        "data/gregtech/tags/items/circuits_tier_4_plus.json": "aa8aefb1fc4ba2dde0185fa8871d254800a3f881da883b9b4687fd3672b2ef39",
+        "data/gregtech/tags/items/circuits_tier_5_plus.json": "2589957143c0bab1f8e0aba469d3ff12cc883b92c5245761a70e6fb9bb3762a4",
+        "data/gregtech/tags/items/circuits_tier_6_plus.json": "92c19710c516db5bccd354ec86594cc194c17dc73077026bf7e6caa63c88be0f",
+        "data/gregtech/tags/items/circuits_tier_7_plus.json": "d6140382666c01d7d2f358fd6ed0b59edd1be0e6348f3586ece03733f404acc5",
+        "data/gregtech/tags/items/circuits_tier_8_plus.json": "3f477ed999c16510361249b9d42396b9d1131c9236e3e286cc484cdba1a345d8",
+        "data/gregtech/tags/items/circuits_tier_9_plus.json": "5dbb4d1e97a90f53f1f88bc9e102c3e22d4fa3f18bfca0acfbd38668f10d83f7"
+      },
+      "fixtureProvidersAbsent": true,
+      "staleNativeCircuitTagsAbsent": true,
+      "missingSourceTransformerNotInvented": true
+    },
+    "neoforge": {
+      "exactSharedResourceBytes": {
+        "data/gregtech/recipes/energy_nodes/battery_box_ev.json": "d61547550274d8838e711c33eebc51536288796b5cf532c285daea7a7ea18c36",
+        "data/gregtech/recipes/energy_nodes/battery_box_hv.json": "1edf39e6e6c013a36160813541c0ab0d4905c734e028793895fc83594896f8d5",
+        "data/gregtech/recipes/energy_nodes/battery_box_iv.json": "0e14eb7482bfad982e59b3c4042bdaa96f60a0305032603ff975786b5661e17d",
+        "data/gregtech/recipes/energy_nodes/battery_box_luv.json": "6e0d03d284549fcec363e2a210cd455afa43000f6c0acba67b14d510703e3ba6",
+        "data/gregtech/recipes/energy_nodes/battery_box_lv.json": "46d92f3cee123a70c1a1efac14da5a2caf9d3fe7776d842f55674259e47553b9",
+        "data/gregtech/recipes/energy_nodes/battery_box_mv.json": "a0ea21f45fadd28c271a4d33ca2ec5688ecba2d7819bf172cdc901eb217b6b3b",
+        "data/gregtech/recipes/energy_nodes/battery_box_ulv.json": "8567952ab8585a6e06a3dce7a5bba913802762e0aec0d3d09fecef45772c2a1d",
+        "data/gregtech/recipes/energy_nodes/battery_box_uv.json": "73b2cf923a0e15e390dee212b5489cc09453511de03714ac89a444ce2bb8d5bb",
+        "data/gregtech/recipes/energy_nodes/battery_box_xv.json": "ac53716ac22d5b84aa5d81a7a3578412f2f90accaf46d9daa321b0ac4e2f6baf",
+        "data/gregtech/recipes/energy_nodes/battery_box_zpm.json": "9ee42a0d1a1f02aa0153df0cba99eda892f9bfd97dd57c3c87ffe4468b3b76c9",
+        "data/gregtech/recipes/energy_nodes/energy_storage_ev.json": "8af8f0195708140602ad52405c0c3f22db33471014765a001097171531ccb522",
+        "data/gregtech/recipes/energy_nodes/energy_storage_hv.json": "7b38531b8746ab616bf75b48063700bd884b680b1d57b551b03e35ff351d30e8",
+        "data/gregtech/recipes/energy_nodes/energy_storage_iv.json": "814da2dfe07dedd4ccc3697ae155766bae57c60998c8b8a5ddc4bd0e8b477748",
+        "data/gregtech/recipes/energy_nodes/energy_storage_luv.json": "d3597c32a58995f15c8bdb64238f5e538190a5f76b96394b939b2517c4ee3874",
+        "data/gregtech/recipes/energy_nodes/energy_storage_lv.json": "e246104ddd0a51973584dbbd3cb77cd68376acf69e277ad628a9824a0175113c",
+        "data/gregtech/recipes/energy_nodes/energy_storage_mv.json": "b082f62c251f7222636d97a0b09676540b3f8d88bfdcad15c744578c6cd1fbc3",
+        "data/gregtech/recipes/energy_nodes/energy_storage_ulv.json": "e1a7aa6baa5645f8db2de7ad42a67d19e7ab89a9b1ea7580906ea42a00d1bcf2",
+        "data/gregtech/recipes/energy_nodes/energy_storage_uv.json": "40cd998867d99c65b6ff2cb8401bf70a0b095aa3d520b3db28ef90eb6a602f91",
+        "data/gregtech/recipes/energy_nodes/energy_storage_zpm.json": "1702a7ab93586096e2bc11bd8922996847b6878571711ae9b624a9efbbdd4ec9",
+        "data/gregtech/recipes/energy_nodes/transformer_ev_iv.json": "d4b79e6af4115fae2de5cc1a5f59db97ebf9049f91db309fc67cd81e7638b06f",
+        "data/gregtech/recipes/energy_nodes/transformer_hv_ev.json": "1259108a16a9ea1402717581c4481b72631f12826ee286444bb68552d2c44aab",
+        "data/gregtech/recipes/energy_nodes/transformer_iv_luv.json": "0d885c8f3bcbab74d69b1fc9a3804aeeadd19e795ffb3ceeaf50577fa4700270",
+        "data/gregtech/recipes/energy_nodes/transformer_luv_zpm.json": "c0c7e830b379c27a5713bc1f62832e9a05199330d4fec2f76b4da66caea1df34",
+        "data/gregtech/recipes/energy_nodes/transformer_lv_mv.json": "3ffee6c60f1f65b7159df8dc5a7ca5c519517c65281fc69fd10adeca14d4d486",
+        "data/gregtech/recipes/energy_nodes/transformer_mv_hv.json": "86e10db6356055c8fa2a4fe947a01c5565dae3499b3135e70b96f43d2f6c78e1",
+        "data/gregtech/recipes/energy_nodes/transformer_ulv_lv.json": "dd07ecbf03d7a13c0d5af1e01bff3502e53172612d938c7b68ec7c29f7a566e1",
+        "data/gregtech/recipes/energy_nodes/transformer_uv_xv.json": "ac1fb081e8c79ca0ffd36bb283a3e4a63ccf8f207d1cb222b48d25b32c20db62",
+        "data/gregtech/recipes/energy_nodes/transformer_zpm_uv.json": "5fcf942cea2a3f7544ad74f2e5ce88df8187e2403427953e8de011c719d5bbf6",
+        "data/gregtech/tags/items/circuits_tier_0_plus.json": "5ae34d1127fb9e0526cae3a31456def087795a36f3d52bb890cd67f2cafef95b",
+        "data/gregtech/tags/items/circuits_tier_1_plus.json": "14360789ec4f482cf50204393b2100c7e7f8eecfdc3edf55e0e331d00169575b",
+        "data/gregtech/tags/items/circuits_tier_2_plus.json": "cf1e6ee43e42db1af12ea2ac51b8803c3c4a822f629b219d0ee3e80d001775c3",
+        "data/gregtech/tags/items/circuits_tier_3_plus.json": "b7182ea65c5be033798ad306a0fc76dae12250d34e35b6c12b8e45cbf4897d2d",
+        "data/gregtech/tags/items/circuits_tier_4_plus.json": "aa8aefb1fc4ba2dde0185fa8871d254800a3f881da883b9b4687fd3672b2ef39",
+        "data/gregtech/tags/items/circuits_tier_5_plus.json": "2589957143c0bab1f8e0aba469d3ff12cc883b92c5245761a70e6fb9bb3762a4",
+        "data/gregtech/tags/items/circuits_tier_6_plus.json": "92c19710c516db5bccd354ec86594cc194c17dc73077026bf7e6caa63c88be0f",
+        "data/gregtech/tags/items/circuits_tier_7_plus.json": "d6140382666c01d7d2f358fd6ed0b59edd1be0e6348f3586ece03733f404acc5",
+        "data/gregtech/tags/items/circuits_tier_8_plus.json": "3f477ed999c16510361249b9d42396b9d1131c9236e3e286cc484cdba1a345d8",
+        "data/gregtech/tags/items/circuits_tier_9_plus.json": "5dbb4d1e97a90f53f1f88bc9e102c3e22d4fa3f18bfca0acfbd38668f10d83f7"
+      },
+      "fixtureProvidersAbsent": true,
+      "staleNativeCircuitTagsAbsent": true,
+      "missingSourceTransformerNotInvented": true
+    },
+    "sourceReferencesUnchanged": true
+  },
+  "production": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 53.72,
+      "installed_files_modified": false,
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-115321Z-1554bb26\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "1554bb260809ef1a028c326f51f72aee1e455e8cc7f97d7fab5ec35e898945c3"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "6f01cf23f4a8bf8173f565bb8de61f74315aaf53e92c98dc3aa088776c55c1dc"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "1554bb260809ef1a028c326f51f72aee1e455e8cc7f97d7fab5ec35e898945c3",
+          "bytes": 41171183
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "6f01cf23f4a8bf8173f565bb8de61f74315aaf53e92c98dc3aa088776c55c1dc",
+          "bytes": 28514
+        },
+        {
+          "name": "Jade-1.20.1-Forge-11.13.3.jar",
+          "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+          "bytes": 553487
+        },
+        {
+          "name": "jei-1.20.1-forge-15.62.0.217.jar",
+          "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+          "bytes": 2232172
+        },
+        {
+          "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+          "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+          "bytes": 364842
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-9cf71171-ce33-4e42-a4d7-d1f04d77c259\\launch.log",
+      "log_sha256": "acd872d81452a7f20986e5d4ae69daae7d7c31ca96efc41a7e9bce18f16c996d",
+      "receipt": {
+        "surfaceChecks": {
+          "materialBushInventoryModelsColorsNamesChecked": 1034,
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          },
+          "canvas": {
+            "originalCircuitTagGrades": 10,
+            "externalHighBatteryBoxRecipes": 5,
+            "originalMolecularDataFields": true,
+            "mercuryAmbientUnitMb": 1000,
+            "originalCanvasItemModels": 16,
+            "printedPageModels": 2,
+            "coloredBookScanHints": 28,
+            "directionalAndFluidFaces": 4,
+            "brightImage": true
+          }
+        },
+        "platform": "forge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-9cf71171-ce33-4e42-a4d7-d1f04d77c259\\screenshots\\production-forge-c0cf4d74-8a86-45b5-bae2-d609f5c58a61.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 182,
+        "loaderWarnings": 0,
+        "elapsedMs": 47143
+      },
+      "screenshot_sha256": "b3d8f81bc63d5e31c36834f6551cfd31a0b225b18c5ce0f12aecb614b4063a12",
+      "visually_reviewed": true,
+      "electricalScope": "Installed native resolver retains grades 0..9, original circuit tag resources are merged/cumulative, 5 high-box recipe paths and actual registered slot definitions. Title screen, no production-world crafting or GUI claim."
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 46.38,
+      "installed_files_modified": false,
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-115321Z-1554bb26\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "39a0f1679e0fcd355dd96eb24dae2fa5c0fbce4e390abb877c4f09332bea0687"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "fd6e5e813b90416fde71efce244fdb0bb0b3874472c3072c869e0b2387fe24fe"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "39a0f1679e0fcd355dd96eb24dae2fa5c0fbce4e390abb877c4f09332bea0687",
+          "bytes": 39390655
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "fd6e5e813b90416fde71efce244fdb0bb0b3874472c3072c869e0b2387fe24fe",
+          "bytes": 27293
+        },
+        {
+          "name": "emi-1.1.24+1.21.1+neoforge.jar",
+          "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+          "bytes": 1111538
+        },
+        {
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+          "bytes": 726853
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-b21b7769-8386-433a-afdb-da4fb812dd9c\\launch.log",
+      "log_sha256": "42d3577585be5d0edaa6023578ab47b79be69a8768115d0e7564d17f3899632e",
+      "receipt": {
+        "surfaceChecks": {
+          "materialBushInventoryModelsColorsNamesChecked": 1034,
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          },
+          "canvas": {
+            "originalCircuitTagGrades": 10,
+            "externalHighBatteryBoxRecipes": 5,
+            "originalMolecularDataFields": true,
+            "mercuryAmbientUnitMb": 1000,
+            "originalCanvasItemModels": 16,
+            "printedPageModels": 2,
+            "coloredBookScanHints": 28,
+            "directionalAndFluidFaces": 4,
+            "brightImage": true
+          }
+        },
+        "platform": "neoforge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-b21b7769-8386-433a-afdb-da4fb812dd9c\\screenshots\\production-neoforge-99e68517-3a5b-40c7-9b19-31f7db4f93e9.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 180,
+        "elapsedMs": 38520
+      },
+      "screenshot_sha256": "584bb2f61f53a06e368bcf9810952a3cf1e97389bf895a91cc313bdb23746da3",
+      "visually_reviewed": true,
+      "electricalScope": "Installed native resolver retains grades 0..9, original circuit tag resources are merged/cumulative, 5 high-box recipe paths and actual registered slot definitions. Title screen, no production-world crafting or GUI claim."
+    }
+  },
+  "nextScope": "Original decorative panel canPlace=false and central 2px preview bounds versus current freely placed 1px panel; continue covers/panels and external high component dependencies"
 }
