@@ -70,7 +70,7 @@ def recipe(arguments):
 
 
 def java_material(symbol):
-    if symbol == 'WoodTreated': return 'com.gregtech.gregtech.data.generated.GT6Materials.Woods.WoodTreated'
+    if symbol in ('Wood', 'WoodTreated'): return 'com.gregtech.gregtech.data.generated.GT6Materials.Woods.' + symbol
     return 'ImportedMaterialData.' + symbol
 
 
@@ -97,6 +97,7 @@ def main():
     recipes = {}
     unknown = Counter()
     unresolved_items = Counter()
+    items_without_data = Counter()
     used = set()
 
     def material(value):
@@ -123,9 +124,12 @@ def main():
         if datum: direct[norm(a[0])] = pairs(datum[0][1])
     for _, a in calls(item_data, 'OM.data'):
         if len(a) < 3: continue
-        found = re.search(r'ST.make\((Blocks\.\w+|Items\.\w+)\s*,', a[0])
+        found = re.fullmatch(r'ST.make\((Blocks\.\w+|Items\.\w+),1,(W|\d+)\)', norm(a[0]))
         if found:
-            try: direct[found[1]] = pairs(a[1:])
+            try:
+                datum = pairs(a[1:])
+                direct[found[1] + '#' + found[2]] = datum
+                if found[2] == 'W': direct[found[1]] = datum
             except (ValueError, SyntaxError, IndexError): pass # Nonconstant/conditional entries are outside this importer.
     for offset, a in calls(tech, 'CR.shaped'):
         if len(a) < 3 or 'REV' not in a[1]: continue
@@ -157,13 +161,23 @@ def main():
             else: yield offset, arguments
 
     registrations = []
+    registered_ids = set()
+    previous_registry_id = None
     for offset, a in registry_calls():
-        if len(a) < 9: continue
+        current_id = int(a[2]) if len(a) > 2 and re.fullmatch(r'\d+', a[2]) else None
+        if current_id is not None: registered_ids.add(current_id)
+        if len(a) < 9:
+            previous_registry_id = current_id
+            continue
         nbt = next((i for i, value in enumerate(a) if value.startswith('UT.NBT.make(')), None)
-        if nbt is None: continue
+        if nbt is None:
+            previous_registry_id = current_id
+            continue
         patterns, keys = recipe(a[nbt + 1:])
         # Only literal registry IDs can be referenced by aRegistry.getItem(id).
-        if not re.fullmatch(r'\d+', a[2]): continue
+        if current_id is None:
+            previous_registry_id = None
+            continue
         prior = list(re.finditer(r'aMat\s*=\s*([^;]+);', mte[:offset]))
         casing = norm(prior[-1][1]) if prior else ''
         declared = re.search(r'NBT_MATERIAL\s*,\s*([^,)]+)', a[nbt])
@@ -171,12 +185,25 @@ def main():
         row = {'machine': machine_key(a[0]), 'tab': a[1].strip('"'), 'id': int(a[2]),
                'casing': casing, 'pattern': patterns, 'keys': keys, 'line': mte.count('\n', 0, offset) + 1}
         registrations.append(row)
-        if patterns: recipes[f'aRegistry.getItem({a[2]})'] = (patterns, keys, casing, 1, f'Loader_MultiTileEntities:{row["line"]}')
+        recipe_keys = keys.copy()
+        if any('aRegistry.getItem()' in norm(v) for v in recipe_keys.values()):
+            if previous_registry_id is None: raise ValueError(f'Unresolved previous source item at {row["line"]}')
+            row['previous_registry_id'] = previous_registry_id
+            recipe_keys = {k: norm(v).replace('aRegistry.getItem()', f'aRegistry.getItem({previous_registry_id})') for k, v in keys.items()}
+        if patterns: recipes[f'aRegistry.getItem({a[2]})'] = (patterns, recipe_keys, casing, 1, f'Loader_MultiTileEntities:{row["line"]}')
         line_end = mte.find('\n', offset)
         following = mte[offset:line_end if line_end >= 0 else len(mte)]
         for _, datum in calls(following, 'OM.data'):
             if norm(datum[0]) == 'aRegistry.getItem()':
                 direct[f'aRegistry.getItem({a[2]})'] = pairs([casing if norm(v) == 'aMat' else v for v in datum[1:]])
+        for setter in re.finditer(r'(IL\.\w+)\.set\(', following):
+            for _, values in calls(following, setter[1] + '.set'):
+                if norm(values[0]) != 'aRegistry.getItem()': continue
+                datum = list(calls(values[1], 'new OreDictItemData')) if len(values) > 1 else []
+                if datum:
+                    direct[f'aRegistry.getItem({a[2]})'] = pairs([casing if norm(v) == 'aMat' else v for v in datum[0][1]])
+                direct[setter[1]] = f'aRegistry.getItem({a[2]})'
+        previous_registry_id = current_id
     direct['aRegistry.getItem(1005)'] = Counter({'Ceramic': U * 7}) # Explicit IL.Ceramic_Crucible.set data.
 
     memo = {}
@@ -207,6 +234,10 @@ def main():
             return result
         if expression in direct:
             return resolve(direct[expression], casing, stack) if isinstance(direct[expression], str) else direct[expression].copy()
+        vanilla_stack = re.fullmatch(r'ST.make\((Blocks\.\w+|Items\.\w+),(\d+),(W|\d+)\)', expression)
+        if vanilla_stack:
+            datum = direct.get(vanilla_stack[1] + '#' + vanilla_stack[3], direct.get(vanilla_stack[1] + '#W'))
+            if datum is not None: return Counter({key: value * int(vanilla_stack[2]) for key, value in datum.items()})
         if expression in recipes:
             if expression in stack: raise ValueError('Source material dependency cycle: ' + expression)
             if expression not in memo:
@@ -218,7 +249,10 @@ def main():
                 used.add(origin)
             return memo[expression].copy()
         # A missing registered item is different from an ore key without automatic data.
-        if expression.startswith('aRegistry.getItem('): unresolved_items[expression] += 1
+        if expression.startswith('aRegistry.getItem('):
+            source_id = re.fullmatch(r'aRegistry.getItem\((\d+)\)', expression)
+            if source_id and int(source_id[1]) in registered_ids: items_without_data[expression] += 1
+            else: unresolved_items[expression] += 1
         else: unknown[expression] += 1
         return Counter()
 
@@ -233,7 +267,8 @@ def main():
         if expression in recipes:
             _, keys, _, _, _ = recipes[expression]
             return set().union(*(missing_registry_refs(value, seen + (expression,)) for value in keys.values()))
-        return {expression} if expression.startswith('aRegistry.getItem(') else set()
+        source_id = re.fullmatch(r'aRegistry.getItem\((\d+)\)', expression)
+        return {expression} if source_id and int(source_id[1]) not in registered_ids else set()
 
     indexed = {}
     for row in registrations:
@@ -283,6 +318,11 @@ def main():
     bindings.update({10050: 'solar_panel_silicon', 10051: 'solar_panel_germanium',
                      1512: 'steam_turbine_bronze', 1515: 'steam_turbine_brass', 1518: 'steam_turbine_invar',
                      1522: 'steam_turbine_steel', 1525: 'steam_turbine_chromium'})
+    bindings.update({32735: 'mortar_block', 32094: 'mortar_netherite', 32075: 'mortar_sapphire',
+                     32076: 'mortar_diamond', 32089: 'mortar_amethyst', 32703: 'grindstone_block',
+                     32702: 'sifting_table', 32706: 'mixing_bowl', 32705: 'mixing_bowl_table',
+                     32722: 'juicer', 32708: 'bathing_pot', 32707: 'bathing_pot_table',
+                     32721: 'bathing_pot_wood', 32720: 'bathing_pot_table_wood'})
     # Port controllers and structural parts retain their original numeric identities.
     bindings.update({17000: 'coke_oven_main', 17110: 'implosion_compressor_main',
                      17198: 'fusion_reactor_main', 17101: 'distillation_tower_main',
@@ -321,6 +361,7 @@ def main():
         parts = resolve(f'aRegistry.getItem({source_id})')
         bound = {'path': path, 'source_id': source_id, 'source_line': row['line'], 'components': dict(parts),
                  'pattern': row['pattern'], 'keys': row['keys']}
+        if 'previous_registry_id' in row: bound['previous_registry_id'] = row['previous_registry_id']
         missing = sorted(missing_registry_refs(f'aRegistry.getItem({source_id})'))
         if missing:
             bound['unresolved_source_item_references'] = missing
@@ -383,6 +424,7 @@ public final class OriginalMachineMaterialData {
              'source_invalid_recipes': invalid_rows,
              'used_component_recipes': sorted(used), 'unknown_automatic_data': dict(sorted(unknown.items())),
              'unresolved_source_item_references': dict(sorted(unresolved_items.items())),
+             'registered_source_items_without_material_data': dict(sorted(items_without_data.items())),
              'scope': 'Known original CR.REV components. No arbitrary tag member substitution; native crafted ingredients and runtime UI acceptance are separate checks.'}
     ns.audit.parent.mkdir(parents=True, exist_ok=True)
     ns.audit.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
