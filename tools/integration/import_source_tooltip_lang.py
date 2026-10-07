@@ -8,6 +8,10 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from localization import CONFIG_PATH, LANG_PATH, expected_chinese, json_text, load_source, read_json
 
 
 def main():
@@ -51,31 +55,35 @@ def main():
                           lambda m: m[0] if m[0].startswith('"') else re.sub(r'[^\n]', ' ', m[0]), contents)
         for m in re.finditer(r'LH\.add\(\s*' + literal + r'\s*,\s*' + literal, contents):
             english[json.loads(m[1])] = json.loads(m[2])
-    chinese = {}
-    for line in ns.zh_patch.read_text(encoding='utf-8').splitlines():
-        row = line.lstrip()
-        if row.startswith('S:') and '=' in row:
-            key, value = row[2:].split('=', 1)
-            chinese[key] = value
+    chinese, _ = load_source(ns.repo, ns.zh_patch)
     aliases = dict(ns.alias)
     java_keys = set()
     for file in [ns.java, *ns.extra_java]:
         java_keys.update(re.findall(r'"(gt\.(?:lang|recipe|tooltip|td)\.[^"\\]+|oredict\.prefix\.[\w]+)"', file.read_text(encoding='utf-8')))
     keys = sorted(java_keys | set(ns.keys) | set(aliases))
     changes, missing = {}, []
-    for locale, imported in [('en_us', english), ('zh_cn', chinese)]:
-        file = ns.repo / f'core/src/main/resources/assets/gregtech/lang/{locale}.json'
-        data = json.loads(file.read_text(encoding='utf-8'))
-        changes[locale] = {}
-        for key in keys:
-            source_key = aliases.get(key, key)
-            if source_key not in imported:
-                if locale == 'en_us': raise ValueError('Original English key missing: ' + source_key)
-                missing.append(key)
-                continue
-            if data.get(key) != imported[source_key]: changes[locale][key] = {'before': data.get(key), 'after': imported[source_key]}
-            data[key] = imported[source_key]
-        file.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    lang = ns.repo / LANG_PATH
+    data = read_json(lang / 'en_us.json')
+    bindings = read_json(ns.repo / CONFIG_PATH / 'aliases.json')
+    for key in keys:
+        source_key = aliases.get(key, key)
+        if source_key not in english:
+            raise ValueError('Original English key missing: ' + source_key)
+        data[key] = english[source_key]
+        if key in aliases and key != source_key:
+            # expected_chinese validates existence and prevents overriding original keys.
+            bindings[key] = source_key
+        if source_key not in chinese:
+            missing.append(key)
+    translated = expected_chinese(data, chinese, bindings)
+    for locale, updated in [('en_us', data), ('zh_cn', translated)]:
+        before = read_json(lang / (locale + '.json'))
+        changes[locale] = {k: {'before': before.get(k), 'after': v}
+                           for k, v in updated.items() if before.get(k) != v}
+    # Validate the entire result before writing anything; aliases and values stay together.
+    (ns.repo / CONFIG_PATH / 'aliases.json').write_text(json_text(bindings), encoding='utf-8')
+    (lang / 'en_us.json').write_text(json_text(data), encoding='utf-8')
+    (lang / 'zh_cn.json').write_text(json_text(translated), encoding='utf-8')
     paths = [root/'LH.java', root/'CS.java', root/'RM.java', root/'TD.java', root/'OP.java', root/'../GT_API_Proxy_Client.java', root/'../code/TagData.java', *ns.extra_source, ns.zh_patch]
     ns.audit.parent.mkdir(parents=True, exist_ok=True)
     ns.audit.write_text(json.dumps({'keys': keys, 'aliases': aliases, 'changes': changes, 'missing_chinese': missing,
