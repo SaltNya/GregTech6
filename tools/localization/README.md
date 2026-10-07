@@ -21,4 +21,17 @@ python -X utf8 tools/integration/check_source.py
 
 `sourcePolicyCheck` 经 `:core:check` 接入双平台构建。它检查纯 Java core 边界、GameTest 隔离、平台语言副本、重复 JSON 键及所有译文。验包再次检查当前语言来源，并比较 JAR 内的两份语言文件与共享资源字节是否一致。
 
+英文也接受门禁检查：`english_source.json` 固定按原版身份核对的英文声明及来源文件哈希；`localization.py` 拒绝偏离原文、空物品名、乱码替换符、非法控制字符和中英文参数不一致。原版确实为空的 `.tooltip` 保留。格式检查采用 Minecraft 的数字格式归一和参数索引规则，保留无参数的原版百分比文字。
+
+源码门禁还检查两平台实际 `translatable` / `I18n.get` 的静态语言键和参数数量，忽略注释、代码示例、原版 Minecraft 键，并单列动态键/变长参数边界。独立成品自检加载真实 `en_us` 资源并扫描全部 GT 注册物品名称，再切换 `zh_cn` 核对熊蜂、铁砧及流体实际回调；这不是完整世界或玩家悬停验收。
+
+已有原版机器号、材料与流体身份可以导出并导入，避免英文词序影响匹配：
+
+```text
+java -cp core/build/classes/java/main tools/integration/LanguageIdentities.java > work/language-identities.tsv
+python -X utf8 tools/integration/import_identity_localization.py --source <原版检出目录> --identities work/language-identities.tsv --audit work/language-identities-review.json
+```
+
+使用当前编译过的共享 core；默认仅生成提案，审阅后加 `--write`。运行前后均须保留审计。现代符号有歧义或原内名与现代名称不一致时不覆盖既有绑定；原补丁缺失条目保留在报告中。原文无法支持的英语表达式也不自行推导。
+
 修改原文件基准需要同时更新压缩快照、哈希和绑定，检查译文差异后再生成。现有汉化文件未声明作者/许可，沿用历史来源记录；本次仅在本地保存与核对，未发布。

@@ -200,6 +200,12 @@ def launch(args):
         raise ValueError('Production canned-food rendering receipt is incomplete')
     if surface.get('materialBushInventoryModelsColorsNamesChecked') != 1034:
         raise ValueError('Production material berry bush model/color/name coverage is incomplete')
+    language = surface.get('originalChinese', {})
+    if (language.get('locale') != 'zh_cn' or language.get('englishItemNames', 0) < 10000 or language.get('beeNames') != 640
+            or language.get('beeDescriptions') != 360 or language.get('emptyBeeDescriptions') != 280
+            or language.get('anvilNames') != 35 or language.get('fluidNameSamples') != 3
+            or language.get('fluidPropertySamples') != 7 or language.get('hotRecipeValues') != 2):
+        raise ValueError('Production original-language/actual-fluid receipt is incomplete')
     dimensions = check_png(screenshot.read_bytes())
     if dimensions != (receipt['width'], receipt['height']):
         raise ValueError('Production screenshot dimensions differ from receipt')

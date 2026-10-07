@@ -9,8 +9,8 @@ import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
 from localization import (CONFIG_PATH, LANG_PATH, expected_chinese,
-                          json_text, load_source, parse_patch, read_json, synchronize)
-from check_source import boundary_errors, check
+                          json_text, load_source, parse_patch, read_json, synchronize, format_arguments)
+from check_source import boundary_errors, check, literal_language_calls
 from verify_artifacts import is_test_entry
 
 
@@ -31,6 +31,7 @@ class SourcePolicyTests(unittest.TestCase):
         (config / 'GregTech_zh_cn.lang.gz').write_bytes(gzip.compress(raw, mtime=0))
         self.write_json(CONFIG_PATH / 'source.json', {'sha256': hashlib.sha256(raw).hexdigest(), 'keys': 2})
         self.write_json(CONFIG_PATH / 'aliases.json', self.aliases)
+        self.write_json(CONFIG_PATH / 'english_source.json', {'values': {}})
         self.write_json(LANG_PATH / 'en_us.json', self.english)
         self.good = expected_chinese(self.english, self.source, self.aliases)
         self.write_json(LANG_PATH / 'zh_cn.json', self.good)
@@ -155,6 +156,49 @@ String encoded = "\\u4e2d";
         self.write_json(Path('neoforge/src/main/resources/assets/gregtech/lang/zh_cn.json'), self.good)
         with self.assertRaisesRegex(ValueError, 'shadows'):
             check(self.repo)
+
+    def test_english_source_drift_is_rejected_even_if_chinese_is_regenerated(self):
+        self.write_json(CONFIG_PATH / 'english_source.json', {'values': {
+            'item.gregtech.name': {'source_key': 'gt.name', 'value': 'Name %s'}}})
+        self.write_json(LANG_PATH / 'en_us.json', {**self.english, 'item.gregtech.name': 'Invented name %s'})
+        with self.assertRaisesRegex(ValueError, 'English differs'):
+            synchronize(self.repo, write=True)
+
+    def test_english_and_chinese_format_arguments_must_match(self):
+        self.write_json(LANG_PATH / 'en_us.json', {**self.english, 'item.gregtech.name': 'Name %s %s'})
+        with self.assertRaisesRegex(ValueError, 'format arguments differ'):
+            synchronize(self.repo, write=True)
+        self.assertEqual(format_arguments('%2$s %1$.2f / %2$s %%'), {1, 2})
+        self.assertEqual(format_arguments('Efficiency: 50%'), set())
+        for value in ('%0$s', '%s and 50%', '%q', '%s %3$z', '%05s', '%1$'):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                format_arguments(value)
+
+    def test_literal_english_key_and_argument_checks_ignore_comments_and_examples(self):
+        path = Path('src/main/java/Sample.java')
+        en = {'gt.name': '%2$s then %1$s'}
+        source = '''// Component.translatable("gt.missing");
+String example = "Component.translatable(\\"gt.missing\\")";
+Component.translatable("gt.name", nested("text, text"), 2);
+Component.translatable("gt.name", 1);
+Component.translatable("gt.missing");
+Component.translatable("item.minecraft.stone");
+Component.translatable("gt." + suffix);
+'''
+        issues, checked, dynamic = literal_language_calls(path, source, en)
+        self.assertEqual(checked, 3)
+        self.assertEqual(dynamic, 1)
+        self.assertEqual(len(issues), 2)
+        self.assertIn('Insufficient', issues[0])
+        self.assertIn('Missing English', issues[1])
+
+    def test_english_encoding_empty_names_and_supplementary_chinese_are_rejected(self):
+        for value in ('\ufffd', '', '\u0001'):
+            with self.subTest(value=value):
+                self.write_json(LANG_PATH / 'en_us.json', {**self.english, 'item.gregtech.name': value})
+                with self.assertRaises(ValueError): synchronize(self.repo, write=True)
+        with self.assertRaisesRegex(ValueError, 'bypasses'):
+            expected_chinese({'item.gregtech.name':'\U00020000'}, self.source, {})
 
     def test_test_resources_and_nested_classes_are_forbidden_in_production(self):
         stems = {'com/gregtech/gregtech/jei/JeiMachineIndexTests'}
