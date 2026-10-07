@@ -60,6 +60,19 @@ def arguments(values, replacements):
     return result
 
 
+def parse_receipt(raw_log, exit_code, log):
+    for marker in ('PRODUCTION_SMOKE_FAILED', 'Mixin apply failed', 'MixinTransformerError',
+                   'zip END header not found', 'Failed to initialize the mod loading system'):
+        if marker.encode('ascii') in raw_log:
+            raise ValueError(f'Production client failure: {marker}; see {log}')
+    # Native libraries may use a different encoding. Only the test mod's JSON
+    # is a UTF-8 contract; failure markers are ASCII in either stream.
+    receipts = re.findall(rb'PRODUCTION_SMOKE_SUCCESS (\{[^\r\n]+\})', raw_log)
+    if exit_code != 0 or len(receipts) != 1:
+        raise ValueError(f'Production client exit={exit_code}, success receipts={len(receipts)}; see {log}')
+    return json.loads(receipts[0].decode('utf-8'))
+
+
 def launch(args):
     root = args.minecraft_root.resolve()
     installed = root / 'versions' / args.version
@@ -144,7 +157,9 @@ def launch(args):
         'clientid': '0', 'auth_xuid': '0', 'user_type': 'legacy', 'version_type': 'delivery-check',
         'resolution_width': '1280', 'resolution_height': '720',
     }
-    java_args = ['-Xmx4G', '-Dfile.encoding=UTF-8', *arguments(version['arguments']['jvm'], replacements),
+    java_args = ['-Xmx4G', *arguments(version['arguments']['jvm'], replacements),
+                 '-Dfile.encoding=UTF-8', '-Dstdout.encoding=UTF-8', '-Dstderr.encoding=UTF-8',
+                 '-Dsun.stdout.encoding=UTF-8', '-Dsun.stderr.encoding=UTF-8',
                  version['mainClass'], *arguments(version['arguments']['game'], replacements)]
     argument_file = run / 'java-arguments.txt'
     argument_file.write_text('\n'.join('"' + a.replace('\\', '\\\\').replace('"', '\\"') + '"'
@@ -168,15 +183,9 @@ def launch(args):
             process.kill()
             process.wait()
             raise ValueError(f'Production client timed out; see {log}')
-    text = log.read_text(encoding='utf-8', errors='replace')
-    for marker in ('PRODUCTION_SMOKE_FAILED', 'Mixin apply failed', 'MixinTransformerError',
-                   'zip END header not found', 'Failed to initialize the mod loading system'):
-        if marker in text:
-            raise ValueError(f'Production client failure: {marker}; see {log}')
-    receipts = re.findall(r'PRODUCTION_SMOKE_SUCCESS (\{[^\r\n]+\})', text)
-    if exit_code != 0 or len(receipts) != 1:
-        raise ValueError(f'Production client exit={exit_code}, success receipts={len(receipts)}; see {log}')
-    receipt = json.loads(receipts[0])
+    # JDK 18+ uses separate console encodings even with file.encoding=UTF-8.
+    # Never silently replace broken bytes in the structured language receipt.
+    receipt = parse_receipt(log.read_bytes(), exit_code, log)
     screenshot = Path(receipt['screenshot'])
     if (receipt['platform'] != args.platform or receipt['screen'] != 'net.minecraft.client.gui.screens.TitleScreen'
             or receipt['renderedFrames'] < 5 or screenshot.resolve().parent != (run / 'screenshots').resolve()):
@@ -204,7 +213,10 @@ def launch(args):
     if (language.get('locale') != 'zh_cn' or language.get('englishItemNames', 0) < 10000 or language.get('beeNames') != 640
             or language.get('beeDescriptions') != 360 or language.get('emptyBeeDescriptions') != 280
             or language.get('anvilNames') != 35 or language.get('fluidNameSamples') != 3
-            or language.get('fluidPropertySamples') != 7 or language.get('hotRecipeValues') != 2):
+            or language.get('fluidPropertySamples') != 7 or language.get('hotRecipeValues') != 2
+            or language.get('sourceIdentitySamples') != 12 or language.get('assembledToolNames') != 3
+            or language.get('machineNamesEnglish', 0) < 400 or language.get('machineNamesChinese', 0) < 400
+            or language.get('newSourceDescriptions') != 1):
         raise ValueError('Production original-language/actual-fluid receipt is incomplete')
     dimensions = check_png(screenshot.read_bytes())
     if dimensions != (receipt['width'], receipt['height']):
@@ -220,7 +232,8 @@ def launch(args):
               'installed_files_modified': False, 'version_json_sha256': sha(descriptor),
               'distribution': {'path': str(args.jar.resolve()), 'sha256': sha(args.jar)},
               'probe': {'path': str(args.probe.resolve()), 'sha256': sha(args.probe)},
-              'mods': mod_records, 'log': str(log), 'log_sha256': sha(log), 'receipt': receipt,
+              'mods': mod_records, 'log': str(log), 'log_encoding': 'native messages may differ; structured receipt utf-8',
+              'log_sha256': sha(log), 'receipt': receipt,
               'screenshot_sha256': sha(screenshot), 'visually_reviewed': False}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

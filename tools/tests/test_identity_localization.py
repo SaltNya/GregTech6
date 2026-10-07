@@ -5,7 +5,7 @@ import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
-from import_identity_localization import original_english
+from import_identity_localization import original_english, pipe_identities, numbered_item_identities
 
 
 class IdentityLanguageTests(unittest.TestCase):
@@ -50,3 +50,113 @@ addItem(2, "Conflicting", "Original description");
             self.assertEqual(result['gt.multiitem.books.1.tooltip'],'')
             self.assertNotIn('gt.multiitem.books.2',result)
             self.assertEqual(result['gt.multiitem.books.2.tooltip'],'Original description')
+
+    def test_original_local_overrides_voltage_and_any_material_are_distinct(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data'
+            data.mkdir(parents=True)
+            (data/'MT.java').write_text('''
+static OreDictMaterial iron() {return metal(260, "Iron", 0);}
+Fe = iron();
+Galvanized = metal(1, "SteelGalvanized", 0).setLocal("Galvanized Steel");
+Kinetic_T = {ANY.Steel, Fe};
+''',encoding='utf-8')
+            (data/'ANY.java').write_text('Steel = any("Any Iron-Steel");',encoding='utf-8')
+            (data/'CS.java').write_text('String[] VN = {"ULV", "LV"};',encoding='utf-8')
+            (java/'Loader_MultiTileEntities.java').write_text('''
+private static void metalset() {}
+private static void storages() {
+aMat = MT.Fe; aRegistry.add("Machine ("+aMat.getLocal()+")", "Machines", 1, 0);
+aMat = MT.Galvanized; aRegistry.add("Machine ("+aMat.getLocal()+")", "Machines", 2, 0);
+aMat = MT.DATA.Kinetic_T[0]; aRegistry.add("Hammer ("+aMat.getLocal()+")", "Machines", 3, 0);
+aRegistry.add("Igniter ("+VN[1]+")", "Machines", 4, 0);
+aRegistry.add("Unsupported ("+VN[9]+")", "Machines", 5, 0);
+aMat = ANY.Steel; aRegistry.add("Any machine ("+aMat.getLocal()+")", "Machines", 6, 0);
+}''',encoding='utf-8')
+            result,_=original_english(root)
+            self.assertEqual(result['gt.multitileentity.1'],'Machine (Iron)')
+            self.assertEqual(result['gt.multitileentity.2'],'Machine (Galvanized Steel)')
+            self.assertEqual(result['gt.multitileentity.3'],'Hammer (Any Iron-Steel)')
+            self.assertEqual(result['gt.multitileentity.4'],'Igniter (LV)')
+            self.assertNotIn('gt.multitileentity.5',result)
+            self.assertEqual(result['gt.multitileentity.6'],'Any machine (Any Iron-Steel)')
+
+    def test_flower_metadata_comes_from_registered_class_and_not_comments(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data'
+            data.mkdir(parents=True)
+            (data/'MT.java').write_text('',encoding='utf-8')
+            loader=java/'gregtech/loaders/a/Loader_Blocks.java'
+            loader.parent.mkdir(parents=True)
+            loader.write_text('new BlockFlowersA("gt.block.flower.a");',encoding='utf-8')
+            (java/'BlockFlowersA.java').write_text('''
+public BlockFlowersA(String id) {
+  LH.add(getUnlocalizedName()+".0", "Original Flower");
+  // LH.add(getUnlocalizedName()+".0", "Wrong Flower");
+}''',encoding='utf-8')
+            result,_=original_english(root)
+            self.assertEqual(result['gt.block.flower.a.0'],'Original Flower')
+
+    def test_shared_lh_constant_declarations_keep_exact_source_phrase(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);data=root/'src/main/java/gregapi/data'
+            data.mkdir(parents=True)
+            (data/'MT.java').write_text('',encoding='utf-8')
+            (data/'LH.java').write_text('''
+TOOL_HINT="gt.lang.tool.hint";
+add(TOOL_HINT, " Exact source hint ");
+// add(TOOL_HINT, "Wrong");
+''',encoding='utf-8')
+            result,_=original_english(root)
+            self.assertEqual(result['gt.lang.tool.hint'],' Exact source hint ')
+
+    def test_pipe_helpers_resolve_numeric_offsets_and_refuse_incomplete_tables(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';helpers=java/'gregapi/tileentity/connectors'
+            loader=java/'gregtech/loaders/b/Loader_MultiTileEntities.java'
+            helpers.mkdir(parents=True);loader.parent.mkdir(parents=True)
+            loader.write_text('''
+MultiTileEntityPipeItem.addItemPipes(25000, 0, MT.Brass);
+MultiTileEntityPipeFluid.addFluidPipes(26000, 0, MT.Wood);
+// MultiTileEntityPipeItem.addItemPipes(99999, 0, MT.Brass);
+''',encoding='utf-8')
+            for helper,sizes,start in [('Item',['Medium','Large','Huge','RestrictiveMedium','RestrictiveLarge','RestrictiveHuge'],2),
+                                       ('Fluid',['Tiny','Small','Medium','Large','Huge','Quadruple','Nonuple'],0)]:
+                (helpers/f'MultiTileEntityPipe{helper}.java').write_text('\n'.join(
+                    f'OreDictManager.INSTANCE.setTarget_(OP.pipe{size}, aMat, aRegistry.add("Name", "Pipes", aID+{i+start}, 0));'
+                    for i,size in enumerate(sizes)),encoding='utf-8')
+            result,_=pipe_identities(root,{'MT.Brass':'Brass','MT.Wood':'Wood'})
+            self.assertEqual(len(result),13)
+            self.assertEqual(result['@pipe.item.Brass.RESTRICTIVE_HUGE'],'gt.multitileentity.25007')
+            self.assertEqual(result['@pipe.fluid.Wood.NONUPLE'],'gt.multitileentity.26006')
+            (helpers/'MultiTileEntityPipeFluid.java').write_text('',encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Incomplete original pipe helper'):
+                pipe_identities(root,{'MT.Brass':'Brass','MT.Wood':'Wood'})
+
+    def test_original_component_loop_stops_before_port_only_tier(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data'
+            data.mkdir(parents=True)
+            (data/'MT.java').write_text('',encoding='utf-8')
+            (data/'CS.java').write_text('String[] VN={"ULV","LV","MV","HV","EV","IV","LuV","ZPM","UV","PUV1"};',encoding='utf-8')
+            (java/'MultiItemTechnological.java').write_text('''
+for (int i = 0; i < 10; i++) {
+IL.MOTORS[i].set(addItem(12000+i, "Compact Electric Motor ("+VN[i]+")", ""));
+}
+''',encoding='utf-8')
+            result,_=original_english(root)
+            self.assertEqual(result['gt.multiitem.technological.12006'],'Compact Electric Motor (LuV)')
+            self.assertEqual(result['gt.multiitem.technological.12009.tooltip'],'')
+            self.assertNotIn('gt.multiitem.technological.12010',result)
+
+    def test_il_shape_identity_preserves_native_word_order(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);items=root/'src/main/java/gregtech/items';items.mkdir(parents=True)
+            (items/'MultiItemTechnological.java').write_text('''
+IL.Shape_Extruder_Pipe_Tiny.set(addItem(10009,"Tiny shape","Description"));
+IL.Shape_SimpleEx_CCC.set(addItem(10228,"Capsule shape","Description"));
+// IL.Shape_Extruder_Pipe_Tiny.set(addItem(99999,"Wrong",""));
+''',encoding='utf-8')
+            result,_=numbered_item_identities(root)
+            self.assertEqual(result['item.gregtech.extruder_shape_tinypipe'],'gt.multiitem.technological.10009')
+            self.assertEqual(result['item.gregtech.low_heat_extruder_shape_capsulecellcontainer'],'gt.multiitem.technological.10228')
