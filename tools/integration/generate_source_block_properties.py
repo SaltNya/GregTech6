@@ -63,8 +63,13 @@ public final class SourceBlockProperties {
     }
     private static final Map<String, Params> BLOCKS = new LinkedHashMap<>(), BASICS = new LinkedHashMap<>();
     static { blocks0(); blocks1(); blocks2(); blocks3(); basics0(); basics1(); basics2(); basics3();
-        // Original metalset: aMachine, aMat.mToolQuality; hopper plus queue hopper.
-        for (var entry : HopperCatalog.ALL) BLOCKS.put(entry.spec().id(), new Params(-1,"wrench",entry.spec().material(),-1,false));
+        BLOCKS.putAll(com.gregtech.gregtech.content.machine.OriginalStorageMaterialData.harvest());
+        // Original metalset lines145..146 pass explicit metadata0, even for high-tier metals.
+        for (var entry : HopperCatalog.ALL) {
+            String suffix = entry.spec().id().substring(entry.queue() ? "queue_hopper_".length() : "hopper_".length());
+            int sourceId = BLOCKS.get("chest_"+suffix).sourceId() + (entry.queue() ? 8200 : 8000);
+            BLOCKS.put(entry.spec().id(), new Params(sourceId,"wrench",entry.spec().material(),0,false));
+        }
     }
     public static Optional<Params> block(String path) { return Optional.ofNullable(BLOCKS.get(path)); }
     public static Optional<Params> basic(String machine, int tier) { return Optional.ofNullable(BASICS.get(machine+"/"+tier)); }
@@ -82,11 +87,11 @@ public final class SourceBlockProperties {
     java.append('}\n');ns.out.parent.mkdir(parents=True,exist_ok=True);ns.out.write_text(''.join(java),encoding='utf-8')
     paths=['src/main/java/gregtech/loaders/b/Loader_MultiTileEntities.java','src/main/java/gregapi/block/multitileentity/MultiTileEntityBlock.java','src/main/java/gregapi/data/ANY.java',
            'src/main/java/gregapi/block/multitileentity/MultiTileEntityClassContainer.java','src/main/java/gregapi/data/MT.java','LICENSE']
-    audit=dict(blocks=blocks,basics=basics,additional_dynamic_hoppers=120,
+    audit=dict(blocks=blocks,basics=basics,additional_dynamic_hoppers=120,additional_dynamic_storage=420,
                source_files=[dict(path=str(ns.source/p),sha256=hashlib.sha256((ns.source/p).read_bytes()).hexdigest()) for p in paths],
                authors=['GregTech-6 Team','Gregorius Techneticies'],license='LGPL-3.0-or-later',
-               boundaries='Only adopted source IDs plus existing source metalset hoppers. Other port blocks keep native harvest policy; no invented source identity.')
+               boundaries='Adopted fixed source IDs, audited seven-family storage metalsets, and120 hoppers with actual original metalset IDs and explicit metadata0. Other blocks keep native harvest policy; no invented source identity.')
     ns.audit.parent.mkdir(parents=True,exist_ok=True);ns.audit.write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps(dict(blocks=len(blocks),basics=len(basics),dynamic_hoppers=120,hand_harvestable=sum(x['hand_harvestable'] for x in blocks.values()))))
+    print(json.dumps(dict(blocks=len(blocks),basics=len(basics),dynamic_hoppers=120,dynamic_storage=420,hand_harvestable=sum(x['hand_harvestable'] for x in blocks.values()))))
 
 if __name__=='__main__':main()
