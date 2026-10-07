@@ -44,6 +44,16 @@ class LanguageIdentities {
             for (String variant : new String[]{"", "booster", "detector"})
                 row("block.gregtech.track_" + (variant.isEmpty() ? "" : variant + "_") + p.slug(),
                         "gt.block.rail." + (variant.isEmpty() ? "" : variant + ".") + p.slug(), "");
+        for (var stone : com.gregtech.gregtech.block.stone.StoneType.values())
+            for (var variant : com.gregtech.gregtech.block.stone.StoneVariant.values()) {
+                String key = "block.gregtech." + stone.registryId() + "_" + variant.registrySuffix();
+                row(key, stone.textureFolder() + "." + variant.meta(), "");
+                row(key + "_slab", stone.textureFolder() + ".slab.0." + variant.meta(), "");
+            }
+        // Original bush 32759 has one name; the berry/cotton/material is its output tooltip.
+        for (var berry : com.gregtech.gregtech.content.plant.BerryBushCatalog.worldgenTypes())
+            row("block.gregtech." + com.gregtech.gregtech.content.plant.BerryBushCatalog.blockPath(berry.id()),
+                    "gt.multitileentity.32759", "");
         var colors = com.gregtech.gregtech.worldgen.SurfaceFloraRules.GLOWTUS_COLOURS;
         for (int i = 0; i < colors.size(); i++)
             row("block.gregtech.glowtus_" + colors.get(i), "gt.block.lilypad.glowtus." + i, "");

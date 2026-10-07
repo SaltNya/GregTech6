@@ -216,9 +216,19 @@ def launch(args):
             or language.get('fluidPropertySamples') != 7 or language.get('hotRecipeValues') != 2
             or language.get('sourceIdentitySamples') != 20 or language.get('assembledToolNames') != 3
             or language.get('coloredConstructionNamesEnglish') != 144 or language.get('coloredConstructionNamesChinese') != 144
+            or language.get('sourceStoneNamesEnglish') != 544 or language.get('sourceStoneNamesChinese') != 544
+            or language.get('bushNamesAndOutputsEnglish', 0) < 10
+            or language.get('bushNamesAndOutputsEnglish') != language.get('bushNamesAndOutputsChinese')
             or language.get('machineNamesEnglish', 0) < 400 or language.get('machineNamesChinese', 0) < 400
             or language.get('newSourceDescriptions') != 1):
         raise ValueError('Production original-language/actual-fluid receipt is incomplete')
+    inventory_path = run / 'language-names.json'
+    inventory = json.loads(inventory_path.read_text(encoding='utf-8'))
+    if (inventory.get('registeredItems') != language.get('englishItemNames')
+            or language.get('chineseItemNames') != language.get('englishItemNames')
+            or inventory.get('candidateCount') != len(inventory.get('candidates', []))
+            or inventory.get('candidateCount') != language.get('latinNameCandidates')):
+        raise ValueError('Production registered-language inventory is incomplete')
     dimensions = check_png(screenshot.read_bytes())
     if dimensions != (receipt['width'], receipt['height']):
         raise ValueError('Production screenshot dimensions differ from receipt')
@@ -235,7 +245,9 @@ def launch(args):
               'probe': {'path': str(args.probe.resolve()), 'sha256': sha(args.probe)},
               'mods': mod_records, 'log': str(log), 'log_encoding': 'native messages may differ; structured receipt utf-8',
               'log_sha256': sha(log), 'receipt': receipt,
-              'screenshot_sha256': sha(screenshot), 'visually_reviewed': False}
+              'screenshot_sha256': sha(screenshot), 'visually_reviewed': False,
+              'language_name_inventory': {'path': str(inventory_path), 'sha256': sha(inventory_path),
+                  'registered_items': inventory['registeredItems'], 'latin_candidates': inventory['candidateCount']}}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(f'Production {args.platform} title-screen check passed: {dimensions}; {args.output}', flush=True)

@@ -260,18 +260,18 @@ def original_english(original):
             symbol=rows[int(array[2])]
             if symbol.startswith('ANY.'): return any_names.get(symbol[4:])
             expr='MT.'+symbol
-        match = re.fullmatch(r'MT\.(\w+)', re.sub(r'\s+', '', expr))
+        match = re.fullmatch(r'MT\.(?:STONES\.)?(\w+)', re.sub(r'\s+', '', expr))
         names = material_names.get(match[1], set()) if match else set()
         return next(iter(names)) if len(names) == 1 else None
     def name(expr, mat=None):
         # Preserve all literal whitespace/case. No word matching or translated-name inference.
-        parts = re.findall(STRING + r'|aMat\.getLocal\(\)|VN\[\d+\]|\+', expr)
+        parts = re.findall(STRING + r'|aMat\.getLocal\(\)|aDefaultLocalised|VN\[\d+\]|\+', expr)
         if re.sub(r'\s+', '', ''.join(parts)) != re.sub(r'\s+', '', expr):
             return None
         values = []
         for part in parts:
             if part == '+': continue
-            if part == 'aMat.getLocal()':
+            if part in ('aMat.getLocal()', 'aDefaultLocalised'):
                 if mat is None: return None
                 values.append(mat)
             elif part.startswith('VN['):
@@ -280,6 +280,44 @@ def original_english(original):
                 values.append(voltages[index])
             else: values.append(json.loads(part))
         return ''.join(values)
+    rocks_file=original/'src/main/java/gregtech/loaders/a/Loader_Rocks.java'
+    if rocks_file.exists():
+        stone_file=original/'src/main/java/gregapi/block/metatype/BlockStones.java'
+        wrapper=original/'src/main/java/gregtech/blocks/stone/BlockStonesGT.java'
+        meta=original/'src/main/java/gregapi/block/metatype/BlockMetaType.java'
+        files.extend([rocks_file,stone_file,wrapper,meta])
+        wrapper_calls=list(calls(masked(wrapper.read_text(encoding='utf-8')),'super'))
+        if not wrapper_calls or wrapper_calls[0][1][3:5]!=['aName','aMaterial.getLocal()']:
+            raise ValueError('Unsupported original BlockStonesGT display-name constructor')
+        meta_calls=list(calls(masked(meta.read_text(encoding='utf-8')),'super'))
+        compact=lambda value: ''.join(re.findall(STRING+r'|\S',value))
+        if not any(len(args)>1 and compact(args[1])=='aName+".slab."+aSlabType' for _,args in meta_calls):
+            raise ValueError('Unsupported original stone slab name namespace')
+        constructors=re.split(r'\b(?:public|protected)\s+BlockStones\s*\(',masked(stone_file.read_text(encoding='utf-8')))[1:]
+        if len(constructors)!=2:raise ValueError('Expected original full/slab stone constructors')
+        stone_expressions=[]
+        for body in constructors:
+            expressions={}
+            for _,args in calls(body,'LH.add'):
+                if len(args)!=2:continue
+                match=re.fullmatch(r'getUnlocalizedName\(\)\+"\.(\d+)"',compact(args[0]))
+                if not match:continue
+                index=int(match[1])
+                if index in expressions or name(args[1],'sample') is None:
+                    raise ValueError('Ambiguous/unsupported original stone display formula')
+                expressions[index]=args[1]
+            if set(expressions)!=set(range(16)):
+                raise ValueError('Incomplete original 16-variant stone names')
+            stone_expressions.append(expressions)
+        for _,args in calls(masked(rocks_file.read_text(encoding='utf-8')),'new BlockStonesGT'):
+            if len(args)!=6 or not re.fullmatch(STRING,args[0]):
+                raise ValueError('Unsupported original rock registration')
+            base=json.loads(args[0]);display=material(args[1])
+            if display is None:raise ValueError('Unresolved original rock material: '+args[1])
+            for kind,expressions in enumerate(stone_expressions):
+                bases=[base] if kind==0 else [base+'.slab.'+str(side) for side in range(6)]
+                for stem in bases:
+                    for index,expr in expressions.items():put(stem+'.'+str(index),name(expr,display))
     for path in sorted((original / 'src/main/java').rglob('*.java')):
         raw = masked(path.read_text(encoding='utf-8-sig'))
         before = sum(map(len, found.values()))

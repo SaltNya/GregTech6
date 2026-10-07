@@ -231,6 +231,41 @@ MultiTileEntityPipeFluid.addFluidPipes(26000, 0, MT.Wood);
             with self.assertRaisesRegex(ValueError,'Incomplete original pipe helper'):
                 pipe_identities(root,{'MT.Brass':'Brass','MT.Wood':'Wood'})
 
+    def test_stone_full_and_oriented_slab_formulas_use_material_display_name(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data'
+            data.mkdir(parents=True)
+            (data/'MT.java').write_text('Rock = stone(10, "Rock", 0).setLocal("Layer Rock");',encoding='utf-8')
+            loader=java/'gregtech/loaders/a/Loader_Rocks.java';loader.parent.mkdir(parents=True)
+            loader.write_text('new BlockStonesGT("gt.stone.rock", MT.STONES.Rock, 1, 1, 0, false);',encoding='utf-8')
+            wrapper=java/'gregtech/blocks/stone/BlockStonesGT.java';wrapper.parent.mkdir(parents=True)
+            wrapper.write_text('super(null, null, null, aName, aMaterial.getLocal(), aMaterial);',encoding='utf-8')
+            parent=java/'gregapi/block/metatype';parent.mkdir(parents=True)
+            (parent/'BlockMetaType.java').write_text('super(Item.class, aName+".slab."+aSlabType);',encoding='utf-8')
+            parts=[]
+            for kind in ('public','protected'):
+                parts.append(kind+' BlockStones(String aName) {')
+                for i in range(16):
+                    suffix=' Slab' if kind=='protected' else ''
+                    expression='"Chiseled "+aDefaultLocalised+"'+suffix+'"' if i==6 else 'aDefaultLocalised+" form '+str(i)+suffix+'"'
+                    parts.append('LH.add(getUnlocalizedName()+".'+str(i)+'", '+expression+');')
+                parts.append('}')
+            file=parent/'BlockStones.java';file.write_text('\n'.join(parts),encoding='utf-8')
+            result,files=original_english(root)
+            self.assertEqual(result['gt.stone.rock.6'],'Chiseled Layer Rock')
+            self.assertEqual(result['gt.stone.rock.slab.0.6'],'Chiseled Layer Rock Slab')
+            self.assertEqual(result['gt.stone.rock.slab.5.15'],'Layer Rock form 15 Slab')
+            self.assertNotIn('gt.stone.rock.slab.6.0',result)
+            self.assertEqual(sum(k.startswith('gt.stone.rock.') for k in result),16*7)
+            self.assertIn(file,files)
+            # Missing metadata or a new unknown expression must not silently pin partial/wrong names.
+            file.write_text('\n'.join(p for p in parts if '".15"' not in p),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Incomplete original 16-variant stone names'):
+                original_english(root)
+            file.write_text('\n'.join(parts).replace('"Chiseled "+aDefaultLocalised','unknown(aDefaultLocalised)'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'unsupported original stone display formula'):
+                original_english(root)
+
     def test_original_component_loop_stops_before_port_only_tier(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
             root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data'
