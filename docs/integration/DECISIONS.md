@@ -746,3 +746,9 @@ Java25正式Forge47.4.26/Neo21.1.252隔离成品客户端自启动53.3s/45.53s�
 Forge聚变由MachineBlockRegistration生成普通BlockItem；原方块缺appendHoverText使专属父类说明未触发。c0b870146让该方块调用现有AdvancedControllerTooltips及既有去重规则。Neo BasicMachine物品路径已接线，维持平台差异边界，共享领域参数与原材料量不再另建一套。两显示修复不改变构造/存储/tick，已接受限定世界不重复，记录源码68016a9bc的历史运行范围。
 
 普通JAR复制与真实安装接受分开：前两完整包虽过CRC/字节码，Forge提示失败仍不能更新接受包。修复后的最终两端实际标题提示事件和精确材料检查通过才接受20261007-061418Z-10bc6a82，并再次核对全部CRC/SHA。既有421模型引用警告集合未变，提示接受不扩张为全渲染无警告。自然加工/玩家悬停/独立重启/旧档/普通专服及其余原版提示含料缺口保留，详见[本批范围](verification/tooltip-pooled-20261007.md)。只本地提交，无外部发布或PR，整个goal active。
+
+## 2026-10-07 / 专用热交换和雷击输出遵循原addToolTips
+
+热交换器源min/rec/max相同，LH省略输出侧和范围；保留专用100%效率与Hot Fuels，而不是照普通加工机隐藏效率。避雷针有自定义VREC[6]32768包与16Amps，不能从不同的getEnergySizeOutputRecommended2048推导提示；雷击容量18000×32768。硬编码后缀无补丁键，保留原文本，颜色按原七白一黄一橙/绿色输出头。
+
+别名只是同一个原主块的既有身份，精准REV/采集映射查找与枚举均同步；不新增整座结构含料或猜电路材料。BlockItem实际方块hover入口双端接线，原高级材料事件保持单次。Forge旧主块强度与源10同步，BE/tick/保存格式未变；可变保存属性和热交换器公共HU查询/long流体差异另记，不借显示默认值掩盖。合批大验收仍遵守用户要求，只有30秒编译/7584来源断言接受，详见[本批](verification/utility-controller-20261007.md)。整个goal active。
