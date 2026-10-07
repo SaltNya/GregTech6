@@ -5,12 +5,72 @@ import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
-from import_identity_localization import original_english, pipe_identities, numbered_item_identities
+from import_identity_localization import (original_english, pipe_identities, numbered_item_identities,
+                                          material_identities, verified_material_proofs, resolve_material_collision)
 
 
 class IdentityLanguageTests(unittest.TestCase):
     def setUp(self):
         (Path(__file__).resolve().parents[2]/'work').mkdir(exist_ok=True)
+
+    def test_numeric_material_identity_preserves_case_and_local_overrides(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data'
+            data.mkdir(parents=True)
+            material=java/'gregapi/oredict/OreDictMaterial.java';material.parent.mkdir(parents=True)
+            material.write_text('// Original sanitizer and getLocal are provenance inputs.',encoding='utf-8')
+            (data/'MT.java').write_text('''
+MoonRock = stone(8513, "Moon Stone", 0).setLocal("Moon");
+Moonstone = gem(8452, "Moonstone", 0);
+Placeholder = valgem(00000, "Moonstone", 0);
+CrudeSteel = compound(8806, "Clay Compound", 0);
+static OreDictMaterial gold() {return metal(790, "Gold", 0);}
+Ma, Magic = Ma = create(4000, "Magic").setLocal("Magic");
+RenamedWood = woodnormal(9300, "Cinnamonwood", "Cinnawood", 0);
+ExplicitWood = woodnormal(9301, "Example Wood", "Factory name", 0).setLocal("Override");
+Sanitized = metal(42, "a-b/c'd e", 0);
+Dynamic = metal(43, "Dynamic", 0).setLocal(VN[1]);
+Duplicate = metal(99, "First", 0);
+Duplicate = metal(99, "Second", 0);
+// Wrong = stone(8513, "Commented Out", 0);
+''',encoding='utf-8')
+            ids,english,files,ambiguous=material_identities(root)
+            self.assertEqual(ids[8513],'gt.material.MoonStone')
+            self.assertEqual(ids[8452],'gt.material.Moonstone')
+            self.assertEqual(ids[8806],'gt.material.ClayCompound')
+            self.assertEqual(ids[790],'gt.material.Gold')
+            self.assertEqual(ids[4000],'gt.material.Magic')
+            self.assertNotIn(0,ids)
+            self.assertNotIn(99,ids)
+            self.assertEqual(ambiguous,{'99':['gt.material.First','gt.material.Second']})
+            self.assertEqual(ids[42],'gt.material.Abcde')
+            self.assertEqual(english['gt.material.MoonStone'],'Moon')
+            self.assertEqual(english['gt.material.Cinnamonwood'],'Cinnawood')
+            self.assertEqual(english['gt.material.ExampleWood'],'Override')
+            self.assertNotIn('gt.material.Dynamic',english)
+            self.assertIn(material,files)
+            proofs=verified_material_proofs([
+                ('@material-proof.material.gregtech.moonstone','gt.material.MoonStone','8513'),
+                ('@material-proof.material.gregtech.wrong_case','gt.material.Moonstone','8513'),
+                ('@material-proof.material.gregtech.zero','gt.material.Moonstone','0'),
+                ('@material-proof.material.gregtech.ambiguous','gt.material.First','99'),
+                ('@material-proof.material.gregtech.crudesteel','gt.material.ClayCompound','8806'),
+                ('material.gregtech.gem','gt.material.Moonstone','8452'),
+            ],ids)
+            self.assertEqual(dict(proofs),{
+                'material.gregtech.moonstone':{(8513,'gt.material.MoonStone')},
+                'material.gregtech.crudesteel':{(8806,'gt.material.ClayCompound')},
+            })
+
+    def test_actual_material_key_takes_precedence_over_another_categories_field_alias(self):
+        candidates={'gt.material.Gold','gt.material.Goldwood'}
+        proofs={'material.gregtech.gold':{(790,'gt.material.Gold'),(9369,'gt.material.Goldwood')}}
+        self.assertEqual(resolve_material_collision('material.gregtech.gold',candidates,proofs),{'gt.material.Gold'})
+        self.assertEqual(resolve_material_collision('material.gregtech.gold',candidates,{}),candidates)
+        candidates={'gt.material.Cobalt','gt.material.CarbonMonoxide'}
+        proofs={'material.gregtech.co':{(270,'gt.material.Cobalt'),(9838,'gt.material.CarbonMonoxide')}}
+        # Neither abbreviation is an actual registered material translation key.
+        self.assertEqual(resolve_material_collision('material.gregtech.co',candidates,proofs),candidates)
 
     def test_original_literals_material_names_and_numeric_offsets(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
@@ -61,7 +121,13 @@ Fe = iron();
 Galvanized = metal(1, "SteelGalvanized", 0).setLocal("Galvanized Steel");
 Kinetic_T = {ANY.Steel, Fe};
 ''',encoding='utf-8')
-            (data/'ANY.java').write_text('Steel = any("Any Iron-Steel");',encoding='utf-8')
+            (data/'ANY.java').write_text('''
+Steel = any("Any Iron-Steel");
+Coal = any("Any Coal/Carbon");
+Steel.steal(MT.Steel).setLocal ("Steel");
+Coal.steal(MT.C).setLocal("Carbon");
+// Steel.setLocal("Wrong");
+''',encoding='utf-8')
             (data/'CS.java').write_text('String[] VN = {"ULV", "LV"};',encoding='utf-8')
             (java/'Loader_MultiTileEntities.java').write_text('''
 private static void metalset() {}
@@ -76,10 +142,15 @@ aMat = ANY.Steel; aRegistry.add("Any machine ("+aMat.getLocal()+")", "Machines",
             result,_=original_english(root)
             self.assertEqual(result['gt.multitileentity.1'],'Machine (Iron)')
             self.assertEqual(result['gt.multitileentity.2'],'Machine (Galvanized Steel)')
-            self.assertEqual(result['gt.multitileentity.3'],'Hammer (Any Iron-Steel)')
+            self.assertEqual(result['gt.multitileentity.3'],'Hammer (Steel)')
             self.assertEqual(result['gt.multitileentity.4'],'Igniter (LV)')
             self.assertNotIn('gt.multitileentity.5',result)
-            self.assertEqual(result['gt.multitileentity.6'],'Any machine (Any Iron-Steel)')
+            self.assertEqual(result['gt.multitileentity.6'],'Any machine (Steel)')
+            self.assertEqual(result['gt.material.AnyIronSteel'],'Steel')
+            self.assertEqual(result['gt.material.AnyCoalCarbon'],'Carbon')
+            (data/'ANY.java').write_text('Steel = any("Any Iron-Steel");\nSteel.setLocal(VN[1]);',encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Unsupported original ANY display name'):
+                original_english(root)
 
     def test_flower_metadata_comes_from_registered_class_and_not_comments(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:

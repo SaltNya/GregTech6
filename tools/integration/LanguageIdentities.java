@@ -7,6 +7,7 @@ import com.gregtech.gregtech.data.generated.GT6Materials;
 import com.gregtech.gregtech.content.fluid.FluidDefinitions;
 import com.gregtech.gregtech.content.machine.BasicMachineCatalog;
 import java.util.Locale;
+import java.util.Map;
 
 /** Development-only identity export. Run with the compiled shared core, never ship in the mod. */
 class LanguageIdentities {
@@ -105,6 +106,16 @@ class LanguageIdentities {
             row("block.gregtech.bars_" + material, "gt.block.bars." + material.replace("_", "") + ".0", "");
         for (String type : new String[]{"sharp", "steel", "super", "metal", "fancy"})
             row("block.gregtech.spike_" + type, "gt.block.spikes." + type + ".0", "");
+        // DiggableBlock.Variant retains BlockDiggable's metadata order, including legacy aliases.
+        String[] diggables = {"mud", "clay_brown", "turf", "clay_red", "clay_yellow", "clay_blue", "clay_white"};
+        for (int i = 0; i < diggables.length; i++)
+            row("block.gregtech." + diggables[i], "gt.block.diggable." + i, "");
+        row("block.gregtech.diggable_clay", "gt.block.diggable.1", "");
+        row("block.gregtech.diggable_peat", "gt.block.diggable.2", "");
+        // Textures.BlockIcons.GRASSES_TOP order used by original BlockGrass.
+        String[] grassColors = {"medium", "light", "dark", "normal", "yellow", "brown"};
+        for (int i = 0; i < grassColors.length; i++)
+            row("block.gregtech.grassblock_" + grassColors[i], "gt.block.grass." + i, "");
         for (String binding : new String[]{"filter_items|30256", "filter_fluids|30257",
                 "filter_items_fluids|30258", "filter_oredict|30259", "sensor_kilogibblometer|31023",
                 "crank|32111", "tap|32728", "tap_stainless_steel|32730", "nozzle|32746",
@@ -199,17 +210,24 @@ class LanguageIdentities {
         for (var p : BasicMachineCatalog.specifications())
             SourceBlockProperties.basic(p.machineName(), p.tier()).ifPresent(s -> row(
                     "block.gregtech." + p.id(), "gt.multitileentity." + s.sourceId(), ""));
-        for (var m : GTMaterialRegistry.allMaterials())
+        for (var m : GTMaterialRegistry.allMaterials()) {
             row(m.getTranslationKey(), "gt.material." + m.getName(), m.getDisplayNameFallback());
+            row("@material-proof." + m.getTranslationKey(), "gt.material." + m.getName(), Integer.toString(m.getId()));
+        }
         for (var holder : GT6Materials.class.getDeclaredClasses()) for (var field : holder.getFields()) {
             if (field.getType() != GTMaterial.class) continue;
             var material = (GTMaterial) field.get(null);
             row("material.gregtech." + field.getName().toLowerCase(Locale.ROOT),
                     "gt.material." + material.getName(), material.getDisplayNameFallback());
+            row("@material-proof.material.gregtech." + field.getName().toLowerCase(Locale.ROOT),
+                    "gt.material." + material.getName(), Integer.toString(material.getId()));
         }
+        // MultiItemBottles explicitly fills these fluids under the same content name (no container noun).
+        var waterNames = Map.of("grccore.saltwater", "gt.multiitem.bottles.1",
+                "tropicswater", "gt.multiitem.bottles.1", "stagnantwater", "gt.multiitem.bottles.7");
         FluidCatalog.all().values().stream().distinct().forEach(f -> row(
                 "fluid_type.gregtech." + FluidCatalog.sanitizePath(f.registryName()),
-                "fluid." + f.registryName(), ""));
+                waterNames.getOrDefault(f.registryName(), "fluid." + f.registryName()), ""));
         com.gregtech.gregtech.api.prefix.PrefixRegistry.ensurePrefixesLoaded();
         for (var p : com.gregtech.gregtech.api.prefix.PrefixRegistry.all()) if (!p.isHiddenFromCreative())
             row("item.gregtech.tab_icon_" + p.getRegistryName(), "oredict.prefix." + p.getName(), p.getDisplayName());

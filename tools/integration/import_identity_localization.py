@@ -19,6 +19,29 @@ from generate_machine_material_data import calls, masked
 STRING = r'"(?:\\.|[^"\\])*"'
 
 
+def material_key(name):
+    internal=re.sub(r"[ \-'/]",'',name)
+    return 'gt.material.'+internal[:1].upper()+internal[1:]
+
+
+def any_material_names(original):
+    """ANY.init overrides display names before multi-tile machine registration."""
+    path=original/'src/main/java/gregapi/data/ANY.java'
+    if not path.exists():return {},{},[]
+    raw=masked(path.read_text(encoding='utf-8'))
+    names={symbol:json.loads(value) for symbol,value in re.findall(
+        r'\b(\w+)\s*=\s*any\(\s*('+STRING+r')',raw)}
+    displays=dict(names)
+    for line in raw.splitlines():
+        symbol=re.match(r'\s*(\w+)\s*\.',line)
+        if not symbol or symbol[1] not in names:continue
+        local=re.findall(r'\.setLocal\s*\(\s*('+STRING+r')\s*\)',line)
+        if len(local)>1 or len(local)!=len(re.findall(r'\.setLocal\s*\(',line)):
+            raise ValueError('Unsupported original ANY display name: '+symbol[1])
+        if len(local)==1:displays[symbol[1]]=json.loads(local[0])
+    return names,displays,[path]
+
+
 def tool_ids(original):
     cs = original / 'src/main/java/gregapi/data/CS.java'
     if not cs.exists(): return {}
@@ -26,6 +49,56 @@ def tool_ids(original):
     if 'class ToolsGT' not in text: return {}
     text = text.split('class ToolsGT',1)[1].split('public static final MultiItem',1)[0]
     return dict(re.findall(r'\b([A-Z][A-Z_0-9]*)\s*=\s*(\d+)\b',text))
+
+
+def material_identities(original):
+    """Positive original IDs prove material identity, including old field-name aliases.
+
+    Names use OreDictMaterial's sanitizer; getLocal uses the separate setLocal
+    override. ID zero is a validation/compatibility placeholder, never proof.
+    """
+    path=original/'src/main/java/gregapi/data/MT.java'
+    material=original/'src/main/java/gregapi/oredict/OreDictMaterial.java'
+    if not path.exists() or not material.exists():return {},{},[],{}
+    by_id,english=defaultdict(set),defaultdict(set)
+    for line in masked(path.read_text(encoding='utf-8')).splitlines():
+        # Element declarations use zero-argument factories; a few symbols are
+        # chained assignments (Ma, Magic = Ma = create(...)). Both still expose
+        # a literal positive ID and original name at the actual constructor.
+        row=re.search(r'(?:=|\breturn\b)\s*(\w+)\s*\(\s*(\d+)\s*,\s*('+STRING+')',line)
+        if not row or int(row[2])==0:continue
+        factory,ident=row[1],int(row[2])
+        name=json.loads(row[3]);key=material_key(name)
+        if key=='gt.material.':continue
+        by_id[ident].add(key)
+        local=re.findall(r'\.setLocal\s*\(\s*('+STRING+r')\s*\)',line)
+        if len(local)>1 or len(local)!=len(re.findall(r'\.setLocal\s*\(',line)):continue
+        if factory=='woodnormal' and not local:
+            args=next(calls(line,factory))[1]
+            if len(args)<3 or not re.fullmatch(STRING,args[2]):continue
+            local=[args[2]]
+        english[key].add(json.loads(local[0]) if local else name)
+    ambiguous={str(k):sorted(v) for k,v in by_id.items() if len(v)!=1}
+    return ({k:next(iter(v)) for k,v in by_id.items() if len(v)==1},
+            {k:next(iter(v)) for k,v in english.items() if len(v)==1},[path,material],ambiguous)
+
+
+def verified_material_proofs(identity_rows, material_ids):
+    """Only the combination of positive numeric ID and exact internal name proves identity."""
+    proofs=defaultdict(set)
+    for key,original,ident in identity_rows:
+        if key.startswith('@material-proof.') and ident.isdigit() and int(ident)>0:
+            if material_ids.get(int(ident))==original:
+                proofs[key.removeprefix('@material-proof.')].add((int(ident),original))
+    return proofs
+
+
+def resolve_material_collision(key, originals, proofs):
+    # getTranslationKey() belongs to the actual material's internal name. A
+    # same-named field in another category (e.g. Woods.Gold) must not replace it.
+    canonical={original for _,original in proofs.get(key,set())
+               if original in originals and key=='material.gregtech.'+original.removeprefix('gt.material.').lower()}
+    return canonical if len(canonical)==1 else originals
 
 
 def numbered_item_identities(original):
@@ -135,13 +208,16 @@ def original_english(original):
         files.append(woods_file)
     blocks_file = original/'src/main/java/gregtech/loaders/a/Loader_Blocks.java'
     if blocks_file.exists():
-        wood_classes.update(re.findall(r'new (BlockFlowers[AB]|BlockBaleGrass|BlockBaleCrop|BlockSands|BlockGrass|'
+        wood_classes.update(re.findall(r'new (BlockFlowers[AB]|BlockBaleGrass|BlockBaleCrop|BlockSands|BlockGrass|BlockDiggable|'
                                       r'BlockAsphalt|BlockConcrete(?:Reinforced)?|BlockCFoam(?:Fresh)?|BlockGlass(?:Clear|Glow)|'
                                       r'BlockBars(?:Brass|Steel|TungstenSteel)|BlockSpike(?:Sharp|Steel|Super|Metal|Fancy))\s*\(\s*"([^"]+)"',
                                       masked(blocks_file.read_text(encoding='utf-8'))))
         files.append(blocks_file)
     def put(key, text):
         found[key].add(text)
+    _,material_english,material_files,_=material_identities(original)
+    files.extend(p for p in material_files if p not in files)
+    for key,value in material_english.items():put(key,value)
     material_text = masked((original / 'src/main/java/gregapi/data/MT.java').read_text(encoding='utf-8'))
     material_names = defaultdict(set)
     for m in re.finditer(r'\bwoodnormal\(\s*\d+\s*,\s*(' + STRING + r')\s*,\s*(' + STRING + ')', material_text):
@@ -163,12 +239,9 @@ def original_english(original):
         if len(local)==1: material_names[symbol]={json.loads(local[0])}
     arrays = {key: [s.strip() for s in values.split(',')] for key,values in
               re.findall(r'\b(\w+_T)\s*=\s*\{([^}]+)\}', material_text)}
-    any_names = {}
-    any_file = original / 'src/main/java/gregapi/data/ANY.java'
-    if any_file.exists():
-        any_names = {symbol:json.loads(value) for symbol,value in re.findall(
-            r'\b(\w+)\s*=\s*any\(\s*(' + STRING + ')', masked(any_file.read_text(encoding='utf-8')))}
-        files.append(any_file)
+    any_internal,any_names,any_files=any_material_names(original)
+    files.extend(any_files)
+    for symbol,internal in any_internal.items():put(material_key(internal),any_names[symbol])
     voltages, dyes = [], []
     cs = original / 'src/main/java/gregapi/data/CS.java'
     if cs.exists():
@@ -358,13 +431,17 @@ def main():
         if key in english: candidates[key].add(original)
     files.extend(item_files)
     identity_rows = [line.split('\t') for line in ns.identities.read_text(encoding='utf-8-sig').splitlines()]
+    material_ids,_,_,ambiguous_material_ids=material_identities(ns.source)
+    material_proofs=verified_material_proofs(identity_rows,material_ids)
     symbols = {key.removeprefix('@symbol.'):original for key, original, _ in identity_rows
                if key.startswith('@symbol.')}
     pipes, pipe_files = pipe_identities(ns.source, symbols)
     pipes.update({'@tool.'+key:'gt.metatool.01.'+value for key,value in tool_ids(ns.source).items()})
     files = sorted(set(files + pipe_files))
     for key,original,fallback in identity_rows:
-        if key.startswith('@symbol.'): continue
+        if key.startswith(('@symbol.','@material-proof.')): continue
+        if key.startswith('material.gregtech.') and original.startswith('gt.material.'):
+            original=material_key(original.removeprefix('gt.material.'))
         original = pipes.get(original, original)
         candidates[key].add(original)
         if fallback: fallbacks[key].add(fallback)
@@ -373,8 +450,13 @@ def main():
         if key.endswith('.tooltip') and key[:-8] in aliases:
             original = aliases[key[:-8]] + '.tooltip'
             if original in source: candidates[key].add(original)
-    added,conflicts,missing,ambiguous={},{},{},{}
+    added,conflicts,missing,ambiguous,resolved_collisions={},{},{},{},{}
     for key, originals in sorted(candidates.items()):
+        if len(originals)>1:
+            resolved=resolve_material_collision(key,originals,material_proofs)
+            if len(resolved)==1:
+                resolved_collisions[key]={'candidates':sorted(originals),'actual_material':next(iter(resolved))}
+                originals=resolved
         if len(originals)!=1:
             ambiguous[key]=sorted(originals);continue
         original=next(iter(originals))
@@ -393,7 +475,11 @@ def main():
             missing[key]=original;continue
         if key in aliases and aliases[key]!=original:
             # Accepted special original internal spellings must not be guessed from modern material names.
-            if key=='block.gregtech.mortar_block':
+            if len(material_proofs[key])==1 and next(iter(material_proofs[key]))[1]==original:
+                ident=next(iter(material_proofs[key]))[0]
+                conflicts[key]={'before':aliases[key],'after':original,'source_material_id':ident,
+                                'reason':'Actual shared material ID matches original MT declaration; old field alias is not the material internal name'}
+            elif key=='block.gregtech.mortar_block':
                 conflicts[key]={'before':aliases[key],'after':original,'reason':'Original ceramic mortar:32735; sapphire tool variant:32075'}
             elif key=='block.gregtech.wood_barrel' and original=='gt.multitileentity.32733':
                 conflicts[key]={'before':aliases[key],'after':original,'reason':'CheapWoodBarrelCatalog retains the original lead-rod cheap barrel, not the normal barrel 32714'}
@@ -416,6 +502,8 @@ def main():
             english_changes[key]={'before':english[key],'after':source_en[original],'source_key':original}
             english[key]=source_en[original]
     report={'source_language_sha256':meta['sha256'],'new_bindings':added,'conflicts':conflicts,
+            'ambiguous_original_material_ids':ambiguous_material_ids,
+            'resolved_material_collisions':resolved_collisions,
             'missing_original':missing,'ambiguous_symbols':ambiguous,'english_changes':english_changes,'added_tooltips':added_tooltips,
             'source_files':[{'path':str(p.resolve()),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files],
             'identity_export_sha256':hashlib.sha256(ns.identities.read_bytes()).hexdigest(),
