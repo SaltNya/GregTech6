@@ -1,0 +1,239 @@
+{
+  "authors": [
+    "Gregorius Techneticies",
+    "GregTech-6 Team"
+  ],
+  "codeLicense": "LGPL-3.0-or-later",
+  "assetLicense": "CC0-1.0 per original LICENSE.assets, subject to retained source exceptions/notices",
+  "originalSource": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "modernReference": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE.assets",
+      "bytes": 500,
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemRandomTools.java",
+      "bytes": 96019,
+      "sha256": "f2eef98ddb1b10298a981ff78369bccb7e8317fb421f7bdd84086257819ad84d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverTextureCanvas.java",
+      "bytes": 3363,
+      "sha256": "04fb696d649a00b9988fb6f996098afb3b47cb0875292e7dfcd9435f2a0ac634"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerVisuals.java",
+      "bytes": 13277,
+      "sha256": "eb79301ab2ffd0c7320d94f414699aeadfead0972156ce02cdfff030a707a135"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapPrinter.java",
+      "bytes": 13064,
+      "sha256": "84a1536f4865fa03c9670c529078fdbfaf273a531be331d1919e8f856d67508c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\render\\BlockTextureCopied.java",
+      "bytes": 6645,
+      "sha256": "edbd03fd7b42ac69906ec9c525c0ac2b7334b9ad8af28fa0ae1edb85e14308eb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "bytes": 153449,
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\GT6_Main.java",
+      "bytes": 53192,
+      "sha256": "a7dca874bef8dd25c9f98d64ddd372f081faf17899d5053156d4f78f4b3499ed"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\a\\Loader_Fluids.java",
+      "bytes": 190445,
+      "sha256": "fdc9a697adc7822159cb8ea82389cc83e6494fc9723551f2983607ed46505fcb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\compat\\industrialcraft\\CompatIC2.java",
+      "bytes": 6704,
+      "sha256": "a7ab3e767f8935872a4257898034ae0a999da743c4651e112cf02ae27b6b8126"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\cover\\covers\\CoverTextureCanvas.java",
+      "bytes": 4564,
+      "sha256": "e10c7d6683f0219e9b25bd5d41509e0d18cb957ce82ddf2ba01e03667eadb473"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\LICENSE.assets",
+      "bytes": 500,
+      "sha256": "e2aaec4ccc681649063335b6c4991fd52570d15f45bd0af97c1cee3cb0375299"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\COPYING.assets",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    }
+  ],
+  "assets": [
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7030.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\black.png",
+      "sha256": "2b007193dda5618efd6d7223113da83e34cd9ec610796272cf948c77cb3d7381",
+      "bytes": 336
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7031.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\red.png",
+      "sha256": "7a037da9a1e0a35cf814a648e547ea0cafbc4ae4b8de85b586bfc65a7a62a80d",
+      "bytes": 314
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7032.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\green.png",
+      "sha256": "a0256103a1106241ab6ff402c8865d2db9953a31baff9dd8daedc4b11c4ddfcb",
+      "bytes": 318
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7033.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\brown.png",
+      "sha256": "a90f9654217c4db6e4c23755c1150228a5a01b2e4e6e4b00d0a732f3878244b8",
+      "bytes": 316
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7034.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\blue.png",
+      "sha256": "0be1970811b4f44601f0f160fc7f71c8e648c295afdc9bfd85ba95cbb8633f79",
+      "bytes": 317
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7035.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\purple.png",
+      "sha256": "51007b23e767600525102cbe75bb6c4b25504116235016ffc6d1ec05b5617a7e",
+      "bytes": 317
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7036.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\cyan.png",
+      "sha256": "a0fd6c6788e29b6861f57c4dfa451ab4282085e6e508152c98a7a3ebd1117a53",
+      "bytes": 315
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7037.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\light_gray.png",
+      "sha256": "f91925980a704af1f6d0c441893173d6b603b31d515742c363c31f77ad011449",
+      "bytes": 336
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7038.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\gray.png",
+      "sha256": "38c449c0a90202aefa575e90c63a2c5e145cb48b17341a51c6281a6b9101efd6",
+      "bytes": 315
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7039.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\pink.png",
+      "sha256": "980eedfa1b548346c474251a5deff78cd308b35f05aefc1f3b901fa8b882edc5",
+      "bytes": 317
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7040.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\lime.png",
+      "sha256": "9e0ae84797d472fb0eb4b33d94691065ba83b0f3676d9a3cda1910697a1006fb",
+      "bytes": 315
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7041.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\yellow.png",
+      "sha256": "e8d569ffe8beb74d2263a6df67493a646fc313e222852fd6ded3b2e47946e8a4",
+      "bytes": 315
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7042.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\light_blue.png",
+      "sha256": "00fa254afaf330824ee6be6901f531ffe78b553f684d67ccf85c05de1420b314",
+      "bytes": 318
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7043.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\magenta.png",
+      "sha256": "92a3a86ce33cf4ca34a38658b02ab2b84e6b3694f8eabbd21aaeddc43aa75d8e",
+      "bytes": 318
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7044.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\orange.png",
+      "sha256": "fc00176eacc72d8474ce9c131d7cb12c2dfdecf2a751aeb4f4f8f335231d5abe",
+      "bytes": 319
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\items\\gt.multiitem.randomtools\\7045.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\item\\canvas\\white.png",
+      "sha256": "c1f919f4d97942e46368dd38e7e8cc534294f69413b5ea449c19448d1d25c230",
+      "bytes": 336
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\canvas.png",
+      "target": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\canvas.png",
+      "sha256": "e88b94385e26aa95737338cc4e2f3dcc36f193a8dbd6567b195494eed28684b3",
+      "bytes": 303
+    }
+  ],
+  "chinesePatch": {
+    "path": "C:\\Dev\\GregTech_zh_cn.lang",
+    "bytes": 7375784,
+    "sha256": "0e5b3906712020b71c9c5718319bbf3fd90b002d79d25614f1bfcaf3c8e887c0"
+  },
+  "chineseResource": {
+    "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\lang\\zh_cn.json",
+    "bytes": 8448130,
+    "sha256": "f9bbed7fae0b42813aa1a4936ac87d13b3d0cb92aa5e78c418be3225e9852fad"
+  },
+  "chineseNewExactAliases": {
+    "item.gregtech.canvas_black": "gt.multiitem.randomtools.7030",
+    "item.gregtech.canvas_black.tooltip": "gt.multiitem.randomtools.7030.tooltip",
+    "item.gregtech.canvas_red": "gt.multiitem.randomtools.7031",
+    "item.gregtech.canvas_red.tooltip": "gt.multiitem.randomtools.7031.tooltip",
+    "item.gregtech.canvas_green": "gt.multiitem.randomtools.7032",
+    "item.gregtech.canvas_green.tooltip": "gt.multiitem.randomtools.7032.tooltip",
+    "item.gregtech.canvas_brown": "gt.multiitem.randomtools.7033",
+    "item.gregtech.canvas_brown.tooltip": "gt.multiitem.randomtools.7033.tooltip",
+    "item.gregtech.canvas_blue": "gt.multiitem.randomtools.7034",
+    "item.gregtech.canvas_blue.tooltip": "gt.multiitem.randomtools.7034.tooltip",
+    "item.gregtech.canvas_purple": "gt.multiitem.randomtools.7035",
+    "item.gregtech.canvas_purple.tooltip": "gt.multiitem.randomtools.7035.tooltip",
+    "item.gregtech.canvas_cyan": "gt.multiitem.randomtools.7036",
+    "item.gregtech.canvas_cyan.tooltip": "gt.multiitem.randomtools.7036.tooltip",
+    "item.gregtech.canvas_light_gray": "gt.multiitem.randomtools.7037",
+    "item.gregtech.canvas_light_gray.tooltip": "gt.multiitem.randomtools.7037.tooltip",
+    "item.gregtech.canvas_gray": "gt.multiitem.randomtools.7038",
+    "item.gregtech.canvas_gray.tooltip": "gt.multiitem.randomtools.7038.tooltip",
+    "item.gregtech.canvas_pink": "gt.multiitem.randomtools.7039",
+    "item.gregtech.canvas_pink.tooltip": "gt.multiitem.randomtools.7039.tooltip",
+    "item.gregtech.canvas_lime": "gt.multiitem.randomtools.7040",
+    "item.gregtech.canvas_lime.tooltip": "gt.multiitem.randomtools.7040.tooltip",
+    "item.gregtech.canvas_yellow": "gt.multiitem.randomtools.7041",
+    "item.gregtech.canvas_yellow.tooltip": "gt.multiitem.randomtools.7041.tooltip",
+    "item.gregtech.canvas_light_blue": "gt.multiitem.randomtools.7042",
+    "item.gregtech.canvas_light_blue.tooltip": "gt.multiitem.randomtools.7042.tooltip",
+    "item.gregtech.canvas_magenta": "gt.multiitem.randomtools.7043",
+    "item.gregtech.canvas_magenta.tooltip": "gt.multiitem.randomtools.7043.tooltip",
+    "item.gregtech.canvas_orange": "gt.multiitem.randomtools.7044",
+    "item.gregtech.canvas_orange.tooltip": "gt.multiitem.randomtools.7044.tooltip",
+    "item.gregtech.canvas_white": "gt.multiitem.randomtools.7045",
+    "item.gregtech.canvas_white.tooltip": "gt.multiitem.randomtools.7045.tooltip"
+  },
+  "allPreviousChineseValuesUnchanged": true,
+  "decisions": [
+    "Keep original 16-color registration order in equipment, immediately before magic research papers.",
+    "Persist block registry name and native named state properties; do not store temporary registry indices or packed 12-bit block/4-bit metadata.",
+    "Original scanner mapping uses ST.meta_(tScanned) rather than metadata from its mapping entry; legacy ordinary crop inputs therefore retain initial states. Modern native BlockItem state data is additionally retained.",
+    "Modern bed/door variants are actual BlockItems, so their stable block identity is directly scanned.",
+    "Original IC2 Obscurator integration is external compatibility work; no standalone clone or fictitious modern retexture event introduced.",
+    "Canvas scope does not replace existing blueprint/material providers or implement remaining book/map/schematic scanning."
+  ]
+}

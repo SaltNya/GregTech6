@@ -1,0 +1,410 @@
+{
+  "originalSource": "C:\\Dev\\gregtech6-master\\gregtech6-master",
+  "assetSource": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main",
+  "authors": "Gregorius Techneticies; GregTech-6 Team; preserved asset attribution in tools/gt6_texture_sources.json and prior source/license ledger",
+  "license": "LGPL-3.0-or-later; original source trees unchanged",
+  "sources": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\multiblocks\\MultiTileEntityLogisticsCore.java",
+      "bytes": 37254,
+      "sha256": "b23b182503bedd96a13bc040035037792810b01894e8350301622f464c777fd3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\base\\TileEntityBase06Covers.java",
+      "bytes": 27572,
+      "sha256": "c592d3905904adf81b14dd29e3b3e28310229314deefb232bef371cc950c0bb9"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_OreProcessing.java",
+      "bytes": 43114,
+      "sha256": "bade43317484adffdca7b6bbaf3dc910da424d8ad3bcbe89235979044546c2c3"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "bytes": 133807,
+      "sha256": "7367922c4938318dd50b1320e7fc7a7453c33cffa46f75a437325314d2536ddc"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverControllerAuto.java",
+      "bytes": 2396,
+      "sha256": "b36f224334d454c60ad59ab3edcbb183108d675497f6db3cddca5629f3daca59"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverControllerAutoRedstone.java",
+      "bytes": 3639,
+      "sha256": "3b8a984648877e68c0c0f1351f0c496c14ba22d60aa8d177c1dcc95e811f0920"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverControllerAutoTimer.java",
+      "bytes": 2482,
+      "sha256": "4f10c74f205753decc13d63e017b591e90fc1c6f1a0d5b13d7278e9afb199e15"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverControllerCovers.java",
+      "bytes": 5262,
+      "sha256": "f24f1f82c87f1fa5b8433d107f6b027544f693e4ad3952bf52f97b03e9532b7a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverControllerDisplay.java",
+      "bytes": 7625,
+      "sha256": "3bf964aae67f2497641bb9d1a67b5849b73eaf6ca4190ce1ffec0cacba4fc180"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverControllerRedstone.java",
+      "bytes": 3217,
+      "sha256": "d35efe4efb06d3a6d91dc2c6126990b087f5d80339bd4d0dc9fbcdedeedf9a9e"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverDetectorRunningActively.java",
+      "bytes": 2371,
+      "sha256": "d2a2ddf68773ab85ef8446254ff3e982ca890ad334ee2f70ff4260eb234b785f"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverDetectorRunningPassively.java",
+      "bytes": 2378,
+      "sha256": "c85626d8b4829d95ebe3cd6465d7e40ebd88fe25dcd03f35dbb9c5613cff4d7a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverDetectorRunningPossible.java",
+      "bytes": 2371,
+      "sha256": "2a6c8b7e501ed125a31e7046e66107769b72d4c377e2d8c0b013177e6d4c9409"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverDetectorRunningSuccessfully.java",
+      "bytes": 2399,
+      "sha256": "f98eaa76ae46e493792a214f418a711189f9ca71ee60d2845c08bec1743d97b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverScaleEnergy.java",
+      "bytes": 2875,
+      "sha256": "476a44b89bb05572fec251a9c2878712cf1279c1f3704f9d88185ba38309adb8"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverScaleProgress.java",
+      "bytes": 2524,
+      "sha256": "0da39674abb1e9571b53491d079c7f11cd59096932023610b9de0b7ab89824cb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverSelectorButtonPanel.java",
+      "bytes": 7347,
+      "sha256": "b7f4202b201e79446726c81218c74c097107071b67daf66d6e867e69b7055157"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverSelectorManual.java",
+      "bytes": 5423,
+      "sha256": "444d71e3cc5c42949c3d31b734c6471ba00e6ab359a0a890ad123db7783593d1"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverSelectorRedstone.java",
+      "bytes": 4272,
+      "sha256": "c55f2fd21c3420df60b0624cb55eef372028de42c23304bb402dcc182dc0ce30"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverSelectorTag.java",
+      "bytes": 4063,
+      "sha256": "c05c5d6496a08544e454c382c077f5bd3d5c68fb681af9d1be9d6f82dd46ca89"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsDisplayCPUControl.java",
+      "bytes": 2564,
+      "sha256": "febe90215b248dd49c9017b3603a8c8f5d6cbaf8e277d73d1dfd54f67074177c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsDisplayCPUConversion.java",
+      "bytes": 2612,
+      "sha256": "f7f5dc1de41a260720f763e7a42cd07110e6338800c8f78ac318ea5a89e597ef"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsDisplayCPULogic.java",
+      "bytes": 2532,
+      "sha256": "0f5fe0d1c9226eed8714a0315134c3fb9698a74bbc7aceb178021589bcde8c43"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsDisplayCPUStorage.java",
+      "bytes": 2564,
+      "sha256": "5f686c67872c05898ed799a3d3de1cb115423e9b82f3b262563376ec2c19781d"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsFluidExport.java",
+      "bytes": 4582,
+      "sha256": "a1ce7b09cea5fec69c778b256479a8492e2bf81927b9468ac6e80470642089fe"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsFluidImport.java",
+      "bytes": 4582,
+      "sha256": "3f5266b2b91e1ac4f9fa8b9da52f33db2e837246dc72468f1b4977979cf2e51c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsFluidStorage.java",
+      "bytes": 4585,
+      "sha256": "c24fe6bd8b968f4a324e05910d61e9c8c9c3a705189c0633a6c517d871ef3154"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsGenericDump.java",
+      "bytes": 1447,
+      "sha256": "63a611b495829be3dc95bbec98457e1b2791042562fe3f18730fb5ee6f29890a"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsGenericExport.java",
+      "bytes": 1464,
+      "sha256": "738fa6edaa93f4484824914be706c3aa34ec3491d22c4e12c1061a52d9614562"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsGenericImport.java",
+      "bytes": 1464,
+      "sha256": "de3bfd758e9c1574e9577af349381da538ed771c3e09fd0c38fefa64bff93c32"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsGenericStorage.java",
+      "bytes": 1374,
+      "sha256": "7db59cf9325999b774b9d3c869a06287571cc7d6c82f619b35f5181486bdafbd"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsItemExport.java",
+      "bytes": 4446,
+      "sha256": "9c6402303011e0cfd984e693021baa6bd1a9915079e7076b3ce981ed5902a859"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsItemImport.java",
+      "bytes": 4446,
+      "sha256": "4f15f7d0ed4f814e184e2fc789e182cf5cc346081207c3e65b9a423b001761b5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverLogisticsItemStorage.java",
+      "bytes": 4168,
+      "sha256": "b44c666f89ab509bdf8318d3be08db0a9f695e195e9bac7ba69cf63d4a2f4f0c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\ICover.java",
+      "bytes": 10529,
+      "sha256": "fb7e24cd269f453d6a944ccbb0768a41644229b0083971e66dd2006e93e22547"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\AbstractCoverDefault.java",
+      "bytes": 8921,
+      "sha256": "9a8913fdd2cd2358790d4aef90d11d5aac0087c6eb5eb9f13615656d9151e7fd"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverFilterItem.java",
+      "bytes": 7468,
+      "sha256": "aef369a78515dcee7f1acc869597f503cb89429d9bbce373d9e537cac66086ae"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverFilterFluid.java",
+      "bytes": 6383,
+      "sha256": "a822ab9f0827c02679be8b97e226811d376abb30606a9883a80f8de1cc9e00b6"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverDrain.java",
+      "bytes": 14291,
+      "sha256": "6ffe36e186e9a72e5c3747a742bc4563d9af02f926a6ad5fbae98458bb9b5abb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverVent.java",
+      "bytes": 4168,
+      "sha256": "41baa29756f36cf6de5aaba872d5df66fd97fb299ab050e02f73bec0741fc544"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverTextureMulti.java",
+      "bytes": 5401,
+      "sha256": "a76f68c78e593bdf56515878c22907a35fb9bbb70a88ce0bc88b7df1a8872367"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverAsphalt.java",
+      "bytes": 1374,
+      "sha256": "72134a486e1092ccb57a004be3d4bfbb1990f7b2dc6af28ed4492e42912268f1"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverCrafting.java",
+      "bytes": 2593,
+      "sha256": "16a1c929f9ef9ba62338c9e3850d524b9d119d59708b48538e857be8d91b5ea0"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverShutter.java",
+      "bytes": 4715,
+      "sha256": "12f3b46e7062dc6b99b6e1f6d834a82e86613911c01095832b327ac5b0027b68"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\AbstractCoverAttachmentTorch.java",
+      "bytes": 3965,
+      "sha256": "f06eb2fe7ea68c62d3bbc69083219970069acdb16ec21b6add0160c2b300c9fb"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\AbstractCoverAttachmentDetector.java",
+      "bytes": 3374,
+      "sha256": "a958b416ecfa953d91d5da8cd8bf8c961c79ac11b3481020ae987a5b6fe94161"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\AbstractCoverAttachmentLogistics.java",
+      "bytes": 5124,
+      "sha256": "f741ba5dd8f6552651f51f27da58ebbb0f700b44c490755a13635c3dd096edfc"
+    }
+  ],
+  "assets": [
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\blank\\0.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\blank\\0.png",
+      "bytes": 155,
+      "sha256": "1e69e5b9205f64da1f3f24b6f717ce5e95d9b11394769cbccc820852789f8bdc"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\blank\\1.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\blank\\1.png",
+      "bytes": 252,
+      "sha256": "8fd8e2b3f549ae1a1e42ea12fe886486be23bff878d90323a40179761698753d"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\blank\\2.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\blank\\2.png",
+      "bytes": 334,
+      "sha256": "393cd9af1043221f0c9ab6478ce33b61c4724d7ac916503c80fcec17c8c60981"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\blank\\3.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\blank\\3.png",
+      "bytes": 150,
+      "sha256": "3ff82a3f458173e0837a8c3805f7fdda2f4f05ce79db0b836e94610c8cb9c8b1"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\blank\\4.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\blank\\4.png",
+      "bytes": 610,
+      "sha256": "8e6f0903677ed03cf7c02e636756b4e2ca1a33745c796743efceadd4dd25972e"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\blank\\5.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\blank\\5.png",
+      "bytes": 7558,
+      "sha256": "ee382206bc1a62412ce521e4ab6f71a14ef34db450a7a51483c39f7e50f9d671"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\0.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\0.png",
+      "bytes": 258,
+      "sha256": "1d0f0243004ab6c13a4df5f648c37481d1fa8729c6f819abfada534e8e4e7ac5"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\1.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\1.png",
+      "bytes": 285,
+      "sha256": "95e5e3f937ddf99b15b4bd17a9b2b37f386f9a7756e023a06abb27a4af0af351"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\2.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\2.png",
+      "bytes": 315,
+      "sha256": "d6d44f8a425eda39425aa3ff0ba77f867c7edaf83eca219d6a70e99c0fd69bdf"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\3.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\3.png",
+      "bytes": 294,
+      "sha256": "7ad0a10b6cb682e76d5205499e26602bbab1db43787b18d1d3f5db140f186ad7"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\4.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\4.png",
+      "bytes": 275,
+      "sha256": "a3318a5e24483299920616ce4522863a70b4ef88858c4ae6f21efde6d09c5a91"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\5.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\5.png",
+      "bytes": 498,
+      "sha256": "978a28ca3587b3648b6663279223a7dfcf434baa680bbe86d555d64e3725039f"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\6.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\6.png",
+      "bytes": 280,
+      "sha256": "6d91bd30777e62a708819225b6e274ae8dc7d72c05d69a10d0499eecd1459755"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\7.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\7.png",
+      "bytes": 282,
+      "sha256": "ea14ace5d81e94080060e4d18ec114d656528a4148404646754004afbf4487a6"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\8.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\8.png",
+      "bytes": 250,
+      "sha256": "f34e83f2ac8eb743dc33b947ca017a0d16efc5420bf4bcf26de42ca0f3822d39"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\9.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\9.png",
+      "bytes": 248,
+      "sha256": "f27c0a955eaa86b740645af724a0bc8444aab01de144278f72d0472dcc7e3542"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\10.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\10.png",
+      "bytes": 295,
+      "sha256": "376e4217b648c55dcec49b0b7673ee929affe7f7586394d4dd68ce0c49f18ead"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\11.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\11.png",
+      "bytes": 263,
+      "sha256": "3fa74fcc106b6cbbd83f8bd7d1d3447147908dc5a2b1acf3bfff853965790c26"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\12.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\12.png",
+      "bytes": 294,
+      "sha256": "1dc18d26fc87a35a56ce2759c713d8594aad0793a3d5aad026e9d653d69aba33"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\13.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\13.png",
+      "bytes": 255,
+      "sha256": "b7b3dc7110fbe1cf3b1edeac6b8f18857f3f3e0ff8e245d67ed5d40bda360515"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\14.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\14.png",
+      "bytes": 254,
+      "sha256": "371a7c1f173a718f17b76a3a566f63c506d9a3171bde9b132023d062f4a76e85"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\15.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\15.png",
+      "bytes": 294,
+      "sha256": "986119bfbd6fca87a36269fba575348490c0603fd7365835f6388900c330be24"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\16.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\16.png",
+      "bytes": 251,
+      "sha256": "3212bd8f5acb83df09589a87be27ce7db063088beb35ec7bb647c5d946fdbef2"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\17.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\17.png",
+      "bytes": 263,
+      "sha256": "6908903ba56421bc85afafa0407a2450146ccb96ed300326ee38b7af7d53e025"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\18.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\18.png",
+      "bytes": 285,
+      "sha256": "8047fed63341700e212bb181ac5052812436cbbcacc10560add9113c890cef66"
+    },
+    {
+      "source": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\resources\\assets\\gregtech\\textures\\blocks\\machines\\covers\\warning\\19.png",
+      "target": "core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\machines\\covers\\warning\\19.png",
+      "bytes": 347,
+      "sha256": "f37580f3f1f5846e46b0fdfa528fb8dfe1c6d0f75ba314127b1bf70781256a10"
+    }
+  ],
+  "missing": [],
+  "upstreamMainChecked": "dff3293beb44e38cb31f3ca11358dd2efa11a92e",
+  "pr25": "open, not merged; not incorporated into local main",
+  "unchangedChineseSha256": "ce9b61d0e85e5f8f4fccea88f40a630a21c003b5072b2de1e51bd38c20b71d45"
+}

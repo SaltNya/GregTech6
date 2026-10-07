@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-06",
+  "baseline": "d31cc95c",
+  "files": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\OP.java",
+      "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+      "bytes": 162128,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictManager.java",
+      "sha256": "41376372c077030142a6e95385a74f9dde79c3b15d9a4de95cff99f371b44801",
+      "bytes": 45600,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\connectors\\MultiTileEntityPipeFluid.java",
+      "sha256": "3a6850055375e7975145b03abab44c5922746a6f4053dd8d3163de989f37b110",
+      "bytes": 30631,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\connectors\\MultiTileEntityPipeItem.java",
+      "sha256": "0e9aa956b807d8390b20dd70f224b2b8d0a7be8df25fe66660abffda8b88069b",
+      "bytes": 18620,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393",
+      "bytes": 791265,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerMolecular.java",
+      "sha256": "1530afad7f0701d7bbb2b0061b97d3516a4ae995a44e30f92102e9b9a316c42a",
+      "bytes": 4248,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapPrinter.java",
+      "sha256": "84a1536f4865fa03c9670c529078fdbfaf273a531be331d1919e8f856d67508c",
+      "bytes": 13064,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapReplicator.java",
+      "sha256": "27842d2b10e83052f10a0985b5a289600185df5092a8fe4bafa2c18eee8d6bd3",
+      "bytes": 6905,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\GT6_Main.java",
+      "sha256": "a7dca874bef8dd25c9f98d64ddd372f081faf17899d5053156d4f78f4b3499ed",
+      "bytes": 53192,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    }
+  ],
+  "rules": {
+    "preferred_pipe_forms": "Source setTarget_(prefix,material,registered stack,T,F,T); 21 item families and 40 fluid families have disjoint materials; native GTItems binds existing holders, no new registry identities",
+    "scan": "Only positive resolved materials and OP SCANNABLE forms; consumes one object and USB3, writes short material ID and tier3; (protons+neutrons)*512 ticks at512GU/t; no buffering",
+    "pipe_scan_gate": "240 fluid pipes (six sizes except Tiny) and63 plain item pipes; Tiny and restrictive prefixes lack SCANNABLE",
+    "presentation": "One scanner row per material with every real registered accepted native form in one alternating input slot; printer and UUM-qualified replicator rows are built from existing dynamic providers, marked fake and excluded from native machine matching",
+    "scope": "Native current registered material universe only; no invention of missing external content, no broad ore-dictionary preference system, viewer choices cannot broaden machine input equivalence"
+  },
+  "languages": "Existing translation values unchanged; no new language strings",
+  "compared_references": [
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerMolecular.java",
+      "sha256": "70758dfe73da69de1ca0cf56a9ea1848bf21f896fde50ce160e0f014618848e4",
+      "adopted_code": false
+    },
+    {
+      "path": "C:\\Dev\\gregtech6yizhi-main\\gregtech6-main\\mdk\\src\\main\\java\\gregtech6\\recipes\\maps\\GT6RecipeMapScannerMolecular.java",
+      "sha256": "5bbfacb46599f91039e151c3b68f514d82cf001a082cee06a8fc99a36d4a247d",
+      "adopted_code": false
+    }
+  ],
+  "comparison": "Original and _w use registered ore material/prefix data, including connector block items. The other snapshot restricts resolution to its MaterialPrefixItem seam. This port uses the original facts and its existing native ItemMaterialRegistry, rather than inheriting that narrower item-type restriction.",
+  "native_seam_fix": "MaterialItem.getMaterial returns the invalid NULL sentinel for ordinary block items, not Java null. The scanner must consult registered ItemMaterialRegistry data when material is invalid or prefix absent.",
+  "lookup_cost": "RecipeMap skips disabled/fake rows before exact-input classification; display choices are informational only and do not participate in RecipeInputs matching."
+}

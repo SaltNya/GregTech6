@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-06",
+  "baseline": "3fbbc442df263656b6a9b2720a69499fdff09bc3",
+  "files": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\OP.java",
+      "sha256": "4d93260aeec5ce2440b9e2577aa75af04155b4426f934ef51c0b861dfada290e",
+      "bytes": 162128,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71",
+      "bytes": 17964,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2",
+      "bytes": 693183,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\CR.java",
+      "sha256": "952f94e0dfff66d27d2ac2b97ed47b6aa0c8250aa19babd5cc528c89616c0760",
+      "bytes": 39113,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\util\\OM.java",
+      "sha256": "3c2cc710d62373460d1854f60a7383ec0a5b7969877dbbcb3f5c9b5a0b4c5cbb",
+      "bytes": 34107,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictItemData.java",
+      "sha256": "d44471d8e7d2d732891e79a0f234045a693290e29f3d463dbc79633283d8517f",
+      "bytes": 8695,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2024 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\oredict\\OreDictManager.java",
+      "sha256": "41376372c077030142a6e95385a74f9dde79c3b15d9a4de95cff99f371b44801",
+      "bytes": 45600,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\connectors\\MultiTileEntityPipeFluid.java",
+      "sha256": "3a6850055375e7975145b03abab44c5922746a6f4053dd8d3163de989f37b110",
+      "bytes": 30631,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\tileentity\\connectors\\MultiTileEntityPipeItem.java",
+      "sha256": "0e9aa956b807d8390b20dd70f224b2b8d0a7be8df25fe66660abffda8b88069b",
+      "bytes": 18620,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\block\\multitileentity\\MultiTileEntityRegistry.java",
+      "sha256": "70fb3ce00e7036e343e253e0f9fd8401b05c3f4f4e16b88f1b3fb94c3b111e83",
+      "bytes": 18347,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2023 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\load\\LoaderOreDictReRegistrations.java",
+      "sha256": "d34719309a5ddf5bd7fc01c0462b57af52b4cf980a69fae4d4042c2ab78b07ef",
+      "bytes": 147540,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapShredder.java",
+      "sha256": "b963307f82df8cb595f4d0927d969b603f57a792596ec642bb31f6aaee01d1f4",
+      "bytes": 4063,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2024 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393",
+      "bytes": 791265,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "sha256": "7367922c4938318dd50b1320e7fc7a7453c33cffa46f75a437325314d2536ddc",
+      "bytes": 133807,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    }
+  ],
+  "rules": {
+    "fluid_pipe_units": [
+      0.5,
+      1,
+      3,
+      6,
+      12,
+      12,
+      9
+    ],
+    "item_pipe_units": [
+      3,
+      6,
+      12,
+      3,
+      6,
+      12
+    ],
+    "prefix_override": "setTarget_ -> addAssociation_ -> setItemData_: CR.REV data has no valid prefix, so source pipe association replaces it, including restrictive steel rings. A restrictive recipe still consumes 3/4/5 ANY.Steel rings.",
+    "hand_tiny": "one curved plate with saw/wrench/bending cylinder/hammer produces ONE source tiny pipe; Welder independently makes TWO.",
+    "hand_flags": "Original fluid aRecipe=false: Wood/WoodTreated/Plastic/Rubber/Carbon. Existing separate Wood recipes retained; bundles/unpacks exist for every pipe material. Item pipe aRecipe=true for all 21 built-in materials.",
+    "bundles": "Four medium pipes -> quad; nine small pipes -> nonuple; inverse output4/9; native payload guard stops stored block contents being lost.",
+    "drums": "four curved plates and two long rods -> 6U of hull material, merged using existing output identities",
+    "wood_barrels": "four plates/planks and two long rods, ANY.Iron or ANY.MagicIron both reverse to concrete Iron; unknown OD.itemGlue automatic material data omitted",
+    "plastic": "source IL.PlasticCan explicit ANY.Plastic3U; no invented shaped recipe",
+    "scope": "All 280 native fluid pipe and126 item pipe associations;30 auditable ordinary tanks; shared domain crafting catalog. Inherited generic Wood barrel and logistics tank composition remain separately unverified.",
+    "remaining": "full ore-dictionary preferred target/GTItems pipe bindings and all machine auto-scanning display rows not implemented by adding prefix metadata; external providers, full survival, independent saved-world reload and old-save migration unverified"
+  },
+  "languages": "Four existing language JSON resources unchanged; no new invented Chinese values"
+}

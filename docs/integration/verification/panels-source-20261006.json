@@ -1,0 +1,806 @@
+{
+  "date": "2026-10-06",
+  "baseline": "67e434609efceb83499f73a72e4d0bb28cebbb02",
+  "files": [
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanel.java",
+      "sha256": "d5af6f980b5f4c0453522a2c2084bae1701c1ff3425255da2a1cb11a83c22ba5",
+      "bytes": 1723,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelWood.java",
+      "sha256": "e263989c030783ea4be7b688c621de4392bbe85c222bec6f7fdaddb998ce561f",
+      "bytes": 2043,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelColored.java",
+      "sha256": "6e3d156f030dfd71e06dca4902e87431adf2e0df8a18935f2cc8a5fac4e8afce",
+      "bytes": 1140,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelConcrete.java",
+      "sha256": "746d792b5a3a9b7cc9723d04b16957158aa30923f1c0d3a7e4634bdd83d2e9f7",
+      "bytes": 1372,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelCFoam.java",
+      "sha256": "064005ae27a92cb36164e30ccc232483bbec72aa24b23876b44d5f73a562e5f1",
+      "bytes": 1372,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelAsphalt.java",
+      "sha256": "943eed60680e571a88a0e36a9ab4c650714f4eaef297d0a40fe1702c445792f1",
+      "bytes": 1708,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393",
+      "bytes": 791265,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team",
+      "panel_registration_lines": [
+        {
+          "line": 2045,
+          "text": "tPanel = aRegistry.add(\"Concrete Panel\", \"Panels\", i+32452, 32500, MultiTileEntityPanelConcrete.class, 0, 16, aStone, UT.NBT.make(NBT_COLOR, i));"
+        },
+        {
+          "line": 2049,
+          "text": "tPanel = aRegistry.add(\"C-Foam Panel\", \"Panels\", i+32468, 32500, MultiTileEntityPanelCFoam.class, 0, 16, aStone, UT.NBT.make(NBT_COLOR, i));"
+        },
+        {
+          "line": 2053,
+          "text": "tPanel = aRegistry.add(\"Asphalt Panel\", \"Panels\", i+32484, 32500, MultiTileEntityPanelAsphalt.class, 0, 16, aStone, UT.NBT.make(NBT_COLOR, i));"
+        },
+        {
+          "line": 2055,
+          "text": "CoverRegistry.put(tPanel, new CoverAsphalt(BlockTextureDefault.get(Textures.BlockIcons.ASPHALT, DYES[i])));"
+        },
+        {
+          "line": 2058,
+          "text": "ItemStack tPanel = aRegistry.add(\"Wooden Panel\", \"Panels\", i+32500, 32500, MultiTileEntityPanelWood.class, 0, 16, aWooden, UT.NBT.make(NBT_TEXTURE, i, NBT_HIDDEN, ST.invalid(PlankData.PLANKS[i])));"
+        },
+        {
+          "line": 2067,
+          "text": "ItemStack tPanel = aRegistry.add(\"Wooden Panel\", \"Panels\", i+32352, 32500, MultiTileEntityPanelWood.class, 0, 16, aWooden, UT.NBT.make(NBT_TEXTURE, i+100, NBT_HIDDEN, ST.invalid(PlankData.PLANKS[i+100])));"
+        },
+        {
+          "line": 2076,
+          "text": "ItemStack tPanel = aRegistry.add(\"Wooden Panel\", \"Panels\", i+32252, 32500, MultiTileEntityPanelWood.class, 0, 16, aWooden, UT.NBT.make(NBT_TEXTURE, i+200, NBT_HIDDEN, ST.invalid(PlankData.PLANKS[i+200])));"
+        }
+      ]
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverTextureSimple.java",
+      "sha256": "a2426dae0e02cafb06f8b6b92a7466f883bad6f20f0689aec2d283bb4e87b3df",
+      "bytes": 2459,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\cover\\covers\\CoverAsphalt.java",
+      "sha256": "72134a486e1092ccb57a004be3d4bfbb1990f7b2dc6af28ed4492e42912268f1",
+      "bytes": 1374,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2021 GregTech-6 Team"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\load\\LoaderWoodDictionary.java",
+      "sha256": "55a53e74c6fcddc4894a2e61acb8ea914496a53cc4f9f64e7f78d78eebd8d0e3",
+      "bytes": 127501,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+      "bytes": 153449,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanel.java",
+      "sha256": "82b13b7498eaca35b244914bd4682def18773b149d6aa7b89bdfe7ba400a13e6",
+      "bytes": 1918,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelWood.java",
+      "sha256": "35d9a1a64f6360131abaddfb04a7e96e94c9876ea8d524294b74833d8fa7d459",
+      "bytes": 2244,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelColored.java",
+      "sha256": "a41b3ea8ad6834a6a5884b5a82f0c7994ea6b257c26465250ee72c029a8fe446",
+      "bytes": 1322,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelConcrete.java",
+      "sha256": "78ca630994a528e203eb5dbf6a6bdc7944601793e9238ed14df25fb0996f1b36",
+      "bytes": 1561,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelCFoam.java",
+      "sha256": "304fe472d2c1346e42131d54f3f9d323a00ca49a975d98f0688883e7cb559a12",
+      "bytes": 1561,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\tileentity\\panels\\MultiTileEntityPanelAsphalt.java",
+      "sha256": "de6c51a7660b92f63bc4833f95e1dd2fb2c4cb11a7f8e5d7b87feab42bbce87d",
+      "bytes": 1903,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2019 Gregorius Techneticies"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "sha256": "4d87cacde8defa33df30359d345046daa8e901ab0419dca2766d2140d8af1562",
+      "bytes": 791308,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2026 GregTech-6 Team",
+      "panel_registration_lines": [
+        {
+          "line": 2053,
+          "text": "tPanel = aRegistry.add(\"Concrete Panel\", \"Panels\", i+32452, 32500, MultiTileEntityPanelConcrete.class, 0, 16, aStone, UT.NBT.make(NBT_COLOR, i));"
+        },
+        {
+          "line": 2057,
+          "text": "tPanel = aRegistry.add(\"C-Foam Panel\", \"Panels\", i+32468, 32500, MultiTileEntityPanelCFoam.class, 0, 16, aStone, UT.NBT.make(NBT_COLOR, i));"
+        },
+        {
+          "line": 2061,
+          "text": "tPanel = aRegistry.add(\"Asphalt Panel\", \"Panels\", i+32484, 32500, MultiTileEntityPanelAsphalt.class, 0, 16, aStone, UT.NBT.make(NBT_COLOR, i));"
+        },
+        {
+          "line": 2063,
+          "text": "CoverRegistry.put(tPanel, new CoverAsphalt(BlockTextureDefault.get(Textures.BlockIcons.ASPHALT, DYES[i])));"
+        },
+        {
+          "line": 2066,
+          "text": "ItemStack tPanel = aRegistry.add(\"Wooden Panel\", \"Panels\", i+32500, 32500, MultiTileEntityPanelWood.class, 0, 16, aWooden, UT.NBT.make(NBT_TEXTURE, i, NBT_HIDDEN, ST.invalid(PlankData.PLANKS[i])));"
+        },
+        {
+          "line": 2075,
+          "text": "ItemStack tPanel = aRegistry.add(\"Wooden Panel\", \"Panels\", i+32352, 32500, MultiTileEntityPanelWood.class, 0, 16, aWooden, UT.NBT.make(NBT_TEXTURE, i+100, NBT_HIDDEN, ST.invalid(PlankData.PLANKS[i+100])));"
+        },
+        {
+          "line": 2084,
+          "text": "ItemStack tPanel = aRegistry.add(\"Wooden Panel\", \"Panels\", i+32252, 32500, MultiTileEntityPanelWood.class, 0, 16, aWooden, UT.NBT.make(NBT_TEXTURE, i+200, NBT_HIDDEN, ST.invalid(PlankData.PLANKS[i+200])));"
+        }
+      ]
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\cover\\covers\\CoverTextureSimple.java",
+      "sha256": "f1f16766dc297a9226db29fb781b9aa0a6b8de48b589a709cb849258793330f2",
+      "bytes": 2648,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\cover\\covers\\CoverAsphalt.java",
+      "sha256": "fdb4762f00dc10f3dcabbaebf0a16d40ff04c44166b6de0c2481576ed8805200",
+      "bytes": 1700,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2021 GregTech-6 Team"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\load\\LoaderWoodDictionary.java",
+      "sha256": "5ef1fb7113bee3f27f73af8c23d258e3c98d9b4b390d59aeca78e70ffe6b7d84",
+      "bytes": 138190,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\data\\CS.java",
+      "sha256": "e6e330961c416e104ea5a58dd8282d286d1e27292a9f6d9955c9569c39af87c9",
+      "bytes": 172344,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "copyright": "Copyright (c) 2025 GregTech-6 Team"
+    },
+    {
+      "source": "original",
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71",
+      "bytes": 17964,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "iron_family_lines": [
+        {
+          "line": 119,
+          "text": "Iron            .stealLooks(MT.Fe             ).steal(MT.Fe             ).setLocal(\"Iron\"               ).setAllToTheOutputOf(MT.Fe             ).put(SMITHABLE, MELTING                                     ).addReRegistrationToThis(MT.Fe, MT.WroughtIron, MT.IronCast, MT.IronCompressed, MT.PigIron, MT.MeteoricIron, MT.Meteorite, MT.Enori, MT.Steel, MT.Knightmetal, MT.MeteoricSteel);"
+        }
+      ]
+    },
+    {
+      "source": "high_completion_reference",
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\data\\ANY.java",
+      "sha256": "6a26fa2293c4a315d2594c5ac80eba689389f9b1922a33547bdd20d2df724f71",
+      "bytes": 17964,
+      "author": "Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later",
+      "iron_family_lines": [
+        {
+          "line": 119,
+          "text": "Iron            .stealLooks(MT.Fe             ).steal(MT.Fe             ).setLocal(\"Iron\"               ).setAllToTheOutputOf(MT.Fe             ).put(SMITHABLE, MELTING                                     ).addReRegistrationToThis(MT.Fe, MT.WroughtIron, MT.IronCast, MT.IronCompressed, MT.PigIron, MT.MeteoricIron, MT.Meteorite, MT.Enori, MT.Steel, MT.Knightmetal, MT.MeteoricSteel);"
+        }
+      ]
+    }
+  ],
+  "translation": {
+    "path": "C:\\Dev\\GregTech_zh_cn.lang",
+    "sha256": "0e5b3906712020b71c9c5718319bbf3fd90b002d79d25614f1bfcaf3c8e887c0",
+    "bindings": [
+      {
+        "target": "block.gregtech.panel_wood",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "block.gregtech.panel_concrete",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "block.gregtech.panel_cfoam",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "block.gregtech.panel_asphalt",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "block.gregtech.panel_colored_gray",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "block.gregtech.panel_colored_black",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_black",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_black",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_black",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_red",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_red",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_red",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_green",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_green",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_green",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_brown",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_brown",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_brown",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_blue",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_blue",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_blue",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_purple",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_purple",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_purple",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_cyan",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_cyan",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_cyan",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_light_gray",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_light_gray",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_light_gray",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_gray",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_gray",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_gray",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_pink",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_pink",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_pink",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_lime",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_lime",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_lime",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_yellow",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_yellow",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_yellow",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_light_blue",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_light_blue",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_light_blue",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_magenta",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_magenta",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_magenta",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_orange",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_orange",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_orange",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_concrete_white",
+        "source": "S:gt.multitileentity.32452",
+        "value": "混凝土覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_cfoam_white",
+        "source": "S:gt.multitileentity.32468",
+        "value": "建筑泡沫覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_asphalt_white",
+        "source": "S:gt.multitileentity.32484",
+        "value": "沥青覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_spruce",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_birch",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_jungle",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_acacia",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_dark_oak",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_mangrove",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_cherry",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_bamboo",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_crimson",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_warped",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_rubber",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_maple",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_rainbowood",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_willow",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_blue_mahoe",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_hazel",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_cinnamon",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_coconut",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_bluespruce",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_pine",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_ebony",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_white_mahoe",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_compressed",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_dry",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_rotten",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_mossy",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_frozen",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_wood",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      },
+      {
+        "target": "item.gregtech.panel_wood_treated",
+        "source": "S:gt.multitileentity.32500",
+        "value": "木制覆盖板"
+      }
+    ]
+  },
+  "decisions": [
+    "canPlace=false; centered item cuboid [0,0,7]..[16,16,9]",
+    "48 colored construction panels and 30 available native plank panels; no 300 reserved phantom slots",
+    "six screws from ANY.Iron, one exact colored construction block or native plank, saw and screwdriver, six outputs",
+    "original CR.NCC means no recipe collision check, not disable autocrafting; preserve mirror opt-in",
+    "source PlankData indices retained only where unambiguous; modern woods and ambiguous dictionary slots are extensions without invented numeric original ids",
+    "keep six legacy block registry identities and saved edge geometry; disable new direct placement; new variants are plain cover items",
+    "original decorative textures, source DYES RGB, wood uses untinted plank texture and plank-name tooltip",
+    "source wood/stone dig sound on attachment/removal; asphalt horizontal speed x1.3 only when moving, not in water, not sneaking",
+    "Source ANY.Iron:119 has eleven source names including optional external Enori. Preserve existing aggregate tags; verify four actual native aliases and a copper negative. No external Enori placeholder is added.",
+    "Construction-color preview serializes ingredient identity without resolving tags during recipe construction, before native tag binding. Network decode restores the exact color preview; tag caches remain lazy."
+  ],
+  "reused_preserved_native_images": [
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\concrete.png",
+      "sha256": "fd31a7e446d7a3023aeb304f09be7b693e97a313440d64bde42219be15a26142"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\cfoam_hardened.png",
+      "sha256": "1d646405f64407271d7ff9db0237648e4ad57bd6d09e26d85eed06049f7ce2cf"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\asphalt.png",
+      "sha256": "2b51ec88d0be3a57588a04d886e5902dcbc8b9de0afa70e2ea181bdcbb6925a0"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_rubber.png",
+      "sha256": "d76f4824f593e4af6e11ecfb09c3e970e4e67edd434ad0f923689da7c2e218c1"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_maple.png",
+      "sha256": "9e20fa4143f60cb3265d088e2011d2b69bbd3bae65e0ec776626c8c7e6afd001"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_rainbowood.png",
+      "sha256": "f4f8d4d2ed48abaddc0f0b0d44d0d40e096f7782cbe09fbdc1626818cd4ec5c1"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_willow.png",
+      "sha256": "0d96dcc6a354eb8bd5dfade38fe63e3215f287efc32900f330483c8ddac1641d"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_bluemahoe.png",
+      "sha256": "fb3b2c1830a791f488cf6e053590ca29a274194f2f095f7cede58915827fb23b"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_hazel.png",
+      "sha256": "d12ad280486b25e3657fdb8cd257ad9c4e3f3161fe66483b76fefb672d755ab4"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_cinnamon.png",
+      "sha256": "259aac27015ec71eb1d411a774335aeaf65f9e9245dfb2ffb7e600174587425c"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_coconut.png",
+      "sha256": "18d5fb258d2179269da0128b4e4898e352e2c76fa679003df86596d0db61ba6c"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_bluespruce.png",
+      "sha256": "cdcd1a00aee8a52286297aba277b4f14cb71aaab936b8b3712e5e3808dee6821"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_compressed.png",
+      "sha256": "05833a385204067898f9c419292c6fcfed9e7a7c5bdf058afd3d8650132f6af6"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_dry.png",
+      "sha256": "26ac89e1909e7f5d968c05b9439b9434b7868cc9fbf3026426157890964617da"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_rotten.png",
+      "sha256": "10dca5e5d61f3dea289970f95ffb6ad5c79bc6478cee3d47912dddb9db03e36e"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_mossy.png",
+      "sha256": "d387a632e1251225840eac4f0dbb2b5edf2be11417937923e500ea7cf64f8768"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_frozen.png",
+      "sha256": "ca2f1fe29e5771d8f87835c96b8494815695ed2dedfa3b4608511ca8193d7091"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_wood.png",
+      "sha256": "f7acb1dfd1f99ef5181b3a420992099f2113adfc3972e0da5ad7fa012129838f"
+    },
+    {
+      "path": "C:\\Dev\\GregTech6\\core\\src\\main\\resources\\assets\\gregtech\\textures\\block\\iconsets\\planks_treated.png",
+      "sha256": "9c52676da53fdbfba14b0db71a89e6e06de29da580c581cd825ef2aaf1c57b15"
+    }
+  ],
+  "remaining_source_rules": [
+    "CR.REV automatic reverse material-composition bookkeeping belongs to the broader recipe-material data pass; it is not claimed complete by these finite crafting tests."
+  ]
+}
