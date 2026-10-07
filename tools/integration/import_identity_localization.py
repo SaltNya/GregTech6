@@ -135,7 +135,9 @@ def original_english(original):
         files.append(woods_file)
     blocks_file = original/'src/main/java/gregtech/loaders/a/Loader_Blocks.java'
     if blocks_file.exists():
-        wood_classes.update(re.findall(r'new (BlockFlowers[AB])\s*\(\s*"([^"]+)"',
+        wood_classes.update(re.findall(r'new (BlockFlowers[AB]|BlockBaleGrass|BlockBaleCrop|BlockSands|BlockGrass|'
+                                      r'BlockAsphalt|BlockConcrete(?:Reinforced)?|BlockCFoam(?:Fresh)?|BlockGlass(?:Clear|Glow)|'
+                                      r'BlockBars(?:Brass|Steel|TungstenSteel)|BlockSpike(?:Sharp|Steel|Super|Metal|Fancy))\s*\(\s*"([^"]+)"',
                                       masked(blocks_file.read_text(encoding='utf-8'))))
         files.append(blocks_file)
     def put(key, text):
@@ -292,6 +294,22 @@ def original_english(original):
             if suffix:
                 for i,dye in enumerate(dyes): put('gt.block.lilypad.glowtus.'+str(i),dye+json.loads(suffix[1]))
         if path.stem in wood_classes:
+            if re.search(r'extends\s+BlockColored\b',raw) and len(dyes)==16:
+                # Only evaluate the literal constructor and the verified common BlockColored formula.
+                colored = original/'src/main/java/gregapi/block/metatype/BlockColored.java'
+                formula = ''.join(re.findall(STRING+r'|\S',masked(colored.read_text(encoding='utf-8'))))
+                for suffix in ('', '+" Slab"'):
+                    expected='for(inti=0;i<16;i++)LH.add(getUnlocalizedName()+"."+i,DYE_NAMES[i]+" "+aDefaultLocalised'+suffix+');'
+                    if expected not in formula:
+                        raise ValueError('Unsupported original BlockColored name formula')
+                if colored not in files:files.append(colored)
+                defaults = {json.loads(args[4]) for _,args in calls(raw,'super')
+                            if len(args)>4 and re.fullmatch(STRING,args[4])}
+                if len(defaults)!=1:raise ValueError('Ambiguous colored block constructor: '+str(path))
+                base=wood_classes[path.stem];default=next(iter(defaults))
+                for i,dye in enumerate(dyes):
+                    put(f'{base}.{i}',dye+' '+default)
+                    for side in range(6):put(f'{base}.slab.{side}.{i}',dye+' '+default+' Slab')
             constructors=re.split(r'\b(?:public|protected)\s+'+re.escape(path.stem)+r'\s*\(',raw)[1:]
             for index,body in enumerate(constructors):
                 base=wood_classes[path.stem]

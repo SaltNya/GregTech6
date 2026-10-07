@@ -214,7 +214,8 @@ def launch(args):
             or language.get('beeDescriptions') != 360 or language.get('emptyBeeDescriptions') != 280
             or language.get('anvilNames') != 35 or language.get('fluidNameSamples') != 3
             or language.get('fluidPropertySamples') != 7 or language.get('hotRecipeValues') != 2
-            or language.get('sourceIdentitySamples') != 12 or language.get('assembledToolNames') != 3
+            or language.get('sourceIdentitySamples') != 20 or language.get('assembledToolNames') != 3
+            or language.get('coloredConstructionNamesEnglish') != 144 or language.get('coloredConstructionNamesChinese') != 144
             or language.get('machineNamesEnglish', 0) < 400 or language.get('machineNamesChinese', 0) < 400
             or language.get('newSourceDescriptions') != 1):
         raise ValueError('Production original-language/actual-fluid receipt is incomplete')

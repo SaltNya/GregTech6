@@ -110,6 +110,33 @@ add(TOOL_HINT, " Exact source hint ");
             result,_=original_english(root)
             self.assertEqual(result['gt.lang.tool.hint'],' Exact source hint ')
 
+    def test_colored_constructor_inherits_exact_full_and_slab_names(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data'
+            data.mkdir(parents=True)
+            (data/'MT.java').write_text('',encoding='utf-8')
+            (data/'CS.java').write_text('DYE_NAMES={'+','.join('"Dye '+str(i)+'"' for i in range(16))+'};',encoding='utf-8')
+            loader=java/'gregtech/loaders/a/Loader_Blocks.java';loader.parent.mkdir(parents=True)
+            loader.write_text('new BlockConcrete("gt.block.concrete");',encoding='utf-8')
+            (java/'BlockConcrete.java').write_text('''class BlockConcrete extends BlockColored {
+public BlockConcrete(String id) {super(Item.class, Material.rock, sound, id, "Concrete", null);}
+}''',encoding='utf-8')
+            shared=java/'gregapi/block/metatype/BlockColored.java';shared.parent.mkdir(parents=True)
+            formula='''for (int i = 0; i < 16; i++) LH.add(getUnlocalizedName()+"."+i, DYE_NAMES[i] + " " + aDefaultLocalised);
+for (int i = 0; i < 16; i++) LH.add(getUnlocalizedName()+"."+i, DYE_NAMES[i] + " " + aDefaultLocalised + " Slab");'''
+            shared.write_text(formula,encoding='utf-8')
+            result,files=original_english(root)
+            self.assertEqual(result['gt.block.concrete.15'],'Dye 15 Concrete')
+            self.assertEqual(result['gt.block.concrete.slab.5.0'],'Dye 0 Concrete Slab')
+            self.assertIn(shared,files)
+            # A new separator changes the source text: reject, never silently normalize it.
+            shared.write_text(formula.replace('" "','"  "'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Unsupported original BlockColored name formula'):
+                original_english(root)
+            shared.write_text(formula.replace('i < 16','i < 8'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Unsupported original BlockColored name formula'):
+                original_english(root)
+
     def test_pipe_helpers_resolve_numeric_offsets_and_refuse_incomplete_tables(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
             root=Path(folder);java=root/'src/main/java';helpers=java/'gregapi/tileentity/connectors'

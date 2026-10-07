@@ -5706,7 +5706,7 @@
   "follow_up": [
     "Missing-source translation preference remains unanswered; do not call fallback keys translated.",
     "Original supplemental rocks have no matching stone entries in the supplied patch.",
-    "Volcanic fluid name differs across loaders in the actual preview: Forge English and Neo base lava name; inspect native description identity.",
+    "Correction during metadata-language follow-up: reopening both original PNGs confirms the same Volcanic Lava Fluid title. The earlier cross-loader difference was a review error; the missing original Chinese translation remains.",
     "Keep reviewing remaining original metadata/LH bindings; global port goal remains active until the requested language milestone is met."
   ],
   "idempotence": {
@@ -24946,7 +24946,7 @@
         "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-dc6a9ddc-debb-49af-b398-ab066d97c023\\screenshots\\production-forge-d14be71b-6b2f-4b62-a812-c7613420a541.png",
         "screenshot_sha256": "7eeb7b26a91b6828cb2542c09e2219fa1971b1854d024330c8d60ea2c1b32e3d",
         "status": "passed",
-        "visual_review_scope": "Reviewed 1280x720 glyphs, icons and layout; source-missing English remains visible. Volcanic display name differs across loaders and remains a language follow-up.",
+        "visual_review_scope": "Reviewed 1280x720 glyphs, icons and layout; source-missing English remains visible. Corrected after reopening the original PNG: both loaders display Volcanic Lava Fluid; the earlier claimed name difference was erroneous.",
         "visually_reviewed": true
       },
       "neoforge": {
@@ -24995,7 +24995,7 @@
         "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-669ad425-f0b8-4434-b62a-a253658914f1\\screenshots\\production-neoforge-95396c50-3503-476c-afc0-a6aed52db2bb.png",
         "screenshot_sha256": "23cf780c1b1391e2d5e9d9418eccc82f7b374277aa58220a7542bb320e3d1dae",
         "status": "passed",
-        "visual_review_scope": "Reviewed 1280x720 glyphs, icons and layout; source-missing English remains visible. Volcanic display name differs across loaders and remains a language follow-up.",
+        "visual_review_scope": "Reviewed 1280x720 glyphs, icons and layout; source-missing English remains visible. Corrected after reopening the original PNG: both loaders display Volcanic Lava Fluid; the earlier claimed name difference was erroneous.",
         "visually_reviewed": true
       }
     },

@@ -75,7 +75,44 @@ class LanguageIdentities {
             row("block.gregtech." + parts[0], "gt.multitileentity." + parts[1], "");
         }
         row("block.gregtech.asphalt", "gt.block.asphalt.0", "");
+        // BlockColored names include the original dye, with metadata in the inverse of modern DyeColor order.
+        for (String binding : new String[]{"asphalt|asphalt|0", "concrete|concrete|7",
+                "concrete_reinforced|concrete.reinforced|7", "cfoam|cfoam|15",
+                "cfoam_fresh|cfoam.fresh|15",
+                "glass_clear|glass|7", "glass_glow|glass.glow|7",
+                "glass_glow_slab|glass.glow.slab.0|15", "cfoam_slab|cfoam.slab.0|15"}) {
+            String[] parts = binding.split("\\|");
+            row("block.gregtech." + parts[0], "gt.block." + parts[1] + "." + parts[2], "");
+            for (int i = 0; i < colors.size(); i++)
+                row("block.gregtech." + parts[0] + "." + colors.get(i), "gt.block." + parts[1] + "." + i, "");
+        }
+        // Retained sprite-only legacy blocks have no color state. Do not invent colored items for them.
+        row("block.gregtech.cfoam_fresh_owned", "gt.block.cfoam.fresh.15", "");
+        row("block.gregtech.cfoam_hardened", "gt.block.cfoam.15", "");
+        row("block.gregtech.cfoam_hardened_owned", "gt.block.cfoam.15", "");
         row("block.gregtech.railroad", "gt.block.rail.road", "");
+        // Flattened metadata still belongs to the original block/variant, not its sprite name.
+        String[] grassBales = {"grass", "grass_dry", "grass_moldy", "grass_rotten"};
+        String[] cropBales = {"rye", "oat", "barley", "rice"};
+        for (int i = 0; i < 4; i++) {
+            row("block.gregtech.bale_" + grassBales[i], "gt.block.bale.grass." + i, "");
+            row("block.gregtech.bale_" + cropBales[i], "gt.block.bale.crop." + i, "");
+        }
+        var sands = com.gregtech.gregtech.block.BlackSandDefinitions.IDS;
+        for (int i = 0; i < sands.size(); i++)
+            row("block.gregtech." + sands.get(i), "gt.block.sands." + i, "");
+        for (String material : new String[]{"brass", "steel", "tungsten_steel"})
+            row("block.gregtech.bars_" + material, "gt.block.bars." + material.replace("_", "") + ".0", "");
+        for (String type : new String[]{"sharp", "steel", "super", "metal", "fancy"})
+            row("block.gregtech.spike_" + type, "gt.block.spikes." + type + ".0", "");
+        for (String binding : new String[]{"filter_items|30256", "filter_fluids|30257",
+                "filter_items_fluids|30258", "filter_oredict|30259", "sensor_kilogibblometer|31023",
+                "crank|32111", "tap|32728", "tap_stainless_steel|32730", "nozzle|32746",
+                "nozzle_stainless_steel|32748", "cap_nozzle|32058", "cap_nozzle_stainless_steel|32060",
+                "sap_bag|32736", "plant_pot|32065", "coin_mold|32701", "reactor_core|9300", "reactor_core_2x2|9200"}) {
+            String[] parts = binding.split("\\|");
+            row("block.gregtech." + parts[0], "gt.multitileentity." + parts[1], "");
+        }
         for (var tool : com.gregtech.gregtech.api.tool.ToolDefinition.values()) {
             row("item.gregtech.tool." + tool.id(), "gt.metatool.01." + tool.gt6Id(), "");
             row(tool.translationKey(), "gt.metatool.01." + tool.gt6Id(), "");
@@ -102,6 +139,20 @@ class LanguageIdentities {
                 row("block.gregtech." + kind + "_" + treeSpecies[i], "gt.block." + kind + "." + i, "");
             for (String kind : new String[]{"log", "beam"})
                 row("block.gregtech." + kind + "_" + treeSpecies[i], "gt.block." + kind + "." + (i < 4 ? "a" : "b") + "." + (i % 4), "");
+            String iconSpecies = treeSpecies[i].replace("_", "");
+            row("block.gregtech.sapling_small_" + iconSpecies, "gt.block.sapling." + i, "");
+            row("block.gregtech.sapling_large_" + iconSpecies, "gt.block.sapling." + (i + 8), "");
+            // Fast/fancy leaves are rendering variants of the same original named species.
+            row("block.gregtech.leaves_opaque_" + iconSpecies, "gt.block.leaves." + i, "");
+        }
+        row("block.gregtech.sapling_small_bluespruce", "gt.block.sapling.cd.0", "");
+        row("block.gregtech.sapling_large_bluespruce", "gt.block.sapling.cd.8", "");
+        row("block.gregtech.leaves_opaque_bluespruce", "gt.block.leaves.cd.0", "");
+        row("block.gregtech.leaves_bluespruce_xmas", "gt.block.leaves.cd.0", "");
+        row("block.gregtech.leaves_opaque_bluespruce_xmas", "gt.block.leaves.cd.0", "");
+        for (String season : new String[]{"brown", "orange", "red", "yellow"}) {
+            row("block.gregtech.leaves_maple_" + season, "gt.block.leaves.1", "");
+            row("block.gregtech.leaves_opaque_maple_" + season, "gt.block.leaves.1", "");
         }
         for (String kind : new String[]{"sapling", "leaves", "planks", "log", "beam"}) {
             String suffix = switch(kind) { case "sapling", "leaves" -> ".cd"; case "planks" -> "2"; default -> ".c"; };
