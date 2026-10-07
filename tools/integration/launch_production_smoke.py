@@ -23,6 +23,28 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def validate_language_inventory(inventory, language):
+    candidates = inventory.get('candidates', [])
+    missing = inventory.get('missingMaterialFormNames', [])
+    forms = inventory.get('materialFormNames', {})
+    if (inventory.get('registeredItems') != language.get('englishItemNames')
+            or language.get('chineseItemNames') != language.get('englishItemNames')
+            or inventory.get('candidateCount') != len(candidates)
+            or inventory.get('candidateCount') != language.get('latinNameCandidates')
+            or forms != language.get('materialFormNames')
+            or forms.get('registered', 0) < 10000 or forms.get('exactOriginal', 0) < 10000
+            or forms.get('originalCasingNames', 0) < 100
+            or forms.get('missingOriginal') != len(missing)
+            or forms.get('registered') != forms.get('exactOriginal', 0) + len(missing)):
+        raise ValueError('Production registered-language inventory is incomplete')
+    for entries in (candidates, missing):
+        ids = [row['id'] for row in entries]
+        if len(ids) != len(set(ids)):
+            raise ValueError('Production registered-language inventory contains duplicate item IDs')
+    if any(not row.get('sourceKey', '').startswith('oredict.') or row.get('sourceNameAvailable') is not False for row in missing):
+        raise ValueError('Production missing material names must identify unavailable original keys')
+
+
 def allowed(rules):
     if not rules:
         return True
@@ -219,16 +241,14 @@ def launch(args):
             or language.get('sourceStoneNamesEnglish') != 544 or language.get('sourceStoneNamesChinese') != 544
             or language.get('bushNamesAndOutputsEnglish', 0) < 10
             or language.get('bushNamesAndOutputsEnglish') != language.get('bushNamesAndOutputsChinese')
+            or language.get('coinNamesAndMaterialsEnglish', 0) < 500
+            or language.get('coinNamesAndMaterialsEnglish') != language.get('coinNamesAndMaterialsChinese')
             or language.get('machineNamesEnglish', 0) < 400 or language.get('machineNamesChinese', 0) < 400
             or language.get('newSourceDescriptions') != 1):
         raise ValueError('Production original-language/actual-fluid receipt is incomplete')
     inventory_path = run / 'language-names.json'
     inventory = json.loads(inventory_path.read_text(encoding='utf-8'))
-    if (inventory.get('registeredItems') != language.get('englishItemNames')
-            or language.get('chineseItemNames') != language.get('englishItemNames')
-            or inventory.get('candidateCount') != len(inventory.get('candidates', []))
-            or inventory.get('candidateCount') != language.get('latinNameCandidates')):
-        raise ValueError('Production registered-language inventory is incomplete')
+    validate_language_inventory(inventory, language)
     dimensions = check_png(screenshot.read_bytes())
     if dimensions != (receipt['width'], receipt['height']):
         raise ValueError('Production screenshot dimensions differ from receipt')

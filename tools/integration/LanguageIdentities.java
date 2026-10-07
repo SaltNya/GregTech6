@@ -68,6 +68,7 @@ class LanguageIdentities {
             }
         }
         row("block.gregtech.fluid_jug", "gt.multitileentity.32740", "");
+        row("item.gregtech.coin", "gt.multitileentity.32700", "");
         row("block.gregtech.fluid_cup", "gt.multitileentity.32739", "");
         row("block.gregtech.fluid_measuring_pot", "gt.multitileentity.32738", "");
         row("block.gregtech.fluid_measuring_pot_stainless_steel", "gt.multitileentity.32743", "");
@@ -240,10 +241,10 @@ class LanguageIdentities {
                 waterNames.getOrDefault(f.registryName(), "fluid." + f.registryName()), ""));
         com.gregtech.gregtech.api.prefix.PrefixRegistry.ensurePrefixesLoaded();
         for (var p : com.gregtech.gregtech.api.prefix.PrefixRegistry.all()) if (!p.isHiddenFromCreative())
-            row("item.gregtech.tab_icon_" + p.getRegistryName(), "oredict.prefix." + p.getName(), p.getDisplayName());
+            row("item.gregtech.tab_icon_" + p.getRegistryName(), "oredict.prefix." + com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(p.getName()), p.getDisplayName());
         com.gregtech.gregtech.api.prefix.BlockPrefixRegistry.ensurePrefixesLoaded();
         for (var p : com.gregtech.gregtech.api.prefix.BlockPrefixRegistry.all()) if (!p.isPartialCrate())
-            row("item.gregtech.tab_icon_block_" + p.getRegistryName(), "oredict.prefix." + p.getName(), p.getDisplayName());
+            row("item.gregtech.tab_icon_block_" + p.getRegistryName(), "oredict.prefix." + com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(p.getName()), p.getDisplayName());
     }
     private static void row(String key, String original, String fallback) {
         if ((key + original + fallback).matches("(?s).*[\\t\\r\\n].*"))

@@ -1,13 +1,33 @@
 """Console encoding must not corrupt a successful language self-check receipt."""
 from pathlib import Path
+import copy
 import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
-from launch_production_smoke import parse_receipt
+from launch_production_smoke import parse_receipt, validate_language_inventory
 
 
 class DeliveryLanguageTests(unittest.TestCase):
+    def test_language_inventory_rejects_inconsistent_or_duplicate_source_gap_rows(self):
+        forms = {'registered': 50002, 'exactOriginal': 50000, 'missingOriginal': 2, 'originalCasingNames': 300}
+        missing = [{'id': 'gregtech:example_' + str(i), 'sourceKey': 'oredict.example' + str(i),
+                    'sourceNameAvailable': False} for i in range(2)]
+        language = {'englishItemNames': 70000, 'chineseItemNames': 70000,
+                    'latinNameCandidates': 0, 'materialFormNames': forms}
+        inventory = {'registeredItems': 70000, 'candidateCount': 0, 'candidates': [],
+                     'materialFormNames': forms, 'missingMaterialFormNames': missing}
+        validate_language_inventory(inventory, language)
+        broken = []
+        row = copy.deepcopy(inventory); row['materialFormNames']['registered'] += 1; broken.append(row)
+        row = copy.deepcopy(inventory); row['missingMaterialFormNames'].pop(); broken.append(row)
+        row = copy.deepcopy(inventory); row['missingMaterialFormNames'][1] = row['missingMaterialFormNames'][0]; broken.append(row)
+        row = copy.deepcopy(inventory); row['missingMaterialFormNames'][0]['sourceNameAvailable'] = True; broken.append(row)
+        row = copy.deepcopy(inventory); row['materialFormNames']['originalCasingNames'] = 0; broken.append(row)
+        for row in broken:
+            with self.subTest(row=row), self.assertRaises(ValueError):
+                validate_language_inventory(row, language)
+
     def test_native_messages_do_not_determine_structured_receipt_encoding(self):
         raw = b'Native message \x85\xff\nPRODUCTION_SMOKE_SUCCESS ' + '{"text":"中文 / 1538°C"}'.encode('utf-8')
         self.assertEqual(parse_receipt(raw, 0, 'sample.log')['text'], '中文 / 1538°C')
