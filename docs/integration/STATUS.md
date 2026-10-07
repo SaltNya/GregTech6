@@ -1,5 +1,13 @@
 # 整合状态
 
+## 2026-10-07 / 通用形态标签补材料数据
+
+外来锭、粒、粉、宝石、板、杆只要挂着一种没有歧义的通用标签，就按 GT 形态的标准重量补上材料数据。方块不补。装了沉浸工程时，Forge 补了 46 条、NeoForge 补了 48 条，歧义跳过都是 0；没装其他内容模组时 NeoForge 是 0 条。两端 `gregtech_compat` 各 6 项 GameTest 通过，带沉浸工程的运行里 `/reload` 后条数不变，铅锭也没有被写进 `gregtech:ingot/lead`。没有跑 Forge 无模组、主命名空间全量 GameTest、专服、客户端或验包。旧存档没有测。群峦没有实机测。还在本地分支 `compat/mekanism`，没有推送。见 [验证](VERIFICATION.md)、[决策](DECISIONS.md)。
+
+## 2026-10-06 / HarvestCraft 2 Food Core
+
+第二波先做 Food Core。装了 `pamhc2foodcore` 时合成包 4 个文件，机器行 12、解析失败 0；没装时合成包 0、整组跳过。两端 `gregtech_compat` 各 5 项 GameTest（IE、Mekanism、AE2、Project Red、HarvestCraft）在有/无模组时通过，带模组的运行里 `/reload` 后仍是 4 个文件、12 行。没有跑专服、客户端或验包。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [验证](VERIFICATION.md)、[账本](compat/harvestcraft.md)。
+
 ## 2026-10-06 / Storage Drawers 引用账本
 
 第一波把 Storage Drawers 记成推后。17 处 `MD.SD` 都是书本登记或木头材质，没有可生成的配方行。JABBA 的木桶锯切没有算进来。没有加运行依赖，没有跑 GameTest。旧存档没有测。还在本地分支 `compat/mekanism`，没有推送。见 [账本](compat/storagedrawers.md)。

@@ -1,5 +1,21 @@
 # 实现选择记录
 
+## 2026-10-07 / 通用形态标签补材料数据
+
+外来物品只要挂着一种没有歧义的通用形态标签，就按 GT 该形态的标准重量补上材料数据。覆盖锭、粒、宝石、粉、小粉、微粉、板、杆。杆认 `rods`。材料别名认 `aluminum`、`sulphur`、`nether_quartz`、`tungstensteel`，和标签包原来的四对写法共用一张表。
+
+不处理 `minecraft` 和 `gregtech` 的物品，也不覆盖已经明确登记的数据。一个物品同时挂着多种形态或多种材料就跳过，日志里单独计数。GT 自己生成不了的组合（例如宝石铁）也跳过。方块标签不补：群峦一个方块等于 1 锭，GT 方块等于 9 锭，混进去会刷物品。齿轮、环、螺栓、螺丝、箔、导线各模组用量不统一，这次不补。
+
+标签包只读明确登记的数据。否则重载之后，上一轮补出来的外来锭会被写进 `gregtech:ingot/lead`，第一次启动和重载就不一样。
+
+补上数据之后，这些物品可以进 GT 坩埚、进大容量存储（取出来是 GT 的物品）、在配方里和 GT 物品互相匹配，并显示材料提示。也能堆成锭堆、当燃烧箱燃料。这和原版 GT6 用矿物词典登记外来物品的结果一致。
+
+用沉浸工程的铅锭、铁杆、铅板和铝杆验证，不另写机器配方账本。群峦的红钢、蓝钢、黑钢锭和杆会跟着这层规则走，但这次没有装群峦实机测。还没做的：Forge 版群峦按物品 id 写熔化配方，GT 锭在群峦里不能熔化；群峦的板等于 2 锭，对应 GT 双层板，群峦的双锭对应 GT 双锭，这两组没有对接；NeoForge 版里 GT 方块在群峦里只熔出 100 mB。
+
+## 2026-10-06 / HarvestCraft 2 只接 Food Core 里还在的机器行
+
+`Compat_Recipes_HarvestCraft` 对着 Food Core Forge `1.0.5` 和 NeoForge `1.0.2`。作物、树木和 Food Extended 没有同时覆盖两边的 Modrinth 包，不加运行依赖。向日葵粉碎、牛肉干的三种盐量、原味甜甜圈的糖粉和 36 mB 巧克力浴，以及面粉加四种水做 `gregtech:dough` 留下。原版 `foodDonut` 监听没有对应标签，所以甜甜圈行只使用 `plaindonutitem`。关掉 `beefjerkyitem`、`powdereddonutitem`、`chocolatedonutitem` 和 `doughitem_x2`。蜡烛、硬化皮革、酸奶、奶昔、合成表改写和营养值不生成。见 [账本](compat/harvestcraft.md)。
+
 ## 2026-10-06 / Storage Drawers 只记引用账本
 
 没有 `Compat_Recipes_StorageDrawers`。原版只登记钥匙、锁和胶带的书，并用反射把抽屉改成木头材质。JABBA 的木桶锯切是另一个模组，不记进这里。没有现有机器行能表达的配方。不加 `-PcompatRuntime`，不跑 GameTest。见 [账本](compat/storagedrawers.md)。

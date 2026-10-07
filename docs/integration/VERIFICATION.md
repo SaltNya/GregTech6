@@ -1,5 +1,13 @@
 # 验证账本
 
+## 2026-10-07 / 通用形态标签补材料数据
+
+共享契约通过：2762 条断言、31 组（`BUILD SUCCESSFUL in 2m 57s`）。Forge 带 `-PcompatRuntime=ie`（沉浸工程 `10.2.0-183`）：`gregtech_compat` 6 项通过，游戏日志 `All 6 required tests passed`，`BUILD SUCCESSFUL in 23m 52s`。初次加载和测试内 `/reload` 后都是 539 条外部加工行、46 条材料数据，其中矿石形态 0、通用形态 46、歧义跳过 0。铅锭、铁杆、铅板、铝杆分别得到锭、杆、板、杆，铅锭能进坩埚和大容量存储，作为配方要求时能接受 GT 铅锭，`storage_lead` 没有通用形态数据，铅锭不在 `gregtech:ingot/lead`。EMI 仍从本地副本解析。NeoForge 带 `-PcompatRuntime=ie`（`12.4.2-194`）：6 项通过（`BUILD SUCCESSFUL in 3m 44s`），同样三次绑定都是 48 条通用形态、歧义 0，reload 后仍通过。NeoForge 不带内容模组：6 项通过（`BUILD SUCCESSFUL in 2m 4s`），材料数据 0、通用形态 0、歧义 0。没有跑 Forge 无模组、主命名空间 `gregtech` 全量 GameTest、专服、客户端或验包。旧存档、完整生存和独立进程重启没有测。群峦没有装，红钢、蓝钢、黑钢只按标签数据推断。没有推送。
+
+## 2026-10-06 / HarvestCraft 2 Food Core
+
+共享契约通过：2740 条断言、31 组，含 Food Core 模块的结构检查（`BUILD SUCCESSFUL in 2m 25s`）。Forge 无 Food Core：`gregtech_compat` 5 项通过（`BUILD SUCCESSFUL in 17m 14s`），合成包 0 个文件，日志写明未加载目标模组。第一次 Forge 运行因为 `maven.terraformersmc.com` 把 Gradle 重定向到连不上的 `repo.sleeping.town`，EMI 解析失败；后面的通过运行改从本地副本解析同一份 EMI。Forge 带 `-PcompatRuntime=hc`（Food Core `1.0.5`）：游戏日志 `All 5 required tests passed`，`BUILD SUCCESSFUL in 22m 5s`。合成包 4 个文件，机器行 12、未解析 0；向日葵粉碎成 1 个种子，牛肉加小堆盐粉出牛肉干，面粉加 1000 mB 水出 `gregtech:dough`，`pamhc2foodcore:beefjerkyitem` 和 `doughitem_x2` 不在，`sunflowerseedsitem` 还在。测试内 `/reload` 后仍是 4 个文件、12 行、0 未解析，禁用文件已经生效所以没有再摘。Food Core 自己的 `caramelcupcakeitem_x4`、`melonpieitem`、`honeymuffinitem` 因物品不存在而解析失败，不是这批删除的 id。NeoForge 无 Food Core：5 项通过（`BUILD SUCCESSFUL in 2m 2s`），合成包 0、整组跳过。NeoForge 带 `-PcompatRuntime=hc`（`1.0.2`）：5 项通过（`BUILD SUCCESSFUL in 2m 22s`），同样 4 个文件、12 行、0 未解析，reload 后仍通过。没有跑专服、客户端或验包。旧存档、完整生存和独立进程重启没有测。没有推送。
+
 ## 2026-10-06 / Storage Drawers 引用账本
 
 对着原版源码核对了 `MD.SD`。没有配方类。JABBA 的木桶锯切留在 `Compat_Recipes_JABBA`，没有并进这份账本。没有加运行依赖，没有跑 GameTest。旧存档没有测。没有推送。
