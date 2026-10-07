@@ -9,7 +9,7 @@ import java.util.List;
 public final class CompatSpecs {
     private CompatSpecs() {}
 
-    public enum Op { SAW, ONE, TWO, GENERIFY, BATH }
+    public enum Op { SAW, ONE, TWO, THREE, GENERIFY, BATH }
 
     public sealed interface Stack permits Stack.Item, Stack.Tag, Stack.Form {
         int count();
@@ -25,24 +25,47 @@ public final class CompatSpecs {
 
     public record CraftingRow(String id, Stack output, List<Stack> inputs, String source) {}
 
+    /** One-character pattern symbols. The platform writes a shaped crafting recipe. */
+    public record ShapedKey(String symbol, Stack stack) {}
+
+    public record ShapedRow(String id, Stack output, List<String> pattern, List<ShapedKey> keys, String source) {}
+
     public record Removal(String recipeId, String source) {}
 
     public record Module(String modernId, boolean forge, boolean neo, String originalClass,
-                         List<MachineRow> machines, List<CraftingRow> crafting, List<Removal> removals,
-                         List<String> deferred) {}
+                         List<MachineRow> machines, List<CraftingRow> crafting, List<ShapedRow> shaped,
+                         List<Removal> removals, List<String> deferred) {}
 
     public static List<Module> modules() {
-        return List.of(ImmersiveEngineeringCompat.module());
+        return List.of(ImmersiveEngineeringCompat.module(), MekanismCompat.module(),
+                AppliedEnergisticsCompat.module(), ProjectRedCompat.module(), HarvestCraftCompat.module());
     }
 
     /** Structural checks only. A loaded game still has to resolve the registry names. */
     public static int check() {
         int assertions = 0;
-        if (modules().size() != 1) throw new IllegalStateException("IE pilot publishes one module");
+        var byId = new java.util.LinkedHashMap<String, Module>();
+        for (var module : modules()) {
+            if (byId.put(module.modernId(), module) != null)
+                throw new IllegalStateException("Duplicate compat module " + module.modernId());
+            assertions++;
+        }
+        if (byId.size() != 5 || !byId.containsKey("immersiveengineering") || !byId.containsKey("mekanism")
+                || !byId.containsKey("ae2") || !byId.containsKey("projectred_core")
+                || !byId.containsKey("pamhc2foodcore"))
+            throw new IllegalStateException("compat modules " + byId.keySet());
         assertions++;
-        var module = modules().get(0);
-        if (!module.modernId().equals("immersiveengineering") || !module.forge() || !module.neo())
-            throw new IllegalStateException("IE is a dual-loader target");
+        assertions += immersiveEngineering(byId.get("immersiveengineering"));
+        assertions += mekanism(byId.get("mekanism"));
+        assertions += appliedEnergistics(byId.get("ae2"));
+        assertions += projectRed(byId.get("projectred_core"));
+        assertions += harvestCraft(byId.get("pamhc2foodcore"));
+        return assertions;
+    }
+
+    private static int immersiveEngineering(Module module) {
+        int assertions = 0;
+        if (!module.forge() || !module.neo()) throw new IllegalStateException("IE is a dual-loader target");
         assertions++;
         if (!module.originalClass().equals("Compat_Recipes_ImmersiveEngineering"))
             throw new IllegalStateException(module.originalClass());
@@ -57,7 +80,7 @@ public final class CompatSpecs {
             }) throw new IllegalStateException("Unknown map " + row.map());
             assertions++;
         }
-        if (module.crafting().size() != 2 || module.removals().size() != 11)
+        if (module.crafting().size() != 2 || !module.shaped().isEmpty() || module.removals().size() != 11)
             throw new IllegalStateException("IE crafting/removal counts");
         assertions++;
         for (var row : module.crafting()) {
@@ -75,6 +98,93 @@ public final class CompatSpecs {
         assertions++;
         long baths = module.machines().stream().filter(row -> row.op() == Op.BATH).count();
         if (baths != 11L * 7 * 2) throw new IllegalStateException("stair/slab oil baths " + baths);
+        assertions++;
+        return assertions;
+    }
+
+    private static int mekanism(Module module) {
+        int assertions = 0;
+        if (!module.forge() || !module.neo() || !module.originalClass().equals("Compat_Recipes_Mekanism"))
+            throw new IllegalStateException(module.originalClass());
+        assertions++;
+        if (!module.machines().isEmpty() || !module.crafting().isEmpty() || !module.shaped().isEmpty()
+                || module.removals().size() != 1)
+            throw new IllegalStateException("Mekanism publishes one crafting removal");
+        assertions++;
+        if (!module.removals().get(0).recipeId().equals("mekanism:storage_blocks/salt"))
+            throw new IllegalStateException(module.removals().get(0).recipeId());
+        assertions++;
+        if (module.deferred().size() < 8) throw new IllegalStateException("deferred Mekanism dye targets");
+        assertions++;
+        return assertions;
+    }
+
+    private static int appliedEnergistics(Module module) {
+        int assertions = 0;
+        if (!module.forge() || !module.neo() || !module.originalClass().equals("Compat_Recipes_AppliedEnergistics"))
+            throw new IllegalStateException(module.originalClass());
+        assertions++;
+        if (!module.crafting().isEmpty() || module.shaped().size() != 2 || module.removals().size() != 2)
+            throw new IllegalStateException("AE crafting counts");
+        assertions++;
+        if (module.machines().stream().noneMatch(row -> row.op() == Op.THREE)
+                || module.machines().stream().noneMatch(row -> row.op() == Op.SAW))
+            throw new IllegalStateException("AE press and saw rows");
+        assertions++;
+        for (var row : module.machines()) {
+            if (!switch (row.map()) {
+                case "Press", "Compressor", "Cutter", "Hammer", "Crusher" -> true;
+                default -> false;
+            }) throw new IllegalStateException("Unknown AE map " + row.map());
+            if (row.op() == Op.THREE && row.inputs().size() != 3)
+                throw new IllegalStateException(row.id());
+            assertions++;
+        }
+        if (module.deferred().size() < 4) throw new IllegalStateException("deferred AE notes");
+        assertions++;
+        return assertions;
+    }
+
+    private static int projectRed(Module module) {
+        int assertions = 0;
+        if (!module.forge() || !module.neo() || !module.originalClass().equals("Compat_Recipes_ProjectRed"))
+            throw new IllegalStateException(module.originalClass());
+        assertions++;
+        if (!module.crafting().isEmpty() || module.shaped().size() != 3 || module.removals().size() != 1)
+            throw new IllegalStateException("Project Red crafting counts");
+        assertions++;
+        if (module.machines().size() != 1 || module.machines().get(0).op() != Op.SAW
+                || !module.machines().get(0).map().equals("Cutter"))
+            throw new IllegalStateException("Project Red saw");
+        assertions++;
+        if (module.deferred().isEmpty()) throw new IllegalStateException("deferred Project Red notes");
+        assertions++;
+        return assertions;
+    }
+
+    private static int harvestCraft(Module module) {
+        int assertions = 0;
+        if (!module.forge() || !module.neo() || !module.originalClass().equals("Compat_Recipes_HarvestCraft"))
+            throw new IllegalStateException(module.originalClass());
+        assertions++;
+        if (!module.crafting().isEmpty() || !module.shaped().isEmpty() || module.removals().size() != 4
+                || module.machines().size() != 12)
+            throw new IllegalStateException("HarvestCraft counts");
+        assertions++;
+        if (module.machines().stream().filter(row -> row.map().equals("Mixer") && row.op() == Op.BATH).count() != 4
+                || module.machines().stream().noneMatch(row -> row.map().equals("Shredder"))
+                || module.machines().stream().noneMatch(row -> row.map().equals("Bath")))
+            throw new IllegalStateException("HarvestCraft maps");
+        assertions++;
+        for (var row : module.machines()) {
+            if (!switch (row.map()) {
+                case "Shredder", "Mixer", "Bath" -> true;
+                default -> false;
+            } || row.inputs().isEmpty() || row.outputs().isEmpty() || row.source().isBlank())
+                throw new IllegalStateException(row.id());
+            assertions++;
+        }
+        if (module.deferred().size() < 8) throw new IllegalStateException("deferred HarvestCraft notes");
         assertions++;
         return assertions;
     }
