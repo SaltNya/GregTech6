@@ -26,13 +26,15 @@ def main():
     arrays={m[1]:split_top_level(m[2]) for m in re.finditer(r'(\w+)\s*=\s*\{([^{}]*)\}',raw)}
     any_raw=masked((ns.source/'src/main/java/gregapi/data/ANY.java').read_text(encoding='utf-8'))
     aliases={m[1]:norm(m[2]) for m in re.finditer(r'^\s*(\w+)\s*\.[^\n]*?\.setAllToTheOutputOf\(([^)]*)\)',any_raw,re.M)}
+    # Quality belongs to the registered hull, before output unification (Quartz steals MilkyQuartz).
+    quality_aliases={m[1]:norm(m[2]) for m in re.finditer(r'^\s*(\w+)\s*\.[^\n]*?\.steal\(([^)]*)\)',any_raw,re.M)}
     def material(expr):
         expr=norm(expr)
         found=re.fullmatch(r'MT.DATA.(\w+)\[(\d+)\]',expr)
         if found:return material(arrays[found[1]][int(found[2])])
-        if expr.startswith('ANY.'):return material(aliases[expr[4:]])
+        if expr.startswith('ANY.'):return material(quality_aliases.get(expr[4:],aliases[expr[4:]]))
         symbol=expr.removeprefix('MT.')
-        if re.fullmatch(r'\w+',symbol) and re.search(r'\b'+re.escape(symbol)+r'\s*=',(REPO/'core/src/main/java/com/gregtech/gregtech/data/ImportedMaterialData.java').read_text(encoding='utf-8')):
+        if re.fullmatch(r'(?:STONES\.)?\w+',symbol) and re.search(r'\b'+re.escape(symbol.split('.')[-1])+r'\s*=',(REPO/'core/src/main/java/com/gregtech/gregtech/data/ImportedMaterialData.java').read_text(encoding='utf-8')):
             return java_material(symbol)
         raise ValueError('Unsupported source harvest material: '+expr)
     source={x['id']:x for x in data['source_registration_parameters']}

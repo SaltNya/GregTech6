@@ -71,6 +71,8 @@ def recipe(arguments):
 
 def java_material(symbol):
     if symbol in ('Wood', 'WoodTreated'): return 'com.gregtech.gregtech.data.generated.GT6Materials.Woods.' + symbol
+    if symbol in ('Stone', 'NetherBrick'): symbol = 'STONES.' + symbol
+    if symbol in ('STONES.GraniteBlack', 'STONES.GraniteRed'): symbol = symbol.removeprefix('STONES.')
     return 'ImportedMaterialData.' + symbol
 
 
@@ -79,6 +81,7 @@ def main():
     ap.add_argument('--source', type=Path, required=True)
     ap.add_argument('--audit', type=Path, required=True)
     ap.add_argument('--out', type=Path, required=True)
+    ap.add_argument('--smeltery-out', type=Path)
     ns = ap.parse_args()
     root = ns.source / 'src/main/java'
     relative = ['gregtech/loaders/b/Loader_MultiTileEntities.java', 'gregtech/items/MultiItemTechnological.java',
@@ -89,6 +92,10 @@ def main():
     arrays = {m[1]: split_top_level(m[2]) for m in re.finditer(r'(\w+)\s*=\s*\{([^{}]*)\}', mt)}
     targets = {m[1]: norm(m[2]) for m in re.finditer(r'^\s*(\w+)\s*\.[^\n]*?\.setAllToTheOutputOf\(([^)]*)\)', any_source, re.M)}
     weights = {m[1]: amount(split_top_level(m[2])[0]) for m in re.finditer(r'^\s*(\w+)\s*=\s*create\([^\n]*?\.setMaterialStats\(([^)]*)\)', op, re.M)}
+    # OreDictPrefix.mAmount defaults to -1. CR.REV excludes nonpositive data;
+    # stone.dat(...) does not acquire the material amount of a chosen stone item.
+    for match in re.finditer(r'^\s*(\w+)\s*=\s*create\(', op, re.M):
+        weights.setdefault(match[1], -1)
     byproducts = {}
     for m in re.finditer(r'(\w+)\s*\.mByProducts.add\(OM.stack\(([^,]+),\s*([^)]*)\)\)', op):
         weight = re.sub(r'(\w+)\.mAmount', lambda p: str(weights[p[1]]), m[3])
@@ -183,9 +190,12 @@ def main():
         quality_material = casing
         declared = re.search(r'NBT_MATERIAL\s*,\s*([^,)]+)', a[nbt])
         if declared and norm(declared[1]) != 'aMat': casing = norm(declared[1])
+        nbt_values = next(calls(a[nbt], 'UT.NBT.make'))[1]
+        nbt_parameters = {norm(nbt_values[i]): norm(nbt_values[i+1]) for i in range(0,len(nbt_values),2)}
         row = {'machine': machine_key(a[0]), 'tab': a[1].strip('"'), 'id': int(a[2]),
                'casing': casing, 'pattern': patterns, 'keys': keys, 'line': mte.count('\n', 0, offset) + 1,
-               'quality_material': quality_material, 'harvest_expression': norm(a[5]), 'block_group': norm(a[7])}
+               'quality_material': quality_material, 'harvest_expression': norm(a[5]), 'block_group': norm(a[7]),
+               'nbt_parameters': nbt_parameters}
         registrations.append(row)
         recipe_keys = keys.copy()
         if any('aRegistry.getItem()' in norm(v) for v in recipe_keys.values()):
@@ -229,6 +239,9 @@ def main():
             return Counter({key: value * int(made[3]) for key, value in result.items()})
         if prefix:
             name, mat = prefix[1], prefix[2]
+            if weights[name] <= 0:
+                unknown[expression + ' [original prefix amount <= 0]'] += 1
+                return Counter()
             result = Counter({material(casing if mat == 'aMat' else mat): weights[name]})
             if name in byproducts:
                 bymat, weight = byproducts[name]
@@ -364,6 +377,21 @@ def main():
         elif row['tab'] == 'Steam Boilers' and row['machine'] in boiler_families:
             bindings[row['id']] = boiler_families[row['machine']] + '_' + suffixes[material(row['casing'])]
     by_id = {row['id']: row for row in registrations}
+    # Native IDs are already stable; associate all39 vessels and their four original companions.
+    # Materials/amounts still come from source REV recipes or explicit IL item data above.
+    crucibles = [(1005, 'smelting_crucible_ceramic')]
+    definitions = (REPO/'core/src/main/java/com/gregtech/gregtech/api/machine/OriginalCrucibleDefinitions.java').read_text(encoding='utf-8')
+    crucibles += [(int(number), path) for path, number in re.findall(
+        r'CrucibleSpec.of\("(smelting_crucible_[^"]+)"\s*,\s*(?:GTMaterialRegistry.get\("[^"]+"\)|ImportedMaterialData\.[\w.]+)\s*,\s*(\d+)',definitions)]
+    if len(crucibles) == 1:
+        generated = (REPO/'core/src/main/java/com/gregtech/gregtech/api/machine/OriginalSmelteryDefinitions.java').read_text(encoding='utf-8')
+        crucibles = [(int(number), path) for path,number in re.findall(r'add\("(smelting_crucible_[^"]+)", (\d+),', generated)]
+    assert len(crucibles)==39 and len({number for number,_ in crucibles})==39
+    for source_id,path in crucibles:
+        bindings[source_id]=path
+        suffix=path.removeprefix('smelting_crucible_')
+        for offset,prefix in [(50,'mold_'),(750,'mold_basin_'),(850,'crucible_crossing_'),(700,'crucible_faucet_')]:
+            bindings[source_id+offset]=prefix+suffix
     block_rows, empty_rows, invalid_rows = [], [], []
     for source_id, path in bindings.items():
         row = by_id[source_id]
@@ -427,10 +455,56 @@ public final class OriginalMachineMaterialData {
     java.append('}\n')
     ns.out.parent.mkdir(parents=True, exist_ok=True)
     ns.out.write_text(''.join(java), encoding='utf-8')
+    if ns.smeltery_out:
+        quality_aliases = {m[1]: norm(m[2]) for m in re.finditer(r'^\s*(\w+)\s*\.[^\n]*?\.steal\(([^)]*)\)', any_source, re.M)}
+        def hull_material(value):
+            value = norm(value)
+            if value.startswith('ANY.'):
+                return hull_material(quality_aliases[value[4:]])
+            return value.removeprefix('MT.')
+        quantities = {r['source_id']: sum(r['components'].values()) for r in block_rows}
+        smeltery = ['''/* Copyright GregTech-6 Team / Gregorius Techneticies; LGPL-3.0-or-later.
+ * Original Loader_MultiTileEntities smeltery NBT, CR.REV and explicit ceramic item data.
+ * Generated by tools/integration/generate_machine_material_data.py. */
+package com.gregtech.gregtech.api.machine;
+
+import com.gregtech.gregtech.api.material.GTMaterial;
+import com.gregtech.gregtech.data.ImportedMaterialData;
+import java.util.*;
+
+/** Source hull statistics and construction amounts are separate: stone prefixes can have no positive REV data. */
+public final class OriginalSmelteryDefinitions {
+    private OriginalSmelteryDefinitions() {}
+    private static final Map<Integer, CrucibleSpec> DATA = new LinkedHashMap<>();
+    static {
+''']
+        smeltery_ids = {number+offset for number,_ in crucibles for offset in (0,50,750,850,700)}
+        for source_id in bindings:
+            if source_id not in smeltery_ids: continue
+            row = by_id[source_id]; nbt = row['nbt_parameters']
+            assert nbt['NBT_ACIDPROOF'] in ('T','F')
+            smeltery.append(f'        add("{bindings[source_id]}", {source_id}, {java_material(hull_material(row["casing"]))}, {nbt["NBT_HARDNESS"]}, {nbt["NBT_RESISTANCE"]}, {str(nbt["NBT_ACIDPROOF"]=="T").lower()}, {quantities.get(source_id,0)}L);\n')
+        smeltery.append('''    }
+    private static void add(String path, int sourceId, GTMaterial hull, float hardness, float resistance, boolean acid, long constructionAmount) {
+        DATA.put(sourceId, CrucibleSpec.of(path,hull,sourceId,hardness,resistance,acid,constructionAmount));
+    }
+    public static CrucibleSpec get(int sourceId) {
+        var spec = DATA.get(sourceId);
+        if (spec == null) throw new IllegalArgumentException("Unknown original smeltery ID " + sourceId);
+        return spec;
+    }
+    public static List<CrucibleSpec> crucibles() {
+        return DATA.values().stream().filter(s -> s.id().startsWith("smelting_crucible_")).toList();
+    }
+    public static Collection<CrucibleSpec> all() { return Collections.unmodifiableCollection(DATA.values()); }
+}
+''')
+        ns.smeltery_out.parent.mkdir(parents=True,exist_ok=True)
+        ns.smeltery_out.write_text(''.join(smeltery),encoding='utf-8')
     audit = {'source_root': str(ns.source), 'license': 'LGPL-3.0-or-later', 'authors': ['GregTech-6 Team', 'Gregorius Techneticies'],
              'source_files': [{'path': str(root / name), 'sha256': hashlib.sha256((root / name).read_bytes()).hexdigest()} for name in relative],
              'rows': output, 'block_rows': block_rows, 'source_without_known_data': empty_rows,
-             'source_registration_parameters': [{key: row[key] for key in ('id', 'line', 'casing', 'quality_material', 'harvest_expression', 'block_group')} for row in registrations],
+             'source_registration_parameters': [{key: row[key] for key in ('id', 'line', 'casing', 'quality_material', 'harvest_expression', 'block_group', 'nbt_parameters')} for row in registrations],
              'source_invalid_recipes': invalid_rows,
              'used_component_recipes': sorted(used), 'unknown_automatic_data': dict(sorted(unknown.items())),
              'unresolved_source_item_references': dict(sorted(unresolved_items.items())),

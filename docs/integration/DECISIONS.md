@@ -648,3 +648,12 @@ Java25正式Forge47.4.26/Neo21.1.252隔离成品客户端自启动53.3s/45.53s�
 初次普通双版4m19s/验包通过，旧副本223faa28尚不计交付。保留五次成品失败：漏打包新增类、重叠集合误按互斥计数、Neo主菜单未加载世界附魔表、Neo坩埚旧采集行重复、Neo空上下文不能读取保存模板名。前三项只重编独立探针12s/13s/9s；第四项双端统一去重坩埚/导线旧采集行，重新普通双包、验包并正式双端启动；第五项只改Neo四保存模板为真实BlockItem.appendHoverText内置物品注册表调用，默认提示事件保持EMPTY，不虚构世界，仅重编Neo探针/重跑Neo。独立探针全DeliveryChecks类包、启动前核对9编译类及逐身份缺失诊断已修正。不重复已通过世界套；详见[集中成品回执](verification/storage-pooled-delivery-20261007.json)。两张实际建材主菜单图已查看，只作已有面板预览，不能当新提示玩家悬停或世界工作画面。
 
 每端3限定采集/制作回收场景与六代表配方详见[原生回执](verification/storage-pooled-runtime-20261007.json)。78源/比较/汉化引用及成品启动后双包SHA/CRC复核一致，来源作者LGPL保留。剩余更衣柜变种/木书架数量、源容量/动画、全方块其余提示材料/配置、完整自然生存/独立重启/历史档/普通专服仍待续。仅本地提交，未推送，PR暂缓，整个goal active。
+
+
+## 2026-10-07 / 炼铸器具来源参数与建造材料分离
+
+原版普通坩埚热容量固定按mMaterial.getWeight(U*7)，大坩埚按100U；建造REV数量不能驱动这个参数。OP.stone没有setMaterialStats，默认mAmount=-1；CR直接保留OreDictItemData且聚合时忽略非正数，不能拿某个石块的9U替代来源前缀数据。40种源配方不登记虚构可回收数量；155种正数配方按实际材料与单位登记。Quartz统计来自MilkyQuartz而REV目标SiO2，Carbon外壳含Graphene；共享来源采集/统计身份与可回收材料身份分别保留。
+
+原版Mold/Faucet有自身硬度/抗爆及utility徒手规则，必须同时替换Neo的of入口和Forge保留的copy兼容入口。第一次成品运行实际检测出Forge入口遗留外壳参数，已统一选定原来源ID与既有路径对应记录；未知客制身份保留显式copy兜底。模具保存形状只从原生item数据读取，不悬停创建世界实体；原版未知非零rawShape回退nugget，用料仅数25格。prefix分类名使用原oredict.prefix键，itemCasing映射原casingSmall；中文50键逐字使用用户补丁。各器具专属行和通用材料/采集/抗爆单次追加分工保留。
+
+记录见[来源](verification/smeltery-source-20261007.json)及[成品验收](verification/smeltery-delivery-20261007.json)。普通双包/两个正式隔离客户端通过不替代新世界升温、烫伤、采集、生存制作、真实存档重启或历史档验收；这些随以后批次合并测试，goal active，未推送或PR。
