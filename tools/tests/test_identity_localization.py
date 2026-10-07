@@ -288,8 +288,42 @@ IL.MOTORS[i].set(addItem(12000+i, "Compact Electric Motor ("+VN[i]+")", ""));
             (items/'MultiItemTechnological.java').write_text('''
 IL.Shape_Extruder_Pipe_Tiny.set(addItem(10009,"Tiny shape","Description"));
 IL.Shape_SimpleEx_CCC.set(addItem(10228,"Capsule shape","Description"));
+IL.USB_Stick_1.set(addItem(32001,"USB stick","Stores Data"));
+IL.USB_HDD_4.set(addItem(32024,"USB drive","Stores files"));
+IL.Circuit_Crystal_Ruby.set(addItem(30402,"Ruby circuit","Control Ruby"));
+IL.Processor_Crystal_Diamond.set(addItem(30501,"Diamond processor","Logic"));
+IL.Shape_Foodmold_Baguette.set(addItem(10803,"Food grade mold",""));
+IL.Shape_Slicer_Eigths_Hollow.set(addItem(10904,"Hollow eighths",""));
 // IL.Shape_Extruder_Pipe_Tiny.set(addItem(99999,"Wrong",""));
 ''',encoding='utf-8')
             result,_=numbered_item_identities(root)
             self.assertEqual(result['item.gregtech.extruder_shape_tinypipe'],'gt.multiitem.technological.10009')
             self.assertEqual(result['item.gregtech.low_heat_extruder_shape_capsulecellcontainer'],'gt.multiitem.technological.10228')
+            for native,ident in [('usb1_stick',32001),('usb4_hdd',32024),('crystal_circuit_ruby',30402),
+                    ('crystal_processor_diamond',30501),('foodmold_shape_baguette',10803),('slicer_shape_eights_hollow',10904)]:
+                self.assertEqual(result['item.gregtech.'+native],'gt.multiitem.technological.'+str(ident))
+
+    def test_paired_spray_metadata_and_selector_constructor_names(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data';data.mkdir(parents=True)
+            (data/'MT.java').write_text('',encoding='utf-8')
+            (data/'CS.java').write_text('String[] DYE_NAMES={'+','.join('"Dye '+str(i)+'"' for i in range(16))+'};',encoding='utf-8')
+            spray=java/'MultiItemRandomTools.java'
+            spray.write_text('''for (byte i = 0; i < 16; i++) {
+IL.SPRAY_CAN_DYES[i].set(addItem(1000+2*i, "Spray Paint ("+DYE_NAMES[i]+")", "Full"));
+IL.SPRAY_CAN_DYES_USED[i].set(addItem(mLastID+1, "Spray Paint ("+DYE_NAMES[i]+")", "Used"));
+}''',encoding='utf-8')
+            (java/'ItemIntegratedCircuit.java').write_text('''
+super(MD.GAPI.mID, "gt.integrated_circuit", "Selector Tag", "");
+LH.add(mName + ".configuration", "Configuration: ");
+''',encoding='utf-8')
+            result,_=original_english(root)
+            self.assertEqual(result['gt.multiitem.randomtools.1000'],'Spray Paint (Dye 0)')
+            self.assertEqual(result['gt.multiitem.randomtools.1031'],'Spray Paint (Dye 15)')
+            self.assertEqual(result['gt.multiitem.randomtools.1030.tooltip'],'Full')
+            self.assertEqual(result['gt.multiitem.randomtools.1031.tooltip'],'Used')
+            self.assertEqual(result['gt.integrated_circuit'],'Selector Tag')
+            self.assertEqual(result['gt.integrated_circuit.configuration'],'Configuration: ')
+            spray.write_text(spray.read_text().replace('mLastID+1','mLastID+2'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Unsupported original full/used spray'):
+                original_english(root)

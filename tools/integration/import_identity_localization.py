@@ -113,6 +113,14 @@ def numbered_item_identities(original):
             if key in ('IL_ITEM_PREFIXES','IL_SHAPE_PREFIXES','SHAPE_WORDS'): tables[key]=ast.literal_eval(node.value)
     def item_id(field):
         if any(field.startswith(prefix) for prefix in tables['IL_ITEM_PREFIXES']): return None
+        # These adopted technological IDs reorder the original IL field, not its display text.
+        usb=re.fullmatch(r'USB_(Stick|Cable|HDD)_([1-4])',field)
+        if usb:return 'usb'+usb[2]+'_'+usb[1].lower()
+        crystal=re.fullmatch(r'(Circuit|Processor)_Crystal_(Diamond|Ruby|Emerald|Sapphire)',field)
+        if crystal:return 'crystal_'+crystal[1].lower()+'_'+crystal[2].lower()
+        foodmold=re.fullmatch(r'Shape_Foodmold_(Empty|Bun|Bread|Baguette|Cylinder|Toast)',field)
+        if foodmold:return 'foodmold_shape_'+foodmold[1].lower()
+        if field=='Shape_Slicer_Eigths_Hollow':return 'slicer_shape_eights_hollow'
         for prefix,native in tables['IL_SHAPE_PREFIXES'].items():
             if not field.startswith(prefix): continue
             words=field[len(prefix):].lower().replace('_','')
@@ -265,7 +273,7 @@ def original_english(original):
         return next(iter(names)) if len(names) == 1 else None
     def name(expr, mat=None):
         # Preserve all literal whitespace/case. No word matching or translated-name inference.
-        parts = re.findall(STRING + r'|aMat\.getLocal\(\)|aDefaultLocalised|VN\[\d+\]|\+', expr)
+        parts = re.findall(STRING + r'|aMat\.getLocal\(\)|aDefaultLocalised|VN\[\d+\]|DYE_NAMES\[\d+\]|\+', expr)
         if re.sub(r'\s+', '', ''.join(parts)) != re.sub(r'\s+', '', expr):
             return None
         values = []
@@ -278,6 +286,10 @@ def original_english(original):
                 index=int(part[3:-1])
                 if index>=len(voltages): return None
                 values.append(voltages[index])
+            elif part.startswith('DYE_NAMES['):
+                index=int(part[10:-1])
+                if index>=len(dyes): return None
+                values.append(dyes[index])
             else: values.append(json.loads(part))
         return ''.join(values)
     rocks_file=original/'src/main/java/gregtech/loaders/a/Loader_Rocks.java'
@@ -329,6 +341,17 @@ def original_english(original):
             for _,args in calls(raw,'add'):
                 if len(args)>1 and args[0] in constants and re.fullmatch(STRING,args[1]):
                     put(constants[args[0]],json.loads(args[1]))
+        if path.name == 'ItemIntegratedCircuit.java':
+            constructors=list(calls(raw,'super'))
+            if len(constructors)!=1 or len(constructors[0][1])!=4:
+                raise ValueError('Unsupported original selector tag constructor')
+            args=constructors[0][1]
+            if not all(re.fullmatch(STRING,args[i]) for i in (1,2,3)):
+                raise ValueError('Unsupported original selector tag language literals')
+            key=json.loads(args[1]);put(key,json.loads(args[2]))
+            for _,args in calls(raw,'LH.add'):
+                suffix=re.fullmatch(r'mName\s*\+\s*('+STRING+')',args[0])
+                if suffix and re.fullmatch(STRING,args[1]):put(key+json.loads(suffix[1]),json.loads(args[1]))
         category = {'MultiItemRandomTools':'randomtools','MultiItemFood':'food','MultiItemBottles':'bottles',
                     'MultiItemCans':'cans','MultiItemTechnological':'technological','MultiItemBooks':'books'}.get(path.stem)
         if category:
@@ -337,6 +360,23 @@ def original_english(original):
                 for suffix, expr in [('',args[1]),('.tooltip',args[2])]:
                     value=name(expr)
                     if value is not None: put(f'gt.multiitem.{category}.{args[0]}{suffix}',value)
+            if category=='randomtools':
+                for loop in re.finditer(r'for\s*\(byte i = 0; i < 16; i\+\+\)\s*\{([^}]+)\}',raw):
+                    if 'IL.SPRAY_CAN_DYES[i]' not in loop[1]:continue
+                    rows=[args for _,args in calls(loop[1],'addItem')]
+                    if len(dyes)!=16 or not rows or len(rows)%2:
+                        raise ValueError('Unsupported original full/used spray registration')
+                    # The same loop also declares normal and owned foam; each pair resets mLastID.
+                    for pair in range(0,len(rows),2):
+                        base=re.fullmatch(r'(\d+)\+2\*i',re.sub(r'\s+','',rows[pair][0]))
+                        if not base or re.sub(r'\s+','',rows[pair+1][0])!='mLastID+1':
+                            raise ValueError('Unsupported original full/used spray registration')
+                        for i in range(16):
+                            for used,row in enumerate(rows[pair:pair+2]):
+                                for suffix,expr in [('',row[1]),('.tooltip',row[2])]:
+                                    value=name(expr.replace('DYE_NAMES[i]',f'DYE_NAMES[{i}]'))
+                                    if value is None:raise ValueError('Unsupported original spray name/description')
+                                    put(f'gt.multiitem.randomtools.{int(base[1])+2*i+used}{suffix}',value)
             if category=='technological':
                 # Original compact components: one explicit 0..9 voltage loop.
                 loop=re.search(r'for\s*\(int i = 0; i < 10; i\+\+\)\s*\{([^}]+)\}',raw)

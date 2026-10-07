@@ -69,6 +69,14 @@ class LanguageIdentities {
         }
         row("block.gregtech.fluid_jug", "gt.multitileentity.32740", "");
         row("item.gregtech.coin", "gt.multitileentity.32700", "");
+        // RandomTools' original dye index and paired full/used metadata are retained by PaintingRules.
+        for (var dye : com.gregtech.gregtech.content.tool.PaintingRules.DYES) {
+            row("item.gregtech." + dye.fullId(), "gt.multiitem.randomtools." + (1000 + 2 * dye.index()), "");
+            row("item.gregtech." + dye.usedId(), "gt.multiitem.randomtools." + (1001 + 2 * dye.index()), "");
+        }
+        for (int configuration = 0; configuration < 25; configuration++)
+            row("item.gregtech.integrated_circuit_" + configuration, "gt.integrated_circuit", "");
+        row("gt.integrated_circuit.configuration", "gt.integrated_circuit.configuration", "");
         row("block.gregtech.fluid_cup", "gt.multitileentity.32739", "");
         row("block.gregtech.fluid_measuring_pot", "gt.multitileentity.32738", "");
         row("block.gregtech.fluid_measuring_pot_stainless_steel", "gt.multitileentity.32743", "");
