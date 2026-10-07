@@ -87,11 +87,11 @@ public final class SourceBlockProperties {
     java.append('}\n');ns.out.parent.mkdir(parents=True,exist_ok=True);ns.out.write_text(''.join(java),encoding='utf-8')
     paths=['src/main/java/gregtech/loaders/b/Loader_MultiTileEntities.java','src/main/java/gregapi/block/multitileentity/MultiTileEntityBlock.java','src/main/java/gregapi/data/ANY.java',
            'src/main/java/gregapi/block/multitileentity/MultiTileEntityClassContainer.java','src/main/java/gregapi/data/MT.java','LICENSE']
-    audit=dict(blocks=blocks,basics=basics,additional_dynamic_hoppers=120,additional_dynamic_storage=420,
+    audit=dict(blocks=blocks,basics=basics,additional_dynamic_hoppers=120,additional_dynamic_storage=720,
                source_files=[dict(path=str(ns.source/p),sha256=hashlib.sha256((ns.source/p).read_bytes()).hexdigest()) for p in paths],
                authors=['GregTech-6 Team','Gregorius Techneticies'],license='LGPL-3.0-or-later',
-               boundaries='Adopted fixed source IDs, audited seven-family storage metalsets, and120 hoppers with actual original metalset IDs and explicit metadata0. Other blocks keep native harvest policy; no invented source identity.')
+               boundaries='Adopted fixed source IDs, audited twelve-family storage metalsets, and120 hoppers with actual original metalset IDs and explicit metadata0. Other blocks keep native harvest policy; no invented source identity.')
     ns.audit.parent.mkdir(parents=True,exist_ok=True);ns.audit.write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps(dict(blocks=len(blocks),basics=len(basics),dynamic_hoppers=120,dynamic_storage=420,hand_harvestable=sum(x['hand_harvestable'] for x in blocks.values()))))
+    print(json.dumps(dict(blocks=len(blocks),basics=len(basics),dynamic_hoppers=120,dynamic_storage=720,hand_harvestable=sum(x['hand_harvestable'] for x in blocks.values()))))
 
 if __name__=='__main__':main()
