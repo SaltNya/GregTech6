@@ -715,3 +715,13 @@ Forge开发47.4.20/Java17.0.10，Neo开发21.1.243/Java21.0.7，各3GiB/directCo
 - 正式安装探针仅编译：每端247实际提示方法/事件、源条件IO/效率/点火/工具、配方语言存在和单次高级精确含料段留待合批普通JAR安装。English54配方名在世界验收后加入，仅客户端语言资源；最终探针也在世界运行后完善，未重新执行，不借旧编译夸称其已安装通过。
 
 [来源SHA与作者LGPL](verification/basic-machine-source-20261007.json)、[八次运行/编译和当前字节](verification/basic-machine-runtime-20261007.json)、[本批边界](verification/basic-machine-20261007.md)。1465含料/1507采集表和旧接受20261007-042336Z-730aab78未替换，后者不含本批。未验证自然生存/独立重启/历史档/普通独立专服/玩家悬停；无推送或PR，goal active。
+
+## 2026-10-07 / 三高级控制器编译验收，运行待合批
+
+[来源](verification/advanced-controller-source-20261007.json)：18原版/4_w/34当前及用户补丁SHA、原作者LGPL；三实际原登记/17结构行/45中文提示值与三个源中文名；原264参数/材料/采集逐项相同，仅新增17199，具名1465/1507不改；当前265参数重新生成字节一致。
+
+[编译回执](verification/advanced-controller-verification-20261007.json)：首次30秒7478共享来源断言（新增12）和双主代码通过，Neo成品探针误用两参数tooltip方法失败，失败源码/日志保留。改Neo TooltipContext、首次夹具编译前用capacity()/getAmount()，19秒双成品探针/世界夹具通过；最终源物品名加入探针后17秒只重编双探针。13当前编译类SHA保留；没有重复已接受共享检查或启动本批游戏。
+
+待执行每端gregtech_advanced_source 1required：三个真实注册实体参数/输出最大容量，大型物质制造器500L固定内容/native save-load恢复源容量、停止/未成型/无能源向真实浸洗盆底面输送。双安装探针三个实际物品/17结构行/原能源工具条件/名称/单次高级含料已编译未运行。普通双包/正式隔离自启动继续合批，最后接受20261007-042336Z-730aab78不含3434af73与本批。
+
+本批不声称自然加工、完整生存/独立重启/旧档/普通独立专服或玩家悬停；原GUI手册/聚爆开始声音继续缺口，详情见[范围](verification/advanced-controller-20261007.md)。没有推送或PR，整个goal active。

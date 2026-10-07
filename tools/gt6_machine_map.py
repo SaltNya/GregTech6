@@ -133,6 +133,7 @@ MULTIBLOCK_MACHINE_NAMES = {
     "largecrusher": "Large Crusher",
     "largeshredder": "Large Shredder",
     "largesqueezer": "Large Squeezer",
+    "largemassfab": "Large Matter Fabricator",
 }
 
 
