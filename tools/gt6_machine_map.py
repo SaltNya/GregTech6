@@ -121,6 +121,18 @@ MULTIBLOCK_MACHINE_NAMES = {
     "fusionreactor": "Fusion Reactor",
     "distillationtower": "Distillation Tower",
     "cryodistillationtower": "Cryo Distillation Tower",
+    "largecentrifuge": "Large Centrifuge",
+    "largeelectrolyzer": "Large Electrolyzer",
+    "largecoagulator": "Large Coagulator Array",
+    "largeautoclave": "Large Autoclave",
+    "largebath": "Large Bathing Vat",
+    "largemixer": "Large Batch Mixer",
+    "largefermenter": "Large Fermenter",
+    "largeoven": "Large Electric Oven",
+    "largesluice": "Large Sluice",
+    "largecrusher": "Large Crusher",
+    "largeshredder": "Large Shredder",
+    "largesqueezer": "Large Squeezer",
 }
 
 
