@@ -84,6 +84,14 @@ def launch(args):
                 raise ValueError(f'Corrupt mod: {source}: {bad}')
             if source.resolve() == args.probe.resolve():
                 names = archive.namelist()
+                build = workspace / ('build' if args.platform == 'forge' else 'neoforge/build')
+                compiled = build / 'classes/java/productionSmoke'
+                required = {p.relative_to(compiled).as_posix() for p in compiled.rglob('*.class')}
+                if not required:
+                    raise ValueError('Compile the production probe before verifying its package')
+                missing = required - set(names)
+                if missing:
+                    raise ValueError('Incomplete production probe classes: ' + ', '.join(sorted(missing)))
                 if (any('refmap' in name or name == 'gregtech.mixins.json' for name in names)
                         or b'MixinConfigs' in archive.read('META-INF/MANIFEST.MF')):
                     raise ValueError('The startup probe must not supply production Mixin mappings')
