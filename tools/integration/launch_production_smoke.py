@@ -242,6 +242,7 @@ def launch(args):
             or language.get('bushNamesAndOutputsEnglish', 0) < 10
             or language.get('bushNamesAndOutputsEnglish') != language.get('bushNamesAndOutputsChinese')
             or language.get('sourceTechnologyNamesEnglish') != 84 or language.get('sourceTechnologyNamesChinese') != 84
+            or language.get('additionalSourceBlockNamesEnglish') != 688 or language.get('additionalSourceBlockNamesChinese') != 688
             or language.get('coinNamesAndMaterialsEnglish', 0) < 500
             or language.get('coinNamesAndMaterialsEnglish') != language.get('coinNamesAndMaterialsChinese')
             or language.get('machineNamesEnglish', 0) < 400 or language.get('machineNamesChinese', 0) < 400

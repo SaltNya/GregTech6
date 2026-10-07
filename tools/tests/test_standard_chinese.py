@@ -2,13 +2,33 @@
 import sys
 import re
 import unittest
+import tempfile
+import json
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from localization import ROOT, LANG_PATH, CONFIG_PATH, read_json, synchronize
+from localization import ROOT, LANG_PATH, CONFIG_PATH, read_json, synchronize, check_english
 
 
 class StandardChineseTests(unittest.TestCase):
+    def test_english_source_check_does_not_require_a_missing_chinese_translation(self):
+        with tempfile.TemporaryDirectory(dir=ROOT/'work') as folder:
+            repo=Path(folder);config=repo/CONFIG_PATH;config.mkdir(parents=True)
+            key='block.gregtech.example';original='gt.multitileentity.1'
+            row={'source_key':original,'value':'Original Name','chinese_source_missing':True}
+            (config/'english_source.json').write_text(json.dumps({'values':{key:row}}),encoding='utf-8')
+            english={key:'Original Name'}
+            result=check_english(repo,english,english,{}, {})
+            self.assertEqual(result['original_english_without_chinese_source'],1)
+            # The exception cannot overwrite an available original translation, conceal
+            # a competing identity, or permit the English value to drift.
+            for en,zh,aliases,source in [
+                (english,english,{}, {original:'原名'}),
+                (english,english,{key:'gt.multitileentity.2'}, {}),
+                ({key:'Invented Name'},{key:'Invented Name'}, {}, {}),
+                (english,{key:'自行翻译'}, {}, {})]:
+                with self.subTest(en=en,zh=zh,aliases=aliases,source=source),self.assertRaises(ValueError):
+                    check_english(repo,en,zh,aliases,source)
     def test_all_values_match_pinned_source_or_exact_english_fallback(self):
         report = synchronize()
         self.assertGreater(report['source_keys'], 100000)

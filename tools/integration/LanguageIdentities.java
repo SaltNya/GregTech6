@@ -23,6 +23,41 @@ class LanguageIdentities {
         }
         row("@symbol.MT.Wood", GT6Materials.Woods.Wood.getName(), "");
         row("@symbol.MT.WoodTreated", GT6Materials.Woods.WoodTreated.getName(), "");
+        for (var wire : com.gregtech.gregtech.content.energy.WireCatalog.specifications())
+            row("block.gregtech." + com.gregtech.gregtech.content.energy.WireCatalog.registryId(wire),
+                    "@wire." + wire.material().getName() + "." + (wire.insulated() ? "cable" : "wire")
+                            + "." + wire.size(), "");
+        // Loader_MultiTileEntities redstone wires use six literal IDs, not the electric helper.
+        for (String binding : new String[]{"redalloy|27000", "signalum|27050", "lumium|27500"}) {
+            String[] parts = binding.split("\\|");
+            int id = Integer.parseInt(parts[1]);
+            row("block.gregtech.wire_01_" + parts[0], "gt.multitileentity." + id, "");
+            row("block.gregtech.cable_01_" + parts[0], "gt.multitileentity." + (id + 6), "");
+        }
+        // Source constructor metadata, kept separate from alphabetical texture enumeration.
+        String[] rockOres = {"anthracite", "lignite", "salt", "rocksalt", "bauxite", "oil", "gypsum", "milkyquartz", "netherquartz"};
+        for (int i = 0; i < rockOres.length; i++)
+            row("block.gregtech.block_ore_" + rockOres[i], "gt.block.rockores." + i, "");
+        var ores = com.gregtech.gregtech.block.SpecialOreDefinitions.vanilla();
+        for (int i = 0; i < ores.size(); i++)
+            row("block.gregtech.block_" + ores.get(i).icon(), "gt.block.vanillaores.a." + i, "");
+        var icons = com.gregtech.gregtech.block.SpecialOreDefinitions.ORDERED_ICONS;
+        for (int i = 0; i < 12; i++)
+            row("block.gregtech." + icons.get(i), "gt.block.crystalores." + i, "");
+        String[] laserTiers = {"lv", "mv", "hv", "ev", "iv"};
+        for (int i = 0; i < laserTiers.length; i++) {
+            row("block.gregtech.co2_laser_" + laserTiers[i], "gt.multitileentity." + (10101 + i), "");
+            row("block.gregtech.flux_laser_" + laserTiers[i], "gt.multitileentity." + (11101 + i), "");
+            row("block.gregtech.laser_absorber_" + laserTiers[i], "gt.multitileentity." + (10151 + i), "");
+        }
+        // GTLasers keeps the old elite registry alias for the same quantum decharger.
+        for (String binding : new String[]{"zpm|14999", "zpm_discharger_basic|11170",
+                "zpm_discharger_advanced|11171", "zpm_discharger_elite|11170",
+                "ingot_pile|32084", "plate_pile|32085", "plate_gem_pile|32086",
+                "coin_pile|32700", "sandwich_block|32105", "sensor_kilogibblometer|31023"}) {
+            String[] parts = binding.split("\\|");
+            row("block.gregtech." + parts[0], "gt.multitileentity." + parts[1], "");
+        }
         for (var pipe : com.gregtech.gregtech.content.transport.fluid.FluidTransportDefinitions.pipes())
             row("block.gregtech." + pipe.id(), "@pipe.fluid." + pipe.material().getName()
                     + "." + pipe.size().name(), "");

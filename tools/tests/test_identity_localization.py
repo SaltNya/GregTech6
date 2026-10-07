@@ -5,7 +5,7 @@ import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
-from import_identity_localization import (original_english, pipe_identities, numbered_item_identities,
+from import_identity_localization import (original_english, pipe_identities, wire_identities, numbered_item_identities,
                                           material_identities, verified_material_proofs, resolve_material_collision)
 
 
@@ -207,6 +207,39 @@ for (int i = 0; i < 16; i++) LH.add(getUnlocalizedName()+"."+i, DYE_NAMES[i] + "
             shared.write_text(formula.replace('i < 16','i < 8'),encoding='utf-8')
             with self.assertRaisesRegex(ValueError,'Unsupported original BlockColored name formula'):
                 original_english(root)
+
+    def test_wire_helpers_preserve_sparse_offsets_and_cable_availability(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';helpers=java/'gregapi/tileentity/connectors'
+            loader=java/'gregtech/loaders/b/Loader_MultiTileEntities.java'
+            helpers.mkdir(parents=True);loader.parent.mkdir(parents=True)
+            loader.write_text('''
+MultiTileEntityWireElectric.addElectricWires(28350,0,256,1,2,1,T,F,T,registry,block,cls,MT.Cu);
+MultiTileEntityWireElectric.addElectricWires(29800,0,65536,1,2,2,F,F,F,registry,block,cls,MT.Graphene);
+private static void metalset() {} private static void storages() {}
+''',encoding='utf-8')
+            def row(kind,size,offset):
+                return f'OreDictManager.INSTANCE.setTarget_(OP.{kind}Gt{size:02}, aMat, aRegistry.add("{size}x " + aMat.getLocal() + " {kind.title()}", "Wires", aID+{offset}, 0));'
+            source='\n'.join(row('wire',i,i-1) for i in range(1,17))+'\nif (aCable) {\n'+'\n'.join(row('cable',i,i+15) for i in (1,2,4,8,12))+'\n}'
+            helper=helpers/'MultiTileEntityWireElectric.java';helper.write_text(source,encoding='utf-8')
+            result,_=wire_identities(root,{'MT.Cu':'Copper','MT.Graphene':'Graphene'})
+            self.assertEqual(len(result),37)
+            self.assertEqual(result['@wire.Copper.cable.12'],'gt.multitileentity.28377')
+            self.assertEqual(result['@wire.Graphene.wire.16'],'gt.multitileentity.29815')
+            self.assertNotIn('@wire.Graphene.cable.1',result)
+            mt=java/'gregapi/data/MT.java';mt.parent.mkdir(parents=True)
+            mt.write_text('Cu = create(1,"Copper"); Graphene = tier("Graphene");\n'
+                          'static OreDictMaterial tier(String aNameOreDict) {return create(-1, aNameOreDict);}',encoding='utf-8')
+            english,_=original_english(root)
+            self.assertEqual(english['gt.multitileentity.28377'],'12x Copper Cable')
+            self.assertEqual(english['gt.multitileentity.29815'],'16x Graphene Wire')
+            self.assertNotIn('gt.multitileentity.29816',english)
+            helper.write_text(source.replace(row('wire',16,15),''),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Incomplete original electric wire helper'):
+                wire_identities(root,{'MT.Cu':'Copper'})
+            helper.write_text(source.replace('if (aCable)','if (aWrongCondition)'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Unsupported original electric cable guard'):
+                wire_identities(root,{'MT.Cu':'Copper'})
 
     def test_pipe_helpers_resolve_numeric_offsets_and_refuse_incomplete_tables(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:

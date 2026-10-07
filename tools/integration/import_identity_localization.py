@@ -206,6 +206,57 @@ def pipe_identities(original, symbols):
     return result, files
 
 
+def electric_wire_rows(original):
+    """Read wire sizes/offsets and preserve the helper's cable-only guard."""
+    path=original/'src/main/java/gregapi/tileentity/connectors/MultiTileEntityWireElectric.java'
+    raw=masked(path.read_text(encoding='utf-8'))
+    guard=re.search(r'if\s*\(aCable\)\s*\{',raw)
+    if guard is None:raise ValueError('Unsupported original electric cable guard')
+    depth=1;guard_end=None
+    for token in re.finditer(STRING+r'|[{}]',raw[guard.end():]):
+        if token[0]=='{':depth+=1
+        elif token[0]=='}':depth-=1
+        if depth==0:
+            guard_end=guard.end()+token.start();break
+    if guard_end is None:raise ValueError('Unclosed original electric cable guard')
+    rows={}
+    for pos,args in calls(raw,'OreDictManager.INSTANCE.setTarget_'):
+        prefix=re.fullmatch(r'OP\.(wire|cable)Gt(\d+)',args[0])
+        if prefix is None:continue
+        registrations=list(calls(args[2],'aRegistry.add'))
+        if len(registrations)!=1:raise ValueError('Unsupported original electric wire registration')
+        registration=registrations[0][1]
+        offset=re.fullmatch(r'aID\s*(?:\+\s*(\d+))?',registration[2])
+        kind,size=prefix[1],int(prefix[2])
+        if offset is None or (guard.end()<=pos<guard_end)!=(kind=='cable'):
+            raise ValueError('Unsupported original electric wire offset/guard')
+        if (kind,size) in rows:raise ValueError('Duplicate original electric wire size')
+        rows[kind,size]=(int(offset[1] or 0),registration[0])
+    expected={('wire',i) for i in range(1,17)}|{('cable',i) for i in (1,2,4,8,12)}
+    if rows.keys()!=expected or len({offset for offset,_ in rows.values()})!=21:
+        raise ValueError('Incomplete original electric wire helper')
+    return rows,path
+
+
+def wire_identities(original,symbols):
+    loader=original/'src/main/java/gregtech/loaders/b/Loader_MultiTileEntities.java'
+    if not loader.exists():return {},[]
+    registrations=list(calls(masked(loader.read_text(encoding='utf-8')),'MultiTileEntityWireElectric.addElectricWires'))
+    if not registrations:return {},[]
+    rows,helper=electric_wire_rows(original)
+    result={}
+    for _,args in registrations:
+        if not args[0].isdigit() or args[-1] not in symbols:continue
+        if args[8] not in ('T','F'):raise ValueError('Unsupported original electric cable availability')
+        for (kind,size),(offset,_) in rows.items():
+            if kind=='cable' and args[8]=='F':continue
+            key=f'@wire.{symbols[args[-1]]}.{kind}.{size}'
+            value='gt.multitileentity.'+str(int(args[0])+offset)
+            if key in result and result[key]!=value:raise ValueError('Ambiguous original electric wire material: '+key)
+            result[key]=value
+    return result,[loader,helper]
+
+
 def original_english(original):
     found, files = defaultdict(set), [original / 'src/main/java/gregapi/data/MT.java']
     tools = tool_ids(original)
@@ -218,7 +269,8 @@ def original_english(original):
     if blocks_file.exists():
         wood_classes.update(re.findall(r'new (BlockFlowers[AB]|BlockBaleGrass|BlockBaleCrop|BlockSands|BlockGrass|BlockDiggable|'
                                       r'BlockAsphalt|BlockConcrete(?:Reinforced)?|BlockCFoam(?:Fresh)?|BlockGlass(?:Clear|Glow)|'
-                                      r'BlockBars(?:Brass|Steel|TungstenSteel)|BlockSpike(?:Sharp|Steel|Super|Metal|Fancy))\s*\(\s*"([^"]+)"',
+                                      r'BlockBars(?:Brass|Steel|TungstenSteel)|BlockSpike(?:Sharp|Steel|Super|Metal|Fancy)|'
+                                      r'BlockRockOres|BlockCrystalOres|BlockVanillaOresA)\s*\(\s*"([^"]+)"',
                                       masked(blocks_file.read_text(encoding='utf-8'))))
         files.append(blocks_file)
     def put(key, text):
@@ -232,6 +284,10 @@ def original_english(original):
         put('gt.material.'+json.loads(m[1]),json.loads(m[2]))
     for m in re.finditer(r'(\w+)\s*=\s*\w+\s*\(\s*\d+\s*,\s*(' + STRING + ')', material_text):
         material_names[m[1]].add(json.loads(m[2]))
+    # Tier placeholders have no positive material ID, but their helper still declares a literal display name.
+    if re.search(r'OreDictMaterial\s+tier\s*\(String aNameOreDict\)\s*\{return create\(-1, aNameOreDict\)',material_text):
+        for m in re.finditer(r'(\w+)\s*=\s*tier\s*\(\s*('+STRING+r')\s*\)',material_text):
+            material_names[m[1]].add(json.loads(m[2]))
     factories = {m[1]: json.loads(m[2]) for m in re.finditer(
         r'static\s+OreDictMaterial\s+(\w+)\s*\(\)\s*\{return\s+\w+\s*\(\s*\d+\s*,\s*(' + STRING + ')', material_text)}
     for line in material_text.splitlines():
@@ -389,6 +445,17 @@ def original_english(original):
                                 value=name(expr.replace('VN[i]',f'VN[{i}]'))
                                 if value is not None:put(f'gt.multiitem.technological.{int(base[1])+i}{suffix}',value)
         if path.name == 'Loader_MultiTileEntities.java':
+            wire_calls=list(calls(raw,'MultiTileEntityWireElectric.addElectricWires'))
+            if wire_calls:
+                wire_rows,helper_file=electric_wire_rows(original)
+                files.append(helper_file)
+                for _,args in wire_calls:
+                    if not args[0].isdigit():continue
+                    if args[8] not in ('T','F'):raise ValueError('Unsupported original electric cable availability')
+                    for (kind,_),(offset,expression) in wire_rows.items():
+                        if kind=='cable' and args[8]=='F':continue
+                        value=name(expression,material(args[-1]))
+                        if value is not None:put('gt.multitileentity.'+str(int(args[0])+offset),value)
             rows = list(calls(raw, 'aRegistry.add'))
             for pos, args in rows:
                 if len(args)<3 or not args[2].isdigit(): continue
@@ -514,8 +581,10 @@ def main():
     symbols = {key.removeprefix('@symbol.'):original for key, original, _ in identity_rows
                if key.startswith('@symbol.')}
     pipes, pipe_files = pipe_identities(ns.source, symbols)
+    wires,wire_files=wire_identities(ns.source,symbols)
+    pipes.update(wires)
     pipes.update({'@tool.'+key:'gt.metatool.01.'+value for key,value in tool_ids(ns.source).items()})
-    files = sorted(set(files + pipe_files))
+    files = sorted(set(files + pipe_files + wire_files))
     for key,original,fallback in identity_rows:
         if key.startswith(('@symbol.','@material-proof.')): continue
         if key.startswith('material.gregtech.') and original.startswith('gt.material.'):
@@ -574,8 +643,12 @@ def main():
         if key in english and native not in english and legacy in source and legacy in source_en:
             english[native]=source_en[legacy];aliases[native]=legacy;added_tooltips[native]=legacy
     english_changes={}
-    # Only existing verified identity bindings; no English-name reverse lookup.
-    for key, original in sorted(aliases.items()):
+    # A missing Chinese entry must not prevent checking an adopted original English name.
+    # Existing accepted Chinese identities still win over conflicting candidates.
+    english_only={key:original for key,original in missing.items()
+                  if key not in aliases and original in source_en and key in english}
+    english_identities={**english_only,**aliases}
+    for key, original in sorted(english_identities.items()):
         if key in english and original in source_en and english[key]!=source_en[original]:
             english_changes[key]={'before':english[key],'after':source_en[original],'source_key':original}
             english[key]=source_en[original]
@@ -583,6 +656,7 @@ def main():
             'ambiguous_original_material_ids':ambiguous_material_ids,
             'resolved_material_collisions':resolved_collisions,
             'missing_original':missing,'ambiguous_symbols':ambiguous,'english_changes':english_changes,'added_tooltips':added_tooltips,
+            'english_only_bindings':english_only,
             'source_files':[{'path':str(p.resolve()),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files],
             'identity_export_sha256':hashlib.sha256(ns.identities.read_bytes()).hexdigest(),
             'authors':'GregTech-6 Team / Gregorius Techneticies; original Java LGPL-3.0-or-later',
@@ -592,8 +666,9 @@ def main():
         (ROOT/CONFIG_PATH/'aliases.json').write_text(json_text(aliases),encoding='utf-8')
         (ROOT/LANG_PATH/'en_us.json').write_text(json_text(english),encoding='utf-8')
         (ROOT/LANG_PATH/'zh_cn.json').write_text(json_text(translated),encoding='utf-8')
-        pinned={key:{'source_key':original,'value':source_en[original]}
-                for key,original in aliases.items() if key in english and original in source_en}
+        pinned={key:{'source_key':original,'value':source_en[original],
+                     **({'chinese_source_missing':True} if key in english_only else {})}
+                for key,original in english_identities.items() if key in english and original in source_en}
         (ROOT/CONFIG_PATH/'english_source.json').write_text(json_text({
             'policy':'Exact original English for source declarations resolved by adopted identity; remaining port text checked separately',
             'values':pinned,'source_files':report['source_files']}),encoding='utf-8')
