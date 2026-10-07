@@ -62,8 +62,7 @@ def run():
         for folder in ['blockstates','models/item']:
             write(ASSETS/f'{folder}/{old}.json',json.loads((ASSETS/f'{folder}/{canonical}.json').read_text(encoding='utf-8')))
         for lang in translations:translations[lang]['block.gregtech.'+old]=translations[lang]['block.gregtech.'+canonical]
-    for tier in range(1,7):
-        write(DATA/f'tags/items/circuits_tier_{tier}_plus.json',{'replace':False,'values':['gregtech:circuit_'+name for name in CIRCUITS[tier-1:]]+[{'id':'#forge:circuits/'+name,'required':False} for name in CIRCUITS[tier-1:]]})
+    # Circuit tags are maintained by generate_battery_box_recipes.circuit_tags.
     for tier,suffix in enumerate(TIERS+['iv']):
         values=['gregtech:battery_'+name+'_'+suffix for _,name,_,_ in CHEM] if tier<5 else []
         if tier<5:values.append('gregtech:battery_eu_'+str(8*4**tier))

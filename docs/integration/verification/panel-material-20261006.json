@@ -1,0 +1,334 @@
+{
+  "date": "2026-10-06",
+  "goal": "active",
+  "scope": {
+    "panel_identities": 83,
+    "canonical_panels": 78,
+    "construction_items": 6,
+    "native_plank_inputs": 19
+  },
+  "native": {
+    "result": "passed",
+    "scenarios_per_platform": 2,
+    "platforms": [
+      "forge-1.20.1",
+      "neoforge-1.21.1"
+    ],
+    "elapsed": "7m7s",
+    "log": "work/panel-material-20261006-native-final.log",
+    "normal_world_save": true,
+    "coverage": [
+      "Per-output source material split and primary ordering",
+      "Six known construction compositions and actual registered native plank inputs",
+      "Precise components read by actual CrucibleItemInput entry",
+      "83 registered source shredder recipes and RecipeInputs consumption",
+      "Dust outputs conserve each material; smallest representable fraction floors",
+      "Stored block-entity contents rejected by both recovery paths",
+      "Existing explicit material data survives repeat binding",
+      "ANY.Iron concrete output, merging before division and unknown input omission"
+    ],
+    "not_claimed": [
+      "Real player operation of powered machines",
+      "Complete survival acquisition/energy chain",
+      "Installed world recipe execution",
+      "Independent save-content restart",
+      "Old-save migration",
+      "All reversible crafting outputs"
+    ]
+  },
+  "intermediate_attempts": [
+    {
+      "log": "work/panel-material-20261006-native.log",
+      "result": "failed before scenarios",
+      "gradle_exit": 0,
+      "elapsed": "2m50s",
+      "reason": "Lowercase construction material lookup returned NULL; not a test pass."
+    },
+    {
+      "log": "work/panel-material-20261006-native-fixed.log",
+      "result": "failed before scenarios",
+      "gradle_exit": 0,
+      "elapsed": "2m48s",
+      "reason": "Correcting foam reference alone did not repair lowercase Concrete/Asphalt lookup."
+    },
+    {
+      "log": "work/panel-material-20261006-core-preflight.log",
+      "result": "failed",
+      "reason": "Standalone probe lacked explicit platform ModData presence binding."
+    },
+    {
+      "log": "work/panel-material-20261006-core-preflight-fixed.log",
+      "result": "passed",
+      "materials": 3,
+      "native_planks": 19,
+      "scope": "Shared core lookup only, external mods marked absent."
+    }
+  ],
+  "source_files_rechecked": 17,
+  "unchanged_localization": {
+    "en_us.json": "05707ad42644116055ff716d8dd3fc99c1ffb11b7c5d4528a49658bf569da820",
+    "zh_cn.json": "fda9c7540872bde68f5c392f5505d69a8e4e8fab481dd8af24aa1b1a3bffcca0"
+  },
+  "ordinary_artifacts": {
+    "result": "passed",
+    "elapsed": "2m9s",
+    "shared_classes": 714,
+    "verification_report": "work/panel-material-20261006-artifacts.json",
+    "published_directory": "C:\\Dev\\GregTech6\\build\\verified\\20261006-134559Z-80cda129",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 41261332,
+        "sha256": "80cda129adc3bb1014fadef46de63ee8127f484f9ecc674a303fe3d41d21b4e1",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-134559Z-80cda129\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 39481013,
+        "sha256": "9d873367c591848f76053cfb804c4559a83006ef0130f873bf535780fa3c4067",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-134559Z-80cda129\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    },
+    "current_platform_classes": {
+      "forge": 1755,
+      "neoforge": 1562
+    },
+    "checked": [
+      "Current core and platform bytecode",
+      "ZIP CRC, loader metadata and Mixin inclusion",
+      "Separate test/probe classes and resources excluded",
+      "Complete copied artifacts rechecked after both production starts"
+    ]
+  },
+  "installed_production": {
+    "result": "passed",
+    "java": "Azul Zulu 25.0.2",
+    "loaders": {
+      "forge": "47.4.26",
+      "neoforge": "21.1.252"
+    },
+    "platforms": {
+      "forge": {
+        "exit_code": 0,
+        "elapsed_seconds": 53.2,
+        "version": "1.20.1-Forge_47.4.26",
+        "installed_files_modified": false,
+        "distribution": {
+          "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-134559Z-80cda129\\gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "80cda129adc3bb1014fadef46de63ee8127f484f9ecc674a303fe3d41d21b4e1"
+        },
+        "probe": {
+          "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "55d70e51b847a377fc6be5a7d1d0c04240e17ab410a5c2f42190bb7f2e293bb5"
+        },
+        "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-3563b824-ad81-428b-af16-dfc8e2de70fd\\launch.log",
+        "log_sha256": "f494a48a4db77daa594470d017cf4e17a06c0345a1125e0d55a20687602daf54",
+        "screenshot_sha256": "49b79e0ad9f60a173717b5237bbf8f92fec0955a07b349b60c0313e9a9a58487",
+        "visually_reviewed": true,
+        "receipt": {
+          "surfaceChecks": {
+            "materialBushInventoryModelsColorsNamesChecked": 1034,
+            "surfaceItems": [
+              "gregtech:bush_cotton",
+              "gregtech:bush_blueberry",
+              "gregtech:bush_candleberry",
+              "gregtech:bush_cranberry",
+              "gregtech:bush_black_currants",
+              "gregtech:bush_white_currants",
+              "gregtech:bush_red_currants",
+              "gregtech:bush_blackberry",
+              "gregtech:bush_raspberry",
+              "gregtech:fluid_spring_liquid_extra_heavy_oil",
+              "gregtech:fluid_spring_liquid_heavy_oil",
+              "gregtech:fluid_spring_liquid_medium_oil",
+              "gregtech:fluid_spring_liquid_light_oil",
+              "gregtech:fluid_spring_gas_natural_gas",
+              "gregtech:fluid_spring_watergeothermal",
+              "gregtech:fluid_spring_lava"
+            ],
+            "machineItems": [
+              "lightning_galvanized_steel",
+              "lightning_aluminium",
+              "lightning_stainless_steel",
+              "lightning_chromium",
+              "lightning_titanium",
+              "melter_stainless_steel"
+            ],
+            "machineModelsChecked": 6,
+            "surfaceItemModelsChecked": 16,
+            "surfaceSpringSpritesChecked": 7,
+            "surfaceBerryStageColorsChecked": 36,
+            "sandwich": {
+              "customInventoryModelsChecked": 3,
+              "ingredientLayerCounts": [
+                10,
+                4,
+                6
+              ],
+              "sourceLayerTexturesChecked": 22,
+              "sourceSauceColorsChecked": 2,
+              "cans": {
+                "inventoryModelsChecked": 57,
+                "renderedCanSamples": [
+                  "tiny_food_can_meat",
+                  "small_food_can_fish",
+                  "tall_food_can_vegetables",
+                  "wide_food_can_fruits",
+                  "large_food_can_bread",
+                  "huge_food_can_cookies",
+                  "canned_air",
+                  "canned_hot_air",
+                  "canned_space_air",
+                  "huge_food_can_rotten",
+                  "tiny_food_can_chum",
+                  "empty_food_can"
+                ]
+              }
+            },
+            "canvas": {
+              "originalCircuitTagGrades": 10,
+              "externalHighBatteryBoxRecipes": 5,
+              "originalMolecularDataFields": true,
+              "mercuryAmbientUnitMb": 1000,
+              "originalCanvasItemModels": 16,
+              "printedPageModels": 2,
+              "coloredBookScanHints": 28,
+              "directionalAndFluidFaces": 4,
+              "brightImage": true
+            },
+            "decorativePanels": {
+              "installedItemModels": 83,
+              "canonicalColoredModels": 48,
+              "canonicalWoodModels": 30,
+              "centeredTwoPixelMesh": true,
+              "sourceRgbAndTextures": true,
+              "legacyAliasesHiddenFromCreative": true,
+              "originalPerItemMaterialsAndAdvancedTooltip": 83,
+              "installedShredderEntries": 83
+            }
+          },
+          "platform": "forge",
+          "screen": "net.minecraft.client.gui.screens.TitleScreen",
+          "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-3563b824-ad81-428b-af16-dfc8e2de70fd\\screenshots\\production-forge-57dad8f7-452d-4c1a-b99a-6e4557019dbb.png",
+          "width": 1280,
+          "height": 720,
+          "renderedFrames": 180,
+          "loaderWarnings": 0,
+          "elapsedMs": 46711
+        }
+      },
+      "neoforge": {
+        "exit_code": 0,
+        "elapsed_seconds": 45.03,
+        "version": "1.21.1-NeoForge_21.1.252",
+        "installed_files_modified": false,
+        "distribution": {
+          "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-134559Z-80cda129\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "9d873367c591848f76053cfb804c4559a83006ef0130f873bf535780fa3c4067"
+        },
+        "probe": {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "cc15a8b5710fc8cb79f59de6849fd49d3ac628106859edbed7be799deacac39a"
+        },
+        "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-8cab69d9-4750-4f29-b600-e14dd12e1487\\launch.log",
+        "log_sha256": "18531752f42fbfbcfc7ea2ecc079ef9082ababef57c83e8e8e89a8a472043509",
+        "screenshot_sha256": "af5ffd0445a0db41ab0f7c174018981f17dac6373465c7daa2c6cd2ea7d1d3c8",
+        "visually_reviewed": true,
+        "receipt": {
+          "surfaceChecks": {
+            "materialBushInventoryModelsColorsNamesChecked": 1034,
+            "surfaceItems": [
+              "gregtech:bush_cotton",
+              "gregtech:bush_blueberry",
+              "gregtech:bush_candleberry",
+              "gregtech:bush_cranberry",
+              "gregtech:bush_black_currants",
+              "gregtech:bush_white_currants",
+              "gregtech:bush_red_currants",
+              "gregtech:bush_blackberry",
+              "gregtech:bush_raspberry",
+              "gregtech:fluid_spring_liquid_extra_heavy_oil",
+              "gregtech:fluid_spring_liquid_heavy_oil",
+              "gregtech:fluid_spring_liquid_medium_oil",
+              "gregtech:fluid_spring_liquid_light_oil",
+              "gregtech:fluid_spring_gas_natural_gas",
+              "gregtech:fluid_spring_watergeothermal",
+              "gregtech:fluid_spring_lava"
+            ],
+            "machineItems": [
+              "lightning_galvanized_steel",
+              "lightning_aluminium",
+              "lightning_stainless_steel",
+              "lightning_chromium",
+              "lightning_titanium",
+              "melter_stainless_steel"
+            ],
+            "machineModelsChecked": 6,
+            "surfaceItemModelsChecked": 16,
+            "surfaceSpringSpritesChecked": 7,
+            "surfaceBerryStageColorsChecked": 36,
+            "sandwich": {
+              "customInventoryModelsChecked": 3,
+              "ingredientLayerCounts": [
+                10,
+                4,
+                6
+              ],
+              "sourceLayerTexturesChecked": 22,
+              "sourceSauceColorsChecked": 2,
+              "cans": {
+                "inventoryModelsChecked": 57,
+                "renderedCanSamples": [
+                  "tiny_food_can_meat",
+                  "small_food_can_fish",
+                  "tall_food_can_vegetables",
+                  "wide_food_can_fruits",
+                  "large_food_can_bread",
+                  "huge_food_can_cookies",
+                  "canned_air",
+                  "canned_hot_air",
+                  "canned_space_air",
+                  "huge_food_can_rotten",
+                  "tiny_food_can_chum",
+                  "empty_food_can"
+                ]
+              }
+            },
+            "canvas": {
+              "originalCircuitTagGrades": 10,
+              "externalHighBatteryBoxRecipes": 5,
+              "originalMolecularDataFields": true,
+              "mercuryAmbientUnitMb": 1000,
+              "originalCanvasItemModels": 16,
+              "printedPageModels": 2,
+              "coloredBookScanHints": 28,
+              "directionalAndFluidFaces": 4,
+              "brightImage": true
+            },
+            "decorativePanels": {
+              "installedItemModels": 83,
+              "canonicalColoredModels": 48,
+              "canonicalWoodModels": 30,
+              "centeredTwoPixelMesh": true,
+              "sourceRgbAndTextures": true,
+              "legacyAliasesHiddenFromCreative": true,
+              "originalPerItemMaterialsAndAdvancedTooltip": 83,
+              "installedShredderEntries": 83
+            }
+          },
+          "platform": "neoforge",
+          "screen": "net.minecraft.client.gui.screens.TitleScreen",
+          "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-8cab69d9-4750-4f29-b600-e14dd12e1487\\screenshots\\production-neoforge-9e072225-d802-4137-af53-2d99b3d8d538.png",
+          "width": 1280,
+          "height": 720,
+          "renderedFrames": 179,
+          "elapsedMs": 38134
+        }
+      }
+    },
+    "scope": "Ordinary JARs in isolated real installed-loader title-screen clients. 83 materials/advanced native tooltip lines/shredder entries asserted; existing 48+30 atlas visually reviewed. No world operation or player-tooltip screenshot claim."
+  },
+  "source_commit": "472eb9d8771b7160463f99fbedb7f8e2bdec385c"
+}

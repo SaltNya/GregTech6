@@ -1,0 +1,172 @@
+{
+  "authors": [
+    "Gregorius Techneticies",
+    "GregTech-6 Team"
+  ],
+  "codeLicense": "LGPL-3.0-or-later",
+  "references": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "bytes": 153449,
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\MT.java",
+      "bytes": 693183,
+      "sha256": "12936831b1b5f419dc783c5f32f3cc07a329734ca6c5c11757d52e1be27904b2"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\load\\LoaderOreDictReRegistrations.java",
+      "bytes": 147540,
+      "sha256": "d34719309a5ddf5bd7fc01c0462b57af52b4cf980a69fae4d4042c2ab78b07ef"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\block\\multitileentity\\MultiTileEntityRegistry.java",
+      "bytes": 18347,
+      "sha256": "70fb3ce00e7036e343e253e0f9fd8401b05c3f4f4e16b88f1b3fb94c3b111e83"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "bytes": 791265,
+      "sha256": "96f579dd5c0a26a759ddee34c312dadbc5d52123e2b85e82da6a40f68b494393"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "bytes": 133807,
+      "sha256": "7367922c4938318dd50b1320e7fc7a7453c33cffa46f75a437325314d2536ddc"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\LICENSE",
+      "bytes": 694,
+      "sha256": "016a44845714fdac2ec66de02e16142512a6d6ae4dd9d434a9005214606c1577"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\data\\CS.java",
+      "bytes": 172344,
+      "sha256": "e6e330961c416e104ea5a58dd8282d286d1e27292a9f6d9955c9569c39af87c9"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\data\\MT.java",
+      "bytes": 703280,
+      "sha256": "22591e92616d6f503191ba58548d68cd6b113fc615f118e987a1353b1db84858"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\load\\LoaderOreDictReRegistrations.java",
+      "bytes": 147540,
+      "sha256": "d34719309a5ddf5bd7fc01c0462b57af52b4cf980a69fae4d4042c2ab78b07ef"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\block\\multitileentity\\MultiTileEntityRegistry.java",
+      "bytes": 21723,
+      "sha256": "511c9c17472dc3700a9432f9e32341d7896bb84ab203d888f91822d69dbfb58c"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\loaders\\b\\Loader_MultiTileEntities.java",
+      "bytes": 791308,
+      "sha256": "4d87cacde8defa33df30359d345046daa8e901ab0419dca2766d2140d8af1562"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregtech\\items\\MultiItemTechnological.java",
+      "bytes": 134120,
+      "sha256": "0db7cdb85fa9601043c44b79d413df023e1d19e350f3d9e107fa8c3cc0aad374"
+    },
+    {
+      "path": "C:\\Dev\\GregTech_zh_cn.lang",
+      "bytes": 7375784,
+      "sha256": "0e5b3906712020b71c9c5718319bbf3fd90b002d79d25614f1bfcaf3c8e887c0"
+    }
+  ],
+  "chineseResources": [
+    {
+      "path": "core/src/main/resources/assets/gregtech/lang/zh_cn.json",
+      "bytes": 8448130,
+      "sha256": "f9bbed7fae0b42813aa1a4936ac87d13b3d0cb92aa5e78c418be3225e9852fad",
+      "unchangedFrom": "0663be0a"
+    }
+  ],
+  "facts": {
+    "originalCircuitKeys": [
+      "gt:circuit0",
+      "gt:circuit1",
+      "gt:circuit2",
+      "gt:circuit3",
+      "gt:circuit4",
+      "gt:circuit5",
+      "gt:circuit6",
+      "gt:circuit7",
+      "gt:circuit8",
+      "gt:circuit9"
+    ],
+    "inheritance": "Circuit N registers as N-1, down through tier zero",
+    "nativeFinishedCircuits": [
+      30301,
+      30302,
+      30303,
+      30304,
+      30305,
+      30306
+    ],
+    "conditionalExternalTiers": [
+      7,
+      8,
+      9
+    ],
+    "bareGrapheneWireTiers": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "bareSuperconductorWireTiers": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "batteryBoxOriginalIds": [
+      10080,
+      10081,
+      10082,
+      10083,
+      10084,
+      10085,
+      10086,
+      10087,
+      10088,
+      10089,
+      10090,
+      10091,
+      10092,
+      10093,
+      10094,
+      10095,
+      10096,
+      10097,
+      10098,
+      10099
+    ],
+    "resolvableTransformerOriginalIds": [
+      10040,
+      10041,
+      10042,
+      10043,
+      10044,
+      10045,
+      10046,
+      10047,
+      10048
+    ],
+    "excludedRecipe": {
+      "id": "energy_storage_xv",
+      "requiresSourceId": 10049,
+      "reason": "Not registered in either original snapshot"
+    }
+  }
+}

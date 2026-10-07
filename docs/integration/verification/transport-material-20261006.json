@@ -1,0 +1,402 @@
+{
+  "date": "2026-10-06",
+  "scope": "490 original transport crafting rows, 406 pipe and 30 ordinary tank compositions and guarded recovery; finite native scenarios, ordinary artifacts and isolated installed-loader title-screen checks",
+  "status": "passed",
+  "attempts": [
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\transport-material-20261006-native.log",
+      "sha256": "614d810c91cf6afc030c50dff8f0723ca0c04e167acc8599317134b74cd83f14",
+      "required_tests_passed": [],
+      "finish": [
+        "BUILD FAILED in 46s"
+      ],
+      "first_failure": "C:\\Dev\\GregTech6\\src\\bootstrapGameTest\\java\\com\\gregtech\\gregtech\\gametest\\TransportMaterialPortTests.java:39: error: incompatible types: CraftingContainer cannot be converted to CAP#1"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\transport-material-20261006-native-fixed.log",
+      "sha256": "8146c8ce862d8a6ad25a32a0bed095b7680296bd9191a785a790353a50289260",
+      "required_tests_passed": [],
+      "finish": [
+        "BUILD FAILED in 2m 33s"
+      ],
+      "first_failure": "[22:24:05] [Server thread/ERROR] [minecraft/LogTestReporter]: nativetransportcraftingusessourcecountstoolsandpayloadguards failed! all 21 restrictive families and 40 unpack families"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\transport-material-20261006-native-final.log",
+      "sha256": "e5e329052978142bfa3901c220f9d3d4a053cf94e1e79b9e740b8e7c6d1a1ce0",
+      "required_tests_passed": [
+        "3",
+        "3"
+      ],
+      "finish": [
+        "BUILD SUCCESSFUL in 6m 7s"
+      ],
+      "first_failure": null,
+      "non_failure_log_note": "Registry DEBUG line containing gregtech:error is an ordinary fluid registry ID remap, not a failing scenario"
+    }
+  ],
+  "remaining": [
+    "original generic Wood/logistics hull data",
+    "pipe preferred-target binding and complete scanner display rows",
+    "plastic/treated-wood/rubber/carbon full production survival chains",
+    "real optional mod providers",
+    "independent saved-world restart",
+    "old-save migration",
+    "player JEI/EMI transport recipe UI",
+    "real powered-machine survival operation",
+    "empty placed-container drop/tag lifecycle in recovery guard"
+  ],
+  "goal": "active",
+  "source_commit": "041bcb73790773aa01f74962a43728f91568081f",
+  "native": {
+    "status": "passed",
+    "scenarios_per_platform": 3,
+    "elapsed": "6m7s",
+    "gradle_exit": 0,
+    "normal_world_save": true,
+    "log": "work/transport-material-20261006-native-final.log",
+    "coverage": [
+      "Independent source pipe weights and ordinary tank composition",
+      "490 actual RecipeManager rows, native tool wear, serialization and payload guards",
+      "436 registered shredder recipes, actual input consumption, conserved dust output and crucible parsing"
+    ],
+    "last_source_tweak": "After finite scenarios, two steel/tungsten tank hull form rows changed to source ANY.Steel/ANY.W using the already tested group resolver; all 10 installed native group form variants checked in both production clients"
+  },
+  "shared_core": {
+    "result": "passed",
+    "core_assertions": 2472,
+    "wood_assertions": 1212,
+    "material_assertions": 7947,
+    "thermal_assertions": 53,
+    "machine_assertions": 34,
+    "prefixes": 132,
+    "full_domain_fingerprint": "retained; previous 144325 rows unchanged and only 10 metadata prefixes plus 11600 false form rows added",
+    "differential": "transport-material-differential-20261006.json"
+  },
+  "source_files_rechecked": 14,
+  "unchanged_localization_vs_3fbbc442": {
+    "core/src/main/resources/assets/gregtech/lang/en_us.json": "05707ad42644116055ff716d8dd3fc99c1ffb11b7c5d4528a49658bf569da820",
+    "core/src/main/resources/assets/gregtech/lang/zh_cn.json": "fda9c7540872bde68f5c392f5505d69a8e4e8fab481dd8af24aa1b1a3bffcca0"
+  },
+  "ordinary_artifacts": {
+    "result": "passed",
+    "elapsed": "1m9s",
+    "build_log": "work/transport-material-20261006-build.log",
+    "build_log_sha256": "85cf7aefd7dedb6b1380625db9c48d73c25986fcc74f6f87a610e2363d9d65a7",
+    "shared_classes": 720,
+    "current_platform_classes": {
+      "forge": 1756,
+      "neoforge": 1563
+    },
+    "verification_report": "work/transport-material-20261006-artifacts.json",
+    "verification_report_sha256": "c348ac758dc24cb301281e037765ea2cabd98acd9b2993cf6b8cd8f7f1bb9aa4",
+    "published_directory": "C:\\Dev\\GregTech6\\build\\verified\\20261006-144003Z-1ff77589",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 41277923,
+        "sha256": "1ff77589aabebae21aba3bd12184461737789fddd6dd7f1f7fd5ba55d0f02f70",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-144003Z-1ff77589\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 39497473,
+        "sha256": "6715021f3447cb90a1744ec18c45920452134da0be8c478779e85cce82221d53",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-144003Z-1ff77589\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    },
+    "post_startup_sha_and_crc_rechecked": true,
+    "test_and_probe_classes_excluded": true
+  },
+  "installed_production": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 68.59,
+      "installed_files_modified": false,
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-144003Z-1ff77589\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "1ff77589aabebae21aba3bd12184461737789fddd6dd7f1f7fd5ba55d0f02f70"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "53a13d17fb4139b79306ac9c51688a064a9a62529292f0c6b576eb54fdd81371"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "1ff77589aabebae21aba3bd12184461737789fddd6dd7f1f7fd5ba55d0f02f70",
+          "bytes": 41277923
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "53a13d17fb4139b79306ac9c51688a064a9a62529292f0c6b576eb54fdd81371",
+          "bytes": 36666
+        },
+        {
+          "name": "Jade-1.20.1-Forge-11.13.3.jar",
+          "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+          "bytes": 553487
+        },
+        {
+          "name": "jei-1.20.1-forge-15.62.0.217.jar",
+          "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+          "bytes": 2232172
+        },
+        {
+          "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+          "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+          "bytes": 364842
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-bea7c2de-6d8b-4fb4-9470-7e3a821bd0f1\\launch.log",
+      "log_sha256": "22da8dc3047adc152fa76e75e359e8737d7b2a4f25431fbc898249182b76adbd",
+      "receipt": {
+        "surfaceChecks": {
+          "materialBushInventoryModelsColorsNamesChecked": 1034,
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          },
+          "canvas": {
+            "originalCircuitTagGrades": 10,
+            "externalHighBatteryBoxRecipes": 5,
+            "originalMolecularDataFields": true,
+            "mercuryAmbientUnitMb": 1000,
+            "originalCanvasItemModels": 16,
+            "printedPageModels": 2,
+            "coloredBookScanHints": 28,
+            "directionalAndFluidFaces": 4,
+            "brightImage": true
+          },
+          "decorativePanels": {
+            "installedItemModels": 83,
+            "canonicalColoredModels": 48,
+            "canonicalWoodModels": 30,
+            "centeredTwoPixelMesh": true,
+            "sourceRgbAndTextures": true,
+            "legacyAliasesHiddenFromCreative": true,
+            "originalPerItemMaterialsAndAdvancedTooltip": 83,
+            "installedShredderEntries": 83,
+            "transportMaterialItemsAndShredderEntries": 436,
+            "originalTankGroupFormVariants": 10,
+            "resolvedTransportCraftingRows": 490
+          }
+        },
+        "platform": "forge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-bea7c2de-6d8b-4fb4-9470-7e3a821bd0f1\\screenshots\\production-forge-fe12e4a5-0de0-447b-b3bd-0468c4c5804d.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 179,
+        "loaderWarnings": 0,
+        "elapsedMs": 60473
+      },
+      "screenshot_sha256": "1a6e7419f4445d69b1a09f84ab8e604b65b365f2923216ceebac2bb48c174744",
+      "visually_reviewed": true,
+      "visual_scope": "Viewed clean title-screen atlas: 48 construction panels and 30 wood panels; transport checks are runtime assertions, not transport item/world or player recipe UI screenshots"
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 44.73,
+      "installed_files_modified": false,
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-144003Z-1ff77589\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "6715021f3447cb90a1744ec18c45920452134da0be8c478779e85cce82221d53"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "ec19473bd7f0f062d0a32f418610c5692928472250027fbbec5b01570ae5df2b"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "6715021f3447cb90a1744ec18c45920452134da0be8c478779e85cce82221d53",
+          "bytes": 39497473
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "ec19473bd7f0f062d0a32f418610c5692928472250027fbbec5b01570ae5df2b",
+          "bytes": 35444
+        },
+        {
+          "name": "emi-1.1.24+1.21.1+neoforge.jar",
+          "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+          "bytes": 1111538
+        },
+        {
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+          "bytes": 726853
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-fbe47437-8661-45b8-bf0d-72676ec7c164\\launch.log",
+      "log_sha256": "3ca6e9875064bc9d01ae9270186282c6e39bb69d805c5ed7614b23a53ecbde45",
+      "receipt": {
+        "surfaceChecks": {
+          "materialBushInventoryModelsColorsNamesChecked": 1034,
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          },
+          "canvas": {
+            "originalCircuitTagGrades": 10,
+            "externalHighBatteryBoxRecipes": 5,
+            "originalMolecularDataFields": true,
+            "mercuryAmbientUnitMb": 1000,
+            "originalCanvasItemModels": 16,
+            "printedPageModels": 2,
+            "coloredBookScanHints": 28,
+            "directionalAndFluidFaces": 4,
+            "brightImage": true
+          },
+          "decorativePanels": {
+            "installedItemModels": 83,
+            "canonicalColoredModels": 48,
+            "canonicalWoodModels": 30,
+            "centeredTwoPixelMesh": true,
+            "sourceRgbAndTextures": true,
+            "legacyAliasesHiddenFromCreative": true,
+            "originalPerItemMaterialsAndAdvancedTooltip": 83,
+            "installedShredderEntries": 83,
+            "transportMaterialItemsAndShredderEntries": 436,
+            "originalTankGroupFormVariants": 10,
+            "resolvedTransportCraftingRows": 490
+          }
+        },
+        "platform": "neoforge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-fbe47437-8661-45b8-bf0d-72676ec7c164\\screenshots\\production-neoforge-00d22a98-fc10-4099-bbf6-2c5f67e317b5.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 182,
+        "elapsedMs": 37943
+      },
+      "screenshot_sha256": "883d4cc8191d6837f72ded2a822a4de18e07ca9f4909a0d6f2482c86c64675c8",
+      "visually_reviewed": true,
+      "visual_scope": "Viewed clean title-screen atlas: 48 construction panels and 30 wood panels; transport checks are runtime assertions, not transport item/world or player recipe UI screenshots"
+    }
+  },
+  "remote_scope": "Only explicitly approved CI commit 3fbbc442 pushed; transport source 041bcb73 and receipt remain local. PR work deferred."
+}

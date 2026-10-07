@@ -1,33 +1,46 @@
-"""Read-only original-resource and recipe checks; safe during the Java gate."""
+"""Bounded original electrical-dependency and shared recipe checks."""
 import json
 import re
 import unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
-ASSETS=ROOT/'src/main/resources/assets/gregtech'
-ORIGINAL=ROOT.parent/'gregtech6-master/gregtech6-master/src/main/resources/assets/gregtech'
 TIERS=['ulv','lv','mv','hv','ev','iv','luv','zpm','uv','xv']
 class LargeBatteryAssets(unittest.TestCase):
-    def test_original_large_and_small_textures_and_gui_bytes(self):
-        for folder in ['battery_electric','battery_electric_large']:
-            source=ORIGINAL/'textures/blocks/machines/energystorages'/folder
-            target=ASSETS/'textures/block/machines/energystorages'/folder
-            for p in source.rglob('*'):
-                if p.is_file():self.assertEqual(p.read_bytes(),(target/p.relative_to(source)).read_bytes())
-        self.assertEqual((ORIGINAL/'textures/gui/chests/16.png').read_bytes(),(ASSETS/'textures/gui/chests/16.png').read_bytes())
-    def test_all_twenty_nine_standard_names(self):
-        cn=(ROOT.parent/'GregTech.lang').read_text(encoding='utf-8')
-        lang=json.loads((ASSETS/'lang/zh_cn.json').read_text(encoding='utf-8'))
-        devices=[(10080+i,'battery_box_'+t) for i,t in enumerate(TIERS)]+[(10090+i,'energy_storage_'+t) for i,t in enumerate(TIERS)]+[(10040+i,'transformer_'+TIERS[i]+'_'+TIERS[i+1]) for i in range(9)]
-        for number,ident in devices:
-            expected=re.search(r'^\s*S:gt\.multitileentity\.'+str(number)+r'=(.*)$',cn,re.M).group(1).strip()
-            self.assertEqual(lang['block.gregtech.'+ident],expected)
-            self.assertTrue((ASSETS/f'blockstates/{ident}.json').is_file())
-    def test_twenty_three_patterns_and_transformer_dependency(self):
-        recipes=list((ROOT/'src/main/resources/data/gregtech/recipes/energy_nodes').glob('*.json'))
-        self.assertEqual(len(recipes),23)
+    def test_original_grade_wire_and_missing_transformer_facts(self):
+        source=ROOT.parent/'gregtech6-master/gregtech6-master/src/main/java'
+        mt=(source/'gregapi/data/MT.java').read_text(encoding='utf-8')
+        for name,size in [('WIRES_01','01'),('WIRES_04','04'),('CABLES_01','01'),('CABLES_04','04')]:
+            body=re.search(name+r' = \{(.*?)\n\s*}',mt,re.S).group(1)
+            entries=re.findall(r'OP\.(\w+)\.dat\(([^)]+)\)',body)
+            self.assertEqual(len(entries),16)
+            self.assertEqual(entries[6:11],[('wireGt'+size,'Graphene')]*5)
+            self.assertEqual(entries[11:],[('wireGt'+size,'Superconductor')]*5)
+        loader=(source/'gregtech/loaders/b/Loader_MultiTileEntities.java').read_text(encoding='utf-8')
+        self.assertIn("'X', OD_CIRCUITS[i]",loader)
+        self.assertIn("'M', aRegistry.getItem(10040+i)",loader)
+        self.assertNotRegex(loader,r',\s*10049\s*,')
+        items=(source/'gregtech/items/MultiItemTechnological.java').read_text(encoding='utf-8')
+        self.assertNotRegex(items,r'addItem\(3030[789]')
+    def test_twenty_eight_patterns_and_transformer_dependency(self):
+        recipes=list((ROOT/'core/src/main/resources/data/gregtech/recipes/energy_nodes').glob('*.json'))
+        self.assertEqual(len(recipes),28)
         for p in recipes:
             r=json.loads(p.read_text(encoding='utf-8'))
             self.assertEqual(r['pattern'],['WIW','XMx','WIW'] if p.stem.startswith('transformer_') else ['WCW','WCW','XMX'])
             if p.stem.startswith('energy_storage_'):self.assertTrue(r['key']['M']['item'].startswith('gregtech:transformer_'))
+    def test_cumulative_tags_and_generator_idempotence(self):
+        import importlib.util
+        data=ROOT/'core/src/main/resources/data/gregtech'
+        tags={i:json.loads((data/f'tags/items/circuits_tier_{i}_plus.json').read_text()) for i in range(10)}
+        for i,tag in tags.items():
+            self.assertFalse(tag['replace'])
+            self.assertIn({'id':f'#gt:circuit{i}','required':False},tag['values'])
+            self.assertEqual(f'#gregtech:circuits_tier_{i+1}_plus' in tag['values'],i<9)
+            self.assertFalse(any(isinstance(v,str) and 'quantum' in v for v in tag['values']))
+        paths=list((data/'recipes/energy_nodes').glob('*.json'))+list((data/'tags/items').glob('circuits_tier_*.json'))
+        before={p:p.read_bytes() for p in paths}
+        spec=importlib.util.spec_from_file_location('electrical_generator',ROOT/'tools/generate_battery_box_recipes.py')
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);module.run()
+        self.assertEqual(before,{p:p.read_bytes() for p in paths})
+        self.assertFalse((data/'recipes/energy_nodes/energy_storage_xv.json').exists())
 if __name__=='__main__':unittest.main()

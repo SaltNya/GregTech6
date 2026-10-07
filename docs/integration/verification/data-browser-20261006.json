@@ -1,0 +1,736 @@
+{
+  "date": "2026-10-07",
+  "batch": "data-browser-20261006",
+  "goal": "active",
+  "status": "passed",
+  "baseline": "cbd634f7",
+  "scope": "Four native development-client browser combinations, three standard USB3 material pages each; four existing stick types get file-sensitive JEI/EMI identity.",
+  "runtime": {
+    "forge_jei": {
+      "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-forge-jei-fixed.log",
+      "sha256": "b3c62f68982ed51f00ff8ac5280d47f8cf7cd0f608d170e7194c291c71f120fb",
+      "gradle_exit": 0,
+      "normal_world_save": true,
+      "elapsed": "4m 6s",
+      "receipt": {
+        "platform": "forge",
+        "id": "3826d8ac-4432-4af6-8d34-0bb7d7232a64",
+        "world": "creation-smoke-3826d8ac-4432-4af6-8d34-0bb7d7232a64",
+        "stage": 3,
+        "elapsedMs": 164559,
+        "materialBushRuntimeOnly": false,
+        "recipePresentationRuntimeOnly": true,
+        "longDistanceRuntimeOnly": false,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": false,
+        "newIssuesRuntimeOnly": false,
+        "booksRuntimeOnly": false,
+        "canonicalItemsChecked": 77083,
+        "recipes": 52761,
+        "serverTicks": 26,
+        "dimension": "minecraft:overworld",
+        "materialDataBrowserScannablePipeFocuses": 303,
+        "materialDataBrowserRejectedPipeFocuses": 103,
+        "materialDataBrowserUsbFileFocusSeparated": true,
+        "materialDataBrowserSlots1": 3,
+        "materialDataBrowserFluidIcons1": 0,
+        "materialDataBrowserScreenshot1": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-jei-1-409aec6e-9e73-4f1d-a0d8-a3e8bcd842ac.png",
+        "materialDataBrowserSlots2": 4,
+        "materialDataBrowserFluidIcons2": 1,
+        "materialDataBrowserScreenshot2": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-jei-2-465cee48-d6c4-43fc-a987-15c64766e332.png",
+        "materialDataBrowserSlots3": 4,
+        "materialDataBrowserFluidIcons3": 2,
+        "materialDataBrowserScreenshot3": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-jei-3-cd9afc70-8f40-4c94-8ed7-f8d7a04fffb9.png",
+        "renderedWorldFrames": 31,
+        "emiLoaded": false,
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-3826d8ac-4432-4af6-8d34-0bb7d7232a64.png"
+      },
+      "screenshots": [
+        {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\material-data-jei-1-409aec6e-9e73-4f1d-a0d8-a3e8bcd842ac.png",
+          "sha256": "f4355168222cd3430cac2f5202f175299418eff53b02f7b550d55b411094a365",
+          "visually_reviewed": true
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\material-data-jei-2-465cee48-d6c4-43fc-a987-15c64766e332.png",
+          "sha256": "95ac45a6a6a61b0763da3bc40dc6dc957f88ce40a213623f001f352233049d48",
+          "visually_reviewed": true
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\material-data-jei-3-cd9afc70-8f40-4c94-8ed7-f8d7a04fffb9.png",
+          "sha256": "d0f029574bfaedc520d7bc81311adf9ec4a67fdf57bad5f12e8ef22a0bb5ad0d",
+          "visually_reviewed": true
+        }
+      ],
+      "actual_mouse_or_key_shortcuts": false,
+      "focus_method": "Real registered manager input lookup for406 pipes and material USB files; official browser APIs open actual screen layouts. No simulated R/U keyboard presses.",
+      "tooltip_scope": "Actual native USB tooltip lines and EMI slot tooltip calls; screenshots do not show hovered tooltip overlays."
+    },
+    "forge_emi": {
+      "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-forge-emi.log",
+      "sha256": "1ef03aae57b885620e46784528e914e9681150d67e5e866af520883fb3ddff48",
+      "gradle_exit": 0,
+      "normal_world_save": true,
+      "elapsed": "4m 40s",
+      "receipt": {
+        "platform": "forge",
+        "id": "783b1ce0-c787-4bb6-9c7e-bbe5e28d1986",
+        "world": "creation-smoke-783b1ce0-c787-4bb6-9c7e-bbe5e28d1986",
+        "stage": 3,
+        "elapsedMs": 207463,
+        "materialBushRuntimeOnly": false,
+        "recipePresentationRuntimeOnly": true,
+        "longDistanceRuntimeOnly": false,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": false,
+        "newIssuesRuntimeOnly": false,
+        "booksRuntimeOnly": false,
+        "canonicalItemsChecked": 77083,
+        "recipes": 52761,
+        "serverTicks": 25,
+        "dimension": "minecraft:overworld",
+        "materialDataBrowserUsbPhysicalTiersChecked": 4,
+        "materialDataBrowserScannablePipeFocuses": 303,
+        "materialDataBrowserRejectedPipeFocuses": 103,
+        "materialDataBrowserUsbFileFocusSeparated": true,
+        "materialDataBrowserSlots1": 3,
+        "materialDataBrowserFluidIcons1": 0,
+        "materialDataBrowserUsbTooltip1": [
+          "USB 3 Memory Stick",
+          "Material Data: Steel",
+          "Can be Replicated using",
+          "Neutral Matter: 55",
+          "Charged Matter: 43",
+          "Energy: 6422528 QU",
+          "Data: USB 3.0",
+          "Gregtech"
+        ],
+        "materialDataBrowserScreenshot1": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-emi-1-216b5c37-5487-4f8b-8f98-1a6d8d7f8d6b.png",
+        "materialDataBrowserSlots2": 4,
+        "materialDataBrowserFluidIcons2": 1,
+        "materialDataBrowserUsbTooltip2": [
+          "USB 3 Memory Stick",
+          "Material Data: Steel",
+          "Can be Replicated using",
+          "Neutral Matter: 55",
+          "Charged Matter: 43",
+          "Energy: 6422528 QU",
+          "Data: USB 3.0",
+          "Gregtech"
+        ],
+        "materialDataBrowserScreenshot2": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-emi-2-6eca7794-3d83-4a06-b247-ada1dee58a9b.png",
+        "materialDataBrowserSlots3": 4,
+        "materialDataBrowserFluidIcons3": 2,
+        "materialDataBrowserUsbTooltip3": [
+          "USB 3 Memory Stick",
+          "Material Data: Fe",
+          "Can be Replicated using",
+          "Neutral Matter: 30",
+          "Charged Matter: 26",
+          "Energy: 3670016 QU",
+          "Data: USB 3.0",
+          "Gregtech"
+        ],
+        "materialDataBrowserScreenshot3": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-emi-3-ef850f7c-93b1-42fc-a33b-631b9ed0cef8.png",
+        "renderedWorldFrames": 1902,
+        "emiLoaded": true,
+        "screenshot": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-forge-783b1ce0-c787-4bb6-9c7e-bbe5e28d1986.png"
+      },
+      "screenshots": [
+        {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\material-data-emi-1-216b5c37-5487-4f8b-8f98-1a6d8d7f8d6b.png",
+          "sha256": "92d9d42e86976cb5ec75e4994cb735b30ed905ff1f9b17271e8dfe3a2da0b836",
+          "visually_reviewed": true
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\material-data-emi-2-6eca7794-3d83-4a06-b247-ada1dee58a9b.png",
+          "sha256": "080fb3c6d0d9fb567739053124432489e3e1efc252988778319c15085430848a",
+          "visually_reviewed": true
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\build\\world-creation-smoke-run\\screenshots\\material-data-emi-3-ef850f7c-93b1-42fc-a33b-631b9ed0cef8.png",
+          "sha256": "71fc285c30f28756054e743d47cc96f70a7befe313ee57f2ab24bf0b3e110e1e",
+          "visually_reviewed": true
+        }
+      ],
+      "actual_mouse_or_key_shortcuts": false,
+      "focus_method": "Real registered manager input lookup for406 pipes and material USB files; official browser APIs open actual screen layouts. No simulated R/U keyboard presses.",
+      "tooltip_scope": "Actual native USB tooltip lines and EMI slot tooltip calls; screenshots do not show hovered tooltip overlays.",
+      "post_reload_index_ms": 4396,
+      "indexes_finished_before_pages": true,
+      "visual_scope": "Viewed actual three pages after index completion; Baking recipes absent; existing dev-mode warning overlay retained."
+    },
+    "neoforge_jei": {
+      "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-neoforge-jei-fixed.log",
+      "sha256": "eee3e1071cb766aa5ec30d047b6070a9d97bd3c63d30eddf58df752fbced5763",
+      "gradle_exit": 0,
+      "normal_world_save": true,
+      "elapsed": "2m",
+      "receipt": {
+        "platform": "neoforge",
+        "id": "1938f2f5-0214-4e0d-85c5-19d64590c38a",
+        "world": "creation-smoke-1938f2f5-0214-4e0d-85c5-19d64590c38a",
+        "stage": 3,
+        "elapsedMs": 93026,
+        "materialBushRuntimeOnly": false,
+        "recipePresentationRuntimeOnly": true,
+        "longDistanceRuntimeOnly": false,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": false,
+        "newIssuesRuntimeOnly": false,
+        "canonicalItemsChecked": 77160,
+        "recipes": 52877,
+        "serverTicks": 245,
+        "dimension": "minecraft:overworld",
+        "materialDataBrowserUsbPhysicalTiersChecked": 4,
+        "materialDataBrowserScannablePipeFocuses": 303,
+        "materialDataBrowserRejectedPipeFocuses": 103,
+        "materialDataBrowserUsbFileFocusSeparated": true,
+        "materialDataBrowserSlots1": 3,
+        "materialDataBrowserFluidIcons1": 0,
+        "materialDataBrowserUsbTooltip1": [
+          "USB 3 Memory Stick",
+          "Material Data: Steel",
+          "Can be Replicated using",
+          "Neutral Matter: 55",
+          "Charged Matter: 43",
+          "Energy: 6422528 QU",
+          "Data: USB 3.0"
+        ],
+        "materialDataBrowserScreenshot1": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-jei-1-94bb0e0e-6b82-4c87-af4a-634e1aac6094.png",
+        "materialDataBrowserSlots2": 4,
+        "materialDataBrowserFluidIcons2": 1,
+        "materialDataBrowserUsbTooltip2": [
+          "USB 3 Memory Stick",
+          "Material Data: Steel",
+          "Can be Replicated using",
+          "Neutral Matter: 55",
+          "Charged Matter: 43",
+          "Energy: 6422528 QU",
+          "Data: USB 3.0"
+        ],
+        "materialDataBrowserScreenshot2": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-jei-2-2de7f8d5-80c7-4018-8e26-adee5832a0a0.png",
+        "materialDataBrowserSlots3": 4,
+        "materialDataBrowserFluidIcons3": 2,
+        "materialDataBrowserUsbTooltip3": [
+          "USB 3 Memory Stick",
+          "Material Data: Fe",
+          "Can be Replicated using",
+          "Neutral Matter: 30",
+          "Charged Matter: 26",
+          "Energy: 3670016 QU",
+          "Data: USB 3.0"
+        ],
+        "materialDataBrowserScreenshot3": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-jei-3-a9e9d67c-9480-4f6e-8440-cf20fa0a5701.png",
+        "renderedWorldFrames": 43,
+        "emiLoaded": false,
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-1938f2f5-0214-4e0d-85c5-19d64590c38a.png"
+      },
+      "screenshots": [
+        {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\material-data-jei-1-94bb0e0e-6b82-4c87-af4a-634e1aac6094.png",
+          "sha256": "f26bfaa99f0b8c7df6f19fcb474bae09dc53b234d6217005b649459a5b234909",
+          "visually_reviewed": true
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\material-data-jei-2-2de7f8d5-80c7-4018-8e26-adee5832a0a0.png",
+          "sha256": "c3b0cf9fc95f53e21cc5b13ef1011e0da1b9950ea43169926d233b271fc645d6",
+          "visually_reviewed": true
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\material-data-jei-3-a9e9d67c-9480-4f6e-8440-cf20fa0a5701.png",
+          "sha256": "426ee5380023c5e4b9770d1dd7de36307783131c2f243ee56f624738fd726ae4",
+          "visually_reviewed": true
+        }
+      ],
+      "actual_mouse_or_key_shortcuts": false,
+      "focus_method": "Real registered manager input lookup for406 pipes and material USB files; official browser APIs open actual screen layouts. No simulated R/U keyboard presses.",
+      "tooltip_scope": "Actual native USB tooltip lines and EMI slot tooltip calls; screenshots do not show hovered tooltip overlays."
+    },
+    "neoforge_emi": {
+      "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-neoforge-emi-final.log",
+      "sha256": "47b9eabc759a95c95bb621a3053c87fd1d1e4b06c4be88564a324420383af6f0",
+      "gradle_exit": 0,
+      "normal_world_save": true,
+      "elapsed": "3m 21s",
+      "receipt": {
+        "platform": "neoforge",
+        "id": "2b2a9290-51de-41aa-9c87-e4f7de4d2c71",
+        "world": "creation-smoke-2b2a9290-51de-41aa-9c87-e4f7de4d2c71",
+        "stage": 3,
+        "elapsedMs": 170795,
+        "materialBushRuntimeOnly": false,
+        "recipePresentationRuntimeOnly": true,
+        "longDistanceRuntimeOnly": false,
+        "viewerFeedbackOnly": false,
+        "cokeRuntimeOnly": false,
+        "newIssuesRuntimeOnly": false,
+        "canonicalItemsChecked": 77160,
+        "recipes": 52877,
+        "serverTicks": 175,
+        "dimension": "minecraft:overworld",
+        "materialDataBrowserUsbPhysicalTiersChecked": 4,
+        "materialDataBrowserScannablePipeFocuses": 303,
+        "materialDataBrowserRejectedPipeFocuses": 103,
+        "materialDataBrowserUsbFileFocusSeparated": true,
+        "materialDataBrowserSlots1": 3,
+        "materialDataBrowserFluidIcons1": 0,
+        "materialDataBrowserUsbTooltip1": [
+          "USB 3 Memory Stick",
+          "Material Data: Steel",
+          "Can be Replicated using",
+          "Neutral Matter: 55",
+          "Charged Matter: 43",
+          "Energy: 6422528 QU",
+          "Data: USB 3.0",
+          "Gregtech"
+        ],
+        "materialDataBrowserScreenshot1": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-emi-1-470e3b5b-d06d-4d5a-bf71-63229b0854b1.png",
+        "materialDataBrowserSlots2": 4,
+        "materialDataBrowserFluidIcons2": 1,
+        "materialDataBrowserUsbTooltip2": [
+          "USB 3 Memory Stick",
+          "Material Data: Steel",
+          "Can be Replicated using",
+          "Neutral Matter: 55",
+          "Charged Matter: 43",
+          "Energy: 6422528 QU",
+          "Data: USB 3.0",
+          "Gregtech"
+        ],
+        "materialDataBrowserScreenshot2": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-emi-2-9171dec2-8eea-4b1e-bbc1-a6e7d021998a.png",
+        "materialDataBrowserSlots3": 4,
+        "materialDataBrowserFluidIcons3": 2,
+        "materialDataBrowserUsbTooltip3": [
+          "USB 3 Memory Stick",
+          "Material Data: Fe",
+          "Can be Replicated using",
+          "Neutral Matter: 30",
+          "Charged Matter: 26",
+          "Energy: 3670016 QU",
+          "Data: USB 3.0",
+          "Gregtech"
+        ],
+        "materialDataBrowserScreenshot3": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\material-data-emi-3-6346d6ea-0952-4bfe-a5b6-6c55fb3b6740.png",
+        "renderedWorldFrames": 9175,
+        "emiLoaded": true,
+        "emiPostReloadIndexReady": true,
+        "screenshot": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\.\\screenshots\\world-creation-neoforge-2b2a9290-51de-41aa-9c87-e4f7de4d2c71.png"
+      },
+      "screenshots": [
+        {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\material-data-emi-1-470e3b5b-d06d-4d5a-bf71-63229b0854b1.png",
+          "sha256": "af3886acb1431bb8c5e544510175ff661c215c4e9bc7728f233022a665c49df5",
+          "visually_reviewed": true
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\material-data-emi-2-9171dec2-8eea-4b1e-bbc1-a6e7d021998a.png",
+          "sha256": "e60b15300b3536564e092a6a8b732b17419fb788f6cf9550eb4506637d332d36",
+          "visually_reviewed": true
+        },
+        {
+          "path": "C:\\Dev\\GregTech6\\neoforge\\build\\world-creation-smoke-run\\screenshots\\material-data-emi-3-6346d6ea-0952-4bfe-a5b6-6c55fb3b6740.png",
+          "sha256": "fe3adeb03f4def6c1bd3fe4a88eb33d9a682f123d38172d61cf217740e047ec8",
+          "visually_reviewed": true
+        }
+      ],
+      "actual_mouse_or_key_shortcuts": false,
+      "focus_method": "Real registered manager input lookup for406 pipes and material USB files; official browser APIs open actual screen layouts. No simulated R/U keyboard presses.",
+      "tooltip_scope": "Actual native USB tooltip lines and EMI slot tooltip calls; screenshots do not show hovered tooltip overlays.",
+      "post_reload_index_ms": 39622,
+      "indexes_finished_before_pages": true,
+      "visual_scope": "Viewed actual three pages after index completion; Baking recipes absent; existing dev-mode warning overlay retained."
+    }
+  },
+  "attempts": [
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-forge-jei-initial.log",
+      "sha256": "131a1cf7c89eeaad5a697d3c1817b83b976e18b1d65d6f7edda1e5e33d75c251",
+      "gradle_exit": 1,
+      "accepted": false,
+      "failure": "Fixture used Collection.indexOf; compile failed before client launch"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-forge-jei-baseline.log",
+      "sha256": "a92af86199c133e4ec06ac322947eda7f2361b2ef1cff6c87f22afaf5f8b6cf4",
+      "gradle_exit": 0,
+      "accepted": false,
+      "failure": "Fixture linked optional EMI types in JEI-only launch, class missing before world creation; no baseline USB regression observation"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-neoforge-jei.log",
+      "sha256": "e5185b1811a475def948747e1308a4212105c86cc094b3bf4088322fc361fbbc",
+      "gradle_exit": 0,
+      "accepted": false,
+      "failure": "JEI19 changed record recipeLayout accessor to getRecipeLayout; fixture failed inspecting first live page, not a product GUI failure"
+    },
+    {
+      "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-neoforge-emi.log",
+      "sha256": "468d0be5a6e0a9ddbd6cbb5ecbcac3cead717005816b983245d4512d7aa7c369",
+      "gradle_exit": 0,
+      "accepted": "functional pages only; superseded for completed-index acceptance",
+      "finding": "Reload isLoaded is true while EmiRecipes.activeWorker still builds index. Initial screenshots showed Baking recipes. Final run gates both workers and finishes normally; no reload performance improvement claimed."
+    }
+  ],
+  "remaining": [
+    "Full survival acquisition and powered-machine chain",
+    "Independent saved-world material-file restart and old-save migration",
+    "HDD/cable/port and nonstandard physical-media recipe browsing",
+    "Real optional mod providers and EMI without JEI",
+    "Existing generic JEI-bridge duplicate/noncanonical synthetic-ID warnings; no zero-warning claim"
+  ],
+  "remote_scope": "No push or PR operation in this batch; prior human approval applied only to CI3fbbc442.",
+  "languages": {
+    "core/src/main/resources/assets/gregtech/lang/en_us.json": {
+      "values_unchanged": true,
+      "sha256": "05707ad42644116055ff716d8dd3fc99c1ffb11b7c5d4528a49658bf569da820"
+    },
+    "core/src/main/resources/assets/gregtech/lang/zh_cn.json": {
+      "values_unchanged": true,
+      "sha256": "fda9c7540872bde68f5c392f5505d69a8e4e8fab481dd8af24aa1b1a3bffcca0"
+    }
+  },
+  "readonly_sources_rechecked": 7,
+  "source_commit": "f81c74b5250d2fcc0eed607bdb7be911e7fe8321",
+  "ordinary_artifacts": {
+    "elapsed": "4m18s",
+    "build_jvm": "JDK21; platform Java targets17/21",
+    "log": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-build.log",
+    "log_sha256": "4d73286b9edf94afbbb00ffa0b64cd91084beec52139c292351d3d7294cd34e3",
+    "shared_classes": 720,
+    "platform_classes": {
+      "forge": 1758,
+      "neoforge": 1565
+    },
+    "verification_report": "C:\\Dev\\GregTech6\\work\\data-browser-20261006-artifacts.json",
+    "verification_report_sha256": "c047b15b051c64120370d4cd3e23c300a6ba6ac5e8316ce01bb5cf3c97b61536",
+    "stable_directory": "C:\\Dev\\GregTech6\\build\\verified\\20261006-162533Z-377d2c03",
+    "artifacts": {
+      "forge": {
+        "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+        "bytes": 41285614,
+        "sha256": "377d2c0371f7bbad07e47b40fec6125e1caeecd34667ecce9c9254713647b80c",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-162533Z-377d2c03\\gregtech6-1.20.1-forge-0.0.0.jar"
+      },
+      "neoforge": {
+        "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "bytes": 39505221,
+        "sha256": "13b8ff2c6573ab0f36f549c45cef84ec42491755b6c79bc3cba27eed61e4692b",
+        "zip_crc_checked": true,
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-162533Z-377d2c03\\gregtech6-neoforge-1.21.1-0.0.0.jar"
+      }
+    },
+    "core_contract_assertions": {
+      "core": 2472,
+      "machine": 34,
+      "material": 7947,
+      "thermal": 53
+    },
+    "probe_classes_excluded": true
+  },
+  "production": {
+    "forge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "forge",
+      "version": "1.20.1-Forge_47.4.26",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 57.52,
+      "installed_files_modified": false,
+      "version_json_sha256": "8f5956d1d4431a635b550d189a906cd60b4cded129fa6a1fbfed8328c8b2b8e1",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-162533Z-377d2c03\\gregtech6-1.20.1-forge-0.0.0.jar",
+        "sha256": "377d2c0371f7bbad07e47b40fec6125e1caeecd34667ecce9c9254713647b80c"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "d5d927f5a2baa2d4caab8099daf25c394623e052c3d0fcca026f4b58493be510"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-1.20.1-forge-0.0.0.jar",
+          "sha256": "377d2c0371f7bbad07e47b40fec6125e1caeecd34667ecce9c9254713647b80c",
+          "bytes": 41285614
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "d5d927f5a2baa2d4caab8099daf25c394623e052c3d0fcca026f4b58493be510",
+          "bytes": 37801
+        },
+        {
+          "name": "Jade-1.20.1-Forge-11.13.3.jar",
+          "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4",
+          "bytes": 553487
+        },
+        {
+          "name": "jei-1.20.1-forge-15.62.0.217.jar",
+          "sha256": "6ca167d7cd730c437618e6795971bdb451b84500883b0a5d0155af70bdc32b25",
+          "bytes": 2232172
+        },
+        {
+          "name": "mezz_config-1.20.1-forge-0.6.8.jar",
+          "sha256": "93d04b64ed5120350aed8a6d25efe5703fdbc720c233d7da3274feafd076c7e1",
+          "bytes": 364842
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-ab4b284a-adba-4f7e-8075-085e97171c52\\launch.log",
+      "log_sha256": "c69351f47a6f91a837918956b4ce710974f465b53722f5df602caf43d94ea646",
+      "receipt": {
+        "surfaceChecks": {
+          "materialBushInventoryModelsColorsNamesChecked": 1034,
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          },
+          "canvas": {
+            "originalCircuitTagGrades": 10,
+            "externalHighBatteryBoxRecipes": 5,
+            "originalMolecularDataFields": true,
+            "mercuryAmbientUnitMb": 1000,
+            "originalCanvasItemModels": 16,
+            "printedPageModels": 2,
+            "coloredBookScanHints": 28,
+            "directionalAndFluidFaces": 4,
+            "brightImage": true
+          },
+          "decorativePanels": {
+            "installedItemModels": 83,
+            "canonicalColoredModels": 48,
+            "canonicalWoodModels": 30,
+            "centeredTwoPixelMesh": true,
+            "sourceRgbAndTextures": true,
+            "legacyAliasesHiddenFromCreative": true,
+            "originalPerItemMaterialsAndAdvancedTooltip": 83,
+            "installedShredderEntries": 83,
+            "transportMaterialItemsAndShredderEntries": 436,
+            "originalTankGroupFormVariants": 10,
+            "resolvedTransportCraftingRows": 490,
+            "preferredTransportForms": 406,
+            "materialDataDisplay": {
+              "scans": 1003,
+              "prints": 1105,
+              "replications": 565
+            },
+            "usbFileDisplayTypes": 4
+          }
+        },
+        "platform": "forge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\forge-ab4b284a-adba-4f7e-8075-085e97171c52\\screenshots\\production-forge-06341243-76ad-4c06-afb5-4e25b888b8ce.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 182,
+        "loaderWarnings": 0,
+        "elapsedMs": 50520
+      },
+      "screenshot_sha256": "fc00c74435b5cb349b6f40c3cca5c69cbff36f0cbdd6bac4e76a6481b39800c2",
+      "visually_reviewed": true,
+      "visual_scope": "Viewed48 construction+30 wood title-screen item atlas. Four USB file types verified by actual distribution-code assertions, not shown as player browser GUI in this title-only probe."
+    },
+    "neoforge": {
+      "status": "passed",
+      "scope": "Actual distribution jar in isolated installed-loader client; title screen only",
+      "platform": "neoforge",
+      "version": "1.21.1-NeoForge_21.1.252",
+      "java": "C:\\Program Files\\Zulu\\zulu-25\\bin\\java.exe",
+      "java_version": "openjdk version \"25.0.2\" 2026-01-20 LTS\nOpenJDK Runtime Environment Zulu25.32+21-CA (build 25.0.2+10-LTS)\nOpenJDK 64-Bit Server VM Zulu25.32+21-CA (build 25.0.2+10-LTS, mixed mode, sharing)",
+      "exit_code": 0,
+      "elapsed_seconds": 65.98,
+      "installed_files_modified": false,
+      "version_json_sha256": "2bc1c6df818257a3543bad63115059e6e5f423ae86de49de9a3ccc48dda0e2e4",
+      "distribution": {
+        "path": "C:\\Dev\\GregTech6\\build\\verified\\20261006-162533Z-377d2c03\\gregtech6-neoforge-1.21.1-0.0.0.jar",
+        "sha256": "13b8ff2c6573ab0f36f549c45cef84ec42491755b6c79bc3cba27eed61e4692b"
+      },
+      "probe": {
+        "path": "C:\\Dev\\GregTech6\\neoforge\\build\\production-probe\\gregtech-delivery-probe-0.0.0.jar",
+        "sha256": "85712fd7b1f4eecec7a44cd67a3ebc216a40585cfee0471815f7705ff8553a8e"
+      },
+      "mods": [
+        {
+          "name": "gregtech6-neoforge-1.21.1-0.0.0.jar",
+          "sha256": "13b8ff2c6573ab0f36f549c45cef84ec42491755b6c79bc3cba27eed61e4692b",
+          "bytes": 39505221
+        },
+        {
+          "name": "gregtech-delivery-probe-0.0.0.jar",
+          "sha256": "85712fd7b1f4eecec7a44cd67a3ebc216a40585cfee0471815f7705ff8553a8e",
+          "bytes": 36582
+        },
+        {
+          "name": "emi-1.1.24+1.21.1+neoforge.jar",
+          "sha256": "b68691f94f0727fc517cac2ab55bd6658d1179cc8cc715fe610b60c37469bc4c",
+          "bytes": 1111538
+        },
+        {
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810",
+          "bytes": 726853
+        }
+      ],
+      "log": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-2c222543-09a8-44fc-8064-d60b35f20ca4\\launch.log",
+      "log_sha256": "5a87ba2b3d0cce6e45faa0ce37b55eec833c95df4489ef369df7c0b8bd5da84f",
+      "receipt": {
+        "surfaceChecks": {
+          "materialBushInventoryModelsColorsNamesChecked": 1034,
+          "surfaceItems": [
+            "gregtech:bush_cotton",
+            "gregtech:bush_blueberry",
+            "gregtech:bush_candleberry",
+            "gregtech:bush_cranberry",
+            "gregtech:bush_black_currants",
+            "gregtech:bush_white_currants",
+            "gregtech:bush_red_currants",
+            "gregtech:bush_blackberry",
+            "gregtech:bush_raspberry",
+            "gregtech:fluid_spring_liquid_extra_heavy_oil",
+            "gregtech:fluid_spring_liquid_heavy_oil",
+            "gregtech:fluid_spring_liquid_medium_oil",
+            "gregtech:fluid_spring_liquid_light_oil",
+            "gregtech:fluid_spring_gas_natural_gas",
+            "gregtech:fluid_spring_watergeothermal",
+            "gregtech:fluid_spring_lava"
+          ],
+          "machineItems": [
+            "lightning_galvanized_steel",
+            "lightning_aluminium",
+            "lightning_stainless_steel",
+            "lightning_chromium",
+            "lightning_titanium",
+            "melter_stainless_steel"
+          ],
+          "machineModelsChecked": 6,
+          "surfaceItemModelsChecked": 16,
+          "surfaceSpringSpritesChecked": 7,
+          "surfaceBerryStageColorsChecked": 36,
+          "sandwich": {
+            "customInventoryModelsChecked": 3,
+            "ingredientLayerCounts": [
+              10,
+              4,
+              6
+            ],
+            "sourceLayerTexturesChecked": 22,
+            "sourceSauceColorsChecked": 2,
+            "cans": {
+              "inventoryModelsChecked": 57,
+              "renderedCanSamples": [
+                "tiny_food_can_meat",
+                "small_food_can_fish",
+                "tall_food_can_vegetables",
+                "wide_food_can_fruits",
+                "large_food_can_bread",
+                "huge_food_can_cookies",
+                "canned_air",
+                "canned_hot_air",
+                "canned_space_air",
+                "huge_food_can_rotten",
+                "tiny_food_can_chum",
+                "empty_food_can"
+              ]
+            }
+          },
+          "canvas": {
+            "originalCircuitTagGrades": 10,
+            "externalHighBatteryBoxRecipes": 5,
+            "originalMolecularDataFields": true,
+            "mercuryAmbientUnitMb": 1000,
+            "originalCanvasItemModels": 16,
+            "printedPageModels": 2,
+            "coloredBookScanHints": 28,
+            "directionalAndFluidFaces": 4,
+            "brightImage": true
+          },
+          "decorativePanels": {
+            "installedItemModels": 83,
+            "canonicalColoredModels": 48,
+            "canonicalWoodModels": 30,
+            "centeredTwoPixelMesh": true,
+            "sourceRgbAndTextures": true,
+            "legacyAliasesHiddenFromCreative": true,
+            "originalPerItemMaterialsAndAdvancedTooltip": 83,
+            "installedShredderEntries": 83,
+            "transportMaterialItemsAndShredderEntries": 436,
+            "originalTankGroupFormVariants": 10,
+            "resolvedTransportCraftingRows": 490,
+            "preferredTransportForms": 406,
+            "materialDataDisplay": {
+              "scans": 1003,
+              "prints": 1105,
+              "replications": 565
+            },
+            "usbFileDisplayTypes": 4
+          }
+        },
+        "platform": "neoforge",
+        "screen": "net.minecraft.client.gui.screens.TitleScreen",
+        "screenshot": "C:\\Dev\\GregTech6\\build\\production-smoke\\neoforge-2c222543-09a8-44fc-8064-d60b35f20ca4\\screenshots\\production-neoforge-8f9ccc1c-2704-46ea-8461-19f71e317f2a.png",
+        "width": 1280,
+        "height": 720,
+        "renderedFrames": 181,
+        "elapsedMs": 56041
+      },
+      "screenshot_sha256": "072acc34027cfac4fb00844fea4511b79539c9f336d85883e3e5fb1df51c22a0",
+      "visually_reviewed": true,
+      "visual_scope": "Viewed48 construction+30 wood title-screen item atlas. Four USB file types verified by actual distribution-code assertions, not shown as player browser GUI in this title-only probe."
+    }
+  },
+  "post_start_artifact_crc_and_sha256_unchanged": true,
+  "observed_origin_main": "d31cc95ca9be243a2a992ed2bbcd89e35ca405ad"
+}

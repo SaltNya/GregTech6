@@ -1,0 +1,58 @@
+{
+  "batch": "data-browser-20261006",
+  "baseline": "cbd634f7585dc870d1158cf83365b7f7aeb2f652",
+  "files": [
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerMolecular.java",
+      "sha256": "1530afad7f0701d7bbb2b0061b97d3516a4ae995a44e30f92102e9b9a316c42a",
+      "bytes": 4248,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapPrinter.java",
+      "sha256": "84a1536f4865fa03c9670c529078fdbfaf273a531be331d1919e8f856d67508c",
+      "bytes": 13064,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapReplicator.java",
+      "sha256": "27842d2b10e83052f10a0985b5a289600185df5092a8fe4bafa2c18eee8d6bd3",
+      "bytes": 6905,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregapi\\data\\CS.java",
+      "sha256": "407edce9f541bcf34b6573d59e4ae14e477fb9c145439deddb831e2a2e2887a5",
+      "bytes": 153449,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    },
+    {
+      "path": "C:\\Dev\\gregtech6-master\\gregtech6-master\\src\\main\\java\\gregtech\\items\\behaviors\\Behavior_DataStorage.java",
+      "sha256": "077c822b00da36bb1192505b2089c431a4fd9cbf1c83474346c74882b615c12d",
+      "bytes": 1736,
+      "author": "GregTech-6 Team / Gregorius Techneticies",
+      "license": "LGPL-3.0-or-later"
+    }
+  ],
+  "adopted": "Original USB data and file-tier identity, source scanner/printer/replicator file-based lookup; browser adapter newly written for the current JEI/EMI APIs. Compound order normalized; list order, values/types retained. Names and other stack cosmetics excluded. Empty files share blank identity. Four existing physical stick tiers keep their existing item IDs.",
+  "platform_boundary": "Forge reads stack NBT; NeoForge reads CUSTOM_DATA through UsbDataMedia. No new storage key/registry item and no actual machine input predicate changed. Canonical NBT formatting stays at native boundaries, existing UsbDataRules is shared.",
+  "compared_references": [
+    {
+      "path": "C:\\Dev\\gregtech6_w-main\\gregtech6_w-main\\src\\main\\java\\gregapi\\recipes\\maps\\RecipeMapScannerMolecular.java",
+      "sha256": "70758dfe73da69de1ca0cf56a9ea1848bf21f896fde50ce160e0f014618848e4",
+      "adopted_code": false
+    },
+    {
+      "path": "C:\\Dev\\gregtech6yizhi-main\\gregtech6-main\\mdk\\src\\main\\java\\gregtech6\\recipes\\maps\\GT6RecipeMapScannerMolecular.java",
+      "sha256": "5bbfacb46599f91039e151c3b68f514d82cf001a082cee06a8fc99a36d4a247d",
+      "adopted_code": false
+    }
+  ],
+  "comparison": "Continue original and _w registered material/file data path; do not narrow resolution to the other reference MaterialPrefixItem implementation. No new reference code copied.",
+  "languages": "No new or changed language strings.",
+  "scope": "USB sticks 1-4 only; HDD selected file, cable/port browsing, document variants outside the material pages, optional packs and full survival/restart remain separate acceptance."
+}
