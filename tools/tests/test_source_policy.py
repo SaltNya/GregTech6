@@ -95,10 +95,61 @@ class SourcePolicyTests(unittest.TestCase):
                                         'import net.minecraft.gametest.framework.GameTest;'))
         self.assertTrue(boundary_errors(Path('src/main/java/Foo.java'),
                                         '@net.minecraft.gametest.framework.GameTest public void test() {}'))
+        self.assertTrue(boundary_errors(Path('src/main/java/Foo.java'),
+                                        'class Foo { net.minecraft.gametest.framework.GameTestHelper helper; }'))
         self.assertTrue(boundary_errors(Path('core/src/main/java/Foo.java'),
                                         'import net.minecraft.world.level.Level;', core=True))
         self.assertFalse(boundary_errors(Path('core/src/main/java/Foo.java'),
                                          '// import net.minecraft.world.level.Level;', core=True))
+
+    def test_fully_qualified_platform_types_cannot_bypass_core_boundary(self):
+        path = Path('core/src/main/java/Foo.java')
+        for source in ('class Foo { net.minecraft.world.level.Level level; }',
+                       'class Foo { net /* separator */ .\n minecraft.world.level.Level level; }',
+                       'class Foo { Object tag = net.neoforged.neoforge.common.Tags.class; }',
+                       'class Foo { com.gregtech.gregtech.platform.Adapter adapter; }',
+                       r'class Foo { n\u0065t.minecraft.world.level.Level level; }'):
+            with self.subTest(source=source):
+                self.assertTrue(boundary_errors(path, source, core=True))
+
+    def test_string_contents_are_not_code_or_imports(self):
+        source = '''// 中文说明中提到 import net.minecraft.Level;
+class Foo {
+    String example = """
+        import net.minecraft.Level;
+        @GameTest
+        """;
+    char quote = '"';
+    String escaped = "a \\"quote\\"; net.minecraft.Level";
+}
+'''
+        self.assertFalse(boundary_errors(Path('core/src/main/java/Foo.java'), source, core=True))
+
+    def test_chinese_strings_characters_and_text_blocks_use_language_resources(self):
+        path = Path('src/main/java/Foo.java')
+        for source in ('String name = "自拟中文";', "char letter = '中';",
+                       'String paragraph = """\n一段中文，内含 "引号"\n""";',
+                       r'String name = "\u4e2d\u6587";',
+                       r'String name = "\ud840\udc00";'):
+            with self.subTest(source=source):
+                errors = boundary_errors(path, source)
+                self.assertEqual(len(errors), 1)
+                self.assertIn('Chinese literal bypasses', errors[0])
+
+    def test_comments_and_literal_backslash_unicode_are_not_translations(self):
+        source = r'''// "中文注释" net.minecraft.Level
+/* Another "中文注释" */
+String encoded = "\\u4e2d";
+\u002f\u002f "中文注释" import net.minecraft.Level;
+'''
+        self.assertFalse(boundary_errors(Path('core/src/main/java/Foo.java'), source, core=True))
+
+    def test_chinese_literal_check_is_wired_into_full_source_gate(self):
+        path = self.repo / 'core/src/main/java/Foo.java'
+        path.parent.mkdir(parents=True)
+        path.write_text('class Foo {\n String bad = "自拟中文";\n}', encoding='utf8')
+        with self.assertRaisesRegex(ValueError, r'Chinese literal bypasses.*Foo.java:2'):
+            check(self.repo)
 
     def test_shadow_language_copy_fails(self):
         self.write_json(Path('neoforge/src/main/resources/assets/gregtech/lang/zh_cn.json'), self.good)
