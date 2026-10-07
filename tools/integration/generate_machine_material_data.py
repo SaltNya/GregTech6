@@ -346,7 +346,7 @@ def main():
                      32722: 'juicer', 32708: 'bathing_pot', 32707: 'bathing_pot_table',
                      32721: 'bathing_pot_wood', 32720: 'bathing_pot_table_wood'})
     # Port controllers and structural parts retain their original numeric identities.
-    bindings.update({17000: 'coke_oven_main', 17110: 'implosion_compressor_main',
+    bindings.update({17000: 'coke_oven_main', 17997: 'logistics_core', 17110: 'implosion_compressor_main',
                      17198: 'fusion_reactor_main', 17101: 'distillation_tower_main',
                      17111: 'cryo_distillation_main', 18000: 'coke_oven_wall',
                      18002: 'tank_wall', 18022: 'tank_wall_dense', 18023: 'implosion_compressor_wall',
