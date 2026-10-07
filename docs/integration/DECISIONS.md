@@ -752,3 +752,9 @@ Forge聚变由MachineBlockRegistration生成普通BlockItem；原方块缺append
 热交换器源min/rec/max相同，LH省略输出侧和范围；保留专用100%效率与Hot Fuels，而不是照普通加工机隐藏效率。避雷针有自定义VREC[6]32768包与16Amps，不能从不同的getEnergySizeOutputRecommended2048推导提示；雷击容量18000×32768。硬编码后缀无补丁键，保留原文本，颜色按原七白一黄一橙/绿色输出头。
 
 别名只是同一个原主块的既有身份，精准REV/采集映射查找与枚举均同步；不新增整座结构含料或猜电路材料。BlockItem实际方块hover入口双端接线，原高级材料事件保持单次。Forge旧主块强度与源10同步，BE/tick/保存格式未变；可变保存属性和热交换器公共HU查询/long流体差异另记，不借显示默认值掩盖。合批大验收仍遵守用户要求，只有30秒编译/7584来源断言接受，详见[本批](verification/utility-controller-20261007.md)。整个goal active。
+
+## 2026-10-07 / 传感器提示由原类键确定，材料解析含null登记
+
+原Sensor自定义七行覆盖父类而不super，Catalog保存21源ID/Description键，平台Kind仅运行边界；电力流/压力单位不能继续配泛化储能或普通液体实现。采用ElectricWire.lastWattage、CompressionSensorSource独立原始压缩语义，普通机器只计输入，锅炉只计蒸汽，源两比例使用整数截断。独立测量面源禁止显示面，扳手重设反向，保存默认兼容本模组旧缺键，不借它宣称原1.7.10存档/拆物品设置完成。
+
+Sensors null-NBT源登记可合法携带REV，生成器只为这组解析，避免把前方法aMat壳材料套入NULL传感器。采集显式1/徒手以及原硬度1抗爆3同步，未知标签/仪表数据不猜。新31023 source补丁没有汉化，原英文保留；原主快照缺PNG，采用_w同目录六CC0未改资产并保留许可回执。1m44s共享/双编译接受，31s补输入接口只受影响编译，不重复大测试；[完整边界](verification/sensor-source-20261007.md)。整体goal active。

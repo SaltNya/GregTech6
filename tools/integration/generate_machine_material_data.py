@@ -177,20 +177,22 @@ def main():
             previous_registry_id = current_id
             continue
         nbt = next((i for i, value in enumerate(a) if value.startswith('UT.NBT.make(')), None)
-        if nbt is None:
+        sensor = a[1].strip('"') == 'Sensors' and norm(a[8]) == 'null'
+        if nbt is None and not sensor:
             previous_registry_id = current_id
             continue
+        if sensor: nbt = 8
         patterns, keys = recipe(a[nbt + 1:])
         # Only literal registry IDs can be referenced by aRegistry.getItem(id).
         if current_id is None:
             previous_registry_id = None
             continue
         prior = list(re.finditer(r'aMat\s*=\s*([^;]+);', mte[:offset]))
-        casing = norm(prior[-1][1]) if prior else ''
+        casing = 'MT.NULL' if sensor else norm(prior[-1][1]) if prior else ''
         quality_material = casing
         declared = re.search(r'NBT_MATERIAL\s*,\s*([^,)]+)', a[nbt])
         if declared and norm(declared[1]) != 'aMat': casing = norm(declared[1])
-        nbt_values = next(calls(a[nbt], 'UT.NBT.make'))[1]
+        nbt_values = [] if sensor else next(calls(a[nbt], 'UT.NBT.make'))[1]
         nbt_parameters = {norm(nbt_values[i]): norm(nbt_values[i+1]) for i in range(0,len(nbt_values),2)}
         row = {'machine': machine_key(a[0]), 'tab': a[1].strip('"'), 'id': int(a[2]),
                'casing': casing, 'pattern': patterns, 'keys': keys, 'line': mte.count('\n', 0, offset) + 1,
@@ -309,6 +311,9 @@ def main():
                   ('arsenic_bronze', 24790), ('steel', 24820), ('titanium', 24830), ('tungstensteel', 24840),
                   ('iridium', 24850), ('iritanium', 24860), ('trinitanium', 24870), ('trinaquadalloy', 24880), ('adamantium', 24890)]
     bindings = {}
+    sensor_catalog = REPO / 'core/src/main/java/com/gregtech/gregtech/api/sensor/SensorCatalog.java'
+    for path, source_id in re.findall(r'new Entry\("([^"]+)",\s*"[^"]+",\s*(\d+),', masked(sensor_catalog.read_text(encoding='utf-8'))):
+        bindings[int(source_id)] = path
     for suffix, base in mechanical:
         for size in range(4): bindings[base + size] = f'axle_{suffix}_{size + 1}'
         bindings[base + 9] = f'gearbox_{suffix}'
