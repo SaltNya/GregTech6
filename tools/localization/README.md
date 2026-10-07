@@ -15,6 +15,8 @@ python -X utf8 tools/integration/check_source.py
 
 默认只检查，`--write` 才重建中文。报告单列没有原文绑定的英文回退项，不能把它们算成已汉化。需要新提示时，`tools/integration/import_source_tooltip_lang.py` 读取原 Java 声明并同时维护别名；全量来源发现工具 `tools/import_original_zh_cn.py --proposal ...` 只输出提案，不再覆盖语言或历史审计。
 
+扁平化物品按原注册编号导入：`tools/integration/import_numbered_localization.py --source <原版检出目录> --audit <新审计文件>` 默认输出提案，增加 `--write` 才写入。当前覆盖 80 种熊蜂的 8 种状态/说明，以及 35 种铁砧；核对双平台状态编号、实际物品表、原版完整种类表和材质身份，缺失或冲突即停止。原文空值也照搬，显示端跳过空说明行。
+
 旧 `generate_zh_cn.py`、`import_gt_lang.py`、`complete_registered_lang.py`、`generate_tech_lang.py`、`sync_standard_chinese.py` 转入统一入口，旧的拼词翻译表已退休。其它旧资源生成器若写回平台语言目录，源码检查会拒绝；更新它们时应只生成资源/英文，并通过本入口补原文绑定。
 
 `sourcePolicyCheck` 经 `:core:check` 接入双平台构建。它检查纯 Java core 边界、GameTest 隔离、平台语言副本、重复 JSON 键及所有译文。验包再次检查当前语言来源，并比较 JAR 内的两份语言文件与共享资源字节是否一致。
