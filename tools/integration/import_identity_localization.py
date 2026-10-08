@@ -15,8 +15,9 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from localization import ROOT, LANG_PATH, CONFIG_PATH, load_source, read_json, json_text, expected_chinese
 from generate_machine_material_data import calls, masked
-from source_language_common import STRING, material_key
+from source_language_common import STRING, material_key, counted_blocks
 from source_numbered_language import bumble_declarations, bumble_english
+from source_creative_language import creative_name_sources
 
 
 def any_material_names(original):
@@ -307,6 +308,8 @@ def material_fluid_english(original, identity_rows):
 def original_english(original):
     found, files = defaultdict(set), [original / 'src/main/java/gregapi/data/MT.java']
     declaration_count = 0
+    creative_files = creative_name_sources(original)
+    files.extend(creative_files)
     tools = tool_ids(original)
     wood_classes = {}
     woods_file = original/'src/main/java/gregtech/loaders/a/Loader_Woods.java'
@@ -327,6 +330,14 @@ def original_english(original):
         if text not in values:
             values.add(text)
             declaration_count += 1
+    def put_category(args, offset=None, creative_id=None):
+        if not creative_files or len(args)<4 or not re.fullmatch(STRING,args[1]):return
+        ident=args[3]
+        if ident=='aCreativeTabID' and creative_id is not None:ident=creative_id
+        if offset is not None:
+            match=re.fullmatch(r'aID\s*(?:\+\s*(\d+))?',ident)
+            if match:ident=str(offset+int(match[1] or 0))
+        if ident.isdigit():put('itemGroup.gt.multitileentity.'+ident,json.loads(args[1]))
     _,material_english,material_files,_=material_identities(original)
     files.extend(p for p in material_files if p not in files)
     for key,value in material_english.items():put(key,value)
@@ -383,13 +394,18 @@ def original_english(original):
         return next(iter(names)) if len(names) == 1 else None
     def name(expr, mat=None):
         # Preserve all literal whitespace/case. No word matching or translated-name inference.
-        parts = re.findall(STRING + r'|aMat\.getLocal\(\)|aMat\.mNameLocal|aDefaultLocalised|VN\[\d+\]|DYE_NAMES\[\d+\]|\+', expr)
+        explicit_material = r'(?:MT\.(?:STONES\.)?|ANY\.)\w+\s*\.\s*(?:getLocal\(\)|mNameLocal)'
+        parts = re.findall(STRING + '|' + explicit_material + r'|aMat\.getLocal\(\)|aMat\.mNameLocal|aDefaultLocalised|VN\[\d+\]|DYE_NAMES\[\d+\]|\+', expr)
         if re.sub(r'\s+', '', ''.join(parts)) != re.sub(r'\s+', '', expr):
             return None
         values = []
         for part in parts:
             if part == '+': continue
-            if part in ('aMat.getLocal()', 'aMat.mNameLocal', 'aDefaultLocalised'):
+            if re.fullmatch(explicit_material,part):
+                value=material(re.sub(r'\s*\.\s*(?:getLocal\(\)|mNameLocal)$','',part))
+                if value is None:return None
+                values.append(value)
+            elif part in ('aMat.getLocal()', 'aMat.mNameLocal', 'aDefaultLocalised'):
                 if mat is None: return None
                 values.append(mat)
             elif part.startswith('VN['):
@@ -402,6 +418,25 @@ def original_english(original):
                 values.append(dyes[index])
             else: values.append(json.loads(part))
         return ''.join(values)
+    if blocks_file.exists():
+        block_raw=masked(blocks_file.read_text(encoding='utf-8'))
+        wire_helper=original/'src/main/java/gregtech/blocks/tool/BlockLongDistWire.java'
+        wire_constructors=list(calls(block_raw,'new BlockLongDistWire'))
+        if wire_constructors:
+            formula=''.join(re.findall(STRING+r'|\S',masked(wire_helper.read_text(encoding='utf-8'))))
+            expected='for(bytei=0;i<16;i++)LH.add(aUnlocalised+"."+i,"Long Distance Electric Wire ("+VN[mTiers[i]]+")");'
+            if 'mTiers=aTiers;' not in formula or expected not in formula:
+                raise ValueError('Unsupported original long-distance wire name formula')
+            files.append(wire_helper)
+            for _,args in wire_constructors:
+                tiers=re.fullmatch(r'new byte\[\]\s*\{([\d,\s]+)\}',args[2]) if len(args)==3 else None
+                if tiers is None or not re.fullmatch(STRING,args[0]):
+                    raise ValueError('Unsupported original long-distance wire tiers')
+                values=[int(v.strip()) for v in tiers[1].split(',')]
+                if len(values)!=16 or any(v>=len(voltages) for v in values):
+                    raise ValueError('Invalid original long-distance wire tiers')
+                for i,tier in enumerate(values):
+                    put(json.loads(args[0])+'.'+str(i),'Long Distance Electric Wire ('+voltages[tier]+')')
     rocks_file=original/'src/main/java/gregtech/loaders/a/Loader_Rocks.java'
     if rocks_file.exists():
         stone_file=original/'src/main/java/gregapi/block/metatype/BlockStones.java'
@@ -456,6 +491,13 @@ def original_english(original):
         if path.name == 'MultiItemBumbles.java':
             for key, value in bumble_english(*bumble_declarations(raw)).items():
                 put(key, value)
+        multi_category = {'MultiItemBumbles':'bumblebee','MultiItemBooks':'books','MultiItemBottles':'bottles',
+                          'MultiItemCans':'cans','MultiItemFood':'food','MultiItemRandomTools':'randomtools',
+                          'MultiItemTechnological':'technological'}.get(path.stem)
+        if creative_files and multi_category:
+            for _,args in calls(raw,'new CreativeTab'):
+                if len(args)==4 and args[0]=='getUnlocalizedName()' and re.fullmatch(STRING,args[1]):
+                    put('itemGroup.gt.multiitem.'+multi_category,json.loads(args[1]))
         if path.name == 'Loader_Fluids.java':
             helper=original/'src/main/java/gregapi/data/FL.java'
             if helper.exists():
@@ -562,19 +604,33 @@ def original_english(original):
             if wire_calls:
                 wire_rows,helper_file=electric_wire_rows(original)
                 files.append(helper_file)
+                helper_categories=list(calls(masked(helper_file.read_text(encoding='utf-8')),'aRegistry.add'))
                 for _,args in wire_calls:
                     if not args[0].isdigit():continue
                     if args[8] not in ('T','F'):raise ValueError('Unsupported original electric cable availability')
+                    for _,row in helper_categories:put_category(row,int(args[0]),args[1])
                     for (kind,_),(offset,expression) in wire_rows.items():
                         if kind=='cable' and args[8]=='F':continue
                         value=name(expression,material(args[-1]))
                         if value is not None:put('gt.multitileentity.'+str(int(args[0])+offset),value)
             rows = list(calls(raw, 'aRegistry.add'))
             for pos, args in rows:
+                put_category(args)
                 if len(args)<3 or not args[2].isdigit(): continue
                 prior = list(re.finditer(r'aMat\s*=\s*([^;]+);',raw[:pos]))
                 value=name(args[0],material(prior[-1][1]) if prior else None)
                 if value is not None: put('gt.multitileentity.'+args[2],value)
+            for count,body in counted_blocks(raw):
+                if count>300:continue
+                for _,args in calls(body,'aRegistry.add'):
+                    offset=re.fullmatch(r'(?:i\s*\+\s*(\d+)|(\d+)\s*\+\s*i)',args[2])
+                    if not offset:continue
+                    for i in range(count):
+                        expression=re.sub(STRING+r'|VN\[i\]|\bi\b',lambda m:
+                            f'VN[{i}]' if m[0]=='VN[i]' else json.dumps(str(i)) if m[0]=='i' else m[0],args[0])
+                        value=name(expression)
+                        if value is None:raise ValueError('Unsupported original counted block name: '+args[0])
+                        put('gt.multitileentity.'+str(int(offset[1] or offset[2])+i),value)
             for line in raw.splitlines():
                 loop=re.search(r'for\s*\(int i = 0; i < (\d+); i\+\+\)',line)
                 if not loop or int(loop[1])>300:continue
@@ -587,6 +643,7 @@ def original_english(original):
                 if len(args)<7 or not args[6].isdigit(): continue
                 mat=material(args[5])
                 for _, row in calls(body,'aRegistry.add'):
+                    put_category(row)
                     offset=re.fullmatch(r'(?:(\d+)\s*\+\s*)?aID',row[2])
                     value=name(row[0],mat)
                     if offset and value is not None:
@@ -600,6 +657,7 @@ def original_english(original):
                     if not args[0].isdigit(): continue
                     mat=material(args[-1])
                     for _, row in helper_rows:
+                        put_category(row,int(args[0]),args[1])
                         offset=re.fullmatch(r'aID\s*(?:\+\s*(\d+))?',row[2])
                         value=name(row[0],mat)
                         if offset and value is not None:
@@ -607,6 +665,10 @@ def original_english(original):
         if path.name == 'OP.java':
             for key,text in re.findall(r'\bcreate\(\s*(' + STRING + r')\s*,\s*(' + STRING + ')',raw):
                 put('oredict.prefix.'+json.loads(key),json.loads(text))
+                if creative_files:
+                    if not re.search(r'createPrefix\(aName\)\.setCategoryName\(aCategory\)\.setLocalPrefixName\(aCategory\)',raw):
+                        raise ValueError('Unsupported original prefix category factory')
+                    put('itemGroup.'+json.loads(key),json.loads(text))
         if path.name == 'Loader_Rails.java':
             for helper in ('new BlockBaseRail','new BlockRailRoad'):
                 for _, args in calls(raw, helper):
@@ -775,7 +837,7 @@ def main():
                 continue
             if original in source_en:
                 english[key]=source_en[original]
-            elif len(fallbacks[key]) == 1 and key.startswith(('material.gregtech.','item.gregtech.tab_icon_', 'block.gregtech.bookshelf')):
+            elif len(fallbacks[key]) == 1 and key.startswith(('material.gregtech.','item.gregtech.tab_icon_', 'block.gregtech.bookshelf','itemGroup.gregtech.')):
                 english[key]=source_en.get(original,next(iter(fallbacks[key])))
             # Modern fluid paths are sanitized; reuse the existing English declaration.
             elif key.startswith('fluid_type.gregtech.'):

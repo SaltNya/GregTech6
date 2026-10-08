@@ -23,6 +23,16 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def validate_generated_language(language):
+    english = language.get('generatedNamesEnglish', {})
+    chinese = language.get('generatedNamesChinese', {})
+    expected = {'bees': 640, 'anvils': 35, 'books': 28, 'canvases': 16}
+    if (any(english.get(key) != value for key, value in expected.items())
+            or english.get('panels', 0) < 50 or english.get('creativeTabs', 0) < 100
+            or english != chinese):
+        raise ValueError('Production generated bilingual names/categories receipt is incomplete')
+
+
 def validate_language_inventory(inventory, language):
     candidates = inventory.get('candidates', [])
     missing = inventory.get('missingMaterialFormNames', [])
@@ -255,6 +265,7 @@ def launch(args):
             or language.get('machineNamesEnglish', 0) < 400 or language.get('machineNamesChinese', 0) < 400
             or language.get('newSourceDescriptions') != 1):
         raise ValueError('Production original-language/actual-fluid receipt is incomplete')
+    validate_generated_language(language)
     inventory_path = run / 'language-names.json'
     inventory = json.loads(inventory_path.read_text(encoding='utf-8'))
     validate_language_inventory(inventory, language)

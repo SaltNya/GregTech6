@@ -343,11 +343,15 @@ class LanguageIdentities {
             }
         });
         com.gregtech.gregtech.api.prefix.PrefixRegistry.ensurePrefixesLoaded();
-        for (var p : com.gregtech.gregtech.api.prefix.PrefixRegistry.all()) if (!p.isHiddenFromCreative())
+        for (var p : com.gregtech.gregtech.api.prefix.PrefixRegistry.all()) if (!p.isHiddenFromCreative()) {
             row("item.gregtech.tab_icon_" + p.getRegistryName(), "oredict.prefix." + com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(p.getName()), p.getDisplayName());
+            row("itemGroup.gregtech." + p.getRegistryName(), "itemGroup." + com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(p.getName()), p.getDisplayName());
+        }
         com.gregtech.gregtech.api.prefix.BlockPrefixRegistry.ensurePrefixesLoaded();
-        for (var p : com.gregtech.gregtech.api.prefix.BlockPrefixRegistry.all()) if (!p.isPartialCrate())
+        for (var p : com.gregtech.gregtech.api.prefix.BlockPrefixRegistry.all()) if (!p.isPartialCrate()) {
             row("item.gregtech.tab_icon_block_" + p.getRegistryName(), "oredict.prefix." + com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(p.getName()), p.getDisplayName());
+            row("itemGroup.gregtech." + p.getRegistryName(), "itemGroup." + com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(p.getName()), p.getDisplayName());
+        }
     }
     private static void prefixTemplate(String key, String prefix) {
         String fallback = com.gregtech.gregtech.api.material.OriginalMaterialNameRules.name(prefix,
