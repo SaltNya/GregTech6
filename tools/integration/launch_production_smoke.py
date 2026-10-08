@@ -28,7 +28,7 @@ def validate_generated_language(language):
     chinese = language.get('generatedNamesChinese', {})
     expected = {'bees': 640, 'anvils': 35, 'books': 28, 'canvases': 16}
     if (any(english.get(key) != value for key, value in expected.items())
-            or english.get('panels', 0) < 50 or english.get('creativeTabs', 0) < 100
+            or english.get('panels', 0) < 50 or english.get('creativeTabs', 0) < 100 or english.get('bottles', 0) < 100
             or english != chinese):
         raise ValueError('Production generated bilingual names/categories receipt is incomplete')
 
@@ -252,7 +252,7 @@ def launch(args):
             or language.get('sourceStoneNamesEnglish') != 544 or language.get('sourceStoneNamesChinese') != 544
             or language.get('bushNamesAndOutputsEnglish', 0) < 10
             or language.get('bushNamesAndOutputsEnglish') != language.get('bushNamesAndOutputsChinese')
-            or language.get('sourceTechnologyNamesEnglish') != 84 or language.get('sourceTechnologyNamesChinese') != 84
+            or language.get('sourceTechnologyNamesEnglish') != 86 or language.get('sourceTechnologyNamesChinese') != 86
             or language.get('additionalSourceBlockNamesEnglish') != (708 if args.platform == 'forge' else 707) or language.get('additionalSourceBlockNamesChinese') != (708 if args.platform == 'forge' else 707)
             or language.get('lootChestNamesEnglish') != 18 or language.get('lootChestNamesChinese') != 18
             or language.get('declaredFluidNamesEnglish',0) < 100

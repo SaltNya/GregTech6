@@ -11,6 +11,27 @@ from localization import ROOT, LANG_PATH, CONFIG_PATH, read_json, synchronize, c
 
 
 class StandardChineseTests(unittest.TestCase):
+    def test_import_preflight_checks_proposed_values_without_changing_accepted_files(self):
+        with tempfile.TemporaryDirectory(dir=ROOT/'work') as folder:
+            repo=Path(folder);config=repo/CONFIG_PATH;config.mkdir(parents=True)
+            accepted=config/'english_source.json'
+            accepted.write_text('{"values": {}}',encoding='utf-8')
+            before=accepted.read_bytes()
+            key='tooltip.gregtech.example'
+            english={key:'Original %s'}
+            aliases={key:'gt.original'}
+            source={'gt.original':'原文 %s'}
+            proposal={key:{'source_key':'gt.original','value':'Original %s'}}
+            self.assertEqual(check_english(repo,english,{key:'原文 %s'},aliases,source,pinned=proposal)
+                             ['exact_original_declarations'],1)
+            for en,zh in [({key:'Wrong %s'},{key:'原文 %s'}),
+                          (english,{key:'丢失参数'}),
+                          ({key:'Original %s', 'item.gregtech.empty':''},
+                           {key:'原文 %s', 'item.gregtech.empty':''})]:
+                with self.subTest(en=en,zh=zh),self.assertRaises(ValueError):
+                    check_english(repo,en,zh,aliases,source,pinned=proposal)
+            self.assertEqual(accepted.read_bytes(),before)
+
     def test_english_source_check_does_not_require_a_missing_chinese_translation(self):
         with tempfile.TemporaryDirectory(dir=ROOT/'work') as folder:
             repo=Path(folder);config=repo/CONFIG_PATH;config.mkdir(parents=True)

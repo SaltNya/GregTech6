@@ -20,6 +20,27 @@ public void make(int aSpeciesID, String aName, String aTooltip) {
 
 
 class NumberedLanguageTests(unittest.TestCase):
+    def test_original_null_fluid_name_uses_material_display_and_color_hint_uses_index_constant(self):
+        with self.temporary_root() as directory:
+            root=Path(directory);java,data=self.make_source(root)
+            (data/'MT.java').write_text('Foam=create(42,"Construction Foam").setLocal("C-Foam");',encoding='utf-8')
+            cs=data/'CS.java';cs.write_text(cs.read_text()+' DYE_INDEX_Blue=4;',encoding='utf-8')
+            helper=data/'FL.java'
+            text='''public static Fluid create(String aName, IIconContainer aTexture, String aLocalized, Object rest) {
+aName=aName.toLowerCase();
+aLocalized = (aLocalized==null?aMaterial==null||aMaterial==MT.NULL?UT.Code.capitaliseWords(aName):aMaterial.getLocal():aLocalized);
+LH.add(rFluid.getUnlocalizedName(),aLocalized);
+}'''
+            helper.write_text(text,encoding='utf-8')
+            (java/'Loader_Fluids.java').write_text('FL.create("external.foam",null,MT.Foam,1,100,300);',encoding='utf-8')
+            (java/'MultiItemBottles.java').write_text('addItem(32001,"Dye Bottle","Color: "+DYE_NAMES[DYE_INDEX_Blue ],OTHER);',encoding='utf-8')
+            values,_=original_english(root)
+            self.assertEqual(values['fluid.external.foam'],'C-Foam')
+            self.assertEqual(values['gt.multiitem.bottles.32001.tooltip'],'Color: Dye 4')
+            helper.write_text(text.replace('aMaterial.getLocal()','aMaterial.mNameInternal'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'null fluid display-name fallback'):
+                original_english(root)
+
     def make_source(self, root):
         java = root / 'src/main/java'
         data = java / 'gregapi/data'

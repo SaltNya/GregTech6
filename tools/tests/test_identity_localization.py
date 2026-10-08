@@ -3,6 +3,8 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
+import copy
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
 from import_identity_localization import (original_english, pipe_identities, wire_identities, numbered_item_identities,
@@ -29,7 +31,8 @@ class IdentityLanguageTests(unittest.TestCase):
             loader=java/'gregtech/loaders/a/Loader_Fluids.java';loader.parent.mkdir(parents=True)
             loader.write_text('',encoding='utf-8')
             helper=data/'FL.java'
-            helper.write_text('''return create(aMaterial.mNameInternal.toLowerCase(), aTexture, aMaterial.mNameLocal, aMaterial, 0);
+            helper.write_text('''aName=aName.toLowerCase(); LH.add(rFluid.getUnlocalizedName(),aLocalized);
+return create(aMaterial.mNameInternal.toLowerCase(), aTexture, aMaterial.mNameLocal, aMaterial, 0);
 return create("molten."+aMaterial.mNameInternal.toLowerCase(), aTexture, "Molten "+aMaterial.mNameLocal, aMaterial, 1);
 return create("plasma."+aMaterial.mNameInternal.toLowerCase(), aTexture, aMaterial.mNameLocal+" Plasma", aMaterial, 3);''',encoding='utf-8')
             rows=[]
@@ -41,6 +44,11 @@ return create("plasma."+aMaterial.mNameInternal.toLowerCase(), aTexture, aMateri
             values,_=material_fluid_english(root,rows)
             self.assertEqual(values,{'fluid.examplegas':'Original Gas','fluid.molten.examplegas':'Molten Original Gas',
                                      'fluid.plasma.examplegas':'Original Gas Plasma'})
+            data=material_identities(root);before=copy.deepcopy(data)
+            with patch('import_identity_localization.material_identities',side_effect=AssertionError('Duplicate material parse')):
+                self.assertEqual(material_fluid_english(root,rows,data)[0],values)
+                self.assertEqual(original_english(root,data)[0]['gt.material.ExampleGas'],'Original Gas')
+            self.assertEqual(data,before)
             helper.write_text(helper.read_text().replace('mNameInternal.toLowerCase()','mNameInternal.toUpperCase()'),encoding='utf-8')
             with self.assertRaisesRegex(ValueError,'Unsupported original generated fluid name formula'):
                 material_fluid_english(root,rows)
@@ -97,6 +105,38 @@ Duplicate = metal(99, "Second", 0);
                 'material.gregtech.crudesteel':{(8806,'gt.material.ClayCompound')},
             })
 
+    def test_antimatter_ids_and_placeholder_names_keep_different_proof_rules(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data';data.mkdir(parents=True)
+            material=java/'gregapi/oredict/OreDictMaterial.java';material.parent.mkdir(parents=True)
+            material.write_text('',encoding='utf-8')
+            (data/'MT.java').write_text('''Empty=create(0,"Empty");
+NULL=create(-1,"NULL");
+Placeholder=valgem(0,"Example Gem");
+Clash=create(4020,"Ordinary Test");''',encoding='utf-8')
+            anti=data/'AM.java'
+            declaration='''static OreDictMaterial create(int aID,String aNameOreDict) {
+ return OreDictMaterial.createMaterial(aID,aNameOreDict,aNameOreDict);
+}
+H,Hydrogen=H=create(4010,"Anti-Hydrogen");
+e,Positron=e=create(4005,"Positron");
+Clash=create(4020,"Antimatter Test");'''
+            anti.write_text(declaration,encoding='utf-8')
+            ids,names,files,ambiguous=material_identities(root)
+            self.assertEqual(ids[4010],'gt.material.AntiHydrogen')
+            self.assertEqual(ids[4005],'gt.material.Positron')
+            self.assertEqual(names['gt.material.AntiHydrogen'],'Anti-Hydrogen')
+            self.assertEqual(names['gt.material.ExampleGem'],'Example Gem')
+            self.assertEqual(names['gt.material.NULL'],'NULL')
+            self.assertNotIn(0,ids);self.assertNotIn(-1,ids);self.assertNotIn(4020,ids)
+            self.assertEqual(ambiguous['4020'],['gt.material.AntimatterTest','gt.material.OrdinaryTest'])
+            self.assertIn(anti,files)
+            self.assertEqual(dict(verified_material_proofs([
+                ('@material-proof.material.gregtech.placeholder','gt.material.ExampleGem','0')],ids)),{})
+            anti.write_text(declaration.replace('aID,aNameOreDict,aNameOreDict','aID,aNameOreDict,"Changed"'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'antimatter display-name factory'):
+                material_identities(root)
+
     def test_actual_material_key_takes_precedence_over_another_categories_field_alias(self):
         candidates={'gt.material.Gold','gt.material.Goldwood'}
         proofs={'material.gregtech.gold':{(790,'gt.material.Gold'),(9369,'gt.material.Goldwood')}}
@@ -106,6 +146,21 @@ Duplicate = metal(99, "Second", 0);
         proofs={'material.gregtech.co':{(270,'gt.material.Cobalt'),(9838,'gt.material.CarbonMonoxide')}}
         # Neither abbreviation is an actual registered material translation key.
         self.assertEqual(resolve_material_collision('material.gregtech.co',candidates,proofs),candidates)
+
+    def test_lazy_unused_names_do_not_replace_active_names_or_prove_ids(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data';data.mkdir(parents=True)
+            material=java/'gregapi/oredict/OreDictMaterial.java';material.parent.mkdir(parents=True)
+            material.write_text('',encoding='utf-8')
+            (data/'MT.java').write_text('''static OreDictMaterial unused(String aNameOreDict) {return create(-1, aNameOreDict);}
+Active=metal(42,"Same Name").setLocal("Active display");
+Lazy=unused("Same Name");
+Unnumbered=unused("Compatibility Gem").setLocal("Original Display");
+// Disabled=valgem(0,"Compatibility Gem").setLocal("Wrong old display");''',encoding='utf-8')
+            values,_=original_english(root)
+            self.assertEqual(values['gt.material.SameName'],'Active display')
+            self.assertEqual(values['gt.material.CompatibilityGem'],'Original Display')
+            self.assertNotIn('gt.material.CompatibilityGem',material_identities(root)[0].values())
 
     def test_original_literals_material_names_and_numeric_offsets(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:

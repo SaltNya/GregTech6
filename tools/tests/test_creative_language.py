@@ -6,7 +6,7 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
 from import_identity_localization import original_english
-from source_creative_language import creative_name_sources
+from source_creative_language import creative_name_sources, unused_prefix_names
 from source_language_common import counted_blocks
 
 
@@ -98,3 +98,25 @@ for (byte i = 0; i < 16; i++) LH.add(aUnlocalised+"."+i, "Long Distance Electric
             helper.write_text(helper.read_text().replace('i < 16', 'i < 15'), encoding='utf-8')
             with self.assertRaisesRegex(ValueError, 'wire name formula'):
                 original_english(root)
+
+    def test_unused_prefix_display_does_not_take_category_title(self):
+        with self.temporary() as directory:
+            root, java = self.source(directory)
+            helper=java/'gregapi/oredict/OreDictPrefix.java'
+            helper.write_text('''String tName = aName.replaceAll(" ", "").replaceAll("-", "");
+return rPrefix == null ? new OreDictPrefix(tName, aName) : rPrefix;
+mNameCategory = mNameLocal = aNameLocal;
+mNameLocal = aLocalName;''',encoding='utf-8')
+            (java/'gregapi/GT_API_Proxy_Client.java').write_text(
+                'LH.add("oredict.prefix." + tPrefix.mNameInternal, tPrefix.mNameLocal);',encoding='utf-8')
+            op='''return OreDictPrefix.createPrefix(aName).add(PREFIX_UNUSED);
+coin=unused("coin").setCategoryName("Coins");
+other=unused("another-name").setLocalPrefixName("Different Display").setCategoryName("Other Category");'''
+            values,files=unused_prefix_names(root,op)
+            self.assertEqual(values,{'oredict.prefix.coin':'coin', 'oredict.prefix.anothername':'Different Display'})
+            self.assertIn(helper,files)
+            with self.assertRaisesRegex(ValueError,'unused prefix override'):
+                unused_prefix_names(root,op.replace('"Different Display"','variable'))
+            helper.write_text(helper.read_text().replace('mNameLocal = aNameLocal','mNameLocal = "Wrong"'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'unused prefix name'):
+                unused_prefix_names(root,op)

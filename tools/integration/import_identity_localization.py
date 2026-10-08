@@ -13,11 +13,11 @@ import re
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from localization import ROOT, LANG_PATH, CONFIG_PATH, load_source, read_json, json_text, expected_chinese
+from localization import ROOT, LANG_PATH, CONFIG_PATH, load_source, read_json, json_text, expected_chinese, check_english
 from generate_machine_material_data import calls, masked
 from source_language_common import STRING, material_key, counted_blocks
 from source_numbered_language import bumble_declarations, bumble_english
-from source_creative_language import creative_name_sources
+from source_creative_language import creative_name_sources, unused_prefix_names
 
 
 def any_material_names(original):
@@ -57,40 +57,50 @@ def material_identities(original):
     material=original/'src/main/java/gregapi/oredict/OreDictMaterial.java'
     if not path.exists() or not material.exists():return {},{},[],{}
     by_id,english=defaultdict(set),defaultdict(set)
-    raw=masked(path.read_text(encoding='utf-8'))
-    for line in raw.splitlines():
-        # Element declarations use zero-argument factories; a few symbols are
-        # chained assignments (Ma, Magic = Ma = create(...)). Both still expose
-        # a literal positive ID and original name at the actual constructor.
-        row=re.search(r'(?:=|\breturn\b)\s*(\w+)\s*\(\s*(\d+)\s*,\s*('+STRING+')',line)
-        if not row or int(row[2])==0:continue
-        factory,ident=row[1],int(row[2])
-        name=json.loads(row[3]);key=material_key(name)
-        if key=='gt.material.':continue
-        by_id[ident].add(key)
-        local=re.findall(r'\.setLocal\s*\(\s*('+STRING+r')\s*\)',line)
-        if len(local)>1 or len(local)!=len(re.findall(r'\.setLocal\s*\(',line)):continue
-        if factory=='woodnormal' and not local:
-            args=next(calls(line,factory))[1]
-            if len(args)<3 or not re.fullmatch(STRING,args[2]):continue
-            local=[args[2]]
-        english[key].add(json.loads(local[0]) if local else name)
-    # Element factories may acquire a display override at their field assignment.
-    # Keep the factory's internal identity, but use the final mNameLocal value.
-    factories={m[1]:material_key(json.loads(m[2])) for m in re.finditer(
-        r'static\s+OreDictMaterial\s+(\w+)\s*\(\)\s*\{return\s+\w+\s*\(\s*\d+\s*,\s*('+STRING+')',raw)}
-    for line in raw.splitlines():
-        assignment=re.match(r'\s*\w+\s*=\s*(\w+)\s*\(\s*\)',line)
-        if assignment is None or assignment[1] not in factories:continue
-        key=factories[assignment[1]]
-        local=re.findall(r'\.setLocal\s*\(\s*('+STRING+r')\s*\)',line)
-        if not re.search(r'\.setLocal\s*\(',line):continue
-        if len(local)==1 and len(re.findall(r'\.setLocal\s*\(',line))==1:
-            english[key]={json.loads(local[0])}
-        else:english.pop(key,None)
+    tables=[path]
+    antimatter=original/'src/main/java/gregapi/data/AM.java'
+    if antimatter.exists():tables.append(antimatter)
+    for table in tables:
+        raw=masked(table.read_text(encoding='utf-8'))
+        if table==antimatter and 'OreDictMaterial.createMaterial(aID,aNameOreDict,aNameOreDict)' not in re.sub(r'\s+','',raw):
+            raise ValueError('Unsupported original antimatter display-name factory')
+        table_english=defaultdict(set)
+        for line in raw.splitlines():
+            # Element declarations use zero-argument factories; a few symbols are
+            # chained assignments (Ma, Magic = Ma = create(...)). Both still expose
+            # a literal ID and original name at the actual constructor.
+            row=re.search(r'(?:=|\breturn\b)\s*(\w+)\s*\(\s*(-?\d+)\s*,\s*('+STRING+')',line)
+            if not row:continue
+            factory,ident=row[1],int(row[2])
+            name=json.loads(row[3]);key=material_key(name)
+            if key=='gt.material.':continue
+            # Sentinel/validation names still have original English declarations,
+            # but ID zero/negative must never prove a native material's identity.
+            if ident>0:by_id[ident].add(key)
+            local=re.findall(r'\.setLocal\s*\(\s*('+STRING+r')\s*\)',line)
+            if len(local)>1 or len(local)!=len(re.findall(r'\.setLocal\s*\(',line)):continue
+            if factory=='woodnormal' and not local:
+                args=next(calls(line,factory))[1]
+                if len(args)<3 or not re.fullmatch(STRING,args[2]):continue
+                local=[args[2]]
+            table_english[key].add(json.loads(local[0]) if local else name)
+        # Element factories may acquire a display override at their field assignment.
+        # Keep the factory's internal identity, but use the final mNameLocal value.
+        factories={m[1]:material_key(json.loads(m[2])) for m in re.finditer(
+            r'static\s+OreDictMaterial\s+(\w+)\s*\(\)\s*\{return\s+\w+\s*\(\s*\d+\s*,\s*('+STRING+')',raw)}
+        for line in raw.splitlines():
+            assignment=re.match(r'\s*\w+\s*=\s*(\w+)\s*\(\s*\)',line)
+            if assignment is None or assignment[1] not in factories:continue
+            key=factories[assignment[1]]
+            local=re.findall(r'\.setLocal\s*\(\s*('+STRING+r')\s*\)',line)
+            if not re.search(r'\.setLocal\s*\(',line):continue
+            if len(local)==1 and len(re.findall(r'\.setLocal\s*\(',line))==1:
+                table_english[key]={json.loads(local[0])}
+            else:table_english.pop(key,None)
+        for key,values in table_english.items():english[key].update(values)
     ambiguous={str(k):sorted(v) for k,v in by_id.items() if len(v)!=1}
     return ({k:next(iter(v)) for k,v in by_id.items() if len(v)==1},
-            {k:next(iter(v)) for k,v in english.items() if len(v)==1},[path,material],ambiguous)
+            {k:next(iter(v)) for k,v in english.items() if len(v)==1},tables+[material],ambiguous)
 
 
 def verified_material_proofs(identity_rows, material_ids):
@@ -267,7 +277,7 @@ def wire_identities(original,symbols):
     return result,[loader,helper]
 
 
-def material_fluid_english(original, identity_rows):
+def material_fluid_english(original, identity_rows, material_data=None):
     """Verify names of actual native fluids against the original material/helper formula.
 
     Do not manufacture fluids for every material or borrow a translated solid's
@@ -287,7 +297,7 @@ def material_fluid_english(original, identity_rows):
         'plasma.':['returncreate("plasma."+aMaterial.mNameInternal.toLowerCase(),aTexture,aMaterial.mNameLocal+" Plasma",aMaterial,']}
     if not all(any(formula in raw for formula in values) for values in formulas.values()):
         raise ValueError('Unsupported original generated fluid name formula')
-    ids,names,files,_=material_identities(original)
+    ids,names,files,_=material_identities(original) if material_data is None else material_data
     targets={key:value for key,value,_ in identity_rows if key.startswith('fluid_type.gregtech.')}
     result={}
     for key,_,ident in identity_rows:
@@ -305,7 +315,7 @@ def material_fluid_english(original, identity_rows):
     return result,files+[helper,loader]
 
 
-def original_english(original):
+def original_english(original, material_data=None):
     found, files = defaultdict(set), [original / 'src/main/java/gregapi/data/MT.java']
     declaration_count = 0
     creative_files = creative_name_sources(original)
@@ -338,7 +348,7 @@ def original_english(original):
             match=re.fullmatch(r'aID\s*(?:\+\s*(\d+))?',ident)
             if match:ident=str(offset+int(match[1] or 0))
         if ident.isdigit():put('itemGroup.gt.multitileentity.'+ident,json.loads(args[1]))
-    _,material_english,material_files,_=material_identities(original)
+    _,material_english,material_files,_=material_identities(original) if material_data is None else material_data
     files.extend(p for p in material_files if p not in files)
     for key,value in material_english.items():put(key,value)
     material_text = masked((original / 'src/main/java/gregapi/data/MT.java').read_text(encoding='utf-8'))
@@ -351,6 +361,7 @@ def original_english(original):
     if re.search(r'OreDictMaterial\s+tier\s*\(String aNameOreDict\)\s*\{return create\(-1, aNameOreDict\)',material_text):
         for m in re.finditer(r'(\w+)\s*=\s*tier\s*\(\s*('+STRING+r')\s*\)',material_text):
             material_names[m[1]].add(json.loads(m[2]))
+            put(material_key(json.loads(m[2])),json.loads(m[2]))
     factories = {m[1]: json.loads(m[2]) for m in re.finditer(
         r'static\s+OreDictMaterial\s+(\w+)\s*\(\)\s*\{return\s+\w+\s*\(\s*\d+\s*,\s*(' + STRING + ')', material_text)}
     for line in material_text.splitlines():
@@ -369,7 +380,18 @@ def original_english(original):
     any_internal,any_names,any_files=any_material_names(original)
     files.extend(any_files)
     for symbol,internal in any_internal.items():put(material_key(internal),any_names[symbol])
-    voltages, dyes, dye_posts = [], [], []
+    # The separate, lazy Unused catalog can supply a name without proving a
+    # numeric material identity. Do not let its fallback replace an active name.
+    if re.search(r'OreDictMaterial\s+unused\s*\(String aNameOreDict\)\s*\{return create\(-1, aNameOreDict\)',material_text):
+        for line in material_text.splitlines():
+            row=re.search(r'\b\w+\s*=\s*unused\s*\(\s*('+STRING+r')\s*\)',line)
+            if row is None:continue
+            key=material_key(json.loads(row[1]))
+            if key in found:continue
+            local=re.findall(r'\.setLocal\s*\(\s*('+STRING+r')\s*\)',line)
+            if len(local)>1 or len(local)!=len(re.findall(r'\.setLocal\s*\(',line)):continue
+            put(key,json.loads(local[0] if local else row[1]))
+    voltages, dyes, dye_posts, dye_indices = [], [], [], {}
     cs = original / 'src/main/java/gregapi/data/CS.java'
     if cs.exists():
         match = re.search(r'\bVN\s*=\s*\{([^}]+)\}', masked(cs.read_text(encoding='utf-8')))
@@ -378,6 +400,7 @@ def original_english(original):
         if match: dyes = [json.loads(v.strip()) for v in match[1].split(',')]
         match = re.search(r'\bDYE_OREDICTS_POST\s*=\s*\{([^}]+)\}', masked(cs.read_text(encoding='utf-8')))
         if match: dye_posts = [json.loads(v.strip()) for v in match[1].split(',')]
+        dye_indices = {key:int(value) for key,value in re.findall(r'\b(DYE_INDEX_\w+)\s*=\s*(\d+)\b',masked(cs.read_text(encoding='utf-8')))}
         files.append(cs)
     def material(expr):
         any_match = re.fullmatch(r'ANY\.(\w+)', re.sub(r'\s+', '', expr))
@@ -394,6 +417,8 @@ def original_english(original):
         return next(iter(names)) if len(names) == 1 else None
     def name(expr, mat=None):
         # Preserve all literal whitespace/case. No word matching or translated-name inference.
+        expr=re.sub(STRING+r'|DYE_NAMES\[(DYE_INDEX_\w+)\s*\]',lambda m:
+            f'DYE_NAMES[{dye_indices[m[1]]}]' if m[1] in dye_indices else m[0],expr)
         explicit_material = r'(?:MT\.(?:STONES\.)?|ANY\.)\w+\s*\.\s*(?:getLocal\(\)|mNameLocal)'
         parts = re.findall(STRING + '|' + explicit_material + r'|aMat\.getLocal\(\)|aMat\.mNameLocal|aDefaultLocalised|VN\[\d+\]|DYE_NAMES\[\d+\]|\+', expr)
         if re.sub(r'\s+', '', ''.join(parts)) != re.sub(r'\s+', '', expr):
@@ -512,6 +537,13 @@ def original_english(original):
                 for _,args in calls(raw,'FL.create'):
                     if len(args)>=4 and all(re.fullmatch(STRING,arg) for arg in args[:2]):
                         put('fluid.'+json.loads(args[0]).lower(),json.loads(args[1]))
+                    elif len(args)>=4 and re.fullmatch(STRING,args[0]) and args[1]=='null' and args[2].startswith(('MT.','ANY.')):
+                        fallback='aLocalized=(aLocalized==null?aMaterial==null||aMaterial==MT.NULL?UT.Code.capitaliseWords(aName):aMaterial.getLocal():aLocalized);'
+                        if fallback not in formula:
+                            raise ValueError('Unsupported original null fluid display-name fallback')
+                        value=material(args[2])
+                        if value is None:raise ValueError('Unresolved original fluid material name: '+args[2])
+                        put('fluid.'+json.loads(args[0]).lower(),value)
                     elif len(args)>=11 and re.fullmatch(STRING,args[0]) and re.fullmatch(STRING,args[2]):
                         if not icon_overload:raise ValueError('Unsupported original fluid icon overload')
                         put('fluid.'+json.loads(args[0]).lower(),json.loads(args[2]))
@@ -663,6 +695,9 @@ def original_english(original):
                         if offset and value is not None:
                             put('gt.multitileentity.'+str(int(args[0])+int(offset[1] or 0)),value)
         if path.name == 'OP.java':
+            unused,unused_files=unused_prefix_names(original,raw)
+            files.extend(unused_files)
+            for key,text in unused.items():put(key,text)
             for key,text in re.findall(r'\bcreate\(\s*(' + STRING + r')\s*,\s*(' + STRING + ')',raw):
                 put('oredict.prefix.'+json.loads(key),json.loads(text))
                 if creative_files:
@@ -762,7 +797,8 @@ def main():
     aliases=read_json(ROOT/CONFIG_PATH/'aliases.json')
     english=read_json(ROOT/LANG_PATH/'en_us.json')
     initial_english=dict(english)
-    source_en,files=original_english(ns.source)
+    material_data=material_identities(ns.source)
+    source_en,files=original_english(ns.source,material_data)
     candidates=defaultdict(set)
     fallbacks=defaultdict(set)
     # Shared LH instructions/labels can reuse an identical unique source phrase.
@@ -790,10 +826,10 @@ def main():
     source_en.update(template_values)
     files.extend(template_files)
     for native,formula in template_bindings.items():candidates[native].add(formula)
-    generated_fluids,fluid_files=material_fluid_english(ns.source,identity_rows)
+    generated_fluids,fluid_files=material_fluid_english(ns.source,identity_rows,material_data)
     for key,value in generated_fluids.items():source_en.setdefault(key,value)
     files.extend(fluid_files)
-    material_ids,_,_,ambiguous_material_ids=material_identities(ns.source)
+    material_ids,_,_,ambiguous_material_ids=material_data
     material_proofs=verified_material_proofs(identity_rows,material_ids)
     symbols = {key.removeprefix('@symbol.'):original for key, original, _ in identity_rows
                if key.startswith('@symbol.')}
@@ -904,6 +940,7 @@ def main():
             'authors':'GregTech-6 Team / Gregorius Techneticies; original Java LGPL-3.0-or-later',
             'policy':'Chinese copied verbatim from pinned user file; local work only; conflicting modern symbol spellings are not inferred'}
     translated=expected_chinese(english,source,aliases)
+    report['english_preflight']=check_english(ROOT,english,translated,aliases,source,pinned=pinned)
     if ns.write:
         (ROOT/CONFIG_PATH/'aliases.json').write_text(json_text(aliases),encoding='utf-8')
         (ROOT/LANG_PATH/'en_us.json').write_text(json_text(english),encoding='utf-8')
