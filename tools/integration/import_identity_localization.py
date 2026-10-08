@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from localization import ROOT, LANG_PATH, CONFIG_PATH, load_source, read_json, json_text, expected_chinese
 from generate_machine_material_data import calls, masked
 from source_language_common import STRING, material_key
+from source_numbered_language import bumble_declarations, bumble_english
 
 
 def any_material_names(original):
@@ -305,6 +306,7 @@ def material_fluid_english(original, identity_rows):
 
 def original_english(original):
     found, files = defaultdict(set), [original / 'src/main/java/gregapi/data/MT.java']
+    declaration_count = 0
     tools = tool_ids(original)
     wood_classes = {}
     woods_file = original/'src/main/java/gregtech/loaders/a/Loader_Woods.java'
@@ -320,7 +322,11 @@ def original_english(original):
                                       masked(blocks_file.read_text(encoding='utf-8'))))
         files.append(blocks_file)
     def put(key, text):
-        found[key].add(text)
+        nonlocal declaration_count
+        values = found[key]
+        if text not in values:
+            values.add(text)
+            declaration_count += 1
     _,material_english,material_files,_=material_identities(original)
     files.extend(p for p in material_files if p not in files)
     for key,value in material_english.items():put(key,value)
@@ -352,13 +358,15 @@ def original_english(original):
     any_internal,any_names,any_files=any_material_names(original)
     files.extend(any_files)
     for symbol,internal in any_internal.items():put(material_key(internal),any_names[symbol])
-    voltages, dyes = [], []
+    voltages, dyes, dye_posts = [], [], []
     cs = original / 'src/main/java/gregapi/data/CS.java'
     if cs.exists():
         match = re.search(r'\bVN\s*=\s*\{([^}]+)\}', masked(cs.read_text(encoding='utf-8')))
         if match: voltages = [json.loads(v.strip()) for v in match[1].split(',')]
         match = re.search(r'\bDYE_NAMES\s*=\s*\{([^}]+)\}', masked(cs.read_text(encoding='utf-8')))
         if match: dyes = [json.loads(v.strip()) for v in match[1].split(',')]
+        match = re.search(r'\bDYE_OREDICTS_POST\s*=\s*\{([^}]+)\}', masked(cs.read_text(encoding='utf-8')))
+        if match: dye_posts = [json.loads(v.strip()) for v in match[1].split(',')]
         files.append(cs)
     def material(expr):
         any_match = re.fullmatch(r'ANY\.(\w+)', re.sub(r'\s+', '', expr))
@@ -375,13 +383,13 @@ def original_english(original):
         return next(iter(names)) if len(names) == 1 else None
     def name(expr, mat=None):
         # Preserve all literal whitespace/case. No word matching or translated-name inference.
-        parts = re.findall(STRING + r'|aMat\.getLocal\(\)|aDefaultLocalised|VN\[\d+\]|DYE_NAMES\[\d+\]|\+', expr)
+        parts = re.findall(STRING + r'|aMat\.getLocal\(\)|aMat\.mNameLocal|aDefaultLocalised|VN\[\d+\]|DYE_NAMES\[\d+\]|\+', expr)
         if re.sub(r'\s+', '', ''.join(parts)) != re.sub(r'\s+', '', expr):
             return None
         values = []
         for part in parts:
             if part == '+': continue
-            if part in ('aMat.getLocal()', 'aDefaultLocalised'):
+            if part in ('aMat.getLocal()', 'aMat.mNameLocal', 'aDefaultLocalised'):
                 if mat is None: return None
                 values.append(mat)
             elif part.startswith('VN['):
@@ -434,7 +442,7 @@ def original_english(original):
                     for index,expr in expressions.items():put(stem+'.'+str(index),name(expr,display))
     for path in sorted((original / 'src/main/java').rglob('*.java')):
         raw = masked(path.read_text(encoding='utf-8-sig'))
-        before = sum(map(len, found.values()))
+        before = declaration_count
         for key, text in re.findall(r'\bLH\.add\(\s*(' + STRING + r')\s*,\s*(' + STRING + ')', raw):
             put(json.loads(key), json.loads(text))
         if path.name == 'LH.java':
@@ -445,6 +453,9 @@ def original_english(original):
                     put(constants[args[0]],json.loads(args[1]))
                 elif len(args)>1 and all(re.fullmatch(STRING,arg) for arg in args[:2]):
                     put(json.loads(args[0]),json.loads(args[1]))
+        if path.name == 'MultiItemBumbles.java':
+            for key, value in bumble_english(*bumble_declarations(raw)).items():
+                put(key, value)
         if path.name == 'Loader_Fluids.java':
             helper=original/'src/main/java/gregapi/data/FL.java'
             if helper.exists():
@@ -455,9 +466,23 @@ def original_english(original):
                         or 'LH.add(rFluid.getUnlocalizedName(),aLocalized);' not in formula):
                     raise ValueError('Unsupported original fluid language registration')
                 files.append(helper)
+                icon_overload = re.search(r'\bcreate\(String aName,\s*IIconContainer aTexture,\s*String aLocalized,', helper_raw)
                 for _,args in calls(raw,'FL.create'):
                     if len(args)>=4 and all(re.fullmatch(STRING,arg) for arg in args[:2]):
                         put('fluid.'+json.loads(args[0]).lower(),json.loads(args[1]))
+                    elif len(args)>=11 and re.fullmatch(STRING,args[0]) and re.fullmatch(STRING,args[2]):
+                        if not icon_overload:raise ValueError('Unsupported original fluid icon overload')
+                        put('fluid.'+json.loads(args[0]).lower(),json.loads(args[2]))
+                for loop in re.finditer(r'for\s*\((?:byte|int) i = 0; i < (\d+); i\+\+\)\s*\{([^{}]+)\}',raw):
+                    for _,args in calls(loop[2],'FL.create'):
+                        if not args or 'DYE_OREDICTS_POST[i]' not in args[0]:continue
+                        prefix=re.fullmatch(r'('+STRING+r')\s*\+\s*DYE_OREDICTS_POST\[i\]\.toLowerCase\(\)',args[0])
+                        if not icon_overload or not prefix or len(args)<11 or int(loop[1])!=16 or len(dyes)!=16 or len(dye_posts)!=16:
+                            raise ValueError('Unsupported original colored fluid registration')
+                        for i in range(16):
+                            value=name(args[2].replace('DYE_NAMES[i]',f'DYE_NAMES[{i}]'))
+                            if value is None:raise ValueError('Unsupported original colored fluid display name')
+                            put('fluid.'+json.loads(prefix[1])+dye_posts[i].lower(),value)
         if path.name == 'ItemIntegratedCircuit.java':
             constructors=list(calls(raw,'super'))
             if len(constructors)!=1 or len(constructors[0][1])!=4:
@@ -477,7 +502,34 @@ def original_english(original):
                 for suffix, expr in [('',args[1]),('.tooltip',args[2])]:
                     value=name(expr)
                     if value is not None: put(f'gt.multiitem.{category}.{args[0]}{suffix}',value)
+            if category=='books':
+                for loop in re.finditer(r'for\s*\(int i = 0; i < (\d+); i\+\+\)\s*\{([^{}]+)\}',raw):
+                    rows=list(calls(loop[2],'addItem'))
+                    if not rows:continue
+                    if int(loop[1])!=11:raise ValueError('Unsupported original book color catalog')
+                    for _,args in rows:
+                        base=re.fullmatch(r'(?:(\d+)\s*\+\s*)?i',args[0])
+                        if not base:raise ValueError('Unsupported original book color ID')
+                        for i in range(11):
+                            for suffix,expr in [('',args[1]),('.tooltip',args[2])]:
+                                value=name(expr)
+                                if value is None:raise ValueError('Unsupported original book color name')
+                                put(f'gt.multiitem.books.{int(base[1] or 0)+i}{suffix}',value)
             if category=='randomtools':
+                # Canvas colors are a single-statement loop, unlike paired spray states below.
+                for line in raw.splitlines():
+                    loop=re.search(r'for\s*\(int i = 0; i < (\d+); i\+\+\)\s*addItem\(',line)
+                    if not loop:continue
+                    for _,args in calls(line,'addItem'):
+                        if len(args)<3 or 'DYE_NAMES[i]' not in args[1]:continue
+                        base=re.fullmatch(r'i\s*\+\s*(\d+)',args[0])
+                        if not base or int(loop[1])!=16 or len(dyes)!=16:
+                            raise ValueError('Unsupported original colored tool registration')
+                        for i in range(16):
+                            for suffix,expr in [('',args[1]),('.tooltip',args[2])]:
+                                value=name(expr.replace('DYE_NAMES[i]',f'DYE_NAMES[{i}]'))
+                                if value is None:raise ValueError('Unsupported original colored tool name')
+                                put(f'gt.multiitem.randomtools.{int(base[1])+i}{suffix}',value)
                 for loop in re.finditer(r'for\s*\(byte i = 0; i < 16; i\+\+\)\s*\{([^}]+)\}',raw):
                     if 'IL.SPRAY_CAN_DYES[i]' not in loop[1]:continue
                     rows=[args for _,args in calls(loop[1],'addItem')]
@@ -599,7 +651,7 @@ def original_english(original):
                 else:bases=[base]
                 for suffix,text in re.findall(r'LH\.add\(getUnlocalizedName\(\)\s*\+\s*(' + STRING + r')\s*,\s*(' + STRING + ')',body):
                     for base in bases:put(base+json.loads(suffix),json.loads(text))
-        if sum(map(len, found.values())) != before and path not in files: files.append(path)
+        if declaration_count != before and path not in files: files.append(path)
     return {k:next(iter(v)) for k,v in found.items() if len(v)==1}, files
 
 
@@ -629,6 +681,12 @@ def material_prefix_templates(original, identity_rows):
         if native in bindings and bindings[native]!=formula:raise ValueError('Conflicting native prefix template: '+native)
         values[formula]=templates[prefix];bindings[native]=formula
     return values,bindings,unsupported,paths
+
+
+def require_retained_english_checks(previous, current, english):
+    lost = sorted(key for key in previous if key in english and key not in current)
+    if lost:
+        raise ValueError('English source audit lost previously verified declarations: ' + ', '.join(lost[:12]))
 
 
 def main():
@@ -763,7 +821,13 @@ def main():
             english[key]=source_en[original]
     english_additions={key:{'value':value,'source_key':english_identities.get(key)}
                        for key,value in english.items() if key not in initial_english}
+    pinned={key:{'source_key':original,'value':source_en[original],
+                 **({'source_formula':'material_default_name'} if original.startswith('@material-form.default.') else {}),
+                 **({'chinese_source_missing':True} if key in english_only else {})}
+            for key,original in english_identities.items() if key in english and original in source_en}
+    require_retained_english_checks(read_json(ROOT/CONFIG_PATH/'english_source.json')['values'],pinned,english)
     report={'source_language_sha256':meta['sha256'],'new_bindings':added,'conflicts':conflicts,
+            'verified_english_declarations':len(pinned),
             'default_material_templates':template_bindings,'unsupported_native_prefixes':unsupported_prefixes,
             'templates_without_native_keys':sorted(key for key in template_bindings if key not in initial_english),
             'ambiguous_original_material_ids':ambiguous_material_ids,
@@ -782,10 +846,6 @@ def main():
         (ROOT/CONFIG_PATH/'aliases.json').write_text(json_text(aliases),encoding='utf-8')
         (ROOT/LANG_PATH/'en_us.json').write_text(json_text(english),encoding='utf-8')
         (ROOT/LANG_PATH/'zh_cn.json').write_text(json_text(translated),encoding='utf-8')
-        pinned={key:{'source_key':original,'value':source_en[original],
-                     **({'source_formula':'material_default_name'} if original.startswith('@material-form.default.') else {}),
-                     **({'chinese_source_missing':True} if key in english_only else {})}
-                for key,original in english_identities.items() if key in english and original in source_en}
         (ROOT/CONFIG_PATH/'english_source.json').write_text(json_text({
             'policy':'Exact original English for source declarations resolved by adopted identity; remaining port text checked separately',
             'values':pinned,'source_files':report['source_files']}),encoding='utf-8')

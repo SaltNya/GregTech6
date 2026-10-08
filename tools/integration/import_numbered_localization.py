@@ -10,8 +10,9 @@ import re
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from localization import (ROOT, CONFIG_PATH, LANG_PATH, expected_chinese, json_text,
+from localization import (ROOT, CONFIG_PATH, LANG_PATH, check_english, expected_chinese, json_text,
                           load_source, read_json)
+from source_numbered_language import bumble_declarations
 
 LITERAL = r'"((?:\\.|[^"\\])*)"'
 
@@ -29,10 +30,7 @@ def extract(repo, original):
 
     bee_file = original / 'src/main/java/gregtech/items/MultiItemBumbles.java'
     bees = read(bee_file)
-    original_species = {int(ident): (string(name), string(tooltip)) for ident, name, tooltip in
-                        re.findall(r'\bmake\(\s*(\d+)\s*,\s*' + LITERAL + r'\s*,\s*' + LITERAL, bees)}
-    original_types = {int(meta): string(suffix) for meta, suffix in
-                      re.findall(r'addItem\(aSpeciesID\+(\d+),\s*aName\s*\+\s*' + LITERAL + r'\s*,\s*aTooltip', bees)}
+    original_species, original_types = bumble_declarations(bees)
     catalog = read(repo / 'core/src/main/java/com/gregtech/gregtech/content/bumble/GTBumbleSpecies.java')
     species = re.findall(r'new Species\((\d+),\s*' + LITERAL + r',\s*' + LITERAL, catalog)
     type_maps = []
@@ -140,6 +138,9 @@ def main():
               'code_license': 'LGPL-3.0-or-later; original source headers retained in read-only checkout',
               'chinese_source': 'User-supplied pinned language file; copied verbatim including empty values; no publication.'}
     if ns.write:
+        # Do not let this specialized importer bypass the unified English gate.
+        # Source-name updates must be reviewed through the full identity importer.
+        check_english(ns.repo, en, translated, bindings, source)
         (ns.repo / CONFIG_PATH / 'aliases.json').write_text(json_text(bindings), encoding='utf-8')
         (ns.repo / LANG_PATH / 'en_us.json').write_text(json_text(en), encoding='utf-8')
         (ns.repo / LANG_PATH / 'zh_cn.json').write_text(json_text(translated), encoding='utf-8')

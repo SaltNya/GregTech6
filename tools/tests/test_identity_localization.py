@@ -6,12 +6,19 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
 from import_identity_localization import (original_english, pipe_identities, wire_identities, numbered_item_identities,
-                                          material_identities, material_fluid_english, verified_material_proofs, resolve_material_collision)
+                                          material_identities, material_fluid_english, verified_material_proofs, resolve_material_collision,
+                                          require_retained_english_checks)
 
 
 class IdentityLanguageTests(unittest.TestCase):
     def setUp(self):
         (Path(__file__).resolve().parents[2]/'work').mkdir(exist_ok=True)
+
+    def test_unparsed_original_must_not_remove_an_existing_english_check(self):
+        with self.assertRaisesRegex(ValueError,'previously verified.*item.active'):
+            require_retained_english_checks({'item.active':{},'item.removed':{}},{},{'item.active':'Name'})
+        require_retained_english_checks({'item.active':{},'item.removed':{}},
+                                       {'item.active':{},'item.added':{}},{'item.active':'Name'})
 
     def test_generated_fluid_english_requires_identity_but_not_a_chinese_translation(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
@@ -166,6 +173,7 @@ aMat = MT.DATA.Kinetic_T[0]; aRegistry.add("Hammer ("+aMat.getLocal()+")", "Mach
 aRegistry.add("Igniter ("+VN[1]+")", "Machines", 4, 0);
 aRegistry.add("Unsupported ("+VN[9]+")", "Machines", 5, 0);
 aMat = ANY.Steel; aRegistry.add("Any machine ("+aMat.getLocal()+")", "Machines", 6, 0);
+aMat = MT.Galvanized; aRegistry.add(aMat.mNameLocal+" Anvil", "Misc Tool Blocks", 7, 0);
 }''',encoding='utf-8')
             result,_=original_english(root)
             self.assertEqual(result['gt.multitileentity.1'],'Machine (Iron)')
@@ -174,6 +182,7 @@ aMat = ANY.Steel; aRegistry.add("Any machine ("+aMat.getLocal()+")", "Machines",
             self.assertEqual(result['gt.multitileentity.4'],'Igniter (LV)')
             self.assertNotIn('gt.multitileentity.5',result)
             self.assertEqual(result['gt.multitileentity.6'],'Any machine (Steel)')
+            self.assertEqual(result['gt.multitileentity.7'],'Galvanized Steel Anvil')
             self.assertEqual(result['gt.material.AnyIronSteel'],'Steel')
             self.assertEqual(result['gt.material.AnyCoalCarbon'],'Carbon')
             (data/'ANY.java').write_text('Steel = any("Any Iron-Steel");\nSteel.setLocal(VN[1]);',encoding='utf-8')
