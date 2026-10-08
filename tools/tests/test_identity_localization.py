@@ -6,12 +6,36 @@ import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
 from import_identity_localization import (original_english, pipe_identities, wire_identities, numbered_item_identities,
-                                          material_identities, verified_material_proofs, resolve_material_collision)
+                                          material_identities, material_fluid_english, verified_material_proofs, resolve_material_collision)
 
 
 class IdentityLanguageTests(unittest.TestCase):
     def setUp(self):
         (Path(__file__).resolve().parents[2]/'work').mkdir(exist_ok=True)
+
+    def test_generated_fluids_require_positive_material_id_and_documented_phase(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data';data.mkdir(parents=True)
+            (data/'MT.java').write_text('Gas = create(42, "Example Gas").setLocal("Original Gas");',encoding='utf-8')
+            material=java/'gregapi/oredict/OreDictMaterial.java';material.parent.mkdir(parents=True)
+            material.write_text('',encoding='utf-8')
+            loader=java/'gregtech/loaders/a/Loader_Fluids.java';loader.parent.mkdir(parents=True)
+            loader.write_text('',encoding='utf-8')
+            helper=data/'FL.java'
+            helper.write_text('''return create(aMaterial.mNameInternal.toLowerCase(), aTexture, aMaterial.mNameLocal, aMaterial, 0);
+return create("molten."+aMaterial.mNameInternal.toLowerCase(), aTexture, "Molten "+aMaterial.mNameLocal, aMaterial, 1);
+return create("plasma."+aMaterial.mNameInternal.toLowerCase(), aTexture, aMaterial.mNameLocal+" Plasma", aMaterial, 3);''',encoding='utf-8')
+            rows=[]
+            for native,source,ident in [('gas','examplegas','42'),('molten','molten.examplegas','42'),
+                    ('undocumented','plasma.examplegas','42'),('wrong','othergas','42'),('zero','examplegas','0')]:
+                rows.extend([('fluid_type.gregtech.'+native,'fluid.'+source,''),
+                             ('@fluid-proof.fluid_type.gregtech.'+native,'ExampleGas',ident)])
+            source={'fluid.examplegas':'source','fluid.molten.examplegas':'source','fluid.othergas':'source'}
+            values,_=material_fluid_english(root,rows,source)
+            self.assertEqual(values,{'fluid.examplegas':'Original Gas','fluid.molten.examplegas':'Molten Original Gas'})
+            helper.write_text(helper.read_text().replace('mNameInternal.toLowerCase()','mNameInternal.toUpperCase()'),encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Unsupported original generated fluid name formula'):
+                material_fluid_english(root,rows,source)
 
     def test_numeric_material_identity_preserves_case_and_local_overrides(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
@@ -25,6 +49,8 @@ Moonstone = gem(8452, "Moonstone", 0);
 Placeholder = valgem(00000, "Moonstone", 0);
 CrudeSteel = compound(8806, "Clay Compound", 0);
 static OreDictMaterial gold() {return metal(790, "Gold", 0);}
+static OreDictMaterial osmium() {return metal(760, "OsmiumElemental", 0);}
+Os = osmium().qual(3, 16, 1280, 4).setLocal("Osmium");
 Ma, Magic = Ma = create(4000, "Magic").setLocal("Magic");
 RenamedWood = woodnormal(9300, "Cinnamonwood", "Cinnawood", 0);
 ExplicitWood = woodnormal(9301, "Example Wood", "Factory name", 0).setLocal("Override");
@@ -45,6 +71,7 @@ Duplicate = metal(99, "Second", 0);
             self.assertEqual(ambiguous,{'99':['gt.material.First','gt.material.Second']})
             self.assertEqual(ids[42],'gt.material.Abcde')
             self.assertEqual(english['gt.material.MoonStone'],'Moon')
+            self.assertEqual(english['gt.material.OsmiumElemental'],'Osmium')
             self.assertEqual(english['gt.material.Cinnamonwood'],'Cinnawood')
             self.assertEqual(english['gt.material.ExampleWood'],'Override')
             self.assertNotIn('gt.material.Dynamic',english)
@@ -359,4 +386,28 @@ LH.add(mName + ".configuration", "Configuration: ");
             self.assertEqual(result['gt.integrated_circuit.configuration'],'Configuration: ')
             spray.write_text(spray.read_text().replace('mLastID+1','mLastID+2'),encoding='utf-8')
             with self.assertRaisesRegex(ValueError,'Unsupported original full/used spray'):
+                original_english(root)
+
+    def test_literal_fluid_names_preserve_spaces_case_and_ignore_unresolved_expressions(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data';data.mkdir(parents=True)
+            (data/'MT.java').write_text('',encoding='utf-8')
+            (data/'LH.java').write_text('add("loot.gt.books", "+Random Books+");\n'
+                                        'String LABEL="gt.lang.label"; add(LABEL,"Label: ");',encoding='utf-8')
+            helper=data/'FL.java';helper.write_text('aName = aName.toLowerCase(); LH.add(rFluid.getUnlocalizedName(), aLocalized);',encoding='utf-8')
+            (java/'Loader_Fluids.java').write_text('''
+FL.create("Molten HSLA", "Molten HSLA Steel", MT.HSLA, 1, 144, 1873);
+FL.create("aerotheum", "Zephyrean Aerotheum", null, 1, 1000, 300);
+FL.create(variable, "Not a literal identity", null, 1);
+FL.create("unresolved", prefix + " Fluid", null, 1);
+// FL.create("aerotheum", "Comment cannot override", null, 1);
+''',encoding='utf-8')
+            names,_=original_english(root)
+            self.assertEqual(names['fluid.molten hsla'],'Molten HSLA Steel')
+            self.assertEqual(names['fluid.aerotheum'],'Zephyrean Aerotheum')
+            self.assertEqual(names['loot.gt.books'],'+Random Books+')
+            self.assertEqual(names['gt.lang.label'],'Label: ')
+            self.assertNotIn('fluid.unresolved',names)
+            helper.write_text('aName = aName.toUpperCase(); LH.add(rFluid.getUnlocalizedName(), aLocalized);',encoding='utf-8')
+            with self.assertRaisesRegex(ValueError,'Unsupported original fluid language registration'):
                 original_english(root)

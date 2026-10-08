@@ -103,6 +103,15 @@ class LanguageIdentities {
             }
         }
         row("block.gregtech.fluid_jug", "gt.multitileentity.32740", "");
+        // Original chest 32745 enumerates ST.LOOT_TABLES as item variants using the lootchest shell.
+        for (String chest : com.gregtech.gregtech.content.loot.LootChestCatalog.ENTRIES) {
+            row("block.gregtech.loot_chest_" + chest.substring(0, chest.indexOf('|')),
+                    "gt.multitileentity.32745", "");
+            String label = com.gregtech.gregtech.content.storage.OriginalStorageTooltipData.lootKey(
+                    chest.substring(chest.indexOf('|') + 1));
+            if (label == null) throw new IllegalStateException("Unbound original loot label: " + chest);
+            row(label, label, "");
+        }
         row("item.gregtech.coin", "gt.multitileentity.32700", "");
         // RandomTools' original dye index and paired full/used metadata are retained by PaintingRules.
         for (var dye : com.gregtech.gregtech.content.tool.PaintingRules.DYES) {
@@ -277,11 +286,19 @@ class LanguageIdentities {
                     "gt.material." + material.getName(), Integer.toString(material.getId()));
         }
         // MultiItemBottles explicitly fills these fluids under the same content name (no container noun).
-        var waterNames = Map.of("grccore.saltwater", "gt.multiitem.bottles.1",
-                "tropicswater", "gt.multiitem.bottles.1", "stagnantwater", "gt.multiitem.bottles.7");
-        FluidCatalog.all().values().stream().distinct().forEach(f -> row(
-                "fluid_type.gregtech." + FluidCatalog.sanitizePath(f.registryName()),
-                waterNames.getOrDefault(f.registryName(), "fluid." + f.registryName()), ""));
+        var sourceFluidNames = Map.of("grccore.saltwater", "gt.multiitem.bottles.1",
+                "tropicswater", "gt.multiitem.bottles.1", "stagnantwater", "gt.multiitem.bottles.7",
+                // Both port IDs bind material 8637; Loader_Fluids uses a literal space for MT.HSLA.
+                "molten.hsla", "fluid.molten hsla", "molten.hslasteel", "fluid.molten hsla");
+        FluidCatalog.all().values().stream().distinct().forEach(f -> {
+            String key = "fluid_type.gregtech." + FluidCatalog.sanitizePath(f.registryName());
+            row(key, sourceFluidNames.getOrDefault(f.registryName(), "fluid." + f.registryName()), "");
+            String material = f.materialKey() == null ? FluidCatalog.boundMaterial(f.registryName()) : f.materialKey();
+            if (material != null) {
+                var mat = GTMaterialRegistry.get(material).resolve();
+                row("@fluid-proof." + key, mat.getName(), Integer.toString(mat.getId()));
+            }
+        });
         com.gregtech.gregtech.api.prefix.PrefixRegistry.ensurePrefixesLoaded();
         for (var p : com.gregtech.gregtech.api.prefix.PrefixRegistry.all()) if (!p.isHiddenFromCreative())
             row("item.gregtech.tab_icon_" + p.getRegistryName(), "oredict.prefix." + com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(p.getName()), p.getDisplayName());

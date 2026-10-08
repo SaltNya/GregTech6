@@ -61,7 +61,8 @@ def material_identities(original):
     material=original/'src/main/java/gregapi/oredict/OreDictMaterial.java'
     if not path.exists() or not material.exists():return {},{},[],{}
     by_id,english=defaultdict(set),defaultdict(set)
-    for line in masked(path.read_text(encoding='utf-8')).splitlines():
+    raw=masked(path.read_text(encoding='utf-8'))
+    for line in raw.splitlines():
         # Element declarations use zero-argument factories; a few symbols are
         # chained assignments (Ma, Magic = Ma = create(...)). Both still expose
         # a literal positive ID and original name at the actual constructor.
@@ -78,6 +79,19 @@ def material_identities(original):
             if len(args)<3 or not re.fullmatch(STRING,args[2]):continue
             local=[args[2]]
         english[key].add(json.loads(local[0]) if local else name)
+    # Element factories may acquire a display override at their field assignment.
+    # Keep the factory's internal identity, but use the final mNameLocal value.
+    factories={m[1]:material_key(json.loads(m[2])) for m in re.finditer(
+        r'static\s+OreDictMaterial\s+(\w+)\s*\(\)\s*\{return\s+\w+\s*\(\s*\d+\s*,\s*('+STRING+')',raw)}
+    for line in raw.splitlines():
+        assignment=re.match(r'\s*\w+\s*=\s*(\w+)\s*\(\s*\)',line)
+        if assignment is None or assignment[1] not in factories:continue
+        key=factories[assignment[1]]
+        local=re.findall(r'\.setLocal\s*\(\s*('+STRING+r')\s*\)',line)
+        if not re.search(r'\.setLocal\s*\(',line):continue
+        if len(local)==1 and len(re.findall(r'\.setLocal\s*\(',line))==1:
+            english[key]={json.loads(local[0])}
+        else:english.pop(key,None)
     ambiguous={str(k):sorted(v) for k,v in by_id.items() if len(v)!=1}
     return ({k:next(iter(v)) for k,v in by_id.items() if len(v)==1},
             {k:next(iter(v)) for k,v in english.items() if len(v)==1},[path,material],ambiguous)
@@ -257,6 +271,42 @@ def wire_identities(original,symbols):
     return result,[loader,helper]
 
 
+def material_fluid_english(original, identity_rows, source):
+    """A documented original fluid key plus positive material ID proves a helper name.
+
+    Do not manufacture fluids for every material or borrow a translated solid's
+    name. Only the user's original fluid keys and actual native material bindings
+    participate, and explicit FL.create declarations take precedence at the caller.
+    """
+    helper=original/'src/main/java/gregapi/data/FL.java'
+    loader=original/'src/main/java/gregtech/loaders/a/Loader_Fluids.java'
+    if not helper.exists() or not loader.exists():return {},[]
+    compact=lambda value: ''.join(re.findall(STRING+r'|\S',masked(value)))
+    raw=compact(helper.read_text(encoding='utf-8'))
+    formulas={
+        '': ['returncreate(aMaterial.mNameInternal.toLowerCase(),aTexture,aMaterial.mNameLocal,aMaterial,'],
+        'molten.':['returncreate("molten."+aMaterial.mNameInternal.toLowerCase(),aTexture,"Molten "+aMaterial.mNameLocal,aMaterial,'],
+        'plasma.':['returncreate("plasma."+aMaterial.mNameInternal.toLowerCase(),aTexture,aMaterial.mNameLocal+" Plasma",aMaterial,']}
+    if not all(any(formula in raw for formula in values) for values in formulas.values()):
+        raise ValueError('Unsupported original generated fluid name formula')
+    ids,names,files,_=material_identities(original)
+    targets={key:value for key,value,_ in identity_rows if key.startswith('fluid_type.gregtech.')}
+    result={}
+    for key,_,ident in identity_rows:
+        if not key.startswith('@fluid-proof.') or not ident.isdigit() or int(ident)<=0:continue
+        source_key=targets.get(key.removeprefix('@fluid-proof.'))
+        if source_key not in source:continue
+        material=ids.get(int(ident))
+        if material is None:continue
+        name=names.get(material)
+        if name is None:continue
+        internal=material.removeprefix('gt.material.').lower()
+        for phase in formulas:
+            if source_key=='fluid.'+phase+internal:
+                result[source_key]='Molten '+name if phase=='molten.' else name+' Plasma' if phase=='plasma.' else name
+    return result,files+[helper,loader]
+
+
 def original_english(original):
     found, files = defaultdict(set), [original / 'src/main/java/gregapi/data/MT.java']
     tools = tool_ids(original)
@@ -397,6 +447,21 @@ def original_english(original):
             for _,args in calls(raw,'add'):
                 if len(args)>1 and args[0] in constants and re.fullmatch(STRING,args[1]):
                     put(constants[args[0]],json.loads(args[1]))
+                elif len(args)>1 and all(re.fullmatch(STRING,arg) for arg in args[:2]):
+                    put(json.loads(args[0]),json.loads(args[1]))
+        if path.name == 'Loader_Fluids.java':
+            helper=original/'src/main/java/gregapi/data/FL.java'
+            if helper.exists():
+                helper_raw=masked(helper.read_text(encoding='utf-8'))
+                compact=lambda value: ''.join(re.findall(STRING+r'|\S',value))
+                formula=compact(helper_raw)
+                if ('aName=aName.toLowerCase();' not in formula
+                        or 'LH.add(rFluid.getUnlocalizedName(),aLocalized);' not in formula):
+                    raise ValueError('Unsupported original fluid language registration')
+                files.append(helper)
+                for _,args in calls(raw,'FL.create'):
+                    if len(args)>=4 and all(re.fullmatch(STRING,arg) for arg in args[:2]):
+                        put('fluid.'+json.loads(args[0]).lower(),json.loads(args[1]))
         if path.name == 'ItemIntegratedCircuit.java':
             constructors=list(calls(raw,'super'))
             if len(constructors)!=1 or len(constructors[0][1])!=4:
@@ -552,6 +617,7 @@ def main():
     source,meta=load_source()
     aliases=read_json(ROOT/CONFIG_PATH/'aliases.json')
     english=read_json(ROOT/LANG_PATH/'en_us.json')
+    initial_english=dict(english)
     source_en,files=original_english(ns.source)
     candidates=defaultdict(set)
     fallbacks=defaultdict(set)
@@ -576,6 +642,9 @@ def main():
         if key in english: candidates[key].add(original)
     files.extend(item_files)
     identity_rows = [line.split('\t') for line in ns.identities.read_text(encoding='utf-8-sig').splitlines()]
+    generated_fluids,fluid_files=material_fluid_english(ns.source,identity_rows,source)
+    for key,value in generated_fluids.items():source_en.setdefault(key,value)
+    files.extend(fluid_files)
     material_ids,_,_,ambiguous_material_ids=material_identities(ns.source)
     material_proofs=verified_material_proofs(identity_rows,material_ids)
     symbols = {key.removeprefix('@symbol.'):original for key, original, _ in identity_rows
@@ -586,7 +655,7 @@ def main():
     pipes.update({'@tool.'+key:'gt.metatool.01.'+value for key,value in tool_ids(ns.source).items()})
     files = sorted(set(files + pipe_files + wire_files))
     for key,original,fallback in identity_rows:
-        if key.startswith(('@symbol.','@material-proof.')): continue
+        if key.startswith(('@symbol.','@material-proof.','@fluid-proof.')): continue
         if key.startswith('material.gregtech.') and original.startswith('gt.material.'):
             original=material_key(original.removeprefix('gt.material.'))
         original = pipes.get(original, original)
@@ -649,13 +718,17 @@ def main():
                   if key not in aliases and original in source_en and key in english}
     english_identities={**english_only,**aliases}
     for key, original in sorted(english_identities.items()):
+        if key not in english and original in source_en:
+            english[key]=source_en[original]
         if key in english and original in source_en and english[key]!=source_en[original]:
             english_changes[key]={'before':english[key],'after':source_en[original],'source_key':original}
             english[key]=source_en[original]
+    english_additions={key:{'value':value,'source_key':english_identities.get(key)}
+                       for key,value in english.items() if key not in initial_english}
     report={'source_language_sha256':meta['sha256'],'new_bindings':added,'conflicts':conflicts,
             'ambiguous_original_material_ids':ambiguous_material_ids,
             'resolved_material_collisions':resolved_collisions,
-            'missing_original':missing,'ambiguous_symbols':ambiguous,'english_changes':english_changes,'added_tooltips':added_tooltips,
+            'missing_original':missing,'ambiguous_symbols':ambiguous,'english_changes':english_changes,'english_additions':english_additions,'added_tooltips':added_tooltips,
             'english_only_bindings':english_only,
             'source_files':[{'path':str(p.resolve()),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files],
             'identity_export_sha256':hashlib.sha256(ns.identities.read_bytes()).hexdigest(),
@@ -673,7 +746,7 @@ def main():
             'policy':'Exact original English for source declarations resolved by adopted identity; remaining port text checked separately',
             'values':pinned,'source_files':report['source_files']}),encoding='utf-8')
     ns.audit.write_text(json_text(report),encoding='utf-8')
-    print(json.dumps({k:len(report[k]) for k in ['new_bindings','conflicts','missing_original','ambiguous_symbols','english_changes','added_tooltips']}))
+    print(json.dumps({k:len(report[k]) for k in ['new_bindings','conflicts','missing_original','ambiguous_symbols','english_changes','english_additions','added_tooltips']}))
 
 
 if __name__=='__main__':main()
