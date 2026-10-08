@@ -15,13 +15,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from localization import ROOT, LANG_PATH, CONFIG_PATH, load_source, read_json, json_text, expected_chinese
 from generate_machine_material_data import calls, masked
-
-STRING = r'"(?:\\.|[^"\\])*"'
-
-
-def material_key(name):
-    internal=re.sub(r"[ \-'/]",'',name)
-    return 'gt.material.'+internal[:1].upper()+internal[1:]
+from source_language_common import STRING, material_key
 
 
 def any_material_names(original):
@@ -609,6 +603,34 @@ def original_english(original):
     return {k:next(iter(v)) for k,v in found.items() if len(v)==1}, files
 
 
+def material_prefix_templates(original, identity_rows):
+    from generate_material_names import prefix_rows, default_templates, empty_templates
+    base=original/'src/main/java'
+    paths=[base/'gregapi/data/OP.java',base/'gregapi/oredict/OreDictPrefix.java',base/'gregapi/lang/LanguageHandler.java']
+    op,helper,language=[masked(p.read_text(encoding='utf-8')) for p in paths]
+    templates=default_templates(prefix_rows(op,helper),language)
+    empty=empty_templates(language)
+    values,bindings,unsupported={},{},{}
+    for key,prefix,actual in identity_rows:
+        if key.startswith('@empty-template.'):
+            native=key.removeprefix('@empty-template.')
+            if prefix not in empty or empty[prefix]!=actual:raise ValueError('Unsupported original empty form: '+native)
+            original_key='oredict.'+prefix+'Empty'
+            values[original_key]=empty[prefix];bindings[native]=original_key
+            continue
+        if not key.startswith('@prefix-template.'):continue
+        native=key.removeprefix('@prefix-template.')
+        if prefix not in templates:
+            if actual:raise ValueError('Native name rule exists without original prefix: '+prefix)
+            unsupported[native]=prefix;continue
+        if templates[prefix]!=actual:
+            raise ValueError('Shared naming rule differs from original default template: '+native)
+        formula='@material-form.default.'+prefix
+        if native in bindings and bindings[native]!=formula:raise ValueError('Conflicting native prefix template: '+native)
+        values[formula]=templates[prefix];bindings[native]=formula
+    return values,bindings,unsupported,paths
+
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--source',type=Path,required=True)
@@ -644,6 +666,10 @@ def main():
         if key in english: candidates[key].add(original)
     files.extend(item_files)
     identity_rows = [line.split('\t') for line in ns.identities.read_text(encoding='utf-8-sig').splitlines()]
+    template_values,template_bindings,unsupported_prefixes,template_files=material_prefix_templates(ns.source,identity_rows)
+    source_en.update(template_values)
+    files.extend(template_files)
+    for native,formula in template_bindings.items():candidates[native].add(formula)
     generated_fluids,fluid_files=material_fluid_english(ns.source,identity_rows)
     for key,value in generated_fluids.items():source_en.setdefault(key,value)
     files.extend(fluid_files)
@@ -657,7 +683,7 @@ def main():
     pipes.update({'@tool.'+key:'gt.metatool.01.'+value for key,value in tool_ids(ns.source).items()})
     files = sorted(set(files + pipe_files + wire_files))
     for key,original,fallback in identity_rows:
-        if key.startswith(('@symbol.','@material-proof.','@fluid-proof.')): continue
+        if key.startswith(('@symbol.','@material-proof.','@fluid-proof.','@prefix-template.','@empty-template.')): continue
         if key.startswith('material.gregtech.') and original.startswith('gt.material.'):
             original=material_key(original.removeprefix('gt.material.'))
         original = pipes.get(original, original)
@@ -680,6 +706,7 @@ def main():
             ambiguous[key]=sorted(originals);continue
         original=next(iter(originals))
         if key not in english:
+            if key in template_bindings:continue  # Compatibility-only prefixes need no unused language keys.
             if key.startswith('fluid_type.gregtech.') and original not in source and key not in aliases:
                 # Native describe() already localizes the material when no complete
                 # fluid name is declared. Adding English here would shadow that
@@ -737,6 +764,8 @@ def main():
     english_additions={key:{'value':value,'source_key':english_identities.get(key)}
                        for key,value in english.items() if key not in initial_english}
     report={'source_language_sha256':meta['sha256'],'new_bindings':added,'conflicts':conflicts,
+            'default_material_templates':template_bindings,'unsupported_native_prefixes':unsupported_prefixes,
+            'templates_without_native_keys':sorted(key for key in template_bindings if key not in initial_english),
             'ambiguous_original_material_ids':ambiguous_material_ids,
             'resolved_material_collisions':resolved_collisions,
             'missing_original':missing,'ambiguous_symbols':ambiguous,'english_changes':english_changes,'english_additions':english_additions,'added_tooltips':added_tooltips,
@@ -754,6 +783,7 @@ def main():
         (ROOT/LANG_PATH/'en_us.json').write_text(json_text(english),encoding='utf-8')
         (ROOT/LANG_PATH/'zh_cn.json').write_text(json_text(translated),encoding='utf-8')
         pinned={key:{'source_key':original,'value':source_en[original],
+                     **({'source_formula':'material_default_name'} if original.startswith('@material-form.default.') else {}),
                      **({'chinese_source_missing':True} if key in english_only else {})}
                 for key,original in english_identities.items() if key in english and original in source_en}
         (ROOT/CONFIG_PATH/'english_source.json').write_text(json_text({

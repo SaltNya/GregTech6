@@ -57,3 +57,5 @@ python -X utf8 tools/integration/import_identity_localization.py --source <原�
 流体英文同时读取原 `FL.create` 字面量及实际正数材料 ID 对应的生成公式；显式名称优先，保留材料 `setLocal` 的最终显示名。英文公式检查独立于原中文键是否存在；它证明当前流体的命名规则，不证明原版生成过该流体。已有完整键和旧路径一并核对。缺完整中文且没有完整英文键的流体保留材料本地化后备，避免补英文时遮住现有中文；报告单列 `runtime_fluid_fallbacks`。成品探针对已声明名称和材料后备逐项验证实际回调。战利品箱复用原 32745 家族名，18 张表的来源提示使用原 `loot.*`，已生成战利品的物品状态不再宣传未开启内容。
 
 原英文存在、原中文缺失时，身份导入器仍将英文固定到 `english_source.json`，并标记 `chinese_source_missing: true`。语言门禁核对该原键确实不在用户补丁中、没有相冲突的中文别名，且中文暂用完全相同的英文；不能用这个标记绕过已有原译文。报告将此类条目单独计数，不将其当成汉化完成。
+
+材料形态完整名称使用共享原 `LanguageHandler.getLocalName` 分支；默认前缀语言模板也独立核对原 OP 前后缀和箱/块递归，不能把 Gems 等前缀类别复数当作内容物名称。身份导出携带实际 native 键及共享规则的普通材料结果，与开发端读取的原规则比较。`english_source.json` 中的 `@material-form.default.*` 明确是公式标识、不是伪造的原语言键，另有 `source_formula: material_default_name` 标记。无源的玻璃管/单位等不套其它形态；25个当前没有语言键的兼容前缀只审计，不凭空添加条目。五种空箭/空弹壳的独立模板沿原 Empty 分支和真实 `oredict.*Empty` 中文绑定。上述模板核对与全形态实际名称自检互补。

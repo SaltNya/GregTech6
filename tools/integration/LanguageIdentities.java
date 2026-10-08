@@ -16,6 +16,16 @@ class LanguageIdentities {
         GTMaterialRegistry.setLogSink((warning, message) -> {});
         GTMaterialRegistry.init();
         FluidDefinitions.prepare();
+        // Export the actual native key and shared fallback; the importer checks it independently against OP/LH.
+        for (var prefix : com.gregtech.gregtech.api.prefix.PrefixRegistry.all()) {
+            prefixTemplate("item.gregtech." + prefix.getRegistryName(), prefix.getName());
+            if (prefix.hasEmptyAmmunitionForm())
+                row("@empty-template.item.gregtech." + prefix.getRegistryName() + "_empty", prefix.getName(),
+                        com.gregtech.gregtech.api.material.OriginalMaterialNameRules.name(prefix.getName(),
+                                com.gregtech.gregtech.api.material.MaterialSentinels.Empty, m -> "Empty", false));
+        }
+        for (var prefix : com.gregtech.gregtech.api.prefix.BlockPrefixRegistry.all())
+            prefixTemplate("block.gregtech." + prefix.getRegistryName(), prefix.getName());
         for (var field : com.gregtech.gregtech.data.ImportedMaterialData.class.getFields()) {
             if (field.getType() != GTMaterial.class) continue;
             var material = (GTMaterial) field.get(null);
@@ -318,6 +328,12 @@ class LanguageIdentities {
         com.gregtech.gregtech.api.prefix.BlockPrefixRegistry.ensurePrefixesLoaded();
         for (var p : com.gregtech.gregtech.api.prefix.BlockPrefixRegistry.all()) if (!p.isPartialCrate())
             row("item.gregtech.tab_icon_block_" + p.getRegistryName(), "oredict.prefix." + com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(p.getName()), p.getDisplayName());
+    }
+    private static void prefixTemplate(String key, String prefix) {
+        String fallback = com.gregtech.gregtech.api.material.OriginalMaterialNameRules.name(prefix,
+                com.gregtech.gregtech.api.material.MaterialSentinels.Invalid, m -> "%s", false);
+        row("@prefix-template." + key, com.gregtech.gregtech.api.prefix.PrefixRegistry.sourceName(prefix),
+                fallback == null ? "" : fallback);
     }
     private static void row(String key, String original, String fallback) {
         if ((key + original + fallback).matches("(?s).*[\\t\\r\\n].*"))

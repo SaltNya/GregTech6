@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 import re
 
-from import_identity_localization import STRING, material_key
+from source_language_common import STRING, material_key
 from generate_machine_material_data import calls, masked
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -71,6 +71,39 @@ def prefix_rows(text,helper):
     if '.setLocalItemName(' in text.replace('.setLocalItemName(aPreMaterial, aPostMaterial)',''):
         raise ValueError('Additional source prefix display override')
     return rows
+
+
+def empty_templates(language):
+    result={}
+    for match in re.finditer(r'if\s*\(\s*aMaterial\s*==\s*MT\.Empty\s*\)\s*\{', language):
+        start=language.index('{', match.start())
+        body=language[start+1:block_end(language,start)-1]
+        for prefix,literal in re.findall(r'if\s*\(\s*aPrefix\s*==\s*OP\.(\w+)\s*\)\s*return\s+('+STRING+r')\s*;',body):
+            value=json.loads(literal)
+            if prefix in result and result[prefix]!=value:raise ValueError('Ambiguous empty material name: '+prefix)
+            result[prefix]=value
+    return result
+
+
+def default_templates(prefixes, language):
+    """Generic (non-special material, no material flags, non-April) original names."""
+    if not re.search(r'return\s+aPrefix\.mMaterialPre\s*\+\s*aMaterial\.mNameLocal\s*\+\s*aPrefix\.mMaterialPost\s*;', language):
+        raise ValueError('Unsupported original default material name')
+    recursions={}
+    pattern=r'if\s*\(([^)]+)\)\s*return\s+aPrefix\.mMaterialPre\s*\+\s*getLocalName\(OP\.(\w+)\s*,\s*aMaterial\);'
+    matches=list(re.finditer(pattern,language))
+    if len(matches)!=len(re.findall(r'getLocalName\(OP\.',language)):
+        raise ValueError('Unsupported original recursive material name')
+    for match in matches:
+        for expression in match[1].split('||'):
+            prefix=re.fullmatch(r'\s*aPrefix\s*==\s*OP\.(\w+)\s*',expression)
+            if not prefix:raise ValueError('Unsupported original recursive prefix condition')
+            recursions[prefix[1]]=match[2]
+    def template(name,seen=()):
+        if name not in prefixes or name in seen:raise ValueError('Missing or cyclic original recursive prefix: '+name)
+        before,after,_=prefixes[name]
+        return before+(template(recursions[name],(*seen,name)) if name in recursions else '%s'+after)
+    return {name:template(name) for name in prefixes}
 
 
 def generate(source):
