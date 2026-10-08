@@ -246,8 +246,9 @@ def launch(args):
             or language.get('lootChestNamesEnglish') != 18 or language.get('lootChestNamesChinese') != 18
             or language.get('declaredFluidNamesEnglish',0) < 100
             or language.get('declaredFluidNamesEnglish') != language.get('declaredFluidNamesChinese')
-            or language.get('materialFluidFallbackNamesEnglish') != 14
-            or language.get('materialFluidFallbackNamesChinese') != 14
+            or language.get('materialFluidFallbackNamesEnglish') != 12
+            or language.get('materialFluidFallbackNamesChinese') != 12
+            or language.get('originalEnglishMaterialFormSamples') != 18
             or language.get('coinNamesAndMaterialsEnglish', 0) < 500
             or language.get('coinNamesAndMaterialsEnglish') != language.get('coinNamesAndMaterialsChinese')
             or language.get('machineNamesEnglish', 0) < 400 or language.get('machineNamesChinese', 0) < 400
