@@ -1,5 +1,9 @@
 # 验证账本
 
+## 2026-10-08 / 旧名称和工具说明的正式双语回调
+
+54快检1.193s、2602源码门禁2.831s、源文件/幂等通过；双build3m1s（23执行/14复用，四core行为组复用）、790共享类/当前原生字节/双语资源/CRC验包。Forge53.94s、Neo46.59s实际客户端退出0，各10说明，中英708/707附加名称及75856/75855物品扫描通过。首次Neo探针错误要求Forge独有fusion_reactor_wall，已拒绝记录；22s只重编Neo探针，普通JAR未变。两既有预览PNG查看，不声称新世界/玩家悬停。稳定014141Z，运行/验包/副本哈希一致，包含055批待验模板。完整汉化尚未完成，详见[本批](verification/language-legacy-names-20261008.md)、[回执](verification/language-legacy-names-source-20261008.json)。
+
 ## 2026-10-08 / 默认材料模板的双实现对照
 
 Java17当前core身份导出成功，154原默认模板/5Empty结果与源解析器一致；129现有模板及5Empty声明写入英文门禁。54快检1.220s、2602源码门禁2.853s、原中文全文件校验、重复导入零变更、生成Java字节不变通过。中英各0新键、英文86/中文91值变动；没有生产Java改动、普通构建或游戏运行。010302Z最后成品不含本批，后续合并验收，不以本批工具检查冒充游戏。详见[本批](verification/language-prefix-template-20261008.md)、[来源回执](verification/language-prefix-template-source-20261008.json)。

@@ -59,3 +59,5 @@ python -X utf8 tools/integration/import_identity_localization.py --source <原�
 原英文存在、原中文缺失时，身份导入器仍将英文固定到 `english_source.json`，并标记 `chinese_source_missing: true`。语言门禁核对该原键确实不在用户补丁中、没有相冲突的中文别名，且中文暂用完全相同的英文；不能用这个标记绕过已有原译文。报告将此类条目单独计数，不将其当成汉化完成。
 
 材料形态完整名称使用共享原 `LanguageHandler.getLocalName` 分支；默认前缀语言模板也独立核对原 OP 前后缀和箱/块递归，不能把 Gems 等前缀类别复数当作内容物名称。身份导出携带实际 native 键及共享规则的普通材料结果，与开发端读取的原规则比较。`english_source.json` 中的 `@material-form.default.*` 明确是公式标识、不是伪造的原语言键，另有 `source_formula: material_default_name` 标记。无源的玻璃管/单位等不套其它形态；25个当前没有语言键的兼容前缀只审计，不凭空添加条目。五种空箭/空弹壳的独立模板沿原 Empty 分支和真实 `oredict.*Empty` 中文绑定。上述模板核对与全形态实际名称自检互补。
+
+旧结构部件可按已确认的材质和原贴图家族复用原部件名称，但必须在 `source.json` 记录名字别名的边界，不把名字当作原编号/配方/完整行为证明。旧中继器按真实能力转接类型取原家族名。工具的编号说明来自共享 `ToolDefinition`；已有独立 LH 行为说明不被空编号说明覆盖，空中文说明也不生成空提示行。双版自检目录须保留明确的平台差异，不用另一个版本不存在的旧 ID 凑齐样本数。

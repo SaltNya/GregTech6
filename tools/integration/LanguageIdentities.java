@@ -33,6 +33,19 @@ class LanguageIdentities {
         }
         row("@symbol.MT.Wood", GT6Materials.Woods.Wood.getName(), "");
         row("@symbol.MT.WoodTreated", GT6Materials.Woods.WoodTreated.getName(), "");
+        // Retained structural aliases have the same original material + texture family.
+        // These are display-name aliases only; source.json records their compatibility scope.
+        for (String binding : new String[]{"boiler_wall|18002", "turbine_wall|18022",
+                "large_crucible_wall|18000", "cryo_distillation_wall|18102",
+                "large_gas_turbine_wall|18022", "large_dynamo_wall|18040",
+                "heat_exchanger_wall|18101", "bedrock_drill_wall|18103",
+                "lightning_rod_wall|18004", "fusion_reactor_wall|18045"}) {
+            String[] parts = binding.split("\\|");
+            row("block.gregtech." + parts[0], "gt.multitileentity." + parts[1], "");
+        }
+        // All four legacy variants relay adjacent items + fluids (not energy or wireless).
+        for (String variant : new String[]{"basic", "advanced", "elite", "wireless"})
+            row("block.gregtech.extender_" + variant, "gt.multitileentity.30002", "");
         // Original tree holes share one item name across their empty/full textures.
         // These retained pillar aliases inherit only that visual-family identity;
         // this export does not claim the original resin-generation behavior.
@@ -209,7 +222,14 @@ class LanguageIdentities {
         for (var tool : com.gregtech.gregtech.api.tool.ToolDefinition.values()) {
             row("item.gregtech.tool." + tool.id(), "gt.metatool.01." + tool.gt6Id(), "");
             row(tool.translationKey(), "gt.metatool.01." + tool.gt6Id(), "");
+            // Builder Wand already uses its original LH behavior instruction; its numbered
+            // item description is empty and must not erase that separate instruction.
+            if (tool.tooltipKey() != null && tool != com.gregtech.gregtech.api.tool.ToolDefinition.BUILDER_WAND)
+                row("tooltip.gregtech.tool_hint." + tool.tooltipKey(), "gt.metatool.01." + tool.gt6Id() + ".tooltip", "");
         }
+        row("tooltip.gregtech.machine.harvest.pickaxe", "gt.metatool.01.2", "");
+        row("tooltip.gregtech.machine.harvest_wrench_short", "gt.metatool.01.16", "");
+        row("tooltip.gregtech.smeltery.product.block_solid", "oredict.prefix.blockSolid", "");
         for (var tool : com.gregtech.gregtech.content.tool.ElectricToolCatalog.ALL)
             row("item.gregtech." + tool.id(), "@tool." + tool.original(), "");
         String[] components = {"electric_motor", "electric_pump", "electric_conveyor", "electric_piston",

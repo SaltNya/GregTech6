@@ -237,12 +237,13 @@ def launch(args):
             or language.get('anvilNames') != 35 or language.get('fluidNameSamples') != 3
             or language.get('fluidPropertySamples') != 7 or language.get('hotRecipeValues') != 2
             or language.get('sourceIdentitySamples') != 20 or language.get('assembledToolNames') != 3
+            or language.get('toolHintsEnglish') != 10 or language.get('toolHintsChinese') != 10
             or language.get('coloredConstructionNamesEnglish') != 144 or language.get('coloredConstructionNamesChinese') != 144
             or language.get('sourceStoneNamesEnglish') != 544 or language.get('sourceStoneNamesChinese') != 544
             or language.get('bushNamesAndOutputsEnglish', 0) < 10
             or language.get('bushNamesAndOutputsEnglish') != language.get('bushNamesAndOutputsChinese')
             or language.get('sourceTechnologyNamesEnglish') != 84 or language.get('sourceTechnologyNamesChinese') != 84
-            or language.get('additionalSourceBlockNamesEnglish') != 694 or language.get('additionalSourceBlockNamesChinese') != 694
+            or language.get('additionalSourceBlockNamesEnglish') != (708 if args.platform == 'forge' else 707) or language.get('additionalSourceBlockNamesChinese') != (708 if args.platform == 'forge' else 707)
             or language.get('lootChestNamesEnglish') != 18 or language.get('lootChestNamesChinese') != 18
             or language.get('declaredFluidNamesEnglish',0) < 100
             or language.get('declaredFluidNamesEnglish') != language.get('declaredFluidNamesChinese')
