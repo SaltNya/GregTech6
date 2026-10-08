@@ -10,9 +10,33 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
 from import_identity_localization import (original_english, pipe_identities, wire_identities, numbered_item_identities,
                                           material_identities, material_fluid_english, verified_material_proofs, resolve_material_collision,
                                           require_retained_english_checks, english_bindings)
+from source_recipe_language import recipe_map_names
 
 
 class IdentityLanguageTests(unittest.TestCase):
+    def test_recipe_names_follow_inheritance_and_reject_changed_forwarding(self):
+        with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
+            root=Path(folder);java=root/'src/main/java/gregapi'
+            (java/'data').mkdir(parents=True);(java/'recipes/maps').mkdir(parents=True)
+            (java/'recipes/Recipe.java').write_text('''mNameInternal=aNameInternal;
+mNameLocal=aNameLocal; LH.add(mNameInternal, mNameLocal);''',encoding='utf-8')
+            (java/'data/RM.java').write_text('''new RecipeMap(null, "gt.recipe.direct", "Original");
+// new RecipeMap(null, "gt.recipe.ignored", "Comment");
+new RecipeMapChild(null, "gt.recipe.child", "Label");''',encoding='utf-8')
+            parent=java/'recipes/maps/RecipeMapParent.java'
+            parent.write_text('''class RecipeMapParent extends RecipeMap {
+super(aRecipes, aUnlocalizedName, aNameLocal + " (suffix)");}''',encoding='utf-8')
+            child=java/'recipes/maps/RecipeMapChild.java'
+            child.write_text('''class RecipeMapChild extends RecipeMapParent {
+super(aRecipes, aUnlocalizedName, aNameLocal);}''',encoding='utf-8')
+            values,files=recipe_map_names(root)
+            self.assertEqual(values,{'gt.recipe.direct':'Original','gt.recipe.child':'Label (suffix)'})
+            self.assertEqual(len(files),4)
+            for expression in ('aNameLocal.toUpperCase()', 'aUnlocalizedName'):
+                parent.write_text('class RecipeMapParent extends RecipeMap {super(aRecipes, aUnlocalizedName, '+expression+');}',encoding='utf-8')
+                with self.assertRaisesRegex(ValueError,'name formula'):
+                    recipe_map_names(root)
+
     def test_direct_original_keys_are_checked_without_a_redundant_chinese_alias(self):
         english={'gt.lang.face.top':'Top', 'gt.untranslated':'Source text',
                  'block.native':'Modern', 'port.only':'Port label'}

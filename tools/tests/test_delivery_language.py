@@ -10,13 +10,16 @@ from launch_production_smoke import parse_receipt, validate_language_inventory, 
 
 class DeliveryLanguageTests(unittest.TestCase):
     def test_generated_families_must_exist_in_both_language_receipts(self):
-        row = {'bees': 640, 'anvils': 35, 'books': 28, 'canvases': 16, 'panels': 80, 'creativeTabs': 150, 'bottles': 169, 'faceMasks': 64}
+        row = {'bees': 640, 'anvils': 35, 'books': 28, 'canvases': 16, 'panels': 80, 'creativeTabs': 150,
+               'bottles': 169, 'faceMasks': 64, 'machineLabels': 7, 'engineDescriptions': 20}
         language = {'generatedNamesEnglish': row, 'generatedNamesChinese': dict(row)}
         validate_generated_language(language)
         for bad in [{}, {'generatedNamesChinese': row},
                     {**language, 'generatedNamesEnglish': {**row, 'books': 22}},
                     {**language, 'generatedNamesEnglish': {**row, 'bottles': 0}},
                     {**language, 'generatedNamesEnglish': {**row, 'faceMasks': 63}},
+                    {**language, 'generatedNamesEnglish': {**row, 'machineLabels': 6}},
+                    {**language, 'generatedNamesEnglish': {**row, 'engineDescriptions': 0}},
                     {**language, 'generatedNamesChinese': {**row, 'creativeTabs': 149}}]:
             with self.subTest(receipt=bad), self.assertRaisesRegex(ValueError, 'bilingual'):
                 validate_generated_language(bad)

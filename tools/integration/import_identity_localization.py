@@ -18,6 +18,7 @@ from generate_machine_material_data import calls, masked
 from source_language_common import STRING, material_key, counted_blocks
 from source_numbered_language import bumble_declarations, bumble_english
 from source_creative_language import creative_name_sources, unused_prefix_names
+from source_recipe_language import recipe_map_names
 
 
 def any_material_names(original):
@@ -348,6 +349,9 @@ def original_english(original, material_data=None):
             match=re.fullmatch(r'aID\s*(?:\+\s*(\d+))?',ident)
             if match:ident=str(offset+int(match[1] or 0))
         if ident.isdigit():put('itemGroup.gt.multitileentity.'+ident,json.loads(args[1]))
+    recipes, recipe_files = recipe_map_names(original)
+    files.extend(recipe_files)
+    for key, value in recipes.items():put(key, value)
     _,material_english,material_files,_=material_identities(original) if material_data is None else material_data
     files.extend(p for p in material_files if p not in files)
     for key,value in material_english.items():put(key,value)
