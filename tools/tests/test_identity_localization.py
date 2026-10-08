@@ -9,10 +9,21 @@ import copy
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'integration'))
 from import_identity_localization import (original_english, pipe_identities, wire_identities, numbered_item_identities,
                                           material_identities, material_fluid_english, verified_material_proofs, resolve_material_collision,
-                                          require_retained_english_checks)
+                                          require_retained_english_checks, english_bindings)
 
 
 class IdentityLanguageTests(unittest.TestCase):
+    def test_direct_original_keys_are_checked_without_a_redundant_chinese_alias(self):
+        english={'gt.lang.face.top':'Top', 'gt.untranslated':'Source text',
+                 'block.native':'Modern', 'port.only':'Port label'}
+        declarations={'gt.lang.face.top':'Top','gt.untranslated':'Source text','gt.block.42':'Original'}
+        bindings,missing=english_bindings(english,declarations,{'gt.lang.face.top':'顶面','gt.block.42':'原块'},
+                                         {'block.native':'gt.block.42'},{})
+        self.assertEqual(bindings,{'gt.lang.face.top':'gt.lang.face.top','gt.untranslated':'gt.untranslated',
+                                   'block.native':'gt.block.42'})
+        self.assertEqual(missing,{'gt.untranslated':'gt.untranslated'})
+        self.assertNotIn('port.only',bindings)
+
     def setUp(self):
         (Path(__file__).resolve().parents[2]/'work').mkdir(exist_ok=True)
 

@@ -11,7 +11,7 @@ import re
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from localization import CONFIG_PATH, LANG_PATH, expected_chinese, json_text, load_source, read_json
+from localization import CONFIG_PATH, LANG_PATH, expected_chinese, json_text, load_source, read_json, check_english
 
 
 def main():
@@ -76,6 +76,7 @@ def main():
         if source_key not in chinese:
             missing.append(key)
     translated = expected_chinese(data, chinese, bindings)
+    check_english(ns.repo, data, translated, bindings, chinese)
     for locale, updated in [('en_us', data), ('zh_cn', translated)]:
         before = read_json(lang / (locale + '.json'))
         changes[locale] = {k: {'before': before.get(k), 'after': v}

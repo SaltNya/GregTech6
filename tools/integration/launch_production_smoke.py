@@ -26,7 +26,7 @@ def sha(path):
 def validate_generated_language(language):
     english = language.get('generatedNamesEnglish', {})
     chinese = language.get('generatedNamesChinese', {})
-    expected = {'bees': 640, 'anvils': 35, 'books': 28, 'canvases': 16}
+    expected = {'bees': 640, 'anvils': 35, 'books': 28, 'canvases': 16, 'faceMasks': 64}
     if (any(english.get(key) != value for key, value in expected.items())
             or english.get('panels', 0) < 50 or english.get('creativeTabs', 0) < 100 or english.get('bottles', 0) < 100
             or english != chinese):

@@ -786,6 +786,14 @@ def require_retained_english_checks(previous, current, english):
         raise ValueError('English source audit lost previously verified declarations: ' + ', '.join(lost[:12]))
 
 
+def english_bindings(english, declarations, source, aliases, missing):
+    """Original keys used directly need the same checks as modern aliases."""
+    direct = {key:key for key in english if key in declarations}
+    english_only = {key:original for key,original in {**direct, **missing}.items()
+                    if key not in aliases and key in english and original in declarations and original not in source}
+    return {**direct, **english_only, **aliases}, english_only
+
+
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--source',type=Path,required=True)
@@ -908,9 +916,7 @@ def main():
     english_changes={}
     # A missing Chinese entry must not prevent checking an adopted original English name.
     # Existing accepted Chinese identities still win over conflicting candidates.
-    english_only={key:original for key,original in missing.items()
-                  if key not in aliases and original in source_en and key in english}
-    english_identities={**english_only,**aliases}
+    english_identities,english_only=english_bindings(english,source_en,source,aliases,missing)
     for key, original in sorted(english_identities.items()):
         if key not in english and original in source_en:
             english[key]=source_en[original]
