@@ -271,12 +271,14 @@ def wire_identities(original,symbols):
     return result,[loader,helper]
 
 
-def material_fluid_english(original, identity_rows, source):
-    """A documented original fluid key plus positive material ID proves a helper name.
+def material_fluid_english(original, identity_rows):
+    """Verify names of actual native fluids against the original material/helper formula.
 
     Do not manufacture fluids for every material or borrow a translated solid's
-    name. Only the user's original fluid keys and actual native material bindings
+    name. Only exported native fluid bindings with a positive original material ID
     participate, and explicit FL.create declarations take precedence at the caller.
+    This proves the English naming formula, not original fluid availability or a
+    Chinese translation; the Chinese patch must not limit English coverage.
     """
     helper=original/'src/main/java/gregapi/data/FL.java'
     loader=original/'src/main/java/gregtech/loaders/a/Loader_Fluids.java'
@@ -295,7 +297,7 @@ def material_fluid_english(original, identity_rows, source):
     for key,_,ident in identity_rows:
         if not key.startswith('@fluid-proof.') or not ident.isdigit() or int(ident)<=0:continue
         source_key=targets.get(key.removeprefix('@fluid-proof.'))
-        if source_key not in source:continue
+        if source_key is None:continue
         material=ids.get(int(ident))
         if material is None:continue
         name=names.get(material)
@@ -642,7 +644,7 @@ def main():
         if key in english: candidates[key].add(original)
     files.extend(item_files)
     identity_rows = [line.split('\t') for line in ns.identities.read_text(encoding='utf-8-sig').splitlines()]
-    generated_fluids,fluid_files=material_fluid_english(ns.source,identity_rows,source)
+    generated_fluids,fluid_files=material_fluid_english(ns.source,identity_rows)
     for key,value in generated_fluids.items():source_en.setdefault(key,value)
     files.extend(fluid_files)
     material_ids,_,_,ambiguous_material_ids=material_identities(ns.source)
@@ -667,6 +669,7 @@ def main():
             original = aliases[key[:-8]] + '.tooltip'
             if original in source: candidates[key].add(original)
     added,conflicts,missing,ambiguous,resolved_collisions={},{},{},{},{}
+    runtime_fluid_fallbacks={}
     for key, originals in sorted(candidates.items()):
         if len(originals)>1:
             resolved=resolve_material_collision(key,originals,material_proofs)
@@ -677,6 +680,14 @@ def main():
             ambiguous[key]=sorted(originals);continue
         original=next(iter(originals))
         if key not in english:
+            if key.startswith('fluid_type.gregtech.') and original not in source and key not in aliases:
+                # Native describe() already localizes the material when no complete
+                # fluid name is declared. Adding English here would shadow that
+                # Chinese fallback (e.g. Water / C-Foam / Molten Graphene).
+                missing[key]=original
+                if original in source_en:
+                    runtime_fluid_fallbacks[key]={'source_key':original,'expected_english':source_en[original]}
+                continue
             if original in source_en:
                 english[key]=source_en[original]
             elif len(fallbacks[key]) == 1 and key.startswith(('material.gregtech.','item.gregtech.tab_icon_', 'block.gregtech.bookshelf')):
@@ -730,6 +741,9 @@ def main():
             'resolved_material_collisions':resolved_collisions,
             'missing_original':missing,'ambiguous_symbols':ambiguous,'english_changes':english_changes,'english_additions':english_additions,'added_tooltips':added_tooltips,
             'english_only_bindings':english_only,
+            'generated_fluid_english':{key:value for key,value in generated_fluids.items()
+                                       if source_en.get(key)==value},
+            'runtime_fluid_fallbacks':runtime_fluid_fallbacks,
             'source_files':[{'path':str(p.resolve()),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files],
             'identity_export_sha256':hashlib.sha256(ns.identities.read_bytes()).hexdigest(),
             'authors':'GregTech-6 Team / Gregorius Techneticies; original Java LGPL-3.0-or-later',

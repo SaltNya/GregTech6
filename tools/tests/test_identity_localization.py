@@ -13,7 +13,7 @@ class IdentityLanguageTests(unittest.TestCase):
     def setUp(self):
         (Path(__file__).resolve().parents[2]/'work').mkdir(exist_ok=True)
 
-    def test_generated_fluids_require_positive_material_id_and_documented_phase(self):
+    def test_generated_fluid_english_requires_identity_but_not_a_chinese_translation(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:
             root=Path(folder);java=root/'src/main/java';data=java/'gregapi/data';data.mkdir(parents=True)
             (data/'MT.java').write_text('Gas = create(42, "Example Gas").setLocal("Original Gas");',encoding='utf-8')
@@ -27,15 +27,16 @@ return create("molten."+aMaterial.mNameInternal.toLowerCase(), aTexture, "Molten
 return create("plasma."+aMaterial.mNameInternal.toLowerCase(), aTexture, aMaterial.mNameLocal+" Plasma", aMaterial, 3);''',encoding='utf-8')
             rows=[]
             for native,source,ident in [('gas','examplegas','42'),('molten','molten.examplegas','42'),
-                    ('undocumented','plasma.examplegas','42'),('wrong','othergas','42'),('zero','examplegas','0')]:
+                    ('undocumented','plasma.examplegas','42'),('wrong','othergas','42'),
+                    ('zero','zero','0'),('wrongphase','unknown.examplegas','42')]:
                 rows.extend([('fluid_type.gregtech.'+native,'fluid.'+source,''),
                              ('@fluid-proof.fluid_type.gregtech.'+native,'ExampleGas',ident)])
-            source={'fluid.examplegas':'source','fluid.molten.examplegas':'source','fluid.othergas':'source'}
-            values,_=material_fluid_english(root,rows,source)
-            self.assertEqual(values,{'fluid.examplegas':'Original Gas','fluid.molten.examplegas':'Molten Original Gas'})
+            values,_=material_fluid_english(root,rows)
+            self.assertEqual(values,{'fluid.examplegas':'Original Gas','fluid.molten.examplegas':'Molten Original Gas',
+                                     'fluid.plasma.examplegas':'Original Gas Plasma'})
             helper.write_text(helper.read_text().replace('mNameInternal.toLowerCase()','mNameInternal.toUpperCase()'),encoding='utf-8')
             with self.assertRaisesRegex(ValueError,'Unsupported original generated fluid name formula'):
-                material_fluid_english(root,rows,source)
+                material_fluid_english(root,rows)
 
     def test_numeric_material_identity_preserves_case_and_local_overrides(self):
         with tempfile.TemporaryDirectory(dir=Path(__file__).resolve().parents[2]/'work') as folder:

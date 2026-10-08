@@ -23,6 +23,15 @@ class LanguageIdentities {
         }
         row("@symbol.MT.Wood", GT6Materials.Woods.Wood.getName(), "");
         row("@symbol.MT.WoodTreated", GT6Materials.Woods.WoodTreated.getName(), "");
+        // Original tree holes share one item name across their empty/full textures.
+        // These retained pillar aliases inherit only that visual-family identity;
+        // this export does not claim the original resin-generation behavior.
+        for (String binding : new String[]{"log_hole_maple|32761", "log_sap_maple|32761",
+                "log_hole_rainbowood|32760", "log_sap_rainbowood|32760",
+                "log_hole_rubber|32762", "log_resin_rubber|32762"}) {
+            String[] parts = binding.split("\\|");
+            row("block.gregtech." + parts[0], "gt.multitileentity." + parts[1], "");
+        }
         for (var wire : com.gregtech.gregtech.content.energy.WireCatalog.specifications())
             row("block.gregtech." + com.gregtech.gregtech.content.energy.WireCatalog.registryId(wire),
                     "@wire." + wire.material().getName() + "." + (wire.insulated() ? "cable" : "wire")
@@ -292,11 +301,15 @@ class LanguageIdentities {
                 "molten.hsla", "fluid.molten hsla", "molten.hslasteel", "fluid.molten hsla");
         FluidCatalog.all().values().stream().distinct().forEach(f -> {
             String key = "fluid_type.gregtech." + FluidCatalog.sanitizePath(f.registryName());
-            row(key, sourceFluidNames.getOrDefault(f.registryName(), "fluid." + f.registryName()), "");
+            String legacyKey = "fluid_type.gregtech." + f.registryName();
+            String original = sourceFluidNames.getOrDefault(f.registryName(), "fluid." + f.registryName());
+            row(key, original, "");
+            if (!legacyKey.equals(key)) row(legacyKey, original, "");
             String material = f.materialKey() == null ? FluidCatalog.boundMaterial(f.registryName()) : f.materialKey();
             if (material != null) {
                 var mat = GTMaterialRegistry.get(material).resolve();
                 row("@fluid-proof." + key, mat.getName(), Integer.toString(mat.getId()));
+                if (!legacyKey.equals(key)) row("@fluid-proof." + legacyKey, mat.getName(), Integer.toString(mat.getId()));
             }
         });
         com.gregtech.gregtech.api.prefix.PrefixRegistry.ensurePrefixesLoaded();
